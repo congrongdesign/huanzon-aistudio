@@ -2,7 +2,7 @@
 
 环中AIStudio 是一款 **AI 设计画布工具**：与 AI 对话协作，在无限画布上创建、编辑和管理图像设计。交互范式灵感来自 Lovart.ai 的 ChatCanvas。
 
-![主工作台](docs/screenshots/01-main-canvas.png)
+![主工作台](https://github.com/congrongdesign/huanzon-aistudio/releases/download/v0.2.0/01-main-canvas.png)
 
 ## 功能
 
@@ -20,10 +20,10 @@
 
 | 平台 | 安装包 |
 | --- | --- |
-| macOS Apple Silicon | `环中AIStudio-<version>-arm64.dmg` / `.zip` |
-| macOS Intel | `环中AIStudio-<version>-x64.dmg` / `.zip` |
-| Windows x64 | `环中AIStudio-<version>-win-x64-setup.exe`（安装版）<br>`环中AIStudio-<version>-win-x64-portable.exe`（免安装） |
-| 源码 | `环中AIStudio-<version>-source.tar.gz` |
+| macOS Apple Silicon | `AIStudio-<version>-arm64.dmg` / `.zip` |
+| macOS Intel | `AIStudio-<version>-x64.dmg` / `.zip` |
+| Windows x64 | `AIStudio-<version>-win-x64-setup.exe`（安装版）<br>`AIStudio-<version>-win-x64-portable.exe`（免安装） |
+| 源码 | `AIStudio-<version>-source.tar.gz` |
 
 所有安装包附带 `SHA256SUMS.txt` 校验。
 

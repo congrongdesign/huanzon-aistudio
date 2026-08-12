@@ -3,7 +3,7 @@
 > AI 设计画布工具：与 AI 对话协作，在无限画布上创建、编辑和管理图像设计。
 > 灵感来自 Lovart.ai 的 ChatCanvas 交互范式。
 
-![主工作台](https://raw.githubusercontent.com/congrongdesign/huanzon-aistudio/v0.2.0/docs/screenshots/01-main-canvas.png)
+![主工作台](https://github.com/congrongdesign/huanzon-aistudio/releases/download/v0.2.0/01-main-canvas.png)
 
 ---
 
@@ -56,9 +56,9 @@
 - 深色 / 浅色主题，全局画布网格
 - 本地优先架构：数据保存在本机，支持 NAS 同步
 
-![作品图库](https://raw.githubusercontent.com/congrongdesign/huanzon-aistudio/v0.2.0/docs/screenshots/02-gallery.png)
+![作品图库](https://github.com/congrongdesign/huanzon-aistudio/releases/download/v0.2.0/02-gallery.png)
 
-![模型中心](https://raw.githubusercontent.com/congrongdesign/huanzon-aistudio/v0.2.0/docs/screenshots/03-models.png)
+![模型中心](https://github.com/congrongdesign/huanzon-aistudio/releases/download/v0.2.0/03-models.png)
 
 ---
 
@@ -83,10 +83,10 @@
 
 ## 三、安装说明
 
-- **macOS（Apple Silicon）**：下载 `环中AIStudio-0.2.0-arm64.dmg`
-- **macOS（Intel）**：下载 `环中AIStudio-0.2.0-x64.dmg`
-- **Windows x64**：下载 `环中AIStudio-0.2.0-win-x64-setup.exe`（安装版）或 `环中AIStudio-0.2.0-win-x64-portable.exe`（免安装）
-- **源码**：`环中AIStudio-0.2.0-source.tar.gz`
+- **macOS（Apple Silicon）**：下载 `AIStudio-0.2.0-arm64.dmg`
+- **macOS（Intel）**：下载 `AIStudio-0.2.0-x64.dmg`
+- **Windows x64**：下载 `AIStudio-0.2.0-win-x64-setup.exe`（安装版）或 `AIStudio-0.2.0-win-x64-portable.exe`（免安装）
+- **源码**：`AIStudio-0.2.0-source.tar.gz`
 
 > 未签名说明：本项目未使用正式签名证书，macOS 首次打开会出现 Gatekeeper 提示、Windows 会出现 SmartScreen 提示，属正常现象。
 > - macOS：右键应用 → 打开；或 系统设置 → 隐私与安全性 → 仍要打开
@@ -105,5 +105,5 @@
 所有安装包 SHA-256 见 `SHA256SUMS.txt`，校验示例：
 
 ```bash
-shasum -a 256 环中AIStudio-0.2.0-arm64.dmg
+shasum -a 256 AIStudio-0.2.0-arm64.dmg
 ```
