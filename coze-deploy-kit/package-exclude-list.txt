@@ -1,0 +1,14 @@
+# 打包上传给扣子时建议排除
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+.git/
+.DS_Store
+release/
+output/
+.desktop-runtime/
+.playwright-cli/
+*.log
+tsconfig.tsbuildinfo

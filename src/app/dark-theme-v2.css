@@ -1,0 +1,1882 @@
+/*
+  Dark Theme V2
+  - Single maintenance entry for dark mode visual system
+  - Neutral black/white/gray palette (Adobe-style)
+  - Scoped by data-theme-scope hooks to avoid random global leakage
+*/
+
+:root {
+  --hz-transition-fast: 140ms cubic-bezier(0.2, 0, 0, 1);
+  --hz-transition-base: 190ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.dark {
+  --hz-bg-0: #0f0f0f;
+  --hz-bg-1: #171717;
+  --hz-bg-2: #202020;
+  --hz-bg-3: #2a2a2a;
+
+  --hz-border-1: rgba(255, 255, 255, 0.085);
+  --hz-border-2: rgba(255, 255, 255, 0.16);
+  --hz-border-3: rgba(255, 255, 255, 0.24);
+
+  --hz-text-1: #f3f3f3;
+  --hz-text-2: #e4e4e4;
+  --hz-text-3: #c7c7c7;
+  --hz-text-4: #a3a3a3;
+
+  --hz-hover-bg: rgba(255, 255, 255, 0.05);
+  --hz-active-bg: rgba(255, 255, 255, 0.09);
+  --hz-active-soft-bg: rgba(255, 255, 255, 0.065);
+
+  --hz-input-bg: #1c1c1c;
+  --hz-input-border: rgba(255, 255, 255, 0.095);
+
+  --hz-overlay: rgba(0, 0, 0, 0.86);
+  --hz-shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
+}
+
+.dark body {
+  background: var(--hz-bg-0) !important;
+  color: var(--hz-text-1);
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) {
+  color: var(--hz-text-2);
+}
+
+.dark [data-theme-scope="app"].app-shell,
+.dark [data-theme-scope="gallery"].gallery-overlay,
+.dark [data-theme-scope="asset-workspace"].asset-workspace,
+.dark [data-theme-scope="social"],
+.dark [data-theme-scope="prompt-manager"].prompt-manager,
+.dark [data-theme-scope="batch-module"].batch-module,
+.dark [data-theme-scope="ppt-workshop"].ppt-workshop,
+.dark [data-theme-scope="node-workflow"].node-workflow-canvas {
+  background: var(--hz-bg-0) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  .bg-background,
+  [class*="bg-background"]
+) {
+  background-color: var(--hz-bg-0) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  .bg-card,
+  [class*="bg-card"],
+  .bg-popover,
+  [class*="bg-popover"]
+) {
+  background-color: var(--hz-bg-1) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  .bg-muted,
+  [class*="bg-muted"]
+) {
+  background-color: var(--hz-bg-2) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="bg-white"],
+  [class*="bg-slate"],
+  [class*="bg-zinc"],
+  [class*="bg-neutral"],
+  [class*="bg-stone"]
+) {
+  background-color: var(--hz-bg-2) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  .text-foreground,
+  [class*="text-foreground"]
+) {
+  color: var(--hz-text-1) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  .text-muted-foreground,
+  [class*="text-muted-foreground"]
+) {
+  color: var(--hz-text-3) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  .text-primary,
+  [class*="text-primary"],
+  [class*="text-blue"],
+  [class*="text-sky"],
+  [class*="text-cyan"],
+  [class*="text-indigo"],
+  [class*="text-violet"],
+  [class*="text-purple"],
+  [class*="text-slate"],
+  [class*="text-zinc"],
+  [class*="text-neutral"],
+  [class*="text-stone"]
+) {
+  color: var(--hz-text-2) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  .border,
+  [class*="border-border"],
+  [class*="border-slate"],
+  [class*="border-zinc"],
+  [class*="border-neutral"],
+  [class*="border-stone"]
+) {
+  border-color: var(--hz-border-1) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="border-primary"],
+  [class*="border-blue"],
+  [class*="border-sky"],
+  [class*="border-cyan"],
+  [class*="border-indigo"],
+  [class*="border-violet"],
+  [class*="border-purple"]
+) {
+  border-color: var(--hz-border-2) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(input, textarea, select) {
+  background-color: var(--hz-input-bg) !important;
+  border-color: var(--hz-input-border) !important;
+  color: var(--hz-text-1) !important;
+  box-shadow: none !important;
+  transition:
+    background-color var(--hz-transition-base),
+    border-color var(--hz-transition-fast),
+    color var(--hz-transition-fast),
+    box-shadow var(--hz-transition-fast);
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(input, textarea)::placeholder {
+  color: var(--hz-text-4) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(input, textarea, select):focus {
+  border-color: var(--hz-border-3) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12) !important;
+  outline: none !important;
+}
+
+.dark select option,
+.dark select optgroup {
+  background-color: #262626 !important;
+  color: var(--hz-text-1) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) button {
+  color: var(--hz-text-2);
+  border-color: var(--hz-border-1);
+  transition:
+    background-color var(--hz-transition-fast),
+    border-color var(--hz-transition-fast),
+    color var(--hz-transition-fast),
+    box-shadow var(--hz-transition-fast);
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) button:not(:disabled):hover {
+  background-color: var(--hz-hover-bg) !important;
+  color: var(--hz-text-1) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button[class*="bg-primary"],
+  button[class*="bg-foreground"],
+  [data-slot="button"][data-variant="default"],
+  .bg-primary.text-white,
+  .bg-primary.text-primary-foreground
+) {
+  background: #dddddd !important;
+  color: #1a1a1a !important;
+  border: 1px solid rgba(255, 255, 255, 0.34) !important;
+  box-shadow: none !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button[class*="bg-primary"],
+  button[class*="bg-foreground"],
+  [data-slot="button"][data-variant="default"]
+):not(:disabled):hover {
+  background: #efefef !important;
+  color: #141414 !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [aria-selected="true"],
+  [data-state="active"],
+  [data-active="true"],
+  .ui-selected-subtle,
+  .ppt-nav-selected,
+  [class*="bg-primary/10"],
+  [class*="bg-primary/15"],
+  [class*="bg-primary/20"],
+  [class*="bg-blue/"],
+  [class*="bg-sky/"],
+  [class*="bg-cyan/"]
+) {
+  background: var(--hz-active-bg) !important;
+  color: var(--hz-text-1) !important;
+  border-color: var(--hz-border-2) !important;
+  box-shadow: none !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is([aria-selected="true"], [data-state="active"], [data-active="true"]) svg {
+  color: var(--hz-text-1) !important;
+  opacity: 1 !important;
+}
+
+.dark [data-ui-nav-rail="true"] {
+  background: var(--hz-bg-1) !important;
+  border-right-color: var(--hz-border-1) !important;
+}
+
+.dark [data-ui-nav-rail="true"][data-active="true"],
+.dark [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="true"] {
+  background: var(--hz-active-bg) !important;
+  color: var(--hz-text-1) !important;
+  border: 1px solid var(--hz-border-2) !important;
+  box-shadow: none !important;
+}
+
+.dark [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="false"] {
+  color: var(--hz-text-3) !important;
+}
+
+.dark [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="false"]:hover {
+  background: var(--hz-hover-bg) !important;
+  color: var(--hz-text-1) !important;
+}
+
+.dark [data-ui-nav-rail="true"]::before,
+.dark [data-ui-nav-rail="true"]::after,
+.dark [data-ui-nav-rail="true"] [data-ui-nav-btn="true"]::before,
+.dark [data-ui-nav-rail="true"] [data-ui-nav-btn="true"]::after {
+  display: none !important;
+}
+
+.dark [data-ui-resize-handle="true"] {
+  background: transparent !important;
+}
+
+.dark [data-ui-resize-handle="true"]:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+.dark [data-chat-panel="true"] {
+  background: var(--hz-bg-1) !important;
+  border-left-color: var(--hz-border-1) !important;
+}
+
+.dark [data-chat-divider="true"] {
+  background: transparent !important;
+}
+
+.dark [data-chat-divider="true"]:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark [data-chat-divider="true"] > div {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark [data-dark-fix-project-header="true"],
+.dark [data-dark-fix-topbar="true"],
+.dark [data-dark-fix-ppt-topbar="true"],
+.dark [data-dark-fix-gallery-toolbar="true"] {
+  background: var(--hz-bg-1) !important;
+  border-color: var(--hz-border-1) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.dark [data-project-create-btn="true"] {
+  background: #dcdcdc !important;
+  color: #191919 !important;
+  border: 1px solid rgba(255, 255, 255, 0.32) !important;
+  box-shadow: none !important;
+}
+
+.dark [data-dark-fix-gallery-root="true"],
+.dark [data-dark-fix-gallery-content="true"],
+.dark [data-dark-fix-gallery-content-body="true"] {
+  background: var(--hz-bg-0) !important;
+}
+
+.dark [data-dark-fix-gallery-root="true"]::before,
+.dark [data-dark-fix-gallery-root="true"]::after {
+  display: none !important;
+}
+
+.dark [data-dark-fix-gallery-toolbar="true"] [data-gallery-top-tab="true"][data-active="true"] {
+  background: var(--hz-active-bg) !important;
+  color: var(--hz-text-1) !important;
+  border: 1px solid var(--hz-border-2) !important;
+  box-shadow: none !important;
+}
+
+.dark [data-dark-fix-gallery-toolbar="true"] [data-gallery-top-tab="true"][data-active="false"] {
+  color: var(--hz-text-3) !important;
+}
+
+.dark [data-dark-fix-gallery-toolbar="true"] [data-gallery-top-tab="true"][data-active="false"]:hover {
+  background: var(--hz-hover-bg) !important;
+  color: var(--hz-text-1) !important;
+}
+
+.dark [data-dark-fix-gallery-toolbar="true"] [data-gallery-top-tab="true"] svg {
+  color: inherit !important;
+}
+
+.dark .gallery-overlay .gallery-card[data-gallery-selected="true"] {
+  position: relative;
+  border-radius: 0.5rem;
+  outline: 2px solid rgba(244, 244, 244, 0.88) !important;
+  outline-offset: 0 !important;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.56) !important;
+}
+
+.dark .gallery-overlay .gallery-card[data-gallery-selected="true"]::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 0.58rem;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  pointer-events: none;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="from-blue"],
+  [class*="from-sky"],
+  [class*="from-cyan"],
+  [class*="from-indigo"],
+  [class*="from-violet"],
+  [class*="from-purple"]
+) {
+  --tw-gradient-from: #d3d3d3 var(--tw-gradient-from-position) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="via-blue"],
+  [class*="via-sky"],
+  [class*="via-cyan"],
+  [class*="via-indigo"],
+  [class*="via-violet"],
+  [class*="via-purple"]
+) {
+  --tw-gradient-via: #bfbfbf var(--tw-gradient-via-position) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="to-blue"],
+  [class*="to-sky"],
+  [class*="to-cyan"],
+  [class*="to-indigo"],
+  [class*="to-violet"],
+  [class*="to-purple"]
+) {
+  --tw-gradient-to: #adadad var(--tw-gradient-to-position) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  .shadow-sm,
+  .shadow,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl,
+  [class*="shadow-blue"],
+  [class*="shadow-sky"],
+  [class*="shadow-cyan"],
+  [class*="shadow-indigo"],
+  [class*="shadow-violet"],
+  [class*="shadow-purple"]
+) {
+  box-shadow: var(--hz-shadow) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(tr, [role="row"]):hover {
+  background: var(--hz-hover-bg) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) [class*="ring-primary"],
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) [class*="ring-blue"],
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) [class*="ring-indigo"],
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) [class*="ring-violet"],
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) [class*="ring-purple"] {
+  --tw-ring-color: rgba(255, 255, 255, 0.22) !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) [class*="animate-pulse"] {
+  filter: none !important;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+}
+
+.dark :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* --- Dark Mode Stabilization Layer (no blue fallback, no delayed style race) --- */
+
+html[data-theme-engine="v2"] {
+  background: #0f0f0f;
+}
+
+html[data-theme-engine="v2"][data-theme-ready="1"] *,
+html[data-theme-engine="v2"][data-theme-ready="1"] *::before,
+html[data-theme-engine="v2"][data-theme-ready="1"] *::after {
+  transition-delay: 0s !important;
+}
+
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+  transition-property: none !important;
+  transition-duration: 0s !important;
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
+}
+
+html.dark[data-theme-engine="v2"] [class*="focus:ring-"],
+html.dark[data-theme-engine="v2"] [class*="ring-"] {
+  --tw-ring-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="outline-primary"],
+  [class*="outline-blue"],
+  [class*="outline-sky"],
+  [class*="outline-cyan"],
+  [class*="outline-indigo"],
+  [class*="outline-violet"],
+  [class*="outline-purple"]
+) {
+  outline-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="stroke-primary"],
+  [class*="stroke-blue"],
+  [class*="stroke-sky"],
+  [class*="stroke-cyan"],
+  [class*="stroke-indigo"],
+  [class*="stroke-violet"],
+  [class*="stroke-purple"]
+) {
+  stroke: #d8d8d8 !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="fill-primary"],
+  [class*="fill-blue"],
+  [class*="fill-sky"],
+  [class*="fill-cyan"],
+  [class*="fill-indigo"],
+  [class*="fill-violet"],
+  [class*="fill-purple"]
+) {
+  fill: #d8d8d8 !important;
+}
+
+html.dark[data-theme-engine="v2"] [class*="focus:border-"]:focus {
+  border-color: rgba(255, 255, 255, 0.26) !important;
+}
+
+/* Kill legacy blue shadows/rings from historical globals layers */
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="shadow-blue"],
+  [class*="shadow-sky"],
+  [class*="shadow-cyan"],
+  [class*="shadow-indigo"],
+  [class*="shadow-violet"],
+  [class*="shadow-purple"]
+) {
+  box-shadow: var(--hz-shadow) !important;
+}
+
+/* Native select compatibility (still used in many panels) */
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"]
+) select {
+  background-color: #1b1b1b !important;
+  color: #ececec !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"]
+) select:focus {
+  border-color: rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"]
+) select option,
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"]
+) select optgroup {
+  background: #252525 !important;
+  color: #ececec !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"]
+) select option:checked {
+  background: #3a3a3a !important;
+  color: #f2f2f2 !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"]
+) select option:hover,
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"]
+) select option:focus {
+  background: #3a3a3a !important;
+  color: #f2f2f2 !important;
+}
+
+/* Topbar Radix Selects: hard lock to dark grayscale */
+html.dark[data-theme-engine="v2"] [data-dark-fix-topbar="true"] [data-ui-select] {
+  background: #2b2b2b !important;
+  color: #ececec !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-dark-fix-topbar="true"] [data-ui-select][data-state="open"],
+html.dark[data-theme-engine="v2"] [data-dark-fix-topbar="true"] [data-ui-select]:focus {
+  border-color: rgba(255, 255, 255, 0.28) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.14) !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-slot="select-content"] {
+  background: #1b1b1b !important;
+  color: #ececec !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-slot="select-label"] {
+  color: #adadad !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-slot="select-item"] {
+  color: #d6d6d6 !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-slot="select-item"][data-highlighted] {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #f1f1f1 !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-slot="select-item"][data-state="checked"] {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #f4f4f4 !important;
+}
+
+/* Left rail selected border/icon contrast */
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="true"] {
+  background: rgba(255, 255, 255, 0.09) !important;
+  border-color: rgba(255, 255, 255, 0.22) !important;
+  color: #f2f2f2 !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="true"] svg {
+  color: #f2f2f2 !important;
+}
+
+/* PPT left panel selected icons readable and no blue outline */
+html.dark[data-theme-engine="v2"] .ppt-workshop [data-dark-fix-ppt-nav-item="true"][data-active="true"] {
+  background: rgba(255, 255, 255, 0.09) !important;
+  border-color: rgba(255, 255, 255, 0.20) !important;
+  color: #f0f0f0 !important;
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] .ppt-workshop [data-dark-fix-ppt-nav-item="true"][data-active="false"] {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #c9c9c9 !important;
+}
+
+html.dark[data-theme-engine="v2"] .ppt-workshop [data-dark-fix-ppt-nav-icon="true"] {
+  color: #bdbdbd !important;
+}
+
+html.dark[data-theme-engine="v2"] .ppt-workshop [data-dark-fix-ppt-nav-item="true"][data-active="true"] [data-dark-fix-ppt-nav-icon="true"] {
+  color: #efefef !important;
+}
+
+/* Batch / Workshop right pane deep-blue leftovers */
+html.dark[data-theme-engine="v2"] [data-theme-scope="batch-module"] :is(
+  [class*="bg-blue"],
+  [class*="bg-sky"],
+  [class*="bg-cyan"],
+  [class*="from-blue"],
+  [class*="to-blue"],
+  [class*="from-sky"],
+  [class*="to-sky"],
+  [class*="from-cyan"],
+  [class*="to-cyan"]
+) {
+  background: rgba(255, 255, 255, 0.045) !important;
+  --tw-gradient-from: #1f1f1f var(--tw-gradient-from-position) !important;
+  --tw-gradient-via: #262626 var(--tw-gradient-via-position) !important;
+  --tw-gradient-to: #1f1f1f var(--tw-gradient-to-position) !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-theme-scope="batch-module"] [class*="text-primary"],
+html.dark[data-theme-engine="v2"] [data-theme-scope="ppt-workshop"] [class*="text-primary"],
+html.dark[data-theme-engine="v2"] [data-theme-scope="app"] [class*="text-primary"] {
+  color: #d8d8d8 !important;
+}
+
+/* Unified active state for all tab-like buttons */
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"]
+) :is(
+  [data-state="active"],
+  [aria-selected="true"],
+  [data-active="true"],
+  .bg-primary\/15,
+  .bg-primary\/20
+) {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #f1f1f1 !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  box-shadow: none !important;
+}
+
+/* Remove tiny blue seams and pseudo effects once for all scopes */
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="social"],
+  [data-theme-scope="app"]
+)::before,
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="social"],
+  [data-theme-scope="app"]
+)::after {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+/* --- Dark Theme V2 Final Sealing Layer (2026-06-13) --- */
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="ring-border-secondary"],
+  [class*="ring-primary"],
+  [class*="ring-blue"],
+  [class*="ring-sky"],
+  [class*="ring-cyan"],
+  [class*="ring-indigo"],
+  [class*="ring-violet"],
+  [class*="ring-purple"]
+) {
+  --tw-ring-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="border-border-secondary"],
+  [class*="border-primary"],
+  [class*="border-blue"],
+  [class*="border-sky"],
+  [class*="border-cyan"],
+  [class*="border-indigo"],
+  [class*="border-violet"],
+  [class*="border-purple"]
+) {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="focus:border-border-secondary"],
+  [class*="focus:border-primary"],
+  [class*="focus:border-blue"],
+  [class*="focus:border-sky"],
+  [class*="focus:border-cyan"]
+):focus {
+  border-color: rgba(255, 255, 255, 0.26) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="hover:border-primary"],
+  [class*="hover:border-blue"],
+  [class*="hover:border-sky"],
+  [class*="hover:border-cyan"],
+  [class*="hover:border-border-secondary"]
+):hover {
+  border-color: rgba(255, 255, 255, 0.22) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="bg-primary/10"],
+  [class*="bg-primary/15"],
+  [class*="bg-primary/20"],
+  [class*="bg-blue/10"],
+  [class*="bg-blue/15"],
+  [class*="bg-blue/20"],
+  [class*="bg-sky/10"],
+  [class*="bg-sky/15"],
+  [class*="bg-sky/20"],
+  [class*="bg-cyan/10"],
+  [class*="bg-cyan/15"],
+  [class*="bg-cyan/20"],
+  [class*="bg-indigo/10"],
+  [class*="bg-indigo/15"],
+  [class*="bg-indigo/20"],
+  [class*="bg-violet/10"],
+  [class*="bg-violet/15"],
+  [class*="bg-violet/20"],
+  [class*="bg-purple/10"],
+  [class*="bg-purple/15"],
+  [class*="bg-purple/20"]
+) {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #e8e8e8 !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="hover:bg-primary"],
+  [class*="hover:bg-blue"],
+  [class*="hover:bg-sky"],
+  [class*="hover:bg-cyan"],
+  [class*="hover:bg-indigo"],
+  [class*="hover:bg-violet"],
+  [class*="hover:bg-purple"]
+):hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #f1f1f1 !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"] [data-ui-nav-btn="true"] {
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="true"] {
+  background: rgba(255, 255, 255, 0.14) !important;
+  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+  color: #f1f1f1 !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="true"] svg {
+  color: #f1f1f1 !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="false"] {
+  color: #bdbdbd !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="false"]:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ededed !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"]::before,
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"]::after {
+  display: none !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-dark-fix-project-header="true"],
+html.dark[data-theme-engine="v2"] [data-dark-fix-topbar="true"],
+html.dark[data-theme-engine="v2"] [data-dark-fix-ppt-topbar="true"],
+html.dark[data-theme-engine="v2"] [data-dark-fix-gallery-toolbar="true"] {
+  background: #252525 !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-project-create-btn="true"] {
+  background: #2b2b2b !important;
+  color: #ececec !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-project-create-btn="true"]:hover {
+  background: #333333 !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-dark-fix-topbar="true"] [data-ui-select] {
+  min-height: 1.5rem !important;
+  height: 1.5rem !important;
+  padding: 0 0.5rem !important;
+  font-size: 11px !important;
+  line-height: 1rem !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-dark-fix-topbar="true"] select[data-ui-topbar-native-select="true"] {
+  min-height: 1.5rem !important;
+  height: 1.5rem !important;
+  padding: 0 0.4rem !important;
+  font-size: 11px !important;
+  line-height: 1rem !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-slot="select-content"] {
+  max-height: 236px !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-slot="select-label"] {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+  font-size: 10px !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-slot="select-item"] {
+  min-height: 1.55rem !important;
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+  padding-left: 0.45rem !important;
+  padding-right: 1.55rem !important;
+  font-size: 11px !important;
+  line-height: 1rem !important;
+}
+
+/* Topbar select unification for both light/dark: prevent oversized dropdown and keep trigger ratios aligned */
+[data-dark-fix-topbar="true"] [data-ui-select="chat-model"] {
+  width: 180px !important;
+  max-width: 180px !important;
+}
+
+[data-dark-fix-topbar="true"] [data-ui-select="image-model"] {
+  width: 172px !important;
+  max-width: 172px !important;
+}
+
+[data-dark-fix-topbar="true"] [data-ui-select] {
+  min-height: 2rem !important;
+  height: 2rem !important;
+  line-height: 1rem !important;
+}
+
+[data-slot="select-content"][data-ui-select-content="topbar"] {
+  max-height: 220px !important;
+}
+
+[data-slot="select-content"][data-ui-select-content="topbar"] [data-slot="select-item"] {
+  min-height: 1.75rem !important;
+  font-size: 12px !important;
+  line-height: 1rem !important;
+}
+
+[data-slot="select-content"][data-ui-select-content="topbar"] [data-slot="select-label"] {
+  font-size: 10px !important;
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-ui-nav-rail="true"] [data-ui-nav-btn="true"][data-active="true"] {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22) !important;
+}
+
+/* Node workflow hard override: remove legacy deep-blue gradients from globals.css */
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="node-workflow"].node-workflow-canvas,
+  [data-theme-scope="node-workflow"] #node-workflow-inspector-panel,
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"]
+) {
+  background: #0f0f0f !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="node-workflow"] .node-workflow-inspector,
+  [data-theme-scope="node-workflow"] .node-workflow-card,
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"],
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] .bg-card,
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] .bg-card\/94,
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] .bg-card\/95,
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] .bg-background,
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] .bg-muted,
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] [class*="bg-muted/"],
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] [class*="bg-primary/10"],
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] [class*="bg-primary/15"],
+  #node-workflow-inspector-panel[data-theme-scope="node-workflow"] [class*="bg-primary/20"]
+) {
+  background: #212121 !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="node-workflow"] .node-workflow-card,
+  [data-theme-scope="node-workflow"] .node-workflow-inspector
+):hover {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="node-workflow"] [class*="text-primary"],
+  [data-theme-scope="node-workflow"] [class*="hover:text-primary"],
+  [data-theme-scope="node-workflow"] [class*="focus:border-primary"],
+  [data-theme-scope="node-workflow"] [class*="hover:border-primary"]
+) {
+  color: #e2e2e2 !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-theme-scope="node-workflow"] [class*="hover:bg-primary"]:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+html.dark[data-theme-engine="v2"] [data-theme-scope="node-workflow"] [class*="ring-primary"],
+html.dark[data-theme-engine="v2"] [data-theme-scope="node-workflow"] [class*="ring-border-secondary"] {
+  --tw-ring-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+/* --- Dark Theme V2 Final Interaction Lock (grayscale only) --- */
+html.dark[data-theme-engine="v2"] {
+  --hz-btn-solid-bg: #353535;
+  --hz-btn-solid-hover: #424242;
+  --hz-btn-solid-active: #4a4a4a;
+  --hz-btn-solid-fg: #f2f2f2;
+  --hz-btn-solid-border: rgba(255, 255, 255, 0.16);
+  --hz-btn-soft-bg: rgba(255, 255, 255, 0.05);
+  --hz-btn-soft-hover: rgba(255, 255, 255, 0.085);
+  --hz-btn-soft-active: rgba(255, 255, 255, 0.115);
+  --hz-btn-soft-fg: #dfdfdf;
+  --hz-btn-soft-border: rgba(255, 255, 255, 0.11);
+  --hz-focus-ring: rgba(255, 255, 255, 0.16);
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button,
+  [role="button"],
+  a[role="button"],
+  [data-slot="button"]
+) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button,
+  [role="button"],
+  a[role="button"],
+  [data-slot="button"],
+  input,
+  textarea,
+  select,
+  [tabindex]
+):focus,
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button,
+  [role="button"],
+  a[role="button"],
+  [data-slot="button"],
+  input,
+  textarea,
+  select,
+  [tabindex]
+):focus-visible {
+  outline: none !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
+  box-shadow: 0 0 0 1px var(--hz-focus-ring) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="text-black"],
+  [class*="text-slate-900"],
+  [class*="text-slate-950"],
+  [class*="text-zinc-900"],
+  [class*="text-zinc-950"]
+) {
+  color: #ededed !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="hover:text-black"],
+  [class*="hover:text-slate-900"],
+  [class*="hover:text-slate-950"],
+  [class*="hover:text-zinc-900"],
+  [class*="hover:text-zinc-950"],
+  [class*="hover:text-primary"],
+  [class*="hover:text-blue"],
+  [class*="hover:text-sky"],
+  [class*="hover:text-cyan"],
+  [class*="hover:text-indigo"],
+  [class*="hover:text-violet"],
+  [class*="hover:text-purple"]
+):hover {
+  color: #f1f1f1 !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button[class*="bg-primary"],
+  button[class*="bg-foreground"],
+  button[class*="text-primary-foreground"],
+  button[class*="text-white"],
+  [role="button"][class*="bg-primary"],
+  [role="button"][class*="text-primary-foreground"],
+  [data-slot="button"][data-variant="default"],
+  [data-slot="button"][class*="bg-primary"]
+) {
+  background: var(--hz-btn-solid-bg) !important;
+  color: var(--hz-btn-solid-fg) !important;
+  border: 1px solid var(--hz-btn-solid-border) !important;
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button[class*="bg-primary"],
+  button[class*="bg-foreground"],
+  button[class*="text-primary-foreground"],
+  button[class*="text-white"],
+  [role="button"][class*="bg-primary"],
+  [role="button"][class*="text-primary-foreground"],
+  [data-slot="button"][data-variant="default"],
+  [data-slot="button"][class*="bg-primary"]
+):not(:disabled):hover {
+  background: var(--hz-btn-solid-hover) !important;
+  color: #f7f7f7 !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button[class*="bg-primary"],
+  button[class*="bg-foreground"],
+  button[class*="text-primary-foreground"],
+  button[class*="text-white"],
+  [role="button"][class*="bg-primary"],
+  [role="button"][class*="text-primary-foreground"],
+  [data-slot="button"][data-variant="default"],
+  [data-slot="button"][class*="bg-primary"]
+):active {
+  background: var(--hz-btn-solid-active) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button[class*="bg-primary"],
+  button[class*="bg-foreground"],
+  button[class*="text-primary-foreground"],
+  button[class*="text-white"],
+  [role="button"][class*="bg-primary"],
+  [role="button"][class*="text-primary-foreground"],
+  [data-slot="button"][data-variant="default"],
+  [data-slot="button"][class*="bg-primary"]
+):disabled {
+  background: #303030 !important;
+  color: #8a8a8a !important;
+  border-color: rgba(255, 255, 255, 0.11) !important;
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button[class*="bg-muted"],
+  button[class*="bg-card"],
+  [role="button"][class*="bg-muted"],
+  [role="button"][class*="bg-card"]
+) {
+  background: var(--hz-btn-soft-bg) !important;
+  color: var(--hz-btn-soft-fg) !important;
+  border-color: var(--hz-btn-soft-border) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  button[class*="bg-muted"],
+  button[class*="bg-card"],
+  [role="button"][class*="bg-muted"],
+  [role="button"][class*="bg-card"]
+):not(:disabled):hover {
+  background: var(--hz-btn-soft-hover) !important;
+  color: #f0f0f0 !important;
+  border-color: rgba(255, 255, 255, 0.24) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [aria-selected="true"],
+  [data-state="active"],
+  [data-active="true"],
+  .ui-selected-subtle,
+  [class*="bg-primary/10"],
+  [class*="bg-primary/15"],
+  [class*="bg-primary/20"],
+  [class*="bg-blue/10"],
+  [class*="bg-blue/15"],
+  [class*="bg-blue/20"]
+) {
+  background: var(--hz-btn-soft-active) !important;
+  color: #f1f1f1 !important;
+  border-color: var(--hz-btn-solid-border) !important;
+  box-shadow: none !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="border-border-secondary"],
+  [class*="border-primary"],
+  [class*="border-blue"],
+  [class*="border-sky"],
+  [class*="border-cyan"],
+  [class*="ring-border-secondary"],
+  [class*="ring-primary"],
+  [class*="ring-blue"],
+  [class*="ring-sky"],
+  [class*="ring-cyan"]
+) {
+  border-color: var(--hz-btn-solid-border) !important;
+  --tw-ring-color: var(--hz-focus-ring) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(
+  [class*="hover:border-border-secondary"],
+  [class*="hover:border-primary"],
+  [class*="hover:border-blue"],
+  [class*="hover:border-sky"],
+  [class*="hover:border-cyan"]
+):hover {
+  border-color: rgba(255, 255, 255, 0.28) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [data-theme-scope="app"],
+  [data-theme-scope="gallery"],
+  [data-theme-scope="asset-workspace"],
+  [data-theme-scope="social"],
+  [data-theme-scope="prompt-manager"],
+  [data-theme-scope="batch-module"],
+  [data-theme-scope="ppt-workshop"],
+  [data-theme-scope="node-workflow"],
+  .agent-panel
+) :is(input[type="checkbox"], input[type="radio"], input[type="range"]) {
+  accent-color: #cfcfcf !important;
+}
+
+/* --- Global Dark Interaction Safety Net (scope-agnostic) --- */
+html.dark[data-theme-engine="v2"] :is(
+  button,
+  [role="button"],
+  a[role="button"],
+  [data-slot="button"],
+  .cursor-pointer
+) {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  button,
+  [role="button"],
+  a[role="button"],
+  [data-slot="button"],
+  .cursor-pointer
+):hover {
+  color: #f1f1f1 !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  button,
+  [role="button"],
+  a[role="button"],
+  [data-slot="button"],
+  .cursor-pointer
+) :is(
+  [class*="hover:text-primary"],
+  [class*="hover:text-blue"],
+  [class*="hover:text-sky"],
+  [class*="hover:text-cyan"],
+  [class*="hover:text-indigo"],
+  [class*="hover:text-violet"],
+  [class*="hover:text-purple"],
+  [class*="group-hover:text-primary"],
+  [class*="group-hover:text-blue"],
+  [class*="group-hover:text-sky"],
+  [class*="group-hover:text-cyan"],
+  [class*="group-hover:text-indigo"],
+  [class*="group-hover:text-violet"],
+  [class*="group-hover:text-purple"]
+) {
+  color: inherit !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  button,
+  [role="button"],
+  a[role="button"],
+  [data-slot="button"],
+  .cursor-pointer
+):is(
+  [class*="hover:border-primary"],
+  [class*="hover:border-blue"],
+  [class*="hover:border-sky"],
+  [class*="hover:border-cyan"],
+  [class*="hover:border-indigo"],
+  [class*="hover:border-violet"],
+  [class*="hover:border-purple"],
+  [class*="hover:border-border-secondary"]
+):hover {
+  border-color: rgba(255, 255, 255, 0.28) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  button,
+  [role="button"],
+  a[role="button"],
+  [data-slot="button"],
+  .cursor-pointer
+):is(
+  [class*="ring-primary"],
+  [class*="ring-blue"],
+  [class*="ring-sky"],
+  [class*="ring-cyan"],
+  [class*="ring-indigo"],
+  [class*="ring-violet"],
+  [class*="ring-purple"],
+  [class*="ring-border-secondary"]
+) {
+  --tw-ring-color: rgba(255, 255, 255, 0.22) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  [class*="bg-primary/10"],
+  [class*="bg-primary/15"],
+  [class*="bg-primary/20"],
+  [class*="bg-blue/10"],
+  [class*="bg-blue/15"],
+  [class*="bg-blue/20"],
+  [class*="bg-sky/10"],
+  [class*="bg-sky/15"],
+  [class*="bg-sky/20"],
+  [class*="bg-cyan/10"],
+  [class*="bg-cyan/15"],
+  [class*="bg-cyan/20"],
+  [class*="bg-indigo/10"],
+  [class*="bg-indigo/15"],
+  [class*="bg-indigo/20"],
+  [class*="bg-violet/10"],
+  [class*="bg-violet/15"],
+  [class*="bg-violet/20"],
+  [class*="bg-purple/10"],
+  [class*="bg-purple/15"],
+  [class*="bg-purple/20"]
+) {
+  background: rgba(255, 255, 255, 0.08) !important;
+}

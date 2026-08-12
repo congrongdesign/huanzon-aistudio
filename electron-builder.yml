@@ -1,0 +1,103 @@
+appId: com.huanzon.aistudio
+productName: 环中AIStudio
+copyright: Copyright © 2026 HuanZon
+
+directories:
+  buildResources: electron
+  output: release
+
+npmRebuild: false
+nodeGypRebuild: false
+buildDependenciesFromSource: false
+
+files:
+  - electron/dist/**/*
+  - package.json
+  - "!node_modules"
+  - "!src"
+  - "!public"
+  - "!.next"
+  - "!.desktop-runtime"
+
+extraResources:
+  - from: electron/icon.png
+    to: icon.png
+  - from: .desktop-runtime/updater
+    to: updater
+    filter:
+      - "**/*"
+
+publish:
+  provider: generic
+  url: https://updates.example.com/huanzon-aistudio
+  channel: latest
+
+win:
+  icon: electron/icon.ico
+  signAndEditExecutable: false
+  extraResources:
+    - from: .next/standalone-win
+      to: standalone
+      filter:
+        - "**/*"
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+  artifactName: "${productName}-${version}-win-${arch}.${ext}"
+
+mac:
+  appId: com.huanzon.aistudio
+  bundleVersion: "${version}"
+  category: public.app-category.graphics-design
+  icon: electron/icon.icns
+  extraResources:
+    - from: .next/standalone
+      to: standalone
+      filter:
+        - "**/*"
+  target:
+    - target: dmg
+      arch:
+        - arm64
+        - x64
+    - target: zip
+      arch:
+        - arm64
+        - x64
+  artifactName: "${productName}-${version}-${arch}.${ext}"
+  hardenedRuntime: true
+  gatekeeperAssess: false
+
+linux:
+  icon: electron/icon.png
+  extraResources:
+    - from: .next/standalone
+      to: standalone
+      filter:
+        - "**/*"
+  target:
+    - AppImage
+  category: Graphics
+
+nsis:
+  guid: 7f9f4b4f-5d1f-4c7e-9ef0-9c28437b6d36
+  oneClick: false
+  perMachine: false
+  deleteAppDataOnUninstall: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: electron/icon.ico
+  uninstallerIcon: electron/icon.ico
+  installerHeaderIcon: electron/icon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 环中AIStudio
+  artifactName: "${productName}-${version}-win-${arch}-setup.${ext}"
+
+portable:
+  artifactName: "${productName}-${version}-win-${arch}-portable.${ext}"
+
+asar: true

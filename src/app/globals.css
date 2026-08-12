@@ -1,0 +1,1917 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-border-muted: var(--border-muted);
+  --color-border-secondary: var(--border-secondary);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted-foreground-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --font-sans:
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', ui-sans-serif,
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  --font-serif:
+    'Noto Serif SC', 'Songti SC', 'SimSun', ui-serif, Georgia, Cambria,
+    'Times New Roman', Times, serif;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Light palette tuned toward a neutral Figma-like workspace:
+     soft cool page bg, white cards, neutral gray emphasis. */
+  --background: #edf1f5;
+  --foreground: #1b1f24;
+  --card: #fcfdff;
+  --card-foreground: #1b1f24;
+  --popover: #fcfdff;
+  --popover-foreground: #1b1f24;
+  --primary: #2b3037;
+  --primary-foreground: #ffffff;
+  --secondary: #f6f8fb;
+  --secondary-foreground: #1b1f24;
+  --muted: #f3f6fa;
+  --muted-foreground: #5f6977;
+  --accent: #f0f3f8;
+  --accent-foreground: #1b1f24;
+  --destructive: #c62828;
+  --border: rgba(128, 141, 159, 0.24);
+  --border-muted: rgba(128, 141, 159, 0.16);
+  --border-secondary: rgba(128, 141, 159, 0.34);
+  --input: rgba(128, 141, 159, 0.18);
+  --ring: rgba(43, 48, 55, 0.16);
+  --chart-1: #2b3037;
+  --chart-2: #5f6977;
+  --chart-3: #89919d;
+  --chart-4: #b0b7c1;
+  --chart-5: #d3d8df;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1b1f24;
+  --sidebar-primary: #2b3037;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f1f4f8;
+  --sidebar-accent-foreground: #1b1f24;
+  --sidebar-border: rgba(128, 141, 159, 0.16);
+  --sidebar-ring: rgba(43, 48, 55, 0.16);
+
+  --app-canvas-bg: #f4f7fb;
+  --app-canvas-dots: rgba(122, 131, 144, 0.035);
+  --app-canvas-grid-size: 32px;
+  --app-sidebar-bg: #ffffff;
+  --app-sidebar-border: rgba(128, 141, 159, 0.16);
+  --app-panel-bg: #fcfdff;
+  --app-panel-bg-soft: #f8fafc;
+  --app-panel-border: rgba(128, 141, 159, 0.18);
+  --app-toolbar-bg: #fbfcfe;
+  --app-hover-bg: rgba(31, 35, 40, 0.032);
+  --app-muted-bg: #f3f6fa;
+  --app-input-bg: #ffffff;
+  --app-input-border: rgba(128, 141, 159, 0.20);
+  --app-text-primary: #1b1f24;
+  --app-text-secondary: #5f6977;
+  --app-text-muted: #97a0ad;
+  --app-accent: #2b3037;
+  --app-accent-foreground: #ffffff;
+  --app-accent-light: rgba(43, 48, 55, 0.04);
+  --app-selection: #f4f6f9;
+  --app-selection-strong: #eef2f6;
+  --app-overlay: rgba(17, 24, 39, 0.24);
+  --app-card-shadow: 0 10px 28px rgba(31, 45, 61, 0.07);
+}
+
+.dark {
+  /* Adobe-style neutral dark skin: charcoal grayscale, low saturation, clean contrast. */
+  --background: #111111;
+  --foreground: #f1f1f1;
+  --card: #1d1d1d;
+  --card-foreground: #f1f1f1;
+  --popover: #1d1d1d;
+  --popover-foreground: #f1f1f1;
+  --primary: #d9d9d9;
+  --primary-foreground: #171717;
+  --secondary: #242424;
+  --secondary-foreground: #ededed;
+  --muted: #1e1e1e;
+  --muted-foreground: #bdbdbd;
+  --accent: #262626;
+  --accent-foreground: #f3f3f3;
+  --destructive: #c86565;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-muted: rgba(255, 255, 255, 0.055);
+  --border-secondary: rgba(255, 255, 255, 0.16);
+  --input: rgba(255, 255, 255, 0.075);
+  --ring: rgba(255, 255, 255, 0.16);
+  --chart-1: #f1f1f1;
+  --chart-2: #d7d7d7;
+  --chart-3: #b7b7b7;
+  --chart-4: #8d8d8d;
+  --chart-5: #686868;
+  --sidebar: #171717;
+  --sidebar-foreground: #f1f1f1;
+  --sidebar-primary: #d8d8d8;
+  --sidebar-primary-foreground: #171717;
+  --sidebar-accent: #1e1e1e;
+  --sidebar-accent-foreground: #f1f1f1;
+  --sidebar-border: rgba(255, 255, 255, 0.07);
+  --sidebar-ring: rgba(255, 255, 255, 0.16);
+
+  --app-canvas-bg: #141414;
+  --app-canvas-dots: rgba(255, 255, 255, 0.04);
+  --app-canvas-grid-size: 24px;
+  --app-sidebar-bg: #171717;
+  --app-sidebar-border: rgba(255, 255, 255, 0.07);
+  --app-panel-bg: #1d1d1d;
+  --app-panel-bg-soft: #1a1a1a;
+  --app-panel-border: rgba(255, 255, 255, 0.075);
+  --app-toolbar-bg: #181818;
+  --app-hover-bg: rgba(255, 255, 255, 0.055);
+  --app-muted-bg: #181818;
+  --app-input-bg: #171717;
+  --app-input-border: rgba(255, 255, 255, 0.08);
+  --app-text-primary: #f1f1f1;
+  --app-text-secondary: #dadada;
+  --app-text-muted: #a7a7a7;
+  --app-accent: #dfdfdf;
+  --app-accent-foreground: #141414;
+  --app-accent-light: rgba(255, 255, 255, 0.07);
+  --app-selection: rgba(255, 255, 255, 0.09);
+  --app-overlay: rgba(0, 0, 0, 0.86);
+  --app-card-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    color-scheme: light;
+  }
+  .dark body {
+    color-scheme: dark;
+  }
+}
+
+.canvas-image-item button,
+.canvas-image-item span {
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.canvas-image-item button {
+  white-space: nowrap;
+}
+
+.canvas-transform-layer {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+#canvas-container.is-panning .canvas-pan-hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#canvas-container.is-panning .canvas-image-item,
+#canvas-container.is-panning .canvas-image-item * {
+  transition: none !important;
+}
+
+#canvas-container.is-panning .canvas-image-item > div {
+  box-shadow: none !important;
+}
+
+#canvas-container,
+#canvas-container * {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#canvas-container img,
+.canvas-image-item img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.canvas-top-toolbar,
+.canvas-top-toolbar button,
+.canvas-top-toolbar select,
+.canvas-top-toolbar span,
+.canvas-top-toolbar h1 {
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.canvas-top-toolbar button,
+.canvas-top-toolbar select,
+.canvas-top-toolbar h1 {
+  white-space: nowrap;
+}
+
+.canvas-top-toolbar select {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+:root:not(.dark) {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+:root .theme-icon-dark {
+  display: none;
+}
+
+:root:not(.dark) .theme-icon-light {
+  display: none !important;
+}
+
+:root:not(.dark) .theme-icon-dark {
+  display: block !important;
+}
+
+.dark .theme-icon-light {
+  display: block !important;
+}
+
+.dark .theme-icon-dark {
+  display: none !important;
+}
+
+:root:not(.dark) select,
+:root:not(.dark) option,
+:root:not(.dark) optgroup {
+  color-scheme: light !important;
+  background-color: #ffffff !important;
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) select option:checked,
+:root:not(.dark) select option:hover,
+:root:not(.dark) select option:focus {
+  background: #edf8f1 !important;
+  color: #111827 !important;
+  box-shadow: 0 0 0 1000px #edf8f1 inset !important;
+  -webkit-text-fill-color: #111827 !important;
+}
+
+.dark select,
+.dark option,
+.dark optgroup {
+  color-scheme: dark !important;
+  background-color: #111827 !important;
+  color: var(--foreground) !important;
+}
+
+.dark select option:checked,
+.dark select option:hover,
+.dark select option:focus {
+  background: #303030 !important;
+  color: #f2f2f2 !important;
+  box-shadow: 0 0 0 1000px #303030 inset !important;
+  -webkit-text-fill-color: #f2f2f2 !important;
+}
+
+:root:not(.dark) .app-shell select,
+:root:not(.dark) .ppt-workshop select {
+  color-scheme: light !important;
+  background-color: #ffffff !important;
+  color: var(--foreground) !important;
+}
+
+body {
+  @apply font-sans;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.dark body {
+  background: #101010;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(-8px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Theme-aware utility classes */
+.bg-app-canvas { background-color: var(--app-canvas-bg); }
+.bg-app-sidebar { background-color: var(--app-sidebar-bg); }
+.bg-app-panel { background-color: var(--app-panel-bg); }
+.bg-app-toolbar { background-color: var(--app-toolbar-bg); }
+.bg-app-hover:hover { background-color: var(--app-hover-bg); }
+.bg-app-input { background-color: var(--app-input-bg); }
+.border-app { border-color: var(--app-panel-border); }
+.text-app-primary { color: var(--app-text-primary); }
+.text-app-secondary { color: var(--app-text-secondary); }
+.text-app-muted { color: var(--app-text-muted); }
+.bg-app-accent { background-color: var(--app-accent); }
+.text-app-accent { color: var(--app-accent); }
+.bg-app-accent-light { background-color: var(--app-accent-light); }
+.bg-app-selection { background-color: var(--app-selection); }
+.shadow-app-card { box-shadow: var(--app-card-shadow); }
+.bg-app-muted { background-color: var(--app-muted-bg); }
+.border-app-muted { border-color: var(--border-muted); }
+
+/* Shared module surfaces */
+.app-module-shell {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.app-module-sidebar,
+.app-module-toolbar,
+.app-module-panel {
+  background-color: var(--app-panel-bg);
+  border-color: var(--app-panel-border);
+}
+
+.app-module-sidebar {
+  background-color: var(--app-sidebar-bg);
+}
+
+.app-module-sidebar {
+  box-shadow: inset -1px 0 0 var(--app-sidebar-border), 10px 0 28px rgba(31, 45, 61, 0.04);
+}
+
+.app-module-toolbar {
+  background-color: var(--app-toolbar-bg);
+  box-shadow: inset 0 -1px 0 var(--app-panel-border), 0 8px 20px rgba(31, 45, 61, 0.03);
+}
+
+.app-module-workspace {
+  background: var(--app-canvas-bg);
+}
+
+.app-module-panel-soft {
+  background: var(--app-panel-bg-soft);
+  border-color: var(--app-panel-border);
+  box-shadow: var(--app-card-shadow);
+}
+
+.ppt-workshop-logo-mark {
+  background: #1f2329;
+  border-color: rgba(31, 35, 41, 0.92);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    0 8px 18px rgba(31, 35, 41, 0.14);
+}
+
+.ppt-workshop-logo-mark img {
+  filter: none;
+}
+
+.dark .app-module-sidebar {
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.06), 10px 0 28px rgba(0, 0, 0, 0.32);
+}
+
+.dark .app-module-toolbar {
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.06), 0 8px 20px rgba(0, 0, 0, 0.30);
+}
+
+.bg-app-panel-soft {
+  background-color: var(--app-panel-bg-soft);
+}
+
+.canvas-box-selection {
+  background: rgba(43, 48, 55, 0.025) !important;
+  border: 1px dashed rgba(95, 105, 119, 0.42) !important;
+  box-shadow: none !important;
+}
+
+.dark .canvas-box-selection {
+  background: rgba(255, 255, 255, 0.025) !important;
+  border-color: rgba(255, 255, 255, 0.32) !important;
+}
+
+/* Canvas dot grid pattern */
+.canvas-grid-dark {
+  background-image: radial-gradient(circle, var(--app-canvas-dots) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+/* Light mode: larger spacing, more subtle dots */
+:root .canvas-grid-dark,
+.canvas-grid-dark:not(.dark *) {
+  background-image: radial-gradient(circle, var(--app-canvas-dots) 0.8px, transparent 0.8px);
+  background-size: 32px 32px;
+}
+.dark .canvas-grid-dark {
+  background-image:
+    radial-gradient(circle at 50% -12%, rgba(255, 255, 255, 0.045), transparent 38%),
+    radial-gradient(circle, var(--app-canvas-dots) 1px, transparent 1px);
+  background-size: auto, 20px 20px;
+}
+
+/* Main app shell bridge: shared workbench look for canvas, gallery, assets, chat, social and dialogs. */
+.app-shell {
+  background: var(--background);
+}
+
+.dark .app-shell {
+  background: linear-gradient(180deg, #111111 0%, #101010 100%);
+}
+
+.app-shell .bg-card,
+.ppt-workshop .bg-card {
+  background-color: var(--card);
+}
+
+.app-shell .bg-muted,
+.ppt-workshop .bg-muted {
+  background-color: var(--muted);
+}
+
+.app-shell .hover\:bg-muted:hover,
+.ppt-workshop .hover\:bg-muted:hover {
+  background-color: var(--app-hover-bg);
+}
+
+.app-shell input,
+.app-shell textarea,
+.app-shell select,
+.ppt-workshop input,
+.ppt-workshop textarea,
+.ppt-workshop select {
+  color: var(--foreground);
+}
+
+.app-shell input::placeholder,
+.app-shell textarea::placeholder,
+.ppt-workshop input::placeholder,
+.ppt-workshop textarea::placeholder {
+  color: color-mix(in srgb, var(--muted-foreground) 72%, transparent);
+}
+
+.app-shell .ui-selected-subtle,
+.ppt-workshop .ui-selected-subtle {
+  background: var(--app-selection);
+  color: var(--primary);
+  border-color: var(--border-secondary);
+}
+
+/* Light workbench: keep the work surface flat and slightly cooler than sidebars. */
+:root:not(.dark) .app-shell,
+:root:not(.dark) .ppt-workshop {
+  background-image: none !important;
+}
+
+:root:not(.dark) .ppt-workshop {
+  background: var(--app-canvas-bg) !important;
+}
+
+:root:not(.dark) .app-shell .bg-card,
+:root:not(.dark) .ppt-workshop .bg-card {
+  background-color: var(--app-sidebar-bg) !important;
+}
+
+:root:not(.dark) .app-shell .bg-muted,
+:root:not(.dark) .ppt-workshop .bg-muted {
+  background-color: var(--muted) !important;
+}
+
+:root:not(.dark) .app-shell .bg-background,
+:root:not(.dark) .ppt-workshop .bg-background {
+  background-color: var(--app-canvas-bg) !important;
+}
+
+:root:not(.dark) .prompt-manager-shell {
+  background: var(--app-panel-bg) !important;
+  border-color: var(--app-panel-border) !important;
+  box-shadow: var(--app-card-shadow) !important;
+}
+
+:root:not(.dark) .prompt-manager-sidebar {
+  background: var(--app-sidebar-bg) !important;
+}
+
+:root:not(.dark) .prompt-manager-main {
+  background: var(--app-canvas-bg) !important;
+}
+
+:root:not(.dark) .prompt-manager-header {
+  background: var(--app-toolbar-bg) !important;
+}
+
+:root:not(.dark) .prompt-manager-nav-item[data-active="true"] {
+  background: var(--app-selection) !important;
+  color: var(--primary) !important;
+}
+
+/* Light mode selected states: use a cleaner mist-gray instead of dirty heavy gray.
+   Keep this token-level so nav, segmented controls, menus and list selections stay consistent. */
+:root:not(.dark) :is(
+  .app-shell,
+  .ppt-workshop,
+  .gallery-overlay,
+  .prompt-manager,
+  .batch-module,
+  .asset-workspace,
+  .node-workflow-canvas
+) :is(
+  .bg-primary\/10,
+  .bg-primary\/15,
+  .bg-primary\/20,
+  .bg-muted\/70,
+  [class*="bg-primary/10"],
+  [class*="bg-primary/15"],
+  [class*="bg-primary/20"],
+  [class*="bg-muted/70"]
+) {
+  background-color: var(--app-selection) !important;
+  background-image: none !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .ppt-workshop,
+  .gallery-overlay,
+  .prompt-manager,
+  .batch-module,
+  .asset-workspace,
+  .node-workflow-canvas
+) :is(
+  .ring-primary\/20,
+  .ring-primary\/30,
+  [class*="ring-primary/20"],
+  [class*="ring-primary/30"]
+) {
+  --tw-ring-color: rgba(128, 141, 159, 0.14) !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .ppt-workshop,
+  .gallery-overlay,
+  .prompt-manager,
+  .batch-module,
+  .asset-workspace,
+  .node-workflow-canvas
+) :is(
+  .border-primary\/20,
+  .border-primary\/25,
+  .border-primary\/30,
+  [class*="border-primary/20"],
+  [class*="border-primary/25"],
+  [class*="border-primary/30"]
+) {
+  border-color: rgba(128, 141, 159, 0.18) !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .ppt-workshop,
+  .gallery-overlay,
+  .prompt-manager,
+  .batch-module,
+  .asset-workspace,
+  .node-workflow-canvas
+) :is(
+  .hover\:bg-primary\/10:hover,
+  .hover\:bg-primary\/15:hover,
+  .hover\:bg-primary\/20:hover,
+  [class*="hover:bg-primary/10"]:hover,
+  [class*="hover:bg-primary/15"]:hover,
+  [class*="hover:bg-primary/20"]:hover
+) {
+  background-color: var(--app-selection-strong) !important;
+}
+
+:root:not(.dark) .prompt-manager-shell {
+  background: var(--app-panel-bg) !important;
+  border-color: var(--app-panel-border) !important;
+  box-shadow: var(--app-card-shadow);
+}
+
+:root:not(.dark) .prompt-manager-sidebar {
+  background: var(--app-sidebar-bg) !important;
+}
+
+:root:not(.dark) .prompt-manager-main {
+  background: var(--app-canvas-bg) !important;
+}
+
+:root:not(.dark) .prompt-manager-nav-item[data-active="true"] {
+  background: var(--app-selection) !important;
+  color: var(--primary) !important;
+}
+
+:root:not(.dark) .asset-workspace {
+  background: var(--app-canvas-bg) !important;
+}
+
+:root:not(.dark) .asset-workspace > aside {
+  background: var(--app-sidebar-bg) !important;
+  box-shadow: inset -1px 0 0 var(--app-sidebar-border), 12px 0 30px rgba(31, 45, 61, 0.04);
+}
+
+:root:not(.dark) .asset-workspace-main {
+  background: var(--app-canvas-bg) !important;
+}
+
+:root:not(.dark) .asset-workspace-main > .min-h-14 {
+  background: var(--app-toolbar-bg) !important;
+  box-shadow: inset 0 -1px 0 var(--app-panel-border), 0 6px 18px rgba(31, 45, 61, 0.03);
+}
+
+:root:not(.dark) .app-shell > button[title="展开导航"] {
+  background: var(--app-sidebar-bg) !important;
+  box-shadow: inset -1px 0 0 var(--app-sidebar-border);
+}
+
+:root:not(.dark) .app-shell > div[style*="width: 56px"] {
+  background: var(--app-sidebar-bg) !important;
+  box-shadow: inset -1px 0 0 var(--app-sidebar-border), 10px 0 24px rgba(31, 45, 61, 0.04);
+}
+
+:root:not(.dark) .app-shell > button[title="展开导航"] + div {
+  background: var(--app-sidebar-bg) !important;
+}
+
+.dark .prompt-manager-shell {
+  background: var(--app-panel-bg) !important;
+  border-color: var(--app-panel-border) !important;
+  box-shadow: var(--app-card-shadow);
+}
+
+.dark .prompt-manager-header {
+  background: var(--app-toolbar-bg) !important;
+}
+
+.dark .asset-workspace {
+  background: var(--app-canvas-bg) !important;
+}
+
+.dark .asset-workspace > aside {
+  background: var(--app-sidebar-bg) !important;
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.07), 12px 0 30px rgba(0, 0, 0, 0.30);
+}
+
+.dark .asset-workspace-main {
+  background: var(--app-canvas-bg) !important;
+}
+
+.dark .asset-workspace-main > .min-h-14 {
+  background: var(--app-toolbar-bg) !important;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.06), 0 6px 18px rgba(0, 0, 0, 0.26);
+}
+
+/* Light neutral sealing layer:
+   remove residual blue/violet/purple accents from the main work surfaces. */
+:root:not(.dark) :is(
+  .app-shell,
+  .gallery-overlay,
+  .asset-workspace,
+  .prompt-manager,
+  .batch-module,
+  .ppt-workshop,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="text-blue"],
+  [class*="text-sky"],
+  [class*="text-cyan"],
+  [class*="text-indigo"],
+  [class*="text-violet"],
+  [class*="text-purple"]
+) {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .gallery-overlay,
+  .asset-workspace,
+  .prompt-manager,
+  .batch-module,
+  .ppt-workshop,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="bg-blue"],
+  [class*="bg-sky"],
+  [class*="bg-cyan"],
+  [class*="bg-indigo"],
+  [class*="bg-violet"],
+  [class*="bg-purple"]
+) {
+  background-color: color-mix(in srgb, var(--card) 88%, var(--muted) 12%) !important;
+  background-image: none !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .gallery-overlay,
+  .asset-workspace,
+  .prompt-manager,
+  .batch-module,
+  .ppt-workshop,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="border-blue"],
+  [class*="border-sky"],
+  [class*="border-cyan"],
+  [class*="border-indigo"],
+  [class*="border-violet"],
+  [class*="border-purple"]
+) {
+  border-color: var(--border) !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .gallery-overlay,
+  .asset-workspace,
+  .prompt-manager,
+  .batch-module,
+  .ppt-workshop,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="ring-blue"],
+  [class*="ring-sky"],
+  [class*="ring-cyan"],
+  [class*="ring-indigo"],
+  [class*="ring-violet"],
+  [class*="ring-purple"]
+) {
+  --tw-ring-color: rgba(100, 116, 139, 0.20) !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .gallery-overlay,
+  .asset-workspace,
+  .prompt-manager,
+  .batch-module,
+  .ppt-workshop,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="from-blue"],
+  [class*="from-sky"],
+  [class*="from-cyan"],
+  [class*="from-indigo"],
+  [class*="from-violet"],
+  [class*="from-purple"]
+) {
+  --tw-gradient-from: #f3f4f6 var(--tw-gradient-from-position) !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .gallery-overlay,
+  .asset-workspace,
+  .prompt-manager,
+  .batch-module,
+  .ppt-workshop,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="via-blue"],
+  [class*="via-sky"],
+  [class*="via-cyan"],
+  [class*="via-indigo"],
+  [class*="via-violet"],
+  [class*="via-purple"]
+) {
+  --tw-gradient-via: #e5e7eb var(--tw-gradient-via-position) !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .gallery-overlay,
+  .asset-workspace,
+  .prompt-manager,
+  .batch-module,
+  .ppt-workshop,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="to-blue"],
+  [class*="to-sky"],
+  [class*="to-cyan"],
+  [class*="to-indigo"],
+  [class*="to-violet"],
+  [class*="to-purple"]
+) {
+  --tw-gradient-to: #d1d5db var(--tw-gradient-to-position) !important;
+}
+
+:root:not(.dark) :is(
+  .app-shell,
+  .gallery-overlay,
+  .asset-workspace,
+  .prompt-manager,
+  .batch-module,
+  .ppt-workshop,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="shadow-blue"],
+  [class*="shadow-sky"],
+  [class*="shadow-cyan"],
+  [class*="shadow-indigo"],
+  [class*="shadow-violet"],
+  [class*="shadow-purple"]
+) {
+  box-shadow: var(--app-card-shadow) !important;
+}
+
+/* Dark surfaces use translucent blue-gray layers instead of flat black blocks. */
+
+/* Gallery quiet mode: dense image browsing needs calmer, opaque surfaces than the canvas. */
+.gallery-overlay {
+  background: #f6f7f8 !important;
+}
+
+.gallery-overlay .gallery-toolbar,
+.gallery-overlay .gallery-tag-bar {
+  background: rgba(255, 255, 255, 0.97);
+}
+
+.gallery-overlay .gallery-sidebar,
+.gallery-overlay .gallery-detail-panel {
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.gallery-overlay .gallery-content,
+.gallery-overlay .gallery-content-surface {
+  background: #f8f9fb;
+}
+
+.gallery-overlay .gallery-card-meta {
+  opacity: 0.62;
+  transition: opacity 150ms ease;
+}
+
+.gallery-overlay .gallery-card-tags {
+  opacity: 0.58;
+  transition: opacity 150ms ease;
+}
+
+.gallery-overlay .gallery-tone-dot {
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.gallery-overlay .gallery-card:hover .gallery-card-meta,
+.gallery-overlay .gallery-card:hover .gallery-card-tags,
+.gallery-overlay .gallery-card:hover .gallery-tone-dot {
+  opacity: 1;
+}
+
+
+
+/* Gallery must be fully opaque (no glass/translucent layering). */
+.gallery-overlay,
+.gallery-overlay .gallery-toolbar,
+.gallery-overlay .gallery-tag-bar,
+.gallery-overlay .gallery-sidebar,
+.gallery-overlay .gallery-content,
+.gallery-overlay .gallery-content-surface,
+.gallery-overlay .gallery-detail-panel {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.gallery-overlay [class*='backdrop-blur'] {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+:root:not(.dark) .gallery-overlay {
+  background: #f3f4f6 !important;
+}
+
+:root:not(.dark) .gallery-overlay .gallery-toolbar,
+:root:not(.dark) .gallery-overlay .gallery-tag-bar,
+:root:not(.dark) .gallery-overlay .gallery-sidebar,
+:root:not(.dark) .gallery-overlay .gallery-detail-panel,
+:root:not(.dark) .gallery-overlay .bg-card,
+:root:not(.dark) .gallery-overlay .bg-popover,
+:root:not(.dark) .gallery-overlay .bg-muted,
+:root:not(.dark) .gallery-overlay [class*='bg-muted/'],
+:root:not(.dark) .gallery-overlay [class*='bg-card/'],
+:root:not(.dark) .gallery-overlay [class*='bg-popover/'] {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+:root:not(.dark) .gallery-overlay .gallery-content,
+:root:not(.dark) .gallery-overlay .gallery-content-surface {
+  background: #f5f6f8 !important;
+  background-image: none !important;
+}
+
+.dark .gallery-overlay {
+  background: #161616 !important;
+}
+
+.dark .gallery-overlay .gallery-toolbar,
+.dark .gallery-overlay .gallery-tag-bar,
+.dark .gallery-overlay .gallery-sidebar,
+.dark .gallery-overlay .gallery-detail-panel,
+.dark .gallery-overlay .bg-card,
+.dark .gallery-overlay .bg-popover,
+.dark .gallery-overlay .bg-muted,
+.dark .gallery-overlay [class*='bg-muted/'],
+.dark .gallery-overlay [class*='bg-card/'],
+.dark .gallery-overlay [class*='bg-popover/'] {
+  background-color: #222222 !important;
+  background-image: none !important;
+}
+
+.dark .gallery-overlay .gallery-content,
+.dark .gallery-overlay .gallery-content-surface {
+  background: #171717 !important;
+  background-image: none !important;
+}
+
+.dark .gallery-overlay [class*='bg-black/'],
+.dark .gallery-overlay [class*='bg-white/'] {
+  background-color: #232323 !important;
+  background-image: none !important;
+}
+
+/* Asset library uses the same luminous depth while keeping image inspection neutral. */
+
+/* Adobe neutral overrides: desaturate hard-coded colorful utility classes in dark mode. */
+
+/* Portal-like app dialogs need a stronger glass edge than in-flow cards. */
+
+.app-shell button,
+.ppt-workshop button,
+.agent-panel button {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  .app-shell,
+  .ppt-workshop,
+  .gallery-overlay,
+  .prompt-manager,
+  .batch-module,
+  .asset-workspace,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="text-blue"],
+  [class*="text-sky"],
+  [class*="text-cyan"],
+  [class*="text-indigo"],
+  [class*="text-violet"],
+  [class*="text-purple"]
+) {
+  color: #e0e0e0 !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  .app-shell,
+  .ppt-workshop,
+  .gallery-overlay,
+  .prompt-manager,
+  .batch-module,
+  .asset-workspace,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="bg-blue"],
+  [class*="bg-sky"],
+  [class*="bg-cyan"],
+  [class*="bg-indigo"],
+  [class*="bg-violet"],
+  [class*="bg-purple"]
+) {
+  background-color: #262626 !important;
+  color: #f2f2f2 !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  .app-shell,
+  .ppt-workshop,
+  .gallery-overlay,
+  .prompt-manager,
+  .batch-module,
+  .asset-workspace,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="border-blue"],
+  [class*="border-sky"],
+  [class*="border-cyan"],
+  [class*="border-indigo"],
+  [class*="border-violet"],
+  [class*="border-purple"]
+) {
+  border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+html.dark[data-theme-engine="v2"] :is(
+  .app-shell,
+  .ppt-workshop,
+  .gallery-overlay,
+  .prompt-manager,
+  .batch-module,
+  .asset-workspace,
+  .node-workflow-canvas,
+  .agent-panel
+) :is(
+  [class*="ring-blue"],
+  [class*="ring-sky"],
+  [class*="ring-cyan"],
+  [class*="ring-indigo"],
+  [class*="ring-violet"],
+  [class*="ring-purple"]
+) {
+  --tw-ring-color: rgba(255, 255, 255, 0.20) !important;
+}
+
+.app-shell button:focus-visible,
+.ppt-workshop button:focus-visible,
+.agent-panel button:focus-visible,
+.app-shell input:focus-visible,
+.app-shell textarea:focus-visible,
+.ppt-workshop input:focus-visible,
+.ppt-workshop textarea:focus-visible,
+.agent-panel input:focus-visible,
+.agent-panel textarea:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Agent floating window uses the same surface hierarchy instead of a permanent dark skin. */
+.agent-panel {
+  --agent-panel-start: rgba(255, 255, 255, 0.98);
+  --agent-panel-end: rgba(248, 250, 252, 0.98);
+  --agent-panel-border: rgba(124, 58, 237, 0.22);
+  --agent-panel-shadow:
+    0 0 0 1px rgba(124, 58, 237, 0.10),
+    0 25px 60px -12px rgba(15, 23, 42, 0.20),
+    0 0 40px -8px rgba(124, 58, 237, 0.12);
+  color: var(--foreground);
+}
+
+.agent-panel .agent-config-panel {
+  background: color-mix(in srgb, var(--muted) 68%, transparent);
+  border-color: var(--border);
+}
+
+.agent-panel .agent-input-shell {
+  background: color-mix(in srgb, var(--muted) 78%, transparent);
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.10);
+}
+
+:root:not(.dark) .agent-panel .text-zinc-200,
+:root:not(.dark) .agent-panel .text-zinc-300,
+:root:not(.dark) .agent-panel .text-zinc-400 {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) .agent-panel .text-zinc-500,
+:root:not(.dark) .agent-panel .text-zinc-600 {
+  color: var(--muted-foreground) !important;
+}
+
+:root:not(.dark) .agent-panel .bg-zinc-800\/50,
+:root:not(.dark) .agent-panel .bg-zinc-800\/60,
+:root:not(.dark) .agent-panel .bg-zinc-800\/70,
+:root:not(.dark) .agent-panel .bg-zinc-800\/80,
+:root:not(.dark) .agent-panel .bg-zinc-900\/80 {
+  background: color-mix(in srgb, var(--muted) 86%, transparent) !important;
+}
+
+:root:not(.dark) .agent-panel .border-zinc-700\/40,
+:root:not(.dark) .agent-panel .border-zinc-700\/50,
+:root:not(.dark) .agent-panel .border-zinc-800\/60,
+:root:not(.dark) .agent-panel .border-zinc-800\/80 {
+  border-color: var(--border) !important;
+}
+
+:root:not(.dark) .agent-panel .hover\:text-white:hover {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) .agent-panel .hover\:bg-zinc-700\/60:hover {
+  background: var(--app-hover-bg) !important;
+}
+
+:root:not(.dark) .agent-panel .bg-zinc-700 {
+  background: color-mix(in srgb, var(--muted) 92%, var(--foreground) 8%) !important;
+}
+
+:root:not(.dark) .agent-panel .placeholder\:text-zinc-600::placeholder {
+  color: color-mix(in srgb, var(--muted-foreground) 70%, transparent) !important;
+}
+
+/* Login page animations */
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@keyframes textShimmer {
+  0% { background-position: 100% 0; }
+  50% { background-position: 0% 0; }
+  100% { background-position: 100% 0; }
+}
+@keyframes flowLight {
+  0% { background-position: 100% 0; }
+  50% { background-position: 0% 0; }
+  100% { background-position: 100% 0; }
+}
+
+/* Agent floating button animations */
+@keyframes agentGlowRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes agentPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.15); }
+}
+@keyframes agentRingPulse {
+  0%, 100% { opacity: 0; transform: scale(0.9); }
+  50% { opacity: 0.6; transform: scale(1.3); }
+}
+@keyframes agentFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* PPT workbench theme bridge: the component was originally hard-coded as dark UI. */
+:root:not(.dark) .ppt-workshop {
+  background: var(--app-canvas-bg) !important;
+  color: var(--foreground);
+}
+
+:root:not(.dark) .ppt-workshop .bg-\[\#0f1117\] {
+  background: var(--app-sidebar-bg) !important;
+}
+
+:root:not(.dark) .ppt-workshop .bg-\[\#12141e\],
+:root:not(.dark) .ppt-workshop .bg-\[\#1a1d28\],
+:root:not(.dark) .ppt-workshop .bg-\[\#151823\] {
+  background: var(--app-sidebar-bg) !important;
+  backdrop-filter: blur(18px);
+}
+
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.03\],
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.04\],
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.05\],
+:root:not(.dark) .ppt-workshop .bg-white\/5 {
+  background: color-mix(in srgb, var(--card) 82%, transparent) !important;
+}
+
+:root:not(.dark) .ppt-workshop .hover\:bg-white\/\[0\.03\]:hover,
+:root:not(.dark) .ppt-workshop .hover\:bg-white\/\[0\.06\]:hover,
+:root:not(.dark) .ppt-workshop .hover\:bg-white\/\[0\.08\]:hover {
+  background: var(--app-hover-bg) !important;
+}
+
+:root:not(.dark) .ppt-workshop .border-white\/5,
+:root:not(.dark) .ppt-workshop .border-white\/10 {
+  border-color: var(--border) !important;
+}
+
+:root:not(.dark) .ppt-workshop .text-white,
+:root:not(.dark) .ppt-workshop .text-white\/80,
+:root:not(.dark) .ppt-workshop .text-zinc-100,
+:root:not(.dark) .ppt-workshop .text-zinc-200,
+:root:not(.dark) .ppt-workshop .text-zinc-300,
+:root:not(.dark) .ppt-workshop .text-zinc-400 {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) .ppt-workshop .text-zinc-500,
+:root:not(.dark) .ppt-workshop .text-zinc-600,
+:root:not(.dark) .ppt-workshop .text-zinc-700 {
+  color: var(--muted-foreground) !important;
+}
+
+:root:not(.dark) .ppt-workshop input,
+:root:not(.dark) .ppt-workshop textarea,
+:root:not(.dark) .ppt-workshop select {
+  color: var(--foreground) !important;
+  background: var(--app-input-bg) !important;
+  border-color: var(--app-input-border) !important;
+}
+
+:root:not(.dark) .ppt-workshop ::placeholder {
+  color: color-mix(in srgb, var(--muted-foreground) 68%, transparent) !important;
+}
+
+:root:not(.dark) .ppt-workshop .shadow-lg,
+:root:not(.dark) .ppt-workshop .shadow-xl {
+  box-shadow: var(--app-card-shadow) !important;
+}
+
+@keyframes pptLightReadablePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.82; }
+}
+
+:root:not(.dark) .ppt-workshop .animate-pulse {
+  animation-name: pptLightReadablePulse !important;
+}
+
+/* Keep selected left nav item in clear violet across themes. */
+.ppt-workshop .ppt-nav-selected {
+  color: var(--primary) !important;
+}
+
+.ppt-workshop .ppt-nav-selected-icon {
+  color: var(--primary) !important;
+}
+
+/* Action and status toasts keep high contrast in both themes. */
+:root:not(.dark) .animate-fade-in {
+  box-shadow: 0 10px 32px rgba(15, 23, 42, 0.14);
+}
+
+/* Dark mode keeps native dark PPT UI, but normalizes very weak dark text. */
+
+/* Disabled workbench actions stay readable while remaining visibly inactive. */
+.ppt-workshop button:disabled {
+  opacity: 0.64 !important;
+  cursor: not-allowed;
+}
+
+.ppt-workshop button:disabled[class*="bg-gradient-to-r"][class*="from-violet-600"][class*="to-blue-600"] {
+  color: rgba(255, 255, 255, 0.94) !important;
+  background-image: linear-gradient(90deg, rgba(77, 83, 92, 0.78), rgba(113, 120, 130, 0.78)) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 0 1px rgba(200, 200, 200, 0.14);
+}
+
+/* Keep gradient button text/highlights readable in PPT workbench light skin. */
+:root:not(.dark) .ppt-workshop [class*="bg-gradient-to-r"][class*="from-violet-600"][class*="to-blue-600"] {
+  color: #ffffff !important;
+}
+
+:root:not(.dark) .ppt-workshop [class~="bg-violet-600"],
+:root:not(.dark) .ppt-workshop [class~="bg-violet-500"],
+:root:not(.dark) .ppt-workshop [class~="bg-blue-500"],
+:root:not(.dark) .ppt-workshop .bg-violet-600\/80,
+:root:not(.dark) .ppt-workshop .bg-violet-500\/80,
+:root:not(.dark) .ppt-workshop .bg-blue-600\/80,
+:root:not(.dark) .ppt-workshop .bg-blue-500\/80,
+:root:not(.dark) .ppt-workshop .bg-emerald-600\/80,
+:root:not(.dark) .ppt-workshop .bg-red-600\/80 {
+  color: #ffffff !important;
+}
+
+:root:not(.dark) .ppt-workshop [class~="bg-violet-600"] [class*="text-zinc-"],
+:root:not(.dark) .ppt-workshop [class~="bg-violet-500"] [class*="text-zinc-"],
+:root:not(.dark) .ppt-workshop [class~="bg-blue-500"] [class*="text-zinc-"] {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Light-only contrast guardrails for legacy dark utility classes in PPT workbench.
+   Keep this scoped to :root:not(.dark) so dark mode keeps its own glass palette. */
+:root:not(.dark) .ppt-workshop .text-violet-100,
+:root:not(.dark) .ppt-workshop .text-violet-100\/55,
+:root:not(.dark) .ppt-workshop .text-violet-200,
+:root:not(.dark) .ppt-workshop .text-violet-200\/60,
+:root:not(.dark) .ppt-workshop .text-violet-300,
+:root:not(.dark) .ppt-workshop .text-violet-300\/70,
+:root:not(.dark) .ppt-workshop .text-violet-400,
+:root:not(.dark) .ppt-workshop .text-violet-500,
+:root:not(.dark) .ppt-workshop .text-blue-200,
+:root:not(.dark) .ppt-workshop .text-blue-200\/80,
+:root:not(.dark) .ppt-workshop .text-blue-300,
+:root:not(.dark) .ppt-workshop .text-blue-400,
+:root:not(.dark) .ppt-workshop .text-emerald-300,
+:root:not(.dark) .ppt-workshop .text-emerald-400 {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) .ppt-workshop .text-red-300,
+:root:not(.dark) .ppt-workshop .text-red-400 {
+  color: #dc2626 !important;
+}
+
+:root:not(.dark) .ppt-workshop .text-amber-100,
+:root:not(.dark) .ppt-workshop .text-amber-100\/70,
+:root:not(.dark) .ppt-workshop .text-amber-200,
+:root:not(.dark) .ppt-workshop .text-amber-300 {
+  color: var(--muted-foreground) !important;
+}
+
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.02\],
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.06\],
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.08\],
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.09\],
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.1\],
+:root:not(.dark) .ppt-workshop .bg-white\/\[0\.14\] {
+  background: color-mix(in srgb, var(--card) 88%, var(--muted) 12%) !important;
+}
+
+:root:not(.dark) .ppt-workshop .hover\:bg-white\/\[0\.05\]:hover,
+:root:not(.dark) .ppt-workshop .hover\:bg-white\/\[0\.09\]:hover,
+:root:not(.dark) .ppt-workshop .hover\:bg-white\/\[0\.1\]:hover,
+:root:not(.dark) .ppt-workshop .hover\:bg-white\/\[0\.14\]:hover {
+  background: var(--app-hover-bg) !important;
+}
+
+:root:not(.dark) .ppt-workshop .border-white\/8,
+:root:not(.dark) .ppt-workshop .border-white\/20,
+:root:not(.dark) .ppt-workshop .ring-white\/30 {
+  border-color: var(--border-secondary) !important;
+}
+
+:root:not(.dark) .ppt-workshop .bg-violet-500\/8,
+:root:not(.dark) .ppt-workshop .bg-violet-500\/10,
+:root:not(.dark) .ppt-workshop .bg-violet-500\/15,
+:root:not(.dark) .ppt-workshop .bg-blue-500\/10,
+:root:not(.dark) .ppt-workshop .bg-blue-500\/15,
+:root:not(.dark) .ppt-workshop .bg-emerald-500\/10,
+:root:not(.dark) .ppt-workshop .bg-emerald-500\/20,
+:root:not(.dark) .ppt-workshop .bg-amber-500\/10,
+:root:not(.dark) .ppt-workshop .bg-amber-500\/15 {
+  background: color-mix(in srgb, var(--card) 88%, var(--muted) 12%) !important;
+}
+
+:root:not(.dark) .ppt-workshop .border-violet-500\/20,
+:root:not(.dark) .ppt-workshop .border-violet-500\/30,
+:root:not(.dark) .ppt-workshop .border-violet-500\/50,
+:root:not(.dark) .ppt-workshop .border-violet-500\/70 {
+  border-color: var(--border-secondary) !important;
+}
+
+:root:not(.dark) .ppt-workshop .ring-violet-500\/20,
+:root:not(.dark) .ppt-workshop .ring-white\/30 {
+  --tw-ring-color: rgba(128, 141, 159, 0.22) !important;
+}
+
+:root:not(.dark) .ppt-workshop .bg-black\/10,
+:root:not(.dark) .ppt-workshop .bg-black\/20 {
+  background: color-mix(in srgb, var(--muted) 76%, transparent) !important;
+}
+
+:root:not(.dark) .ppt-workshop button:disabled {
+  opacity: 1 !important;
+  color: #64748b !important;
+  background: #eef1f5 !important;
+  border-color: rgba(148, 163, 184, 0.38) !important;
+  box-shadow: none !important;
+}
+
+:root:not(.dark) .ppt-workshop button:disabled[class*="bg-gradient-to-r"][class*="from-violet-600"][class*="to-blue-600"] {
+  color: rgba(255, 255, 255, 0.94) !important;
+  background-color: transparent !important;
+  background-image: linear-gradient(90deg, rgba(77, 83, 92, 0.78), rgba(113, 120, 130, 0.78)) !important;
+  border-color: rgba(128, 141, 159, 0.28) !important;
+}
+
+/* Light-mode disabled icon-only controls with explicit colored text remain legible. */
+:root:not(.dark) .ppt-workshop button:disabled .text-white,
+:root:not(.dark) .ppt-workshop button:disabled [class*="text-zinc-"],
+:root:not(.dark) .ppt-workshop button:disabled [class*="text-violet-"] {
+  color: #64748b !important;
+}
+
+/* PPT modal roots render outside .ppt-workshop, so they need an explicit theme bridge. */
+.ppt-modal-surface {
+  background: var(--app-panel-bg-soft) !important;
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  box-shadow: var(--app-card-shadow);
+}
+
+:root:not(.dark) .ppt-modal-surface .text-white,
+:root:not(.dark) .ppt-modal-surface .text-zinc-100,
+:root:not(.dark) .ppt-modal-surface .text-zinc-200,
+:root:not(.dark) .ppt-modal-surface .text-zinc-300,
+:root:not(.dark) .ppt-modal-surface .text-zinc-400 {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .text-zinc-500,
+:root:not(.dark) .ppt-modal-surface .text-zinc-600 {
+  color: var(--muted-foreground) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .text-violet-100,
+:root:not(.dark) .ppt-modal-surface .text-violet-200,
+:root:not(.dark) .ppt-modal-surface .text-violet-300,
+:root:not(.dark) .ppt-modal-surface .text-violet-400 {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .text-blue-300,
+:root:not(.dark) .ppt-modal-surface .text-blue-400 {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .text-emerald-300,
+:root:not(.dark) .ppt-modal-surface .text-emerald-400 {
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .text-red-300,
+:root:not(.dark) .ppt-modal-surface .text-red-400 {
+  color: #dc2626 !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .text-amber-200,
+:root:not(.dark) .ppt-modal-surface .text-amber-300 {
+  color: var(--muted-foreground) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .border-white\/5,
+:root:not(.dark) .ppt-modal-surface .border-white\/8,
+:root:not(.dark) .ppt-modal-surface .border-white\/10 {
+  border-color: var(--border-secondary) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .bg-white\/\[0\.02\],
+:root:not(.dark) .ppt-modal-surface .bg-white\/\[0\.03\],
+:root:not(.dark) .ppt-modal-surface .bg-white\/\[0\.04\],
+:root:not(.dark) .ppt-modal-surface .bg-white\/\[0\.05\],
+:root:not(.dark) .ppt-modal-surface .bg-white\/\[0\.06\],
+:root:not(.dark) .ppt-modal-surface .bg-white\/5 {
+  background: var(--card) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .hover\:bg-white\/\[0\.03\]:hover,
+:root:not(.dark) .ppt-modal-surface .hover\:bg-white\/\[0\.04\]:hover,
+:root:not(.dark) .ppt-modal-surface .hover\:bg-white\/\[0\.05\]:hover,
+:root:not(.dark) .ppt-modal-surface .hover\:bg-white\/\[0\.06\]:hover {
+  background: var(--app-hover-bg) !important;
+}
+
+:root:not(.dark) .ppt-modal-surface .hover\:text-white:hover {
+  color: var(--foreground) !important;
+}
+
+/* Node canvas, chat inspector, menus and generic dark UI polish. */
+
+/* Main chat message cards. Scoped to the ChatCanvas message list so social chat stays unchanged. */
+[data-chat-messages="true"] {
+  scroll-padding-block: 16px;
+}
+
+[data-chat-messages="true"] > .flex {
+  align-items: flex-start;
+  gap: 10px;
+  margin-block: 8px;
+}
+
+[data-chat-messages="true"] > .flex.justify-start {
+  padding-right: 18px;
+}
+
+[data-chat-messages="true"] > .flex.justify-end {
+  padding-left: 18px;
+}
+
+[data-chat-messages="true"] > .flex.justify-start::before,
+[data-chat-messages="true"] > .flex.justify-end::after {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.08);
+}
+
+[data-chat-messages="true"] > .flex.justify-start::before {
+  content: "AI";
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--muted-foreground);
+}
+
+[data-chat-messages="true"] > .flex.justify-end::after {
+  content: "我";
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+[data-chat-messages="true"] > .flex > div {
+  max-width: min(86%, 32rem) !important;
+  border-radius: 8px !important;
+  padding: 12px 13px !important;
+  line-height: 1.65;
+  overflow: hidden;
+}
+
+[data-chat-messages="true"] > .flex.justify-start > div {
+  background: var(--card) !important;
+  border-color: var(--border) !important;
+  box-shadow: 0 8px 22px rgba(31, 45, 61, 0.06);
+}
+
+[data-chat-messages="true"] .generation-batch-card {
+  width: min(100%, 408px);
+  transition:
+    max-height 220ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    background-color 180ms ease;
+}
+
+[data-chat-messages="true"] .generation-batch-card[data-expanded="false"] {
+  max-height: 340px;
+}
+
+[data-chat-messages="true"] .generation-batch-card[data-expanded="true"] {
+  max-height: 760px;
+  transform: translateY(-1px);
+}
+
+[data-chat-messages="true"] .generation-batch-stack {
+  min-height: 240px;
+  transition:
+    height 180ms ease,
+    transform 180ms ease;
+}
+
+[data-chat-messages="true"] .generation-batch-stack-image {
+  max-height: 232px;
+  object-fit: contain !important;
+}
+
+[data-chat-messages="true"] .generation-batch-stack:hover .generation-batch-stack-image {
+  transform: translateY(-2px) rotate(0deg) !important;
+}
+
+[data-chat-messages="true"] .generation-batch-grid {
+  align-items: start;
+  animation: chat-batch-expand 180ms ease both;
+}
+
+[data-chat-messages="true"] .generation-batch-grid > button,
+[data-chat-messages="true"] .generation-batch-grid > div {
+  min-height: 118px;
+}
+
+[data-chat-messages="true"] .generation-batch-grid img {
+  display: block;
+  max-height: 240px;
+  object-fit: contain !important;
+}
+
+@keyframes chat-batch-expand {
+  from {
+    opacity: 0.72;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-chat-messages="true"] > .flex.justify-end > div {
+  background: color-mix(in srgb, var(--card) 92%, var(--primary) 8%) !important;
+  border-color: var(--border-secondary) !important;
+  box-shadow: 0 8px 22px rgba(31, 45, 61, 0.07);
+}
+
+[data-chat-messages="true"] img[alt="ref"] {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+  border-color: var(--border) !important;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.08);
+}
+
+[data-chat-messages="true"] div[title="拖拽到画布添加图片"] {
+  margin-top: 10px !important;
+  border-radius: 8px;
+}
+
+[data-chat-messages="true"] div[title="拖拽到画布添加图片"] img {
+  border-radius: 8px !important;
+  border-color: var(--border) !important;
+  background: var(--background);
+}
+
+[data-chat-messages="true"] button[title^="复制到输入框"],
+[data-chat-messages="true"] button[title^="查看这条消息"],
+[data-chat-messages="true"] button[title^="这条消息"] {
+  display: inline-flex !important;
+  height: 26px;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--background) 82%, transparent);
+  padding: 0 9px;
+  color: var(--muted-foreground);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease;
+}
+
+[data-chat-messages="true"] button[title^="复制到输入框"]:hover,
+[data-chat-messages="true"] button[title^="查看这条消息"]:hover,
+[data-chat-messages="true"] button[title^="这条消息"]:hover {
+  border-color: var(--border-secondary);
+  background: var(--muted);
+  color: var(--foreground);
+}
+
+[data-chat-empty="true"] {
+  margin: 24px 6px 0 !important;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--card) 82%, transparent);
+  padding: 18px 14px;
+}
+
+.dark [data-chat-messages="true"] > .flex.justify-start > div {
+  background: #1d1d1d !important;
+  border-color: rgba(255, 255, 255, 0.09) !important;
+  box-shadow: none;
+}
+
+.dark [data-chat-messages="true"] > .flex.justify-end > div {
+  background: #242424 !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: none;
+}
+
+.dark [data-chat-messages="true"] > .flex.justify-start::before {
+  background: #171717;
+  border-color: rgba(255, 255, 255, 0.09);
+  color: #bdbdbd;
+  box-shadow: none;
+}
+
+.dark [data-chat-messages="true"] button[title^="复制到输入框"],
+.dark [data-chat-messages="true"] button[title^="查看这条消息"],
+.dark [data-chat-messages="true"] button[title^="这条消息"] {
+  background: #171717;
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+/* Final dark-theme enforcement layer.
+   Legacy components still contain violet/purple/indigo utility classes; in dark mode
+   they are remapped to the blue/cyan reference palette without touching light mode. */
+
+/* Dark UI v2: stronger reference-style dashboard depth. */
+
+/* Dark refinement: keep gallery as a real overlay and reduce neon saturation. */
+
+/* Adobe dark final lock layer:
+   keep this block near the end so it wins over historical neon overrides above. */
+
+/* Additional module-level lock for Adobe-style grayscale dark mode */
+
+/* Neutral wireframe lock:
+   final override for dark mode borders/rings/focus to remove residual blue accents. */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark-mode hotfix: keep project sidebar "+ 新建" button in primary style. */
+
+/* Dark neutral sealing layer (2026-06): remove residual blue/violet leaks in chat/workshop/prompt/agent surfaces. */
+
+/* Dark mode simplification: remove glossy effects and heavy glow in app shells. */
+
+/* Final dark-mode neutral lock (2026-06-13): remove residual blue accents in key high-frequency surfaces. */
+
+[data-dark-fix-project-title="true"] {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+}
+
+[data-dark-fix-project-actions="true"] {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.25rem !important;
+  white-space: nowrap !important;
+}
+
+[data-dark-fix-project-actions="true"] > button {
+  flex-shrink: 0 !important;
+  line-height: 1rem !important;
+}
+
+[data-dark-fix-project-actions="true"] > button[data-project-create-btn="true"] {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+  padding: 0.25rem 0.5rem !important;
+  min-height: 1.5rem !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Dark neutral final pass (2026-06-13 b): force grayscale across residual blue/neon selectors. */
+
+/* Dark neutral final pass (2026-06-13 c): normalize active state, gradient vars and motion jitter. */
+
+/* PPT left-nav precision fix: ensure selected icon contrast and neutral non-selected icon color. */
+
+/* Precision strip fixes for marked issues: PPT top bar + gallery top bar + gallery content background. */
+
+/* Gallery selected border lock in dark mode: always-visible outline for selected cards. */
+
+/* Gallery toolbar tab readability + eliminate residual blue seam in dark mode. */
+
+/* Dropdown/menu neutral lock:
+   Keep option, Radix menu, and command-palette highlight states grayscale.
+   Native select popups are avoided in app code, but these rules are a fallback for
+   browser autocomplete and any third-party menu primitives. */
+:where(
+  [role="listbox"] [role="option"],
+  [data-slot="select-item"],
+  [data-slot="dropdown-menu-item"],
+  [data-slot="dropdown-menu-checkbox-item"],
+  [data-slot="dropdown-menu-radio-item"],
+  [data-slot="dropdown-menu-sub-trigger"],
+  [data-slot="context-menu-item"],
+  [data-slot="context-menu-checkbox-item"],
+  [data-slot="context-menu-radio-item"],
+  [data-slot="context-menu-sub-trigger"],
+  [data-slot="menubar-trigger"],
+  [data-slot="menubar-item"],
+  [data-slot="menubar-checkbox-item"],
+  [data-slot="menubar-radio-item"],
+  [data-slot="menubar-sub-trigger"],
+  [data-slot="navigation-menu-trigger"],
+  [data-slot="navigation-menu-link"],
+  [data-slot="command-item"],
+  [cmdk-item]
+):where(:hover, :focus, [data-highlighted], [data-selected="true"], [aria-selected="true"]) {
+  background: var(--muted) !important;
+  color: var(--foreground) !important;
+  border-color: var(--border) !important;
+  box-shadow: none !important;
+}
+
+:root:not(.dark) :where(
+  [role="listbox"] [role="option"],
+  [data-slot="select-item"],
+  [data-slot="dropdown-menu-item"],
+  [data-slot="dropdown-menu-checkbox-item"],
+  [data-slot="dropdown-menu-radio-item"],
+  [data-slot="dropdown-menu-sub-trigger"],
+  [data-slot="context-menu-item"],
+  [data-slot="context-menu-checkbox-item"],
+  [data-slot="context-menu-radio-item"],
+  [data-slot="context-menu-sub-trigger"],
+  [data-slot="menubar-trigger"],
+  [data-slot="menubar-item"],
+  [data-slot="menubar-checkbox-item"],
+  [data-slot="menubar-radio-item"],
+  [data-slot="menubar-sub-trigger"],
+  [data-slot="navigation-menu-trigger"],
+  [data-slot="navigation-menu-link"],
+  [data-slot="command-item"],
+  [cmdk-item]
+):where(:hover, :focus, [data-highlighted], [data-selected="true"], [aria-selected="true"]) {
+  background: var(--app-selection) !important;
+  color: var(--foreground) !important;
+  border-color: rgba(128, 141, 159, 0.14) !important;
+}
+
+:where(
+  [role="listbox"] [role="option"],
+  [data-slot="select-item"],
+  [data-slot="dropdown-menu-checkbox-item"],
+  [data-slot="dropdown-menu-radio-item"],
+  [data-slot="context-menu-checkbox-item"],
+  [data-slot="context-menu-radio-item"],
+  [data-slot="menubar-checkbox-item"],
+  [data-slot="menubar-radio-item"]
+):where([data-state="checked"], [aria-selected="true"]) {
+  background: var(--muted) !important;
+  color: var(--foreground) !important;
+}
+
+:root:not(.dark) :where(
+  [role="listbox"] [role="option"],
+  [data-slot="select-item"],
+  [data-slot="dropdown-menu-checkbox-item"],
+  [data-slot="dropdown-menu-radio-item"],
+  [data-slot="context-menu-checkbox-item"],
+  [data-slot="context-menu-radio-item"],
+  [data-slot="menubar-checkbox-item"],
+  [data-slot="menubar-radio-item"]
+):where([data-state="checked"], [aria-selected="true"]) {
+  background: var(--app-selection) !important;
+  color: var(--foreground) !important;
+}
+
+:where(
+  [data-slot="select-trigger"],
+  [data-slot="dropdown-menu-trigger"],
+  [data-slot="context-menu-trigger"],
+  [data-slot="menubar-trigger"],
+  [data-slot="navigation-menu-trigger"]
+):where(:focus-visible, [data-state="open"]) {
+  border-color: var(--border-secondary, var(--border)) !important;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--border) 70%, transparent) !important;
+}
+
+:root:not(.dark) :is(
+  button,
+  [role="button"],
+  [data-slot="button"],
+  [data-slot="select-trigger"],
+  [data-slot="select-item"],
+  [data-slot="dropdown-menu-trigger"],
+  [data-slot="context-menu-trigger"],
+  [data-slot="menubar-trigger"],
+  [data-slot="navigation-menu-trigger"]
+):where(:hover, :focus-visible, [data-state="open"]) {
+  border-color: rgba(80, 89, 102, 0.28) !important;
+  box-shadow: none !important;
+}
+
+.dark :is(
+  button,
+  [role="button"],
+  [data-slot="button"],
+  [data-slot="select-trigger"],
+  [data-slot="select-item"],
+  [data-slot="dropdown-menu-trigger"],
+  [data-slot="context-menu-trigger"],
+  [data-slot="menubar-trigger"],
+  [data-slot="navigation-menu-trigger"]
+):where(:hover, :focus-visible, [data-state="open"]) {
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow: none !important;
+}
