@@ -97,8 +97,12 @@ function verifyMacArtifacts() {
 }
 
 function verifyWinArtifacts() {
-  const exes = listRelease(/^环中AIStudio-Setup-\d+\.\d+\.\d+\.exe$/);
+  // Names follow electron-builder.yml win.artifactName:
+  //   环中AIStudio-<version>-win-x64-setup.exe / -portable.exe
+  const exes = listRelease(/^环中AIStudio-\d+\.\d+\.\d+-win-x64-setup\.exe$/);
+  const portableExes = listRelease(/^环中AIStudio-\d+\.\d+\.\d+-win-x64-portable\.exe$/);
   assert(exes.length === 1, `Expected exactly one public Windows installer, found ${exes.length}: ${exes.join(', ')}`);
+  assert(portableExes.length === 1, `Expected exactly one Windows portable exe, found ${portableExes.length}: ${portableExes.join(', ')}`);
   assert(fs.existsSync(path.join(releaseDir, `${exes[0]}.blockmap`)), 'Missing Windows installer blockmap.');
   assert(fs.existsSync(path.join(releaseDir, 'latest.yml')), 'Missing latest.yml for Windows auto update.');
 

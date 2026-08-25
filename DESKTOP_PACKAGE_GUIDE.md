@@ -183,13 +183,16 @@ shasum -a 256 *.exe *.dmg *.zip *.yml *.blockmap > SHA256SUMS.txt
 
 ## 11. 快速故障矩阵
 
-- 启动黑屏/闪退：
-  - 看 `desktop.log`
+- 启动黑屏/闪退 / “Local service did not respond within N seconds”：
+  - 看 `desktop.log`（自 v0.2.1 起会记录：启动环境、standalone 关键文件是否存在、Windows 下 sharp 原生二进制是否存在、每次 TCP 探测失败、以及内置服务最近输出）
+  - 启动就绪探测已改为 TCP 连接探测（不再依赖首页首次编译的 HTTP 响应），超时默认 60 秒，可用环境变量 `DESKTOP_SERVER_TIMEOUT_MS` 调整（5000–300000）
+  - 窗口 URL 统一使用 `127.0.0.1`，避免 Windows 上 `localhost` 解析到 `::1`(IPv6) 导致连不上
   - 检查 `standalone/server.js` 是否打入包内
   - 检查 `5000-5009` 端口占用
 - Windows native 模块异常：
   - 重跑 `desktop:release:win`
   - 确认 `.next/standalone-win` 无软链接
+  - 确认 standalone 内 `node_modules/@img/sharp-win32-x64` 与 `sharp-libvips-win32-x64` 存在（启动日志会输出 standalone/sharp-win32-x64: present/MISSING）
 - 自动更新失败：
   - 检查 `latest*.yml`、blockmap、版本号递增、更新源地址
 - 安装被系统阻止：

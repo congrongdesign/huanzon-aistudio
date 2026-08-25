@@ -13,6 +13,10 @@ let updateCheckInProgress = false;
 let desktopAutoUpdater: AppUpdater | null = null;
 let autoUpdateDisabledReason: string | null = null;
 
+const DEFAULT_SERVER_STARTUP_TIMEOUT_MS = 60_000;
+const SERVER_LOG_TAIL_LIMIT = 200;
+let serverLogTail: string[] = [];
+
 const desktopProductName = '环中AIStudio';
 const legacyUserDataName = 'projects';
 
@@ -447,10 +451,53 @@ function installDownloadedUpdate(): void {
   desktopAutoUpdater.quitAndInstall(false, true);
 }
 
-function waitForServerReady(port: number, timeoutMs = 15000): Promise<void> {
+function getServerStartupTimeoutMs(): number {
+  const raw = Number(process.env.DESKTOP_SERVER_TIMEOUT_MS);
+  if (Number.isFinite(raw) && raw >= 5000 && raw <= 300000) {
+    return Math.round(raw);
+  }
+  return DEFAULT_SERVER_STARTUP_TIMEOUT_MS;
+}
+
+function pushServerLogTail(line: string): void {
+  const trimmed = line.trim();
+  if (!trimmed) return;
+  serverLogTail.push(trimmed);
+  if (serverLogTail.length > SERVER_LOG_TAIL_LIMIT) {
+    serverLogTail = serverLogTail.slice(-SERVER_LOG_TAIL_LIMIT);
+  }
+}
+
+function buildServerLogTail(maxLines = 40): string {
+  if (serverLogTail.length === 0) return '';
+  return `\nRecent server output:\n${serverLogTail.slice(-maxLines).join('\n')}`;
+}
+
+function isLocalAppUrl(url: string): boolean {
+  return (
+    url.startsWith('http://127.0.0.1') ||
+    url.startsWith('https://127.0.0.1') ||
+    url.startsWith('http://localhost') ||
+    url.startsWith('https://localhost')
+  );
+}
+
+/**
+ * Wait until the forked local service is accepting TCP connections on
+ * 127.0.0.1:port. A TCP probe succeeds the moment the Next.js standalone
+ * server binds its port, without depending on the (potentially slow) first
+ * page compile that an HTTP GET / probe would trigger. On slow Windows
+ * machines with antivirus first-run scanning, the first HTTP response can
+ * take well over a second; a per-request HTTP timeout of 1s caused the old
+ * 15s "Local service did not respond" failure even though the server was
+ * starting fine.
+ */
+function waitForServerListening(port: number, timeoutMs: number): Promise<void> {
   return new Promise((resolve, reject) => {
     const startedAt = Date.now();
     let settled = false;
+    let lastProbeError = '';
+    let attempts = 0;
 
     const resolveOnce = () => {
       if (settled) return;
@@ -464,38 +511,86 @@ function waitForServerReady(port: number, timeoutMs = 15000): Promise<void> {
       reject(error);
     };
 
-    const retry = () => {
+    const attempt = () => {
       if (settled) return;
-      if (Date.now() - startedAt >= timeoutMs) {
-        rejectOnce(new Error(`Local service did not respond within ${timeoutMs / 1000} seconds.`));
+      const elapsed = Date.now() - startedAt;
+      if (elapsed >= timeoutMs) {
+        const suffix = lastProbeError ? ` Last probe error: ${lastProbeError}` : '';
+        rejectOnce(
+          new Error(`Local service did not respond within ${timeoutMs / 1000} seconds.${suffix}`)
+        );
         return;
       }
-      setTimeout(check, 250);
-    };
 
-    const check = () => {
-      const request = http.get(
-        {
-          hostname: '127.0.0.1',
-          port,
-          path: '/',
-          timeout: 1000,
-        },
-        (response) => {
-          response.resume();
-          if (response.statusCode && response.statusCode < 500) {
-            resolveOnce();
-            return;
-          }
-          retry();
+      let attemptSettled = false;
+      const socket = net.connect({ host: '127.0.0.1', port });
+      socket.setTimeout(1500);
+
+      const fail = (error: Error) => {
+        if (attemptSettled) return;
+        attemptSettled = true;
+        socket.destroy();
+        lastProbeError = error.message || String(error);
+        attempts += 1;
+        if (attempts === 1 || attempts % 40 === 0) {
+          writeDesktopLog(
+            `Waiting for local service on 127.0.0.1:${port}... ` +
+              `(${(elapsed / 1000).toFixed(1)}s elapsed, ${attempts} attempts, last error: ${lastProbeError})`
+          );
         }
-      );
+        setTimeout(attempt, 250);
+      };
 
-      request.on('timeout', () => request.destroy());
-      request.on('error', retry);
+      socket.once('connect', () => {
+        if (attemptSettled) return;
+        attemptSettled = true;
+        socket.destroy();
+        writeDesktopLog(
+          `Local service is listening on 127.0.0.1:${port} after ${(elapsed / 1000).toFixed(1)}s (${attempts} probes).`
+        );
+        resolveOnce();
+      });
+      socket.once('timeout', () => fail(new Error('connect timed out')));
+      socket.once('error', (error: NodeJS.ErrnoException) => fail(error));
     };
 
-    check();
+    attempt();
+  });
+}
+
+/**
+ * Optional warm-up request once the server is listening. This is
+ * informational only: a timeout here must not fail startup, because the
+ * window itself will load and Next.js will render the page when ready.
+ */
+async function warmUpLocalService(port: number): Promise<void> {
+  return new Promise((resolve) => {
+    const request = http.get(
+      {
+        hostname: '127.0.0.1',
+        port,
+        path: '/',
+        timeout: 15000,
+      },
+      (response) => {
+        response.resume();
+        writeDesktopLog(
+          `Local service warm-up: GET / returned ${String(response.statusCode ?? 'no status')}.`
+        );
+        resolve();
+      }
+    );
+    request.on('timeout', () => {
+      writeDesktopLog(
+        'Local service warm-up: GET / timed out; server is listening, page may still be compiling.'
+      );
+      request.destroy();
+      resolve();
+    });
+    request.on('error', (error) => {
+      writeDesktopLog(`Local service warm-up: GET / failed (${error.message}).`);
+      resolve();
+    });
   });
 }
 
@@ -504,17 +599,48 @@ async function startNextServer(): Promise<void> {
   const standalone = resolveStandalone();
   const serverPath = standalone.serverPath;
   const standaloneRoot = standalone.root;
+  const startupTimeoutMs = getServerStartupTimeoutMs();
 
   writeDesktopLog(
-    `Resolve standalone: source=${standalone.source}, app.isPackaged=${String(app.isPackaged)}, appPath=${app.getAppPath()}, resourcesPath=${process.resourcesPath}`
+    `Startup environment: platform=${process.platform} arch=${process.arch} ` +
+      `node=${process.versions.node} electron=${process.versions.electron} appVersion=${app.getVersion()}`
+  );
+  writeDesktopLog(
+    `Resolve standalone: source=${standalone.source}, app.isPackaged=${String(app.isPackaged)}, ` +
+      `appPath=${app.getAppPath()}, resourcesPath=${process.resourcesPath}`
   );
   writeDesktopLog(`Starting Next.js server from ${serverPath}`);
+  writeDesktopLog(`Local service startup timeout: ${startupTimeoutMs}ms, chosen port: ${serverPort}`);
 
   if (!existsSync(serverPath)) {
     throw new Error(
       `Next.js standalone server not found at: ${serverPath}. Run "pnpm next build" first.`
     );
   }
+
+  // Pre-flight diagnostics so desktop.log can pinpoint packaging mistakes
+  // (e.g. a missing sharp native binary on Windows) without a second trip.
+  const diagnostics: Array<[string, boolean]> = [
+    ['server.js', existsSync(serverPath)],
+    ['.next/BUILD_ID', existsSync(path.join(standaloneRoot, '.next', 'BUILD_ID'))],
+    ['.next/server', existsSync(path.join(standaloneRoot, '.next', 'server'))],
+    ['node_modules/next/package.json', existsSync(path.join(standaloneRoot, 'node_modules', 'next', 'package.json'))],
+  ];
+  if (process.platform === 'win32') {
+    diagnostics.push([
+      'node_modules/@img/sharp-win32-x64',
+      existsSync(path.join(standaloneRoot, 'node_modules', '@img', 'sharp-win32-x64', 'package.json')),
+    ]);
+    diagnostics.push([
+      'node_modules/@img/sharp-libvips-win32-x64',
+      existsSync(path.join(standaloneRoot, 'node_modules', '@img', 'sharp-libvips-win32-x64', 'package.json')),
+    ]);
+  }
+  for (const [label, present] of diagnostics) {
+    writeDesktopLog(`  standalone/${label}: ${present ? 'present' : 'MISSING'}`);
+  }
+  const desktopEnvPath = getDesktopEnvPath();
+  writeDesktopLog(`DESKTOP_ENV_PATH=${desktopEnvPath} exists=${String(existsSync(desktopEnvPath))}`);
 
   return new Promise((resolve, reject) => {
     let finished = false;
@@ -551,12 +677,18 @@ async function startNextServer(): Promise<void> {
       const msg = data.toString();
       console.log('[Next.js]', msg);
       writeDesktopLog(`[Next.js] ${msg.trim()}`);
+      for (const line of msg.split(/\r?\n/)) {
+        pushServerLogTail(line);
+      }
     });
 
     nextServer.stderr?.on('data', (data: Buffer) => {
       const msg = data.toString();
       console.error('[Next.js err]', msg);
       writeDesktopLog(`[Next.js err] ${msg.trim()}`);
+      for (const line of msg.split(/\r?\n/)) {
+        pushServerLogTail(line);
+      }
       if (msg.includes('EADDRINUSE')) {
         rejectOnce(new Error(`Port ${serverPort} is already in use.`));
       }
@@ -573,28 +705,39 @@ async function startNextServer(): Promise<void> {
       console.log(`Next.js server exited with code ${code}`);
       writeDesktopLog(`Next.js server exited with code ${code}`);
       nextServer = null;
-      rejectOnce(new Error(`Local service exited before startup completed (code ${code ?? 'unknown'}).`));
+      rejectOnce(
+        new Error(
+          `Local service exited before startup completed (code ${code ?? 'unknown'}).` +
+            buildServerLogTail(40)
+        )
+      );
     });
 
-    void waitForServerReady(serverPort)
+    void waitForServerListening(serverPort, startupTimeoutMs)
       .then(() => {
         writeDesktopLog(`Next.js server is ready at http://127.0.0.1:${serverPort}`);
         resolveOnce();
+        // Fire-and-forget warm-up: never delay the window for the (potentially
+        // slow) first page compile; the window loads the same URL itself.
+        void warmUpLocalService(serverPort);
       })
-      .catch(rejectOnce);
+      .catch((error: Error) => {
+        const enriched = new Error(
+          `${error.message}${buildServerLogTail(40)}`
+        );
+        rejectOnce(enriched);
+      });
   });
 }
 
 function createErrorHtml(error: unknown): string {
   const message = error instanceof Error ? error.message : String(error);
-  const escapedMessage = message
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-  const escapedLogPath = getLogPath()
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+  const escapeHtml = (value: string) =>
+    value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const escapedMessage = escapeHtml(message);
+  const escapedLogPath = escapeHtml(getLogPath());
+  const tailLines = serverLogTail.slice(-30);
+  const escapedTail = tailLines.length > 0 ? escapeHtml(tailLines.join('\n')) : '';
 
   return `<!doctype html>
 <html lang="zh-CN">
@@ -608,14 +751,18 @@ function createErrorHtml(error: unknown): string {
     h1 { margin: 0 0 12px; font-size: 24px; }
     p { line-height: 1.7; margin: 8px 0; color: #5f574f; }
     code { display: block; margin-top: 12px; padding: 14px; border-radius: 14px; background: #efe9df; color: #2b2520; white-space: pre-wrap; word-break: break-word; }
+    details { margin-top: 16px; border-top: 1px solid rgba(34,31,28,.1); padding-top: 12px; }
+    summary { cursor: pointer; font-weight: 600; color: #4a4238; }
+    pre { max-height: 260px; overflow: auto; margin-top: 10px; padding: 12px; border-radius: 12px; background: #1f1b16; color: #e8e2d8; font-size: 12px; white-space: pre-wrap; word-break: break-word; }
   </style>
 </head>
 <body>
   <main>
     <h1>应用启动失败</h1>
     <p>内置服务没有正常启动，所以之前会显示黑色空白界面。</p>
-    <p>请把下面日志路径发给开发者，或重新安装最新安装包。</p>
+    <p>如果是首次启动，可能只是本机较慢（杀毒软件首次扫描也会拖慢启动），请稍等 1 分钟后重新打开；若反复失败，请把下面日志路径发给开发者，或重新安装最新安装包。</p>
     <code>错误：${escapedMessage}\n日志：${escapedLogPath}</code>
+    ${escapedTail ? `<details><summary>查看内置服务最近输出</summary><pre>${escapedTail}</pre></details>` : ''}
   </main>
 </body>
 </html>`;
@@ -641,13 +788,16 @@ function createWindow(serverError?: unknown) {
   if (serverError) {
     mainWindow.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(createErrorHtml(serverError))}`);
   } else {
-    mainWindow.loadURL(`http://localhost:${serverPort}`);
+    // Use 127.0.0.1 (not "localhost"): on Windows "localhost" can resolve to
+    // ::1 (IPv6) while the standalone server binds IPv4 0.0.0.0, which would
+    // show a blank/error page even though the local service is healthy.
+    mainWindow.loadURL(`http://127.0.0.1:${serverPort}`);
   }
 
   mainWindow.webContents.on(
     'did-fail-load',
     (_event, errorCode, errorDescription, validatedURL, isMainFrame) => {
-      if (!isMainFrame || !validatedURL.startsWith(`http://localhost:${serverPort}`)) {
+      if (!isMainFrame || !validatedURL.startsWith(`http://127.0.0.1:${serverPort}`)) {
         return;
       }
       const error = new Error(`Page failed to load (${errorCode}): ${errorDescription}`);
@@ -701,10 +851,7 @@ function createWindow(serverError?: unknown) {
   });
 
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
-    if (
-      url.startsWith('http://localhost') ||
-      url.startsWith('https://localhost')
-    ) {
+    if (isLocalAppUrl(url)) {
       return { action: 'allow' };
     }
     void shell.openExternal(url);
@@ -712,10 +859,7 @@ function createWindow(serverError?: unknown) {
   });
 
   mainWindow.webContents.on('will-navigate', (event, url) => {
-    if (
-      url.startsWith('http://localhost') ||
-      url.startsWith('https://localhost')
-    ) {
+    if (isLocalAppUrl(url)) {
       return;
     }
     event.preventDefault();
