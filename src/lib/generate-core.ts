@@ -11,6 +11,7 @@ import { getSupabaseClient } from "@/storage/database/supabase-client";
 import { S3Storage, S3Config } from "coze-coding-dev-sdk";
 import type { PostgrestSingleResponse } from "@supabase/supabase-js";
 import { prepareReferenceImagesForModel } from "@/lib/image-edit/reference-prep";
+import { VIP_PIXEL_SIZES } from "@/lib/types";
 import type { LlmGenerationRequestPreview } from "@/lib/llm-preview";
 
 export interface GenerateRequest {
@@ -20,6 +21,8 @@ export interface GenerateRequest {
   baseUrl?: string;
   model?: string;
   imageSize?: string;
+  quality?: string;
+  background?: string;
   projectId?: string;
   userId?: string;
   referenceImages?: string[];
@@ -235,6 +238,54 @@ function isGrsFailureStatus(status?: string): boolean {
   return GRS_FAILURE_STATUSES.has(normalizeGrsStatus(status));
 }
 
+const GRSAI_IMAGE2_MODEL_RE = /^gpt-image-2(?:\.5)?(?:-(?:vip|flare|sunburst))?$/;
+const GRSAI_IMAGE_QUALITY_BY_MODEL: Record<string, string[]> = {
+  "gpt-image-2": ["auto"],
+  "gpt-image-2.5": ["auto"],
+  "gpt-image-2-vip": ["medium"],
+  "gpt-image-2.5-flare": ["low", "medium", "high"],
+  "gpt-image-2.5-sunburst": ["low", "medium", "high", "xhigh", "max"],
+};
+
+function normalizeGrsaiModelId(model?: string): string {
+  return (model || "").trim().toLowerCase();
+}
+
+function resolveGrsaiImageQuality(model?: string, requested?: string): string | undefined {
+  const allowed = GRSAI_IMAGE_QUALITY_BY_MODEL[normalizeGrsaiModelId(model)];
+  if (!allowed?.length) return undefined;
+  const value = (requested || "").trim().toLowerCase();
+  return allowed.includes(value) ? value : allowed[0];
+}
+
+function resolveGrsaiImageBackground(model?: string, requested?: string): "transparent" | undefined {
+  const id = normalizeGrsaiModelId(model);
+  const supportsTransparent =
+    id === "gpt-image-2-vip" ||
+    id === "gpt-image-2.5-flare" ||
+    id === "gpt-image-2.5-sunburst";
+  return supportsTransparent && (requested || "").trim().toLowerCase() === "transparent"
+    ? "transparent"
+    : undefined;
+}
+
+function isGrsaiPixelOnlyImageModel(model?: string): boolean {
+  return /^gpt-image-2(?:\.5)?-(?:vip|flare|sunburst)$/.test(normalizeGrsaiModelId(model));
+}
+
+const VIP_1K_SIZE_BY_RATIO = Object.fromEntries(
+  VIP_PIXEL_SIZES
+    .filter((item) => item.label.startsWith("1K"))
+    .map((item) => [item.label.match(/·\s*(\d+:\d+)/)?.[1], item.value])
+    .filter((entry): entry is [string, string] => Boolean(entry[0] && entry[1])),
+);
+
+function normalizeGrsaiPixelOnlySize(size?: string): string {
+  const value = (size || "").trim().toLowerCase();
+  if (/^\d+x\d+$/.test(value)) return value;
+  return VIP_1K_SIZE_BY_RATIO[value] || "1024x1024";
+}
+
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -341,7 +392,7 @@ export async function callGenerateApi(
   effectiveSize: string,
   effectiveReferenceImages: string[],
 ): Promise<{ imageUrl?: string; imageBuffer?: Buffer; requestPreview?: LlmGenerationRequestPreview; error?: string }> {
-  const { apiKey, baseUrl, model, imageSize } = req;
+  const { apiKey, baseUrl, model, imageSize, quality, background } = req;
   const cleanApiKey = apiKey.replace(/^Bearer\s+/i, "").trim();
   const base = normalizeChatBase(baseUrl);
   const preparedReferences = await prepareReferenceImagesForModel(effectiveReferenceImages, {
@@ -354,16 +405,27 @@ export async function callGenerateApi(
     return item.original === item.value ? value : `${item.original} -> ${value}`;
   });
 
+  const modelId = normalizeGrsaiModelId(model);
+  const aspectRatioValue = isGrsaiPixelOnlyImageModel(modelId)
+    ? normalizeGrsaiPixelOnlySize(effectiveSize)
+    : effectiveSize;
   const requestBody: Record<string, unknown> = {
     model: model || "gpt-image-2",
     prompt: effectivePrompt,
     images: preparedReferences.references,
     replyType: "json",
-    aspectRatio: effectiveSize,
+    aspectRatio: aspectRatioValue,
   };
 
   if ((model || "").startsWith("nano-banana")) {
     requestBody.imageSize = imageSize || "1K";
+  }
+
+  if (GRSAI_IMAGE2_MODEL_RE.test(modelId)) {
+    const resolvedQuality = resolveGrsaiImageQuality(model, quality);
+    const resolvedBackground = resolveGrsaiImageBackground(model, background);
+    if (resolvedQuality) requestBody.quality = resolvedQuality;
+    if (resolvedBackground) requestBody.background = resolvedBackground;
   }
 
   let requestPreview: LlmGenerationRequestPreview = {

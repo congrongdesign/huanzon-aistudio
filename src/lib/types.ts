@@ -291,6 +291,9 @@ export const CHAT_MODEL_OPTIONS: ChatModelOption[] = [
 export const MODEL_OPTIONS: ModelOption[] = [
   { value: "gpt-image-2", label: "GPT Image 2", group: "ChatGPT" },
   { value: "gpt-image-2-vip", label: "GPT Image 2 VIP", group: "ChatGPT" },
+  { value: "gpt-image-2.5", label: "GPT Image 2.5", group: "ChatGPT" },
+  { value: "gpt-image-2.5-flare", label: "GPT Image 2.5 Flare", group: "ChatGPT" },
+  { value: "gpt-image-2.5-sunburst", label: "GPT Image 2.5 Sunburst", group: "ChatGPT" },
   { value: "nano-banana", label: "Nano Banana", group: "Nano Banana" },
   { value: "nano-banana-fast", label: "Nano Banana Fast", group: "Nano Banana" },
   { value: "nano-banana-2", label: "Nano Banana 2", group: "Nano Banana" },

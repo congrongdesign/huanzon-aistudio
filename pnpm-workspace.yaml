@@ -1,0 +1,10 @@
+packages:
+  - .
+
+allowBuilds:
+  canvas: true
+  electron: true
+  esbuild: true
+  msw: true
+  sharp: true
+  unrs-resolver: true
