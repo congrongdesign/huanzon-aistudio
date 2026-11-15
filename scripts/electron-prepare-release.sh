@@ -28,14 +28,16 @@ if [[ "$TARGET_PLATFORM" != "mac" && "$TARGET_PLATFORM" != "win" ]]; then
 fi
 
 echo "[1/7] 安装依赖..."
-corepack pnpm install
+corepack pnpm install --frozen-lockfile
+if [[ "$TARGET_PLATFORM" == "mac" && ! -f node_modules/electron/path.txt ]]; then
+  corepack pnpm exec node node_modules/electron/install.js
+  test -f node_modules/electron/dist/Electron.app/Contents/Info.plist
+fi
 
 if [[ "$TARGET_PLATFORM" == "win" ]]; then
   echo "[2/7] 准备 Windows sharp 运行依赖..."
-  corepack pnpm add -D @img/sharp-win32-x64@0.34.5 @img/sharp-libvips-win32-x64@1.2.4 \
-    --config.supportedArchitectures.cpu=x64 \
-    --config.supportedArchitectures.os=win32 \
-    --config.supportedArchitectures.libc=glibc
+  test -f node_modules/.pnpm/@img+sharp-win32-x64@0.34.5/node_modules/@img/sharp-win32-x64/package.json
+  test -f node_modules/.pnpm/@img+sharp-libvips-win32-x64@1.2.4/node_modules/@img/sharp-libvips-win32-x64/package.json
 else
   echo "[2/7] macOS 运行依赖使用当前平台依赖..."
 fi
@@ -53,6 +55,8 @@ if [[ -d tools ]]; then
 fi
 rm -rf .next
 corepack pnpm next build
+corepack pnpm exec node scripts/build-backup-worker.mjs
+python3 scripts/prepare-slim-desktop-runtime.py
 restore_tools
 
 echo "[6/7] 清理和补齐 standalone 资源..."
@@ -89,6 +93,8 @@ find .next/standalone -maxdepth 1 -type f \( \
   -name 'tsconfig.json' -o \
   -name 'tsconfig.tsbuildinfo' \
 \) -delete
+
+corepack pnpm exec node scripts/sanitize-desktop-runtime.mjs .next/standalone
 
 if [[ "$TARGET_PLATFORM" == "win" ]]; then
   echo "[6b/7] 物化 Windows standalone 运行依赖..."
@@ -149,4 +155,4 @@ if [[ "$TARGET_PLATFORM" == "win" ]]; then
 fi
 
 echo "[7/7] 编译 Electron 主进程..."
-npx tsc -p electron/tsconfig.json
+corepack pnpm exec tsc -p electron/tsconfig.json

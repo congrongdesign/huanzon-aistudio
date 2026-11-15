@@ -1,4 +1,4 @@
-import { pgTable, serial, varchar, text, timestamp, boolean, integer, index, jsonb, real } from "drizzle-orm/pg-core"
+import { pgTable, serial, varchar, text, timestamp, boolean, integer, index, jsonb, real, uniqueIndex } from "drizzle-orm/pg-core"
 import { sql } from "drizzle-orm"
 
 export const users = pgTable(
@@ -337,5 +337,25 @@ export const inspirationItems = pgTable(
     index("inspiration_items_folder_id_idx").on(table.folder_id),
     index("inspiration_items_project_id_idx").on(table.project_id),
     index("inspiration_items_user_id_idx").on(table.user_id),
+  ]
+);
+
+export const platformConnections = pgTable(
+  "platform_connections",
+  {
+    id: varchar("id", { length: 36 }).primaryKey().default(sql`gen_random_uuid()`),
+    user_id: varchar("user_id", { length: 36 }).references(() => users.id, { onDelete: "cascade" }),
+    provider: varchar("provider", { length: 20 }).notNull(),
+    provider_user_id: varchar("provider_user_id", { length: 128 }),
+    provider_username: varchar("provider_username", { length: 128 }),
+    access_token: text("access_token"),
+    scopes: text("scopes"),
+    token_expires_at: timestamp("token_expires_at", { withTimezone: true }),
+    created_at: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
+    updated_at: timestamp("updated_at", { withTimezone: true }),
+  },
+  (table) => [
+    index("platform_connections_user_provider_idx").on(table.user_id, table.provider),
+    uniqueIndex("platform_connections_user_provider_uidx").on(table.user_id, table.provider),
   ]
 );

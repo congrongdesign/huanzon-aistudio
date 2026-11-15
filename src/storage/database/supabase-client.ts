@@ -3,6 +3,7 @@ import { execSync } from 'child_process';
 import { getReportBuffer, createWrappedFetch } from 'coze-coding-dev-sdk';
 import fs from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
 import { getRuntimeSupabaseCredentials } from '@/lib/runtime-config';
 
 let envLoaded = false;
@@ -21,7 +22,7 @@ function loadEnv(): void {
     const desktopEnvPath = process.env.DESKTOP_ENV_PATH;
     if (desktopEnvPath && fs.existsSync(desktopEnvPath)) {
       try {
-        require('dotenv').config({ path: desktopEnvPath, override: false });
+        dotenv.config({ path: desktopEnvPath, override: false });
       } catch {
         // dotenv not available
       }
@@ -34,7 +35,7 @@ function loadEnv(): void {
     const localEnvPath = path.resolve(process.cwd(), '.env.local');
     if (fs.existsSync(localEnvPath)) {
       try {
-        require('dotenv').config({ path: localEnvPath, override: false });
+        dotenv.config({ path: localEnvPath, override: false });
       } catch {
         // dotenv not available
       }
@@ -45,7 +46,7 @@ function loadEnv(): void {
     }
 
     try {
-      require('dotenv').config();
+      dotenv.config();
       if (process.env.COZE_SUPABASE_URL && process.env.COZE_SUPABASE_ANON_KEY) {
         envLoaded = true;
         return;
@@ -131,7 +132,7 @@ function getSupabaseClient(token?: string): SupabaseClient {
     key = serviceRoleKey ?? anonKey;
   }
 
-  const globalOptions: Record<string, any> = {};
+  const globalOptions: { headers?: Record<string, string>; fetch?: typeof fetch } = {};
   if (token) {
     globalOptions.headers = { Authorization: `Bearer ${token}` };
   }

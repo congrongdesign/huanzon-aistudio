@@ -46,6 +46,8 @@ const eslintConfig = defineConfig([
     'dist/**',
     'electron/dist/**',
     'release/**',
+    '.desktop-runtime/**',
+    'coze-deploy-kit/dist/**',
     'tools/**',
     'output/**',
     '.playwright-cli/**',

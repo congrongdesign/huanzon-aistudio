@@ -748,13 +748,12 @@ export async function POST(request: NextRequest) {
         const supplier = info?.supplier || info?.owner || (typeof m.supplier === 'string' ? m.supplier : '');
         const owner = supplier ? ownerBy[supplier] : undefined;
         const tags = asStringArray(info?.tags).concat(asStringArray(m.tags));
-        const capabilities = Array.isArray(m.capabilities)
-          ? m.capabilities
-          : Array.isArray(m.modalities)
-            ? m.modalities
-            : Array.isArray(m.supported_parameters)
-              ? m.supported_parameters
-              : [];
+        const capabilities = Array.from(new Set([
+          ...(Array.isArray(m.capabilities) ? m.capabilities : []),
+          ...(Array.isArray(m.modalities) ? m.modalities : []),
+          ...(Array.isArray(m.supported_parameters) ? m.supported_parameters : []),
+          ...(Array.isArray(m.supported_endpoint_types) ? m.supported_endpoint_types : []),
+        ]));
         return {
           id,
           owned_by: m.owned_by || m.owner || supplier || '',

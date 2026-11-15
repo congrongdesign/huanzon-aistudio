@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Inspector } from 'react-dev-inspector';
+import StorageReferenceSync from '@/components/StorageReferenceSync';
 import './globals.css';
 import './dark-theme-v2.css';
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className="dark" data-theme-engine="v2" suppressHydrationWarning>
       <body className={`antialiased`}>
+        <StorageReferenceSync />
         <Script id="ui-scale" strategy="beforeInteractive">
           {`try {
             // Desktop shell (Electron) handles scaling natively via zoom factor,

@@ -1,8 +1,12 @@
 import fs from "fs";
 import path from "path";
 import { randomUUID } from "node:crypto";
+import { pipeline } from "node:stream/promises";
+import { Readable } from "node:stream";
 import { getRuntimeBackendMode, getRuntimeDownloadDirectory } from "@/lib/runtime-config";
 import { isCozeCloudRuntime } from "@/lib/deploy-mode";
+import { mediaReadPath, mediaWritePath } from './media-storage';
+import { activeStorageJobs, collectStorageReferences, deleteManagedCopies, managedCopies, fontTrash, purgeFontTrash, type MediaCleanupTask } from './storage-lifecycle';
 import type {
   AssetVersion,
   AssetIndexEntry,
@@ -12,6 +16,11 @@ import type {
   DesignOperation,
   DesignOperationStatus,
 } from "@/lib/types";
+import type {
+  ArchiveRecord,
+  ProjectArchiveRestoreOptions,
+  ProjectArchiveSnapshot,
+} from "@/lib/project-archive-types";
 
 export interface LocalProjectRecord {
   id: string;
@@ -55,6 +64,7 @@ export interface LocalImageRecord {
   status: string;
   is_favorite: boolean;
   deleted_at: string | null;
+  purge_after?: string | null;
   edited_image_key: string | null;
   created_at: string;
   updated_at: string | null;
@@ -107,6 +117,47 @@ export interface LocalReferenceImageRecord {
   image_key: string | null;
   file_name: string | null;
   created_at: string;
+}
+
+export interface LocalInspirationFolderRecord {
+  id: string;
+  user_id: string | null;
+  project_id: string | null;
+  name: string;
+  parent_id: string | null;
+  sort_order: number;
+  color: string;
+  created_at: string;
+  updated_at: string | null;
+}
+
+export interface LocalInspirationItemRecord {
+  id: string;
+  folder_id: string | null;
+  project_id: string | null;
+  user_id: string | null;
+  image_url: string;
+  image_key: string | null;
+  file_name: string | null;
+  source: string;
+  dominant_color: string | null;
+  width: number;
+  height: number;
+  created_at: string;
+}
+
+
+export interface LocalPlatformConnectionRecord {
+  id: string;
+  user_id: string | null;
+  provider: string;
+  provider_user_id: string | null;
+  provider_username: string | null;
+  access_token: string | null;
+  scopes: string | null;
+  token_expires_at: string | null;
+  created_at: string;
+  updated_at: string | null;
 }
 
 export interface LocalCanvasBlockRecord {
@@ -179,6 +230,7 @@ export type LocalAssetIndexJobRecord = AssetIndexJob & { user_id: string | null 
 
 interface LocalDatabase {
   version: number;
+  media_cleanup_tasks: MediaCleanupTask[];
   projects: LocalProjectRecord[];
   project_folders: LocalProjectFolderRecord[];
   image_records: LocalImageRecord[];
@@ -186,6 +238,9 @@ interface LocalDatabase {
   archived_folders: LocalArchivedFolderRecord[];
   chat_messages: LocalChatMessageRecord[];
   reference_images: LocalReferenceImageRecord[];
+  inspiration_folders: LocalInspirationFolderRecord[];
+  inspiration_items: LocalInspirationItemRecord[];
+  platform_connections: LocalPlatformConnectionRecord[];
   canvas_blocks: LocalCanvasBlockRecord[];
   prompt_library: LocalPromptRecord[];
   image_tags: LocalImageTagRecord[];
@@ -210,6 +265,7 @@ const DB_FILE_NAME = "db.json";
 
 const EMPTY_DB: LocalDatabase = {
   version: 1,
+  media_cleanup_tasks: [],
   projects: [],
   project_folders: [],
   image_records: [],
@@ -217,6 +273,9 @@ const EMPTY_DB: LocalDatabase = {
   archived_folders: [],
   chat_messages: [],
   reference_images: [],
+  inspiration_folders: [],
+  inspiration_items: [],
+  platform_connections: [],
   canvas_blocks: [],
   prompt_library: [],
   image_tags: [],
@@ -236,6 +295,7 @@ function nowIso(): string {
 function cloneEmptyDb(): LocalDatabase {
   return {
     version: 1,
+    media_cleanup_tasks: [],
     projects: [],
     project_folders: [],
     image_records: [],
@@ -243,6 +303,9 @@ function cloneEmptyDb(): LocalDatabase {
     archived_folders: [],
     chat_messages: [],
     reference_images: [],
+    inspiration_folders: [],
+    inspiration_items: [],
+    platform_connections: [],
     canvas_blocks: [],
     prompt_library: [],
     image_tags: [],
@@ -267,6 +330,7 @@ function ensureDbShape(raw: unknown): LocalDatabase {
   const obj = raw as Record<string, unknown>;
   return {
     version: typeof obj.version === "number" ? obj.version : 1,
+    media_cleanup_tasks: ensureArray<MediaCleanupTask>(obj.media_cleanup_tasks),
     projects: ensureArray<LocalProjectRecord>(obj.projects),
     project_folders: ensureArray<LocalProjectFolderRecord>(obj.project_folders),
     image_records: ensureArray<LocalImageRecord>(obj.image_records),
@@ -274,6 +338,9 @@ function ensureDbShape(raw: unknown): LocalDatabase {
     archived_folders: ensureArray<LocalArchivedFolderRecord>(obj.archived_folders),
     chat_messages: ensureArray<LocalChatMessageRecord>(obj.chat_messages),
     reference_images: ensureArray<LocalReferenceImageRecord>(obj.reference_images),
+    inspiration_folders: ensureArray<LocalInspirationFolderRecord>(obj.inspiration_folders),
+    inspiration_items: ensureArray<LocalInspirationItemRecord>(obj.inspiration_items),
+    platform_connections: ensureArray<LocalPlatformConnectionRecord>(obj.platform_connections),
     canvas_blocks: ensureArray<LocalCanvasBlockRecord>(obj.canvas_blocks),
     prompt_library: ensureArray<LocalPromptRecord>(obj.prompt_library),
     image_tags: ensureArray<LocalImageTagRecord>(obj.image_tags),
@@ -314,6 +381,10 @@ function getLocalDataRoot(): string {
   return path.join(getBaseDataDir(), LOCAL_DATA_SUBDIR);
 }
 
+export function getLocalDataDirectory(): string {
+  return getLocalDataRoot();
+}
+
 function getDbPath(): string {
   return path.join(getLocalDataRoot(), DB_FILE_NAME);
 }
@@ -335,30 +406,49 @@ function ensureDbFile(): void {
   }
 }
 
+const dbState = globalThis as typeof globalThis & {
+  hzLocalDbCache?: { file: string; version: string; data: LocalDatabase };
+};
+function databaseVersion(file: string): string {
+  const stat = fs.statSync(file);
+  return `${stat.ino}:${stat.size}:${stat.mtimeMs}:${stat.ctimeMs}`;
+}
 function readDb(): LocalDatabase {
-  ensureDbFile();
-  try {
-    const text = fs.readFileSync(getDbPath(), "utf8");
-    const parsed = JSON.parse(text) as unknown;
-    return ensureDbShape(parsed);
-  } catch {
-    return cloneEmptyDb();
-  }
+  const file = getDbPath();
+  if (!fs.existsSync(file)) ensureDbFile();
+  const version = databaseVersion(file);
+  if (dbState.hzLocalDbCache?.file === file && dbState.hzLocalDbCache.version === version) return dbState.hzLocalDbCache.data;
+  // A corrupt store must never be replaced by an empty database on the next write.
+  const data = ensureDbShape(JSON.parse(fs.readFileSync(file, 'utf8')));
+  dbState.hzLocalDbCache = { file, version, data };
+  return data;
 }
 
 function writeDb(db: LocalDatabase): void {
   ensureLocalDirs();
   const dbPath = getDbPath();
   const tempPath = `${dbPath}.tmp`;
-  fs.writeFileSync(tempPath, JSON.stringify(db, null, 2), "utf8");
+  fs.writeFileSync(tempPath, JSON.stringify(db), "utf8");
   fs.renameSync(tempPath, dbPath);
+  dbState.hzLocalDbCache = { file: dbPath, version: databaseVersion(dbPath), data: db };
 }
 
+let activeCleanupMutation: LocalDatabase | undefined;
+let cleanupScheduled = false;
 function withDb<T>(mutator: (db: LocalDatabase) => T): T {
   const db = readDb();
-  const result = mutator(db);
-  writeDb(db);
-  return result;
+  try {
+    activeCleanupMutation = db;
+    const result = mutator(db);
+    activeCleanupMutation = undefined;
+    writeDb(db);
+    scheduleLocalFileCleanup();
+    return structuredClone(result);
+  } catch (error) {
+    activeCleanupMutation = undefined;
+    dbState.hzLocalDbCache = undefined;
+    throw error;
+  }
 }
 
 function safeUserId(userId?: string | null): string | null {
@@ -447,54 +537,78 @@ export function isLocalBackendEnabled(): boolean {
 }
 
 export function resolveLocalFilePath(fileKey: string): string {
-  ensureLocalDirs();
   const safe = sanitizeFileKey(path.basename(fileKey));
-  return path.join(getLocalFilesDir(), safe);
+  return mediaReadPath(safe);
 }
 
 export function getLocalFileUrl(fileKey: string): string {
   return keyToLocalUrl(sanitizeFileKey(path.basename(fileKey)));
 }
 
-export function deleteLocalFileByKey(fileKey?: string | null): void {
+export function deleteLocalFileByKey(fileKey?: string | null, verifiedCopies?: { file: string; signature: string }[]): void {
   if (!fileKey) return;
-  removeFileIfExists(resolveLocalFilePath(fileKey));
+  const add = (db: LocalDatabase) => {
+    if (!db.media_cleanup_tasks.some(task => task.key === fileKey && task.status === 'pending')) {
+      db.media_cleanup_tasks.push({ id: randomUUID(), key: fileKey, copies: verifiedCopies || managedCopies(fileKey).map(copy => ({ file: copy.file, signature: copy.signature })), status: 'pending', reason: '业务对象已删除', requestedAt: nowIso(), bytes: 0, attempts: 0 });
+    }
+  };
+  // Record the intent in the same JSON commit as the business deletion.
+  // External stores commit synchronously before the deferred cleanup runs.
+  if (activeCleanupMutation) add(activeCleanupMutation);
+  else withDb(add);
 }
 
-function isLocalFileKeyReferenced(db: LocalDatabase, fileKey: string, ignore: LocalFileKeyIgnore = {}): boolean {
-  if (!fileKey) return false;
+function scheduleLocalFileCleanup() {
+  if (cleanupScheduled || !readDb().media_cleanup_tasks.some(task => task.status === 'pending')) return;
+  cleanupScheduled = true;
+  setImmediate(() => {
+    cleanupScheduled = false;
+    try { drainLocalFileCleanup(); } catch (error) { console.error('原图回收暂停：', error instanceof Error ? error.message : error); }
+  });
+}
 
-  for (const record of db.image_records) {
-    if (ignore.imageRecordId && record.id === ignore.imageRecordId) continue;
-    if (record.image_key === fileKey || record.edited_image_key === fileKey) return true;
+export function localFileCleanupStatus() {
+  const tasks = readDb().media_cleanup_tasks;
+  return { pending: tasks.filter(task => task.status === 'pending').length, failed: tasks.filter(task => task.status === 'failed').length,
+    reclaimedBytes: tasks.reduce((sum, task) => sum + task.bytes, 0), recent: structuredClone(tasks.slice(-20)) };
+}
+
+export function drainLocalFileCleanup(retryFailed = false, retryRetained = false) {
+  const db = readDb();
+  const tasks = db.media_cleanup_tasks.filter(task => task.status === 'pending' || (retryFailed && task.status === 'failed') || (retryRetained && task.status === 'retained' && task.detail !== '文件已变化，保留新副本'))
+    .sort((a, b) => Number(b.status === 'pending') - Number(a.status === 'pending') || (a.finishedAt || '').localeCompare(b.finishedAt || '')).slice(0, 50);
+  let bytes = 0, removed = 0, retained = 0;
+  if (!tasks.length) return { bytes, removed, retained };
+  if (activeStorageJobs()) return { bytes, removed, retained };
+  // Fail closed when any active index cannot be read. Never unlink before metadata commits.
+  const references = collectStorageReferences();
+  for (const task of tasks) {
+    task.attempts++;
+    try {
+      const reasons = references.reasons(task.key);
+      if (reasons.length) { task.status = 'retained'; task.detail = reasons.join('；'); retained++; }
+      else {
+        const result = deleteManagedCopies(task.key, task.copies);
+        task.bytes += result.bytes; bytes += result.bytes; removed += result.removed;
+        if (result.errors.length) throw new Error(result.errors.join('；'));
+        const remaining = managedCopies(task.key);
+        task.status = remaining.length ? 'retained' : 'completed'; task.detail = remaining.length ? '文件已变化，保留新副本' : result.removed ? '原文件已释放' : '文件已不存在';
+      }
+      delete task.error;
+    } catch (error) { task.status = 'failed'; task.error = error instanceof Error ? error.message : String(error); }
+    task.finishedAt = nowIso();
   }
-
-  for (const record of db.archived_images) {
-    if (ignore.archivedImageId && record.id === ignore.archivedImageId) continue;
-    if (record.image_key === fileKey) return true;
-  }
-
-  for (const record of db.reference_images) {
-    if (ignore.referenceImageId && record.id === ignore.referenceImageId) continue;
-    if (record.image_key === fileKey) return true;
-  }
-
-  for (const record of db.design_assets) {
-    if (ignore.designAssetId && record.id === ignore.designAssetId) continue;
-    if (record.key === fileKey) return true;
-  }
-
-  for (const record of db.asset_versions) {
-    if (ignore.assetVersionId && record.id === ignore.assetVersionId) continue;
-    if (record.key === fileKey) return true;
-  }
-
-  return false;
+  // Keep pending/errors and a bounded audit trail. Completed files never become live references.
+  const terminal = db.media_cleanup_tasks.filter(task => !['pending', 'failed'].includes(task.status)).slice(-1000);
+  db.media_cleanup_tasks = [...db.media_cleanup_tasks.filter(task => ['pending', 'failed'].includes(task.status)), ...terminal];
+  writeDb(db);
+  scheduleLocalFileCleanup();
+  return { bytes, removed, retained };
 }
 
 function deleteLocalFileByKeyIfUnused(db: LocalDatabase, fileKey?: string | null, ignore: LocalFileKeyIgnore = {}): void {
   if (!fileKey) return;
-  if (isLocalFileKeyReferenced(db, fileKey, ignore)) return;
+  void db; void ignore;
   deleteLocalFileByKey(fileKey);
 }
 
@@ -504,7 +618,7 @@ export function saveBinaryFile(buffer: Buffer, fileNameHint = "file", contentTyp
     ? extFromFileName(fileNameHint)
     : extFromContentType(contentType);
   const key = sanitizeFileKey(`${path.parse(fileNameHint).name}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}.${ext}`);
-  const filePath = resolveLocalFilePath(key);
+  const filePath = mediaWritePath(key);
   fs.writeFileSync(filePath, buffer);
   return { key, url: getLocalFileUrl(key) };
 }
@@ -610,7 +724,7 @@ export async function saveRemoteImageToDownloadDirectory(
 
   ensureDirectory(directory);
 
-  const response = await fetch(remoteUrl, { cache: "no-store" });
+  const response = await fetch(remoteUrl, { cache: "no-store", signal: AbortSignal.timeout(60000) });
   if (!response.ok) {
     throw new Error(`图片下载失败 (${response.status})`);
   }
@@ -623,13 +737,18 @@ export async function saveRemoteImageToDownloadDirectory(
     : `${safeFileName}.${extFromContentType(contentType)}`;
 
   const filePath = resolveUniqueFilePath(directory, finalName);
-  const buffer = Buffer.from(await response.arrayBuffer());
-  fs.writeFileSync(filePath, buffer);
-
+  if (!response.body) throw new Error("图片响应为空");
+  try {
+    await pipeline(Readable.fromWeb(response.body as import("node:stream/web").ReadableStream), fs.createWriteStream(filePath));
+  } catch (error) {
+    await fs.promises.unlink(filePath).catch(() => {});
+    throw error;
+  }
+  const info = await fs.promises.stat(filePath);
   return {
     filePath,
     fileName: path.basename(filePath),
-    size: buffer.byteLength,
+    size: info.size,
     directory,
   };
 }
@@ -637,7 +756,7 @@ export async function saveRemoteImageToDownloadDirectory(
 export function listProjects(userId?: string | null): LocalProjectRecord[] {
   const uid = safeUserId(userId);
   const db = readDb();
-  return db.projects
+  return structuredClone(db.projects
     .filter((p) => p.user_id === uid)
     .sort((a, b) => {
       if (a.is_pinned !== b.is_pinned) return a.is_pinned ? -1 : 1;
@@ -646,7 +765,7 @@ export function listProjects(userId?: string | null): LocalProjectRecord[] {
       const bCreated = new Date(b.created_at || 0).getTime();
       if (aCreated !== bCreated) return bCreated - aCreated;
       return a.id.localeCompare(b.id);
-    });
+    }));
 }
 
 export function createProject(userId: string | null, name: string, folderId: string | null = null): LocalProjectRecord {
@@ -674,7 +793,7 @@ export function createProject(userId: string | null, name: string, folderId: str
 export function getProjectById(projectId: string, userId?: string | null): LocalProjectRecord | null {
   const uid = safeUserId(userId);
   const db = readDb();
-  return db.projects.find((p) => p.id === projectId && p.user_id === uid) || null;
+  return structuredClone(db.projects.find((p) => p.id === projectId && p.user_id === uid) || null);
 }
 
 export function updateProject(
@@ -712,6 +831,18 @@ export function deleteProjectCascade(projectId: string, userId: string | null): 
       .filter((r) => r.project_id === projectId && r.user_id === userId)
       .map((r) => r.image_key)
       .filter(Boolean) as string[];
+    const designIds = new Set(db.design_assets.filter(r => r.project_id === projectId && r.user_id === userId).map(r => r.id));
+    const extraKeys = [
+      ...db.design_assets.filter(r => designIds.has(r.id)).map(r => r.key),
+      ...db.asset_versions.filter(r => designIds.has(r.asset_id)).map(r => r.key),
+      ...db.inspiration_items.filter(r => r.project_id === projectId && r.user_id === userId).map(r => r.image_key),
+    ].filter(Boolean) as string[];
+    db.design_assets = db.design_assets.filter(r => !designIds.has(r.id));
+    db.asset_versions = db.asset_versions.filter(r => !designIds.has(r.asset_id));
+    db.design_layers = db.design_layers.filter(r => !(r.project_id === projectId && r.user_id === userId));
+    db.design_operations = db.design_operations.filter(r => !(r.project_id === projectId && r.user_id === userId));
+    db.inspiration_items = db.inspiration_items.filter(r => !(r.project_id === projectId && r.user_id === userId));
+    db.inspiration_folders = db.inspiration_folders.filter(r => !(r.project_id === projectId && r.user_id === userId));
     const deletingRefKeys = db.reference_images
       .filter((r) => r.project_id === projectId && r.user_id === userId)
       .map((r) => r.image_key)
@@ -727,19 +858,585 @@ export function deleteProjectCascade(projectId: string, userId: string | null): 
     db.custom_skills = db.custom_skills.filter((s) => !(s.project_id === projectId && s.user_id === userId));
     db.projects = db.projects.filter((p) => !(p.id === projectId && p.user_id === userId));
 
-    for (const key of new Set([...deletingImageKeys, ...deletingArchivedKeys, ...deletingRefKeys])) {
+    for (const key of new Set([...deletingImageKeys, ...deletingArchivedKeys, ...deletingRefKeys, ...extraKeys])) {
       deleteLocalFileByKeyIfUnused(db, key);
     }
     return true;
   });
 }
 
+export function exportLocalProjectSnapshot(
+  projectId: string,
+  userId: string | null,
+): ProjectArchiveSnapshot {
+  const project = getProjectById(projectId, userId);
+  if (!project) throw new Error("项目不存在或无权限");
+
+  const allFolders = listProjectFolders(userId);
+  const folderById = new Map(allFolders.map((folder) => [folder.id, folder]));
+  const projectFolders: LocalProjectFolderRecord[] = [];
+  let folderId = project.folder_id;
+  while (folderId) {
+    const folder = folderById.get(folderId);
+    if (!folder) break;
+    projectFolders.unshift(folder);
+    folderId = folder.parent_id;
+  }
+
+  const imageRecords = listImageRecords(userId, {
+    projectId,
+    includeDeleted: true,
+    pageSize: 100000,
+  }).records;
+  const imageTags = listImageTagsForProject(userId, projectId);
+  const designAssets = listDesignAssets(userId, { projectId });
+  const assetVersions = designAssets.flatMap((asset) => listAssetVersions(userId, { assetId: asset.id }));
+
+  return {
+    project: project as unknown as ArchiveRecord,
+    projectFolders: projectFolders as unknown as ArchiveRecord[],
+    imageRecords: imageRecords as unknown as ArchiveRecord[],
+    imageTags: imageTags as unknown as ArchiveRecord[],
+    canvasBlocks: listCanvasBlocks(userId, projectId) as unknown as ArchiveRecord[],
+    chatMessages: listChatMessages(projectId, userId, 100000, true) as unknown as ArchiveRecord[],
+    referenceImages: listReferenceImages(userId, projectId) as unknown as ArchiveRecord[],
+    prompts: listPrompts(userId, projectId) as unknown as ArchiveRecord[],
+    skills: listSkills(userId, projectId) as unknown as ArchiveRecord[],
+    designAssets: designAssets as unknown as ArchiveRecord[],
+    designLayers: listDesignLayers(userId, { projectId }) as unknown as ArchiveRecord[],
+    designOperations: listDesignOperations(userId, { projectId }) as unknown as ArchiveRecord[],
+    assetVersions: assetVersions as unknown as ArchiveRecord[],
+    inspirationFolders: listInspirationFolders(userId, projectId) as unknown as ArchiveRecord[],
+    inspirationItems: listInspirationItems(userId, { projectId }) as unknown as ArchiveRecord[],
+    archivedImages: listArchivedImages(userId, { projectId }) as unknown as ArchiveRecord[],
+  };
+}
+
+function textValue(value: unknown, fallback = ""): string {
+  return typeof value === "string" ? value : fallback;
+}
+
+function numberValue(value: unknown, fallback = 0): number {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : fallback;
+}
+
+function booleanValue(value: unknown, fallback = false): boolean {
+  return typeof value === "boolean" ? value : fallback;
+}
+
+function optionalText(value: unknown): string | null {
+  return typeof value === "string" && value ? value : null;
+}
+
+function rewriteUrlValue(
+  value: unknown,
+  replacements: ProjectArchiveRestoreOptions,
+): string | null {
+  if (typeof value !== "string" || !value) return null;
+  return replacements.assetByOriginalUrl.get(value)?.url || value;
+}
+
+function rewriteKeyValue(
+  value: unknown,
+  originalUrl: unknown,
+  replacements: ProjectArchiveRestoreOptions,
+): string | null {
+  const key = typeof value === "string" && value ? value : null;
+  const url = typeof originalUrl === "string" ? originalUrl : "";
+  if (key && replacements.assetByStorageKey.has(key)) {
+    return replacements.assetByStorageKey.get(key)?.key ?? null;
+  }
+  if (url && replacements.assetByOriginalUrl.has(url)) {
+    return replacements.assetByOriginalUrl.get(url)?.key ?? null;
+  }
+  return key;
+}
+
+function rewriteUrlArrayValue(
+  value: unknown,
+  replacements: ProjectArchiveRestoreOptions,
+): string | null {
+  if (typeof value !== "string" || !value) return null;
+  try {
+    const parsed = JSON.parse(value) as unknown;
+    if (!Array.isArray(parsed)) return value;
+    return JSON.stringify(parsed.map((item) => rewriteUrlValue(item, replacements) || item));
+  } catch {
+    return value;
+  }
+}
+
+export function restoreLocalProjectSnapshot(
+  snapshot: ProjectArchiveSnapshot,
+  userId: string | null,
+  options: ProjectArchiveRestoreOptions,
+): LocalProjectRecord {
+  return withDb((db) => {
+    if (db.projects.some((project) => project.id === options.projectId && project.user_id === userId)) {
+      throw new Error("目标项目 ID 已存在，无法覆盖恢复");
+    }
+
+    const makeId = (
+      original: unknown,
+      existingIds: Set<string>,
+      preserve: boolean,
+    ): string => {
+      const source = textValue(original);
+      if (preserve && source && !existingIds.has(source)) return source;
+      return randomUUID();
+    };
+
+    const existingProjectFolderIds = new Set(
+      db.project_folders.filter((item) => item.user_id === userId).map((item) => item.id),
+    );
+    const existingBlockIds = new Set(db.canvas_blocks.map((item) => item.id));
+    const existingImageIds = new Set(db.image_records.map((item) => item.id));
+    const existingTagIds = new Set(db.image_tags.map((item) => item.id));
+    const existingMessageIds = new Set(db.chat_messages.map((item) => item.id));
+    const existingReferenceIds = new Set(db.reference_images.map((item) => item.id));
+    const existingPromptIds = new Set(db.prompt_library.map((item) => item.id));
+    const existingSkillIds = new Set(db.custom_skills.map((item) => item.id));
+    const existingAssetIds = new Set(db.design_assets.map((item) => item.id));
+    const existingLayerIds = new Set(db.design_layers.map((item) => item.id));
+    const existingOperationIds = new Set(db.design_operations.map((item) => item.id));
+    const existingVersionIds = new Set(db.asset_versions.map((item) => item.id));
+    const existingInspirationFolderIds = new Set(db.inspiration_folders.map((item) => item.id));
+    const existingInspirationItemIds = new Set(db.inspiration_items.map((item) => item.id));
+    const existingArchivedImageIds = new Set(db.archived_images.map((item) => item.id));
+
+    const folderIdMap = new Map<string, string>();
+    for (const folder of snapshot.projectFolders) {
+      const originalId = textValue(folder.id);
+      if (!originalId) continue;
+      const existing = db.project_folders.find(
+        (item) => item.id === originalId && item.user_id === userId,
+      );
+      const nextId = options.preserveRecordIds && existing
+        ? existing.id
+        : makeId(originalId, existingProjectFolderIds, options.preserveRecordIds);
+      folderIdMap.set(originalId, nextId);
+      if (!existing) {
+        db.project_folders.push({
+          id: nextId,
+          user_id: userId,
+          name: textValue(folder.name, "项目文件夹"),
+          color: textValue(folder.color, "#6366f1"),
+          parent_id: folder.parent_id ? folderIdMap.get(textValue(folder.parent_id)) || null : null,
+          sort_order: numberValue(folder.sort_order),
+          is_collapsed: booleanValue(folder.is_collapsed),
+          created_at: textValue(folder.created_at, nowIso()),
+          updated_at: optionalText(folder.updated_at),
+        });
+        existingProjectFolderIds.add(nextId);
+      }
+    }
+
+    const blockIdMap = new Map<string, string>();
+    const imageIdMap = new Map<string, string>();
+    const assetIdMap = new Map<string, string>();
+    const operationIdMap = new Map<string, string>();
+    const inspirationFolderIdMap = new Map<string, string>();
+
+    for (const block of snapshot.canvasBlocks) {
+      const originalId = textValue(block.id);
+      if (originalId) blockIdMap.set(originalId, makeId(originalId, existingBlockIds, options.preserveRecordIds));
+    }
+    for (const image of snapshot.imageRecords) {
+      const originalId = textValue(image.id);
+      if (originalId) imageIdMap.set(originalId, makeId(originalId, existingImageIds, options.preserveRecordIds));
+    }
+    for (const asset of snapshot.designAssets) {
+      const originalId = textValue(asset.id);
+      if (originalId) assetIdMap.set(originalId, makeId(originalId, existingAssetIds, options.preserveRecordIds));
+    }
+    for (const operation of snapshot.designOperations) {
+      const originalId = textValue(operation.id);
+      if (originalId) operationIdMap.set(originalId, makeId(originalId, existingOperationIds, options.preserveRecordIds));
+    }
+    for (const folder of snapshot.inspirationFolders) {
+      const originalId = textValue(folder.id);
+      if (originalId) inspirationFolderIdMap.set(originalId, makeId(originalId, existingInspirationFolderIds, options.preserveRecordIds));
+    }
+
+    const mappedFolderId = snapshot.project.folder_id
+      ? folderIdMap.get(textValue(snapshot.project.folder_id)) || null
+      : null;
+    const project: LocalProjectRecord = {
+      id: options.projectId,
+      user_id: userId,
+      name: textValue(snapshot.project.name, "恢复项目"),
+      is_pinned: booleanValue(snapshot.project.is_pinned),
+      sort_order: numberValue(snapshot.project.sort_order),
+      folder_id: mappedFolderId,
+      created_at: textValue(snapshot.project.created_at, nowIso()),
+      updated_at: optionalText(snapshot.project.updated_at),
+    };
+    db.projects.push(project);
+
+    for (const block of snapshot.canvasBlocks) {
+      const originalId = textValue(block.id);
+      db.canvas_blocks.push({
+        id: blockIdMap.get(originalId) || randomUUID(),
+        project_id: options.projectId,
+        user_id: userId,
+        name: textValue(block.name, "画板"),
+        color: textValue(block.color, "#3b82f6"),
+        canvas_x: numberValue(block.canvas_x),
+        canvas_y: numberValue(block.canvas_y),
+        canvas_width: numberValue(block.canvas_width, 960),
+        canvas_height: numberValue(block.canvas_height, 600),
+        image_scale: numberValue(block.image_scale, 1),
+        sort_mode: (textValue(block.sort_mode, "compact") as LocalCanvasBlockRecord["sort_mode"]),
+        padding: numberValue(block.padding, 20),
+        locked: booleanValue(block.locked),
+        created_at: textValue(block.created_at, nowIso()),
+        updated_at: optionalText(block.updated_at),
+      });
+    }
+
+    for (const image of snapshot.imageRecords) {
+      const originalId = textValue(image.id);
+      const originalKey = optionalText(image.image_key);
+      const originalUrl = textValue(image.image_url);
+      db.image_records.push({
+        id: imageIdMap.get(originalId) || randomUUID(),
+        project_id: options.projectId,
+        user_id: userId,
+        prompt: textValue(image.prompt),
+        image_url: rewriteUrlValue(originalUrl, options) || originalUrl,
+        image_key: rewriteKeyValue(originalKey, originalUrl, options),
+        reference_images: rewriteUrlArrayValue(image.reference_images, options),
+        canvas_block_id: image.canvas_block_id ? blockIdMap.get(textValue(image.canvas_block_id)) || null : null,
+        block_order: numberValue(image.block_order),
+        canvas_x: numberValue(image.canvas_x, 40),
+        canvas_y: numberValue(image.canvas_y, 40),
+        canvas_width: numberValue(image.canvas_width, 320),
+        canvas_height: numberValue(image.canvas_height, 320),
+        size: textValue(image.size, "1:1"),
+        model: textValue(image.model, "gpt-image-2"),
+        status: textValue(image.status, "completed"),
+        is_favorite: booleanValue(image.is_favorite),
+        deleted_at: optionalText(image.deleted_at),
+        purge_after: optionalText(image.purge_after),
+        edited_image_key: rewriteKeyValue(image.edited_image_key, null, options),
+        created_at: textValue(image.created_at, nowIso()),
+        updated_at: optionalText(image.updated_at),
+      });
+    }
+
+    for (const tag of snapshot.imageTags) {
+      const imageId = imageIdMap.get(textValue(tag.image_id));
+      if (!imageId) continue;
+      db.image_tags.push({
+        id: makeId(tag.id, existingTagIds, options.preserveRecordIds),
+        user_id: userId,
+        image_id: imageId,
+        tag: textValue(tag.tag),
+        created_at: textValue(tag.created_at, nowIso()),
+      });
+    }
+
+    for (const message of snapshot.chatMessages) {
+      db.chat_messages.push({
+        id: makeId(message.id, existingMessageIds, options.preserveRecordIds),
+        user_id: userId,
+        project_id: options.projectId,
+        role: textValue(message.role, "user") === "assistant" ? "assistant" : "user",
+        content: textValue(message.content),
+        reference_image_urls: rewriteUrlArrayValue(message.reference_image_urls, options),
+        image_url: rewriteUrlValue(message.image_url, options),
+        created_at: textValue(message.created_at, nowIso()),
+      });
+    }
+
+    for (const reference of snapshot.referenceImages) {
+      db.reference_images.push({
+        id: makeId(reference.id, existingReferenceIds, options.preserveRecordIds),
+        user_id: userId,
+        project_id: options.projectId,
+        image_url: rewriteUrlValue(reference.image_url, options) || textValue(reference.image_url),
+        image_key: rewriteKeyValue(reference.image_key, reference.image_url, options),
+        file_name: optionalText(reference.file_name),
+        created_at: textValue(reference.created_at, nowIso()),
+      });
+    }
+
+    for (const prompt of snapshot.prompts) {
+      db.prompt_library.push({
+        id: makeId(prompt.id, existingPromptIds, options.preserveRecordIds),
+        user_id: userId,
+        project_id: options.projectId,
+        text: textValue(prompt.text, textValue(prompt.content)),
+        category: textValue(prompt.category, "general"),
+        image_url: rewriteUrlValue(prompt.image_url, options),
+        name: optionalText(prompt.name) || undefined,
+        content: textValue(prompt.content, textValue(prompt.text)),
+        category_id: numberValue(prompt.category_id),
+        library_id: prompt.library_id === null || prompt.library_id === undefined ? null : numberValue(prompt.library_id),
+        tags: textValue(prompt.tags),
+        use_count: numberValue(prompt.use_count),
+        is_hot: numberValue(prompt.is_hot),
+        source: textValue(prompt.source),
+        atom_ids: textValue(prompt.atom_ids),
+        model: textValue(prompt.model),
+        aspect_ratio: textValue(prompt.aspect_ratio),
+        vars: Array.isArray(prompt.vars) ? prompt.vars : [],
+        kind: (textValue(prompt.kind, "general") as LocalPromptRecord["kind"]),
+        created_at: textValue(prompt.created_at, nowIso()),
+        updated_at: optionalText(prompt.updated_at) ?? undefined,
+      });
+    }
+
+    for (const skill of snapshot.skills) {
+      db.custom_skills.push({
+        id: makeId(skill.id, existingSkillIds, options.preserveRecordIds),
+        user_id: userId,
+        project_id: options.projectId,
+        name: textValue(skill.name, "恢复技能"),
+        description: textValue(skill.description),
+        steps: textValue(skill.steps, "[]"),
+        created_at: textValue(skill.created_at, nowIso()),
+        updated_at: textValue(skill.updated_at, nowIso()),
+      });
+    }
+
+    for (const asset of snapshot.designAssets) {
+      const originalId = textValue(asset.id);
+      db.design_assets.push({
+        id: assetIdMap.get(originalId) || randomUUID(),
+        project_id: options.projectId,
+        user_id: userId,
+        kind: textValue(asset.kind, "image") as LocalDesignAssetRecord["kind"],
+        url: rewriteUrlValue(asset.url, options) || textValue(asset.url),
+        key: rewriteKeyValue(asset.key, asset.url, options),
+        width: numberValue(asset.width),
+        height: numberValue(asset.height),
+        mime_type: textValue(asset.mime_type, "image/png"),
+        metadata: asset.metadata && typeof asset.metadata === "object" ? asset.metadata as Record<string, unknown> : {},
+        created_at: textValue(asset.created_at, nowIso()),
+        updated_at: optionalText(asset.updated_at),
+      });
+    }
+
+    for (const operation of snapshot.designOperations) {
+      const originalId = textValue(operation.id);
+      db.design_operations.push({
+        id: operationIdMap.get(originalId) || randomUUID(),
+        document_id: optionalText(operation.document_id),
+        project_id: options.projectId,
+        user_id: userId,
+        input_asset_ids: Array.isArray(operation.input_asset_ids)
+          ? operation.input_asset_ids.map((id) => assetIdMap.get(textValue(id)) || textValue(id)).filter(Boolean)
+          : [],
+        output_asset_ids: Array.isArray(operation.output_asset_ids)
+          ? operation.output_asset_ids.map((id) => assetIdMap.get(textValue(id)) || textValue(id)).filter(Boolean)
+          : [],
+        kind: textValue(operation.kind, "generate") as LocalDesignOperationRecord["kind"],
+        prompt: textValue(operation.prompt),
+        mask_asset_id: operation.mask_asset_id ? assetIdMap.get(textValue(operation.mask_asset_id)) || null : null,
+        provider: textValue(operation.provider),
+        model: textValue(operation.model),
+        params: operation.params && typeof operation.params === "object" ? operation.params as Record<string, unknown> : {},
+        status: textValue(operation.status, "completed") as LocalDesignOperationRecord["status"],
+        error: optionalText(operation.error),
+        created_at: textValue(operation.created_at, nowIso()),
+        updated_at: optionalText(operation.updated_at),
+        completed_at: optionalText(operation.completed_at),
+      });
+    }
+
+    for (const layer of snapshot.designLayers) {
+      db.design_layers.push({
+        id: makeId(layer.id, existingLayerIds, options.preserveRecordIds),
+        document_id: optionalText(layer.document_id),
+        project_id: options.projectId,
+        user_id: userId,
+        asset_id: layer.asset_id ? assetIdMap.get(textValue(layer.asset_id)) || null : null,
+        type: textValue(layer.type, "image") as LocalDesignLayerRecord["type"],
+        name: textValue(layer.name, "图层"),
+        x: numberValue(layer.x),
+        y: numberValue(layer.y),
+        width: numberValue(layer.width),
+        height: numberValue(layer.height),
+        opacity: numberValue(layer.opacity, 1),
+        visible: booleanValue(layer.visible, true),
+        locked: booleanValue(layer.locked),
+        z_index: numberValue(layer.z_index),
+        props: layer.props && typeof layer.props === "object" ? layer.props as Record<string, unknown> : {},
+        created_at: textValue(layer.created_at, nowIso()),
+        updated_at: optionalText(layer.updated_at),
+      });
+    }
+
+    for (const version of snapshot.assetVersions) {
+      const assetId = assetIdMap.get(textValue(version.asset_id));
+      if (!assetId) continue;
+      db.asset_versions.push({
+        id: makeId(version.id, existingVersionIds, options.preserveRecordIds),
+        asset_id: assetId,
+        parent_asset_id: version.parent_asset_id ? assetIdMap.get(textValue(version.parent_asset_id)) || null : null,
+        operation_id: version.operation_id ? operationIdMap.get(textValue(version.operation_id)) || null : null,
+        user_id: userId,
+        version_index: numberValue(version.version_index, 1),
+        label: textValue(version.label, "版本"),
+        url: rewriteUrlValue(version.url, options) || textValue(version.url),
+        key: rewriteKeyValue(version.key, version.url, options),
+        metadata: version.metadata && typeof version.metadata === "object" ? version.metadata as Record<string, unknown> : {},
+        created_at: textValue(version.created_at, nowIso()),
+      });
+    }
+
+    for (const folder of snapshot.inspirationFolders) {
+      const originalId = textValue(folder.id);
+      const mappedId = inspirationFolderIdMap.get(originalId) || randomUUID();
+      db.inspiration_folders.push({
+        id: mappedId,
+        user_id: userId,
+        project_id: options.projectId,
+        name: textValue(folder.name, "灵感文件夹"),
+        parent_id: folder.parent_id ? inspirationFolderIdMap.get(textValue(folder.parent_id)) || null : null,
+        sort_order: numberValue(folder.sort_order),
+        color: textValue(folder.color, "#6366f1"),
+        created_at: textValue(folder.created_at, nowIso()),
+        updated_at: optionalText(folder.updated_at),
+      });
+      existingInspirationFolderIds.add(mappedId);
+    }
+
+    for (const item of snapshot.inspirationItems) {
+      db.inspiration_items.push({
+        id: makeId(item.id, existingInspirationItemIds, options.preserveRecordIds),
+        folder_id: item.folder_id ? inspirationFolderIdMap.get(textValue(item.folder_id)) || null : null,
+        project_id: options.projectId,
+        user_id: userId,
+        image_url: rewriteUrlValue(item.image_url, options) || textValue(item.image_url),
+        image_key: rewriteKeyValue(item.image_key, item.image_url, options),
+        file_name: optionalText(item.file_name),
+        source: textValue(item.source, "upload"),
+        dominant_color: optionalText(item.dominant_color),
+        width: numberValue(item.width),
+        height: numberValue(item.height),
+        created_at: textValue(item.created_at, nowIso()),
+      });
+    }
+
+    for (const image of snapshot.archivedImages) {
+      db.archived_images.push({
+        id: makeId(image.id, existingArchivedImageIds, options.preserveRecordIds),
+        project_id: options.projectId,
+        user_id: userId,
+        original_image_id: image.original_image_id ? imageIdMap.get(textValue(image.original_image_id)) || null : null,
+        folder_id: optionalText(image.folder_id),
+        prompt: textValue(image.prompt),
+        original_prompt: textValue(image.original_prompt),
+        image_url: rewriteUrlValue(image.image_url, options) || textValue(image.image_url),
+        image_key: rewriteKeyValue(image.image_key, image.image_url, options),
+        model: textValue(image.model),
+        size: textValue(image.size, "1:1"),
+        tags: textValue(image.tags),
+        created_at: textValue(image.created_at, nowIso()),
+        updated_at: textValue(image.updated_at, nowIso()),
+      });
+    }
+
+    return project;
+  });
+}
+
+export function clearLocalProjectArchiveData(
+  projectId: string,
+  userId: string | null,
+  keepFiles = false,
+): { deleted: boolean; storageKeys: string[] } {
+  return withDb((db) => {
+    const project = db.projects.find((item) => item.id === projectId && item.user_id === userId);
+    if (!project) return { deleted: false, storageKeys: [] };
+
+    const imageIds = new Set(
+      db.image_records
+        .filter((image) => image.project_id === projectId && image.user_id === userId)
+        .map((image) => image.id),
+    );
+    const assetIds = new Set(
+      db.design_assets
+        .filter((asset) => asset.project_id === projectId && asset.user_id === userId)
+        .map((asset) => asset.id),
+    );
+    const inspirationFolderIds = new Set(
+      db.inspiration_folders
+        .filter((folder) => folder.project_id === projectId && folder.user_id === userId)
+        .map((folder) => folder.id),
+    );
+
+    const storageKeys = new Set<string>();
+    const addKey = (value: unknown) => {
+      const key = optionalText(value);
+      if (key) storageKeys.add(key);
+    };
+
+    for (const image of db.image_records) {
+      if (image.project_id !== projectId || image.user_id !== userId) continue;
+      addKey(image.image_key);
+      addKey(image.edited_image_key);
+    }
+    for (const reference of db.reference_images) {
+      if (reference.project_id !== projectId || reference.user_id !== userId) continue;
+      addKey(reference.image_key);
+    }
+    for (const asset of db.design_assets) {
+      if (asset.project_id !== projectId || asset.user_id !== userId) continue;
+      addKey(asset.key);
+    }
+    for (const version of db.asset_versions) {
+      if (version.user_id !== userId || !assetIds.has(version.asset_id)) continue;
+      addKey(version.key);
+    }
+    for (const item of db.inspiration_items) {
+      if (item.project_id !== projectId || item.user_id !== userId) continue;
+      addKey(item.image_key);
+    }
+    for (const image of db.archived_images) {
+      if (image.project_id !== projectId || image.user_id !== userId) continue;
+      addKey(image.image_key);
+    }
+
+    db.image_tags = db.image_tags.filter((tag) => !imageIds.has(tag.image_id));
+    db.asset_versions = db.asset_versions.filter(
+      (version) => !(version.user_id === userId && assetIds.has(version.asset_id)),
+    );
+    db.design_layers = db.design_layers.filter((layer) => !(layer.project_id === projectId && layer.user_id === userId));
+    db.design_operations = db.design_operations.filter((operation) => !(operation.project_id === projectId && operation.user_id === userId));
+    db.design_assets = db.design_assets.filter((asset) => !(asset.project_id === projectId && asset.user_id === userId));
+    db.inspiration_items = db.inspiration_items.filter((item) => !(item.project_id === projectId && item.user_id === userId));
+    db.inspiration_folders = db.inspiration_folders.filter((folder) => !(folder.project_id === projectId && folder.user_id === userId));
+    db.canvas_blocks = db.canvas_blocks.filter((block) => !(block.project_id === projectId && block.user_id === userId));
+    db.image_records = db.image_records.filter((image) => !(image.project_id === projectId && image.user_id === userId));
+    db.chat_messages = db.chat_messages.filter((message) => !(message.project_id === projectId && message.user_id === userId));
+    db.reference_images = db.reference_images.filter((reference) => !(reference.project_id === projectId && reference.user_id === userId));
+    db.prompt_library = db.prompt_library.filter((prompt) => !(prompt.project_id === projectId && prompt.user_id === userId));
+    db.custom_skills = db.custom_skills.filter((skill) => !(skill.project_id === projectId && skill.user_id === userId));
+    db.archived_images = db.archived_images.filter((image) => !(image.project_id === projectId && image.user_id === userId));
+    db.projects = db.projects.filter((item) => !(item.id === projectId && item.user_id === userId));
+
+    const deletedKeys: string[] = [];
+    for (const key of storageKeys) {
+      if (keepFiles) continue;
+      deleteLocalFileByKey(key);
+      deletedKeys.push(key);
+    }
+
+    void inspirationFolderIds;
+    return { deleted: true, storageKeys: deletedKeys };
+  });
+}
+
 export function listProjectFolders(userId?: string | null): LocalProjectFolderRecord[] {
   const uid = safeUserId(userId);
   const db = readDb();
-  return db.project_folders
+  return structuredClone(db.project_folders
     .filter((f) => f.user_id === uid)
-    .sort((a, b) => a.sort_order - b.sort_order);
+    .sort((a, b) => a.sort_order - b.sort_order));
 }
 
 export function createProjectFolder(
@@ -797,6 +1494,158 @@ export function deleteProjectFolder(folderId: string, userId: string | null): bo
   });
 }
 
+export function listInspirationFolders(
+  userId: string | null,
+  projectId?: string | null,
+): LocalInspirationFolderRecord[] {
+  const db = readDb();
+  let folders = db.inspiration_folders.filter((folder) => folder.user_id === userId);
+  if (projectId) folders = folders.filter((folder) => folder.project_id === projectId);
+  return structuredClone([...folders].sort((a, b) => a.sort_order - b.sort_order));
+}
+
+export function createInspirationFolder(
+  userId: string | null,
+  input: Partial<LocalInspirationFolderRecord> & { name?: string; project_id?: string | null },
+): LocalInspirationFolderRecord {
+  return withDb((db) => {
+    const now = nowIso();
+    const folder: LocalInspirationFolderRecord = {
+      id: input.id || randomUUID(),
+      user_id: userId,
+      project_id: input.project_id ?? null,
+      name: input.name || "新建文件夹",
+      parent_id: input.parent_id ?? null,
+      sort_order: input.sort_order ?? 0,
+      color: input.color || "#6366f1",
+      created_at: input.created_at || now,
+      updated_at: input.updated_at || now,
+    };
+    db.inspiration_folders.push(folder);
+    return folder;
+  });
+}
+
+export function updateInspirationFolder(
+  id: string,
+  userId: string | null,
+  updates: Partial<Pick<LocalInspirationFolderRecord, "name" | "color" | "sort_order" | "parent_id">>,
+): LocalInspirationFolderRecord | null {
+  return withDb((db) => {
+    const folder = db.inspiration_folders.find((item) => item.id === id && item.user_id === userId);
+    if (!folder) return null;
+    if (updates.name !== undefined) folder.name = updates.name;
+    if (updates.color !== undefined) folder.color = updates.color;
+    if (updates.sort_order !== undefined) folder.sort_order = updates.sort_order;
+    if (updates.parent_id !== undefined) folder.parent_id = updates.parent_id;
+    folder.updated_at = nowIso();
+    return folder;
+  });
+}
+
+export function deleteInspirationFolderCascade(
+  id: string,
+  userId: string | null,
+): { deleted: boolean; storageKeys: string[] } {
+  return withDb((db) => {
+    const exists = db.inspiration_folders.some((folder) => folder.id === id && folder.user_id === userId);
+    if (!exists) return { deleted: false, storageKeys: [] };
+
+    const folderIds = new Set<string>([id]);
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const folder of db.inspiration_folders) {
+        if (folder.user_id !== userId || !folder.parent_id || !folderIds.has(folder.parent_id)) continue;
+        if (!folderIds.has(folder.id)) {
+          folderIds.add(folder.id);
+          changed = true;
+        }
+      }
+    }
+
+    const storageKeys = db.inspiration_items
+      .filter((item) => item.user_id === userId && item.folder_id && folderIds.has(item.folder_id))
+      .map((item) => item.image_key)
+      .filter(Boolean) as string[];
+
+    db.inspiration_items = db.inspiration_items.filter(
+      (item) => !(item.user_id === userId && item.folder_id && folderIds.has(item.folder_id)),
+    );
+    db.inspiration_folders = db.inspiration_folders.filter(
+      (folder) => !(folder.user_id === userId && folderIds.has(folder.id)),
+    );
+    for (const key of storageKeys) deleteLocalFileByKeyIfUnused(db, key);
+    return { deleted: true, storageKeys };
+  });
+}
+
+export function listInspirationItems(
+  userId: string | null,
+  options?: { projectId?: string | null; folderId?: string | null },
+): LocalInspirationItemRecord[] {
+  const db = readDb();
+  let items = db.inspiration_items.filter((item) => item.user_id === userId);
+  if (options?.projectId) items = items.filter((item) => item.project_id === options.projectId);
+  if (options?.folderId !== undefined) {
+    items = items.filter((item) => String(item.folder_id || "") === String(options.folderId || ""));
+  }
+  return structuredClone(items.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()));
+}
+
+export function createInspirationItem(
+  userId: string | null,
+  input: Partial<LocalInspirationItemRecord> & Pick<LocalInspirationItemRecord, "image_url">,
+): LocalInspirationItemRecord {
+  return withDb((db) => {
+    const item: LocalInspirationItemRecord = {
+      id: input.id || randomUUID(),
+      folder_id: input.folder_id ?? null,
+      project_id: input.project_id ?? null,
+      user_id: userId,
+      image_url: input.image_url,
+      image_key: input.image_key ?? null,
+      file_name: input.file_name ?? null,
+      source: input.source || "upload",
+      dominant_color: input.dominant_color ?? null,
+      width: Math.round(input.width ?? 0),
+      height: Math.round(input.height ?? 0),
+      created_at: input.created_at || nowIso(),
+    };
+    db.inspiration_items.push(item);
+    return item;
+  });
+}
+
+export function updateInspirationItem(
+  id: string,
+  userId: string | null,
+  folderId: string | null,
+): LocalInspirationItemRecord | null {
+  return withDb((db) => {
+    const item = db.inspiration_items.find((row) => row.id === id && row.user_id === userId);
+    if (!item) return null;
+    item.folder_id = folderId;
+    return item;
+  });
+}
+
+export function deleteInspirationItems(
+  ids: string[],
+  userId: string | null,
+): { deleted: number; storageKeys: string[] } {
+  return withDb((db) => {
+    const idSet = new Set(ids);
+    const selected = db.inspiration_items.filter((item) => item.user_id === userId && idSet.has(item.id));
+    const storageKeys = selected.map((item) => item.image_key).filter(Boolean) as string[];
+    db.inspiration_items = db.inspiration_items.filter(
+      (item) => !(item.user_id === userId && idSet.has(item.id)),
+    );
+    for (const key of storageKeys) deleteLocalFileByKeyIfUnused(db, key);
+    return { deleted: selected.length, storageKeys };
+  });
+}
+
 export function listChatMessages(
   projectId: string,
   userId?: string | null,
@@ -814,7 +1663,7 @@ export function listChatMessages(
   if (limit && limit > 0) {
     items = ascending ? items.slice(-limit) : items.slice(0, limit);
   }
-  return items;
+  return structuredClone(items);
 }
 
 export function createChatMessage(
@@ -869,11 +1718,11 @@ export function listCanvasBlocks(
   const db = readDb();
   let rows = db.canvas_blocks.filter((row) => row.user_id === userId);
   if (projectId) rows = rows.filter((row) => row.project_id === projectId);
-  return [...rows].sort((a, b) => {
+  return structuredClone([...rows].sort((a, b) => {
     const at = new Date(a.updated_at || a.created_at || 0).getTime();
     const bt = new Date(b.updated_at || b.created_at || 0).getTime();
     return bt - at;
-  });
+  }));
 }
 
 export function getCanvasBlockById(
@@ -881,7 +1730,7 @@ export function getCanvasBlockById(
   userId: string | null,
 ): LocalCanvasBlockRecord | null {
   const db = readDb();
-  return db.canvas_blocks.find((row) => row.id === id && row.user_id === userId) || null;
+  return structuredClone(db.canvas_blocks.find((row) => row.id === id && row.user_id === userId) || null);
 }
 
 export function createCanvasBlock(
@@ -980,13 +1829,13 @@ export function listImageRecords(
   records = sortByDateDesc(records);
   const total = records.length;
   const paged = records.slice((page - 1) * pageSize, page * pageSize);
-  return { records: paged, total };
+  return structuredClone({ records: paged, total });
 }
 
 export function getImageRecordById(id: string, userId?: string | null): LocalImageRecord | null {
   const uid = safeUserId(userId);
   const db = readDb();
-  return db.image_records.find((r) => r.id === id && r.user_id === uid) || null;
+  return structuredClone(db.image_records.find((r) => r.id === id && r.user_id === uid) || null);
 }
 
 export function createImageRecord(
@@ -1013,6 +1862,7 @@ export function createImageRecord(
       status: input.status || "pending",
       is_favorite: input.is_favorite ?? false,
       deleted_at: input.deleted_at ?? null,
+      purge_after: input.purge_after ?? null,
       edited_image_key: input.edited_image_key ?? null,
       created_at: input.created_at || now,
       updated_at: input.updated_at || now,
@@ -1063,6 +1913,7 @@ export function updateImageRecord(
     if (updates.is_favorite !== undefined) record.is_favorite = updates.is_favorite;
     if (updates.project_id !== undefined) record.project_id = updates.project_id;
     if (updates.deleted_at !== undefined) record.deleted_at = updates.deleted_at;
+    if (updates.purge_after !== undefined) record.purge_after = updates.purge_after;
     if (updates.edited_image_key !== undefined) record.edited_image_key = updates.edited_image_key;
     record.updated_at = nowIso();
     return record;
@@ -1070,11 +1921,30 @@ export function updateImageRecord(
 }
 
 export function softDeleteImageRecord(id: string, userId: string | null): LocalImageRecord | null {
-  return updateImageRecord(id, userId, { deleted_at: nowIso() });
+  return updateImageRecord(id, userId, { deleted_at: nowIso(), purge_after: new Date(Date.now() + 30 * 86400_000).toISOString() });
+}
+
+export function updateImageLayouts(userId: string, layouts: Array<Pick<LocalImageRecord, 'id'> & Partial<Pick<LocalImageRecord, 'canvas_x' | 'canvas_y' | 'canvas_width' | 'canvas_height' | 'canvas_block_id' | 'block_order'>>>) {
+  return withDb(db => {
+    const byId = new Map(db.image_records.filter(record => record.user_id === userId).map(record => [record.id, record]));
+    let updated = 0;
+    for (const layout of layouts) {
+      const record = byId.get(layout.id);
+      if (!record) continue;
+      for (const key of ['canvas_x', 'canvas_y', 'canvas_width', 'canvas_height', 'block_order'] as const) {
+        const value = layout[key];
+        if (typeof value === 'number' && Number.isFinite(value)) record[key] = Math.round(value);
+      }
+      if (layout.canvas_block_id !== undefined) record.canvas_block_id = layout.canvas_block_id;
+      record.updated_at = nowIso();
+      updated++;
+    }
+    return updated;
+  });
 }
 
 export function restoreImageRecord(id: string, userId: string | null): LocalImageRecord | null {
-  return updateImageRecord(id, userId, { deleted_at: null });
+  return updateImageRecord(id, userId, { deleted_at: null, purge_after: null });
 }
 
 export function hardDeleteImageRecord(id: string, userId: string | null): boolean {
@@ -1090,13 +1960,39 @@ export function hardDeleteImageRecord(id: string, userId: string | null): boolea
   });
 }
 
+// Storage maintenance checks all auxiliary indexes before removing file bytes.
+export function removeTrashedImageMetadata(id: string, userId: string): boolean {
+  return withDb(db => {
+    const index = db.image_records.findIndex(record => record.id === id && record.user_id === userId && !!record.deleted_at);
+    if (index < 0) return false;
+    const [record] = db.image_records.splice(index, 1);
+    db.image_tags = db.image_tags.filter(tag => tag.image_id !== id);
+    deleteLocalFileByKey(record.image_key);
+    deleteLocalFileByKey(record.edited_image_key);
+    return true;
+  });
+}
+
 export function listImageTagsForImage(imageId: string, userId: string | null): LocalImageTagRecord[] | null {
   const db = readDb();
   const image = db.image_records.find((r) => r.id === imageId && r.user_id === userId && !r.deleted_at);
-  if (!image) return null;
-  return db.image_tags
+  if (!image) return structuredClone(null);
+  return structuredClone(db.image_tags
     .filter((tag) => tag.image_id === imageId)
-    .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+    .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime()));
+}
+
+export function listImageTagsForProject(
+  userId: string | null,
+  projectId: string,
+): LocalImageTagRecord[] {
+  const db = readDb();
+  const imageIds = new Set(
+    db.image_records
+      .filter((record) => record.user_id === userId && record.project_id === projectId)
+      .map((record) => record.id),
+  );
+  return structuredClone(db.image_tags.filter((tag) => imageIds.has(tag.image_id)));
 }
 
 export function listImageTagSummary(
@@ -1123,7 +2019,7 @@ export function listImageTagSummary(
     .map(([tag, count]) => ({ tag, count }))
     .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag));
 
-  return { tags, imageTagMap };
+  return structuredClone({ tags, imageTagMap });
 }
 
 export function createImageTag(
@@ -1150,6 +2046,20 @@ export function createImageTag(
     };
     db.image_tags.push(record);
     return { tag: record, status: "created" as const };
+  });
+}
+
+export function createImageTagRecord(input: LocalImageTagRecord): LocalImageTagRecord {
+  return withDb((db) => {
+    const record: LocalImageTagRecord = {
+      id: input.id || randomUUID(),
+      user_id: input.user_id ?? null,
+      image_id: input.image_id,
+      tag: input.tag,
+      created_at: input.created_at || nowIso(),
+    };
+    db.image_tags.push(record);
+    return record;
   });
 }
 
@@ -1185,7 +2095,7 @@ export function listArchivedImages(
   if (options?.folderId !== undefined) {
     records = records.filter((r) => String(r.folder_id || "") === String(options.folderId || ""));
   }
-  return sortByDateDesc(records);
+  return structuredClone(sortByDateDesc(records));
 }
 
 export async function createArchivedImageRecord(
@@ -1258,10 +2168,10 @@ export function deleteArchivedImageRecord(id: string, userId: string | null): bo
 
 export function listArchivedFolders(userId: string | null): LocalArchivedFolderRecord[] {
   const db = readDb();
-  return db.archived_folders
+  return structuredClone(db.archived_folders
     .filter((f) => f.user_id === userId)
     .slice()
-    .sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+    .sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0)));
 }
 
 export function createArchivedFolderRecord(
@@ -1378,12 +2288,12 @@ export function listDesignAssets(
   if (options?.projectId) records = records.filter((r) => r.project_id === options.projectId);
   if (options?.kind) records = records.filter((r) => r.kind === options.kind);
   if (idSet) records = records.filter((r) => idSet.has(r.id));
-  return sortByDateDesc(records);
+  return structuredClone(sortByDateDesc(records));
 }
 
 export function getDesignAssetById(id: string, userId: string | null): LocalDesignAssetRecord | null {
   const db = readDb();
-  return db.design_assets.find((r) => r.id === id && r.user_id === userId) || null;
+  return structuredClone(db.design_assets.find((r) => r.id === id && r.user_id === userId) || null);
 }
 
 export function createDesignAsset(
@@ -1456,7 +2366,7 @@ export function listAssetVersions(
   if (options?.assetId) records = records.filter((r) => r.asset_id === options.assetId);
   if (options?.parentAssetId) records = records.filter((r) => r.parent_asset_id === options.parentAssetId);
   if (options?.operationId) records = records.filter((r) => r.operation_id === options.operationId);
-  return records.sort((a, b) => (b.version_index || 0) - (a.version_index || 0));
+  return structuredClone(records.sort((a, b) => (b.version_index || 0) - (a.version_index || 0)));
 }
 
 export function createAssetVersion(
@@ -1505,7 +2415,7 @@ export function listDesignLayers(
   if (options?.projectId) records = records.filter((r) => r.project_id === options.projectId);
   if (options?.documentId) records = records.filter((r) => r.document_id === options.documentId);
   if (options?.assetId) records = records.filter((r) => r.asset_id === options.assetId);
-  return records.sort((a, b) => (a.z_index || 0) - (b.z_index || 0));
+  return structuredClone(records.sort((a, b) => (a.z_index || 0) - (b.z_index || 0)));
 }
 
 export function createDesignLayer(
@@ -1574,6 +2484,11 @@ export function deleteDesignLayer(id: string, userId: string | null): boolean {
   });
 }
 
+export function findGenerationOperationForImage(userId: string, imageId: string) {
+  const record = readDb().design_operations.find(r => r.user_id === userId && r.params?.imageRecordId === imageId);
+  return record ? structuredClone(record) : null;
+}
+
 export function listDesignOperations(
   userId: string | null,
   options?: {
@@ -1595,12 +2510,12 @@ export function listDesignOperations(
       r.output_asset_ids.includes(options.assetId || "")
     ));
   }
-  return sortByDateDesc(records);
+  return structuredClone(sortByDateDesc(records));
 }
 
 export function getDesignOperationById(id: string, userId: string | null): LocalDesignOperationRecord | null {
   const db = readDb();
-  return db.design_operations.find((r) => r.id === id && r.user_id === userId) || null;
+  return structuredClone(db.design_operations.find((r) => r.id === id && r.user_id === userId) || null);
 }
 
 export function createDesignOperation(
@@ -1706,8 +2621,8 @@ export function listAssetIndexEntries(
     }
   }
   const sorted = sortByDateDesc(records);
-  if (options?.limit && options.limit > 0) return sorted.slice(0, options.limit);
-  return sorted;
+  if (options?.limit && options.limit > 0) return structuredClone(sorted.slice(0, options.limit));
+  return structuredClone(sorted);
 }
 
 export function getAssetIndexEntryBySource(
@@ -1716,11 +2631,11 @@ export function getAssetIndexEntryBySource(
   sourceId: string,
 ): LocalAssetIndexEntryRecord | null {
   const db = readDb();
-  return db.asset_index_entries.find((r) => (
+  return structuredClone(db.asset_index_entries.find((r) => (
     r.user_id === userId &&
     r.source_type === sourceType &&
     r.source_id === sourceId
-  )) || null;
+  )) || null);
 }
 
 export function upsertAssetIndexEntry(
@@ -1775,13 +2690,13 @@ export function listAssetIndexJobs(
   if (options?.projectId) records = records.filter((r) => r.project_id === options.projectId);
   if (options?.status) records = records.filter((r) => r.status === options.status);
   const sorted = sortByDateDesc(records);
-  if (options?.limit && options.limit > 0) return sorted.slice(0, options.limit);
-  return sorted;
+  if (options?.limit && options.limit > 0) return structuredClone(sorted.slice(0, options.limit));
+  return structuredClone(sorted);
 }
 
 export function getAssetIndexJobById(id: string, userId: string | null): LocalAssetIndexJobRecord | null {
   const db = readDb();
-  return db.asset_index_jobs.find((r) => r.id === id && r.user_id === userId) || null;
+  return structuredClone(db.asset_index_jobs.find((r) => r.id === id && r.user_id === userId) || null);
 }
 
 export function createAssetIndexJob(
@@ -1855,7 +2770,7 @@ export function listReferenceImages(userId: string | null, projectId?: string | 
   const db = readDb();
   let refs = db.reference_images.filter((r) => r.user_id === userId);
   if (projectId) refs = refs.filter((r) => r.project_id === projectId);
-  return refs.sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+  return structuredClone(refs.sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime()));
 }
 
 export function createReferenceImage(
@@ -1892,7 +2807,7 @@ export function listPrompts(userId: string | null, projectId?: string | null): L
   const db = readDb();
   let items = db.prompt_library.filter((p) => p.user_id === userId);
   if (projectId) items = items.filter((p) => p.project_id === projectId);
-  return sortByDateDesc(items);
+  return structuredClone(sortByDateDesc(items));
 }
 
 export function createPrompt(
@@ -1952,11 +2867,23 @@ export function deletePrompt(id: string, userId: string | null): boolean {
   });
 }
 
+export function ungroupPrompts(userId: string | null, libraryId: number): void {
+  withDb((db) => {
+    for (const prompt of db.prompt_library) {
+      if (prompt.user_id === userId && (prompt.library_id === libraryId || prompt.category === `group:${libraryId}`)) {
+        prompt.library_id = null;
+        prompt.category = "general";
+        prompt.updated_at = nowIso();
+      }
+    }
+  });
+}
+
 export function listSkills(userId: string | null, projectId: string): LocalSkillRecord[] {
   const db = readDb();
-  return sortByDateDesc(
+  return structuredClone(sortByDateDesc(
     db.custom_skills.filter((s) => s.user_id === userId && s.project_id === projectId),
-  );
+  ));
 }
 
 export function createSkill(
@@ -2008,4 +2935,72 @@ export function ensureDefaultProjectForUser(userId: string | null): LocalProject
   const existing = listProjects(userId);
   if (existing.length > 0) return existing[0];
   return createProject(userId, "默认项目");
+}
+
+// ─── Platform connections (e.g. Pinterest OAuth) ───
+
+export function getPlatformConnection(
+  userId: string | null,
+  provider: string,
+): LocalPlatformConnectionRecord | null {
+  const uid = safeUserId(userId);
+  const db = readDb();
+  return structuredClone(db.platform_connections.find((c) => c.user_id === uid && c.provider === provider) || null);
+}
+
+export function upsertPlatformConnection(
+  userId: string | null,
+  provider: string,
+  input: Partial<Omit<LocalPlatformConnectionRecord, "id" | "user_id" | "provider" | "created_at">>,
+): LocalPlatformConnectionRecord {
+  return withDb((db) => {
+    const uid = safeUserId(userId);
+    const now = nowIso();
+    const idx = db.platform_connections.findIndex((c) => c.user_id === uid && c.provider === provider);
+    if (idx >= 0) {
+      db.platform_connections[idx] = {
+        ...db.platform_connections[idx],
+        ...input,
+        updated_at: now,
+      };
+      return db.platform_connections[idx];
+    }
+    const record: LocalPlatformConnectionRecord = {
+      id: randomUUID(),
+      user_id: uid,
+      provider,
+      provider_user_id: input.provider_user_id ?? null,
+      provider_username: input.provider_username ?? null,
+      access_token: input.access_token ?? null,
+      scopes: input.scopes ?? null,
+      token_expires_at: input.token_expires_at ?? null,
+      created_at: now,
+      updated_at: now,
+    };
+    db.platform_connections.push(record);
+    return record;
+  });
+}
+
+export function deletePlatformConnection(userId: string | null, provider: string): boolean {
+  return withDb((db) => {
+    const uid = safeUserId(userId);
+    const before = db.platform_connections.length;
+    db.platform_connections = db.platform_connections.filter((c) => !(c.user_id === uid && c.provider === provider));
+    return db.platform_connections.length < before;
+  });
+}
+
+let lastStorageMaintenance = 0;
+export function maintainLocalStorage() {
+  if (Date.now() - lastStorageMaintenance < 60_000 || activeStorageJobs()) return;
+  lastStorageMaintenance = Date.now();
+  const expired = readDb().image_records.filter(record => record.deleted_at && record.purge_after && Date.parse(record.purge_after) <= Date.now());
+  for (const record of expired) hardDeleteImageRecord(record.id, record.user_id);
+  const owners = new Set(readDb().projects.map(project => project.user_id).filter((owner): owner is string => !!owner));
+  owners.add('00000000-0000-4000-8000-000000000001');
+  for (const owner of owners) for (const item of fontTrash(owner)) if (item.purgeAfter && Date.parse(item.purgeAfter) <= Date.now()) {
+    for (const key of purgeFontTrash(owner, item.id) || []) deleteLocalFileByKey(key);
+  }
+  drainLocalFileCleanup(false, true);
 }

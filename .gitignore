@@ -118,3 +118,6 @@ assets/*.html
 .codex/
 .playwright-cli/
 output/
+.pnpm-store/
+_pinterest_form*.png
+data/**/import-report.json

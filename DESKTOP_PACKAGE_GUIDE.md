@@ -15,6 +15,8 @@
 - 通过脚本校验与最小人工验收。
 - 具备灰度、回滚、日志追踪能力。
 
+> 2026-11-16：v0.2.3 随附 Windows Codex 安装升级指令见 `docs/CODEX_WINDOWS_INSTALL.md`。构建检查通过与 Windows 实机验收分别记录，尚无 Windows 实机时以 ring1 验证分发并明确标注，不声称已完成 Windows 安装验收。
+
 ## 1. 输入参数（每次发布前必须明确）
 
 - `VERSION`：本次发布版本（必须大于上一版本）。
@@ -111,16 +113,16 @@ shasum -a 256 *.exe *.dmg *.zip *.yml *.blockmap > SHA256SUMS.txt
 
 ### 6.1 Windows
 
-- `环中AIStudio-Setup-<version>.exe`
-- `环中AIStudio-Setup-<version>.exe.blockmap`
+- `AIStudio-<version>-win-x64-setup.exe`
+- `AIStudio-<version>-win-x64-setup.exe.blockmap`
 - `latest.yml`
 
 ### 6.2 macOS
 
-- `环中AIStudio-<version>-arm64.dmg`
-- `环中AIStudio-<version>-arm64.zip`
-- `环中AIStudio-<version>-arm64.dmg.blockmap`
-- `环中AIStudio-<version>-arm64.zip.blockmap`
+- `AIStudio-<version>-arm64.dmg`
+- `AIStudio-<version>-arm64.zip`
+- `AIStudio-<version>-arm64.dmg.blockmap`
+- `AIStudio-<version>-arm64.zip.blockmap`
 - `latest-mac.yml`
 
 ### 6.3 完整性文件

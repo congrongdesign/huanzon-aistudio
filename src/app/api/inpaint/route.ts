@@ -957,6 +957,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(toOperationErrorPayload(normalized), { status: normalized.status });
     }
 
+    request.signal.throwIfAborted();
     const body = await request.json();
     const { imageId, imageUrl, maskBase64, prompt, apiKey, baseUrl, model, origWidth, origHeight } = body;
 
@@ -1129,7 +1130,7 @@ export async function POST(request: NextRequest) {
       model: useModel,
       prompt: `INPAINTING TASK: The area marked in bright magenta/purple color in this image needs to be changed. Replace the magenta-marked area with: ${prompt}. Keep all non-magenta areas exactly the same as in the original. The magenta overlay indicates the region to edit.`,
       images: [refUrl],
-      replyType: "json",
+      replyType: "async",
       aspectRatio: aspectRatio,
     };
 
@@ -1137,6 +1138,7 @@ export async function POST(request: NextRequest) {
       requestBody.imageSize = "1K";
     }
 
+    request.signal.throwIfAborted();
     const genResp = await fetch(`${grsaiBaseUrl}/v1/api/generate`, {
       method: "POST",
       headers: {
@@ -1144,9 +1146,24 @@ export async function POST(request: NextRequest) {
         "Authorization": `Bearer ${grsaiApiKey}`,
       },
       body: JSON.stringify(requestBody),
+      signal: request.signal,
     });
 
-    const genData = await genResp.json() as GrsaiResponse;
+    const genText = await genResp.text().catch(() => "");
+    let genData: GrsaiResponse = {};
+    if (genText.trim()) {
+      try { genData = JSON.parse(genText) as GrsaiResponse; } catch { genData = {}; }
+    }
+    if (!genText.trim()) {
+      const normalized = normalizeOperationError({
+        message: `生图API返回空响应 (HTTP ${genResp.status})，模型可能正在维护或暂不可用，请稍后重试或更换模型`,
+        upstreamStatus: genResp.status,
+        status: genResp.status === 429 ? 429 : 502,
+      });
+      console.error("[inpaint] Generate API empty response:", genResp.status);
+      await failOperation(normalized.message);
+      return NextResponse.json(toOperationErrorPayload(normalized), { status: normalized.status });
+    }
 
     if (!genResp.ok || genData.status === "failed" || genData.status === "violation") {
       const normalized = normalizeOperationError({
@@ -1172,15 +1189,22 @@ export async function POST(request: NextRequest) {
       while (pollCount < 20) {
         const delay = pollIntervals[pollCount] || 3000;
         await new Promise(r => setTimeout(r, delay));
+        request.signal.throwIfAborted();
         pollCount++;
 
-        const statusResp = await fetch(`${grsaiBaseUrl}/v1/api/generate/${taskId}`, {
+        const statusResp = await fetch(`${grsaiBaseUrl}/v1/api/result?id=${encodeURIComponent(taskId)}`, {
           headers: { "Authorization": `Bearer ${grsaiApiKey}` },
+          signal: request.signal,
         });
 
         if (!statusResp.ok) continue;
 
-        const statusData = await statusResp.json() as GrsaiResponse;
+        const statusText = await statusResp.text().catch(() => "");
+        let statusData: GrsaiResponse = {};
+        if (statusText.trim()) {
+          try { statusData = JSON.parse(statusText) as GrsaiResponse; } catch { statusData = {}; }
+        }
+        if (!statusText.trim()) continue;
 
         if (statusData.status === "succeeded" && statusData.results?.[0]?.url) {
           resultUrl = statusData.results[0].url;
@@ -1221,7 +1245,7 @@ export async function POST(request: NextRequest) {
     // - Feather edges for smooth transition
 
     // Download generated result
-    const genImgResp = await fetch(resultUrl, { signal: AbortSignal.timeout(30000) });
+    const genImgResp = await fetch(resultUrl, { signal: AbortSignal.any([request.signal, AbortSignal.timeout(30000)]) });
     if (!genImgResp.ok) throw new Error(`Download generated failed: ${genImgResp.status}`);
     const genBuffer = Buffer.from(await genImgResp.arrayBuffer());
 
@@ -1297,6 +1321,7 @@ export async function POST(request: NextRequest) {
 
     console.log(`[inpaint] Composite done, uploading final result...`);
 
+    request.signal.throwIfAborted();
     const uploadedFinal = await uploadImageBuffer({
       buffer: finalImage,
       fileName: `inpaint_${operation.id}.png`,
@@ -1312,6 +1337,7 @@ export async function POST(request: NextRequest) {
     const canvasW = originalImage?.canvas_width || 320;
     const canvasH = originalImage?.canvas_height || 320;
 
+    request.signal.throwIfAborted();
     let newRecord: Record<string, unknown>;
     if (isLocalBackendEnabled()) {
       newRecord = createImageRecord({
@@ -1409,6 +1435,7 @@ export async function POST(request: NextRequest) {
     });
 
   } catch (err) {
+    if(request.signal.aborted){if(operationForFailure)await updateTrackedOperation(operationForFailure.userId,operationForFailure.id,{status:"failed",error:"任务已取消"}).catch(()=>{});return NextResponse.json({error:"任务已取消"},{status:499});}
     console.error("[inpaint] Error:", err);
     const normalized = normalizeOperationError({
       message: err instanceof Error ? err.message : String(err),

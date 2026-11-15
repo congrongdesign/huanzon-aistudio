@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {imageGenerationControls,preferredImageQuality,preferredImageResolution} from '../src/lib/image-generation-defaults';
+const vip=imageGenerationControls('gpt-image-2-vip','16:9','grsai');
+assert.equal(preferredImageResolution(vip.resolutions),'3840x2160');
+assert.equal(preferredImageResolution(vip.resolutions.filter(o=>!o.label.startsWith('4K'))),'2048x1152');
+assert.equal(preferredImageResolution(imageGenerationControls('nano-banana-pro').resolutions),'4K');
+assert.equal(preferredImageResolution(imageGenerationControls('dall-e-2').resolutions),'1024x1024');
+assert.equal(preferredImageResolution(imageGenerationControls('dall-e-3','16:9').resolutions),'1792x1024');
+assert.equal(preferredImageQuality(imageGenerationControls('dall-e-3').qualities),'hd');
+assert.equal(preferredImageQuality(imageGenerationControls('gpt-image-2.5-sunburst').qualities),'max');
+assert.equal(preferredImageQuality(vip.qualities),'medium');
+assert.equal(preferredImageQuality(imageGenerationControls('gpt-image-2').qualities),'auto');
+assert.equal(preferredImageResolution([{value:'8K',label:'8K'},{value:'4K',label:'4K'},{value:'2K',label:'2K'}]),'4K');
+assert.equal(preferredImageResolution([]),'auto');
+console.log('Image defaults: 4K preference, unavailable tier fallback, pixel sizes, model quality enums passed');

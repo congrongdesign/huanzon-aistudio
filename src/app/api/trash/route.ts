@@ -4,6 +4,9 @@ import { getCurrentUserId } from "@/lib/auth";
 import { S3Storage, S3Config } from "coze-coding-dev-sdk";
 import {
   hardDeleteImageRecord,
+  getImageRecordById,
+  drainLocalFileCleanup,
+  localFileCleanupStatus,
   hardDeleteTrashedBefore,
   isLocalBackendEnabled,
   listImageRecords,
@@ -127,12 +130,13 @@ export async function DELETE(request: NextRequest) {
       if (Array.isArray(ids) && ids.length > 0) {
         let deleted = 0;
         for (const itemId of ids) {
-          if (hardDeleteImageRecord(itemId, userId)) deleted += 1;
+          if (getImageRecordById(itemId, userId)?.deleted_at && hardDeleteImageRecord(itemId, userId)) deleted += 1;
         }
-        return NextResponse.json({ success: true, deleted });
+        const reclaimed = drainLocalFileCleanup();
+        return NextResponse.json({ success: true, deleted, reclaimedBytes: reclaimed.bytes, cleanup: localFileCleanupStatus() });
       }
       if (id) {
-        const ok = hardDeleteImageRecord(id, userId);
+        const ok = !!getImageRecordById(id, userId)?.deleted_at && hardDeleteImageRecord(id, userId);
         if (!ok) {
           return NextResponse.json({ error: "记录不存在或无权限" }, { status: 403 });
         }
@@ -141,7 +145,8 @@ export async function DELETE(request: NextRequest) {
       } else {
         return NextResponse.json({ error: "id、ids 或 olderThanDays 至少提供一个" }, { status: 400 });
       }
-      return NextResponse.json({ success: true });
+      const reclaimed = drainLocalFileCleanup();
+      return NextResponse.json({ success: true, reclaimedBytes: reclaimed.bytes, cleanup: localFileCleanupStatus() });
     }
 
     const supabase = getSupabaseClient();

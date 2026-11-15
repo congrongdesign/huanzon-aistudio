@@ -23,6 +23,7 @@ fi
 
 echo "Building the Next.js project..."
 ${PNPM_BIN} next build
+${PNPM_BIN} exec node scripts/build-backup-worker.mjs
 
 echo "Bundling server with tsup..."
 ${PNPM_BIN} tsup src/server.ts --format cjs --platform node --target node20 --outDir dist --no-splitting --no-minify

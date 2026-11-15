@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const releaseDir = path.join(rootDir, 'release');
@@ -78,7 +79,7 @@ function ensureExists(files, fileName, label) {
 }
 
 function writeChecksum(files) {
-  const targets = files.filter((name) => /\.(exe|dmg|zip|yml|blockmap)$/.test(name));
+  const targets = files.filter((name) => /\.(exe|dmg|zip|blockmap)$/.test(name) || /^latest.*\.yml$/.test(name) || ['CODEX_WINDOWS_INSTALL.md', 'Install-AIStudio.ps1', 'RELEASE_NOTES.md', 'release-manifest.json'].includes(name));
   const lines = targets.map((name) => `${sha256(path.join(releaseDir, name))}  ${name}`);
   fs.writeFileSync(path.join(releaseDir, 'SHA256SUMS.txt'), `${lines.join('\n')}\n`);
 }
@@ -116,7 +117,7 @@ function writeNotes(data) {
 }
 
 function getVersionFromArtifacts(fileName) {
-  const match = fileName.match(/^环中AIStudio-Setup-(\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?)\.exe$/);
+  const match = fileName.match(/^AIStudio-(\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?)-win-x64-setup\.exe$/);
   return match ? match[1] : null;
 }
 
@@ -124,12 +125,13 @@ function main() {
   const args = parseArgs(process.argv.slice(2));
   const files = listFiles();
 
-  const windowsInstaller = ensureSingle(files, /^环中AIStudio-Setup-\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?\.exe$/, 'Windows installer');
+  const windowsInstaller = ensureSingle(files, /^AIStudio-\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?-win-x64-setup\.exe$/, 'Windows installer');
+  const windowsPortable = ensureSingle(files, /^AIStudio-\d+\.\d+\.\d+-win-x64-portable\.exe$/, 'Windows portable');
   ensureExists(files, `${windowsInstaller}.blockmap`, 'Windows blockmap');
   ensureExists(files, 'latest.yml', 'Windows latest metadata');
 
-  const macDmg = ensureSingle(files, /^环中AIStudio-\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?-arm64\.dmg$/, 'macOS dmg');
-  const macZip = ensureSingle(files, /^环中AIStudio-\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?-arm64\.zip$/, 'macOS zip');
+  const macDmg = ensureSingle(files, /^AIStudio-\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?-arm64\.dmg$/, 'macOS dmg');
+  const macZip = ensureSingle(files, /^AIStudio-\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?-arm64\.zip$/, 'macOS zip');
   ensureExists(files, `${macDmg}.blockmap`, 'macOS dmg blockmap');
   ensureExists(files, `${macZip}.blockmap`, 'macOS zip blockmap');
   ensureExists(files, 'latest-mac.yml', 'macOS latest metadata');
@@ -147,15 +149,22 @@ function main() {
     console.log(`Derived rollback version from current version: ${args.rollback}`);
   }
 
-  writeChecksum(files);
   const generatedAt = new Date().toISOString();
   const manifest = {
     version,
     ring: args.ring || null,
     rollback: args.rollback || null,
     generatedAt,
+    gitCommit: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: rootDir, encoding: 'utf8' }).trim(),
+    verification: {
+      macOS: 'Installed in /Applications and actual desktop window checked; original projects, connection settings and draft preserved.',
+      windows: 'Cross-built on macOS; package structure, PE x64 image dependencies and integrity checked. Windows installation/upgrade requires colleague device verification.',
+      signing: 'Unsigned; OS security confirmation may be required.',
+      paidGeneration: 'Not performed.',
+    },
     artifacts: {
       windowsInstaller,
+      windowsPortable,
       windowsLatest: 'latest.yml',
       macDmg,
       macZip,
@@ -165,6 +174,7 @@ function main() {
   };
   writeManifest(manifest);
   writeNotes(manifest);
+  writeChecksum(listFiles());
 
   console.log(`Desktop postpack generated for v${version}`);
   console.log('- release/SHA256SUMS.txt');

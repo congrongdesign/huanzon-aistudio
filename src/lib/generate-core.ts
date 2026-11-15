@@ -15,6 +15,7 @@ import { VIP_PIXEL_SIZES } from "@/lib/types";
 import type { LlmGenerationRequestPreview } from "@/lib/llm-preview";
 
 export interface GenerateRequest {
+  signal?: AbortSignal;
   prompt: string;
   size?: string;
   apiKey: string;
@@ -23,9 +24,13 @@ export interface GenerateRequest {
   imageSize?: string;
   quality?: string;
   background?: string;
+  outputFormat?: string;
+  moderation?: string;
   projectId?: string;
   userId?: string;
   referenceImages?: string[];
+  canvasBlockId?: string;
+  blockOrder?: number;
   canvas_x?: number;
   canvas_y?: number;
   canvas_width?: number;
@@ -117,12 +122,20 @@ async function buildOpenAiImageEditFormData(input: {
   model?: string;
   prompt: string;
   size: string;
+  quality?: string;
+  background?: string;
+  outputFormat?: string;
+  moderation?: string;
   references: string[];
 }) {
   const form = new FormData();
   form.append("model", input.model || "gpt-image-1");
   form.append("prompt", input.prompt);
   form.append("size", input.size);
+  if (input.quality) form.append("quality", input.quality);
+  if (input.background && input.background !== "auto") form.append("background", input.background);
+  if (input.outputFormat) form.append("output_format", input.outputFormat);
+  if (input.moderation && input.moderation !== "auto") form.append("moderation", input.moderation);
   form.append("response_format", "b64_json");
   form.append("n", "1");
   const files = await Promise.all(input.references.map((ref, index) => referenceToFile(ref, index)));
@@ -134,7 +147,8 @@ const GENERATE_POLL_INTERVALS_MS = [
   800, 1000, 1200, 1500, 1800, 2200, 2500, 3000,
   3500, 4000, 4500, 5000, 5500, 6000, 7000, 8000,
 ];
-const GENERATE_RETRY_DELAYS_MS = [900, 1800];
+const GENERATE_POLL_TIMEOUT_MS = 6 * 60_000;
+const GENERATE_RETRY_DELAYS_MS = [3_000, 8_000, 15_000];
 
 const GRS_SUCCESS_STATUSES = new Set(["succeeded", "completed", "success"]);
 const GRS_PENDING_STATUSES = new Set([
@@ -180,8 +194,11 @@ const SUPPORTED_RATIOS = [
 ];
 
 function toRatioSize(size?: string): string {
-  if (!size || !size.includes(":")) return "1:1";
-  const [w, h] = size.split(":").map((n) => parseInt(n, 10));
+  if (!size) return "1:1";
+  const trimmed = size.trim();
+  if (/^\d+\s*[xX]\s*\d+$/.test(trimmed) || trimmed === "auto") return trimmed;
+  if (!trimmed.includes(":")) return "1:1";
+  const [w, h] = trimmed.split(":").map((n) => parseInt(n, 10));
   if (!w || !h) return "1:1";
   const base = 1024;
   if (w === h) return "1024x1024";
@@ -191,6 +208,82 @@ function toRatioSize(size?: string): string {
   }
   const nw = Math.round((base * w) / h / 64) * 64;
   return `${Math.max(256, nw)}x${base}`;
+}
+
+/**
+ * Resolve a valid `size` for OpenAI-compatible image endpoints
+ * (/v1/images/generations and /v1/images/edits). Pixel values (e.g. 1536x1024)
+ * pass through unchanged; aspect ratios are mapped to the closest size the
+ * target model actually accepts, so upstream no longer silently falls back to
+ * "auto" (which can produce a wrong aspect ratio).
+ */
+const GRSAI_STD_RATIO_MAP: Record<string, string> = {
+  "1:1": "1024x1024",
+  "16:9": "1672x941",
+  "9:16": "941x1672",
+  "4:3": "1443x1090",
+  "3:4": "1090x1443",
+  "3:2": "1536x1024",
+  "2:3": "1024x1536",
+  "5:4": "1408x1120",
+  "4:5": "1120x1408",
+  "21:9": "1920x832",
+  "9:21": "832x1920",
+  "2:1": "1792x896",
+  "1:2": "896x1792",
+};
+const VIP_1K_BY_RATIO: Record<string, string> = {};
+for (const item of VIP_PIXEL_SIZES) {
+  if (!item.label.startsWith("1K")) continue;
+  const m = item.label.match(/·\s*(\d+:\d+)/);
+  if (m) VIP_1K_BY_RATIO[m[1]] = item.value;
+}
+function ratioToExactPixel(ratio?: string): string | null {
+  const raw = (ratio || "").trim().toLowerCase();
+  if (/^\d+\s*[xX]\s*\d+$/.test(raw)) return raw;
+  if (VIP_1K_BY_RATIO[raw]) return VIP_1K_BY_RATIO[raw];
+  const m = raw.match(/^(\d+):(\d+)$/);
+  if (!m) return null;
+  const w = parseInt(m[1], 10), h = parseInt(m[2], 10);
+  if (!w || !h) return null;
+  let pw = 1024, ph = 1024;
+  if (w >= h) {
+    ph = Math.max(16, Math.round((1024 * h) / w / 16) * 16);
+    pw = Math.max(16, Math.round((ph * w) / h / 16) * 16);
+  } else {
+    pw = Math.max(16, Math.round((1024 * w) / h / 16) * 16);
+    ph = Math.max(16, Math.round((pw * h) / w / 16) * 16);
+  }
+  pw = Math.min(3840, pw); ph = Math.min(3840, ph);
+  return `${pw}x${ph}`;
+}
+function grsRatioToPixel(model?: string, size?: string): string | null {
+  const raw = (size || "").trim().toLowerCase();
+  if (/^\d+\s*[xX]\s*\d+$/.test(raw)) return raw;
+  const mid = (model || "").toLowerCase();
+  if (/(vip|4k|flare|sunburst)/.test(mid)) return ratioToExactPixel(raw);
+  if (/(gpt-image|gpt_image)/.test(mid)) {
+    return GRSAI_STD_RATIO_MAP[raw] || ratioToExactPixel(raw);
+  }
+  return ratioToExactPixel(raw);
+}
+function toOpenAiImageSize(model: string | undefined, size?: string): string {
+  const raw = (size || "").trim();
+  if (!raw) return "1024x1024";
+  if (/^\d+\s*[xX]\s*\d+$/.test(raw) || raw === "auto") return raw;
+  if (!raw.includes(":")) return "1024x1024";
+  const [wRaw, hRaw] = raw.split(":").map((n) => parseInt(n, 10));
+  if (!wRaw || !hRaw) return "1024x1024";
+
+  const mid = (model || "").toLowerCase();
+  if (/(dall-e-3|dalle-3|dall_e_3)/.test(mid)) {
+    if (wRaw === hRaw) return "1024x1024";
+    return wRaw > hRaw ? "1792x1024" : "1024x1792";
+  }
+  if (/(dall-e-2|dalle-2|dall_e_2)/.test(mid)) return "1024x1024";
+  // gpt-image family and generic image models: map ratio to an exact-ratio pixel size
+  if (wRaw === hRaw) return "1024x1024";
+  return ratioToExactPixel(raw) || (wRaw > hRaw ? "1536x1024" : "1024x1536");
 }
 
 function normalizeChatBase(baseUrl?: string): string {
@@ -214,28 +307,6 @@ function isCodiaOpenApiEndpoint(url?: string): boolean {
   } catch {
     return /(^|\/\/|\.)(api\.)?codia\.ai/i.test(url || "");
   }
-}
-
-function isLocalEndpoint(url?: string): boolean {
-  try {
-    const parsed = new URL(url || "");
-    const host = parsed.hostname.toLowerCase();
-    return host === "localhost" || host === "127.0.0.1" || host === "::1";
-  } catch {
-    return false;
-  }
-}
-
-function normalizeGrsStatus(status?: string): string {
-  return (status || "").trim().toLowerCase();
-}
-
-function getGrsResultUrl(data?: GrsaiResponse): string | undefined {
-  return data?.results?.find((item) => typeof item?.url === "string" && item.url.trim())?.url;
-}
-
-function isGrsFailureStatus(status?: string): boolean {
-  return GRS_FAILURE_STATUSES.has(normalizeGrsStatus(status));
 }
 
 const GRSAI_IMAGE2_MODEL_RE = /^gpt-image-2(?:\.5)?(?:-(?:vip|flare|sunburst))?$/;
@@ -269,25 +340,47 @@ function resolveGrsaiImageBackground(model?: string, requested?: string): "trans
     : undefined;
 }
 
-function isGrsaiPixelOnlyImageModel(model?: string): boolean {
-  return /^gpt-image-2(?:\.5)?-(?:vip|flare|sunburst)$/.test(normalizeGrsaiModelId(model));
+function isLocalEndpoint(url?: string): boolean {
+  try {
+    const parsed = new URL(url || "");
+    const host = parsed.hostname.toLowerCase();
+    return host === "localhost" || host === "127.0.0.1" || host === "::1";
+  } catch {
+    return false;
+  }
 }
 
-const VIP_1K_SIZE_BY_RATIO = Object.fromEntries(
-  VIP_PIXEL_SIZES
-    .filter((item) => item.label.startsWith("1K"))
-    .map((item) => [item.label.match(/·\s*(\d+:\d+)/)?.[1], item.value])
-    .filter((entry): entry is [string, string] => Boolean(entry[0] && entry[1])),
-);
+function normalizeGrsStatus(status?: string): string {
+  return (status || "").trim().toLowerCase();
+}
 
-function normalizeGrsaiPixelOnlySize(size?: string): string {
-  const value = (size || "").trim().toLowerCase();
-  if (/^\d+x\d+$/.test(value)) return value;
-  return VIP_1K_SIZE_BY_RATIO[value] || "1024x1024";
+function getGrsResultUrl(data?: GrsaiResponse): string | undefined {
+  return data?.results?.find((item) => typeof item?.url === "string" && item.url.trim())?.url;
+}
+
+function isGrsFailureStatus(status?: string): boolean {
+  return GRS_FAILURE_STATUSES.has(normalizeGrsStatus(status));
 }
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+/**
+ * Safely read a JSON response body. If the body is empty or not valid JSON
+ * (e.g. an upstream gateway returned 200 with no content), return a readable
+ * error instead of throwing "Unexpected end of JSON input".
+ */
+async function readJsonResponse<T>(res: Response, context: string): Promise<{ data?: T; error?: string }> {
+  const text = await res.text().catch(() => "");
+  if (!text.trim()) {
+    return { error: `${context} 返回空响应 (HTTP ${res.status})` };
+  }
+  try {
+    return { data: JSON.parse(text) as T };
+  } catch {
+    return { error: `${context} 返回非 JSON 响应 (HTTP ${res.status}): ${text.slice(0, 200)}` };
+  }
 }
 
 function normalizeCodiaModelId(model?: string | null): string {
@@ -327,7 +420,8 @@ function isRetryableGenerateError(error?: string): boolean {
   return (
     /fetch failed|network|socket hang up|econn|enotfound|etimedout|timeout/.test(text) ||
     /excessive system load|upstream load|load is saturated|saturated|overload|too many requests|rate limit|429/.test(text) ||
-    /轮询请求失败|生成超时|无法连接|请求过于频繁|限流|上游负载|系统负载/.test(error || "") ||
+    /generate failed|task failed|status.?failed|生成失败|任务失败|模型.*维护|维护中|服务繁忙|busy|overloaded/.test(text) ||
+    /轮询请求失败|生成超时|无法连接|请求过于频繁|限流|上游负载|系统负载|空响应/.test(error || "") ||
     /生图接口错误 \(5\d\d\)/.test(error || "")
   );
 }
@@ -392,7 +486,7 @@ export async function callGenerateApi(
   effectiveSize: string,
   effectiveReferenceImages: string[],
 ): Promise<{ imageUrl?: string; imageBuffer?: Buffer; requestPreview?: LlmGenerationRequestPreview; error?: string }> {
-  const { apiKey, baseUrl, model, imageSize, quality, background } = req;
+  const { apiKey, baseUrl, model, imageSize, quality, background, outputFormat, moderation } = req;
   const cleanApiKey = apiKey.replace(/^Bearer\s+/i, "").trim();
   const base = normalizeChatBase(baseUrl);
   const preparedReferences = await prepareReferenceImagesForModel(effectiveReferenceImages, {
@@ -405,28 +499,28 @@ export async function callGenerateApi(
     return item.original === item.value ? value : `${item.original} -> ${value}`;
   });
 
-  const modelId = normalizeGrsaiModelId(model);
-  const aspectRatioValue = isGrsaiPixelOnlyImageModel(modelId)
-    ? normalizeGrsaiPixelOnlySize(effectiveSize)
-    : effectiveSize;
+  const aspectRatioValue = (model || "").startsWith("nano-banana") ? effectiveSize : grsRatioToPixel(model, effectiveSize) || effectiveSize;
   const requestBody: Record<string, unknown> = {
     model: model || "gpt-image-2",
     prompt: effectivePrompt,
     images: preparedReferences.references,
-    replyType: "json",
+    // Async submission avoids upstream gateway timeouts for 2K/4K jobs and
+    // lets us poll the documented /v1/api/result endpoint instead.
+    replyType: "async",
     aspectRatio: aspectRatioValue,
   };
 
   if ((model || "").startsWith("nano-banana")) {
     requestBody.imageSize = imageSize || "1K";
   }
-
-  if (GRSAI_IMAGE2_MODEL_RE.test(modelId)) {
+  if (GRSAI_IMAGE2_MODEL_RE.test(normalizeGrsaiModelId(model))) {
     const resolvedQuality = resolveGrsaiImageQuality(model, quality);
     const resolvedBackground = resolveGrsaiImageBackground(model, background);
     if (resolvedQuality) requestBody.quality = resolvedQuality;
     if (resolvedBackground) requestBody.background = resolvedBackground;
   }
+  if (outputFormat) requestBody.output_format = outputFormat;
+  if (moderation && moderation !== "auto") requestBody.moderation = moderation;
 
   let requestPreview: LlmGenerationRequestPreview = {
     index: 0,
@@ -454,8 +548,11 @@ export async function callGenerateApi(
       model: codiaModel,
     };
     if (preparedReferences.references.length > 0) codiaBody.reference_images = preparedReferences.references;
-    if (codiaModel === "gpt_image" && imageSize && ["low", "medium", "high", "auto"].includes(imageSize)) {
-      codiaBody.quality = imageSize;
+    if (codiaModel === "gpt_image") {
+      codiaBody.quality = "high";
+    }
+    if (codiaModel === "gpt_image" && background && ["auto", "opaque", "transparent"].includes(background)) {
+      codiaBody.background = background;
     }
     requestPreview = {
       ...requestPreview,
@@ -476,6 +573,7 @@ export async function callGenerateApi(
           Authorization: `Bearer ${cleanApiKey}`,
         },
         body: JSON.stringify(codiaBody),
+        signal: req.signal,
       });
     } catch (err) {
       const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
@@ -513,6 +611,7 @@ export async function callGenerateApi(
         return headers;
       })(),
       body: JSON.stringify(requestBody),
+        signal: req.signal,
     });
   } catch (err) {
     const detail = err instanceof Error ? `${err.name}: ${err.message}` : String(err);
@@ -520,7 +619,14 @@ export async function callGenerateApi(
   }
 
   if (grsResp.ok) {
-    const grsData = (await grsResp.json()) as GrsaiResponse;
+    const parsedGrs = await readJsonResponse<GrsaiResponse>(grsResp, "生图接口");
+    if (!parsedGrs.data) {
+      return {
+        requestPreview,
+        error: `${parsedGrs.error || "生图接口返回空响应"}（模型可能正在维护或暂不可用，请稍后重试或更换模型）`,
+      };
+    }
+    const grsData = parsedGrs.data;
     const initialStatus = normalizeGrsStatus(grsData.status);
     const initialImageUrl = getGrsResultUrl(grsData);
 
@@ -530,11 +636,18 @@ export async function callGenerateApi(
 
     if (shouldPollGrsTask(grsData)) {
       let lastPollError = "";
-      for (let i = 0; i < GENERATE_POLL_INTERVALS_MS.length; i++) {
-        await new Promise((r) => setTimeout(r, GENERATE_POLL_INTERVALS_MS[i]));
+      const pollStartedAt = Date.now();
+      let pollIndex = 0;
+      while (Date.now() - pollStartedAt < GENERATE_POLL_TIMEOUT_MS) {
+        const interval = GENERATE_POLL_INTERVALS_MS[Math.min(pollIndex, GENERATE_POLL_INTERVALS_MS.length - 1)];
+        req.signal?.throwIfAborted();
+        await new Promise((r) => setTimeout(r, interval));
+        req.signal?.throwIfAborted();
+        pollIndex += 1;
         let pollRes: Response;
         try {
-          pollRes = await fetch(`${base}/v1/api/generate/${grsData.id}`, {
+          pollRes = await fetch(`${base}/v1/api/result?id=${encodeURIComponent(grsData.id)}`, {
+            signal: req.signal,
             headers: cleanApiKey ? { Authorization: `Bearer ${cleanApiKey}` } : undefined,
           });
         } catch (err) {
@@ -547,7 +660,12 @@ export async function callGenerateApi(
           lastPollError = `轮询错误 (${pollRes.status})${pollErrText ? `: ${pollErrText.slice(0, 240)}` : ""}`;
           continue;
         }
-        const pollData = (await pollRes.json()) as GrsaiResponse;
+        const parsedPoll = await readJsonResponse<GrsaiResponse>(pollRes, "轮询接口");
+        if (!parsedPoll.data) {
+          lastPollError = parsedPoll.error || "轮询响应为空";
+          continue;
+        }
+        const pollData = parsedPoll.data;
         const pollStatus = normalizeGrsStatus(pollData.status);
         const pollImageUrl = getGrsResultUrl(pollData);
         if (pollImageUrl && !isGrsFailureStatus(pollStatus)) {
@@ -573,6 +691,16 @@ export async function callGenerateApi(
     };
   } else {
     grsErrorText = await grsResp.text().catch(() => "");
+    let grsErrorPayload: Partial<GrsaiResponse> | null = null;
+    try {
+      grsErrorPayload = grsErrorText ? JSON.parse(grsErrorText) as Partial<GrsaiResponse> : null;
+    } catch {
+      grsErrorPayload = null;
+    }
+    const upstreamMessage = typeof grsErrorPayload?.error === "string" ? grsErrorPayload.error.trim() : "";
+    if (upstreamMessage) {
+      grsErrorText = upstreamMessage;
+    }
     const allowOpenAiFallback =
       grsResp.status === 404 ||
       grsResp.status === 405 ||
@@ -587,10 +715,16 @@ export async function callGenerateApi(
   const openaiBody: Record<string, unknown> = {
     model: model || "gpt-image-1",
     prompt: effectivePrompt,
-    size: toRatioSize(effectiveSize),
+    size: toOpenAiImageSize(model, effectiveSize),
     response_format: "b64_json",
     n: 1,
   };
+  if (req.quality && ["auto", "low", "medium", "high", "standard", "hd"].includes(req.quality)) {
+    openaiBody.quality = req.quality;
+  }
+  if (background && background !== "auto") openaiBody.background = background;
+  if (outputFormat) openaiBody.output_format = outputFormat;
+  if (moderation && moderation !== "auto") openaiBody.moderation = moderation;
 
   const hasOpenAiEditImage = preparedReferences.references.length > 0;
   const openAiEndpoint = hasOpenAiEditImage ? `${base}/v1/images/edits` : `${base}/v1/images/generations`;
@@ -608,13 +742,18 @@ export async function callGenerateApi(
       const form = await buildOpenAiImageEditFormData({
         model,
         prompt: effectivePrompt,
-        size: toRatioSize(effectiveSize),
+        size: toOpenAiImageSize(model, effectiveSize),
+        quality: req.quality,
+        background,
+        outputFormat,
+        moderation,
         references: preparedReferences.references,
       });
       openaiRes = await fetch(openAiEndpoint, {
         method: "POST",
         headers: cleanApiKey ? { Authorization: `Bearer ${cleanApiKey}` } : undefined,
         body: form,
+        signal: req.signal,
       });
     } else {
       openaiRes = await fetch(openAiEndpoint, {
@@ -627,6 +766,7 @@ export async function callGenerateApi(
           return headers;
         })(),
         body: JSON.stringify(openaiBody),
+        signal: req.signal,
       });
     }
   } catch (err) {
@@ -639,7 +779,11 @@ export async function callGenerateApi(
     return { requestPreview, error: `API error (${openaiRes.status}): ${errText}` };
   }
 
-  const openaiData = (await openaiRes.json()) as OpenAIImageResponse;
+  const parsedOpenAi = await readJsonResponse<OpenAIImageResponse>(openaiRes, "图片接口");
+  if (!parsedOpenAi.data) {
+    return { requestPreview, error: parsedOpenAi.error || "图片接口返回空响应" };
+  }
+  const openaiData = parsedOpenAi.data;
   const first = openaiData.data?.[0];
   if (!first) return { requestPreview, error: "图片接口未返回数据" };
   if (first.b64_json) {
@@ -670,6 +814,7 @@ export async function executeGeneration(req: GenerateRequest): Promise<GenerateR
     return { success: false, error: "请先配置 API Key" };
   }
 
+  req.signal?.throwIfAborted();
   const effectiveReq: GenerateRequest = {
     ...req,
     apiKey: apiKey || "local-model",
@@ -689,6 +834,8 @@ export async function executeGeneration(req: GenerateRequest): Promise<GenerateR
       size: size || "1:1",
       status: "pending",
       reference_images: referenceImages ? JSON.stringify(referenceImages) : null,
+      canvas_block_id: req.canvasBlockId,
+      block_order: req.blockOrder,
       canvas_x,
       canvas_y,
       canvas_width,
@@ -750,9 +897,10 @@ export async function executeGeneration(req: GenerateRequest): Promise<GenerateR
     let generated = await callGenerateApi(effectiveReq, effectivePrompt, effectiveSize, effectiveReferenceImages);
     let retryCount = 0;
     for (let attempt = 0; attempt < GENERATE_RETRY_DELAYS_MS.length; attempt++) {
+      req.signal?.throwIfAborted();
       if (!generated.error || isLocalEndpoint(baseUrl) || !isRetryableGenerateError(generated.error)) break;
       retryCount = attempt + 1;
-      await sleep(GENERATE_RETRY_DELAYS_MS[attempt]);
+      await sleep(GENERATE_RETRY_DELAYS_MS[attempt] + Math.floor(Math.random() * 1_500));
       generated = await callGenerateApi(effectiveReq, effectivePrompt, effectiveSize, effectiveReferenceImages);
     }
     if (generated.error) {
@@ -769,6 +917,7 @@ export async function executeGeneration(req: GenerateRequest): Promise<GenerateR
       return { success: false, error: finalError, requestPreview: generated.requestPreview };
     }
 
+    req.signal?.throwIfAborted();
     let finalUrl = "";
     let finalKey: string | null = null;
 
@@ -790,6 +939,7 @@ export async function executeGeneration(req: GenerateRequest): Promise<GenerateR
         throw new Error("未返回图片数据");
       }
 
+      req.signal?.throwIfAborted();
       updateImageRecord(recordId, userId || null, {
         image_url: finalUrl,
         image_key: finalKey,
@@ -831,6 +981,12 @@ export async function executeGeneration(req: GenerateRequest): Promise<GenerateR
       requestPreview: generated.requestPreview,
     };
   } catch (err) {
+    if(req.signal?.aborted){
+      const updates={status:"cancelled",deleted_at:new Date().toISOString()};
+      if(localMode)updateImageRecord(recordId,userId||null,updates);
+      else await getSupabaseClient().from("image_records").update(updates).eq("id",recordId);
+      return {success:false,error:"任务已取消"};
+    }
     const message = err instanceof Error ? err.message : "Network error";
     const failedPrompt = buildFailedRecordPrompt(prompt, message);
     if (localMode) {

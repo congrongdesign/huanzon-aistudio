@@ -1,33 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseClient } from "@/storage/database/supabase-client";
 import { getCurrentUserId } from "@/lib/auth";
-import { isLocalBackendEnabled } from "@/lib/local-backend";
-
-type LocalInspFolder = {
-  id: string;
-  user_id: string;
-  name: string;
-  parent_id: string | null;
-  project_id: string | null;
-  sort_order: number;
-  color: string;
-  created_at: string;
-  updated_at: string;
-};
-
-const localInspFoldersStore = new Map<string, LocalInspFolder[]>();
-
-function nowIso() {
-  return new Date().toISOString();
-}
-
-function getFolders(userId: string) {
-  return (localInspFoldersStore.get(userId) || []).slice().sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
-}
-
-function setFolders(userId: string, folders: LocalInspFolder[]) {
-  localInspFoldersStore.set(userId, folders);
-}
+import {
+  createInspirationFolder,
+  deleteInspirationFolderCascade,
+  isLocalBackendEnabled,
+  listInspirationFolders,
+  updateInspirationFolder,
+} from "@/lib/local-backend";
 
 export async function GET(req: NextRequest) {
   const userId = getCurrentUserId(req);
@@ -38,9 +18,7 @@ export async function GET(req: NextRequest) {
   const projectId = req.nextUrl.searchParams.get("projectId");
 
   if (isLocalBackendEnabled()) {
-    let folders = getFolders(userId);
-    if (projectId) folders = folders.filter((f) => f.project_id === projectId);
-    return NextResponse.json({ folders });
+    return NextResponse.json({ folders: listInspirationFolders(userId, projectId) });
   }
 
   const supabase = getSupabaseClient();
@@ -62,21 +40,15 @@ export async function POST(req: NextRequest) {
   const projectId = project_id || null;
 
   if (isLocalBackendEnabled()) {
-    const folders = getFolders(userId);
-    const lastOrder = folders.filter((f) => f.project_id === projectId).sort((a, b) => b.sort_order - a.sort_order)[0]?.sort_order || 0;
-    const folder: LocalInspFolder = {
-      id: crypto.randomUUID(),
-      user_id: userId,
+    const folders = listInspirationFolders(userId, projectId);
+    const lastOrder = folders.reduce((max, folder) => Math.max(max, folder.sort_order || 0), 0);
+    const folder = createInspirationFolder(userId, {
       name: name || "新建文件夹",
       parent_id: parent_id || null,
       project_id: projectId,
       sort_order: lastOrder + 1,
       color: color || "#6366f1",
-      created_at: nowIso(),
-      updated_at: nowIso(),
-    };
-    folders.push(folder);
-    setFolders(userId, folders);
+    });
     return NextResponse.json({ folder });
   }
 
@@ -119,17 +91,9 @@ export async function PATCH(req: NextRequest) {
   if (!id) return NextResponse.json({ error: "id required" }, { status: 400 });
 
   if (isLocalBackendEnabled()) {
-    const folders = getFolders(userId);
-    const idx = folders.findIndex((f) => f.id === id);
-    if (idx < 0) return NextResponse.json({ error: "folder not found" }, { status: 404 });
-    const t = folders[idx];
-    if (name !== undefined) t.name = name;
-    if (color !== undefined) t.color = color;
-    if (sort_order !== undefined) t.sort_order = Number(sort_order);
-    if (parent_id !== undefined) t.parent_id = parent_id;
-    t.updated_at = nowIso();
-    setFolders(userId, folders);
-    return NextResponse.json({ folder: t });
+    const folder = updateInspirationFolder(id, userId, { name, color, sort_order, parent_id });
+    if (!folder) return NextResponse.json({ error: "folder not found" }, { status: 404 });
+    return NextResponse.json({ folder });
   }
 
   const supabase = getSupabaseClient();
@@ -161,23 +125,8 @@ export async function DELETE(req: NextRequest) {
   if (!id) return NextResponse.json({ error: "id required" }, { status: 400 });
 
   if (isLocalBackendEnabled()) {
-    const folders = getFolders(userId);
-    const exists = folders.some((f) => f.id === id);
-    if (!exists) return NextResponse.json({ error: "folder not found" }, { status: 404 });
-
-    const toDelete = new Set<string>([id]);
-    let changed = true;
-    while (changed) {
-      changed = false;
-      for (const f of folders) {
-        if (f.parent_id && toDelete.has(f.parent_id) && !toDelete.has(f.id)) {
-          toDelete.add(f.id);
-          changed = true;
-        }
-      }
-    }
-
-    setFolders(userId, folders.filter((f) => !toDelete.has(f.id)));
+    const result = deleteInspirationFolderCascade(id, userId);
+    if (!result.deleted) return NextResponse.json({ error: "folder not found" }, { status: 404 });
     return NextResponse.json({ success: true });
   }
 

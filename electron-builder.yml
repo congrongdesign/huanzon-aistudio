@@ -29,7 +29,7 @@ extraResources:
 
 publish:
   provider: generic
-  url: https://updates.example.com/huanzon-aistudio
+  url: https://github.com/congrongdesign/huanzon-aistudio/releases/latest/download
   channel: latest
 
 win:
@@ -47,7 +47,7 @@ win:
     - target: portable
       arch:
         - x64
-  artifactName: "${productName}-${version}-win-${arch}.${ext}"
+  artifactName: "AIStudio-${version}-win-${arch}.${ext}"
 
 mac:
   appId: com.huanzon.aistudio
@@ -63,12 +63,10 @@ mac:
     - target: dmg
       arch:
         - arm64
-        - x64
     - target: zip
       arch:
         - arm64
-        - x64
-  artifactName: "${productName}-${version}-${arch}.${ext}"
+  artifactName: "AIStudio-${version}-${arch}.${ext}"
   hardenedRuntime: true
   gatekeeperAssess: false
 
@@ -95,9 +93,9 @@ nsis:
   createDesktopShortcut: true
   createStartMenuShortcut: true
   shortcutName: 环中AIStudio
-  artifactName: "${productName}-${version}-win-${arch}-setup.${ext}"
+  artifactName: "AIStudio-${version}-win-${arch}-setup.${ext}"
 
 portable:
-  artifactName: "${productName}-${version}-win-${arch}-portable.${ext}"
+  artifactName: "AIStudio-${version}-win-${arch}-portable.${ext}"
 
 asar: true

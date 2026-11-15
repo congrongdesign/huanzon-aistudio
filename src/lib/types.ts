@@ -51,6 +51,7 @@ export interface CanvasImage {
   isGenerating?: boolean;
   isUploading?: boolean;
   generateStartTime?: number; // timestamp when generation started
+  generationKey?: string; // Client identity survives placeholder → persisted result for the media reveal.
   deleted_at?: string | null;
   filters?: Partial<ImageFilterSettings>;
 }
@@ -312,6 +313,20 @@ export interface ReferenceImage {
   image_key: string | null;
   file_name: string | null;
   created_at: string;
+}
+
+
+export interface PlatformConnection {
+  id: string;
+  user_id: string | null;
+  provider: string;
+  provider_user_id: string | null;
+  provider_username: string | null;
+  access_token: string | null;
+  scopes: string | null;
+  token_expires_at: string | null;
+  created_at: string;
+  updated_at: string | null;
 }
 
 export const ASPECT_RATIOS = [

@@ -10,13 +10,16 @@ export interface RuntimeConfig {
   lanRole?: LanRole;
   lanHostUrl?: string;
   downloadDirectory?: string;
+  mediaDirectory?: string;
+  mediaPreviousDirectories?: string[];
+  previewCacheLimitMB?: number;
   supabaseUrl?: string;
   supabaseAnonKey?: string;
   supabaseServiceRoleKey?: string;
   updatedAt?: string;
 }
 
-function getBaseDataDir(): string {
+export function getBaseDataDir(): string {
   if (process.env.LOCAL_DATA_DIR) {
     return path.resolve(process.env.LOCAL_DATA_DIR);
   }

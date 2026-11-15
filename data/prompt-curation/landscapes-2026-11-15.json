@@ -1,0 +1,1811 @@
+{
+  "version": 1,
+  "batch": "design-curation-2026-11-15",
+  "collectedAt": "2026-11-15",
+  "selectionMethod": "公开详情全文回查、原图逐张核对、完整中文翻译、比例差异如实标注",
+  "prompts": [
+    {
+      "key": "promptlibrary-81996",
+      "name": "南极航拍｜冰山间的科考船",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "壮观的航拍画面：一艘坚固的科考船航行在南极海洋的冰域，两侧是高耸巨大的冰山。船身流线型设计与陡峭粗粝的冰体形成鲜明对比；冰山以锋利边缘和明亮洁白的表面从海面升起。辽阔海洋呈深冷蓝色，散布浮冰与积雪。整体雄伟而严峻，表现船只穿越地球极偏远冰寒区域的艰难航程。原始照片观感，高细节，18mm镜头，写实摄影，徕卡相机。\n\n来源模型参数：--ar 9:16 --stylize 50 --v 6.1",
+      "tags": [
+        "海岸与水域航拍",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "航拍",
+        "冰川",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-81996",
+        "subcategory": "海岸与水域航拍",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/realistic-ship-in-antarctica/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/realistic-ship-in-antarctica/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/09/Realistic-Ship-in-Antarctica-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-760ee59921edc2756b8f.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/09/Realistic-Ship-in-Antarctica-midjourney-prompt.webp"
+      ],
+      "sha256": "b2612242459dd220fa5f7a0cc6ae6d95fce6fcff09a7537bc224cca75fdcbe1c",
+      "originalText": "A breathtaking aerial view of a sturdy research ship navigating through the icy expanse of the Antarctic Ocean, flanked by towering, colossal icebergs. The ship's sleek design contrasts with the stark, rugged ice formations that rise dramatically from the sea, with their jagged edges and brilliant white surfaces. The vast, open ocean is a deep, cold blue, with patches of floating ice and snow. The overall scene is both majestic and formidable, capturing the ship's challenging journey through one of the most remote and icy regions of the planet. original photo. high detail. 18mm lens. realistic. photography. Leica camera. --ar 9:16 --stylize 50 --v 6.1"
+    },
+    {
+      "key": "promptlibrary-75424",
+      "name": "深海俯拍｜蓝色水母与小舟",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "辽阔的深暗海面上，一艘以白色和橙色勾勒的小船漂浮着。海里布满发出蓝色光芒的小水母。航拍视角，超广角镜头，摄影画面。\n\n来源模型参数：--ar 3:4",
+      "tags": [
+        "海岸与水域航拍",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "俯拍",
+        "生物荧光",
+        "梦幻摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-75424",
+        "subcategory": "海岸与水域航拍",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/oceanic-jellyfish-boat/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/oceanic-jellyfish-boat/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/06/Oceanic-Jellyfish-Boat-midjourney-prompt.webp",
+        "previewDimensions": [
+          928,
+          1232
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-4e4292aa82339a406a16.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/06/Oceanic-Jellyfish-Boat-midjourney-prompt.webp"
+      ],
+      "sha256": "5b924b6195816060c22743ace5f939d9d6edb37b3bdee608789b26db2ebc0597",
+      "originalText": "A vast expanse of dark sea, with a small boat outlined in white and orange, drifting on the ocean. The sea is filled with small jellyfish that emit a blue light. Aerial view, taken with an ultra-wide-angle lens, in a photograph. --ar 3:4"
+    },
+    {
+      "key": "promptlibrary-66906",
+      "name": "碧海俯拍｜孤舟与透明海水",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "一艘小船漂浮在海洋中，彩色摄影先驱风格，爱克发Vista胶片，航拍抽象构成，徕卡I相机，光线充足的风景，徕卡M6相机，疏朗构图。\n\n来源模型参数：--ar 63:64 --stylize 750 --v 6",
+      "tags": [
+        "海岸与水域航拍",
+        "方形",
+        "Prompt Library",
+        "图文已核对",
+        "俯拍",
+        "胶片",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-66906",
+        "subcategory": "海岸与水域航拍",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/oceanic-boat-agfa-vista-aerial-abstractions/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/oceanic-boat-agfa-vista-aerial-abstractions/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/01/Oceanic-Boat-Agfa-Vista-Aerial-Abstractions-midjourney-prompt.webp",
+        "previewDimensions": [
+          1024,
+          1040
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-87257cdc84b7ab99832b.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/01/Oceanic-Boat-Agfa-Vista-Aerial-Abstractions-midjourney-prompt.webp"
+      ],
+      "sha256": "0dd2e2f1e620c524cfea6f4d6b44dccfbbd35f5f272258a2eb0c947026c81016",
+      "originalText": "a boat floating in the ocean, in the style of color photography pioneer, agfa vista, aerial abstractions, leica i, light-filled landscapes, leica m6, sparse --ar 63:64 --stylize 750 --v 6"
+    },
+    {
+      "key": "promptlibrary-83226",
+      "name": "寺院航拍｜金黄银杏与屋檐",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "无人机视角，巨大的银杏树，流动的金黄树叶，摄影风格，3D，中国寺院，极远景，高分辨率。\n\n来源模型参数：--ar 9:16 --v 6.1",
+      "tags": [
+        "建筑与人文摄影",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "航拍",
+        "中式建筑",
+        "秋景"
+      ],
+      "source": {
+        "key": "promptlibrary-83226",
+        "subcategory": "建筑与人文摄影",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/ginkgo-tree-over-temple/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/ginkgo-tree-over-temple/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/09/Ginkgo-Tree-Over-Temple-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-cdffade823d20f7fbeb3.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/09/Ginkgo-Tree-Over-Temple-midjourney-prompt.webp"
+      ],
+      "sha256": "d3fa14f3d6bc28fde4abd478c47c6c33b7cbfe255beb9c80e2bf715a813b377c",
+      "originalText": "Drone view, big Ginkgo Tree, yellow leaves flowing, photography style, 3D, Chinese temple, extreme long shots, high resolution --ar 9:16 --v 6.1"
+    },
+    {
+      "key": "promptlibrary-68563",
+      "name": "热带山居｜暮色建筑航拍",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "斯里兰卡皮杜兰加拉岩，森林、砂岩、木材、深色金属、木材、玻璃、泳池、灌木花园，建筑外观。RCR Arquitectes建筑风格，黄昏，无人机视角，数码摄影，30mm镜头，F/22，清晰锐利的对焦。\n\n来源模型参数：--ar 4:5 --style raw",
+      "tags": [
+        "建筑与人文摄影",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "航拍",
+        "建筑摄影",
+        "森林"
+      ],
+      "source": {
+        "key": "promptlibrary-68563",
+        "subcategory": "建筑与人文摄影",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/rcr-architectes-dusk-view/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/rcr-architectes-dusk-view/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/02/RCR-Architectes-Dusk-View-midjourney-prompt.webp",
+        "previewDimensions": [
+          960,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-4ec398e3b78d1b5cce52.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/02/RCR-Architectes-Dusk-View-midjourney-prompt.webp"
+      ],
+      "sha256": "b10abefe6fac6adaa0ce4238d9922eb91c5626979916fcdfd35c4ed9b4692630",
+      "originalText": "Sri Lanka, Pidurangala Rock, forest, sandstone, timber, dark metal, timber, glass, pool, bush garden , exterior | RCR Architectes architecture style | dusk| drone view | Digital photography, 30 mm, F/22, Clear sharp focus | --ar 4:5 --style raw"
+    },
+    {
+      "key": "promptlibrary-96435",
+      "name": "云雾森林｜苔藓木栈道",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "哥斯达黎加蒙特维德神秘的云雾森林，浓雾穿行于高耸古树之间，柔和的热带细雨落在覆盖茂盛绿苔的枝条上，悬垂藤蔓在凉风中轻摆。一条狭窄木栈道消失在雾里，娇嫩蕨叶上的雨珠闪烁，远处奇异鸟鸣回荡于迷雾丛林。使用索尼A1、24mm f/1.4 G Master镜头、ISO200，电影灯光，超写实雾效，深邃对比，HDR光照，8K分辨率。",
+      "tags": [
+        "森林与晨雾",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "森林",
+        "晨雾",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-96435",
+        "subcategory": "森林与晨雾",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/ultra-realistic-cloud-forest/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/ultra-realistic-cloud-forest/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Ultra-Realistic-Cloud-Forest-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-ddc1f3299448495340a5.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Ultra-Realistic-Cloud-Forest-midjourney-prompt.webp"
+      ],
+      "sha256": "928bc65086a05a3d4681315c4c8e2e1a30f8cd6195b1901ce38b46b8d0d8df69",
+      "originalText": "A mystical cloud forest in Monteverde, Costa Rica, dense mist weaving through towering ancient trees, soft tropical rain falling onto lush green moss-covered branches, hanging vines swaying in the cool breeze, a narrow wooden walkway disappearing into the fog, delicate ferns glistening with raindrops, the distant call of exotic birds echoing through the misty jungle, captured with Sony A1, 24mm f/1.4 G Master lens, ISO 200, cinematic lighting, ultra-realistic mist effects, deep contrast, HDR lighting, 8K resolution"
+    },
+    {
+      "key": "promptlibrary-91943",
+      "name": "雪林公路｜红衣人物与黄线",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "森林里，一条两侧带黄色线条的空旷道路。穿红色羽绒服的人站在中间线上，周围是覆雪高树与雾蒙蒙的天空。高清摄影风格，广角镜头，对称构图，冷色调，充满神秘氛围。\n\n来源模型参数：--ar 3:4 --v 6.1",
+      "tags": [
+        "森林与晨雾",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "森林",
+        "雪景",
+        "公路",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-91943",
+        "subcategory": "森林与晨雾",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/foggy-forest-road-scene/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/foggy-forest-road-scene/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Foggy-Forest-Road-Scene-midjourney-prompt.webp",
+        "previewDimensions": [
+          1856,
+          2464
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-8e70c091df9ec5cd9497.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Foggy-Forest-Road-Scene-midjourney-prompt.webp"
+      ],
+      "sha256": "bdfbc0f933b66d9f533bc35b426bd210e403be074d7a644f82b5d55e6eacfc76",
+      "originalText": "In the forest, there is an empty road with yellow lines on both sides. A person in a red down jacket stands on the middle line, surrounded by snow-capped towering trees and a foggy sky. High-definition photography style, wide-angle lens, symmetrical composition, cold colors, full of mysterious atmosphere --ar 3:4 --v 6.1"
+    },
+    {
+      "key": "promptlibrary-99618",
+      "name": "月夜山湖｜极简行舟",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "一名男子在月光照耀的午夜划船掠过湖面，背景是夜色中的深暗群山。整体主题为极简主义与高级审美，设计呈现现代感，同时传递温暖的感受。氛围宁静而空灵。",
+      "tags": [
+        "山湖与雪山",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "山湖",
+        "月光",
+        "极简",
+        "摄影感"
+      ],
+      "source": {
+        "key": "promptlibrary-99618",
+        "subcategory": "山湖与雪山",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-boat-under-moonlight/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/minimalist-boat-under-moonlight/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Boat-Under-Moonlight-midjourney-prompt.webp",
+        "previewDimensions": [
+          800,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-f7ffaa6bb92e38b432dd.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Boat-Under-Moonlight-midjourney-prompt.webp"
+      ],
+      "sha256": "6091d655f9d32c8f1b8caf60d1454ac8a75753de21d93af981239a382379098c",
+      "originalText": "A man glides his boat across the lake under the moonlit midnight, set against a backdrop of dark mountains at night, with an overall theme of minimalism and high-end aesthetics. This design should exude modernity while conveying a sense of warm, The atmosphere is serene and ethereal."
+    },
+    {
+      "key": "promptlibrary-84305",
+      "name": "镜湖晨雾｜静泊木舟",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "一艘小木船静静漂浮在湖面，周围浓雾缭绕。湖水如镜，映出模糊的远山，增加安静而孤独的氛围。风景壁纸，500px、Unsplash摄影大师观感，手机壁纸，高清。\n\n来源模型参数：--ar 3:4 --v 6.1",
+      "tags": [
+        "山湖与雪山",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "山湖",
+        "雾景",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-84305",
+        "subcategory": "山湖与雪山",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/foggy-lake-with-boat/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/foggy-lake-with-boat/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/10/Foggy-Lake-with-Boat-midjourney-prompt.webp",
+        "previewDimensions": [
+          928,
+          1232
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-2f07f330826d0fb54687.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/10/Foggy-Lake-with-Boat-midjourney-prompt.webp"
+      ],
+      "sha256": "c07db8f7fa6801226e329a697703567173a8a2dc5a122d663228befc378a7c4a",
+      "originalText": "A small wooden boat floats quietly on the lake, surrounded by thick fog. The lake is like a mirror, reflecting the blurred distant mountains, adding to the quiet and lonely atmosphere. Landscape wallpaper, 500px, unsplash, photography master, iPhone wallpaper, HD. --ar 3:4 --v 6.1"
+    },
+    {
+      "key": "promptlibrary-82846",
+      "name": "树洞取景｜多洛米蒂山湖",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "透过一棵古老树干观看多洛米蒂山脉中的山湖。上方可见一座平坦而宽阔的巨大山峰，天空晴朗，夕阳照耀。画面类似《国家地理》的摄影风格。\n\n来源模型参数：--ar 9:16 --v 6.1",
+      "tags": [
+        "山湖与雪山",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "山湖",
+        "框景",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-82846",
+        "subcategory": "山湖与雪山",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/dolomites-lake-through-trunk/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/dolomites-lake-through-trunk/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/09/Dolomites-Lake-Through-Trunk-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-0262864ad1ba2a150d33.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/09/Dolomites-Lake-Through-Trunk-midjourney-prompt.webp"
+      ],
+      "sha256": "01535d618dde64313a3170b27b0296e416a2def1165a0c78eea89ac28b69eb41",
+      "originalText": "A mountain lake in the Dolomites, seen through an old tree trunk. A big flat and wide peak is visible on top of it, with a clear sky and sunset light. The scene resembles the style of National Geographic photography. --ar 9:16 --v 6.1"
+    },
+    {
+      "key": "promptlibrary-105545",
+      "name": "中国秋野｜山村茶歇风景",
+      "category": "背景设计",
+      "subcategory": "田园与茶田",
+      "text": "十月中旬，从安静山坡俯瞰中国传统乡村，画面被金黄、琥珀、橙红与深绿秋树框住。一条覆满枫叶的狭窄蜿蜒石头山路通向一处有巨大风化岩石的自然休息点。下方山谷里，灰瓦村屋坐落在刚收割的金棕色稻田间，一条缓河映着柔和秋日阳光，屋顶升起细细炊烟。层叠远山淡入蓝灰色秋雾。前景岩石上自然放置小不锈钢保温杯和一杯温茶，旁边两片美丽落枫。十月空气清爽，宁静诗意的乡村景色，精致电影感中国秋季风景摄影，自然色彩，空气纵深，无人。\n\n来源模型参数：--ar 3:4 --v 8.2",
+      "tags": [
+        "田园与茶田",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "中国风景",
+        "秋景",
+        "田园",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-105545",
+        "subcategory": "田园与茶田",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/autumn-chinese-village-landscape/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/autumn-chinese-village-landscape/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Autumn-Chinese-Village-Landscape-midjourney-prompt.webp",
+        "previewDimensions": [
+          904,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-1cf0d2aadbf2271d8296.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Autumn-Chinese-Village-Landscape-midjourney-prompt.webp"
+      ],
+      "sha256": "398e3f6f92e2cd4c26805b1aa58dc81c856651e35b971ea08c27fb53377c6813",
+      "originalText": "A breathtaking view from a quiet hillside overlooking a traditional Chinese countryside village in mid-October, framed by richly colored autumn trees with golden-yellow, amber, orange-red and deep green leaves. A narrow winding stone mountain path covered with fallen maple leaves leads toward a natural resting spot with a large weathered rock. In the valley below, traditional gray-tiled village houses sit among recently harvested golden-brown rice fields, a gentle river reflects the soft autumn sunlight, thin wisps of cooking smoke rise from village rooftops. Layered distant mountains fade into delicate blue-gray autumn mist. A small stainless steel thermos and a simple cup of warm tea rest naturally on the rock in the foreground, with two beautiful fallen maple leaves nearby. Clear crisp October air, peaceful poetic rural scenery, refined cinematic Chinese autumn landscape photography, natural colors, atmospheric depth, no people. --ar 3:4 --v 8.2"
+    },
+    {
+      "key": "promptlibrary-104136",
+      "name": "海岸风景｜红顶白屋与花田",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "写实风景摄影：绿色山丘上的红顶白屋，前景虚化的鲜艳黄色花田，深蓝海洋中有一艘白色帆船，天空中高耸巨大的积云，晴朗蓝天，明亮日光，电影光线，景深，前景散景，《国家地理》风格，高分辨率。\n\n来源模型参数：--ar 9:16 --v 8.2",
+      "tags": [
+        "海岸与水域航拍",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "海岸",
+        "花田",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-104136",
+        "subcategory": "海岸与水域航拍",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/coastal-landscape-photography/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/coastal-landscape-photography/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Coastal-Landscape-Photography-midjourney-prompt.webp",
+        "previewDimensions": [
+          673,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-cb7f203af39d1d44dc92.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Coastal-Landscape-Photography-midjourney-prompt.webp"
+      ],
+      "sha256": "97b21012f5f4655938967be3f92ad4cf6516ca3c9e9e759d20e4c74a45bea7aa",
+      "originalText": "A realistic landscape photography, a white house with a red roof on a green hill, vibrant yellow flower field blurred in the foreground, deep blue ocean with a white sailboat, massive towering cumulus clouds in the sky, clear blue sky, bright daylight, cinematic lighting, depth of field, foreground bokeh, National Geographic style, high resolution --ar 9:16 --v 8.2"
+    },
+    {
+      "key": "promptlibrary-99293",
+      "name": "金色落日｜雪山与草原",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "落日的金色光芒照耀高大雪山，山体闪耀，天空绽放斑斓霞光，景象壮观。金色云朵飘过，雪山下是大片葱茏绿草原。低角度拍摄，超清野外摄影，疗愈风景，高细节。",
+      "tags": [
+        "山湖与雪山",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "雪山",
+        "草原",
+        "夕阳",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-99293",
+        "subcategory": "山湖与雪山",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/golden-sunset-over-mountains-2/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/golden-sunset-over-mountains-2/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Golden-Sunset-Over-Mountains-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-e1e245977dd80aa854bd.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Golden-Sunset-Over-Mountains-midjourney-prompt.webp"
+      ],
+      "sha256": "9e9b9a4227f1d97ae6dfb29f45d24610490ad7c62760ab1337c102eab63aa2bd",
+      "originalText": "The golden light of the setting sun shines on the tall snowy mountains. It is shining, the sky is shining with colorful glow, very spectacular. Golden clouds drifted by, and under the snow-capped mountains was a large green and lush grassland. Low-angle shots, ultra-clear field photography, therapeutic landscapes, high detail"
+    },
+    {
+      "key": "promptlibrary-92384",
+      "name": "极地暮色｜渐变天空与剪影",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "黄昏南极风景的极简壁纸，渐变天空，前景小小的人物剪影，地平线上的雪山位于画面远下方，获奖摄影观感，James Turrell、Rinko Kawauchi和Ian Shive风格。\n\n来源模型参数：--ar 9:16 --stylize 500 --v 6.1",
+      "tags": [
+        "山湖与雪山",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "极地",
+        "渐变天空",
+        "剪影",
+        "摄影感"
+      ],
+      "source": {
+        "key": "promptlibrary-92384",
+        "subcategory": "山湖与雪山",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-antarctic-dusk-photography/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/minimalist-antarctic-dusk-photography/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Minimalist-Antarctic-Dusk-Photography-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-2395717856dc88fef7ed.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Minimalist-Antarctic-Dusk-Photography-midjourney-prompt.webp"
+      ],
+      "sha256": "27462807c6d9360cccbc971f109f055ee8a563241978d83147415fd0c2d9f0f6",
+      "originalText": "Minimalist wallpaper of the Antarctic landscape at dusk, gradient sky, small people silhouettes in the foreground, horizon line with snow-capped mountains far below, award-winning photography in the style of James Turrell, Rinko Kawauchi, and Ian Shive --ar 9:16 --stylize 500 --v 6.1"
+    },
+    {
+      "key": "promptlibrary-97079",
+      "name": "中国茶田｜晨雾中的采茶人",
+      "category": "背景设计",
+      "subcategory": "田园与茶田",
+      "text": "中国绿色茶田里，两位身穿白色和浅蓝色衣服、戴着帽子的女子背负采茶篮采摘茶叶。远处起伏山丘覆盖茂盛茶树，营造迷雾氛围。高清摄影风格，自然色彩，柔和光线，高分辨率。少量采茶者被密集绿色植被包围，更显宁静。绿色山坡与雾中森林，照片级写实，电影感，极简，富士胶片相机拍摄。",
+      "tags": [
+        "田园与茶田",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "茶田",
+        "中国风景",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-97079",
+        "subcategory": "田园与茶田",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/tea-pickers-in-misty-hills/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/tea-pickers-in-misty-hills/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Tea-Pickers-in-Misty-Hills-midjourney-prompt.webp",
+        "previewDimensions": [
+          790,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-fb1ba476b0a664c20f38.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Tea-Pickers-in-Misty-Hills-midjourney-prompt.webp"
+      ],
+      "sha256": "53805ca1ff107c032a03bb303c6c91b5f226fd253b64dfdf4d2b9eeacda1224c",
+      "originalText": "In the green tea fields of China, two women in white and light blue with hats were picking tea leaves on their backs. The distant view was rolling hills covered with lush tea trees, creating a misty atmosphere. High-definition photography style, natural colors, soft lighting, high resolution. A few people pick tea leaves, surrounded by dense green vegetation, adding to its peacefulness.A green hillside with a foggy forest, photo realistic, cinematic, minimalistic, shot on fujifilm."
+    },
+    {
+      "key": "promptlibrary-104454",
+      "name": "胶片泳池｜夏日建筑光影",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "以色列老基布兹的泳池区域，空着的白色塑料椅，浅蓝栏杆，被太阳晒褪色的混凝土，围栏外的干草，朴素实用的建筑，安静空旷的夏日，当代以色列，强烈地中海正午阳光，硬阴影，日常真实的气氛，纪实风尚摄影选景，35mm胶片，细微颗粒，略褪色的色彩。正面构图，相机正对池畔区域，居中、对称或近对称取景，平视，无侧斜角度，静止相机观感，直接的纪实取景，安静观察的语气，无人，无文字，无标志。\n\n来源模型参数：--chaos 0 --ar 4:5 --raw --stylize 50 --profile 3bsj9bj --v 8.2",
+      "tags": [
+        "建筑与人文摄影",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "胶片",
+        "建筑摄影",
+        "光影"
+      ],
+      "source": {
+        "key": "promptlibrary-104454",
+        "subcategory": "建筑与人文摄影",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/film-kibbutz-poolside-photography/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/film-kibbutz-poolside-photography/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Film-Kibbutz-Poolside-Photography-midjourney-prompt.webp",
+        "previewDimensions": [
+          960,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-6f9e9b639b6ba402fd08.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Film-Kibbutz-Poolside-Photography-midjourney-prompt.webp"
+      ],
+      "sha256": "e65baeefd114e59c579b91e565c47941b899063fb96e210b47ed617353d543fa",
+      "originalText": "old kibbutz swimming pool area in Israel, empty white plastic chairs, pale blue railings, sun-bleached concrete, dry grass beyond the fence, modest functional architecture, quiet summer emptiness, contemporary Israel, harsh Mediterranean midday sunlight, hard shadows, ordinary and authentic atmosphere, documentary fashion photography location scout, 35mm film, subtle grain, slightly faded colors, front-facing composition, camera positioned directly in front of the poolside area, centered composition, symmetrical or near-symmetrical framing, eye-level perspective, no angled side view, static camera feeling, straightforward documentary framing, quiet observational tone, no people, no text, no logo --chaos 0 --ar 4:5 --raw --stylize 50 --profile 3bsj9bj --v 8.2"
+    },
+    {
+      "key": "promptlibrary-72561",
+      "name": "暗色沙漠｜大理石立柱阵列",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "暗黑幻想摄影：沙丘延伸到地平线，远方暴风雨天空，一排众多高而纤细的深色大理石基座向远处延伸。广角拍摄，略微等距视角。\n\n来源模型参数：--ar 9:16 --style raw --stylize 50",
+      "tags": [
+        "超现实与创意地景",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "沙漠",
+        "超现实",
+        "建筑构成"
+      ],
+      "source": {
+        "key": "promptlibrary-72561",
+        "subcategory": "超现实与创意地景",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/dark-desert-plinths-photo/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/dark-desert-plinths-photo/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/04/Dark-Desert-Plinths-Photo-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-e54ed613b88a6eb615d5.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/04/Dark-Desert-Plinths-Photo-midjourney-prompt.webp"
+      ],
+      "sha256": "7ab64d871606df8655f15d86db2a8c22e4376c3d1545984c055db645f9468245",
+      "originalText": "a dark fantasy photograph of a desert setting with dunes extending off into the horizon, stormy skies in the distance, we see a single line of numerous tall, thin, dark & marbled plinths stretching off in to the distance, its a wide angle shot with a slightly isometric view --ar 9:16 --style raw --stylize 50"
+    },
+    {
+      "key": "promptlibrary-97899",
+      "name": "微缩雪坡｜被褥上的滑雪者",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "从远处高角度拍摄一名滑雪者，优雅滑下完全由柔软蓬松的白色被褥组成的超现实山坡。被褥采用方格绗缝，其纹理形成自然山坡，营造梦幻冬季风景。滑雪者穿着鲜艳装备，在织物上留下细微轨迹，仿佛划过真雪。柔和漫射光，空灵而舒适，超精细，8K，电影构图，奇趣而写实，杂志摄影风格。",
+      "tags": [
+        "超现实与创意地景",
+        "方形",
+        "Prompt Library",
+        "图文已核对",
+        "俯拍",
+        "微缩场景",
+        "织物",
+        "创意摄影"
+      ],
+      "source": {
+        "key": "promptlibrary-97899",
+        "subcategory": "超现实与创意地景",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/surreal-skier-on-comforter/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/surreal-skier-on-comforter/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Surreal-Skier-on-Comforter-midjourney-prompt.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-6e624afe25b1b83570c8.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Surreal-Skier-on-Comforter-midjourney-prompt.webp"
+      ],
+      "sha256": "4a6f136dd8aa2b37d0526b1866535355b5df72ed80de1f65cabd3b855ae0ecfc",
+      "originalText": "A skier captured from a distant, high-angle perspective, gracefully gliding down a surreal mountain made entirely of soft, fluffy white comforter. The comforter is square-quilted. The texture of the comforter forms natural-looking slopes, creating a dreamlike winter landscape. The skier, dressed in vibrant gear, leaves subtle trails in the fabric as if carving through real snow. The lighting is soft and diffused, evoking an ethereal, cozy atmosphere. Ultra-detailed, 8K, cinematic composition, whimsical yet realistic, editorial photography style."
+    },
+    {
+      "key": "promptlibrary-102451",
+      "name": "微距俯拍｜奶油绿流体旋纹",
+      "category": "背景设计",
+      "subcategory": "俯拍材质与静物",
+      "text": "电影感微距美食摄影，两种奶油酱汁融合为动态旋纹：柔滑的米白奶油与浓烈鲜明的芥末绿奶油，流动中光泽质地，厚实优雅的褶皱，柔和高光和自然阴影，俯视，抽象而诱人的构图，照片级写实，强烈视觉色彩对比，中性浅色背景上展现奶油细节。\n\n来源模型参数：--ar 9:16 --style raw --v 7 --profile gn935qm",
+      "tags": [
+        "俯拍材质与静物",
+        "竖版",
+        "Prompt Library",
+        "图文已核对",
+        "俯拍",
+        "微距",
+        "抽象背景",
+        "流体"
+      ],
+      "source": {
+        "key": "promptlibrary-102451",
+        "subcategory": "俯拍材质与静物",
+        "author": "Prompt Library（页面未署具体创作者）",
+        "url": "https://promptlibrary.org/midjourney/macro-food-photography-sauces-swirl/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/macro-food-photography-sauces-swirl/",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney（原案例参数见提示词）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/05/Macro-Food-Photography-Sauces-Swirl-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ]
+      },
+      "model": "Midjourney（原案例参数见提示词）",
+      "previewUrl": "/prompt-previews/audited-8fa06ac46fc25363d787.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/05/Macro-Food-Photography-Sauces-Swirl-midjourney-prompt.webp"
+      ],
+      "sha256": "90fdaf9d743bc892f43923cf9770174c4385606cc9c8426ad6fe152182648852",
+      "originalText": "cinematic, macro food photography of two creamy sauces blending together in a dynamic swirl pattern: smooth off-white cream and bold, vibrant wasabi green cream, glossy textures in motion, thick elegant folds, soft highlights and natural shadows, top-down view, abstract yet appetizing composition, photorealistic, visually striking color contrast, creamy detail on a neutral light background --ar 9:16 --style raw --v 7 --profile gn935qm"
+    },
+    {
+      "key": "zcool-ZMTEwNDM2",
+      "name": "日照金山｜雪峰冷暖摄影",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "超写实电影感风景摄影：雄伟积雪山脉在日出时分迎来第一道金光，最高的嶙峋山峰被照亮，雪脊上熔金与琥珀色光芒闪耀。巨大山坡覆盖深宝石蓝和海军蓝阴影，暖色峰顶与冷色山谷形成强烈反差。巨大尺度，清晰高山积雪纹理，复杂岩石山脊，远谷中薄薄雾气飘动，清澈深蓝黎明天空，自然空气透视，壮观而可信。专业全画幅相机，200mm长焦镜头，出色动态范围，自然调色，极高细节，照片级写实。无幻想元素、人工光晕、过饱和。优雅构图，强视觉冲击，高端风景摄影，竖版手机壁纸构图。",
+      "tags": [
+        "山湖与雪山",
+        "竖版",
+        "站酷AI资产",
+        "图文已核对",
+        "雪山",
+        "写实摄影",
+        "长焦"
+      ],
+      "source": {
+        "key": "zcool-ZMTEwNDM2",
+        "subcategory": "山湖与雪山",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTEwNDM2.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTEwNDM2.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6aef73a15a734opt5s8ec72295.png?k=08d2bffccaeafd025068d098b63a61f8&t=6af996dd",
+        "previewDimensions": [
+          928,
+          1232
+        ],
+        "sourceContentId": 32985,
+        "sourceImageId": 32981
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-35d62cd7c977bc884c5a.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6aef73a15a734opt5s8ec72295.png?k=08d2bffccaeafd025068d098b63a61f8&t=6af996dd"
+      ],
+      "sha256": "f5bb9a9a3eccfec1394cba5d00a5755868b0b2b348cc6711d85584389345d9df",
+      "originalText": "ultra-realistic cinematic landscape photography of a majestic snow-covered mountain range at sunrise, the first golden rays of sunlight striking the highest jagged peaks, brilliant molten gold and amber light glowing along the snow ridges, deep sapphire blue and navy shadows across the massive mountain slopes, dramatic contrast between warm illuminated summits and cool shadowed valleys, immense sense of scale, crisp alpine snow textures, intricate rocky ridgelines, thin atmospheric mist drifting through distant valleys, clear deep blue dawn sky, natural atmospheric perspective, breathtaking yet believable, shot on a professional full-frame camera, 200mm telephoto lens, exceptional dynamic range, natural color grading, extremely detailed, photorealistic, no fantasy elements, no artificial glow, no oversaturation, elegant composition, strong visual impact, premium landscape photography, vertical mobile wallpaper composition"
+    },
+    {
+      "key": "zcool-ZMTIyMDQw",
+      "name": "悬云草原｜超现实摄影装置",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "巨大的柔软白色积云，被数根几乎看不见的细线悬挂在完全平坦的绿色草地上。超现实概念风景摄影，清澈饱和蓝天，草叶轻微运动暗示微风，云朵在地上投下柔影，意外的尺度，细腻梦境逻辑，极简装置艺术，明亮自然日光，干净粉彩调色，略带颗粒的杂志摄影，平静而奇异，大面积空白，无产品、无人、无文字。",
+      "tags": [
+        "超现实与创意地景",
+        "竖版",
+        "站酷AI资产",
+        "图文已核对",
+        "云朵",
+        "留白",
+        "创意摄影"
+      ],
+      "source": {
+        "key": "zcool-ZMTIyMDQw",
+        "subcategory": "超现实与创意地景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTIyMDQw.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTIyMDQw.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af223144f25fh0f2ec48l4344.png?k=779d21427a40fff23bda9f325cc442ce&t=6af996dd",
+        "previewDimensions": [
+          960,
+          1200
+        ],
+        "sourceContentId": 35886,
+        "sourceImageId": 35882
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-d327b87402dafca87a69.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af223144f25fh0f2ec48l4344.png?k=779d21427a40fff23bda9f325cc442ce&t=6af996dd"
+      ],
+      "sha256": "34a499ee2b8704bbb85c2d9d79347d50f639f9543acce0b0a7a6ef66f0615e38",
+      "originalText": "A gigantic soft white cumulus cloud suspended above a perfectly flat green meadow by several almost invisible fine threads, surreal conceptual landscape photography, clear saturated blue sky, gentle breeze suggested by subtle grass movement, cloud casting a soft shadow on the ground, unexpected scale, delicate dream logic, minimalist installation art, bright natural daylight, clean pastel color grading, slightly grainy editorial photograph, calm but strange, wide empty space, no products, no people, no text"
+    },
+    {
+      "key": "zcool-ZMTE4NjQ0",
+      "name": "双月异星｜车站外的膜树森林",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "极具电影感的大远景，从火车站站台向外看。前景是站台边缘与列车；中景是由干珊瑚、树皮、根、纤维木材和多孔矿物构成的异星乡镇，泥路、泥泞排水沟、木板桥、青苔、藤蔓与灌木。再远是广阔朦胧草原；远景是巨大的银色膜状树森林，网状树冠和幽灵般垂幔。地平线上一颗局部裁切的大月亮，其上有一颗较小月亮。清晰层次：车站→乡镇→草原→森林→双月。漫射日光，厚重低雾，湿润空气薄霾，柔影，浅色发光天空。冷低饱和调色：银灰、浅绿灰、苔藓橄榄绿、柔暗树皮棕、粉笔珊瑚色、乳白高光，提亮黑位，柔对比，胶片感绿灰中间调。ARRI ALEXA 35，2.39:1变形宽银幕，28—35mm镜头。可触的风化纹理，电影颗粒，轻微光晕，光学柔化。宏大、寂静、诡谲、可信。",
+      "tags": [
+        "超现实与创意地景",
+        "方形",
+        "站酷AI资产",
+        "图文已核对",
+        "科幻空间",
+        "双月",
+        "电影场景"
+      ],
+      "source": {
+        "key": "zcool-ZMTE4NjQ0",
+        "subcategory": "超现实与创意地景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTE4NjQ0.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTE4NjQ0.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af149731863233iilp88q8728.png?k=0baca5ee7051708a63c9121412dd1662&t=6af996de",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "sourceContentId": 35037,
+        "sourceImageId": 35033
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-5b66da21501837a2b25a.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af149731863233iilp88q8728.png?k=0baca5ee7051708a63c9121412dd1662&t=6af996de"
+      ],
+      "sha256": "31e762eb9e0bdf2bc0aad3e02a450b986bf23d6a41c5ec690105069433f848c5",
+      "originalText": "Extreme cinematic establishing shot from a train station platform looking outward. Foreground: station platform edge and train. Middle ground: alien rural town of dried coral, bark, roots, fibrous wood, porous minerals; dirt roads, muddy drainage gutters, plank bridges, moss, vines, shrubs. Beyond: broad misty grassy plains. Far background: monumental silvery membrane tree forest with webbed canopies and ghostly hanging veils. Horizon: one large partially cropped moon, one smaller moon above it. Clear layered depth: station → town → plains → forest → moons. Diffused daylight, heavy low lying fog, humid atmospheric haze, soft shadows, pale luminous sky. Cool desaturated grade: silvery gray, pale green gray, mossy olive, muted bark brown, chalky coral, milky highlights, lifted blacks, soft contrast, photochemical green gray mids. ARRI ALEXA 35, 2.39:1 anamorphic, 28 35mm lens. Tactile weathered textures, cinematic grain, mild halation, optical softness. Grand, hushed, eerie, believable."
+    },
+    {
+      "key": "zcool-ZMTIwMDQ0",
+      "name": "红莓湿地｜独舟极简航拍",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "超写实电影摄影，鸟瞰斜角航拍蔓越莓湿地。成千上万颗鲜艳漂浮蔓越莓覆盖整片风景，向地平线无尽延伸，形成密集自然纹理。恰好一名坐在白色独木舟里的人位于构图正中央，四面环绕水中浮莓。舟中人物比例自然，清晰可辨，不人为放大。高处远距离广角展现巨大场地规模。柔和漫射日光，细微自然阴影，电影调色，照片级植物细节。无建筑、文字、水印；非地面视角、非近景、非微距。竖版9:16。",
+      "tags": [
+        "海岸与水域航拍",
+        "竖版",
+        "站酷AI资产",
+        "图文已核对",
+        "航拍",
+        "红色",
+        "极简摄影"
+      ],
+      "source": {
+        "key": "zcool-ZMTIwMDQ0",
+        "subcategory": "海岸与水域航拍",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTIwMDQ0.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTIwMDQ0.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af1e213e11c7ztx3uton95950.png?k=b8f8869cbe80db7c9b0e6764cc65b28c&t=6af996dd",
+        "previewDimensions": [
+          988,
+          1766
+        ],
+        "sourceContentId": 35387,
+        "sourceImageId": 35383
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-5284369af1b3e39ab87c.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af1e213e11c7ztx3uton95950.png?k=b8f8869cbe80db7c9b0e6764cc65b28c&t=6af996dd"
+      ],
+      "sha256": "98b48df4a375ac90082ac6f5272c90d7aec2bf110a203e8e2f384aef8aa3eddc",
+      "originalText": "Ultra realistic cinematic photograph, bird's eye oblique aerial view looking down at a cranberry bog. Thousands of vivid floating cranberries cover the entire landscape, stretching endlessly to the horizon, forming dense natural patterns. Exactly ONE single person in a white canoe is precisely centered in the composition, surrounded in every direction by cranberries floating in water. the person in the canoe is naturally proportioned and clearly distinguishable without artificial enlargement. Elevated distant wide angle perspective reveals enormous field scale. Soft diffused daylight, subtle natural shadows, cinematic color grading, photorealistic botanical detail. No buildings, text, or watermarks. Not ground level, not close up, not macro. Vertical 9:16 composition."
+    },
+    {
+      "key": "zcool-ZMTEzMjc2",
+      "name": "云海山川｜河流高空航拍",
+      "category": "背景设计",
+      "subcategory": "山川与河谷航拍",
+      "text": "写实航拍摄影，高角度俯瞰山脉和蜿蜒河流，云海填满低处山谷，柔雾自然绕过山脊，山岛穿透云层。雾气偶尔裂开露出河流，水面把低斜午后阳光反射成细而真实的亮线，远山淡入蓝灰薄霾。细微暖侧光，冷色云影，自然云体积，无戏剧性上帝光，无绘画纹理。高空飞机拍摄，70mm镜头，自然景深，纪实电影摄影，克制的史诗美。纯自然空景，无人、建筑、道路、船、文字、水印。",
+      "tags": [
+        "山川与河谷航拍",
+        "横版",
+        "站酷AI资产",
+        "图文已核对",
+        "航拍",
+        "云海",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "zcool-ZMTEzMjc2",
+        "subcategory": "山川与河谷航拍",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTEzMjc2.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTEzMjc2.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af00ca62421aczyx2s697922.png?k=c554e06021cbb46347b94e4c278624fb&t=6af996dd",
+        "previewDimensions": [
+          2060,
+          1153
+        ],
+        "sourceContentId": 33695,
+        "sourceImageId": 33691
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-c901c98b3d979c3ddb49.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af00ca62421aczyx2s697922.png?k=c554e06021cbb46347b94e4c278624fb&t=6af996dd"
+      ],
+      "sha256": "d1d3e0956fd19987c2a9255901551bdb09135fdeed674f1acfbf41b0794ab0cc",
+      "originalText": "realistic aerial photograph, high angle view of mountains and a winding river, sea of clouds filling the lower valleys, soft mist flowing naturally around ridges, mountain islands piercing through the cloud layer, river visible through occasional breaks in the mist, water reflecting low afternoon sun as thin realistic bright lines, distant mountains fading into blue-gray haze, subtle warm side lighting, cool shadowed clouds, natural cloud volume, no dramatic god rays, no painted texture, shot from a high-altitude aircraft, 70mm lens, natural depth of field, documentary cinematography, restrained epic beauty, pure natural empty scene, no people, no buildings, no roads, no boats, no text, no watermark"
+    },
+    {
+      "key": "zcool-ZNjg5NDQ=",
+      "name": "文具桌面｜留白俯拍模板",
+      "category": "背景设计",
+      "subcategory": "俯拍材质与静物",
+      "text": "原创办公文具电商俯拍摄影，正上方90度视角。在【桌面材质】上整齐展示一套无品牌【文具组合】，所有物件采用【主色】与【辅助色】统一配色，按照【排列方式】形成清晰视觉节奏。纸张边缘、金属夹、塑料和织物纹理真实，数量合理、不相互穿插；使用【光线】形成柔和一致的投影，在【留白位置】预留标题区域。现代、高效、适合企业办公与学习场景。负面约束：Logo、可读文字、水印、重复文具、数量错误、笔尖融化、尺子弯曲、纸张穿插、透视倾斜、阴影方向混乱、桌面脏乱。",
+      "tags": [
+        "俯拍材质与静物",
+        "竖版",
+        "站酷AI资产",
+        "图文已核对",
+        "俯拍",
+        "文具",
+        "标题留白",
+        "变量模板"
+      ],
+      "source": {
+        "key": "zcool-ZNjg5NDQ=",
+        "subcategory": "俯拍材质与静物",
+        "author": "骆笙",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZNjg5NDQ=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZNjg5NDQ=.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "来源完整中文原文；已核对来源配图，未在本机重新生图。",
+        "model": "GPT-image2",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ac5163f9381cm6kxi8vxp9165.png?k=4cca43118d466e0eefda1f6b091671ba&t=6af996dd",
+        "previewDimensions": [
+          1086,
+          1448
+        ],
+        "sourceContentId": 22308,
+        "sourceImageId": 22304
+      },
+      "model": "GPT-image2",
+      "previewUrl": "/prompt-previews/audited-4512e3175de8bef49402.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ac5163f9381cm6kxi8vxp9165.png?k=4cca43118d466e0eefda1f6b091671ba&t=6af996dd"
+      ],
+      "sha256": "4df5f66a3ee5a6de105b52b7f4a66556a0f576374ed71285c1556224d435b7e0"
+    },
+    {
+      "key": "zcool-ZNjkwMDA=",
+      "name": "厨房器物｜金属套装俯拍",
+      "category": "背景设计",
+      "subcategory": "俯拍材质与静物",
+      "text": "原创锅具套装商业俯拍，横版4:3。以90度顶视展示【锅具套装】，每件采用【材质】和【把手颜色】，锅沿、铆钉、锅底、锅盖与把手连接真实。按照【排列方式】置于【台面】，搭配少量【食材】形成烹饪线索但不遮挡产品；柔和侧光呈现金属反射和涂层质感，在【留白位置】保留文案区。负面约束：Logo、文字、水印、重复锅具、错误把手、锅盖穿模、过热烟雾、明火危险、食材脏乱、镜面鬼影、品牌外观复刻。",
+      "tags": [
+        "俯拍材质与静物",
+        "横版",
+        "站酷AI资产",
+        "图文已核对",
+        "俯拍",
+        "商业摄影",
+        "金属",
+        "变量模板"
+      ],
+      "source": {
+        "key": "zcool-ZNjkwMDA=",
+        "subcategory": "俯拍材质与静物",
+        "author": "骆笙",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZNjkwMDA=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZNjkwMDA=.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "来源完整中文原文；已核对来源配图，未在本机重新生图。",
+        "model": "GPT-image2",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ac523016462abcky5lyug8670.png?k=5c40c698f3ce90c060728e95dcf514e5&t=6af996dd",
+        "previewDimensions": [
+          1448,
+          1086
+        ],
+        "sourceContentId": 22322,
+        "sourceImageId": 22318
+      },
+      "model": "GPT-image2",
+      "previewUrl": "/prompt-previews/audited-5d05d9612cf8008de99b.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ac523016462abcky5lyug8670.png?k=5c40c698f3ce90c060728e95dcf514e5&t=6af996dd"
+      ],
+      "sha256": "9c916243d1a41d878d10de7cae00ff11bcd5ac4b024cfcd6f2737a6a537486bf"
+    },
+    {
+      "key": "zcool-ZMTEzNDg4",
+      "name": "粉色浪花｜海滩摄影与手绘",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "马里布海滩水线处湿沙特写，一道扁平手绘卡通海浪以粉色和奶油色、海军蓝墨线轮廓漫过沙面，边缘有真实泡沫气泡，俯拍。",
+      "tags": [
+        "超现实与创意地景",
+        "竖版",
+        "站酷AI资产",
+        "图文已核对",
+        "俯拍",
+        "海岸",
+        "摄影与插画"
+      ],
+      "source": {
+        "key": "zcool-ZMTEzNDg4",
+        "subcategory": "超现实与创意地景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTEzNDg4.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTEzNDg4.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af013e24248d4y4bebmhf4902.png?k=be3dae3f3bc2cea1aea482ec17a57a60&t=6af996dd",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "sourceContentId": 33748,
+        "sourceImageId": 33744
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-b1106395401ba7dfa302.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af013e24248d4y4bebmhf4902.png?k=be3dae3f3bc2cea1aea482ec17a57a60&t=6af996dd"
+      ],
+      "sha256": "508d1d3ca59a025ac44ccb97867f91dfab4cadee92134a492cd5d303ffe3ecb0",
+      "originalText": "close-up of wet Malibu sand at the waterline, a single flat hand-painted cartoon wave in pink and cream with navy ink outline washing over it, real foam bubbles around the edge, top-down"
+    },
+    {
+      "key": "zcool-ZMTEyNjM2",
+      "name": "浆果肌理｜微距平铺俯拍",
+      "category": "背景设计",
+      "subcategory": "俯拍材质与静物",
+      "text": "俯视平铺微距美食摄影，画面被新鲜覆盆子与蓝莓紧密填满，夹杂少量黑莓。自然露珠纹理，柔和漫射日光，浓郁深红与灰蓝色，边缘浅景深，高端杂志美食造型，超锐利细节，高分辨率。",
+      "tags": [
+        "俯拍材质与静物",
+        "方形",
+        "站酷AI资产",
+        "图文已核对",
+        "俯拍",
+        "微距",
+        "水果纹理",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "zcool-ZMTEyNjM2",
+        "subcategory": "俯拍材质与静物",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTEyNjM2.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTEyNjM2.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6aefed15671adnox4nfnly5558.png?k=7bd847f84d5547e4fe18b71b13990f87&t=6af996dd",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "sourceContentId": 33535,
+        "sourceImageId": 33531
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-90cd31732a674d64b601.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6aefed15671adnox4nfnly5558.png?k=7bd847f84d5547e4fe18b71b13990f87&t=6af996dd"
+      ],
+      "sha256": "2dd8c7c8b690a4f7eb1a82b94293090aaa9f73713a3880c5508935018dd6868b",
+      "originalText": "Overhead flat-lay macro food photography, frame completely filled with fresh raspberries and blueberries tightly packed together, a few blackberries, natural dewy texture, soft diffused daylight, rich deep reds and dusty blues, shallow depth of field on edges, premium editorial food styling, ultra sharp detail, high resolution"
+    },
+    {
+      "key": "zcool-ZMjc0NTI=",
+      "name": "西湖烟水｜淡彩荷花留白",
+      "category": "背景设计",
+      "subcategory": "东方流体与水墨",
+      "text": "淡雅古黄色红色调，朦胧晕染氛围，柔和色彩晕染，纸本设色，淡蓝，纯白纸张上的晕染画，渐变，蜻蜓，自然过渡，柔和，大写意，西湖，远山，西湖雷峰塔，极简主义，水墨，颗粒感, 国风插画，大面积晕染，写意，晕染，雾气，浓雾，流体，一枝荷花凋落，意境，有故事感",
+      "tags": [
+        "东方流体与水墨",
+        "横版",
+        "站酷AI资产",
+        "图文已核对",
+        "国风",
+        "水墨",
+        "留白"
+      ],
+      "source": {
+        "key": "zcool-ZMjc0NTI=",
+        "subcategory": "东方流体与水墨",
+        "author": "嶌翴",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMjc0NTI=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMjc0NTI=.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "来源完整中文原文；已核对来源配图，未在本机重新生图。",
+        "model": "即梦图片 4.5",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/69e8d1887155fxjphmj67m9685.png?k=e112742f3c17e1cc7d38c3312f44ce06&t=6af996dd",
+        "previewDimensions": [
+          3840,
+          2158
+        ],
+        "sourceContentId": 11653,
+        "sourceImageId": 11649
+      },
+      "model": "即梦图片 4.5",
+      "previewUrl": "/prompt-previews/audited-1344153f17d19c8e9495.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/69e8d1887155fxjphmj67m9685.png?k=e112742f3c17e1cc7d38c3312f44ce06&t=6af996dd"
+      ],
+      "sha256": "2ee9e87d37707ac24f0f59c217750e2a811ffd1e9185e49fdbdae55439e772a1"
+    },
+    {
+      "key": "zcool-ZMTIxMDQ0",
+      "name": "北欧蓝调｜粉紫雪原枯树",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "北欧冬季蓝调时刻的写实风景摄影，一棵成熟落叶树以不规则枝杈剪影立在部分埋雪的古旧木栅栏旁，散布枯草与小片裸露深土。平缓起伏的雪原延伸到低矮远地平线，栅栏以不完美斜线顺应自然地形。完全无云的天空从樱桃粉、灰玫瑰、浅薰衣草紫平滑过渡至冷蓝。开放天空与轻柔纹理积雪让超过40%画面保持简洁。均衡不对称构图，自然树木比例，真实风化树皮，风塑不均匀积雪，细微局部对比，柔和暮光反射，细致雪面高光与冷蓝紫阴影，真实光学纵深，纪实风景摄影，全画幅相机，50mm镜头，f/8，自然曝光，可信色彩。",
+      "tags": [
+        "山湖与雪山",
+        "竖版",
+        "站酷AI资产",
+        "图文已核对",
+        "雪景",
+        "留白",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "zcool-ZMTIxMDQ0",
+        "subcategory": "山湖与雪山",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTIxMDQ0.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTIxMDQ0.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af1fd283b5747usseufqo5842.png?k=4ecbe0a66f5bd12161109c2710ecf5f0&t=6af996dd",
+        "previewDimensions": [
+          1086,
+          2172
+        ],
+        "sourceContentId": 35637,
+        "sourceImageId": 35633
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-224d79ebe6b318308778.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af1fd283b5747usseufqo5842.png?k=4ecbe0a66f5bd12161109c2710ecf5f0&t=6af996dd"
+      ],
+      "sha256": "bd03697a63bb8ddb8341255ce3e7b80a8d523dceaf8ca2ed33bfce8b6991b6ee",
+      "originalText": "Realistic northern European winter landscape photograph at blue hour, a mature leafless tree with an irregular branching silhouette standing beside an old weathered wooden fence partially buried in snow, scattered dry grasses and small exposed patches of dark soil, gently rolling snow-covered fields extending toward a low distant horizon. The fence follows the natural terrain in an imperfect diagonal line. A completely cloudless sky with a smooth cherry-pink to dusty rose, pale lavender and cool blue gradient. More than 40% of the image remains visually uncluttered through open sky and softly textured snow. Balanced asymmetrical composition, natural tree proportions, authentic weathered bark, uneven wind-shaped snow, subtle local contrast, soft reflected twilight light, detailed snow highlights and cool blue-violet shadows, realistic optical depth, documentary landscape photography, full-frame camera, 50mm lens, f/8, natural exposure, believable colors"
+    },
+    {
+      "key": "zcool-ZMjM2Njg=",
+      "name": "圣托里尼｜彩色露台风景",
+      "category": "背景设计",
+      "subcategory": "插画与绘本风景",
+      "text": "绘本风格治愈氛围插画，色彩浓郁鲜艳。画面是地中海圣托里尼场景，背景是蓝天和两三朵白云，圣托里尼当地特色建筑、彩色不规则马赛克地砖，蓝色单人椅、圆形木茶几（白色花瓶（有彩色花朵图案）、黄色马克杯）、藤篮（篮子里有面包）、米色的落地遮阳伞，周围环绕绿树、粉色黄色蓝色郁金香，远处可见蓝海，海上远处有小小的白色帆船，远处白色海鸥点缀，，绿蓝黄暖色调交织。",
+      "tags": [
+        "插画与绘本风景",
+        "横版",
+        "站酷AI资产",
+        "图文已核对",
+        "旅行",
+        "绘本",
+        "海岸"
+      ],
+      "source": {
+        "key": "zcool-ZMjM2Njg=",
+        "subcategory": "插画与绘本风景",
+        "author": "嶌翴",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMjM2Njg=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMjM2Njg=.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "来源完整中文原文；已核对来源配图，未在本机重新生图。",
+        "model": "即梦图片 4.5",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/69df85d48070elr01ecopt7133.png?k=c46579690008f0e8915c3cdac978a630&t=6af996de",
+        "previewDimensions": [
+          2304,
+          1728
+        ],
+        "sourceContentId": 6829,
+        "sourceImageId": 6825
+      },
+      "model": "即梦图片 4.5",
+      "previewUrl": "/prompt-previews/audited-668b6253818ad5279fea.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/69df85d48070elr01ecopt7133.png?k=c46579690008f0e8915c3cdac978a630&t=6af996de"
+      ],
+      "sha256": "fcdf6e67f42d5a73c5f061f26ae16dd7447384a0d847de099a1f93bc82a2e7bd"
+    },
+    {
+      "key": "zcool-ZMTE5MDY0",
+      "name": "晨雾稻田｜泰国乡间水渠",
+      "category": "背景设计",
+      "subcategory": "田园与茶田",
+      "text": "日出时安静的泰国乡村，狭窄土路伴随浅浅灌溉水渠，蜿蜒穿过翠绿稻田。雾气低悬田野，远处棕榈树与小型木质高脚屋被薄霾柔化，玻璃般水面映出粉彩天空与周围绿色，水边几只白鹭，无人。宁静疏朗构图，引导线与自然纵深。不要插画、卡通、AI艺术风格，必须像真实单反照片，专业灯光和构图，不含书写或可读文字。风格：风景纪实、平静、自然光；相机Canon EOS R5，镜头24mm f/1.8；后期柔对比、轻去雾、自然绿色。",
+      "tags": [
+        "田园与茶田",
+        "方形",
+        "站酷AI资产",
+        "图文已核对",
+        "田园",
+        "晨雾",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "zcool-ZMTE5MDY0",
+        "subcategory": "田园与茶田",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTE5MDY0.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTE5MDY0.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af154b47af3bu1ivfofji1108.png?k=328ebf72ecd1dac2351f433abe941a66&t=6af996de",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "sourceContentId": 35142,
+        "sourceImageId": 35138
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-9c42ad41af01a659c837.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af154b47af3bu1ivfofji1108.png?k=328ebf72ecd1dac2351f433abe941a66&t=6af996de"
+      ],
+      "sha256": "bbae6d4222e11a37804fce9b9efffacea7904e39f247d1eea4b28e6da567ee6c",
+      "originalText": "Quiet Thai countryside at sunrise, a narrow earthen path beside a shallow irrigation channel winding through emerald rice paddies, mist hovering low over the fields, distant palm trees and small wooden stilt huts softened by haze, glassy water reflecting the pastel sky and surrounding greens, a few white egrets near the waterline, no people, peaceful spacious composition with leading lines and natural depth, No illustration, no cartoon, no AI-art style. Must look like a real DSLR photograph with professional lighting and composition. Make sure no writing or readable text is part of the image., style: landscape documentary, calm, natural-light, camera: Canon EOS R5, lens: 24mm f/1.8, post-processing: soft contrast, gentle dehaze, natural greens"
+    },
+    {
+      "key": "zcool-ZNDM5MDg=",
+      "name": "秋日小径｜暖光绘本风景",
+      "category": "背景设计",
+      "subcategory": "插画与绘本风景",
+      "text": "铺满落叶的森林小径，两旁小树，黄昏暖逆光，莫兰迪暖棕配色，手绘绘本风景，层次丰富",
+      "tags": [
+        "插画与绘本风景",
+        "方形",
+        "站酷AI资产",
+        "图文已核对",
+        "秋景",
+        "绘本",
+        "暖光"
+      ],
+      "source": {
+        "key": "zcool-ZNDM5MDg=",
+        "subcategory": "插画与绘本风景",
+        "author": "灵芊的绘画空间",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZNDM5MDg=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZNDM5MDg=.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "来源完整中文原文；已核对来源配图，未在本机重新生图。",
+        "model": "即梦图片5.0 Lite",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a672305930239eyjwsqlt1057.jpg?k=38967d72613ed0fb51f811b2c45aa532&t=6af996de",
+        "previewDimensions": [
+          2048,
+          2048
+        ],
+        "sourceContentId": 13389,
+        "sourceImageId": 13385
+      },
+      "model": "即梦图片5.0 Lite",
+      "previewUrl": "/prompt-previews/audited-07343f6fac59a19bb6be.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a672305930239eyjwsqlt1057.jpg?k=38967d72613ed0fb51f811b2c45aa532&t=6af996de"
+      ],
+      "sha256": "4a3d85b0e681ed610cf2e9504e9e43b138ae01b0f8271ccba94abc9ae363a04f"
+    },
+    {
+      "key": "zcool-ZMTE5MTY4",
+      "name": "暗夜森林｜苔光与萤火",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "神秘幽暗的魔法森林，古老扭曲树木长着散发空灵光芒的苔藓，浓厚氛围雾沿地面蔓延，空气里漂浮无数微小发光尘粒、魔法萤火虫。电影情绪光照，深暗蓝与诡秘翡翠绿，高度精细复杂纹理，超写实，幻想艺术风格。",
+      "tags": [
+        "超现实与创意地景",
+        "横版",
+        "站酷AI资产",
+        "图文已核对",
+        "森林",
+        "幻想场景",
+        "萤火"
+      ],
+      "source": {
+        "key": "zcool-ZMTE5MTY4",
+        "subcategory": "超现实与创意地景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTE5MTY4.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTE5MTY4.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af1576c31dc247ejx1s73953.png?k=57630a152632fa24d4ec81ba41228ee2&t=6af996de",
+        "previewDimensions": [
+          1456,
+          816
+        ],
+        "sourceContentId": 35168,
+        "sourceImageId": 35164
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-5caeab4dc7927be895b0.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af1576c31dc247ejx1s73953.png?k=57630a152632fa24d4ec81ba41228ee2&t=6af996de"
+      ],
+      "sha256": "9be7f6d809b2f690379adce59d83028b2306f845fa8320e39ec16578fd8f409b",
+      "originalText": "A mystical dark enchanted forest, ancient gnarled trees with glowing ethereal moss, dense atmospheric fog creeping on the ground, countless tiny glowing dust motes and magical floating fireflies drifting in the air, cinematic moody lighting, deep dark blues and eerie emerald greens, highly detailed intricate textures, hyper-realistic, fantasy art style"
+    },
+    {
+      "key": "zcool-ZMTE2Mjcy",
+      "name": "紫夜泛舟｜电影感森林",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "真人电影镜头，古老粗糙的木独木舟漂浮在河面上，两位长须老者坐在船中用木桨划水，水面上漂浮着极少量光影锐化，两岸是森林，紫蓝色的夜空，垂落的树枝，水面泛着紫与蓝的淡淡倒影，梦幻氛围，浓郁饱满的色彩，大量锐化",
+      "tags": [
+        "超现实与创意地景",
+        "竖版",
+        "站酷AI资产",
+        "图文已核对",
+        "森林",
+        "夜景",
+        "电影感"
+      ],
+      "source": {
+        "key": "zcool-ZMTE2Mjcy",
+        "subcategory": "超现实与创意地景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTE2Mjcy.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTE2Mjcy.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "来源完整中文原文；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af0728d7e436qwyxsyw5z6582.png?k=201d41b02e09abb1154173361ad2c5ad&t=6af996de",
+        "previewDimensions": [
+          1153,
+          2060
+        ],
+        "sourceContentId": 34444,
+        "sourceImageId": 34440
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-15eac4197ce09d37cd6c.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af0728d7e436qwyxsyw5z6582.png?k=201d41b02e09abb1154173361ad2c5ad&t=6af996de"
+      ],
+      "sha256": "daf66de801cf7c1af743ae82f8d86723c4560d71614f078e02c4ba74daf18dbd"
+    },
+    {
+      "key": "zcool-ZMTE1MDI4",
+      "name": "蓝调雪林｜留白岩石广告背景",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "蓝调时刻冬季山林的电影级照片写实，高端香氛广告背景，宁静清幽，雪山环抱的安静空地，贴近地面的低机位。棱角粗粝岩石上轻覆新雪，积雪自然落在裂缝里；松林缓坡退向远方，健康常绿树轻覆薄雪。柔和明亮蓝色暮光，冷蓝与一丝掠过前景岩石的温暖琥珀光平衡，柔和可辨阴影，清澈安静冬日空气，稀疏细雪，自然精细纹理，精致杂志摄影。中央下方干净岩面留空放产品，无瓶、无人、文字、标志、恐怖感、鬼林、诡异剪影、枯死扭树、浓雾、暴雪或生硬黑影。",
+      "tags": [
+        "森林与晨雾",
+        "竖版",
+        "站酷AI资产",
+        "图文已核对",
+        "雪林",
+        "广告背景",
+        "产品留白",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "zcool-ZMTE1MDI4",
+        "subcategory": "森林与晨雾",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTE1MDI4.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/ai/prompt/ZMTE1MDI4.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Midjourney V8",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af05138aa88dx0ms1dzpd7772.png?k=77ec3b87354f04b6614517f85eac1a37&t=6af996de",
+        "previewDimensions": [
+          928,
+          1232
+        ],
+        "sourceContentId": 34133,
+        "sourceImageId": 34129
+      },
+      "model": "Midjourney V8",
+      "previewUrl": "/prompt-previews/audited-6b61eb4e7fb17436ef14.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af05138aa88dx0ms1dzpd7772.png?k=77ec3b87354f04b6614517f85eac1a37&t=6af996de"
+      ],
+      "sha256": "7fdb07bb281cbf8c241f36e033abcee6ef6886be51a6cb6741f0d103ea895695",
+      "originalText": "cinematic photorealistic winter mountain forest at blue hour, calm and serene luxury fragrance campaign background, a quiet clearing sheltered among snowy mountains, low ground-level viewpoint, rugged angular rocks lightly dusted with fresh snow, snow settled naturally in the crevices, a gentle pine-covered slope receding into the distance, healthy evergreen trees with a light dusting of snow, soft luminous blue twilight, cool blue tones balanced by a subtle warm amber light grazing the foreground rocks, soft readable shadows, clear peaceful winter air, delicate sparse snowflakes, natural detailed textures, refined editorial photography, clean central lower rock surface left open for product placement, no bottle, no people, no text, no logo, no horror, no haunted forest, no creepy silhouettes, no dead twisted trees, no dense fog, no heavy snowfall, no harsh black shadows"
+    },
+    {
+      "key": "flux1-sky",
+      "name": "宁静云天｜飞鸟与暖光",
+      "category": "背景设计",
+      "subcategory": "天空与云景",
+      "text": "生成一张高分辨率4K写实图像，宁静天空中布满蓬松云朵，鸟儿自由翱翔。画面传达安宁与开阔，以柔光和舒缓色板强化平和感。",
+      "tags": [
+        "天空与云景",
+        "横版",
+        "Flux1 AI 公开图库",
+        "图文已核对",
+        "天空",
+        "云朵",
+        "写实摄影"
+      ],
+      "source": {
+        "key": "flux1-sky",
+        "subcategory": "天空与云景",
+        "author": "Flux1 AI 公开图库（页面未署具体创作者）",
+        "url": "https://flux1.ai/prompts",
+        "collection": "Flux1 AI 公开图库",
+        "collectionUrl": "https://flux1.ai/prompts",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "页面标注ChatGPT图像提示词（未注明版本）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://s.magicaitool.com/flux-ai/prompts/105.jpg",
+        "previewDimensions": [
+          1024,
+          683
+        ]
+      },
+      "model": "页面标注ChatGPT图像提示词（未注明版本）",
+      "previewUrl": "/prompt-previews/audited-19871475c6448a7ed2f3.webp",
+      "exampleImages": [
+        "https://s.magicaitool.com/flux-ai/prompts/105.jpg"
+      ],
+      "sha256": "19b92d98bee0380b97be25616a1ace0041652b0a634c49f6e50c40c27062e6a2",
+      "originalText": "Generate a high-resolution (4k) realistic image of a peaceful sky filled with fluffy clouds and birds soaring freely. The scene should evoke a sense of tranquility and openness, incorporating soft light and a soothing color palette that enhances the feeling of serenity."
+    },
+    {
+      "key": "flux1-island",
+      "name": "莫斯科飞岛｜35mm幻想摄影",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "35mm摄影，莫斯科坐落在漂浮于天空中的飞岛上。",
+      "tags": [
+        "超现实与创意地景",
+        "横版",
+        "Flux1 AI 公开图库",
+        "图文已核对",
+        "浮空岛",
+        "胶片",
+        "创意摄影"
+      ],
+      "source": {
+        "key": "flux1-island",
+        "subcategory": "超现实与创意地景",
+        "author": "Flux1 AI 公开图库（页面未署具体创作者）",
+        "url": "https://flux1.ai/prompts",
+        "collection": "Flux1 AI 公开图库",
+        "collectionUrl": "https://flux1.ai/prompts",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "页面标注ChatGPT图像提示词（未注明版本）",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://s.magicaitool.com/flux-ai/prompts/30.jpeg",
+        "previewDimensions": [
+          1536,
+          1024
+        ]
+      },
+      "model": "页面标注ChatGPT图像提示词（未注明版本）",
+      "previewUrl": "/prompt-previews/audited-8850ab6534961673d727.webp",
+      "exampleImages": [
+        "https://s.magicaitool.com/flux-ai/prompts/30.jpeg"
+      ],
+      "sha256": "4161e9e8c52528968745f89476f76887c38302d14b1bf66d62160d11e0ba950b",
+      "originalText": "35 mm photo of Moscow floating in the sky on a flying islands"
+    },
+    {
+      "key": "prompt123-3511",
+      "name": "发布会实拍感｜紫蓝弧形巨幕",
+      "category": "背景设计",
+      "subcategory": "发布会与未来空间",
+      "text": "根据文字生成一张照片：一个宏大的苹果发布会现场，现场很多观众，场景很暗，有绚丽的灯光，镜头聚焦在很宽的大屏幕，弧形屏幕，文字和屏幕一样有一定的透视感，很小的人物剪影站在舞台上，紫色到蓝色弥散背景上，白色文字有一些渐变，像是现场实拍，高级感 16:9",
+      "tags": [
+        "发布会与未来空间",
+        "横版",
+        "Prompt123",
+        "图文已核对",
+        "发布会",
+        "弧形屏幕",
+        "舞台",
+        "摄影感"
+      ],
+      "source": {
+        "key": "prompt123-3511",
+        "subcategory": "发布会与未来空间",
+        "author": "Prompt123（页面未署具体创作者）",
+        "url": "https://www.prompt123.cn/sites/3511.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/sites/3511.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "保留来源完整中文；来源展示图为512×384缩略图，提示词要求16:9。文字是来源示例，使用时需另指定标题；未在本机重新生图。",
+        "model": "来源未注明具体模型",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://public.prompt123.cn/thumbs/images/nanobanna/nanobanna-0163-5c53891d8282.webp",
+        "previewDimensions": [
+          512,
+          384
+        ]
+      },
+      "model": "来源未注明具体模型",
+      "previewUrl": "/prompt-previews/audited-7672b9bcb6aeb95f2d9a.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/thumbs/images/nanobanna/nanobanna-0163-5c53891d8282.webp"
+      ],
+      "sha256": "0ae790a79cf507a47fd084119c7ede4a4c4be7b7c84363e4e59e9ac3a03abe46"
+    },
+    {
+      "key": "prompt123-4233",
+      "name": "深海梦境｜俯拍摄影与白线涂鸦",
+      "category": "图形设计",
+      "subcategory": "创意摄影与涂鸦",
+      "text": "目标：创作融合写实俯拍摄影与俏皮白线涂鸦的混合媒介画面，描绘熟睡女子梦见深海水肺潜水冒险。混合媒体摄影、创意概念艺术、超现实梦境，8K、超高清、高保真、创意合成；电影感，夜间冷蓝与单色青绿配醒目纯白线条。来源要求1:1、1440×1440像素。\n风格与情绪：将手绘插画叠加于真实摄影，让舒适床品纹理和水下涂鸦世界的冒险精神融合，童趣、宁静、奇幻、富有想象力、创造力，平和的夜间沉浸感。\n主体：一位20岁出头、体态匀称的芬兰裔成年女性，金色长发，皮肤白皙、纹理自然，在冷光下熟睡。面部肌肉放松、闭眼，完全不知道涂鸦存在。穿粉色比基尼上衣与下装，无真实配饰；潜水面罩、背后气瓶、呼吸调节器和脚上大型脚蹼都用白色线条画出。\n姿势：侧卧，近似胎儿状，双腿微弯，双手放松蜷在胸前、下巴或脸旁，侧脸枕在枕头上，身体斜跨床面，姿态精准配合叠加涂鸦。\n环境与背景：夜间室内卧室，从正上方观看舒适床铺，蓝绿、海蓝和冷蓝色褶皱床单作为涂鸦画布。色彩营造仿佛置身水下的梦境。\n照明：柔和环境月光与冷色顶部补光，上方漫射、柔和垂直照射，中等强度，在床单上形成柔软立体阴影，皮肤有温柔冷色高光，保留织物皱褶和自然阴影。\n相机：高分辨率数码无反，35mm或50mm标准镜头，严格90度垂直俯拍。足够宽的取景，显示整床或床垫大部以留出涂鸦空间；主体居中或略斜，平场清晰对焦，连床单也锐利，突出真实睡眠人物和手绘环境的互动。单张合成，不做拼贴组图。\n纹理与调色：背景和人物为平滑摄影纹理，涂鸦为粗糙粉笔或马克笔纹理；青绿、青蓝、海军蓝主色，插画纯白，自然肤色偏冷，电影夜景与模拟水下观感。\n后期：叠加清晰潦草的白色轮廓线，一群鱼、上升气泡、底部珊瑚礁、海藻、海星，以及人物“穿着”的潜水装备。看起来直接画在照片表面或床单上，保持二维白线和真实人物的对比，形成照片与素描自然融合的潜水梦故事。\n负面约束：不做3D涂鸦，不使用真实潜水装备或真实道具；不要暖光、日光、橙色调、复杂床品图案、清醒人物、站姿，以及床外凌乱房间。",
+      "tags": [
+        "创意摄影与涂鸦",
+        "竖版",
+        "Prompt123",
+        "图文已核对",
+        "俯拍",
+        "混合媒介",
+        "白色线稿",
+        "创意摄影"
+      ],
+      "source": {
+        "key": "prompt123-4233",
+        "subcategory": "创意摄影与涂鸦",
+        "author": "Prompt123（页面未署具体创作者）",
+        "url": "https://www.prompt123.cn/sites/4233.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/sites/4233.html",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "用户指定案例。英文完整约束译为中文，修复来源中英文混排及无效JSON；保留来源1:1要求，但原站实际完整预览是竖版。保留该差异供使用时调整；未在本机重新生图。",
+        "model": "来源未注明具体模型",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://public.prompt123.cn/images/767.jpeg",
+        "previewDimensions": [
+          1143,
+          2048
+        ]
+      },
+      "model": "来源未注明具体模型",
+      "previewUrl": "/prompt-previews/audited-7f0b7e051c5864fc2510.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/767.jpeg"
+      ],
+      "sha256": "6cc801ebd7fdff6852374b6521ecd772463fdfff756067da96b7fbbd3593824a",
+      "originalText": "{\n  \"image_request\": {\n    \"goal\": \"Create a whimsical mixed-media masterpiece blending realistic top-down photography with playful white line-art doodles, depicting a sleeping woman dreaming of a deep-sea scuba adventure\",\n    \"meta\": {\n      \"image_type\": \"Mixed Media Photography / Creative Conceptual Art / Surreal Dreamscape\",\n      \"quality\": \"8K, Ultra-HD, Masterpiece, High Fidelity, Creative Composite\",\n      \"color_mode\": \"Cool Nocturnal Blues / Monochromatic Teal Palette with Stark White Lines\",\n      \"style_mode\": \"cinematic_mixed_media\",\n      \"aspect_ratio\": \"1:1\",\n      \"resolution\": \"1440x1440px\"\n    },\n    \"creative_style\": \"Playful and surreal integration of hand-drawn illustration over realistic photography, evoking a sense of childhood wonder and vivid dreaming, combining the cozy texture of bedding with the adventurous spirit of an underwater doodle world\",\n    \"overall_theme\": \"dreaming of adventure / underwater fantasy / mixed media art / playful imagination\",\n    \"mood_vibe\": \"serene, whimsical, imaginative, peaceful, creative, cool, nocturnal\",\n    \"style_keywords\": [\n      \"mixed media\",\n      \"doodle art overlay\",\n      \"white line art\",\n      \"top-down perspective\",\n      \"flat lay\",\n      \"surrealism\",\n      \"scuba diving\",\n      \"dream concept\",\n      \"night photography\"\n    ],\n    \"subject\": {\n      \"count\": \"1\",\n      \"type\": \"female human\",\n      \"identity\": \"fit young woman, Finnish ethnicity, long blonde hair, relaxed sleeping expression\",\n      \"identity_preservation\": {\n        \"description\": \"Natural sleeping posture, relaxed facial muscles, closed eyes\",\n        \"notes\": \"Subject should look peacefully asleep, unaware of the doodles\"\n      },\n      \"age_appearance\": \"young adult / early 20s\",\n      \"skin\": \"fair, natural texture, cool-toned lighting interaction\",\n      \"clothing\": {\n        \"top\": \"pink bikini top\",\n        \"bottom\": \"pink bikini bottom\",\n        \"full_description\": \"wearing a pink bikini\",\n        \"accessories\": \"none (real), drawn accessories (scuba mask, tank, fins)\"\n      },\n      \"props\": {\n        \"other\": \"white line drawings of scuba gear: diving mask over eyes, air tank on back, breathing regulator, large swim fins on feet\"\n      }\n    },\n    \"pose_action\": {\n      \"description\": \"Subject is sleeping on her side in a fetal-like position, legs slightly bent, hands curled near chest/face, perfectly positioned to align with the superimposed doodles\",\n      \"overall_pose\": \"sleeping on side / side-lying\",\n      \"head_turn\": \"profile resting on pillow\",\n      \"body_position\": \"lying on side, diagonal composition across the bed\",\n      \"hands\": \"relaxed, tucked near chin\"\n    },\n    \"environment\": {\n      \"setting\": \"cozy bedroom bed viewed from above\",\n      \"location\": \"indoor bedroom/dream world\",\n      \"weather\": \"indoor controlled / imaginary underwater\",\n      \"time_of_day\": \"night/sleep time\",\n      \"atmosphere\": \"dreamy, quiet, submerged feeling due to color palette\"\n    },\n    \"background\": {\n      \"color\": \"teal/aquamarine / cool blue sheets\",\n      \"effect\": \"wrinkled fabric texture serving as the canvas for the white doodles\"\n    },\n    \"lighting\": {\n      \"type\": \"soft ambient moonlight / cool overhead fill\",\n      \"position\": \"overhead diffused\",\n      \"direction\": \"soft top-down\",\n      \"intensity\": \"moderate, creating soft dimensional shadows on the bedsheets\",\n      \"tone\": \"cool blue/cyanotic/nocturnal\",\n      \"mood\": \"peaceful night\",\n      \"subject_lighting\": \"soft cool highlighting on skin\",\n      \"imperfections\": [\"fabric wrinkles\", \"natural shadows\"]\n    },\n    \"camera\": {\n      \"sensor_format\": \"Digital Mirrorless / High-Res\",\n      \"lens\": \"35mm or 50mm standard\",\n      \"position_angle\": \"Directly Top-Down / 90-degree Bird's Eye View\",\n      \"framing\": \"Wide enough to show the full bed or a significant portion of the mattress to allow space for the doodles\",\n      \"composition\": {\n        \"framing\": \"subject centered or slightly diagonal\",\n        \"depth\": \"flat field focus (everything sharp, including bedsheets)\",\n        \"emphasis\": \"interaction between the real sleeping figure and the drawn environment\"\n      }\n    },\n    \"photobooth_collage_specific\": {\n      \"layout\": \"N/A - Single Composite Image\",\n      \"tonality_texture\": \"Smooth photographic texture for the background/subject, rough chalk/marker texture for the doodles\"\n    },\n    \"color_grading\": {\n      \"palette\": \"Dominant hues of teal, cyan, and navy blue; pure white for the illustration elements; natural skin tones shifted cool\",\n      \"mood\": \"Cinematic night / underwater simulation\"\n    },\n    \"post_processing\": {\n      \"final_touch\": \"Superimpose distinct, scribbly white line art: 'hand-drawn' fish, bubbles, coral, seaweed surrounding the subject, and diving gear 'worn' by the subject.\"\n    },\n    \"negative\": {\n      \"style\": \"3D render of doodles, realistic props (the gear should be drawn, not real), warm lighting, sunlight, orange tones, complex bedding patterns\",\n      \"content\": \"waking subject, standing, real scuba gear, messy room (other than bed)\"\n    },\n    \"additional_controls\": {\n      \"focus_emphasis\": \"The contrast between the realistic sleeping human and the 2D white line art\",\n      \"special_notes\": \"The doodles must look like they were drawn on the photo surface or the bedsheets, white outline style only. The doodles include: a school of fish, coral reefs at the bottom, bubbles rising, a starfish, and the scuba gear outfit.\n      \"vibe\": \"playful creativity\",\n      \"final_output_goal\": \"A seamless blend of photo and sketch that tells a story of a diver's dream.\"\n    }\n  }\n}\n\n{\n\"image_request\": {\n“目标”：“创作一幅异想天开的混合媒介杰作，将写实的俯视摄影与俏皮的白色线条涂鸦相结合，描绘一位熟睡的女子梦见深海潜水探险的场景。”\n\"meta\": {\n\"image_type\": \"混合媒体摄影/创意概念艺术/超现实梦境\",\n“质量”：“8K、超高清、杰作、高保真、创意复合”\n\"color_mode\": \"冷色调夜蓝色/单色青色调色板，配以醒目的白色线条\",\n\"style_mode\": \"cinematic_mixed_media\",\n\"aspect_ratio\": \"1:1\",\n分辨率：1440x1440像素\n},\n“创意风格”： “将手绘插图与写实摄影作品巧妙融合，营造出一种俏皮而超现实的氛围，唤起人们对童年奇幻和生动梦境的向往，将舒适的床上用品质感与水下涂鸦世界的冒险精神相结合。”\n\"overall_theme\": \"梦想冒险/水下奇幻/混合媒介艺术/充满童趣的想象\",\n\"mood_vibe\": \"宁静、奇幻、充满想象力、平和、富有创造力、酷炫、夜行性\"\n\"style_keywords\": [\n“混合媒介”，\n“涂鸦艺术叠加层”，\n“白色线条艺术”，\n“自上而下的视角”，\n“平铺”\n“超现实主义”，\n“水肺潜水”，\n“梦想概念”，\n“夜间摄影”\n],\n“主题”： {\n\"count\": \"1\",\n“类型”：“女性人类”，\n“身份”：“身材匀称的年轻女性，芬兰裔，金色长发，睡姿放松”，\n\"identity_preservation\": {\n描述：自然的睡眠姿势，放松的面部肌肉，闭着眼睛。\n备注：受试者应看起来像睡着了一样，对涂鸦毫不知情。\n},\n\"age_appearance\": \"青年/20岁出头\",\n“皮肤”：“白皙、自然的纹理，冷色调的灯光互动”，\n“衣服”： {\n“上衣”： “粉色比基尼上衣”，\n“下装”： “粉色比基尼下装”，\n\"full_description\": \"穿着粉色比基尼\",\n“配件”： “无（实物），手绘配件（潜水面罩、气瓶、脚蹼）”\n},\n\"props\": {\n“其他”： “潜水装备的白色线条图：潜水面罩遮住眼睛，气瓶背在背上，呼吸调节器，脚上穿着大型脚蹼”\n}\n},\n\"pose_action\": {\n“描述”：“人物侧卧，呈胎儿状蜷缩着，双腿略微弯曲，双手蜷缩在胸前/脸旁，位置恰好与叠加的涂鸦对齐。”\n\"overall_pose\": \"侧卧/侧睡\",\n\"head_turn\": \"侧脸靠在枕头上\",\n“身体姿势”: “侧卧，斜躺在床上”\n“双手”：“放松，放在下巴附近”\n},\n“环境”： {\n“场景”: “从上方看到的舒适卧室床”\n“位置”：“室内卧室/梦境世界”，\n“天气”：“室内可控/想象中的水下”，\n\"time_of_day\": \"夜晚/睡眠时间\",\n“氛围”：“由于色彩搭配而产生的梦幻、宁静、沉浸感”\n},\n“背景”： {\n“颜色”： “蓝绿色/海蓝色/冷蓝色床单”，\n“效果”：“褶皱的织物纹理作为白色涂鸦的画布”\n},\n“灯光”： {\n“类型”: “柔和的环境月光/冷色调的顶光填充”\n“位置”：“上方扩散”，\n“方向”：“柔和的自上而下”，\n“强度”：“中等，在床单上营造出柔和的立体阴影”，\n\"色调\": \"冷蓝色/蓝绿色/夜行性\",\n“心情”：“宁静的夜晚”，\n“subject_lighting”: “柔和的冷色调高光，用于皮肤”，\n“瑕疵”：[“织物褶皱”、“自然阴影”]\n},\n“相机”： {\n\"sensor_format\": \"数码无反/高分辨率\",\n“镜头”：“35mm 或 50mm 标准”，\n\"position_angle\": \"直接俯视/90度鸟瞰图\",\n“框架”：“足够宽，可以显示整张床或床垫的大部分，以便留出涂鸦的空间”，\n“作品”： {\n“构图”：“主体居中或略微倾斜”，\n“景深”：“平场对焦（所有物体都清晰，包括床单）”，\n“强调”：“真实睡眠人物与绘制环境之间的互动”\n}\n},\n\"photobooth_collage_specific\": {\n\"布局\": \"不适用 - 单张合成图像\",\n\"tonality_texture\": \"背景/主体使用平滑的摄影纹理，涂鸦部分使用粗糙的粉笔/马克笔纹理\"\n},\n\"color_grading\": {\n“调色板”：“以青色、蓝绿色和海军蓝为主色调；插图元素采用纯白色；自然肤色偏冷色调”，\n“氛围”: “电影般的夜晚/水下模拟”\n},\n\"post_processing\": {\n“final_touch”： “叠加清晰的、潦草的白色线条艺术：‘手绘’的鱼、气泡、珊瑚、围绕主体的海藻，以及主体‘穿戴’的潜水装备。”\n},\n“消极的”： {\n“风格”：“涂鸦的3D渲染，逼真的道具（装备应该是画出来的，而不是真的），暖色调的光线，阳光，橙色调，复杂的床品图案”，\n“内容”：“清醒的主体，站立，真正的潜水装备，凌乱的房间（床除外）”\n},\n\"additional_controls\": {\n\"focus_emphasis\": \"逼真的睡眠人物与二维白色线条艺术之间的对比\",\n特殊说明：涂鸦必须看起来像是画在照片表面或床单上的，只能使用白色轮廓线。涂鸦内容包括：一群鱼、底部的珊瑚礁、上升的气泡、海星和潜水装备。\n氛围：充满趣味的创造力，\n\"final_output_goal\": \"照片与素描的完美融合，讲述潜水员的梦想故事。\"\n}\n}\n}"
+    },
+    {
+      "key": "publicprompts-micro-volcano",
+      "name": "火山浮岛｜等距微观世界",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "100mm摄影，天空中的等距视角浮岛，超现实火山，精密复杂、高细节、Behance作品观感、微观世界的平滑质感、微距锐利对焦、居中构图。\n\n来源Stable Diffusion建议参数：CFG 10—15，k_euler_a采样器，50步。",
+      "tags": [
+        "超现实与创意地景",
+        "方形",
+        "Public Prompts",
+        "图文已核对",
+        "等距",
+        "火山",
+        "微缩场景"
+      ],
+      "source": {
+        "key": "publicprompts-micro-volcano",
+        "subcategory": "超现实与创意地景",
+        "author": "Public Prompts（页面未署具体创作者）",
+        "url": "https://www.publicprompts.art/prompts/surreal-micro-worlds",
+        "collection": "Public Prompts",
+        "collectionUrl": "https://www.publicprompts.art/prompts/surreal-micro-worlds",
+        "previewKind": "example",
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-15",
+        "collectedAt": "2026-11-15",
+        "note": "忠实中文翻译，保留原构图、主体与参数；已核对来源配图，未在本机重新生图。",
+        "model": "Stable Diffusion",
+        "verifiedPair": true,
+        "previewOriginalUrl": "https://www.publicprompts.art/generated/media/404ea71bf0ba13192886.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ]
+      },
+      "model": "Stable Diffusion",
+      "previewUrl": "/prompt-previews/audited-749bc5abf30e7fcfe5c1.webp",
+      "exampleImages": [
+        "https://www.publicprompts.art/generated/media/404ea71bf0ba13192886.webp"
+      ],
+      "sha256": "7795b4768371b4c41d2978a5c7c66a308132e8037346e39874e04efcfa9d5883",
+      "originalText": "100mm photo of isometric floating island in the sky, surreal volcano, intricate, high detail, behance, microworlds smooth, macro sharp focus, centered"
+    }
+  ]
+}

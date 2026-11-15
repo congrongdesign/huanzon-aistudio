@@ -39,6 +39,8 @@ fi
 echo "[4/7] 构建 Next.js standalone..."
 rm -rf .next
 corepack pnpm next build
+corepack pnpm exec node scripts/build-backup-worker.mjs
+python3 scripts/prepare-slim-desktop-runtime.py
 restore_tools
 
 echo "[5/7] 复制 static/public 和 Windows sharp 运行依赖..."

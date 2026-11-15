@@ -1,3 +1,4 @@
+import { fontFilePath } from '@/lib/font-library-store';
 import sharp from "sharp";
 import { getKnowledgeHubItemById } from "@/lib/knowledge-hub-store";
 import { isLocalBackendEnabled, resolveLocalFilePath } from "@/lib/local-backend";
@@ -127,6 +128,11 @@ async function resolveLocalReference(ref: string): Promise<string> {
 
   const isLocalHost = parsed.hostname === "localhost" || parsed.hostname === "127.0.0.1" || parsed.hostname === "::1";
   if (!isLocalHost && !ref.startsWith("/")) return ref;
+
+  if (parsed.pathname.startsWith("/api/font-file/")) {
+    const key = decodeURIComponent(parsed.pathname.split("/").pop() || "");
+    return key ? (await localFileToDataUrl(fontFilePath(key))) || ref : ref;
+  }
 
   if (parsed.pathname.startsWith("/api/local-file/")) {
     const key = decodeURIComponent(parsed.pathname.split("/").pop() || "");

@@ -28,14 +28,13 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const response = await fetch(url, { cache: "no-store" });
+    const response = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(60000) });
     if (!response.ok) {
       return NextResponse.json({ error: `图片下载失败 (${response.status})` }, { status: 502 });
     }
 
     const filename = sanitizeFilename(request.nextUrl.searchParams.get("filename") || "");
-    const buffer = await response.arrayBuffer();
-    return new NextResponse(buffer, {
+    return new NextResponse(response.body, {
       headers: {
         "Content-Type": response.headers.get("content-type") || "application/octet-stream",
         "Content-Disposition": `attachment; filename*=UTF-8''${encodeURIComponent(filename)}`,

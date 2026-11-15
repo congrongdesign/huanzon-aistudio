@@ -4,6 +4,8 @@ import http from 'http';
 import net from 'net';
 import path from 'path';
 import type { AppUpdater, ProgressInfo, UpdateInfo } from 'electron-updater';
+import { ImageExporter, type ImageExportRequest } from './image-export';
+import { readSettings, updateSettings } from './settings-store';
 
 let mainWindow: BrowserWindow | null = null;
 let nextServer: Electron.UtilityProcess | null = null;
@@ -22,6 +24,15 @@ const legacyUserDataName = 'projects';
 
 app.setName(desktopProductName);
 configureStableUserDataPath();
+
+const ownsInstance = app.requestSingleInstanceLock();
+if (!ownsInstance) app.quit();
+app.on('second-instance', () => {
+  if (!mainWindow) { createWindow(); return; }
+  if (mainWindow.isMinimized()) mainWindow.restore();
+  mainWindow.show();
+  mainWindow.focus();
+});
 
 if (process.platform === 'win32') {
   app.setAppUserModelId('com.huanzon.aistudio');
@@ -96,11 +107,16 @@ function configureStableUserDataPath(): void {
   const stableUserDataDir = path.join(appDataDir, desktopProductName);
   const legacyUserDataDir = path.join(appDataDir, legacyUserDataName);
 
-  if (stableUserDataDir !== legacyUserDataDir && existsSync(legacyUserDataDir)) {
+  // A repeated merge resurrects deliberately deleted media on every launch.
+  // An existing primary database is authoritative; never backfill its deleted files.
+  const migrationMarker = path.join(stableUserDataDir, '.legacy-data-migrated-v1');
+  const hasPrimaryDatabase = existsSync(path.join(stableUserDataDir, 'local-data', 'db.json'));
+  if (!existsSync(migrationMarker) && !hasPrimaryDatabase && stableUserDataDir !== legacyUserDataDir && existsSync(legacyUserDataDir)) {
     mergeCopyMissing(legacyUserDataDir, stableUserDataDir);
   }
 
   mkdirSync(stableUserDataDir, { recursive: true });
+  if (!existsSync(migrationMarker)) writeFileSync(migrationMarker, new Date().toISOString(), 'utf8');
   app.setPath('userData', stableUserDataDir);
 }
 
@@ -474,12 +490,8 @@ function buildServerLogTail(maxLines = 40): string {
 }
 
 function isLocalAppUrl(url: string): boolean {
-  return (
-    url.startsWith('http://127.0.0.1') ||
-    url.startsWith('https://127.0.0.1') ||
-    url.startsWith('http://localhost') ||
-    url.startsWith('https://localhost')
-  );
+  try { return new URL(url).origin === `http://127.0.0.1:${serverPort}`; }
+  catch { return false; }
 }
 
 /**
@@ -872,6 +884,53 @@ function createWindow(serverError?: unknown) {
 }
 
 app.whenReady().then(async () => {
+  if (!ownsInstance) return;
+  ipcMain.on('desktop:settings-read', (event) => {
+    try {
+      event.returnValue = isLocalAppUrl(event.senderFrame?.url || '') ? readSettings(app.getPath('userData')) : {};
+    } catch { event.returnValue = {}; }
+  });
+  ipcMain.on('desktop:settings-write', (event, changes: unknown) => {
+    try {
+      if (isLocalAppUrl(event.senderFrame?.url || '')) updateSettings(app.getPath('userData'), changes);
+      event.returnValue = true;
+    } catch { event.returnValue = false; }
+  });
+  const exportedImagePaths = new Set<string>();
+  const imageExporter = new ImageExporter({
+    dataDirectory: process.env.LOCAL_DATA_DIR || app.getPath('userData'),
+    downloadsDirectory: app.getPath('downloads'),
+    get appOrigin() { return `http://127.0.0.1:${serverPort}`; },
+    // jszip is supplied by the standalone runtime, outside app.asar.
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    loadZip: () => require(require.resolve('jszip', { paths: [resolveStandalone().root, app.getAppPath()] })),
+    progress: value => { if (mainWindow && !mainWindow.isDestroyed()) mainWindow.webContents.send('desktop:image-export-progress', value); },
+  });
+  ipcMain.handle('desktop:export-images', async (event, request: ImageExportRequest) => {
+    if (event.sender !== mainWindow?.webContents) throw new Error('不支持的窗口');
+    try {
+      const result = await imageExporter.export(request);
+      for (const file of result.files) exportedImagePaths.add(file);
+      while (exportedImagePaths.size > 1000) exportedImagePaths.delete(exportedImagePaths.values().next().value!);
+      return { success: true, ...result };
+    }
+    catch (error) { return { success: false, files: [], failures: [], error: error instanceof Error ? error.message : '下载失败' }; }
+  });
+  ipcMain.handle('desktop:reveal-export', (event, filePath: unknown) => {
+    if (event.sender !== mainWindow?.webContents) throw new Error('不支持的窗口');
+    if (typeof filePath !== 'string' || !exportedImagePaths.has(filePath)) return { success: false, error: '请先下载文件' };
+    if (!existsSync(filePath)) return { success: false, error: '文件已被移动或删除' };
+    shell.showItemInFolder(filePath);
+    return { success: true };
+  });
+  ipcMain.handle('desktop:select-storage-directory', async (event, defaultPath?: string) => {
+    if (event.sender !== mainWindow?.webContents) throw new Error('不支持的窗口');
+    const result = await dialog.showOpenDialog(mainWindow!, {
+      title: '选择图片储存文件夹', properties: ['openDirectory', 'createDirectory'],
+      ...(typeof defaultPath === 'string' && path.isAbsolute(defaultPath) && existsSync(defaultPath) ? { defaultPath } : {}),
+    });
+    return result.canceled ? null : result.filePaths[0] || null;
+  });
   userZoomMultiplier = loadUserZoomMultiplier();
   screen.on('display-metrics-changed', () => applyUiZoom());
 

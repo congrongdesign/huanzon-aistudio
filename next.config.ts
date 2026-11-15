@@ -1,7 +1,10 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  distDir: process.env.HZ_NEXT_DIST_DIR || '.next',
   output: 'standalone',
+  // This SDK bundles its own require runtime; keep it intact in the Node server.
+  serverExternalPackages: ['coze-coding-dev-sdk'],
   env: {
     NEXT_PUBLIC_COZE_CLOUD:
       process.env.NEXT_PUBLIC_COZE_CLOUD ??
@@ -13,7 +16,7 @@ const nextConfig: NextConfig = {
   },
   allowedDevOrigins: ['*.dev.coze.site', 'localhost', '127.0.0.1', '*.local'],
   outputFileTracingExcludes: {
-    '*': ['release/**/*', 'tools/**/*'],
+    '*': ['release/**/*', 'tools/**/*', 'output/**/*'],
   },
   images: {
     remotePatterns: [

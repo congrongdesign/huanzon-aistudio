@@ -273,7 +273,7 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         prompt: effectivePrompt,
         aspectRatio: effectiveSize,
-        replyType: "json",
+        replyType: "async",
         ...(config.useReference ? { images: preparedReferences.references, reference_images: preparedReferences.references } : {}),
         model: config.model || model || "gpt-image-2",
       }),
@@ -294,7 +294,23 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(toOperationErrorPayload(normalized), { status: normalized.status });
     }
 
-    const grsaiData = await grsaiRes.json() as GenerateStatus;
+    const grsaiText = await grsaiRes.text().catch(() => "");
+    let grsaiData: GenerateStatus = {};
+    if (grsaiText.trim()) {
+      try { grsaiData = JSON.parse(grsaiText) as GenerateStatus; } catch { grsaiData = {}; }
+    }
+    if (!grsaiText.trim()) {
+      const normalized = normalizeOperationError({
+        message: `生图接口返回空响应 (HTTP ${grsaiRes.status})，模型可能正在维护或暂不可用，请稍后重试或更换模型`,
+        upstreamStatus: grsaiRes.status,
+        status: grsaiRes.status === 429 ? 429 : 502,
+      });
+      await updateTrackedOperation(userId, operation.id, {
+        status: "failed",
+        error: toOperationErrorLog(normalized),
+      }).catch(() => {});
+      return NextResponse.json(toOperationErrorPayload(normalized), { status: normalized.status });
+    }
 
     // If running, return the ID for polling
     if (grsaiData.status === "running" && grsaiData.id) {
@@ -319,7 +335,7 @@ export async function POST(request: NextRequest) {
         prompt: effectivePrompt,
         size: effectiveSize,
         model: config.model || model || "gpt-image-2",
-        referenceImages: preparedReferences.references,
+        referenceImages: [imageUrl],
       });
       await updateTrackedOperation(userId, operation.id, {
         status: "completed",
@@ -377,6 +393,7 @@ export async function GET(request: NextRequest) {
   const operationId = searchParams.get("operationId");
   const model = searchParams.get("model") || "gpt-image-2";
   const requestedSize = normalizeAspectRatio(searchParams.get("size"));
+  const sourceImageUrl = searchParams.get("sourceImageUrl");
 
   if (!taskId || !apiKey || !baseUrl) {
     const normalized = normalizeOperationError({ message: "Missing parameters", status: 400 });
@@ -385,10 +402,22 @@ export async function GET(request: NextRequest) {
 
   try {
     const base = normalizeBaseUrl(baseUrl);
-    const grsaiRes = await fetch(`${base}/v1/api/generate/${taskId}`, {
+    const grsaiRes = await fetch(`${base}/v1/api/result?id=${encodeURIComponent(taskId)}`, {
       headers: { Authorization: `Bearer ${apiKey}` },
     });
-    const grsaiData = await grsaiRes.json() as GenerateStatus;
+    const grsaiText = await grsaiRes.text().catch(() => "");
+    let grsaiData: GenerateStatus = {};
+    if (grsaiText.trim()) {
+      try { grsaiData = JSON.parse(grsaiText) as GenerateStatus; } catch { grsaiData = {}; }
+    }
+    if (!grsaiText.trim()) {
+      const normalized = normalizeOperationError({
+        message: `生图接口返回空响应 (HTTP ${grsaiRes.status})，模型可能正在维护或暂不可用，请稍后重试`,
+        upstreamStatus: grsaiRes.status,
+        status: grsaiRes.status === 429 ? 429 : 502,
+      });
+      return NextResponse.json(toOperationErrorPayload(normalized), { status: normalized.status });
+    }
 
     if (grsaiData.status === "running") {
       return NextResponse.json({ status: "running" });
@@ -404,7 +433,7 @@ export async function GET(request: NextRequest) {
         prompt: `Image processing: ${action}`,
         size: requestedSize || undefined,
         model,
-        referenceImages: [],
+        referenceImages: sourceImageUrl ? [sourceImageUrl] : [],
       });
       if (operationId) {
         await updateTrackedOperation(userId, operationId, {

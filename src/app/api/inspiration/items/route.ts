@@ -1,32 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseClient } from "@/storage/database/supabase-client";
 import { getCurrentUserId } from "@/lib/auth";
-import { isLocalBackendEnabled } from "@/lib/local-backend";
-
-type LocalInspItem = {
-  id: string;
-  folder_id: string | null;
-  project_id: string | null;
-  user_id: string;
-  image_url: string;
-  image_key: string | null;
-  file_name: string | null;
-  source: string;
-  dominant_color: string | null;
-  width: number;
-  height: number;
-  created_at: string;
-};
-
-const localInspItemsStore = new Map<string, LocalInspItem[]>();
-
-function getItems(userId: string) {
-  return (localInspItemsStore.get(userId) || []).slice();
-}
-
-function setItems(userId: string, items: LocalInspItem[]) {
-  localInspItemsStore.set(userId, items);
-}
+import {
+  createInspirationItem,
+  deleteInspirationItems,
+  isLocalBackendEnabled,
+  listInspirationItems,
+  updateInspirationItem,
+} from "@/lib/local-backend";
 
 export async function GET(req: NextRequest) {
   const userId = getCurrentUserId(req);
@@ -41,11 +22,10 @@ export async function GET(req: NextRequest) {
   const pageSize = Math.max(1, Math.min(200, parseInt(req.nextUrl.searchParams.get("pageSize") || "80", 10)));
 
   if (isLocalBackendEnabled()) {
-    let items = getItems(userId);
-    if (uncategorizedOnly) items = items.filter((i) => !i.folder_id);
-    else if (folderId) items = items.filter((i) => i.folder_id === folderId);
-    else if (projectId) items = items.filter((i) => i.project_id === projectId);
-    items.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+    const items = listInspirationItems(userId, {
+      projectId: uncategorizedOnly || folderId ? null : projectId,
+      folderId: uncategorizedOnly ? "none" : folderId,
+    });
     const total = items.length;
     const start = (page - 1) * pageSize;
     const end = start + pageSize;
@@ -98,11 +78,9 @@ export async function POST(req: NextRequest) {
   if (!image_url) return NextResponse.json({ error: "image_url required" }, { status: 400 });
 
   if (isLocalBackendEnabled()) {
-    const item: LocalInspItem = {
-      id: crypto.randomUUID(),
+    const item = createInspirationItem(userId, {
       folder_id: folder_id || null,
       project_id: project_id || null,
-      user_id: userId,
       image_url,
       image_key: image_key || null,
       file_name: file_name || null,
@@ -110,11 +88,7 @@ export async function POST(req: NextRequest) {
       dominant_color: dominant_color || null,
       width: width || 0,
       height: height || 0,
-      created_at: new Date().toISOString(),
-    };
-    const items = getItems(userId);
-    items.push(item);
-    setItems(userId, items);
+    });
     return NextResponse.json({ item });
   }
 
@@ -151,12 +125,9 @@ export async function PATCH(req: NextRequest) {
   if (!id) return NextResponse.json({ error: "id required" }, { status: 400 });
 
   if (isLocalBackendEnabled()) {
-    const items = getItems(userId);
-    const idx = items.findIndex((i) => i.id === id);
-    if (idx < 0) return NextResponse.json({ error: "item not found" }, { status: 404 });
-    items[idx].folder_id = folder_id || null;
-    setItems(userId, items);
-    return NextResponse.json({ item: items[idx] });
+    const item = updateInspirationItem(id, userId, folder_id || null);
+    if (!item) return NextResponse.json({ error: "item not found" }, { status: 404 });
+    return NextResponse.json({ item });
   }
 
   const supabase = getSupabaseClient();
@@ -181,23 +152,17 @@ export async function DELETE(req: NextRequest) {
   const urlId = req.nextUrl.searchParams.get("id");
 
   if (isLocalBackendEnabled()) {
-    let items = getItems(userId);
     if (urlId) {
-      const before = items.length;
-      items = items.filter((i) => i.id !== urlId);
-      setItems(userId, items);
-      if (before === items.length) return NextResponse.json({ error: "item not found" }, { status: 404 });
+      const result = deleteInspirationItems([urlId], userId);
+      if (result.deleted === 0) return NextResponse.json({ error: "item not found" }, { status: 404 });
       return NextResponse.json({ success: true });
     }
 
     const body = await req.json().catch(() => ({}));
     const ids: string[] = body.ids || [];
     if (ids.length === 0) return NextResponse.json({ error: "ids required" }, { status: 400 });
-    const idSet = new Set(ids);
-    const before = items.length;
-    items = items.filter((i) => !idSet.has(i.id));
-    setItems(userId, items);
-    return NextResponse.json({ success: true, deleted: before - items.length });
+    const result = deleteInspirationItems(ids, userId);
+    return NextResponse.json({ success: true, deleted: result.deleted });
   }
 
   const supabase = getSupabaseClient();

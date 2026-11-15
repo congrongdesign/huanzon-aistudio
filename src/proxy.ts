@@ -12,6 +12,7 @@ type RuntimeConfigResponse = {
 function isReservedLocalPath(pathname: string): boolean {
   return (
     pathname === '/api/runtime-config' ||
+    pathname === '/api/storage-management' ||
     pathname === '/api/lan-info' ||
     pathname === '/api/lan-health' ||
     pathname === '/api/save-image-download' ||

@@ -81,8 +81,8 @@ function verifyUpdaterRuntime() {
 }
 
 function verifyMacArtifacts() {
-  const dmgs = listRelease(/^环中AIStudio-\d+\.\d+\.\d+-arm64\.dmg$/);
-  const zips = listRelease(/^环中AIStudio-\d+\.\d+\.\d+-arm64\.zip$/);
+  const dmgs = listRelease(/^AIStudio-\d+\.\d+\.\d+-arm64\.dmg$/);
+  const zips = listRelease(/^AIStudio-\d+\.\d+\.\d+-arm64\.zip$/);
   assert(dmgs.length === 1, `Expected exactly one public macOS DMG, found ${dmgs.length}: ${dmgs.join(', ')}`);
   assert(zips.length === 1, `Expected exactly one hidden macOS ZIP update artifact, found ${zips.length}: ${zips.join(', ')}`);
   assert(fs.existsSync(path.join(releaseDir, 'latest-mac.yml')), 'Missing latest-mac.yml for macOS auto update.');
@@ -99,8 +99,8 @@ function verifyMacArtifacts() {
 function verifyWinArtifacts() {
   // Names follow electron-builder.yml win.artifactName:
   //   环中AIStudio-<version>-win-x64-setup.exe / -portable.exe
-  const exes = listRelease(/^环中AIStudio-\d+\.\d+\.\d+-win-x64-setup\.exe$/);
-  const portableExes = listRelease(/^环中AIStudio-\d+\.\d+\.\d+-win-x64-portable\.exe$/);
+  const exes = listRelease(/^AIStudio-\d+\.\d+\.\d+-win-x64-setup\.exe$/);
+  const portableExes = listRelease(/^AIStudio-\d+\.\d+\.\d+-win-x64-portable\.exe$/);
   assert(exes.length === 1, `Expected exactly one public Windows installer, found ${exes.length}: ${exes.join(', ')}`);
   assert(portableExes.length === 1, `Expected exactly one Windows portable exe, found ${portableExes.length}: ${portableExes.join(', ')}`);
   assert(fs.existsSync(path.join(releaseDir, `${exes[0]}.blockmap`)), 'Missing Windows installer blockmap.');

@@ -1,5 +1,7 @@
 "use client";
 
+import { SettingsSection, SettingsCard, SettingsRow } from "@/components/platform/Settings";
+import { ModelPicker } from "@/components/creation/CreationControls";
 import NeutralSelect from "@/components/ui/neutral-select";
 import type {
   OperationDefinition,
@@ -61,109 +63,15 @@ export default function OperationRoutingPanel({
           : null;
 
         return (
-          <section
-            key={definition.key}
-            className="rounded-2xl border border-border bg-muted/40 p-4"
-          >
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <div className="text-sm font-medium text-foreground">{definition.label}</div>
-                <div className="mt-1 text-xs text-muted-foreground">{definition.hint}</div>
-              </div>
-              <span className={`rounded-full px-2 py-0.5 text-[11px] ${
-                route?.providerId
-                  ? "bg-primary/10 text-primary"
-                  : "bg-card text-muted-foreground"
-              }`}>
-                {route?.providerId ? "独立路由" : "跟随默认"}
-              </span>
-            </div>
-
-            <div className="mt-3 grid gap-3">
-              <div className="space-y-1.5">
-                <label className="text-xs text-muted-foreground">服务商</label>
-                <NeutralSelect
-                  value={route?.providerId || ""}
-                  onChange={(event) => onSelectProvider(definition.key, event.target.value)}
-                  className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm text-foreground outline-none"
-                >
-                  <option value="">跟随默认能力</option>
-                  {providerCandidates.map((provider) => (
-                    <option key={provider.id} value={provider.id}>
-                      {provider.name}
-                    </option>
-                  ))}
-                </NeutralSelect>
-              </div>
-
-              {definition.requiresModel && route?.providerId && (
-                <div className="space-y-1.5">
-                  <label className="text-xs text-muted-foreground">模型</label>
-                  <NeutralSelect
-                    value={route.modelId || ""}
-                    onChange={(event) => onSelectModel(definition.key, event.target.value)}
-                    className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm text-foreground outline-none"
-                  >
-                    <option value="">
-                      {providerModels.length > 0 ? "选择模型" : "当前服务商还没有检测到模型"}
-                    </option>
-                    {providerModels.map((model) => (
-                      <option key={model.id} value={model.id}>
-                        {getModelLabel(model, model.id)}
-                      </option>
-                    ))}
-                  </NeutralSelect>
-                  {providerModels.length === 0 && (
-                    <div className="text-[11px] text-amber-600 dark:text-amber-300">
-                      先到服务商页检测模型，再回来绑定这个操作。
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-
-            <div className="mt-3 rounded-xl border border-border bg-card px-3 py-2 text-[11px] text-muted-foreground">
-              {route?.providerId ? (
-                <div className="space-y-1">
-                  <div>
-                    当前绑定：
-                    <span className="ml-1 text-foreground">
-                      {selectedProvider?.name || route.providerId}
-                    </span>
-                  </div>
-                  {selectedProvider && (
-                    <div className="break-all">{selectedProvider.baseUrl}</div>
-                  )}
-                  {definition.requiresModel && (
-                    <div>
-                      模型：
-                      <span className="ml-1 text-foreground">
-                        {getModelLabel(selectedModel, route.modelId) || "未选择"}
-                      </span>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <div>
-                  {definition.key === "conversion.pdf_to_ppt"
-                    ? "未单独配置时，转换中心继续使用默认 Codia 配置。"
-                    : "未单独配置时，继续跟随图像工具默认能力路由。"}
-                </div>
-              )}
-            </div>
-
-            {route?.providerId && (
-              <div className="mt-3 flex justify-end">
-                <button
-                  type="button"
-                  onClick={() => onClearRoute(definition.key)}
-                  className="rounded-lg border border-border bg-card px-3 py-2 text-xs text-muted-foreground hover:bg-muted hover:text-foreground"
-                >
-                  清除单独路由
-                </button>
-              </div>
-            )}
-          </section>
+          <SettingsSection key={definition.key} title={definition.label} description={definition.hint}>
+            <SettingsCard>
+              <SettingsRow label="服务商" description={route?.providerId ? '独立配置此操作' : '跟随默认能力'}>
+                <NeutralSelect aria-label={`${definition.label}服务商`} value={route?.providerId || ''} onChange={e=>onSelectProvider(definition.key,e.target.value)}><option value="">跟随默认能力</option>{providerCandidates.map(p=><option value={p.id} key={p.id}>{p.name}</option>)}</NeutralSelect>
+              </SettingsRow>
+              {definition.requiresModel&&route?.providerId&&<SettingsRow label="模型" description={!providerModels.length?'先检测服务商模型目录':undefined}><ModelPicker label={`${definition.label}模型`} value={route.modelId||''} options={[{value:'',label:'选择模型'},...providerModels.map(m=>({value:m.id,label:getModelLabel(m,m.id),group:selectedProvider?.name}))]} onChange={v=>onSelectModel(definition.key,v)}/></SettingsRow>}
+            </SettingsCard>
+            {route?.providerId&&<div className="mt-2 flex items-center justify-between gap-3 text-[11px] text-muted-foreground"><span className="truncate" title={selectedProvider?.baseUrl}>{selectedProvider?.name||route.providerId}</span><button type="button" className="motif-link" onClick={()=>onClearRoute(definition.key)}>恢复默认</button></div>}
+          </SettingsSection>
         );
       })}
     </div>
