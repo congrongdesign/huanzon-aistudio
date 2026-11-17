@@ -6,16 +6,12 @@ import { ModelSelect, ModelSelectTrigger, ModelSelectContent, ModelSelectSearch,
 
 export function ModelPicker({ value, options, onChange, label = '生图模型' }: { value: string; options: { value: string; label: string; group?: string }[]; onChange: (value: string) => void; label?: string }) {
   const { models, providers } = useMemo(() => {
-    const groups = [...new Set(options.map(o => o.group || '已启用模型'))];
+    const groups = [...new Set(options.map(o => o.group || '已激活模型'))];
     const providers = groups.map((name, index) => ({ id: `provider-${index}`, name }));
-    const models = options.map(o => ({ id: o.value, name: o.label, provider: providers[groups.indexOf(o.group || '已启用模型')].id, keywords: [o.value, o.group || ''] }));
-    if (value && !models.some(o => o.id === value)) {
-      providers.push({ id: 'current', name: '当前模型' });
-      models.unshift({ id: value, name: value.split('::').at(-1) || value, provider: 'current', keywords: [value] });
-    }
+    const models = options.map(o => ({ id: o.value, name: o.label, provider: providers[groups.indexOf(o.group || '已激活模型')].id, keywords: [o.value, o.group || ''] }));
     return { models, providers };
-  }, [options, value]);
-  return <ModelSelect models={models} providers={providers} value={value} onValueChange={onChange} emptyLabel="没有匹配的模型" triggerPlaceholder="选择模型">
+  }, [options]);
+  return <ModelSelect models={models} providers={providers} value={value} onValueChange={onChange} emptyLabel="没有匹配的模型" triggerPlaceholder={options.length ? "选择模型" : "请先激活模型"}>
     <ModelSelectTrigger aria-label={label} className="motif-model-picker"/>
     <ModelSelectContent className="motif-model-select-panel" side="top" collisionPadding={12}>
       <ModelSelectSearch placeholder="搜索模型或供应商…" aria-label="搜索模型"/>

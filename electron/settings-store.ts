@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-// Only connection/settings keys; never copy projects, cached images or auth sessions.
+// Only preferences/settings keys; never copy projects, cached images or auth sessions.
 export function isPersistentSetting(key: string): boolean {
-  return /^(hz_(grs_|ds_|chat_|codia_|provider_|active_provider_|capability_bindings|operation_routes|image_models_cache|image_favorite_models|model_category_overrides)|hz_theme$|theme$)/.test(key);
+  return /^(hz_(grs_|ds_|chat_|codia_|provider_|active_provider_|capability_bindings|operation_routes|image_models_cache|image_favorite_models|model_category_overrides)|hz_canvas_edge_mode_v1$|hz_theme$|theme$)/.test(key);
 }
 
 export function readSettings(directory: string): Record<string, string> {

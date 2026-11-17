@@ -29,6 +29,21 @@ export class ImageExporter {
   private pending = new Map<string, Promise<ImageExportResult>>();
   constructor(private options: ExportOptions) {}
 
+  /** Stage original bytes for a desktop integration, without changing download settings. */
+  async stageImage(url: string, directory: string): Promise<string> {
+    const config = await this.config();
+    await mkdir(directory, { recursive: true });
+    return this.save(directory, 'source-image', await this.source(url, config));
+  }
+
+  private async config(): Promise<ExportConfig> {
+    try { return JSON.parse(await readFile(path.join(this.options.dataDirectory, 'runtime-config.json'), 'utf8')); }
+    catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw new Error('无法读取下载设置');
+      return {};
+    }
+  }
+
   export(request: ImageExportRequest): Promise<ImageExportResult> {
     if (!request || typeof request.id !== 'string' || !request.id || request.id.length > 160 ||
       !Array.isArray(request.files) || !request.files.length || request.files.length > 500 ||
@@ -47,9 +62,7 @@ export class ImageExporter {
     if (this.active >= 2) await new Promise<void>(resolve => this.waiting.push(resolve));
     else this.active++;
     try {
-      let config: ExportConfig = {};
-      try { config = JSON.parse(await readFile(path.join(this.options.dataDirectory, 'runtime-config.json'), 'utf8')); }
-      catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw new Error('无法读取下载设置'); }
+      const config = await this.config();
       const directory = config.downloadDirectory?.trim() || this.options.downloadsDirectory;
       await mkdir(directory, { recursive: true });
       const result: ImageExportResult = { files: [], failures: [] };
@@ -92,12 +105,13 @@ export class ImageExporter {
   private async source(value: string, config: ExportConfig): Promise<Readable> {
     const url = new URL(value, this.options.appOrigin);
     const local = url.origin === this.options.appOrigin || ['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname);
-    if (local && url.pathname.startsWith('/api/local-file/') && !(config.backendMode === 'lan' && config.lanRole === 'client')) {
-      const key = decodeURIComponent(url.pathname.slice('/api/local-file/'.length));
+    const fontFile = url.pathname.startsWith('/api/font-file/');
+    if (local && (fontFile || url.pathname.startsWith('/api/local-file/')) && !(config.backendMode === 'lan' && config.lanRole === 'client')) {
+      const key = decodeURIComponent(url.pathname.slice((fontFile ? '/api/font-file/' : '/api/local-file/').length));
       if (!key || key === '.' || key === '..' || /[\\/\x00]/.test(key)) throw new Error('无效的原图地址');
       const fallback = path.join(this.options.dataDirectory, 'local-data');
       for (const root of [...new Set([config.mediaDirectory || fallback, ...(config.mediaPreviousDirectories || []), fallback])]) {
-        const file = path.join(root, 'files', key);
+        const file = path.join(root, fontFile ? 'font-library/files' : 'files', key);
         try { await access(file); } catch { continue; }
         if (!(await stat(file)).isFile()) continue;
         // Ignore thumbnail query parameters: always export the original bytes.
@@ -110,7 +124,7 @@ export class ImageExporter {
       url.protocol = host.protocol; url.host = host.host;
     }
     if (!['https:', 'http:', 'data:'].includes(url.protocol)) throw new Error('不支持的图片地址');
-    if (url.pathname.startsWith('/api/local-file/')) { url.search = ''; url.searchParams.set('download', '1'); }
+    if (fontFile || url.pathname.startsWith('/api/local-file/')) { url.search = ''; url.searchParams.set('download', '1'); }
     const response = await fetch(url, { signal: AbortSignal.timeout(60_000) });
     if (!response.ok || !response.body) throw new Error(`图片下载失败（HTTP ${response.status}）`);
     const type = response.headers.get('content-type') || '';

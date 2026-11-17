@@ -51,6 +51,7 @@ export interface CanvasImage {
   isGenerating?: boolean;
   isUploading?: boolean;
   generateStartTime?: number; // timestamp when generation started
+  generationBatch?: { batchId: string; index: number; total: number };
   generationKey?: string; // Client identity survives placeholder → persisted result for the media reveal.
   deleted_at?: string | null;
   filters?: Partial<ImageFilterSettings>;

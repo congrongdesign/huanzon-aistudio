@@ -18,6 +18,10 @@ try {
   updateSettings(directory, { hz_grs_api_key: 'fixture-key-do-not-print', hz_grs_base_url: providers.profiles[0].baseUrl, auth_token: 'must-not-persist', hz_provider_profiles_v1: JSON.stringify(providers.profiles) });
   assert.equal(readSettings(directory).hz_grs_api_key, providers.profiles[0].apiKeyLocal);
   assert.equal(readSettings(directory).auth_token, undefined);
+  for (const mode of ['smart', 'all', 'hidden']) {
+    updateSettings(directory, { hz_canvas_edge_mode_v1: mode });
+    assert.equal(readSettings(directory).hz_canvas_edge_mode_v1, mode, 'canvas connection choice survives a desktop restart/port change');
+  }
   assert.deepEqual(readProviderProfilesStore().profiles, providers.profiles);
   assert.equal(readRuntimeConfig().mediaDirectory, path.join(directory, '中文 图片库'));
   assert.equal(listProjects('upgrade-qa').length, 1);

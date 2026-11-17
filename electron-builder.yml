@@ -9,6 +9,7 @@ directories:
 npmRebuild: false
 nodeGypRebuild: false
 buildDependenciesFromSource: false
+afterPack: scripts/windows-executable-branding.mjs
 
 files:
   - electron/dist/**/*
@@ -34,8 +35,11 @@ publish:
 
 win:
   icon: electron/icon.ico
+  # Resource branding is verified by afterPack, without requiring Wine on macOS.
   signAndEditExecutable: false
   extraResources:
+    - from: electron/icon.ico
+      to: icon.ico
     - from: .next/standalone-win
       to: standalone
       filter:
@@ -54,6 +58,24 @@ mac:
   bundleVersion: "${version}"
   category: public.app-category.graphics-design
   icon: electron/icon.icns
+  extendInfo:
+    NSAppleEventsUsageDescription: 将字体图片发送到 Adobe Illustrator，自动进行矢量描摹。
+    CFBundleDocumentTypes:
+      - CFBundleTypeName: 环中AIStudio资源包
+        CFBundleTypeExtensions: [hzlib]
+        CFBundleTypeIconFile: icon.icns
+        # Resource packages are read through the library import preview.
+        CFBundleTypeRole: Viewer
+        LSHandlerRank: Owner
+        LSItemContentTypes: [com.huanzon.aistudio.library]
+    UTExportedTypeDeclarations:
+      - UTTypeIdentifier: com.huanzon.aistudio.library
+        UTTypeDescription: 环中AIStudio资源包
+        UTTypeConformsTo: [public.data, public.content]
+        UTTypeIconFile: icon.icns
+        UTTypeTagSpecification:
+          public.filename-extension: [hzlib]
+          public.mime-type: application/vnd.huanzon.library+zip
   extraResources:
     - from: .next/standalone
       to: standalone

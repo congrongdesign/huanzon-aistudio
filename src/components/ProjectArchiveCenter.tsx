@@ -5,7 +5,7 @@ import { DatabaseBackup, FolderOpen, Image as ImageIcon, Loader2, RefreshCw, Rot
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { StorageDirectoryPicker } from "@/components/platform/StorageDirectoryPicker";
 import type { Project } from "@/lib/types";
-import type { ProjectArchiveEntry, ProjectArchiveJob } from "@/lib/project-archive-types";
+import type { BackupConnection, ProjectArchiveEntry, ProjectArchiveJob } from "@/lib/project-archive-types";
 import { projectBackupCards, type BackupCard } from "@/lib/project-backup-cards";
 import { trackBackgroundArchiveJob } from "@/lib/background-archive-jobs";
 
@@ -18,7 +18,7 @@ type Props = {
   onExportPackage: (project: Project) => void;
   packageBusy: boolean;
 };
-type Status = { config?: { syncDir?: string }; ready?: boolean; entries?: ProjectArchiveEntry[]; jobs?: ProjectArchiveJob[]; error?: string };
+type Status = { connection?: BackupConnection; config?: { syncDir?: string }; ready?: boolean; entries?: ProjectArchiveEntry[]; jobs?: ProjectArchiveJob[]; error?: string };
 const running = (job: ProjectArchiveJob) => job.status === "queued" || job.status === "running";
 const date = (value: string) => new Date(value).toLocaleString("zh-CN", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
 const bytes = (n: number) => n >= 1024 ** 3 ? `${(n / 1024 ** 3).toFixed(1)} GB` : `${(n / 1024 ** 2).toFixed(1)} MB`;
@@ -27,6 +27,8 @@ export default function ProjectArchiveCenter({ projects, cacheScope, getAuthHead
   const [directory, setDirectory] = useState("");
   const [entries, setEntries] = useState<ProjectArchiveEntry[]>([]);
   const [jobs, setJobs] = useState<ProjectArchiveJob[]>([]);
+  const [connection, setConnection] = useState<BackupConnection | null>(null);
+  const [reconnecting, setReconnecting] = useState(false);
   const [ready, setReady] = useState(false);
   const [loading, setLoading] = useState(true);
   const [busy, setBusy] = useState(false);
@@ -54,13 +56,14 @@ export default function ProjectArchiveCenter({ projects, cacheScope, getAuthHead
       if (!response.ok) throw new Error(data.error || "无法读取项目备份");
       setDirectory(data.config?.syncDir || "");
       setReady(Boolean(data.ready));
+      setConnection(data.connection || null);
       setJobs(data.jobs || []);
-      if (data.ready) {
+      if (data.entries) {
         setEntries(current => JSON.stringify(current) === JSON.stringify(data.entries || []) ? current : data.entries || []);
         try { localStorage.setItem(cacheKey, JSON.stringify({ directory: data.config?.syncDir, entries: data.entries || [] })); } catch { /* Cache is optional. */ }
       }
       if (data.error) setMessage(data.error);
-      else if (!quiet) setMessage("");
+      else if (!quiet || data.ready) setMessage("");
     } catch (error) {
       setReady(false);
       setMessage(error instanceof Error ? error.message : "无法读取项目备份");
@@ -74,7 +77,9 @@ export default function ProjectArchiveCenter({ projects, cacheScope, getAuthHead
     } catch { /* Start with an empty local catalog. */ }
     void load();
     const timer = window.setInterval(() => void load(true), 4000);
-    return () => window.clearInterval(timer);
+    const wake = () => { if (document.visibilityState === 'visible') void load(true); };
+    window.addEventListener('online', wake); window.addEventListener('focus', wake); document.addEventListener('visibilitychange', wake);
+    return () => { window.clearInterval(timer); window.removeEventListener('online', wake); window.removeEventListener('focus', wake); document.removeEventListener('visibilitychange', wake); };
   }, [cacheKey, load]);
 
   // Load a small representative image only for projects that do not have a saved cover.
@@ -108,6 +113,12 @@ export default function ProjectArchiveCenter({ projects, cacheScope, getAuthHead
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || "操作失败");
     return data;
+  }
+  async function reconnect() {
+    setReconnecting(true);
+    try { await request({ action: 'reconnect' }); await load(); }
+    catch (error) { setMessage(error instanceof Error ? error.message : '重连失败'); }
+    finally { setReconnecting(false); }
   }
   async function configure(path: string) {
     setBusy(true);
@@ -146,7 +157,8 @@ export default function ProjectArchiveCenter({ projects, cacheScope, getAuthHead
   return <section className="project-backups flex min-h-0 flex-1 flex-col" aria-label="项目备份">
     <header className="flex flex-wrap items-start justify-between gap-4 border-b border-border px-5 py-5">
       <div className="min-w-0"><h2 className="flex items-center gap-2 text-base font-semibold"><DatabaseBackup size={18} />项目备份</h2><p className="mt-1 text-xs text-muted-foreground">将画布项目存入 NAS，成功后从画布移除，需要时恢复。</p>
-        <div className="mt-3 flex flex-wrap items-center gap-2 text-xs"><span className={`h-1.5 w-1.5 rounded-full ${ready ? "bg-emerald-500" : "bg-amber-500"}`} /><span>{ready ? "备份位置已连接" : directory ? "备份位置未连接" : "尚未设置备份位置"}</span><span className="max-w-lg truncate text-muted-foreground" title={directory}>{directory || "选择 NAS 的 AIstudio备份 文件夹"}</span><button className="motif-button" disabled={locked} onClick={() => setPicker(true)}><FolderOpen size={13} />{directory ? "更改位置" : "选择文件夹"}</button></div>
+        <div className="mt-3 flex flex-wrap items-center gap-2 text-xs"><span className={`h-1.5 w-1.5 rounded-full ${ready ? "bg-emerald-500" : "bg-amber-500"}`} /><span>{ready ? "备份位置已连接" : connection?.state === "checking" ? "正在检查连接…" : connection?.message || (directory ? "备份位置未连接" : "尚未设置备份位置")}</span><span className="max-w-lg truncate text-muted-foreground" title={directory}>{directory || "选择 NAS 的 AIstudio备份 文件夹"}</span><button className="motif-button" disabled={locked} onClick={() => setPicker(true)}><FolderOpen size={13} />{directory ? "更改位置" : "选择文件夹"}</button>{directory && <button className="motif-button" disabled={reconnecting || connection?.state === 'checking'} onClick={() => void reconnect()}><RefreshCw size={13} className={reconnecting ? 'animate-spin' : ''} />{reconnecting ? '正在重连…' : '立即重连'}</button>}</div>
+        {!ready && connection?.nextRetryAt && <p className="mt-2 text-[11px] text-muted-foreground">下次检查 {new Date(connection.nextRetryAt).toLocaleTimeString('zh-CN')} · 连接恢复后自动继续等待中的任务</p>}
       </div>
       <div className="flex flex-wrap gap-2"><button className="motif-button" disabled={locked} onClick={onImportPackage}><Upload size={14} />导入项目包</button><button className="motif-button" disabled={loading || locked} onClick={() => void load()} aria-label="刷新项目备份"><RefreshCw size={14} className={loading ? "animate-spin" : ""} /></button><button className="motif-button bg-primary text-primary-foreground" disabled={!ready || locked || !selectedIds.length} onClick={() => void start("archive", selectedIds)}><DatabaseBackup size={14} />备份并移出画布{selectedIds.length ? ` (${selectedIds.length})` : ""}</button></div>
     </header>
@@ -166,8 +178,8 @@ export default function ProjectArchiveCenter({ projects, cacheScope, getAuthHead
           </article>;
         })}
       </div>}
-      {jobs.length > 0 && <div className="mt-8 border-t border-border pt-4"><h3 className="mb-3 text-xs font-medium">最近任务</h3><div className="space-y-2">{jobs.slice(0, 5).map(job => <div key={job.id} className="rounded-lg border border-border px-3 py-2 text-xs"><div className="flex items-center gap-2">{running(job) && <Loader2 size={13} className="animate-spin" />}<span>{job.action === "archive" ? "备份" : "恢复"} · {job.completed}/{job.total}</span><span className="text-muted-foreground">{job.stage}</span>{running(job) && <button className="motif-button ml-auto" onClick={() => void control(job, "pause")}>暂停</button>}{["paused", "partial", "failed"].includes(job.status) && <button className="motif-button" onClick={() => void control(job, "resume")}>继续</button>}{(running(job) || job.status === "paused") && <button className="motif-button" onClick={() => void control(job, "cancel")}>取消任务</button>}{job.failed > 0 && <button className="motif-button ml-auto" disabled={!ready || locked} onClick={() => { const failed = job.results.filter(result => result.status === "failed"); if (job.action === "archive") void start("archive", failed.map(result => result.projectId).filter(id => projects.some(project => project.id === id))); else void start("restore", failed.map(result => result.projectId)); }}>重试失败项</button>}{job.results.find(result => result.restoredProjectId) && <button className="motif-button ml-auto" onClick={() => onOpenProject(job.results.find(result => result.restoredProjectId)!.restoredProjectId!)}>打开恢复项目</button>}</div>{job.results.filter(result => result.status === "completed" && result.message.includes("保留")).map(result => <p key={result.projectId} className="mt-1 text-muted-foreground">{result.projectName}：{result.message}</p>)}{job.results.filter(result => result.status === "failed").map(result => <p key={result.projectId} className="mt-1 text-destructive">{result.projectName}：{result.message}</p>)}</div>)}</div></div>}
-      <p className="mt-6 text-[11px] leading-5 text-muted-foreground">备份校验成功后自动从画布移除；备份期间有新修改或正在生成时保留，稍后再次备份。每次保存一个完整版本。NAS 未连接时展示上次读取的目录。案例、风格包等仅保存在浏览器的内容暂不包含在项目包中。</p>
+      {jobs.length > 0 && <div className="mt-8 border-t border-border pt-4"><h3 className="mb-3 text-xs font-medium">最近任务</h3><div className="space-y-2">{jobs.slice(0, 5).map(job => <div key={job.id} className="rounded-lg border border-border px-3 py-2 text-xs"><div className="flex items-center gap-2">{running(job) && <Loader2 size={13} className="animate-spin" />}<span>{job.action === "archive" ? "备份" : "恢复"} · {job.completed}/{job.total}</span><span className="text-muted-foreground">{job.stage}</span>{(running(job) || job.status === "waiting") && <button className="motif-button ml-auto" onClick={() => void control(job, "pause")}>暂停</button>}{["paused", "partial", "failed"].includes(job.status) && <button className="motif-button" onClick={() => void control(job, "resume")}>继续</button>}{(running(job) || job.status === "waiting" || job.status === "paused") && <button className="motif-button" onClick={() => void control(job, "cancel")}>取消任务</button>}{job.failed > 0 && <button className="motif-button ml-auto" disabled={!ready || locked} onClick={() => { const failed = job.results.filter(result => result.status === "failed"); if (job.action === "archive") void start("archive", failed.map(result => result.projectId).filter(id => projects.some(project => project.id === id))); else void start("restore", failed.map(result => result.projectId)); }}>重试失败项</button>}{job.results.find(result => result.restoredProjectId) && <button className="motif-button ml-auto" onClick={() => onOpenProject(job.results.find(result => result.restoredProjectId)!.restoredProjectId!)}>打开恢复项目</button>}</div>{job.results.filter(result => result.status === "completed" && result.message.includes("保留")).map(result => <p key={result.projectId} className="mt-1 text-muted-foreground">{result.projectName}：{result.message}</p>)}{job.results.filter(result => result.status === "failed").map(result => <p key={result.projectId} className="mt-1 text-destructive">{result.projectName}：{result.message}</p>)}</div>)}</div></div>}
+      <p className="mt-6 text-[11px] leading-5 text-muted-foreground">备份校验成功后自动从画布移除；备份期间有新修改或正在生成时保留，稍后再次备份。每次保存一个完整版本。NAS 未连接时保留缓存卡片，自动重试连接；等待连接的任务恢复后继续，手动暂停的任务需点击继续。案例、风格包等仅保存在浏览器的内容暂不包含在项目包中。</p>
     </div>
     <StorageDirectoryPicker endpoint="/api/project-archive" open={picker} initialDirectory={directory} title="选择 NAS 项目备份文件夹" onOpenChange={setPicker} onSelect={path => void configure(path)} />
     <Dialog open={Boolean(detailCard)} onOpenChange={open => { if (!open) setDetail(null); }}><DialogContent className="!max-w-2xl max-h-[85dvh] overflow-y-auto"><DialogTitle>{detailCard?.name}</DialogTitle><DialogDescription>备份版本与项目操作。恢复历史版本会保留当前项目。</DialogDescription>{detailCard && <>

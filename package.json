@@ -1,6 +1,6 @@
 {
   "name": "projects",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "main": "electron/dist/electron/main.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "@aws-sdk/lib-storage": "^3.958.0",
     "@hookform/resolvers": "^5.2.2",
     "@langchain/core": "^1.1.47",
+    "@libsql/client": "^0.18.0",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-aspect-ratio": "^1.1.8",
@@ -105,6 +106,7 @@
   "devDependencies": {
     "@img/sharp-libvips-win32-x64": "1.2.4",
     "@img/sharp-win32-x64": "0.34.5",
+    "@libsql/win32-x64-msvc": "0.5.29",
     "@react-dev-inspector/babel-plugin": "^2.0.1",
     "@react-dev-inspector/middleware": "^2.0.1",
     "@tailwindcss/postcss": "^4",
@@ -124,13 +126,14 @@
     "eslint-config-next": "16.1.1",
     "only-allow": "^1.2.2",
     "react-dev-inspector": "^2.0.1",
+    "resedit": "1.7.2",
     "shadcn": "3.7.0",
     "tailwindcss": "^4",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "^5"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@11.25.0",
   "engines": {
     "pnpm": ">=9.0.0"
   },

@@ -50,7 +50,7 @@ export function canvasConnectionGeometry(source: CanvasRect, target: CanvasRect)
 }
 
 type Point = { x: number; y: number };
-const segmentBlocked = (a: Point, b: Point, rect: CanvasRect, padding = 12) => {
+const segmentBlocked = (a: Point, b: Point, rect: CanvasRect, padding = 8) => {
   const left = rect.x - padding, right = rect.x + rect.width + padding;
   const top = rect.y - padding, bottom = rect.y + rect.height + padding;
   return a.x === b.x
@@ -59,21 +59,35 @@ const segmentBlocked = (a: Point, b: Point, rect: CanvasRect, padding = 12) => {
 };
 
 /** Route across the gutters when the direct curve would pass through another image. */
-export function routedCanvasConnectionGeometry(source: CanvasRect, target: CanvasRect, obstacles: readonly CanvasRect[]) {
+export function routedCanvasConnectionGeometry(source: CanvasRect, target: CanvasRect, obstacles: readonly CanvasRect[]): ReturnType<typeof canvasConnectionGeometry> {
   const fallback = canvasConnectionGeometry(source, target);
   const horizontal = fallback.axis === 'x';
-  if (!horizontal) return fallback;
+  if (!horizontal) {
+    // Reuse the same gutter search after transposing the scene, including negative coordinates.
+    const transpose = (r: CanvasRect): CanvasRect => ({ x: r.y, y: r.x, width: r.height, height: r.width });
+    const a = transpose(source), b = transpose(target);
+    const route = routedCanvasConnectionGeometry(a, b, obstacles.map(r => r === source ? a : r === target ? b : transpose(r)));
+    const number = '-?(?:\\d*\\.)?\\d+(?:e[+-]?\\d+)?';
+    return { ...route, x: route.y, y: route.x, width: route.height, height: route.width,
+      d: route.d.replace(new RegExp(`(${number}) (${number})`, 'gi'), '$2 $1'), axis: 'y' as const };
+  }
   const direction = fallback.reverse ? -1 : 1;
   const a = { x: direction > 0 ? source.x + source.width : source.x, y: source.y + source.height / 2 };
   const b = { x: direction > 0 ? target.x : target.x + target.width, y: target.y + target.height / 2 };
   const between = obstacles.filter(r => r !== source && r !== target && r.x < Math.max(a.x, b.x) + 24 && r.x + r.width > Math.min(a.x, b.x) - 24);
   const boxHits = between.some(r => r.x < fallback.x + fallback.width - 16 && r.x + r.width > fallback.x + 16 && r.y < fallback.y + fallback.height - 16 && r.y + r.height > fallback.y + 16);
   if (!boxHits) return fallback;
-  const lead = Math.min(24, Math.max(8, Math.abs(b.x - a.x) / 4));
-  const start = { x: a.x + direction * lead, y: a.y };
-  const end = { x: b.x - direction * lead, y: b.y };
-  const lanes = new Set([target.y - 24, target.y + target.height + 24, source.y - 24, source.y + source.height + 24]);
-  for (const rect of between) { lanes.add(rect.y - 24); lanes.add(rect.y + rect.height + 24); }
+  // Use the centre of the actual gap beside each port. A fixed 24-unit
+  // lead enters a neighbouring image when compact rows have a 24-unit gutter.
+  const leadAt = (port: Point, sign: number) => {
+    const distances = between.filter(r => port.y > r.y - 8 && port.y < r.y + r.height + 8)
+      .map(r => sign > 0 ? r.x - port.x : port.x - r.x - r.width).filter(d => d > 0);
+    return Math.min(24, Math.abs(b.x - a.x) / 4, ...distances.map(d => d / 2));
+  };
+  const start = { x: a.x + direction * leadAt(a, direction), y: a.y };
+  const end = { x: b.x - direction * leadAt(b, -direction), y: b.y };
+  const lanes = new Set([target.y - 12, target.y + target.height + 12, source.y - 12, source.y + source.height + 12]);
+  for (const rect of between) { lanes.add(rect.y - 12); lanes.add(rect.y + rect.height + 12); }
   const clear = (points: Point[]) => points.slice(1).every((point, index) => between.every(rect => !segmentBlocked(points[index], point, rect)));
   const candidates = [...lanes].map(y => [a, start, { x: start.x, y }, { x: end.x, y }, end, b]);
   candidates.sort((p, q) => {

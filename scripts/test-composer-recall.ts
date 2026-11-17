@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {consumeDoubleArrowUp} from '../src/lib/composer-recall';
 const state:{current:number|null}={current:null};
-const key=(key:string,timeStamp:number,extra={},enabled=true)=>consumeDoubleArrowUp({key,timeStamp,repeat:false,ctrlKey:false,metaKey:false,altKey:false,shiftKey:false,...extra},state,enabled);
+const key=(key:string,timeStamp:number,extra={},enabled=true,draftText='')=>consumeDoubleArrowUp({key,timeStamp,repeat:false,ctrlKey:false,metaKey:false,altKey:false,shiftKey:false,...extra},state,enabled,draftText);
 assert.equal(key('ArrowUp',0),false);assert.equal(key('ArrowUp',200),true);
 assert.equal(key('ArrowUp',500),false);assert.equal(key('ArrowUp',1300),true,'normal-paced double press should recall');
 assert.equal(key('ArrowUp',2000),false);assert.equal(key('ArrowUp',2901),false,'unrelated presses should not recall');
@@ -17,4 +17,12 @@ assert.equal(key('ArrowUp',2200,{},false),false,'a restored draft must retain no
 assert.equal(state.current,null,'disabled recall must not accumulate presses');
 assert.equal(key('ArrowUp',2300),false,'sending rearms a fresh pair, not half an old pair');
 assert.equal(key('ArrowUp',3000),true);
-console.log('PASS: double ↑ timing, hold/repeat, IME, modifiers, interrupted keys, disabled recall and fresh pair after rearming.');
+state.current=null;
+assert.equal(key('ArrowUp',4000,{},true,'正在编辑的新文字'),false);
+assert.equal(key('ArrowUp',4200,{},true,'正在编辑的新文字'),false,'double ↑ must never replace a nonempty draft');
+assert.equal(state.current,null,'typing must reset any pending recall press');
+assert.equal(key('ArrowUp',4300),false,'clearing a draft requires a fresh pair');
+assert.equal(key('ArrowUp',4400,{},true,'第一行\n第二行'),false,'multiline text must prevent recall');
+assert.equal(key('ArrowUp',4500,{},true,' \n\u00a0'),false);
+assert.equal(key('ArrowUp',4600,{},true,' \n\u00a0'),true,'blank lines and spaces count as empty');
+console.log('PASS: double ↑ timing, hold/repeat, IME, modifiers, interrupted keys, disabled recall, nonempty/multiline drafts, whitespace and fresh pair after clearing.');

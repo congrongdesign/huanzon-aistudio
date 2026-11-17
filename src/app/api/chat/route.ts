@@ -1,3 +1,4 @@
+import { openAICompatibleUrl } from "@/lib/openai-compatible-url";
 import { NextRequest, NextResponse } from "next/server";
 import { getCurrentUserId } from "@/lib/auth";
 import {
@@ -23,12 +24,6 @@ const SYSTEM_PROMPT = `你是环中AIStudio的 AI 设计助手。
 const OPTIMIZE_PROMPT = `你是一个专业的AI图像生成提示词优化专家。你的任务是将用户提供的简短或模糊的图像描述，扩展为更加详细、精准、富有表现力的中文提示词。
 只返回优化后的中文提示词，不要加任何解释、前缀或后缀。`;
 
-function cleanBaseUrl(url?: string): string {
-  const raw = (url || "https://grsaiapi.com").trim().replace(/\/+$/, "");
-  if (raw.endsWith("/v1")) return raw.slice(0, -3);
-  return raw;
-}
-
 function cleanApiKey(key?: string): string {
   return (key || "").replace(/^Bearer\s+/i, "").trim();
 }
@@ -44,7 +39,7 @@ function isLocalEndpoint(url?: string): boolean {
 }
 
 function buildChatUrl(baseUrl?: string): string {
-  return `${cleanBaseUrl(baseUrl)}/v1/chat/completions`;
+  return openAICompatibleUrl(baseUrl || "https://grsaiapi.com", "chat/completions");
 }
 
 function encodeSseData(controller: ReadableStreamDefaultController<Uint8Array>, encoder: TextEncoder, payload: Record<string, unknown>) {

@@ -1,0 +1,4 @@
+interface:
+  display_name: "字体设计采集入库"
+  short_description: "按风格检索或从网址采集标题设计，逐款裁图并分类备注到字体库"
+  default_prompt: "使用 $curate-font-designs，按我的风格要求检索或整理所给网址中的标题字体设计，逐款裁图、去重、分类备注并存入本机字体库。"

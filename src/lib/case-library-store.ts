@@ -40,8 +40,9 @@ export async function uploadCaseImage(owner: string, file: File, folders: string
   if (!file.size || file.size > 40 * 1024 * 1024) throw new CaseLibraryError('单张图片需在 40MB 以内');
   const bytes = Buffer.from(await file.arrayBuffer()); let meta;
   try { meta = await sharp(bytes, { limitInputPixels: 80000000 }).metadata(); } catch { throw new CaseLibraryError('图片无法读取，请使用 JPG、PNG、WebP 或 AVIF'); }
-  if (!['png','jpeg','webp','avif'].includes(meta.format || '') || (meta.pages || 1) > 1) throw new CaseLibraryError('请使用静态 JPG、PNG、WebP 或 AVIF 图片');
-  const hash = createHash('sha256').update(bytes).digest('hex'); const ownerKey = createHash('sha256').update(owner).digest('hex').slice(0,24); const key = `case_${ownerKey}_${hash}.${meta.format === 'jpeg' ? 'jpg' : meta.format}`;
+  const format = meta.format === 'heif' && meta.compression === 'av1' ? 'avif' : meta.format;
+  if (!['png','jpeg','webp','avif'].includes(format || '') || (meta.pages || 1) > 1) throw new CaseLibraryError('请使用静态 JPG、PNG、WebP 或 AVIF 图片');
+  const hash = createHash('sha256').update(bytes).digest('hex'); const ownerKey = createHash('sha256').update(owner).digest('hex').slice(0,24); const key = `case_${ownerKey}_${hash}.${format === 'jpeg' ? 'jpg' : format}`;
   const filePath = mediaWritePath(key); try { await fs.access(filePath); } catch { await atomic(filePath, bytes); }
   const swap = [5,6,7,8].includes(meta.orientation || 0); const width = (swap ? meta.height : meta.width) || 1, height = (swap ? meta.width : meta.height) || 1;
   return change(owner, index => {
@@ -61,6 +62,7 @@ export async function updateCaseAssets(owner: string, ids: unknown, patch: Recor
       else if (patch.action === 'restore') item.deletedAt = undefined;
       else if (patch.action === 'used') item.lastUsedAt = new Date().toISOString();
       else {
+        if (item.importItemId) item.importManual = [...new Set([...(item.importManual || []), ...['title','note','prompt','tags','folderIds'].filter(key=>patch[key]!==undefined)])];
         if (patch.title !== undefined) { const title = clean(patch.title); if (!title) throw new CaseLibraryError('名称不能为空'); item.title = title; }
         for (const field of ['note','source','prompt'] as const) if (patch[field] !== undefined) item[field] = clean(patch[field],field === 'source' ? 2000 : 10000);
         if (patch.favorite !== undefined) item.favorite = patch.favorite === true;
@@ -74,12 +76,75 @@ export async function updateCaseAssets(owner: string, ids: unknown, patch: Recor
     return selected;
   });
 }
+export async function analyzeCaseAsset(owner: string, id: string) {
+  const original = (await read(owner)).items.find(item => item.id === id && !item.deletedAt);
+  if (!original) throw new CaseLibraryError('参考图不存在，请刷新后重试', 404);
+  const { analyzeImportedImage } = await import('./library-import-analysis');
+  const now = new Date().toISOString();
+  const analysis = await analyzeImportedImage({
+    id: randomUUID(), owner, batchId: '', kind: 'cases', originalName: original.fileName,
+    bytes: original.bytes, groupId: '', projectId: null, stage: 'analyzing', attempt: 0,
+    media: { key: original.key, url: original.url, hash: original.hash, width: original.width, height: original.height, bytes: original.bytes },
+    createdAt: now, updatedAt: now,
+  });
+  return change(owner, index => {
+    const item = index.items.find(item => item.id === id && !item.deletedAt);
+    if (!item) throw new CaseLibraryError('参考图已删除，分析结果未写入', 404);
+    // An edit made while the model was running takes precedence over analysis.
+    if (item.prompt === original.prompt) item.prompt = analysis.prompt;
+    if (item.note === original.note && !item.note) item.note = analysis.description;
+    item.analysis = analysis;
+    item.updatedAt = new Date().toISOString();
+    return item;
+  });
+}
 export async function changeCaseFolder(owner: string, action: string, id: unknown, name: unknown) {
   return change(owner, index => {
     const title = clean(name,80);
     if (action === 'create-folder') { if (!title) throw new CaseLibraryError('请输入分类名称'); if (index.folders.some(f=>f.name===title)) throw new CaseLibraryError('这个分类已存在'); index.folders.push({id:randomUUID(),name:title}); }
     else { const folder = index.folders.find(f => f.id === id); if (!folder) throw new CaseLibraryError('分类不存在',404); if (action === 'delete-folder') { index.folders = index.folders.filter(f=>f.id!==id); for (const item of index.items) item.folderIds = item.folderIds.filter(f=>f!==id); } else if (action === 'rename-folder') { if (!title) throw new CaseLibraryError('请输入分类名称'); if (index.folders.some(f=>f.id!==id&&f.name===title)) throw new CaseLibraryError('这个分类已存在'); folder.name=title; } else throw new CaseLibraryError('未知分类操作'); }
     return index.folders;
+  });
+}
+
+export async function commitImportedCase(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return change(owner, index => {
+    if (item.targetId) {
+      const card = index.items.find(c => c.id === item.targetId && !c.deletedAt); if (!card) throw new CaseLibraryError('目标案例不存在', 404);
+      card.attachments ||= [];
+      if (!card.attachments.some(a => a.importItemId === item.id)) card.attachments.push({ key: item.media!.key, url: item.media!.url, name: item.originalName, importItemId: item.id });
+      return { id: card.id, created: false, snapshot: {} };
+    }
+    const committed = index.items.find(c => c.importItemId === item.id);
+    if (committed) return { id: committed.id, created: true, snapshot: structuredClone(committed) as unknown as Record<string, unknown> };
+    const duplicate = index.items.find(c => c.hash === item.media!.hash);
+    if (duplicate) { if (duplicate.deletedAt) throw new CaseLibraryError('相同图片在回收站，请先恢复'); return { id: duplicate.id, created: false, snapshot: {} }; }
+    const now = new Date().toISOString();
+    const card: ReferenceAsset = { id: randomUUID(), ...item.media!, importItemId: item.id, title: item.originalName.replace(/\.[^.]+$/, ''), fileName: item.originalName, folderIds: index.folders.some(f => f.id === item.groupId) ? [item.groupId] : [], tags: [], note: '', source: '本地图片导入', prompt: '', favorite: false, createdAt: now, updatedAt: now };
+    index.items.unshift(card); return { id: card.id, created: true, snapshot: structuredClone(card) as unknown as Record<string, unknown> };
+  });
+}
+export async function applyImportedCase(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return change(owner, index => {
+    const card = index.items.find(c => c.id === item.cardId && !c.deletedAt); if (!card) throw new CaseLibraryError('卡片已删除', 404);
+    if (card.importAppliedId === item.id) return card.updatedAt;
+    const before = item.snapshot || {}, result = item.analysis!;
+    const writable = (key: keyof ReferenceAsset) => !card.importManual?.includes(key) && JSON.stringify(card[key]) === JSON.stringify(before[key]);
+    if (writable('title')) card.title = result.title;
+    if (writable('note')) card.note = result.description;
+    if (writable('prompt')) card.prompt = result.prompt;
+    if (writable('tags')) card.tags = result.tags;
+    if (writable('folderIds') && !card.folderIds.length) { const folder = index.folders.find(f => f.name === result.category); if (folder) card.folderIds = [folder.id]; }
+    card.importAppliedId = item.id;
+    card.analysis = result; card.updatedAt = new Date().toISOString(); return card.updatedAt;
+  });
+}
+export async function undoImportedCase(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return change(owner, index => {
+    const card = index.items.find(c => c.id === item.cardId); if (!card || card.deletedAt) return true;
+    if (item.targetId) { card.attachments = card.attachments?.filter(a => a.importItemId !== item.id); return true; }
+    if (!item.created || card.importManual?.length || card.lastUsedAt || card.updatedAt !== item.committedRevision) return false;
+    card.deletedAt = new Date().toISOString(); return true;
   });
 }
 async function legacyBytes(owner: string, url: string): Promise<Buffer> {
@@ -107,3 +172,16 @@ export async function migrateCase(owner: string, migrationId: string, legacy: Ge
   await change(owner,index=>{index.migrations.push(migrationId);}); return {imported,skipped:false};
 }
 export async function exportCaseIndex(owner: string) { return read(owner); }
+export async function sharedCaseSnapshot(owner: string) {
+  const index = await read(owner);
+  return structuredClone({ groups: index.folders, cards: index.items.filter(item => !item.deletedAt) });
+}
+export async function commitSharedCases(owner: string, folders: CaseFolder[], cards: ReferenceAsset[]) {
+  await change(owner, index => {
+    if (cards.some(card => index.items.some(item => item.id === card.id))) throw new CaseLibraryError('导入记录冲突，请重试', 409);
+    const available = new Set([...index.folders, ...folders].map(folder => folder.id));
+    if (cards.some(card => card.folderIds.some(id => !available.has(id)))) throw new CaseLibraryError('目标分类已不存在，请重新选择', 409);
+    index.folders.push(...folders);
+    index.items.unshift(...cards);
+  });
+}

@@ -4,6 +4,8 @@
 适用仓库：`/Users/congrong/Documents/AI平台`
 适用场景：内部桌面安装包、自动更新包、本机安装版和团队分发
 
+2026-11-16 待办：用户要求其他功能完成后再统一打包。Windows 主 EXE 默认 Electron 图标问题已定位、源码已修正，尚未生成新包或完成 Windows 真机验收。下次必须同时执行 [DESKTOP_PACKAGE_GUIDE.md](DESKTOP_PACKAGE_GUIDE.md) 中「下次统一打包必办：Windows 任务栏图标修复」的 EXE资源、窗口身份、成品及任务栏/预览真机检查。
+
 ---
 
 ## 1. 文档目的

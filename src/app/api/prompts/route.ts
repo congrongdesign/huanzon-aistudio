@@ -86,7 +86,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { text, category, projectId, imageUrl } = body;
 
-    if (typeof text !== "string" || !text.trim() || !projectId) {
+    if (typeof text !== "string" || !text.trim() || (!isLocalBackendEnabled() && !projectId)) {
       return NextResponse.json({ error: "缺少必要参数" }, { status: 400 });
     }
     if (text.length > 30000) return NextResponse.json({ error: "提示词最多 30000 个字符" }, { status: 400 });
@@ -95,12 +95,12 @@ export async function POST(req: NextRequest) {
     const targetCategory = body.groupId !== undefined ? group.category : category || "general";
 
     if (isLocalBackendEnabled()) {
-      const project = getProjectById(projectId, userId);
-      if (!project) {
+      const project = projectId ? getProjectById(projectId, userId) : null;
+      if (projectId && !project) {
         return NextResponse.json({ error: "项目不存在或无权限" }, { status: 403 });
       }
       const prompt = createPrompt(userId, {
-        project_id: projectId,
+        project_id: projectId || null,
         text: text.trim(),
         category: targetCategory,
         library_id: group.library_id,

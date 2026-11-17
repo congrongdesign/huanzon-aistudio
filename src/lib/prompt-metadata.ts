@@ -10,6 +10,8 @@ export type PromptMetadata = {
   collectionUrl?: string;
   note?: string;
   referenceRequired?: boolean;
+  historyImageId?: string;
+  projectName?: string;
   collectedAt?: string;
   batch?: string;
 };

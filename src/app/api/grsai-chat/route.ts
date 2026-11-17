@@ -1,3 +1,4 @@
+import { openAICompatibleUrl } from "@/lib/openai-compatible-url";
 import { NextRequest, NextResponse } from "next/server";
 import { createLlmRequestPreview } from "@/lib/llm-preview";
 import { buildNumberedReferencePromptText } from "@/lib/reference-text";
@@ -60,13 +61,7 @@ export async function POST(request: NextRequest) {
     console.log("[grsai-chat] Request:", { model, baseUrl: cleanBaseUrl, stream, messageCount: messages?.length });
 
     // Build API URL - handle cases where baseUrl already includes /v1 or ends with /
-    const cleanBase = cleanBaseUrl.replace(/\/+$/, "");
-    let apiUrl: string;
-    if (cleanBase.endsWith("/v1") || cleanBase.endsWith("/v1/")) {
-      apiUrl = `${cleanBase}/chat/completions`;
-    } else {
-      apiUrl = `${cleanBase}/v1/chat/completions`;
-    }
+    const apiUrl = openAICompatibleUrl(cleanBaseUrl, "chat/completions");
     const useStream = stream !== false;
     const requestPreview = createLlmRequestPreview({
       source: "grsai-chat",

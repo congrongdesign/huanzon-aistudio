@@ -1,0 +1,4 @@
+interface:
+  display_name: "设计提示词采集入库"
+  short_description: "按需求或链接搜集优质设计提示词，核对原图、中文分类并整理入库"
+  default_prompt: "使用 $curate-design-prompts，根据我的需求或链接搜集优质设计提示词，核对配图并整理到环中AIStudio提示词库。"

@@ -48,16 +48,64 @@ const clean = (value: unknown, max = 160) => typeof value === 'string' ? value.t
 const summary = (c: FontCard): FontSummary => ({ id: c.id, version: c.version, title: c.title, sampleText: c.sampleText, groupId: c.groupId, favorite: c.favorite, style: c.style, tags: c.tags, description: c.description, analysisStatus: c.analysis?.status, analysisError: c.analysis?.error, cover: c.cover, createdAt: c.createdAt, updatedAt: c.updatedAt, lastUsedAt: c.lastUsedAt, referenceCount: c.references.length, warningCount: c.warnings.length });
 export async function listFonts(owner: string, query: URLSearchParams) {
   const index = await read(owner); const all = index.cards.filter(c => !c.deletedAt);
-  let cards = all; const q = (query.get('q') || '').toLocaleLowerCase(); const group = query.get('group'); const filter = query.get('filter');
+  let cards = query.get('filter') === 'trash' ? index.cards.filter(c => c.deletedAt) : all; const q = (query.get('q') || '').toLocaleLowerCase(); const group = query.get('group'); const filter = query.get('filter');
   if (q) cards = cards.filter(c => [c.title, c.sampleText, c.prompt, c.style, c.description, ...(c.tags || [])].join(' ').toLocaleLowerCase().includes(q));
   if (group) cards = cards.filter(c => (c.groupId || 'ungrouped') === group);
   if (filter === 'favorites') cards = cards.filter(c => c.favorite);
   if (filter === 'recent') cards = cards.filter(c => c.lastUsedAt);
   cards.sort((a, b) => (filter === 'recent' ? b.lastUsedAt || '' : b.createdAt).localeCompare(filter === 'recent' ? a.lastUsedAt || '' : a.createdAt));
   const page = Math.max(1, Number(query.get('page')) || 1); const pageSize = 24;
-  return { cards: cards.slice((page - 1) * pageSize, page * pageSize).map(summary), total: cards.length, page, pageSize, groups: index.groups, counts: { all: all.length, favorites: all.filter(c => c.favorite).length }, groupCounts: Object.fromEntries(index.groups.map(g => [g.id, all.filter(c => c.groupId === g.id).length])) };
+  return { cards: cards.slice((page - 1) * pageSize, page * pageSize).map(summary), total: cards.length, page, pageSize, groups: index.groups, counts: { all: all.length, favorites: all.filter(c => c.favorite).length, trash: index.cards.filter(c => c.deletedAt).length }, groupCounts: Object.fromEntries(index.groups.map(g => [g.id, all.filter(c => c.groupId === g.id).length])) };
 }
 export async function getFont(owner: string, id: string) { const card = (await read(owner)).cards.find(c => c.id === id && !c.deletedAt); if (!card) throw new FontStoreError('字体卡片不存在', 404); return card; }
+
+// Import commits use the same index lock as all manual changes.
+export async function commitImportedFont(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return change(owner, index => {
+    const media = item.media!;
+    if (item.targetId) {
+      const card = index.cards.find(c => c.id === item.targetId && !c.deletedAt); if (!card) throw new FontStoreError('目标字体卡片不存在', 404);
+      if (!card.references.some(r => r.importItemId === item.id)) { if (card.references.length >= 16) throw new FontStoreError('参考图最多16张'); card.references.push({ ...media, label: item.originalName, role: 'reference', importItemId: item.id }); card.version++; }
+      return { id: card.id, created: false, snapshot: { version: card.version } };
+    }
+    const committed = index.cards.find(c => c.importItemId === item.id);
+    if (committed) return { id: committed.id, created: true, snapshot: structuredClone(committed) as unknown as Record<string, unknown> };
+    const duplicate = index.cards.find(c => c.cover.key === media.key);
+    if (duplicate) { if (duplicate.deletedAt) throw new FontStoreError('相同图片在回收站，请先恢复后再使用'); return { id: duplicate.id, created: false, snapshot: {} }; }
+    const card = newCard(owner, item.originalName.replace(/\.[^.]+$/, ''), { ...media, label: '字体成品', role: 'sample' });
+    card.importItemId = item.id;
+    if (index.groups.some(g => g.id === item.groupId)) card.groupId = item.groupId;
+    index.cards.unshift(card);
+    return { id: card.id, created: true, snapshot: structuredClone(card) as unknown as Record<string, unknown> };
+  });
+}
+export async function applyImportedFont(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return change(owner, index => {
+    const card = index.cards.find(c => c.id === item.cardId && !c.deletedAt); if (!card) throw new FontStoreError('卡片已删除', 404);
+    if (card.importAppliedId === item.id) return String(card.version);
+    const result = item.analysis!, before = item.snapshot || {}, manual = card.importManual || [];
+    const previous = { title: card.title, sampleText: card.sampleText, groupId: card.groupId, prompt: card.prompt, style: card.style, tags: card.tags, description: card.description };
+    const writable = (key: string) => !manual.includes(key) && JSON.stringify(card[key as keyof FontCard]) === JSON.stringify(before[key]);
+    if (writable('title')) card.title = result.title;
+    if (writable('sampleText') && result.confidence >= .85) card.sampleText = result.sampleText;
+    if (writable('style')) card.style = result.category;
+    if (writable('description')) card.description = result.description;
+    if (writable('tags')) card.tags = result.tags;
+    if (writable('prompt') && !card.prompt) card.prompt = result.prompt;
+    if (writable('groupId') && !card.groupId) card.groupId = index.groups.find(g => g.name === result.category)?.id || null;
+    card.importAppliedId = item.id;
+    card.analysis = { status: 'completed', model: result.model, confidence: result.confidence, analyzedAt: new Date().toISOString(), previous };
+    card.version++; card.updatedAt = new Date().toISOString(); return String(card.version);
+  });
+}
+export async function undoImportedFont(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return change(owner, index => {
+    const card = index.cards.find(c => c.id === item.cardId); if (!card || card.deletedAt) return true;
+    if (item.targetId) { card.references = card.references.filter(r => r.importItemId !== item.id); card.version++; return true; }
+    if (!item.created || card.importItemId !== item.id || card.importManual?.length || card.lastUsedAt || String(card.version) !== item.committedRevision) return false;
+    card.deletedAt = new Date().toISOString(); card.purgeAfter = new Date(Date.now() + 30 * 86400_000).toISOString(); card.version++; return true;
+  });
+}
 // Two decoders shared by all uploads and historical imports in the server process.
 const pool = globalThis as typeof globalThis & { __fontPool?: { active: number; waiters: (() => void)[] } };
 async function imageTask<T>(fn: () => Promise<T>) {
@@ -148,7 +196,8 @@ export async function updateFont(owner: string, id: string, input: Record<string
   return change(owner, index => {
     const card = index.cards.find(c => c.id === id); if (!card) throw new FontStoreError('卡片不存在', 404);
     if (input.version !== undefined && input.version !== card.version) throw new FontStoreError('卡片已更新，请重新打开后编辑', 409);
-    if (input.action === 'undo-organize' && card.analysis?.previous) { Object.assign(card, card.analysis.previous); delete card.analysis; }
+    if (input.action === 'undo-organize' && card.analysis?.previous) { const manual = card.importManual || []; for (const [key, value] of Object.entries(card.analysis.previous)) if (!manual.includes(key)) Object.assign(card, { [key]: value }); delete card.analysis; }
+    if (card.importItemId) card.importManual = [...new Set([...(card.importManual || []), ...['title','sampleText','prompt','groupId','tags','description'].filter(key => input[key] !== undefined)])];
     if (input.style !== undefined) card.style = clean(input.style, 80);
     if (input.description !== undefined) card.description = clean(input.description, 2000);
     if (Array.isArray(input.tags)) card.tags = [...new Set(input.tags.map(t => clean(t, 30)).filter(Boolean))].slice(0, 10);
@@ -161,6 +210,22 @@ export async function updateFont(owner: string, id: string, input: Record<string
     if (input.action === 'restore') { card.deletedAt = null; card.purgeAfter = null; }
     if (input.action === 'used') card.lastUsedAt = new Date().toISOString();
     card.version++; card.updatedAt = new Date().toISOString(); return card;
+  });
+}
+// Validate the whole selection before the single atomic index write.
+export async function changeFontDeletion(owner: string, ids: unknown, action: unknown) {
+  if (!Array.isArray(ids) || !ids.length || ids.length > 1000 || ids.some(id => typeof id !== 'string' || !id)) throw new FontStoreError('请选择1至1000张卡片');
+  if (action !== 'delete' && action !== 'restore') throw new FontStoreError('无效操作');
+  const unique = [...new Set(ids)] as string[];
+  return change(owner, index => {
+    const cards = unique.map(id => { const card = index.cards.find(c => c.id === id); if (!card) throw new FontStoreError('部分卡片不存在，请刷新后重试', 404); return card; });
+    const now = new Date().toISOString(), purgeAfter = new Date(Date.now() + 30 * 86400_000).toISOString();
+    for (const card of cards) {
+      if ((action === 'delete') === Boolean(card.deletedAt)) continue;
+      card.deletedAt = action === 'delete' ? now : null; card.purgeAfter = action === 'delete' ? purgeAfter : null;
+      card.version++; card.updatedAt = now;
+    }
+    return { ids: unique };
   });
 }
 export async function attachFontReference(owner: string, id: string, file: File, position?: number) {
@@ -189,7 +254,7 @@ export async function saveGenerationRecipe(owner: string, imageId: string, recip
   if (!/^[\w-]+$/.test(imageId)) throw new FontStoreError('无效作品ID');
   await atomic(path.join(ownerDir(owner), 'recipes', imageId + '.json'), JSON.stringify(recipe));
 }
-async function loadGenerationRecipe(owner: string, imageId: string): Promise<GenerationRecipe | null> {
+export async function loadGenerationRecipe(owner: string, imageId: string): Promise<GenerationRecipe | null> {
   if (!/^[\w-]+$/.test(imageId)) return null;
   try { return JSON.parse(await fs.readFile(path.join(ownerDir(owner), 'recipes', imageId + '.json'), 'utf8')); } catch (e) { if ((e as NodeJS.ErrnoException).code === 'ENOENT') return null; throw new FontStoreError('原始配方损坏，请检查备份', 500); }
 }
@@ -215,5 +280,18 @@ export async function applyFontOrganization(owner: string, before: FontCard, inf
     if (!card.prompt.trim()) card.prompt = `参考成品图的字体设计风格：${info.description}。保持字形与笔画特征，根据本次要求替换文字。`;
     card.analysis = { status: 'completed', model, analyzedAt: new Date().toISOString(), confidence: info.confidence, previous };
     card.version++; card.updatedAt = new Date().toISOString(); return card;
+  });
+}
+
+// Shared-library imports commit their groups and cards together under the same lock as edits.
+export async function sharedFontSnapshot(owner: string) {
+  const index = await read(owner);
+  return structuredClone({ groups: index.groups, cards: index.cards.filter(c => !c.deletedAt) });
+}
+export async function commitSharedFonts(owner: string, groups: FontGroup[], cards: FontCard[]) {
+  await change(owner, index => {
+    if (cards.some(card => card.ownerId !== owner || index.cards.some(c => c.id === card.id))) throw new FontStoreError('导入记录冲突，请重试', 409);
+    index.groups.push(...groups);
+    index.cards.unshift(...cards);
   });
 }

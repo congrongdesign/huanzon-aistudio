@@ -96,6 +96,7 @@ rm -rf "$APP_DIR/Contents/Resources/standalone"
 cp -R .next/standalone "$APP_DIR/Contents/Resources/standalone"
 cp electron/icon.icns "$APP_DIR/Contents/Resources/icon.icns"
 cp electron/icon.png "$APP_DIR/Contents/Resources/icon.png"
+python3 scripts/register-library-document-type.py "$APP_DIR"
 
 echo "[5/6] 创建 DMG..."
 rm -rf "$DMG_STAGE" "$DMG_PATH"

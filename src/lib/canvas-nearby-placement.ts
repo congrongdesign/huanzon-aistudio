@@ -1,7 +1,7 @@
 import type { CanvasRect } from './canvas-lineage';
 /** Choose the closest free slot around a source, rather than ten columns to the right. */
 export function nearbyCanvasPosition(source: CanvasRect, width: number, height: number, obstacles: readonly CanvasRect[]) {
-  const gap = 40;
+  const gap = 24;
   const blocked = (x: number, y: number) => obstacles.some(r => x < r.x + r.width + 24 && x + width + 24 > r.x && y < r.y + r.height + 24 && y + height + 24 > r.y);
   const candidates: { x: number; y: number; score: number }[] = [];
   for (let ring = 0; ring < 30; ring++) {

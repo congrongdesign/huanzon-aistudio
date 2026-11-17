@@ -10,6 +10,7 @@ import { compileFontCreation, withFontStyleInput } from '../src/lib/font-creatio
 import { cleanFontStylePrompt, fontStylePromptFromCard, buildFontComposer } from '../src/lib/font-library-types';
 import { runFontGeneration } from '../src/lib/run-font-generation';
 import { listImageRecords, createProject } from '../src/lib/local-backend';
+import { extractFontTargetText } from '../src/lib/font-style-text';
 async function main() {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'font-creation-test-')); process.env.LOCAL_DATA_DIR = dir;
   const owner = 'qa-owner'; const png = await sharp({ create: { width: 500, height: 300, channels: 3, background: '#eee9df' } }).png().toBuffer();
@@ -27,6 +28,23 @@ async function main() {
     assert.equal(cleanFontStylePrompt(usable), usable);
     assert.equal(cleanFontStylePrompt(cleanFontStylePrompt(disclaimer + usable)), usable);
     assert.equal(fontStylePromptFromCard({prompt:disclaimer,originalPrompt:usable}),usable);
+    const template = '标题标志文字组设计\n主标题：啡净未来\n副标题：高浓度咖啡废水绿色治理革新者\n\n风格：锐角动感粗黑字，黑底白字。';
+    const draftFor = (userText: string, stylePrompt = '', stylePromptInInput = false) => ({userText,stylePrompt,stylePromptInInput,userReferences:[],settings:{model:'gpt-image-2',size:'16:9',count:1,quality:'auto',imageSize:'4K',background:'auto',outputFormat:'png',moderation:'auto'},excludedReferenceIds:[]});
+    const legacyInput = template + '\n\n为我设计标题字体设计\n驭热护种\n要求体现半导体热电-热泵耦合智控干燥系统护航西北玉米种业振兴\n黑底白字';
+    const migrated = withFontStyleInput(draftFor(legacyInput,template,true),template);
+    assert.match(migrated.userText,/主标题：驭热护种/); assert.ok(!migrated.userText.includes('啡净未来')); assert.ok(!migrated.userText.includes('高浓度咖啡')); assert.ok(!migrated.userText.includes('半导体'));
+    const both = withFontStyleInput(draftFor('主标题：“星河计划”\n副标题：让每个创意发光\n旧要求：粉色背景'),template);
+    assert.match(both.userText,/主标题：星河计划/); assert.match(both.userText,/副标题：让每个创意发光/); assert.ok(!both.userText.includes('粉色背景'));
+    const againStyle = withFontStyleInput(both,'目标文字：【在此填写新标题】。\n风格：水纹曲线细衬线字。');
+    assert.match(againStyle.userText,/星河计划/); assert.match(againStyle.userText,/让每个创意发光/); assert.ok(!againStyle.userText.includes('锐角动感')); assert.ok(!againStyle.userText.includes('在此填写'));
+    assert.equal(withFontStyleInput(againStyle,'主标题：旧主标题\n副标题：旧副标题\n风格：金属字').userText,'主标题：星河计划\n副标题：让每个创意发光\n风格：金属字');
+    assert.equal(withFontStyleInput(both,template).userText,both.userText);
+    assert.match(withFontStyleInput(draftFor('文字改成“秋水长天”，黑字白底'),usable).userText,/目标文字：【秋水长天】/);
+    assert.match(withFontStyleInput(draftFor('驭热护种'),template).userText,/主标题：驭热护种/);
+    assert.equal(withFontStyleInput(draftFor(''),template).userText,template);
+    assert.deepEqual(extractFontTargetText('主标题：星河\n副标题：不要'),{title:'星河',subtitle:undefined});
+    assert.equal(extractFontTargetText('黑底白字\n笔画更细'),null);
+    const emptyRecipe = withFontStyleInput(both,''); assert.equal(emptyRecipe.userText,'主标题：星河计划\n副标题：让每个创意发光');
     const project = createProject(owner,'普通画布');
     const a = await uploadFont(owner, new File([new Uint8Array(png)], '风格A.png'));
     const b = await uploadFont(owner, new File([new Uint8Array(await sharp(png).tint('#346136').png().toBuffer())], '风格B.png'));
@@ -43,18 +61,18 @@ async function main() {
     const aAgain = await createFontRun(owner,s.id,s.revision,'request-a',{model:'gpt-image-1'}); assert.equal(aAgain.id,aRun.id);
     const task = runFontGeneration(owner,{prompt:aRun.prompt,apiKey:'',baseUrl,destination:{kind:'font',sessionId:s.id},fontRunId:aRun.id}); await started;
     s = await selectFontStyle(owner,s.id,s.revision,{cardId:b.id},'gpt-image-1');
-    assert.equal(s.draft.userText,'B专用风格提示词\n\n秋水长天，黑字白底'); assert.equal(s.draft.userReferences.length,1); assert.equal(s.draft.stylePrompt,'B专用风格提示词');
+    assert.equal(s.draft.userText,'主标题：秋水长天\nB专用风格提示词'); assert.equal(s.draft.userReferences.length,1); assert.equal(s.draft.stylePrompt,'B专用风格提示词');
     assert.equal(compileFontCreation(s.activeStyle,s.draft).prompt.split('B专用风格提示词').length-1,1);
     assert.ok(!compileFontCreation(s.activeStyle,{...s.draft,userText:'我编辑后的字形要求'}).prompt.includes('B专用风格提示词'));
-    assert.equal(withFontStyleInput(s.draft,'C风格').userText,'C风格\n\n秋水长天，黑字白底');
+    assert.equal(withFontStyleInput(s.draft,'C风格').userText,'主标题：秋水长天\nC风格');
     const compiled = compileFontCreation(s.activeStyle,s.draft); assert.match(compiled.prompt,/B专用/); assert.ok(!compiled.prompt.includes('A临时')); assert.equal(compiled.files.length,2);
     const revision = s.revision; const same = await selectFontStyle(owner,s.id,s.revision,{cardId:b.id},'gpt-image-1'); assert.equal(same.revision,revision);
     await assert.rejects(()=>saveFontDraft(owner,s.id,1,s.draft,s.activeStyle!.revision),/其他窗口/);
     s = await saveFontDraft(owner,s.id,s.revision,{...s.draft,userText:''},s.activeStyle!.revision);
     s = await selectFontStyle(owner,s.id,s.revision,{cardId:b.id},'gpt-image-1'); assert.equal(s.draft.userText,'B专用风格提示词');
-    s = await saveFontDraft(owner,s.id,s.revision,{...s.draft,userText:'后来新增的个人要求'},s.activeStyle!.revision);
-    s = await selectFontStyle(owner,s.id,s.revision,{action:'undo'},'gpt-image-1'); assert.equal(s.activeStyle!.revision,aRevision); assert.equal(s.draft.stylePrompt,'A临时修改'); assert.equal(s.draft.userText,'A临时修改\n\n后来新增的个人要求');
-    s = await selectFontStyle(owner,s.id,s.revision,{action:'remove'},'gpt-image-1'); assert.equal(s.activeStyle,null); assert.equal(s.draft.userReferences.length,1); assert.equal(s.draft.userText,'后来新增的个人要求');
+    s = await saveFontDraft(owner,s.id,s.revision,{...s.draft,userText:'主标题：后来新增的标题'},s.activeStyle!.revision);
+    s = await selectFontStyle(owner,s.id,s.revision,{action:'undo'},'gpt-image-1'); assert.equal(s.activeStyle!.revision,aRevision); assert.equal(s.draft.stylePrompt,'A临时修改'); assert.equal(s.draft.userText,'主标题：后来新增的标题\nA临时修改');
+    s = await selectFontStyle(owner,s.id,s.revision,{action:'remove'},'gpt-image-1'); assert.equal(s.activeStyle,null); assert.equal(s.draft.userReferences.length,1); assert.equal(s.draft.userText,'主标题：后来新增的标题');
     release?.(); const result = await task; assert.equal(result.status,200);
     const restored = await getFontSession(owner,s.id); assert.equal(restored.runs[0].style!.cardId,a.id); assert.equal(restored.runs[0].status,'completed'); assert.equal(listImageRecords(owner,{pageSize:100}).total,0);
     const collected = await collectFontCreation(owner,s.id,aRun.id); assert.equal(collected.card.source.fontCardId,a.id); assert.equal(collected.card.originalPrompt,aRun.prompt);
@@ -99,7 +117,7 @@ async function main() {
     await setFontRunsDeleted(owner,s.id,[aRun.id,pending.id],false);
     assert.ok((await getFontSession(owner,s.id)).runs.every(run => !run.deletedAt));
     console.log('Batch delete/restore: atomic validation, owner isolation, deduplication, draft/export preservation passed');
-    console.log(JSON.stringify({passed:true,checks:['session-isolation','style-replace','personal-text-preserved','shared-file-role','same-style-idempotence','undo-keeps-new-input','remove-only-style','draft-revision-conflict','task-snapshot-during-style-switch','no-normal-history','result-collection','explicit-project-export','persisted-session','delete-owner-isolation','delete-keeps-draft-and-export','delete-survives-worker-and-draft-save','undo-delete','active-run-delete-rejected','cancelled-run-delete'],mockRequests:requests.length}));
+    console.log(JSON.stringify({passed:true,checks:['session-isolation','style-replace','title-and-subtitle-transfer','title-only-without-sample-subtitle','legacy-input-cleanup','consecutive-style-switch','same-style-keeps-title','shared-file-role','same-style-idempotence','undo-keeps-new-title','remove-only-style','draft-revision-conflict','task-snapshot-during-style-switch','no-normal-history','result-collection','explicit-project-export','persisted-session','delete-owner-isolation','delete-keeps-draft-and-export','delete-survives-worker-and-draft-save','undo-delete','active-run-delete-rejected','cancelled-run-delete'],mockRequests:requests.length}));
   } finally { release?.(); server.close(); await fs.rm(dir,{recursive:true,force:true}); }
 }
 void main();

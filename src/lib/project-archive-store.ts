@@ -6,6 +6,7 @@ import { createHash, randomUUID } from "node:crypto";
 import JSZip from "jszip";
 import sharp from "sharp";
 import { readBackupManifest } from "./project-backup-format";
+import { assertRepository } from './backup-connection';
 import type {
   ProjectArchiveEntry,
   ProjectArchiveJob,
@@ -13,10 +14,11 @@ import type {
   ProjectArchiveManifest,
 } from "@/lib/project-archive-types";
 
-type ArchiveConfig = {
+export type ArchiveConfig = {
   syncDir: string;
   updatedAt: string | null;
   repositoryId?: string;
+  remote?: import("./project-archive-types").BackupRemoteLocation;
 };
 
 const CONFIG_FILE = "project-archive-config.json";
@@ -59,6 +61,7 @@ export function readArchiveConfig(): ArchiveConfig {
     return {
       syncDir: typeof parsed.syncDir === "string" ? parsed.syncDir : "",
       repositoryId: parsed.repositoryId,
+      remote: parsed.remote,
       updatedAt: typeof parsed.updatedAt === "string" ? parsed.updatedAt : null,
     };
   } catch {
@@ -66,7 +69,7 @@ export function readArchiveConfig(): ArchiveConfig {
   }
 }
 
-export function writeArchiveConfig(syncDir: string): ArchiveConfig {
+export function writeArchiveConfig(syncDir: string, remote?: ArchiveConfig["remote"]): ArchiveConfig {
   const root = safeArchiveRoot(syncDir);
   assertArchiveRoot(root);
   fs.accessSync(root, fs.constants.W_OK);
@@ -77,6 +80,7 @@ export function writeArchiveConfig(syncDir: string): ArchiveConfig {
   const config: ArchiveConfig = {
     syncDir: root,
     repositoryId,
+    remote,
     updatedAt: new Date().toISOString(),
   };
   writeJsonAtomic(getConfigPath(), config);
@@ -97,12 +101,8 @@ export function getArchiveRoot(syncDir?: string): string {
 }
 
 export function assertArchiveRoot(root: string): void {
-  if (!fs.existsSync(root) || !fs.statSync(root).isDirectory()) throw new Error("备份目录不可用，请检查 NAS 是否连接");
   const config = readArchiveConfig();
-  if (config.repositoryId && path.resolve(config.syncDir) === path.resolve(root)) {
-    const marker = path.join(root, ".huanzon-aistudio-repository.json");
-    if (!fs.existsSync(marker) || JSON.parse(fs.readFileSync(marker, "utf8")).id !== config.repositoryId) throw new Error("备份磁盘身份不匹配，请重新连接原 NAS");
-  }
+  assertRepository(root, path.resolve(config.syncDir || '.') === path.resolve(root) ? config.repositoryId : undefined);
 }
 
 function resolveRootPath(root: string, relativePath: string): string {
@@ -306,6 +306,7 @@ export function updateArchiveEntryMeta(
 
 export function deleteArchivePackage(rootInput: string, entry: ProjectArchiveEntry): void {
   const root = getArchiveRoot(rootInput);
+  assertArchiveRoot(root);
   const packagePath = resolveRootPath(root, entry.relativePath);
   const metaPath = resolveRootPath(root, entry.metaRelativePath);
   if (fs.existsSync(packagePath)) fs.unlinkSync(packagePath);
@@ -322,6 +323,7 @@ export type ProjectArchiveJobPayload = {
   removeOnly?: boolean;
   backupEntryByProject?: Record<string, string>;
   baseUrl?: string;
+  operationIds?: Record<string, string>;
 };
 
 export type StoredArchiveJob = ProjectArchiveJob & {
@@ -357,10 +359,11 @@ function readStoredJobs(): StoredArchiveJob[] {
 function writeStoredJobs(jobs: StoredArchiveJob[]): void {
   const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
   const recent = jobs
-    .filter((job) => new Date(job.updatedAt || job.createdAt).getTime() >= cutoff)
+    .filter((job) => ["queued", "running", "waiting", "paused"].includes(job.status) || new Date(job.updatedAt || job.createdAt).getTime() >= cutoff)
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
     .slice(0, 100);
-  writeJsonAtomic(getJobsPath(), { version: 1, jobs: recent });
+  const unfinished = jobs.filter(job => ["queued", "running", "waiting", "paused"].includes(job.status));
+  writeJsonAtomic(getJobsPath(), { version: 1, jobs: [...unfinished, ...recent.filter(job => !unfinished.some(active => active.id === job.id))] });
 }
 
 export function listStoredArchiveJobs(): StoredArchiveJob[] {
@@ -389,7 +392,7 @@ export function createArchiveJob(
     error: null,
     createdAt: now,
     updatedAt: now,
-    payload,
+    payload: { ...payload, operationIds: payload.operationIds || Object.fromEntries((payload.projectIds || []).map(id => [id, `archive_${randomUUID()}`])) },
   };
   const jobs = readStoredJobs();
   jobs.unshift(job);

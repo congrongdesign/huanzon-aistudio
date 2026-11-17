@@ -36,7 +36,7 @@ def copy_package(source):
                         shutil.copytree(candidate, link, symlinks=True)
                 break
 
-for name in ['coze-coding-dev-sdk', 'jszip', '@supabase/supabase-js', 'dotenv']:
+for name in ['coze-coding-dev-sdk', 'jszip', '@supabase/supabase-js', 'dotenv', '@libsql/client', '@libsql/win32-x64-msvc']:
     source = modules / name
     copy_package(source)
     link = standalone / 'node_modules' / name

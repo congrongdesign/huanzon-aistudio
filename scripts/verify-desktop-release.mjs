@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 import { fileURLToPath } from 'url';
+import { inspectWindowsBranding } from './windows-executable-branding.mjs';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const releaseDir = path.join(rootDir, 'release');
@@ -97,6 +98,7 @@ function verifyMacArtifacts() {
 }
 
 function verifyWinArtifacts() {
+  const version = JSON.parse(read('package.json')).version;
   // Names follow electron-builder.yml win.artifactName:
   //   环中AIStudio-<version>-win-x64-setup.exe / -portable.exe
   const exes = listRelease(/^AIStudio-\d+\.\d+\.\d+-win-x64-setup\.exe$/);
@@ -108,6 +110,13 @@ function verifyWinArtifacts() {
 
   const unpacked = path.join(releaseDir, 'win-unpacked');
   if (fs.existsSync(unpacked)) {
+    const branding = inspectWindowsBranding(path.join(unpacked, '环中AIStudio.exe'), path.join(rootDir, 'electron/icon.ico'));
+    assert(branding.iconsMatch, 'Windows EXE still contains a wrong icon.');
+    assert(branding.versions.length > 0 && branding.versions.every(info => info.ProductName === '环中AIStudio' && info.CompanyName === 'HuanZon' && info.ProductVersion === version), 'Windows EXE product identity is incorrect.');
+    for (const relative of ['workers/library-import-worker.cjs', 'workers/project-backup-worker.cjs', 'node_modules/@libsql/win32-x64-msvc/index.node', 'node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64.node']) {
+      assert(fs.existsSync(path.join(unpacked, 'resources', 'standalone', relative)), `Windows native/worker runtime missing: ${relative}`);
+    }
+    assert(fs.existsSync(path.join(unpacked, 'resources', 'icon.ico')), 'win runtime icon.ico is missing.');
     assert(fs.existsSync(path.join(unpacked, 'resources', 'icon.png')), 'win resources icon.png is missing.');
     assert(fs.existsSync(path.join(unpacked, 'resources', 'updater', 'node_modules', 'electron-updater', 'package.json')), 'win updater runtime is missing.');
     assert(fs.existsSync(path.join(unpacked, 'resources', 'standalone', 'server.js')), 'win standalone server is missing.');

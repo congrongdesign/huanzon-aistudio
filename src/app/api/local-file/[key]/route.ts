@@ -67,6 +67,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
     const wanted = Number(request.nextUrl.searchParams.get('w'));
     if (!download && wanted > 0 && Number.isFinite(wanted) && raster.has(path.extname(file).toLowerCase())) {
       const width = [128, 256, 512, 1024, 1600].find(size => size >= wanted) || 1600;
+      if (width <= 512) { try { const prepared = await readFile(file + '.512.webp'); return new NextResponse(new Uint8Array(prepared), { headers: { 'Content-Type': 'image/webp', 'Cache-Control': 'public, max-age=86400' } }); } catch { /* Generate legacy previews on demand. */ } }
       const buffer = await preview(file, width, `${info.size}:${info.mtimeMs}`);
       return new NextResponse(new Uint8Array(buffer), { headers: { 'Content-Type': 'image/webp', 'Cache-Control': 'public, max-age=86400' } });
     }

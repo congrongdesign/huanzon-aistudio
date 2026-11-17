@@ -9,7 +9,7 @@ $installerPath = (Resolve-Path -LiteralPath $Installer).Path
 $checksumPath = (Resolve-Path -LiteralPath $Checksums).Path
 if (-not [Environment]::Is64BitOperatingSystem) { throw 'Windows x64 is required.' }
 if ([Environment]::OSVersion.Version.Major -lt 10) { throw 'Windows 10 or later is required.' }
-$expectedName = 'AIStudio-0.2.3-win-x64-setup.exe'
+$expectedName = 'AIStudio-0.2.4-win-x64-setup.exe'
 if ([IO.Path]::GetFileName($installerPath) -ne $expectedName) { throw "Expected $expectedName" }
 $matched = @([IO.File]::ReadAllLines($checksumPath) | Where-Object {
   $_ -match ('^([a-fA-F0-9]{64})\s+\*?' + [regex]::Escape($expectedName) + '$')
@@ -36,4 +36,4 @@ $appPath = $candidates | Where-Object { Test-Path -LiteralPath $_ -PathType Leaf
 if (-not $appPath) { throw 'Installation returned success, but executable location was not found. Inspect the shortcut and registry; do not reinstall with a different account.' }
 Start-Process -FilePath $appPath
 Write-Host "Launched: $appPath"
-Write-Host ('Next: inspect the actual window and ' + (Join-Path $env:APPDATA '环中AIStudio\desktop.log') + '; verify v0.2.3, existing projects and API settings, then exit/reopen.')
+Write-Host ('Next: inspect the actual window and ' + (Join-Path $env:APPDATA '环中AIStudio\desktop.log') + '; verify v0.2.4, existing projects and API settings, then exit/reopen.')

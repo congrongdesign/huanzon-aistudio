@@ -18,7 +18,7 @@ type BackgroundArchiveTasksProps = {
 };
 
 function isRunning(job: ProjectArchiveJob): boolean {
-  return job.status === "queued" || job.status === "running";
+  return job.status === "queued" || job.status === "running" || job.status === "waiting";
 }
 
 export default function BackgroundArchiveTasks({
@@ -42,6 +42,23 @@ export default function BackgroundArchiveTasks({
     window.addEventListener(BACKGROUND_ARCHIVE_JOBS_EVENT, refreshTrackedJobs);
     return () => window.removeEventListener(BACKGROUND_ARCHIVE_JOBS_EVENT, refreshTrackedJobs);
   }, [refreshTrackedJobs]);
+
+  // This component lives outside the assets page: wake/network recovery works
+  // while the user continues editing on the canvas as well.
+  useEffect(() => {
+    let lastCheck = Date.now(); let lastWake = 0;
+    const wake = () => {
+      if (Date.now() - lastWake < 10000) return;
+      lastWake = Date.now();
+      void fetch('/api/project-archive', { method: 'POST', headers: { 'Content-Type': 'application/json', ...getAuthHeaders() }, body: JSON.stringify({ action: 'reconnect' }) }).catch(() => {});
+    };
+    const timer = window.setInterval(() => {
+      if (Date.now() - lastCheck > 15000) wake();
+      lastCheck = Date.now();
+    }, 5000);
+    window.addEventListener('online', wake); window.addEventListener('focus', wake);
+    return () => { clearInterval(timer); window.removeEventListener('online', wake); window.removeEventListener('focus', wake); };
+  }, [getAuthHeaders]);
 
   const pollJobs = useCallback(async () => {
     await Promise.all(trackedJobs.map(async (tracked) => {
@@ -104,7 +121,7 @@ export default function BackgroundArchiveTasks({
 
   if (!displayJob) return null;
   const failed = displayJob.status === "failed" || displayJob.status === "partial";
-  const label = isRunning(displayJob)
+  const label = displayJob.status === "waiting" ? "等待 NAS 连接" : isRunning(displayJob)
     ? `${displayJob.action === "archive" ? "备份" : "恢复"} ${displayJob.completed + displayJob.failed}/${displayJob.total}`
     : displayJob.status === "paused" ? "任务已暂停"
     : displayJob.status === "cancelled" ? "任务已取消"

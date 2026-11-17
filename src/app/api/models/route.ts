@@ -1,3 +1,4 @@
+import { openAICompatibleUrl } from "@/lib/openai-compatible-url";
 import { NextRequest, NextResponse } from 'next/server';
 
 type PricingModelInfo = {
@@ -615,6 +616,7 @@ function buildModelEndpointCandidates(baseUrl: string): string[] {
   const trimmed = normalizeBaseUrl(baseUrl);
   const candidates = new Set<string>();
   if (!trimmed) return [];
+  candidates.add(openAICompatibleUrl(trimmed, "models"));
 
   const baseVariants = Array.from(new Set([
     trimmed,

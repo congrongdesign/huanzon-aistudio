@@ -38,6 +38,12 @@ async function main() {
     const offline = await offlineExporter.export(one(local));
     assert.deepEqual(await readFile(offline.files[0]), bytes);
     assert.equal(remoteRequests, 0);
+    await mkdir(path.join(previous, 'font-library/files'), { recursive: true });
+    await writeFile(path.join(previous, 'font-library/files/font.png'), bytes);
+    const stagedFont = await offlineExporter.stageImage('/api/font-file/font.png?w=128', path.join(root, 'trace-stage'));
+    assert.deepEqual(await readFile(stagedFont), bytes);
+    assert.equal(remoteRequests, 0, 'Font tracing must stage the original from previous media roots without HTTP/auth');
+    await assert.rejects(offlineExporter.stageImage('/api/font-file/%2e%2e%2fprivate.png', path.join(root, 'trace-stage')));
     const simultaneous = await Promise.all(Array.from({ length: 8 }, () => exporter.export(one(local))));
     assert.equal(new Set(simultaneous.flatMap(r => r.files)).size, 8);
     for (const result of simultaneous) assert.deepEqual(await readFile(result.files[0]), bytes);
@@ -60,6 +66,27 @@ async function main() {
     }
     const inline = await exporter.export(one(`data:image/png;base64,${bytes.toString('base64')}`));
     assert.deepEqual(await readFile(inline.files[0]), bytes);
+    // Library sharing uses this same native saver for a binary ZIP, including non-image metadata.
+    const library = new JSZip();
+    library.file('manifest.json', JSON.stringify({ format: 'huanzon-library', version: 1, name: '共享库' }));
+    library.file('assets/example.png', bytes);
+    const libraryBytes = await library.generateAsync({ type: 'nodebuffer' });
+    const libraryUrl = `data:application/octet-stream;base64,${libraryBytes.toString('base64')}`;
+    const firstPackage = await exporter.export(one(libraryUrl, '共享库.hzlib'));
+    const secondPackage = await exporter.export(one(libraryUrl, '共享库.hzlib'));
+    assert.deepEqual(firstPackage.failures, []);
+    assert.equal(path.basename(firstPackage.files[0]), '共享库.hzlib');
+    assert.equal(path.basename(secondPackage.files[0]), '共享库-1.hzlib');
+    for (const saved of [firstPackage, secondPackage]) {
+      assert.deepEqual(await readFile(saved.files[0]), libraryBytes);
+      const restored = await JSZip.loadAsync(await readFile(saved.files[0]));
+      assert.equal(JSON.parse(await restored.file('manifest.json')!.async('string')).name, '共享库');
+    }
+    const blockedDownloads = path.join(root, 'blocked-downloads');
+    await writeFile(blockedDownloads, 'existing file');
+    const blockedExporter = new ImageExporter({ dataDirectory: data, downloadsDirectory: blockedDownloads, appOrigin: origin, loadZip: () => JSZip });
+    await assert.rejects(blockedExporter.export(one(libraryUrl, '共享库.hzlib')));
+    assert.equal(await readFile(blockedDownloads, 'utf8'), 'existing file');
     await assert.rejects(exporter.export({ id: 'bad-zip', files: [{ url: local, filename: 'ok.png' }, { url: '/api/local-file/missing.png', filename: 'missing.png' }], zipName: 'bad.zip' }));
     assert(!(await readdir(downloads)).some(name => name.endsWith('.part') || name === 'bad.zip'));
     assert(progress.includes(0) && progress.includes(2));

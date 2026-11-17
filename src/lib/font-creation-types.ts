@@ -1,5 +1,6 @@
 import type { FontCard, FontFile, FontParameters, FontUseRequest } from './font-library-types';
 import { cleanFontStylePrompt, fontStylePromptFromCard, stripReferenceLegend } from './font-library-types';
+import { applyFontTargetText, extractFontTargetText } from './font-style-text';
 
 export type GenerationDestination = { kind: 'canvas'; projectId: string } | { kind: 'font'; sessionId: string };
 export type FontCreationSettings = { model: string; size: string; count: number; quality: string; imageSize: string; background: string; outputFormat: string; moderation: string };
@@ -13,14 +14,16 @@ export const DEFAULT_FONT_SETTINGS: FontCreationSettings = { model: 'gpt-image-2
 export function styleFromCard(card: FontCard, mode: FontUseRequest['mode'] = 'append', revision = ''): FontActiveStyle {
   return { cardId: card.id, cardVersion: card.version, revision, title: card.title, cover: { ...card.cover, label: `字体样式 · ${card.title}` }, references: structuredClone(card.references), prompt: fontStylePromptFromCard(card), originalPrompt: card.originalPrompt, mode: mode === 'image' ? 'image' : 'recipe' };
 }
-// Keep personal additions when replacing the prompt inserted by the previous style.
-// If that text was edited, retain the edits instead of deleting user-authored content.
+// Replace the old input, transferring only the user's target lettering to the new style.
 export function withFontStyleInput(draft: FontCreationDraft, prompt: string): FontCreationDraft {
   const previous = stripReferenceLegend(cleanFontStylePrompt(draft.stylePrompt));
   const next = stripReferenceLegend(cleanFontStylePrompt(prompt));
   const personal = draft.stylePromptInInput && previous && draft.userText.startsWith(previous)
     ? draft.userText.slice(previous.length).replace(/^\n{1,2}/, '') : draft.userText;
-  const userText = [next, personal].filter(Boolean).join('\n\n');
+  // A legacy composer may contain the untouched sample followed by personal input.
+  // Never infer missing personal subtitles from that sample.
+  const target = extractFontTargetText(personal || draft.userText);
+  const userText = next ? applyFontTargetText(next, target) : target ? [`主标题：${target.title}`, target.subtitle ? `副标题：${target.subtitle}` : ''].filter(Boolean).join('\n') : personal;
   return { ...draft, userText, stylePrompt: next, stylePromptInInput: true };
 }
 export type FontReferenceCandidate = { id: string; file: FontFile; role: 'user' | 'sample' | 'reference' };

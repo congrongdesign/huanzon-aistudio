@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import { nearbyCanvasPosition } from '../src/lib/canvas-nearby-placement';
 const source={x:-500,y:50,width:320,height:240};
-assert.deepEqual(nearbyCanvasPosition(source,320,240,[source]),{x:-140,y:50});
-const blocker={x:-140,y:50,width:320,height:240};
+assert.deepEqual(nearbyCanvasPosition(source,320,240,[source]),{x:-156,y:50});
+const blocker={x:-156,y:50,width:320,height:240};
 const nearby=nearbyCanvasPosition(source,320,240,[source,blocker,{x:100000,y:0,width:320,height:240}]);
 assert.ok(Math.abs(nearby.x-source.x)<=680&&Math.abs(nearby.y-source.y)<=520,'unrelated distant images must not pull results away');
 const items=[source];

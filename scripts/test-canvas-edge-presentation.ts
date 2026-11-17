@@ -1,0 +1,44 @@
+import assert from 'node:assert/strict';
+import { CanvasEdgeScene } from '../src/lib/canvas-edge-scene';
+import { presentCanvasEdges, bundleCanvasEdges, canvasRemoteHints } from '../src/lib/canvas-edge-presentation';
+import { routedCanvasConnectionGeometry } from '../src/lib/canvas-lineage';
+import type { CanvasImage } from '../src/lib/types';
+
+const image = (id: string, x: number, y: number, refs: string[] = []): CanvasImage => ({ id, project_id: 'qa', image_url: `/qa/${id}`, reference_images: JSON.stringify(refs), canvas_x: x, canvas_y: y, canvas_width: 320, canvas_height: 200, prompt: '', size: '8:5', model: 'test', status: 'completed', is_favorite: false, image_key: null, created_at: new Date(1).toISOString(), updated_at: null });
+const build = (items: CanvasImage[]) => { const scene = new CanvasEdgeScene(items, i => ({ w: i.canvas_width, h: i.canvas_height })); scene.connections.forEach(e => scene.route(e)); return scene.finish(); };
+const root = image('root', 0, 200);
+const children = [0, 240, 480].map((y, i) => image(`child${i}`, 500, y, ['root']));
+const scene = build([root, ...children]);
+const view = { x: -40, y: -40, right: 900, bottom: 800 }, none = new Set<string>();
+const smart = presentCanvasEdges(scene, view, 1, none, 'smart');
+assert.equal(smart.edges.length, 3);
+assert.equal(bundleCanvasEdges(scene, smart.edges).length, 1, 'aligned siblings share one trunk');
+assert.equal(bundleCanvasEdges(scene, smart.edges)[0].keys.length, 3);
+const blocked = build([root, ...children, image('blocker', 360, 300)]);
+assert.equal(bundleCanvasEdges(blocked, [...blocked.edges.values()]).length, 0, 'never merge through another image');
+const narrow = { ...view, right: 450 };
+const selected = new Set(['root']);
+const remote = presentCanvasEdges(scene, narrow, 1, selected, 'smart');
+assert.equal(remote.edges.length, 0, 'screen-exiting paths are replaced by navigation');
+assert.equal(remote.remote.length, 3);
+const hints = canvasRemoteHints(scene, remote.remote, narrow, 1, selected);
+assert.equal(hints.length, 1); assert.equal(hints[0].ids.length, 3); assert.equal(hints[0].direction, '→');
+assert.ok(hints[0].x >= narrow.x && hints[0].y < narrow.bottom);
+assert.equal(presentCanvasEdges(scene, { ...narrow, right: 100 }, 1, selected, 'smart').remote.length, 3, 'partly visible selected images retain navigation even when their ports are outside');
+assert.equal(presentCanvasEdges(scene, narrow, 1, selected, 'all').edges.length, 3);
+assert.equal(presentCanvasEdges(scene, narrow, 1, selected, 'hidden').remote.length, 0);
+const far = build([image('left', -2000, 0), image('right', 2000, 0, ['left'])]);
+assert.equal(presentCanvasEdges(far, view, 1, none, 'smart').edges.length, 0, 'hide crossings when both endpoints are outside');
+assert.equal(presentCanvasEdges(far, view, 1, none, 'all').edges.length, 1);
+const farView = { x: -2100, y: -40, right: 2400, bottom: 400 };
+assert.equal(presentCanvasEdges(far, farView, 1, none, 'smart').edges.length, 0, 'collapse very long unselected paths');
+assert.equal(presentCanvasEdges(far, farView, 1, new Set(['right']), 'smart').edges.length, 1, 'selection reveals long relationships');
+assert.equal(presentCanvasEdges(far, farView, 0.1, none, 'smart').edges.length, 1, 'length thresholds use screen pixels');
+for (const direction of [-1, 1]) {
+  const s = { x: 0, y: 0, width: 200, height: 200 }, t = { ...s, y: 1000 * direction }, obstacle = { ...s, y: 500 * direction };
+  const route = routedCanvasConnectionGeometry(s, t, [s, t, obstacle]);
+  assert.equal(route.axis, 'y'); assert.equal(route.reverse, direction < 0); assert.match(route.d, / L /);
+  assert.ok(!/NaN|Infinity/.test(route.d));
+}
+assert.equal(scene.routeComputations, 3, 'presentation never recomputes world routes');
+console.log('PASS: screen-space length, smart/all/hidden, selected relationships, remote navigation, safe shared trunks, crossings and vertical routing.');

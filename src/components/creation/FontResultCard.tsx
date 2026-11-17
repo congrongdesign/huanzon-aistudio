@@ -1,6 +1,6 @@
 'use client';
 
-import { Check, Download, FolderPlus, ImagePlus, Info, LibraryBig, MoreHorizontal, RotateCcw, Trash2, X } from 'lucide-react';
+import { Check, Download, FolderPlus, ImagePlus, Info, LibraryBig, MoreHorizontal, RotateCcw, Spline, Trash2, X } from 'lucide-react';
 import CanvasPreviewImage from '@/components/CanvasPreviewImage';
 import { GenerationOverlay } from '@/components/ui/motif/generation-overlay';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
@@ -17,13 +17,15 @@ type Props = {
   onDelete: () => void;
   onCancel: () => void;
   onExport: () => void;
+  onDownload: () => void;
   onReference: () => void;
   onCollect: () => void;
   collecting: boolean;
   onReuse: () => void;
+  onTrace: () => void;
 };
 
-export default function FontResultCard({ run, selected, selectionMode, busy, onSelect, onOpen, onDelete, onCancel, onExport, onReference, onCollect, collecting, onReuse }: Props) {
+export default function FontResultCard({ run, selected, selectionMode, busy, onSelect, onOpen, onDelete, onCancel, onExport, onDownload, onReference, onCollect, collecting, onReuse, onTrace }: Props) {
   const pending = ['queued', 'running'].includes(run.status);
   const title = run.userPrompt.split(/[，,\n]/)[0].trim().slice(0, 40) || '字体作品';
   return (
@@ -64,13 +66,15 @@ export default function FontResultCard({ run, selected, selectionMode, busy, onS
           <button type="button" className="font-result-action" disabled={busy || !run.jobId} onClick={onCancel} aria-label="取消字体生成" title="取消生成"><X size={15}/></button>
         ) : (
           <>
+            {run.result && <button type="button" className="font-result-action" disabled={busy} onClick={onTrace} aria-label="在 Illustrator 中矢量描摹" title="矢量描摹 · Illustrator"><Spline size={15}/></button>}
             <DropdownMenu>
               <DropdownMenuTrigger asChild><button type="button" className="font-result-action" disabled={busy} aria-label="字体作品更多操作" title="更多操作"><MoreHorizontal size={17}/></button></DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 {run.result && <>
                   <DropdownMenuItem onSelect={onOpen}><Info/>查看详情</DropdownMenuItem>
+                  <DropdownMenuItem onSelect={onTrace}><Spline/>Illustrator 矢量描摹</DropdownMenuItem>
                   <DropdownMenuItem disabled={collecting || run.status !== 'completed'} onSelect={onCollect}><LibraryBig/>{collecting ? '正在添加…' : '添加到字体库'}</DropdownMenuItem>
-                  <DropdownMenuItem asChild><a href={run.result.url + '?download=1'} download><Download/>下载原图</a></DropdownMenuItem>
+                  <DropdownMenuItem onSelect={onDownload}><Download/>下载原图</DropdownMenuItem>
                   <DropdownMenuItem onSelect={onReference}><ImagePlus/>用作参考图</DropdownMenuItem>
                   <DropdownMenuItem onSelect={onExport}><FolderPlus/>添加到项目</DropdownMenuItem>
                   <DropdownMenuSeparator/>
@@ -78,6 +82,7 @@ export default function FontResultCard({ run, selected, selectionMode, busy, onS
                 <DropdownMenuItem onSelect={onReuse}><RotateCcw/>复用生成要求</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+            {run.result && <button type="button" className="font-result-action" disabled={busy} onClick={onDownload} aria-label="下载字体原图" title="下载原图"><Download size={15}/></button>}
             <button type="button" className="font-result-action font-result-delete" disabled={busy} onClick={onDelete} aria-label="删除字体作品" title="删除作品"><Trash2 size={15}/></button>
           </>
         )}

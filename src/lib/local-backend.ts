@@ -1,3 +1,4 @@
+import { listLocalLibraries } from './prompt-library-store';
 import fs from "fs";
 import path from "path";
 import { randomUUID } from "node:crypto";
@@ -25,6 +26,7 @@ import type {
 export interface LocalProjectRecord {
   id: string;
   user_id: string | null;
+  deleted_at?: string | null;
   name: string;
   is_pinned: boolean;
   sort_order: number;
@@ -179,7 +181,21 @@ export interface LocalCanvasBlockRecord {
 }
 
 export interface LocalPromptRecord {
+  source_project_id?: string | null;
+  source_project_name?: string;
+  archive_prompt_id?: string;
+  deleted_at?: string | null;
+  recovery_batch?: string;
+  history_image_id?: string;
+  importItemId?: string;
+  importManual?: string[]; importAppliedId?: string;
+  importAnalysis?: import("./library-import-types").ImportAnalysis;
+  attachments?: { key: string; url: string; name: string; importItemId: string }[];
   id: string;
+  shareOrigin?: string;
+  shareRevision?: string;
+  shareContentHash?: string;
+  shareStateHash?: string;
   user_id: string | null;
   project_id: string | null;
   text: string;
@@ -230,6 +246,7 @@ export type LocalAssetIndexJobRecord = AssetIndexJob & { user_id: string | null 
 
 interface LocalDatabase {
   version: number;
+  integrity_audit?: { at: string; action: string; owner: string | null; ids: string[] }[];
   media_cleanup_tasks: MediaCleanupTask[];
   projects: LocalProjectRecord[];
   project_folders: LocalProjectFolderRecord[];
@@ -292,44 +309,19 @@ function nowIso(): string {
   return new Date().toISOString();
 }
 
-function cloneEmptyDb(): LocalDatabase {
-  return {
-    version: 1,
-    media_cleanup_tasks: [],
-    projects: [],
-    project_folders: [],
-    image_records: [],
-    archived_images: [],
-    archived_folders: [],
-    chat_messages: [],
-    reference_images: [],
-    inspiration_folders: [],
-    inspiration_items: [],
-    platform_connections: [],
-    canvas_blocks: [],
-    prompt_library: [],
-    image_tags: [],
-    custom_skills: [],
-    design_assets: [],
-    design_layers: [],
-    design_operations: [],
-    asset_versions: [],
-    asset_index_entries: [],
-    asset_index_jobs: [],
-  };
-}
-
 function ensureArray<T>(value: unknown): T[] {
   return Array.isArray(value) ? (value as T[]) : [];
 }
 
 function ensureDbShape(raw: unknown): LocalDatabase {
-  if (!raw || typeof raw !== "object") {
-    return cloneEmptyDb();
-  }
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) throw new Error("本机数据库格式异常，已停止写入");
   const obj = raw as Record<string, unknown>;
+  for (const key of ["projects", "prompt_library", "image_records"]) {
+    if (obj[key] !== undefined && !Array.isArray(obj[key])) throw new Error(`本机数据库 ${key} 格式异常，已停止写入`);
+  }
   return {
     version: typeof obj.version === "number" ? obj.version : 1,
+    integrity_audit: ensureArray<NonNullable<LocalDatabase["integrity_audit"]>[number]>(obj.integrity_audit),
     media_cleanup_tasks: ensureArray<MediaCleanupTask>(obj.media_cleanup_tasks),
     projects: ensureArray<LocalProjectRecord>(obj.projects),
     project_folders: ensureArray<LocalProjectFolderRecord>(obj.project_folders),
@@ -421,15 +413,47 @@ function readDb(): LocalDatabase {
   // A corrupt store must never be replaced by an empty database on the next write.
   const data = ensureDbShape(JSON.parse(fs.readFileSync(file, 'utf8')));
   dbState.hzLocalDbCache = { file, version, data };
+  if (data.version < 2) {
+    const migrated = data.prompt_library.filter(p => p.project_id).map(p => p.id);
+    normalizePromptOwnership(data);
+    data.version = 2;
+    auditIntegrity(data, 'migrate-independent-prompts', null, migrated);
+    writeDb(data);
+  }
   return data;
 }
 
+function auditIntegrity(db: LocalDatabase, action: string, owner: string | null, ids: string[]) {
+  db.integrity_audit = [...(db.integrity_audit || []), { at: nowIso(), action, owner, ids }].slice(-2000);
+}
+
+// The user owns saved prompts. A project is optional provenance, never their parent.
+function normalizePromptOwnership(db: LocalDatabase) {
+  for (const prompt of db.prompt_library) {
+    if (!prompt.project_id) continue;
+    prompt.source_project_id ||= prompt.project_id;
+    prompt.source_project_name ||= db.projects.find(p => p.id === prompt.project_id && p.user_id === prompt.user_id)?.name;
+    prompt.project_id = null;
+  }
+}
+
 function writeDb(db: LocalDatabase): void {
+  normalizePromptOwnership(db);
   ensureLocalDirs();
   const dbPath = getDbPath();
-  const tempPath = `${dbPath}.tmp`;
-  fs.writeFileSync(tempPath, JSON.stringify(db), "utf8");
-  fs.renameSync(tempPath, dbPath);
+  const tempPath = `${dbPath}.${randomUUID()}.tmp`;
+  const descriptor = fs.openSync(tempPath, 'wx', 0o600);
+  try {
+    fs.writeFileSync(descriptor, JSON.stringify(db), "utf8");
+    fs.fsyncSync(descriptor);
+  } catch (error) {
+    fs.closeSync(descriptor);
+    fs.rmSync(tempPath, { force: true });
+    throw error;
+  }
+  fs.closeSync(descriptor);
+  try { fs.renameSync(tempPath, dbPath); }
+  catch (error) { fs.rmSync(tempPath, { force: true }); throw error; }
   dbState.hzLocalDbCache = { file: dbPath, version: databaseVersion(dbPath), data: db };
 }
 
@@ -757,7 +781,7 @@ export function listProjects(userId?: string | null): LocalProjectRecord[] {
   const uid = safeUserId(userId);
   const db = readDb();
   return structuredClone(db.projects
-    .filter((p) => p.user_id === uid)
+    .filter((p) => p.user_id === uid && !p.deleted_at)
     .sort((a, b) => {
       if (a.is_pinned !== b.is_pinned) return a.is_pinned ? -1 : 1;
       if (a.sort_order !== b.sort_order) return b.sort_order - a.sort_order;
@@ -793,7 +817,7 @@ export function createProject(userId: string | null, name: string, folderId: str
 export function getProjectById(projectId: string, userId?: string | null): LocalProjectRecord | null {
   const uid = safeUserId(userId);
   const db = readDb();
-  return structuredClone(db.projects.find((p) => p.id === projectId && p.user_id === uid) || null);
+  return structuredClone(db.projects.find((p) => p.id === projectId && p.user_id === uid && !p.deleted_at) || null);
 }
 
 export function updateProject(
@@ -814,6 +838,36 @@ export function updateProject(
 }
 
 export function deleteProjectCascade(projectId: string, userId: string | null): boolean {
+  return withDb(db => {
+    const project = db.projects.find(p => p.id === projectId && p.user_id === userId && !p.deleted_at);
+    if (!project) return false;
+    project.deleted_at = nowIso();
+    auditIntegrity(db, 'trash-project', userId, [projectId]);
+    return true;
+  });
+}
+
+export function listDeletedProjects(owner: string) {
+  return structuredClone(readDb().projects.filter(p => p.user_id === owner && p.deleted_at));
+}
+
+export function restoreDeletedProject(id: string, owner: string) {
+  return withDb(db => {
+    const project = db.projects.find(p => p.id === id && p.user_id === owner && p.deleted_at);
+    if (!project) return false;
+    project.deleted_at = null;
+    auditIntegrity(db, 'restore-project', owner, [id]);
+    return true;
+  });
+}
+
+export function permanentlyDeleteProject(projectId: string, userId: string): boolean {
+  // Require an explicit trip through the recycle bin before destructive removal.
+  if (!readDb().projects.some(p => p.id === projectId && p.user_id === userId && p.deleted_at)) return false;
+  return purgeProjectData(projectId, userId);
+}
+
+function purgeProjectData(projectId: string, userId: string | null): boolean {
   return withDb((db) => {
     const exists = db.projects.some((p) => p.id === projectId && p.user_id === userId);
     if (!exists) return false;
@@ -854,7 +908,8 @@ export function deleteProjectCascade(projectId: string, userId: string | null): 
     db.archived_images = db.archived_images.filter((r) => !(r.project_id === projectId && r.user_id === userId));
     db.reference_images = db.reference_images.filter((r) => !(r.project_id === projectId && r.user_id === userId));
     db.image_tags = db.image_tags.filter((tag) => !deletingImageIds.has(tag.image_id));
-    db.prompt_library = db.prompt_library.filter((p) => !(p.project_id === projectId && p.user_id === userId));
+    normalizePromptOwnership(db);
+    auditIntegrity(db, "purge-project", userId, [projectId]);
     db.custom_skills = db.custom_skills.filter((s) => !(s.project_id === projectId && s.user_id === userId));
     db.projects = db.projects.filter((p) => !(p.id === projectId && p.user_id === userId));
 
@@ -1163,10 +1218,22 @@ export function restoreLocalProjectSnapshot(
     }
 
     for (const prompt of snapshot.prompts) {
+      // Preserve existing edits and recycle-bin entries across repeated restores.
+      const originalId = textValue(prompt.archive_prompt_id, textValue(prompt.id));
+      if (originalId && db.prompt_library.some(p => p.user_id === userId && (p.id === originalId || p.archive_prompt_id === originalId))) continue;
       db.prompt_library.push({
+        archive_prompt_id: originalId,
+        history_image_id: optionalText(prompt.history_image_id) || undefined,
+        shareOrigin: optionalText(prompt.shareOrigin) || undefined,
+        shareRevision: optionalText(prompt.shareRevision) || undefined,
+        shareContentHash: optionalText(prompt.shareContentHash) || undefined,
+        shareStateHash: optionalText(prompt.shareStateHash) || undefined,
+        source_project_id: textValue(prompt.source_project_id, textValue(snapshot.project.id)),
+        source_project_name: textValue(prompt.source_project_name, textValue(snapshot.project.name)),
+        deleted_at: optionalText(prompt.deleted_at),
         id: makeId(prompt.id, existingPromptIds, options.preserveRecordIds),
         user_id: userId,
-        project_id: options.projectId,
+        project_id: null,
         text: textValue(prompt.text, textValue(prompt.content)),
         category: textValue(prompt.category, "general"),
         image_url: rewriteUrlValue(prompt.image_url, options),
@@ -1414,7 +1481,8 @@ export function clearLocalProjectArchiveData(
     db.image_records = db.image_records.filter((image) => !(image.project_id === projectId && image.user_id === userId));
     db.chat_messages = db.chat_messages.filter((message) => !(message.project_id === projectId && message.user_id === userId));
     db.reference_images = db.reference_images.filter((reference) => !(reference.project_id === projectId && reference.user_id === userId));
-    db.prompt_library = db.prompt_library.filter((prompt) => !(prompt.project_id === projectId && prompt.user_id === userId));
+    normalizePromptOwnership(db);
+    auditIntegrity(db, "archive-remove-project", userId, [projectId]);
     db.custom_skills = db.custom_skills.filter((skill) => !(skill.project_id === projectId && skill.user_id === userId));
     db.archived_images = db.archived_images.filter((image) => !(image.project_id === projectId && image.user_id === userId));
     db.projects = db.projects.filter((item) => !(item.id === projectId && item.user_id === userId));
@@ -1825,7 +1893,7 @@ export function listImageRecords(
   const db = readDb();
   let records = db.image_records.filter((r) => r.user_id === userId);
   if (projectId) records = records.filter((r) => r.project_id === projectId);
-  if (!includeDeleted) records = records.filter((r) => !r.deleted_at);
+  if (!includeDeleted) records = records.filter((r) => !r.deleted_at && !db.projects.some(p => p.id === r.project_id && p.user_id === userId && p.deleted_at));
   records = sortByDateDesc(records);
   const total = records.length;
   const paged = records.slice((page - 1) * pageSize, page * pageSize);
@@ -2803,24 +2871,51 @@ export function deleteReferenceImage(id: string, userId: string | null): boolean
   });
 }
 
-export function listPrompts(userId: string | null, projectId?: string | null): LocalPromptRecord[] {
+export function listPrompts(userId: string | null, projectId?: string | null, includeDeleted = false): LocalPromptRecord[] {
   const db = readDb();
-  let items = db.prompt_library.filter((p) => p.user_id === userId);
-  if (projectId) items = items.filter((p) => p.project_id === projectId);
+  let items = db.prompt_library.filter((p) => p.user_id === userId && (includeDeleted || !p.deleted_at));
+  if (projectId) items = items.filter((p) => p.source_project_id === projectId);
   return structuredClone(sortByDateDesc(items));
 }
 
+// Commit imported rows in one synchronous database write.
+export function commitSharedPrompts(userId: string, rows: LocalPromptRecord[]): void {
+  withDb(db => {
+    if (rows.some(row => row.user_id !== userId || db.prompt_library.some(p => p.id === row.id))) throw new Error('导入记录冲突，请重试');
+    db.prompt_library.push(...rows);
+  });
+}
+
+// Synchronous commit keeps concurrent history collection idempotent.
+export function commitHistoryPrompt(userId: string, imageId: string, input: Omit<LocalPromptRecord, 'id' | 'user_id' | 'created_at'>) {
+  return withDb(db => {
+    const image = db.image_records.find(record => record.id === imageId && record.user_id === userId && !record.deleted_at && record.status === 'completed');
+    if (!image) throw new Error('历史作品已删除或不存在');
+    const existing = db.prompt_library.find(record => record.user_id === userId && record.history_image_id === imageId);
+    if (existing) return { prompt: existing, duplicate: true };
+    const now = nowIso();
+    const prompt: LocalPromptRecord = { ...input, id: randomUUID(), user_id: userId, history_image_id: imageId, created_at: now, updated_at: now };
+    db.prompt_library.push(prompt); return { prompt, duplicate: false };
+  });
+}
 export function createPrompt(
   userId: string | null,
-  input: Pick<LocalPromptRecord, "project_id" | "text"> & Partial<Omit<LocalPromptRecord, "id" | "user_id" | "project_id" | "text" | "created_at">>,
+  input: Pick<LocalPromptRecord, "text"> & Partial<Omit<LocalPromptRecord, "id" | "user_id" | "text" | "created_at">>,
 ): LocalPromptRecord {
   return withDb((db) => {
     const now = nowIso();
     const record: LocalPromptRecord = {
       id: randomUUID(),
+      importItemId: input.importItemId,
       user_id: userId,
-      project_id: input.project_id ?? null,
+      project_id: null,
+      source_project_id: input.source_project_id || input.project_id || null,
+      source_project_name: input.source_project_name || db.projects.find(p => p.id === input.project_id && p.user_id === userId)?.name,
       text: input.text,
+      shareOrigin: input.shareOrigin,
+      shareRevision: input.shareRevision,
+      shareContentHash: input.shareContentHash,
+      shareStateHash: input.shareStateHash,
       category: input.category || "general",
       image_url: input.image_url || null,
       name: input.name,
@@ -2846,8 +2941,9 @@ export function createPrompt(
 
 export function updatePrompt(id: string, userId: string | null, updates: Partial<LocalPromptRecord>): LocalPromptRecord | null {
   return withDb((db) => {
-    const idx = db.prompt_library.findIndex((p) => p.id === id && p.user_id === userId);
+    const idx = db.prompt_library.findIndex((p) => p.id === id && p.user_id === userId && !p.deleted_at);
     if (idx < 0) return null;
+    if (db.prompt_library[idx].importItemId) updates.importManual = [...new Set([...(db.prompt_library[idx].importManual || []), ...["name","text","tags","source","library_id","image_url"].filter(key => key in updates)])];
     db.prompt_library[idx] = {
       ...db.prompt_library[idx],
       ...updates,
@@ -2861,9 +2957,93 @@ export function updatePrompt(id: string, userId: string | null, updates: Partial
 
 export function deletePrompt(id: string, userId: string | null): boolean {
   return withDb((db) => {
-    const before = db.prompt_library.length;
-    db.prompt_library = db.prompt_library.filter((p) => !(p.id === id && p.user_id === userId));
-    return db.prompt_library.length < before;
+    const prompt = db.prompt_library.find(p => p.id === id && p.user_id === userId && !p.deleted_at);
+    if (!prompt) return false;
+    prompt.deleted_at = nowIso();
+    auditIntegrity(db, 'trash-prompt', userId, [id]);
+    return true;
+  });
+}
+
+export function restoreDeletedPrompt(id: string, owner: string) {
+  return withDb(db => {
+    const prompt = db.prompt_library.find(p => p.id === id && p.user_id === owner && p.deleted_at);
+    if (!prompt) return false;
+    prompt.deleted_at = null;
+    auditIntegrity(db, 'restore-prompt', owner, [id]);
+    return true;
+  });
+}
+
+export function permanentlyDeletePrompt(id: string, owner: string) {
+  return withDb(db => {
+    const index = db.prompt_library.findIndex(p => p.id === id && p.user_id === owner && p.deleted_at);
+    if (index < 0) return false;
+    db.prompt_library.splice(index, 1);
+    auditIntegrity(db, 'purge-prompt', owner, [id]);
+    return true;
+  });
+}
+
+// Recovery is additive and idempotent; never overwrite a live edit or revive a deletion.
+export function recoverIndependentPrompts(owner: string, rows: LocalPromptRecord[], batch: string) {
+  return withDb(db => {
+    const added: string[] = [], skipped: string[] = [];
+    for (const row of rows) {
+      if (row.user_id !== owner || !row.id || !row.text?.trim()) throw new Error('恢复记录无效');
+      if (db.prompt_library.some(p => p.id === row.id || (p.user_id === owner && p.archive_prompt_id === row.id))) { skipped.push(row.id); continue; }
+      db.prompt_library.push({ ...row, source_project_id: row.source_project_id || row.project_id, project_id: null, deleted_at: null, recovery_batch: batch });
+      added.push(row.id);
+    }
+    auditIntegrity(db, 'recover-prompts:' + batch, owner, added);
+    return { added, skipped };
+  });
+}
+
+export function commitImportedPrompt(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return withDb(db => {
+    if (item.targetId) {
+      const card = db.prompt_library.find(c => c.id === item.targetId && c.user_id === owner); if (!card) throw new Error('目标提示词不存在');
+      card.attachments ||= [];
+      if (!card.attachments.some(a => a.importItemId === item.id)) card.attachments.push({ key: item.media!.key, url: item.media!.url, name: item.originalName, importItemId: item.id });
+      return { id: card.id, created: false, snapshot: {} };
+    }
+    const committed = db.prompt_library.find(c => c.user_id === owner && c.importItemId === item.id);
+    if (committed) return { id: committed.id, created: true, snapshot: structuredClone(committed) as unknown as Record<string, unknown> };
+    const duplicate = db.prompt_library.find(c => c.user_id === owner && c.image_url === item.media!.url);
+    if (duplicate) return { id: duplicate.id, created: false, snapshot: {} };
+    const now = nowIso();
+    const card: LocalPromptRecord = { id: randomUUID(), user_id: owner, project_id: item.projectId, importItemId: item.id, name: item.originalName.replace(/\.[^.]+$/, ''), text: '', category: item.groupId ? `group:${item.groupId}` : 'general', library_id: item.groupId ? Number(item.groupId) : null, image_url: item.media!.url, tags: '', source: JSON.stringify({ note: '图片已保存，等待自动分析', previewKind: 'reference' }), created_at: now, updated_at: now };
+    db.prompt_library.unshift(card); return { id: card.id, created: true, snapshot: structuredClone(card) as unknown as Record<string, unknown> };
+  });
+}
+export function applyImportedPrompt(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return withDb(db => {
+    const card = db.prompt_library.find(c => c.id === item.cardId && c.user_id === owner && !c.deleted_at); if (!card) throw new Error('卡片已删除');
+    if (card.importAppliedId === item.id) return card.updated_at || card.created_at;
+    const before = item.snapshot || {}, result = item.analysis!;
+    const writable = (key: keyof LocalPromptRecord) => !card.importManual?.includes(key) && JSON.stringify(card[key]) === JSON.stringify(before[key]);
+    if (writable('name')) card.name = result.title;
+    if (writable('text')) { card.text = result.prompt; card.content = result.prompt; }
+    if (writable('tags')) card.tags = JSON.stringify(result.tags);
+    if (!item.groupId && writable('library_id') && writable('category') && !card.library_id) {
+      const match = listLocalLibraries(owner).find(group => group.is_default !== 1 && group.name === result.category);
+      if (match) { card.library_id = match.id; card.category = `group:${match.id}`; }
+    }
+    if (writable('source')) card.source = JSON.stringify({ note: 'AI 反推 · ' + result.description, previewKind: 'reference', subcategory: result.category });
+    card.importAppliedId = item.id;
+    card.importAnalysis = result; card.updated_at = nowIso(); return card.updated_at;
+  });
+}
+export function undoImportedPrompt(owner: string, item: import('./library-import-types').LibraryImportItem) {
+  return withDb(db => {
+    const card = db.prompt_library.find(c => c.id === item.cardId && c.user_id === owner); if (!card) return true;
+    if (item.targetId) { card.attachments = card.attachments?.filter(a => a.importItemId !== item.id); return true; }
+    if (!item.created || card.importManual?.length || card.use_count || card.updated_at !== item.committedRevision) return false;
+    // Keep originals and metadata in a recoverable sidecar rather than hard-deleting the batch.
+    const dir = path.join(getLocalDataDirectory(), 'library-import', 'undo'); fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, `${item.id}.json`), JSON.stringify(card));
+    db.prompt_library = db.prompt_library.filter(c => c !== card); return true;
   });
 }
 

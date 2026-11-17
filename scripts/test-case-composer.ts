@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import { composeCaseReferences, casePrompt } from '../src/lib/case-library-composer';
+import type { ReferenceAsset } from '../src/lib/case-library-types';
+
+const asset = (id: string, prompt = '蓝色科幻海报') => ({ id, url: `/api/local-file/${id}.png`, title: id, prompt } as ReferenceAsset);
+const first = asset('first'), second = asset('second', '黑金字体设计');
+const initial = composeCaseReferences('用户已有需求', [], [first], true, 3);
+assert.ok(initial.content.startsWith('用户已有需求\n\n蓝色科幻海报'));
+assert.equal(initial.references[0].url, first.url);
+assert.equal(initial.content.match(/\[@图1\]/g)?.length, 1);
+const duplicate = composeCaseReferences(initial.content, initial.references, [first, first], true, 3);
+assert.deepEqual(duplicate, initial, '重复应用不能重复插图或堆叠提示词');
+const batch = composeCaseReferences(initial.content, initial.references, [first, second], true, 3);
+assert.equal(batch.references.length, 2);
+assert.ok(batch.content.includes('参考图2（second）：\n黑金字体设计'));
+assert.ok(batch.content.includes('[@图2]'));
+assert.equal(composeCaseReferences('已有输入', [], [asset('blank', '')], false, 3).content, '已有输入\n[@图1]');
+assert.throws(() => composeCaseReferences('', [], [asset('blank', '')], true, 3), /尚无提示词/);
+assert.throws(() => composeCaseReferences('', initial.references, [second], true, 1), /最多使用/);
+assert.throws(() => composeCaseReferences('', [], [{...first, deletedAt:'today'}], true, 3), /可用/);
+assert.equal(casePrompt({...first, prompt:'', analysis:{prompt:'分析结果'} as ReferenceAsset['analysis']}), '分析结果');
+console.log('PASS: draft preservation, image/prompt transfer, repeat idempotency, batch numbering, image-only mode, missing analysis, limit, trash, analysis fallback');

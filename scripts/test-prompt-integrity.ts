@@ -1,0 +1,72 @@
+import assert from 'node:assert/strict';
+import fsSync from 'node:fs';
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import { randomUUID } from 'node:crypto';
+import sharp from 'sharp';
+import * as db from '../src/lib/local-backend';
+import { collectStorageReferences } from '../src/lib/storage-lifecycle';
+import { exportLibrary, previewLibrary, readLibrary } from '../src/lib/library-transfer';
+async function main() {
+ const root = await fs.mkdtemp(path.join(os.tmpdir(),'hz-integrity-'));
+ process.env.LOCAL_DATA_DIR = root;
+ const owner = 'integrity-test';
+ try {
+  const p = db.createProject(owner,'原项目');
+  const file = db.saveBinaryFile(await sharp({create:{width:20,height:20,channels:3,background:'#678'}}).png().toBuffer(),'retained.png');
+  const card = db.createPrompt(owner,{project_id:p.id,text:'完整原文',image_url:file.url,name:'长期资产'});
+  assert.equal(card.project_id,null); assert.equal(card.source_project_id,p.id); assert.equal(card.source_project_name,p.name);
+  db.createImageRecord({user_id:owner,project_id:p.id,prompt:'图像',image_key:file.key,image_url:file.url,status:'completed'});
+  const snapshot = db.exportLocalProjectSnapshot(p.id, owner);
+  assert.equal(snapshot.prompts.length,1);
+  assert.ok(db.deleteProjectCascade(p.id,owner));
+  assert.equal(db.listProjects(owner).length,0); assert.equal(db.listImageRecords(owner).total,0);
+  assert.equal(db.listPrompts(owner).length,1); assert.ok(collectStorageReferences().used(file.key));
+  assert.equal(db.listDeletedProjects('other').length,0); assert.equal(db.restoreDeletedProject(p.id,'other'),false);
+  assert.ok(db.restoreDeletedProject(p.id,owner)); assert.equal(db.listImageRecords(owner).total,1);
+  db.clearLocalProjectArchiveData(p.id,owner,true);
+  assert.equal(db.listPrompts(owner).length,1); assert.ok(collectStorageReferences().used(file.key));
+  db.updatePrompt(card.id,owner,{text:'人工修改'});
+  for (let i=0;i<2;i++) db.restoreLocalProjectSnapshot(snapshot,owner,{projectId:randomUUID(),preserveRecordIds:false,assetByStorageKey:new Map(),assetByOriginalUrl:new Map()});
+  assert.equal(db.listPrompts(owner).length,1); assert.equal(db.listPrompts(owner)[0].text,'人工修改');
+  const standalone = db.createPrompt(owner,{text:'无项目也能保存'}); assert.equal(standalone.project_id,null);
+  assert.ok(db.deletePrompt(card.id,owner)); assert.equal(db.listPrompts(owner).length,1);
+  assert.equal(db.updatePrompt(card.id,owner,{text:'不允许编辑回收站'}),null);
+  assert.ok(collectStorageReferences().used(file.key)); assert.equal(db.restoreDeletedPrompt(card.id,'other'),false);
+  assert.ok(db.restoreDeletedPrompt(card.id,owner));
+  const exported = await exportLibrary(owner,'prompts',{mode:'all'},{name:'独立资产',author:'',description:''});
+  assert.equal(exported.count,2); assert.equal((await previewLibrary('other',await readLibrary(exported.bytes,'prompts'))).total,2);
+  db.deletePrompt(card.id,owner); assert.ok(db.permanentlyDeletePrompt(card.id,owner));
+  assert.equal(db.permanentlyDeletePrompt(standalone.id,owner),false);
+  const p2 = db.createProject(owner,'永久删除来源');
+  const retained = db.createPrompt(owner,{project_id:p2.id,text:'仍然保留',image_url:file.url});
+  assert.equal(db.permanentlyDeleteProject(p2.id,owner),false); db.deleteProjectCascade(p2.id,owner); db.permanentlyDeleteProject(p2.id,owner);
+  db.drainLocalFileCleanup(); assert.ok(await fs.stat(db.resolveLocalFilePath(file.key))); assert.ok(db.listPrompts(owner).some(p=>p.id===retained.id));
+  const storeFile = path.join(root,'local-data/db.json');
+  const store = JSON.parse(await fs.readFile(storeFile,'utf8')); store.version=1;
+  store.prompt_library.push({...retained,id:'legacy',project_id:p2.id,source_project_id:undefined});
+  await fs.writeFile(storeFile,JSON.stringify(store));
+  assert.equal(db.listPrompts(owner).find(p=>p.id==='legacy')?.project_id,null);
+  const migrated=JSON.parse(await fs.readFile(storeFile,'utf8')); assert.equal(migrated.version,2); assert.ok(migrated.integrity_audit.some((a:{action:string})=>a.action==='migrate-independent-prompts'));
+  const row = {...retained,id:'recovered',user_id:owner};
+  assert.equal(db.recoverIndependentPrompts(owner,[row],'test').added.length,1);
+  db.updatePrompt(row.id,owner,{text:'恢复后的人工修改'});
+  assert.equal(db.recoverIndependentPrompts(owner,[row],'test').skipped.length,1);
+  assert.equal(db.listPrompts(owner).find(p=>p.id===row.id)?.text,'恢复后的人工修改');
+  db.deletePrompt(row.id,owner); assert.equal(db.recoverIndependentPrompts(owner,[row],'test').skipped.length,1);
+  const beforeFailure = await fs.readFile(storeFile, 'utf8');
+  const originalRename = fsSync.renameSync;
+  try {
+    fsSync.renameSync = (() => { throw new Error('模拟提交失败'); }) as typeof fsSync.renameSync;
+    assert.throws(() => db.createPrompt(owner, {text:'不得半写入'}), /模拟提交失败/);
+  } finally { fsSync.renameSync = originalRename; }
+  assert.equal(await fs.readFile(storeFile, 'utf8'), beforeFailure);
+  assert.equal(db.listPrompts(owner).some(p=>p.text==='不得半写入'), false);
+  await fs.writeFile(storeFile, '{broken');
+  assert.throws(() => db.createPrompt(owner, {text:'不得覆盖损坏数据'}));
+  assert.equal(await fs.readFile(storeFile, 'utf8'), '{broken');
+  console.log(JSON.stringify({passed:true,checks:['ownership-migration','no-project-create','project-trash-restore','project-purge-keeps-prompts','archive-removal-keeps-prompts','repeated-restore-preserves-edits','prompt-trash-restore-purge','shared-media-survives-GC','export-without-project','owner-isolation','idempotent-recovery-preserves-edits-and-trash','atomic-audit','failed-write-rolls-back','corrupt-database-fails-closed']}));
+ } finally {await fs.rm(root,{recursive:true,force:true});}
+}
+void main().catch(e=>{console.error(e);process.exitCode=1;});

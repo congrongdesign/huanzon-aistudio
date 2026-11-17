@@ -8,11 +8,12 @@ import { registerVerifiedBackup } from './storage-lifecycle';
 import { getProjectById, restoreLocalProjectSnapshot, isLocalBackendEnabled, exportLocalProjectSnapshot, clearLocalProjectArchiveData, getLocalDataDirectory, deleteLocalFileByKey, drainLocalFileCleanup } from './local-backend';
 import { backupSnapshotHash } from './project-backup-snapshot';
 import { projectExistsForUser, restoreSupabaseProjectSnapshot } from './project-archive';
-import { getArchiveJob, getStoredArchiveJob, listStoredArchiveJobs, updateArchiveJob } from './project-archive-store';
-import type { ProjectArchiveEntry, ProjectArchiveAsset, ProjectArchiveManifest, ProjectArchiveRestoreOptions } from './project-archive-types';
+import { getArchiveJob, getStoredArchiveJob, listStoredArchiveJobs, updateArchiveJob, readArchiveConfig, type ArchiveConfig } from './project-archive-store';
+import { connectionFailure, retryableConnection, retryDelay } from './backup-connection';
+import type { BackupConnection, ProjectArchiveEntry, ProjectArchiveAsset, ProjectArchiveManifest, ProjectArchiveRestoreOptions } from './project-archive-types';
 
 type Catalog = { root: string; ready: boolean; entries: ProjectArchiveEntry[]; error: string; updatedAt: string };
-type State = { running?: boolean; initialized?: boolean; active?: { jobId: string; child: ChildProcess }; catalog?: Map<string, Catalog>; scans?: Set<string> };
+type State = { running?: boolean; initialized?: boolean; active?: { jobId: string; child: ChildProcess }; catalog?: Map<string, Catalog>; scans?: Set<string>; connection?: BackupConnection; connecting?: Promise<void>; timer?: ReturnType<typeof setInterval>; connectionKey?: string; lastAttempt?: number; attempts?: number };
 const globalState = globalThis as typeof globalThis & { hzBackupService?: State };
 const state = globalState.hzBackupService ||= {};
 class BackupWorkerTimeout extends Error {}
@@ -57,7 +58,7 @@ export function backupWorkerRequest<T>(input: object, options: { timeout?: numbe
       child.kill();
       if (error) reject(error); else resolve(result!);
     };
-    const renew = () => { clearTimeout(timer); timer = setTimeout(() => finish(new BackupWorkerTimeout('NAS 响应超时，任务已暂停，可检查连接后继续；原项目保留')), options.timeout || 120000); };
+    const renew = () => { clearTimeout(timer); timer = setTimeout(() => finish(new BackupWorkerTimeout('NAS 响应超时；原项目保留，正在等待连接恢复')), options.timeout || 120000); };
     renew();
     child.on('error', error => finish(error));
     child.on('close', (code, signal) => {
@@ -74,21 +75,74 @@ export function backupWorkerRequest<T>(input: object, options: { timeout?: numbe
           const value = JSON.parse(line);
           if (value.progress) { renew(); options.progress?.(value.progress); }
           else if ('result' in value) finish(undefined, value.result);
-          else if (value.error) finish(new Error(value.error));
+          else if (value.error) finish(Object.assign(new Error(value.error), { code: value.code }));
         } catch { /* SDK diagnostics may also use stdout. */ }
       }
     });
     child.stdin!.end(JSON.stringify(input));
   });
 }
+export function backupConnectionStatus(): BackupConnection {
+  return state.connection || { state: readArchiveConfig().syncDir ? 'checking' : 'unconfigured', message: '正在检查备份位置', checkedAt: '' };
+}
+export function checkBackupRepository(force = false): Promise<void> {
+  if (state.connecting) return state.connecting;
+  const config = readArchiveConfig();
+  const key = JSON.stringify(config);
+  if (state.connectionKey !== key) { state.connectionKey = key; state.lastAttempt = 0; state.attempts = 0; }
+  const interval = state.connection?.state === 'connected' ? 30000 : retryableConnection(state.connection?.state || 'unavailable') ? retryDelay(state.attempts || 0) : 300000;
+  if (!force && Date.now() - (state.lastAttempt || 0) < interval) return Promise.resolve();
+  // No connection probes compete with active file transfers.
+  if (state.running) return Promise.resolve();
+  state.lastAttempt = Date.now();
+  const previous = state.connection;
+  if (force || !previous || previous.state !== 'connected') state.connection = { state: 'checking', message: '正在连接并核对备份仓库', checkedAt: new Date().toISOString() };
+  state.connecting = (async () => {
+    let connection: BackupConnection;
+    try {
+      connection = await backupWorkerRequest<BackupConnection>({ action: 'connection', config, reconnect: true }, { timeout: 20000 });
+    } catch (error) {
+      connection = { state: connectionFailure(error), message: error instanceof Error ? error.message : '连接检查失败', checkedAt: new Date().toISOString() };
+    }
+    if (JSON.stringify(readArchiveConfig()) !== key) { state.connection = undefined; return; }
+    state.attempts = connection.state === 'connected' ? 0 : (state.attempts || 0) + 1;
+    connection.retryCount = state.attempts;
+    if (connection.state !== 'connected' && connection.state !== 'unconfigured') connection.nextRetryAt = new Date(Date.now() + (retryableConnection(connection.state) ? retryDelay(state.attempts) : 300000)).toISOString();
+    state.connection = connection;
+    if (connection.state === 'connected') {
+      const actual = connection.actualDirectory || config.syncDir;
+      if ((actual !== config.syncDir || (!config.remote && connection.remote)) && config.repositoryId) {
+        // The worker has checked the original repository ID at its new mount.
+        const next: ArchiveConfig = { ...config, syncDir: actual, remote: connection.remote || config.remote, updatedAt: new Date().toISOString() };
+        const file = path.join(getBaseDataDir(), 'project-archive-config.json');
+        fs.writeFileSync(`${file}.tmp`, JSON.stringify(next, null, 2)); fs.renameSync(`${file}.tmp`, file);
+        const cached = cachedBackupCatalog(config.syncDir);
+        persistCatalog({ ...cached, root: actual });
+        for (const job of listStoredArchiveJobs()) if (job.targetDir === config.syncDir && ['waiting', 'paused', 'queued'].includes(job.status)) updateArchiveJob(job.id, { targetDir: actual });
+      }
+      if (previous?.state !== 'connected') refreshBackupCatalog(actual, true);
+      for (const job of listStoredArchiveJobs()) if (job.status === 'waiting' && job.targetDir === actual) updateArchiveJob(job.id, { status: 'queued', error: null, stage: '连接已恢复，核对备份后继续' });
+      ensureBackupService();
+    } else if (config.syncDir) {
+      const cached = cachedBackupCatalog(config.syncDir);
+      if (cached.ready || cached.error !== connection.message) persistCatalog({ ...cached, ready: false, error: connection.message, updatedAt: new Date().toISOString() });
+    }
+  })().finally(() => { state.connecting = undefined; });
+  return state.connecting;
+}
 export function refreshBackupCatalog(root: string, force = false) {
   if (!root || state.running || state.scans?.has(root)) return;
+  if (root === readArchiveConfig().syncDir && state.connection && state.connection.state !== 'connected') return;
   const cached = cachedBackupCatalog(root);
   if (!force && Date.now() - Date.parse(cached.updatedAt || '1970') < 60000) return;
   (state.scans ||= new Set()).add(root);
   void backupWorkerRequest<{ entries: ProjectArchiveEntry[] }>({ action: 'scan', root }, { timeout: 15000 }).then(
     result => { if (cachedBackupCatalog(root).updatedAt === cached.updatedAt) persistCatalog({ root, ready: true, entries: result.entries, error: '', updatedAt: new Date().toISOString() }); },
-    error => { if (cachedBackupCatalog(root).updatedAt === cached.updatedAt) persistCatalog({ ...cached, ready: false, error: error.message, updatedAt: new Date().toISOString() }); },
+    error => {
+      if (cachedBackupCatalog(root).updatedAt !== cached.updatedAt) return;
+      persistCatalog({ ...cached, ready: false, error: error.message, updatedAt: new Date().toISOString() });
+      if (root === readArchiveConfig().syncDir) state.connection = { state: connectionFailure(error), message: error.message, checkedAt: new Date().toISOString() };
+    },
   ).finally(() => state.scans!.delete(root));
 }
 export function saveBackupCatalog(root: string, entries: ProjectArchiveEntry[]) {
@@ -97,12 +151,12 @@ export function saveBackupCatalog(root: string, entries: ProjectArchiveEntry[]) 
 export function controlBackupJob(jobId: string, action: 'pause' | 'resume' | 'cancel') {
   const job = getStoredArchiveJob(jobId); if (!job) throw new Error('任务不存在');
   if (action === 'resume') {
-    if (!['paused', 'failed', 'partial'].includes(job.status)) throw new Error('此任务无法继续');
+    if (!['waiting', 'paused', 'failed', 'partial'].includes(job.status)) throw new Error('此任务无法继续');
     const results = job.results.filter(result => result.status === 'completed');
     updateArchiveJob(jobId, { status: 'queued', stage: '等待继续', results, completed: results.length, failed: 0, error: null });
     ensureBackupService();
   } else {
-    if (!['queued', 'running', 'paused'].includes(job.status)) throw new Error('此任务已经结束');
+    if (!['queued', 'running', 'waiting', 'paused'].includes(job.status)) throw new Error('此任务已经结束');
     updateArchiveJob(jobId, { status: action === 'pause' ? 'paused' : 'cancelled', stage: action === 'pause' ? '已暂停，可继续；已完成备份保留' : '已取消；已完成备份保留', currentProjectId: null, currentProjectName: null });
     if (state.active?.jobId === jobId) state.active.child.kill();
   }
@@ -112,6 +166,9 @@ export function ensureBackupService() {
   if (!state.initialized) {
     state.initialized = true;
     for (const job of listStoredArchiveJobs()) if (job.status === 'running') updateArchiveJob(job.id, { status: 'paused', stage: '上次任务中断，点击继续', currentProjectId: null, currentProjectName: null });
+    state.timer = setInterval(() => { void checkBackupRepository().catch(error => console.error('备份连接检查失败', error)); }, 5000);
+    state.timer.unref();
+    void checkBackupRepository().catch(error => console.error('备份连接检查失败', error));
   }
   if (state.running) return; state.running = true;
   void (async () => {
@@ -130,8 +187,10 @@ export function ensureBackupService() {
             const options = { progress: (stage: string) => { if (getArchiveJob(job.id)?.status === 'running') updateArchiveJob(job.id, { stage }); }, child: (child: ChildProcess) => { state.active = { jobId: job.id, child }; } };
             let entry: ProjectArchiveEntry; let message: string; let restoredProjectId: string | undefined; let originalRemoved = false;
             if (job.action === 'archive') {
-              const result = await backupWorkerRequest<{ entry: ProjectArchiveEntry; assets: ProjectArchiveAsset[]; copies: { key: string; file: string; signature: string }[]; message: string; snapshotHash: string }>({ action: job.payload.removeOnly ? 'verify-removal' : 'backup', entryId: job.payload.backupEntryByProject?.[id], root: job.targetDir, userId: job.payload.userId, projectId: id, baseUrl: job.payload.baseUrl }, options);
+              const result = await backupWorkerRequest<{ entry: ProjectArchiveEntry; assets: ProjectArchiveAsset[]; copies: { key: string; file: string; signature: string }[]; message: string; snapshotHash: string }>({ action: job.payload.removeOnly ? 'verify-removal' : 'backup', operationId: job.payload.operationIds?.[id], entryId: job.payload.backupEntryByProject?.[id], root: job.targetDir, userId: job.payload.userId, projectId: id, baseUrl: job.payload.baseUrl }, options);
               entry = result.entry; message = result.message;
+              await backupWorkerRequest({ action: 'confirm-commit', root: job.targetDir, entry }, options);
+              if (getArchiveJob(job.id)?.status !== 'running') break;
               registerVerifiedBackup(job.targetDir, entry, result.assets || []);
               if (job.payload.deleteAfterBackup !== false && getArchiveJob(job.id)?.status === 'running') {
                 if (!isLocalBackendEnabled()) message += '；云端项目暂保留';
@@ -171,8 +230,12 @@ export function ensureBackupService() {
             updateArchiveJob(job.id, { completed: current.completed + 1, results: [...current.results, { projectId: job.action === 'archive' ? id : entry.projectId, projectName, status: 'completed', message, entryId: entry.id, restoredProjectId, originalRemoved }] });
           } catch (error) {
             const current = getArchiveJob(job.id)!; if (current.status !== 'running') break;
-            if (error instanceof BackupWorkerTimeout) {
-              updateArchiveJob(job.id, { status: 'paused', stage: error.message, currentProjectId: null, currentProjectName: null });
+            const failure = connectionFailure(error);
+            if (error instanceof BackupWorkerTimeout || ['unmounted', 'network-unavailable', 'authentication-required', 'permission-denied', 'identity-mismatch'].includes(failure)) {
+              updateArchiveJob(job.id, { status: 'waiting', stage: '等待备份位置恢复连接；已完成版本和本机项目保留', error: error instanceof Error ? error.message : String(error), currentProjectId: null, currentProjectName: null });
+              state.lastAttempt = 0;
+              state.connection = { state: failure, message: error instanceof Error ? error.message : 'NAS 连接中断', checkedAt: new Date().toISOString() };
+              const cached = cachedBackupCatalog(job.targetDir); persistCatalog({ ...cached, ready: false, error: state.connection.message, updatedAt: new Date().toISOString() });
               break;
             }
             updateArchiveJob(job.id, { failed: current.failed + 1, results: [...current.results, { projectId: id, projectName, status: 'failed', message: error instanceof Error ? error.message : String(error) }] });

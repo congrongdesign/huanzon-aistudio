@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getCurrentUserId } from "@/lib/auth";
 import { isCozeCloudRuntime } from "@/lib/deploy-mode";
 import { createArchiveJob, getArchiveJob, getArchiveRoot, getStoredArchiveJob, listStoredArchiveJobs, readArchiveConfig } from "@/lib/project-archive-store";
-import { backupWorkerRequest, cachedBackupCatalog, controlBackupJob, ensureBackupService, refreshBackupCatalog, saveBackupCatalog } from "@/lib/project-backup-service";
+import { backupConnectionStatus, checkBackupRepository, backupWorkerRequest, cachedBackupCatalog, controlBackupJob, ensureBackupService, refreshBackupCatalog, saveBackupCatalog } from "@/lib/project-backup-service";
 import type { ProjectArchiveEntry } from "@/lib/project-archive-types";
 
 function archiveDisabled() {
@@ -35,11 +35,13 @@ export async function GET(request: NextRequest) {
   const catalog = cachedBackupCatalog(targetDir);
   refreshBackupCatalog(targetDir);
   const entries = catalog.entries.filter(entry => !entry.ownerId || entry.ownerId === userId);
-  const ready = catalog.ready;
-  const error = catalog.error;
+  const connection = backupConnectionStatus();
+  const ready = catalog.ready && connection.state === 'connected';
+  const error = ready || connection.state === 'checking' ? '' : catalog.error || connection.message;
   return NextResponse.json({
     config: { ...config, syncDir: targetDir },
     ready,
+    connection,
     error,
     entries,
     jobs: listStoredArchiveJobs().filter(job => job.payload.userId === userId).slice(0, 20).map(({ payload: _payload, ...job }) => job),
@@ -57,6 +59,12 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const action = String(body.action || "");
 
+    if (action === 'reconnect') {
+      await checkBackupRepository(true);
+      refreshBackupCatalog(readArchiveConfig().syncDir, true);
+      return NextResponse.json({ success: true, connection: backupConnectionStatus() });
+    }
+
     if (["pause", "resume", "cancel"].includes(action)) {
       const jobId = String(body.jobId || "");
       if (getStoredArchiveJob(jobId)?.payload.userId !== userId) return NextResponse.json({ error: "任务不存在" }, { status: 404 });
@@ -70,6 +78,7 @@ export async function POST(request: NextRequest) {
       const root = getArchiveRoot(targetDir);
       const result = await backupWorkerRequest<{ config: object; entries: ProjectArchiveEntry[] }>({ action, root, userId }, { timeout: 15000 });
       saveBackupCatalog(root, result.entries);
+      await checkBackupRepository(true);
       return NextResponse.json({ success: true, config: result.config });
     }
     if (action === "refresh") {
@@ -103,7 +112,7 @@ export async function POST(request: NextRequest) {
           backupEntryByProject[id] = entry.id;
         }
       }
-      const active = listStoredArchiveJobs().find(job => job.payload.userId === userId && ["queued", "running", "paused"].includes(job.status) && job.payload.projectIds?.some(id => projectIds.includes(id)));
+      const active = listStoredArchiveJobs().find(job => job.payload.userId === userId && ["queued", "running", "waiting", "paused"].includes(job.status) && job.payload.projectIds?.some(id => projectIds.includes(id)));
       if (active) return NextResponse.json({ error: "所选项目已有备份任务，请等待完成", jobId: active.id }, { status: 409 });
       const job = createArchiveJob("archive", root, projectIds.length, {
         userId,
@@ -125,7 +134,7 @@ export async function POST(request: NextRequest) {
       const targetDir = String(body.targetDir || readArchiveConfig().syncDir || "").trim();
       if (!targetDir) return NextResponse.json({ error: "请填写 NAS / 本地归档目录" }, { status: 400 });
       const root = getArchiveRoot(targetDir);
-      const active = listStoredArchiveJobs().find(job => job.payload.userId === userId && ["queued", "running", "paused"].includes(job.status) && job.payload.entryIds?.some(id => entryIds.includes(id)));
+      const active = listStoredArchiveJobs().find(job => job.payload.userId === userId && ["queued", "running", "waiting", "paused"].includes(job.status) && job.payload.entryIds?.some(id => entryIds.includes(id)));
       if (active) return NextResponse.json({ error: "此版本正在恢复，请等待完成", jobId: active.id }, { status: 409 });
       const job = createArchiveJob("restore", root, entryIds.length, {
         userId,

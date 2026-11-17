@@ -158,7 +158,7 @@ function main() {
     gitCommit: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: rootDir, encoding: 'utf8' }).trim(),
     verification: {
       macOS: 'Installed in /Applications and actual desktop window checked; original projects, connection settings and draft preserved.',
-      windows: 'Cross-built on macOS; package structure, PE x64 image dependencies and integrity checked. Windows installation/upgrade requires colleague device verification.',
+      windows: 'Cross-built on macOS; setup and portable main EXE extracted and matched across all icon sizes, company/product/version; sharp and SQLite x64 dependencies checked. Windows real installation/upgrade, taskbar pinning and DPI require colleague verification.',
       signing: 'Unsigned; OS security confirmation may be required.',
       paidGeneration: 'Not performed.',
     },

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import { listArchiveEntries, findArchiveEntry, deleteArchivePackage, writeArchiveConfig, updateArchiveEntryMeta, assertArchiveRoot } from '../lib/project-archive-store';
+import { checkBackupConnection, remoteForDirectory, smbMounts } from '../lib/backup-connection';
 import { streamProjectBackup, prepareStreamRestore, hashBackupFile, readStreamManifest, verifyBackupFile, verifiedLocalBackupCopies } from '../lib/project-backup-stream';
 import { backupSnapshotHash } from '../lib/project-backup-snapshot';
 import { browseStorageDirectory, createStorageDirectory, validateStorageDirectory } from '../lib/storage-directory-browser';
@@ -17,14 +18,21 @@ const progress = (stage: string) => send({ progress: stage });
 async function run(input: Record<string, unknown>) {
   const root = String(input.root || ''); const userId = String(input.userId || '');
   switch (input.action) {
+    case 'connection': return checkBackupConnection(input.config as Parameters<typeof checkBackupConnection>[0], Boolean(input.reconnect));
+    case 'confirm-commit': {
+      assertArchiveRoot(root);
+      const entry = input.entry as { relativePath: string; size: number };
+      if (fs.statSync(path.join(root, entry.relativePath)).size !== entry.size) throw new Error('备份文件大小已变化，原项目保留');
+      return { ready: true };
+    }
     case 'scan': return { entries: await listArchiveEntries(root) };
     case 'configure': {
       assertArchiveRoot(root);
       const probe = path.join(root, `.backup-probe-${process.pid}`);
       try { fs.writeFileSync(probe, 'ok', { flag: 'wx' }); } finally { if (fs.existsSync(probe)) fs.unlinkSync(probe); }
-      return { config: writeArchiveConfig(root), entries: await listArchiveEntries(root) };
+      return { config: writeArchiveConfig(root, remoteForDirectory(root, await smbMounts())), entries: await listArchiveEntries(root) };
     }
-    case 'backup': return streamProjectBackup({ projectId: String(input.projectId), userId, root, baseUrl: String(input.baseUrl || '') }, progress);
+    case 'backup': return streamProjectBackup({ projectId: String(input.projectId), userId, root, baseUrl: String(input.baseUrl || ''), operationId: input.operationId ? String(input.operationId) : undefined }, progress);
     case 'verify-removal': {
       const entry = await findArchiveEntry(root, String(input.entryId));
       if (entry.ownerId && entry.ownerId !== userId) throw new Error('无权处理这个备份');
@@ -70,6 +78,6 @@ process.stdin.on('end', () => {
   void run(JSON.parse(request)).then(result => {
     process.stdout.write(`${JSON.stringify({ result })}\n`, () => process.exit(0));
   }, error => {
-    process.stdout.write(`${JSON.stringify({ error: error instanceof Error ? error.message : String(error) })}\n`, () => process.exit(1));
+    process.stdout.write(`${JSON.stringify({ error: error instanceof Error ? error.message : String(error), code: (error as NodeJS.ErrnoException)?.code })}\n`, () => process.exit(1));
   });
 });

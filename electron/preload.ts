@@ -1,10 +1,10 @@
-import { contextBridge, ipcRenderer } from 'electron';
+import { contextBridge, ipcRenderer, webUtils } from 'electron';
 
 // Restore before React reads localStorage. The snapshot lives outside the install
 // directory and survives a different localhost port after an upgrade.
 try {
   if (location.protocol === 'http:' && location.hostname === '127.0.0.1') {
-    const selected = (key: string) => /^(hz_(grs_|ds_|chat_|codia_|provider_|active_provider_|capability_bindings|operation_routes|image_models_cache|image_favorite_models|model_category_overrides)|hz_theme$|theme$)/.test(key);
+    const selected = (key: string) => /^(hz_(grs_|ds_|chat_|codia_|provider_|active_provider_|capability_bindings|operation_routes|image_models_cache|image_favorite_models|model_category_overrides)|hz_canvas_edge_mode_v1$|hz_theme$|theme$)/.test(key);
     const saved = ipcRenderer.sendSync('desktop:settings-read') as Record<string, string>;
     const set = Storage.prototype.setItem;
     for (const [key, value] of Object.entries(saved)) {
@@ -46,8 +46,14 @@ type DesktopUpdateState =
   | { status: 'error'; version: string; message: string };
 
 contextBridge.exposeInMainWorld('electronAPI', {
+  prepareLibraryImport: (files: File[]) => {
+    const paths = files.map(file => { try { return webUtils.getPathForFile(file); } catch { return ''; } });
+    return ipcRenderer.invoke('desktop:prepare-library-import', paths);
+  },
+  openExternal: (url: string) => ipcRenderer.invoke('desktop:open-external', url),
   isDesktop: true,
   platform: process.platform,
+  traceInIllustrator: (request: import('./illustrator-trace').IllustratorTraceRequest) => ipcRenderer.invoke('desktop:illustrator-trace', request),
   exportImages: (request: import('./image-export').ImageExportRequest) => ipcRenderer.invoke('desktop:export-images', request),
   revealExport: (filePath: string) => ipcRenderer.invoke('desktop:reveal-export', filePath),
   onImageExportProgress: (callback: (value: import('./image-export').ImageExportProgress) => void) => {

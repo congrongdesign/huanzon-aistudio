@@ -65,10 +65,10 @@ export default function OperationRoutingPanel({
         return (
           <SettingsSection key={definition.key} title={definition.label} description={definition.hint}>
             <SettingsCard>
-              <SettingsRow label="服务商" description={route?.providerId ? '独立配置此操作' : '跟随默认能力'}>
-                <NeutralSelect aria-label={`${definition.label}服务商`} value={route?.providerId || ''} onChange={e=>onSelectProvider(definition.key,e.target.value)}><option value="">跟随默认能力</option>{providerCandidates.map(p=><option value={p.id} key={p.id}>{p.name}</option>)}</NeutralSelect>
+              <SettingsRow label="服务商" description={route?.providerId ? '独立配置此操作' : '使用当前生图模型'}>
+                <NeutralSelect aria-label={`${definition.label}服务商`} value={route?.providerId || ''} onChange={e=>onSelectProvider(definition.key,e.target.value)}><option value="">使用当前生图模型</option>{providerCandidates.map(p=><option value={p.id} key={p.id}>{p.name}</option>)}</NeutralSelect>
               </SettingsRow>
-              {definition.requiresModel&&route?.providerId&&<SettingsRow label="模型" description={!providerModels.length?'先检测服务商模型目录':undefined}><ModelPicker label={`${definition.label}模型`} value={route.modelId||''} options={[{value:'',label:'选择模型'},...providerModels.map(m=>({value:m.id,label:getModelLabel(m,m.id),group:selectedProvider?.name}))]} onChange={v=>onSelectModel(definition.key,v)}/></SettingsRow>}
+              {definition.requiresModel&&route?.providerId&&<SettingsRow label="模型" description={!providerModels.length?'先在模型配置中刷新该服务的模型':undefined}><ModelPicker label={`${definition.label}模型`} value={route.modelId||''} options={[{value:'',label:'选择模型'},...providerModels.map(m=>({value:m.id,label:getModelLabel(m,m.id),group:selectedProvider?.name}))]} onChange={v=>onSelectModel(definition.key,v)}/></SettingsRow>}
             </SettingsCard>
             {route?.providerId&&<div className="mt-2 flex items-center justify-between gap-3 text-[11px] text-muted-foreground"><span className="truncate" title={selectedProvider?.baseUrl}>{selectedProvider?.name||route.providerId}</span><button type="button" className="motif-link" onClick={()=>onClearRoute(definition.key)}>恢复默认</button></div>}
           </SettingsSection>

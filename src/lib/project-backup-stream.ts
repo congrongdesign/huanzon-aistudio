@@ -13,7 +13,7 @@ import { collectProjectAssets, downloadAsset, loadProjectSnapshot, MissingLocalA
 import { isLocalBackendEnabled, resolveLocalFilePath } from './local-backend';
 import { mediaWritePath } from './media-storage';
 import { fileFingerprint, managedCopies } from './storage-lifecycle';
-import { assertArchiveRoot, makeArchiveEntry } from './project-archive-store';
+import { assertArchiveRoot, makeArchiveEntry, listArchiveEntries } from './project-archive-store';
 import { normalizeBackupManifest } from './project-backup-format';
 import { backupSnapshotHash } from './project-backup-snapshot';
 import type { ProjectArchiveManifest, ProjectArchiveAssetReplacement } from './project-archive-types';
@@ -137,13 +137,27 @@ async function thumbnail(manifest: ProjectArchiveManifest, paths: Map<string, st
   if (!tiles.length) return '';
   return `data:image/webp;base64,${(await sharp({ create: { width: 480, height: 300, channels: 3, background: '#ececec' } }).composite(tiles).webp({ quality: 65 }).toBuffer()).toString('base64')}`;
 }
-export async function streamProjectBackup(input: { projectId: string; userId: string; root: string; baseUrl: string }, progress: (stage: string) => void) {
+export async function streamProjectBackup(input: { projectId: string; userId: string; root: string; baseUrl: string; operationId?: string }, progress: (stage: string) => void) {
   const temp = process.env.HZ_BACKUP_WORK_DIR || await fsp.mkdtemp(path.join(os.tmpdir(), 'hz-backup-worker-'));
   await fsp.mkdir(temp, { recursive: true });
   let remotePart = '';
   try {
     const snapshot = await loadProjectSnapshot(input.projectId, input.userId);
-    const manifest: ProjectArchiveManifest = { format: 'huanzon-aistudio-project', version: 2, mode: 'archive', archiveId: `archive_${randomUUID()}`, originalProjectId: input.projectId, projectName: String(snapshot.project.name), exportedAt: new Date().toISOString(), appVersion: '0.2.2', data: snapshot, assets: [], missingHistoryAssets: [] };
+    assertArchiveRoot(input.root);
+    // A disconnect can happen after rename but before the parent records success.
+    // Reconcile the durable operation ID before creating another version.
+    if (input.operationId) {
+      const existing = (await listArchiveEntries(input.root)).find(entry => entry.id === input.operationId && entry.projectId === input.projectId && entry.ownerId === input.userId);
+      if (existing) {
+        progress(`${existing.projectName} · 核对中断前已提交的备份`);
+        const file = path.join(input.root, existing.relativePath);
+        if (await hashBackupFile(file, bytes => progress(`${existing.projectName} · 核对备份 ${bytes} 字节`)) !== existing.checksum) throw new Error('已提交备份校验失败，原项目保留');
+        const saved = await readStreamManifest(file);
+        await verifyBackupFile(file, saved, progress);
+        return { entry: existing, assets: saved.assets, copies: await verifiedLocalBackupCopies(saved.assets), snapshotHash: backupSnapshotHash(saved.data), message: '已核对中断前完成的备份' };
+      }
+    }
+    const manifest: ProjectArchiveManifest = { format: 'huanzon-aistudio-project', version: 2, mode: 'archive', archiveId: input.operationId || `archive_${randomUUID()}`, originalProjectId: input.projectId, projectName: String(snapshot.project.name), exportedAt: new Date().toISOString(), appVersion: '0.2.3', data: snapshot, assets: [], missingHistoryAssets: [] };
     const sources = collectProjectAssets(snapshot); const paths = new Map<string, string>();
     for (let i = 0; i < sources.length; i++) {
       const source = sources[i]; progress(`${manifest.projectName} · 准备资源 ${i + 1}/${sources.length}`);
@@ -196,6 +210,7 @@ export async function streamProjectBackup(input: { projectId: string; userId: st
     const handle = await fsp.open(remotePart, 'r+'); try { await handle.sync(); } finally { await handle.close(); }
     progress(`${manifest.projectName} · 正在校验 NAS 文件`);
     if (await hashBackupFile(remotePart, bytes => progress(`${manifest.projectName} · 校验 NAS ${Math.round(bytes / size * 100)}%`)) !== checksum) throw new Error('NAS 写入校验失败，本机项目已保留');
+    assertArchiveRoot(input.root);
     await fsp.rename(remotePart, target); remotePart = '';
     await atomicJson(`${target}.meta.json`, entry);
     return { entry, assets: manifest.assets, copies: await verifiedLocalBackupCopies(manifest.assets), snapshotHash: backupSnapshotHash(snapshot), message: manifest.missingHistoryAssets!.length ? `已备份；保留 ${manifest.missingHistoryAssets!.length} 个此前已删除历史图片的链接说明` : '已备份' };

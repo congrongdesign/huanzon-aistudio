@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
 import { performance } from 'node:perf_hooks';
-import { uploadFont, getFont, listFonts, updateFont, changeFontGroup, collectFont, fontFilePath, saveGenerationRecipe } from '../src/lib/font-library-store';
+import { uploadFont, changeFontDeletion, getFont, listFonts, updateFont, changeFontGroup, collectFont, fontFilePath, saveGenerationRecipe } from '../src/lib/font-library-store';
 import { buildFontComposer } from '../src/lib/font-library-types';
 import { createProject, createImageRecord, saveBinaryFile, hardDeleteImageRecord, createReferenceImage } from '../src/lib/local-backend';
 async function main() {
@@ -23,6 +23,16 @@ async function main() {
     await changeFontGroup(owner, 'delete', groups[0].id, ''); assert.equal((await getFont(owner, card.id)).groupId, null);
     await updateFont(owner, card.id, { action: 'delete' }); assert.equal((await listFonts(owner, new URLSearchParams())).total, 8);
     await updateFont(owner, card.id, { action: 'restore' }); assert.equal((await listFonts(owner, new URLSearchParams())).total, 9);
+    const batchIds = (await listFonts(owner, new URLSearchParams())).cards.slice(0, 2).map(c => c.id);
+    await assert.rejects(() => changeFontDeletion(owner, [...batchIds, 'missing'], 'delete'));
+    assert.equal((await listFonts(owner, new URLSearchParams())).total, 9);
+    await assert.rejects(() => changeFontDeletion('different-user', batchIds, 'delete'));
+    await changeFontDeletion(owner, [...batchIds, batchIds[0]], 'delete');
+    assert.equal((await listFonts(owner, new URLSearchParams())).total, 7);
+    const trash = await listFonts(owner, new URLSearchParams({filter:'trash'}));
+    assert.equal(trash.total, 2); assert.equal(trash.counts.trash, 2);
+    await changeFontDeletion(owner, batchIds, 'restore');
+    assert.equal((await listFonts(owner, new URLSearchParams())).total, 9);
     const sample = { ...edited, references: [{ ...card.cover, url: '/ref1', label: '原图1', role: 'reference' as const }, { ...card.cover, url: '/ref2', label: '原图2', role: 'reference' as const }] };
     const result = buildFontComposer({ card: sample, mode: 'append' }, '我的草稿[@图1]', [{ url: '/draft', label: '草稿' }]);
     assert.equal(result.refs.length, 4); assert.match(result.text, /我的草稿/); assert.match(result.text, /模仿图3，保留图4/);
@@ -46,7 +56,7 @@ async function main() {
     const index = JSON.parse(await fs.readFile(indexFile, 'utf8')); index.cards = Array.from({ length: 1000 }, (_, i) => ({ ...card, id: `bench-${i}`, title: `字体${i}` })); await fs.writeFile(indexFile, JSON.stringify(index));
     const start = performance.now(); const list = await listFonts(owner, new URLSearchParams({ page: '2' })); const elapsed = performance.now() - start;
     assert.equal(list.cards.length, 24); assert.equal(list.total, 1000); assert.ok(!('prompt' in list.cards[0]));
-    console.log(JSON.stringify({ passed: true, checks: ['upload-validation', 'ownership', 'concurrent-index', 'conflict', 'group-delete', 'soft-delete-undo', 'reference-remap', 'missing-reference', 'exact-recipe', 'idempotence', 'source-deletion-survival', '1000-card-pagination'], pageMs: Math.round(elapsed * 100) / 100 }));
+    console.log(JSON.stringify({ passed: true, checks: ['upload-validation', 'ownership', 'concurrent-index', 'conflict', 'group-delete', 'soft-delete-undo', 'atomic-batch-delete-restore', 'trash-list', 'reference-remap', 'missing-reference', 'exact-recipe', 'idempotence', 'source-deletion-survival', '1000-card-pagination'], pageMs: Math.round(elapsed * 100) / 100 }));
   } finally { await fs.rm(dir, { recursive: true, force: true }); }
 }
 void main();

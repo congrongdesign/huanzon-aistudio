@@ -12,7 +12,7 @@ for (const name of fs.readdirSync(runtime)) {
 for (const name of fs.readdirSync(path.join(runtime, '.next'))) {
   if (name === 'cache') fs.rmSync(path.join(runtime, '.next', name), { recursive: true, force: true });
 }
-for (const file of ['server.js', '.next/BUILD_ID', 'workers/project-backup-worker.cjs', 'node_modules/next/package.json']) {
+for (const file of ['server.js', '.next/BUILD_ID', 'workers/project-backup-worker.cjs', 'workers/library-import-worker.cjs', 'node_modules/next/package.json']) {
   if (!fs.existsSync(path.join(runtime, file))) throw new Error(`Runtime missing ${file}`);
 }
 console.log('Standalone sanitized; no developer data or root environment files included.');

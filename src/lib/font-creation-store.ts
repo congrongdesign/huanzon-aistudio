@@ -55,8 +55,9 @@ export async function selectFontStyle(owner: string, id: string, revision: numbe
   const card = input.cardId ? await getFont(owner, input.cardId) : null;
   return mutate(owner, id, async session => { checkRevision(session, revision);
     if (card && session.activeStyle?.cardId === card.id && session.activeStyle.mode === (input.mode === 'image' ? 'image' : 'recipe')) {
-      if (session.activeStyle.mode === 'recipe' && (!session.draft.stylePromptInInput || !session.draft.userText.trim())) {
-        session.draft = withFontStyleInput(session.draft, session.draft.stylePrompt || session.activeStyle.prompt);
+      const candidate = withFontStyleInput(session.draft, session.draft.stylePrompt || session.activeStyle.prompt);
+      if (session.activeStyle.mode === 'recipe' && candidate.userText !== session.draft.userText) {
+        session.draft = candidate;
         session.revision++; session.updatedAt = new Date().toISOString();
       }
       return session;

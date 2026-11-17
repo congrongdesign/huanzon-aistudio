@@ -2,17 +2,19 @@
 
 import { memo, useEffect, useMemo, useRef, useState } from 'react';
 import { FlowEdge } from '@/components/ui/motif/flow-edge';
-import { canvasConnectionGeometry } from '@/lib/canvas-lineage';
-import { flowingCanvasEdges, CanvasEdgeScene, type CanvasView, type SceneEdge } from '@/lib/canvas-edge-scene';
+import { flowingCanvasEdges, CanvasEdgeScene, type CanvasView } from '@/lib/canvas-edge-scene';
+import { presentCanvasEdges, bundleCanvasEdges, canvasRemoteHints, type CanvasEdgeMode } from '@/lib/canvas-edge-presentation';
 import type { CanvasImage } from '@/lib/types';
 
-export const CanvasFlowEdges = memo(function CanvasFlowEdges({ images, viewport, getSize, selectedIds, scale = 1, interacting = false }: {
+export const CanvasFlowEdges = memo(function CanvasFlowEdges({ images, viewport, getSize, selectedIds, scale = 1, interacting = false, mode = 'smart', onLocate }: {
   images: CanvasImage[];
   viewport: CanvasView | null;
   getSize: (image: CanvasImage) => { w: number; h: number };
   selectedIds: string[];
   scale?: number;
   interacting?: boolean;
+  mode?: CanvasEdgeMode;
+  onLocate?: (ids: string[]) => void;
 }) {
   const [scene, setScene] = useState<CanvasEdgeScene>();
   const cache = useRef<CanvasEdgeScene | undefined>(undefined);
@@ -37,39 +39,24 @@ export const CanvasFlowEdges = memo(function CanvasFlowEdges({ images, viewport,
     return () => { cancelled = true; clearTimeout(timer); };
   }, [images, getSize]);
 
-  const visible = useMemo(() => scene && viewport ? scene.visible(viewport) : [], [scene, viewport]);
   const selected = useMemo(() => new Set(selectedIds), [selectedIds]);
-  const overview = scale < 0.4 && (scene?.edges.size || 0) > 60;
-  const { details, summaries } = useMemo(() => {
-    if (!overview || !scene) return { details: visible, summaries: [] as SceneEdge[] };
-    const groups = new Map<string, SceneEdge[]>();
-    const details: SceneEdge[] = [];
-    for (const edge of visible) {
-      if (edge.active || selected.has(edge.source) || selected.has(edge.target)) { details.push(edge); continue; }
-      const source = scene.rects.get(edge.source)!;
-      const target = scene.rects.get(edge.target)!;
-      const key = `${edge.source}:${Math.floor((target.x - source.x) / 2400)}:${Math.floor((target.y - source.y) / 1600)}`;
-      const group = groups.get(key) || []; group.push(edge); groups.set(key, group);
-    }
-    const summaries: SceneEdge[] = [];
-    for (const [key, edges] of groups) {
-      if (edges.length < 3) { details.push(...edges); continue; }
-      const targets = edges.map(e => scene.rects.get(e.target)!);
-      const x = Math.min(...targets.map(t => t.x)), y = Math.min(...targets.map(t => t.y));
-      const right = Math.max(...targets.map(t => t.x + t.width)), bottom = Math.max(...targets.map(t => t.y + t.height));
-      summaries.push({ ...edges[0], key: `group:${key}`, geometry: canvasConnectionGeometry(scene.rects.get(edges[0].source)!, { x, y, width: right - x, height: bottom - y }) });
-    }
-    return { details, summaries };
-  }, [overview, scene, visible, selected]);
+  const presentation = useMemo(() => scene && viewport ? presentCanvasEdges(scene, viewport, scale, selected, mode) : { edges: [], remote: [] }, [scene, viewport, scale, selected, mode]);
+  const overview = mode === 'smart' && scale < 0.3 && (scene?.edges.size || 0) > 60;
+  const bundles = useMemo(() => scene && overview ? bundleCanvasEdges(scene, presentation.edges.filter(edge => !edge.active && !selected.has(edge.source) && !selected.has(edge.target))) : [], [scene, presentation, selected, overview]);
+  const bundled = useMemo(() => new Set(bundles.flatMap(bundle => bundle.keys)), [bundles]);
+  const details = presentation.edges.filter(edge => !bundled.has(edge.key) && (!overview || edge.active || selected.has(edge.source) || selected.has(edge.target)));
+  const hints = useMemo(() => scene && viewport ? canvasRemoteHints(scene, presentation.remote, viewport, scale, selected) : [], [scene, presentation, viewport, scale, selected]);
   if (!viewport || !scene) return null;
   const active = flowingCanvasEdges(details,selected,interacting);
-  return <div className="pointer-events-none absolute inset-0" aria-hidden="true" data-canvas-flow-edges data-flowing-edges={active.length} data-routes={scene.edges.size} data-route-computations={scene.routeComputations} data-edge-overview={overview}>
-    <svg className="absolute left-0 top-0 overflow-visible" width="1" height="1" fill="none" data-static-edges>
-      {[...summaries, ...details].map(edge => {
+  return <div className="pointer-events-none absolute inset-0" data-canvas-flow-edges data-flowing-edges={active.length} data-routes={scene.edges.size} data-route-computations={scene.routeComputations} data-edge-overview={overview} data-edge-mode={mode}>
+    <svg aria-hidden="true" className="absolute left-0 top-0 overflow-visible" width="1" height="1" fill="none" data-static-edges>
+      {bundles.map(bundle => { const g = bundle.geometry; return <path key={`bus:${bundle.key}`} data-edge-bundle={bundle.keys.length} d={g.d} transform={`translate(${g.x} ${g.y})`} className="canvas-static-edge is-bundle" strokeWidth={1.5} vectorEffect="non-scaling-stroke" strokeLinecap="round"/>; })}
+      {details.map(edge => {
         const g = edge.geometry, emphasized = selected.has(edge.source) || selected.has(edge.target);
         return <path key={edge.key} d={g.d} transform={`translate(${g.x} ${g.y})`} className={`canvas-static-edge ${emphasized ? 'is-selected' : ''}`} strokeWidth={emphasized ? 2 : 1.5} vectorEffect="non-scaling-stroke" strokeLinecap="round"/>;
       })}
     </svg>
     {active.map(edge => { const g = edge.geometry; return <FlowEdge key={edge.key} d={g.d} axis={g.axis} reverse={g.reverse} viewBox={`0 0 ${g.width} ${g.height}`} active strokeWidth={2} glow={1} className="motif-canvas-flow-edge is-selected" style={{ position: 'absolute', left: g.x, top: g.y, width: g.width, height: g.height }}/>; })}
+    {!interacting && onLocate && hints.map(hint => <button key={hint.key} type="button" data-edge-remote={hint.key} className="canvas-remote-hint pointer-events-auto absolute flex items-center gap-1.5 rounded-full border border-border bg-background/95 px-2.5 py-1.5 text-xs text-foreground shadow-sm hover:bg-muted" style={{ left: hint.x, top: hint.y, transform: `scale(${1 / scale})`, transformOrigin: 'top left' }} title="定位屏幕外的关联图片" onMouseDown={event => event.stopPropagation()} onClick={event => { event.stopPropagation(); onLocate(hint.ids); }}><span aria-hidden="true">{hint.direction}</span>{hint.label}<span className="text-muted-foreground">定位</span></button>)}
   </div>;
 });

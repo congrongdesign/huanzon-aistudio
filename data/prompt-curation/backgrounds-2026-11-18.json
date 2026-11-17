@@ -1,0 +1,905 @@
+{
+  "version": 1,
+  "batch": "design-curation-2026-11-18-backgrounds",
+  "collectedAt": "2026-11-18",
+  "selectionMethod": "公开案例全文与原图逐张核对，忠实翻译，保留来源参数和实际画幅；独立新增批次。",
+  "prompts": [
+    {
+      "key": "promptlibrary-99239",
+      "name": "柔彩曲面｜极简渐变抽象",
+      "category": "背景设计",
+      "subcategory": "色域与抽象地景",
+      "text": "极简背景，渐变，简单形状，柔和色彩，浅粉色与深黄色，平滑曲线，抽象形状，柔软边缘，苹果手机壁纸风格。",
+      "tags": [
+        "竖版",
+        "渐变",
+        "柔和彩色",
+        "曲面",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-3c0a81baa8105dd70a7d.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Abstract-Gradient-Shapes-midjourney-prompt.webp"
+      ],
+      "originalText": "Minimalist background, gradient, simple shapes, soft colors, light pink and dark yellow, smooth curves, abstract shapes, soft edges, in the style of Apple phone wallpaper.",
+      "source": {
+        "key": "promptlibrary-99239",
+        "subcategory": "色域与抽象地景",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/abstract-gradient-shapes/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Abstract-Gradient-Shapes-midjourney-prompt.webp",
+        "previewDimensions": [
+          552,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-83082",
+      "name": "暗夜弧光｜红蓝半圆光环",
+      "category": "背景设计",
+      "subcategory": "几何与轨道光环",
+      "text": "干净的黑色壁纸，呈现一道红色与蓝色的半圆形弧光，平滑渐变，极简而现代的设计，适合作为简洁时尚的智能手机背景。\n\n--ar 9:16 --v 6.1",
+      "tags": [
+        "竖版",
+        "黑底",
+        "光弧",
+        "红蓝渐变",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-90ec03d9461dfc7331cd.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/09/Minimalist-Arc-Light-Wallpaper-midjourney-prompt-scaled.webp"
+      ],
+      "originalText": "Clean black wallpaper featuring a semi-circular arc of light in red and blue, smooth gradient, minimalist and modern design, perfect for a sleek smartphone background --ar 9:16 --v 6.1",
+      "source": {
+        "key": "promptlibrary-83082",
+        "subcategory": "几何与轨道光环",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-arc-light-wallpaper/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/09/Minimalist-Arc-Light-Wallpaper-midjourney-prompt-scaled.webp",
+        "previewDimensions": [
+          1435,
+          2560
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-82599",
+      "name": "热带撞色｜龟背竹与棕榈叶",
+      "category": "背景设计",
+      "subcategory": "植物与花卉背景",
+      "text": "数字壁纸，手机壁纸，大胆的热带抽象风格，龟背竹与棕榈叶，色彩丰富。\n\n--ar 1:2 --v 6.1",
+      "tags": [
+        "竖版",
+        "热带",
+        "彩色叶片",
+        "抽象",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-6b38ccbc7e552dfc4e69.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/09/Bold-Tropical-Abstract-Wallpaper-midjourney-prompt.webp"
+      ],
+      "originalText": "digital wallpaper, mobile wallpaper, bold tropical abstract, montera and palm leaves, colorful --ar 1:2 --v 6.1",
+      "source": {
+        "key": "promptlibrary-82599",
+        "subcategory": "植物与花卉背景",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/bold-tropical-abstract-wallpaper/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/09/Bold-Tropical-Abstract-Wallpaper-midjourney-prompt.webp",
+        "previewDimensions": [
+          768,
+          1536
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-105512",
+      "name": "梦核海面｜暮色中的孤独旅馆",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "一间普通的20世纪80年代路边汽车旅馆卧室，莫名独自矗立在无边无际的广阔浅海中央。房间有三面贴着褪色米色壁纸的墙，却没有正面墙壁，使整个室内暴露于大海。一张铺着褪色碎花床罩、整理整齐的双人床，一盏发光的床头灯，一个木制抽屉柜，一台旧电视和一幅装框的山景画。旅馆地毯在平静的青绿色海水开始处突然结束，小浪轻轻触碰地毯边缘。地平线上没有其他建筑、岛屿或陆地。浅薰衣草色的黄昏天空，奇异、平静却又令人深感不安的氛围，不可能存在的梦境建筑，怀旧阈限空间梦核，写实电影摄影，细微胶片颗粒，无人物，无文字。\n\n--ar 9:16 --raw --v 8.2",
+      "tags": [
+        "竖版",
+        "梦核",
+        "电影摄影",
+        "海洋",
+        "怀旧",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-1efa0591b0cbfaab8bd8.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Liminal-Motel-Ocean-Bedroom-midjourney-prompt.webp"
+      ],
+      "originalText": "An ordinary 1980s roadside motel bedroom inexplicably standing alone in the middle of a vast endless shallow ocean, the room has three faded beige wallpapered walls but no front wall, exposing the entire interior to the open sea, a neatly made double bed with a faded floral bedspread, a glowing bedside lamp, a wooden dresser, an old television, and a framed painting of a mountain landscape, the motel carpet ends abruptly where calm turquoise ocean water begins, tiny waves gently touching the edge of the carpet, no other buildings, no islands, no land anywhere on the horizon, pale lavender twilight sky, strange peaceful yet deeply eerie atmosphere, impossible dream architecture, nostalgic liminal dreamcore, realistic cinematic photography, subtle film grain, no people, no text --ar 9:16 --raw --v 8.2",
+      "source": {
+        "key": "promptlibrary-105512",
+        "subcategory": "超现实与创意地景",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/liminal-motel-ocean-bedroom/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Liminal-Motel-Ocean-Bedroom-midjourney-prompt.webp",
+        "previewDimensions": [
+          673,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-98373",
+      "name": "雨夜森居｜暖光玻璃木屋",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "一座奢华的现代双层小屋坐落于幽静森林深处，在阴暗的暴风雨天空下发出温暖光芒。巨大的落地窗展露出令人向往的室内空间，与室外寒冷、雾气弥漫的空气形成对比。高大树木在渐起的风中轻轻摇摆，其剪影融入雾蒙蒙的夜色。雨开始落下，仿佛能听见远处低沉雷声，营造宁静又富有戏剧性的氛围。",
+      "tags": [
+        "竖版",
+        "建筑摄影",
+        "冷暖对比",
+        "雾夜",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-1c2799ae7d30c2520ffe.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Modern-Cabin-in-Forest-midjourney-prompt.webp"
+      ],
+      "originalText": "A luxury modern two-story cabin deep in a secluded forest, glowing warmly against a dark, stormy sky. The massive floor-to-ceiling windows reveal the inviting interior, contrasting with the cold, misty air outside. Tall trees sway gently in the rising wind, their silhouettes blending into the foggy night. The distant rumble of thunder can almost be heard as the rain begins to fall, creating a serene yet dramatic atmosphere.",
+      "source": {
+        "key": "promptlibrary-98373",
+        "subcategory": "森林与晨雾",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/modern-cabin-in-forest/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Modern-Cabin-in-Forest-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-80853",
+      "name": "雾海飞艇｜雨林上空的浅蓝浮艇",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "一艘浅蓝色飞艇飞越雨林，空气缓冲系统减轻下方树木与雾气带来的冲击。飞艇采用光滑表面设计，以适应不同天气条件下的飞行。飞艇造型极简。\n\n--ar 3:5 --style raw --stylize 70 --v 6",
+      "tags": [
+        "竖版",
+        "雨林",
+        "雾气",
+        "飞艇",
+        "极简",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-f6865d3ca62afc6af5b4.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/08/Minimalistic-Blimp-in-Rainforest-midjourney-prompt-scaled.webp"
+      ],
+      "originalText": "A light-blue blimp flies over the rainforest, its air cushioning system making light of impact from trees and fog below. The blimp is designed to have smooth surface for riding in various weather conditions. This blimp has minimalistic design. --ar 3:5 --style raw --stylize 70 --v 6",
+      "source": {
+        "key": "promptlibrary-80853",
+        "subcategory": "超现实与创意地景",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalistic-blimp-in-rainforest/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/08/Minimalistic-Blimp-in-Rainforest-midjourney-prompt-scaled.webp",
+        "previewDimensions": [
+          1524,
+          2560
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-103676",
+      "name": "镜面幻境｜几何门与落日云",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "超现实科幻景观，空灵氛围，漂浮的几何结构，柔和的粉彩渐变天空，孤独的人物，极简构图，电影级照明，梦幻情绪，丙烯艺术。\n\n--ar 3:4 --v 7 --stylize 750",
+      "tags": [
+        "竖版",
+        "科幻",
+        "几何结构",
+        "倒影",
+        "丙烯画",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-e5cd6699572411853928.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/05/Surreal-Sci-Fi-Landscape-Art-midjourney-prompt.webp"
+      ],
+      "originalText": "surreal sci-fi landscape, ethereal atmosphere, floating geometric structures, soft pastel gradient sky, lone figure, minimalist composition, cinematic lighting, dreamy mood, acrylic art --ar 3:4 --v 7 --stylize 750",
+      "source": {
+        "key": "promptlibrary-103676",
+        "subcategory": "超现实与创意地景",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/surreal-sci-fi-landscape-art/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/05/Surreal-Sci-Fi-Landscape-Art-midjourney-prompt.webp",
+        "previewDimensions": [
+          903,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 7",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-106223",
+      "name": "暗金水域｜光束与薄纱",
+      "category": "背景设计",
+      "subcategory": "材质与柔和光影",
+      "text": "极简的暗调奢华抽象空间，流动的柔金色光束，空气中可见的烟尘颗粒，柔光穿透形成光线；金色反光水面，水滴落下激起涟漪，轻薄白纱被微风轻轻吹动，花瓣缓缓飘落。干净空旷的背景，没有多余家具或道具，浅景深，电影级奢华商业氛围，8K超写实。\n\n--ar 16:9 --raw --stylize 750 --v 8.2",
+      "tags": [
+        "横版",
+        "横版PPT",
+        "金色",
+        "水波",
+        "光束",
+        "留白",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-e184001f0123d75fa963.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Minimalist-Dark-Golden-Space-midjourney-prompt.webp"
+      ],
+      "originalText": "Minimalist dark-luxury abstract space, flowing soft golden light beams, visible smoke particles floating in air, soft light piercing light rays; golden reflective water surface, water droplets falling creating ripples, sheer white gauze blown gently by breeze, flower petals drifting down slowly; clean empty background, no extra furniture or props, shallow depth of field, cinematic luxury commercial atmosphere, 8K hyper-realistic --ar 16:9 --raw --stylize 750 --v 8.2",
+      "source": {
+        "key": "promptlibrary-106223",
+        "subcategory": "材质与柔和光影",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-dark-golden-space/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Minimalist-Dark-Golden-Space-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          673
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-105764",
+      "name": "暖白织物｜棉布折痕与日光",
+      "category": "背景设计",
+      "subcategory": "材质与柔和光影",
+      "text": "为葡萄牙高端家纺品牌拍摄的高级杂志摄影。哑光白色高支平纹棉床品的近景，隐约可见精细织纹，收边整洁的双道缝线，织物在床面呈柔和自然褶皱。暖中性色卧室背景轻微虚化，柔和日光从右侧进入，细腻且一致的阴影，克制布景，安静隽永的优雅，真实触感，自然的织物比例，暖象牙白与浅米色配色。留有充足负空间用于博客封面，高级家纺杂志摄影，无人物、文字或标志。\n\n--ar 4:3 --raw --hd --v 8.2",
+      "tags": [
+        "横版",
+        "横版PPT",
+        "织物",
+        "留白",
+        "自然光",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-2fe6284b40422a629d53.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Editorial-Cotton-Linen-Photography-midjourney-prompt.webp"
+      ],
+      "originalText": "High-end editorial photograph for a Portuguese premium home textile brand, close-up of matte white cotton percale bed linen, fine woven texture subtly visible, neatly finished double-stitched hem, fabric resting in soft natural folds across a bed, warm neutral bedroom softly blurred in the background, gentle daylight entering from the right, delicate consistent shadows, restrained styling, quiet timeless elegance, tactile realism, natural fabric proportions, warm ivory and pale beige palette, generous negative space for a blog cover, luxury home textile magazine photography, no people, no text, no logos --ar 4:3 --raw --hd --v 8.2",
+      "source": {
+        "key": "promptlibrary-105764",
+        "subcategory": "材质与柔和光影",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/editorial-cotton-linen-photography/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Editorial-Cotton-Linen-Photography-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          898
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-83130",
+      "name": "鎏金山瀑｜大理石浮雕山水",
+      "category": "背景设计",
+      "subcategory": "东方流体与水墨",
+      "text": "金色与黑色的大理石浮雕，山峦及其倾泻而下的瀑布的俯视景观。配色包含浅灰、白色与蓝绿色，营造令人联想到中国古代自然山水的气氛。金色液体从边缘滴落，白色背景，Atey Ghailan与Jarek Kubicki风格。\n\n--ar 105:128 --quality 2 --v 6.1",
+      "tags": [
+        "竖版",
+        "大理石",
+        "金箔",
+        "山水",
+        "浮雕",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-e402d81eaa4cdd261d73.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/09/Marble-Mountain-Relief-Artwork-midjourney-prompt.webp"
+      ],
+      "originalText": "Gold and black marble relief, aerial view of the mountains with waterfalls flowing down them. The color palette includes light gray, white, blue-green, creating an atmosphere reminiscent of ancient China's natural landscapes. gold liquid dripping from edges, white background, in the style of Atey Ghailan and Jarek Kubicki. --ar 105:128 --quality 2 --v 6.1",
+      "source": {
+        "key": "promptlibrary-83130",
+        "subcategory": "东方流体与水墨",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/marble-mountain-relief-artwork/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/09/Marble-Mountain-Relief-Artwork-midjourney-prompt.webp",
+        "previewDimensions": [
+          992,
+          1216
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-80673",
+      "name": "冰川航拍｜被冰封的未来飞船",
+      "category": "背景设计",
+      "subcategory": "山川与河谷航拍",
+      "text": "由高质量无人机拍摄的超精细、超写实、照片级8K航拍图，一艘巨大的未来飞行船坠毁并卡在冰川之中。飞船流畅先进的设计、光滑金属表面与复杂技术细节，与冰冷环境形成鲜明对比。冰川锯齿状的冰体局部包裹飞船，部分船体冲破冰层。周围是荒凉的冰雪大地，带有孤立与神秘感。整体呈现高科技悬疑氛围与冰冻荒野的冷峻之美。以佳能EOS R5拍摄，F1.2，ISO100，35mm镜头，HDR10。负面要求：无雨。\n\n--no rain --ar 9:16 --style raw --v 6",
+      "tags": [
+        "竖版",
+        "科幻",
+        "冰川",
+        "俯拍",
+        "写实摄影",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-4aa64f5a4af6cb2ef106.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/08/Futuristic-Ship-in-Glacier-midjourney-prompt-scaled.webp"
+      ],
+      "originalText": "An ultra-detailed, hyper-realistic, photorealistic 8K resolution aerial shot taken by a high-quality drone, capturing a massive, futuristic flying ship that has crashed and become lodged in a glacier. The ship's sleek and advanced design, with smooth metallic surfaces and intricate technological details, contrasts sharply with the icy environment. The glacier's jagged ice formations partially envelop the ship, with some sections of the ship breaking through the ice. The surrounding landscape is a barren, icy expanse, with a sense of isolation and mystery. The overall atmosphere is one of high-tech intrigue and the stark beauty of the frozen wilderness. Photographed with a Canon EOS R5, F1.2, ISO100, 35mm lens, HDR10. --no rain --ar 9:16 --style raw --v 6",
+      "source": {
+        "key": "promptlibrary-80673",
+        "subcategory": "山川与河谷航拍",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/futuristic-ship-in-glacier/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/08/Futuristic-Ship-in-Glacier-midjourney-prompt-scaled.webp",
+        "previewDimensions": [
+          1435,
+          2560
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-102927",
+      "name": "沙漠奇迹｜巨型贝壳与发光珍珠",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "绝美的超写实黄金时刻沙漠场景。无尽金色沙丘中央，矗立着一枚巨大的张开贝壳，体量如宏伟博物馆或古代纪念碑。贝壳表面在阳光下闪耀柔和的虹彩——珍珠粉、银色与金色。巨壳内部安放着一颗巨大的发光珍珠，散发温柔而神奇的光芒，照亮附近沙丘。底部的小小人影显得微不足道，强调贝壳惊人的尺度。细沙随暖风旋动，氛围梦幻、神圣，令人着迷。极精细纹理，电影级照明，超写实，32K，令人敬畏的美。\n\n--ar 9:16 --v 7",
+      "tags": [
+        "竖版",
+        "沙丘",
+        "珠光",
+        "电影光影",
+        "尺度对比",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-cf42d187f9b778303bf0.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/05/Hyperrealistic-Seashell-in-Desert-midjourney-prompt.webp"
+      ],
+      "originalText": "absolutely stunning, hyperrealistic desert scene at golden hour. In the middle of endless golden sand dunes stands an enormous, open seashell so gigantic it resembles a grand museum or ancient monument. Its surface shimmers with soft iridescent colors pearl pinks, silvers, and golds catching the sunlight. Inside the massive shell rests a colossal, glowing pearl, radiating a gentle, magical light that bathes the nearby dunes. Tiny human figures at the base look minuscule in comparison, emphasizing the shell’s breathtaking scale. Fine sand swirls in the warm breeze, the atmosphere feels dreamlike, sacred, and utterly mesmerizing. Ultra-detailed textures, cinematic lighting, hyperrealistic, 32K, awe-inspiring beauty. --ar 9:16 --v 7",
+      "source": {
+        "key": "promptlibrary-102927",
+        "subcategory": "超现实与创意地景",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/hyperrealistic-seashell-in-desert/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/05/Hyperrealistic-Seashell-in-Desert-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 7",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-106118",
+      "name": "东方留白｜木质内容创作空间",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "极简东亚内容创作者工作室，带有含蓄的中国文化气质。平滑的暖灰米色墙面，天然木质悬浮搁板不对称地分布在两侧。少量书脊空白的中性色书籍，一盆小盆景，一个插着干麦穗的哑光陶瓷花瓶，一张没有文字的低调单色山景画，简洁胡桃木边柜。明亮柔和的窗光从相机左侧进入，温暖的轻柔补光。干净专业又有居家感的气氛，优雅的米色、浅木色与低饱和绿色配色。照片级真实的竖版视频背景，平视相机，背景轻微虚化。中央宽敞整洁，专为面对镜头讲话的主持人留出空间。无人物，无椅子遮挡中央，无可读文字，无字母、标志或水印。\n\n--ar 9:16 --raw --stylize 75 --v 8.2",
+      "tags": [
+        "竖版",
+        "中式",
+        "室内摄影",
+        "留白",
+        "暖灰",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-763dd166406d2b721a52.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Minimalist-Asian-Studio-Background-midjourney-prompt.webp"
+      ],
+      "originalText": "a minimalist East Asian content creator studio with a subtle Chinese cultural character, smooth warm greige wall, floating natural wood shelves placed asymmetrically at the sides, a few neutral books with blank spines, one small bonsai, a matte ceramic vase with dried wheat stems, understated monochrome mountain print without writing, simple walnut console, bright soft window light from camera left, gentle warm fill light, clean professional yet homelike atmosphere, elegant beige, light wood and muted green palette, photorealistic vertical video background, eye-level camera, slight background blur, spacious uncluttered center designed for a talking-head presenter, no people, no chair blocking the center, no readable text, no letters, no logo, no watermark --ar 9:16 --raw --stylize 75 --v 8.2",
+      "source": {
+        "key": "promptlibrary-106118",
+        "subcategory": "建筑与人文摄影",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-asian-studio-background/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Minimalist-Asian-Studio-Background-midjourney-prompt.webp",
+        "previewDimensions": [
+          673,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-105566",
+      "name": "暖光跃层｜原木楼梯与阅读角",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "暖调现代客厅的竖版建筑室内摄影，设有醒目的夹层阳台。橡木楼梯配极简白色栏杆，夹层下方是舒适的阅读角。高挑天花板，柔和温暖的隐藏式LED照明。奶油色墙面，大幅亚麻窗帘，精致且温馨的居家氛围，建筑文摘杂志专题风格，照片级真实，极精细细节。\n\n--ar 9:16 --v 8.2",
+      "tags": [
+        "竖版",
+        "室内摄影",
+        "原木",
+        "暖光",
+        "极简",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-5909c23da86aa649c7ec.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Modern-Mezzanine-Interior-Architecture-midjourney-prompt.webp"
+      ],
+      "originalText": "A vertical architectural interior shot of a warm modern living room with a spectacular mezzanine balcony. Oak wood stairs with a minimalist white railing, under-mezzanine cozy reading nook. High ceiling with soft warm concealed LED lighting. Cream-colored walls, large linen drapes, sophisticated and inviting home atmosphere, architectural digest feature, photorealistic, ultra-detailed --ar 9:16 --v 8.2",
+      "source": {
+        "key": "promptlibrary-105566",
+        "subcategory": "建筑与人文摄影",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/modern-mezzanine-interior-architecture/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Modern-Mezzanine-Interior-Architecture-midjourney-prompt.webp",
+        "previewDimensions": [
+          673,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-104277",
+      "name": "古典门廊｜蓝白棋盘与石阶",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "正面平视拍摄的优雅石质走廊室内。前景是蓝白相间的棋盘格地面，被石质门洞框住。中景中，一盏金色灯笼吊灯居中悬于石阶之前。带凹槽的柱子支撑着装饰性檐部，其上墙面刻有半圆形人物浮雕。背景延续浅色石材建筑，笼罩柔和的环境光。\n\n--ar 4:5 --v 8.2",
+      "tags": [
+        "竖版",
+        "古典建筑",
+        "框景",
+        "石材",
+        "对称",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-9c0e7e2fd9f782c2040d.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Stone-Hallway-Interior-Architecture-midjourney-prompt.webp"
+      ],
+      "originalText": "an elegant stone hallway interior captured in a straight on shot. the foreground shows a checkered blue and white floor, framed by a stone portal. in the middle ground, a golden lantern pendant light hangs centered in front of a stone staircase. fluted columns support a decorated entablature, above which a semicircular relief sculpture of figures is carved into the wall. the background shows a continuation of the light colored stone architecture under soft, ambient light. --ar 4:5 --v 8.2",
+      "source": {
+        "key": "promptlibrary-104277",
+        "subcategory": "建筑与人文摄影",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/stone-hallway-interior-architecture/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Stone-Hallway-Interior-Architecture-midjourney-prompt.webp",
+        "previewDimensions": [
+          960,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-104136",
+      "name": "海岸小屋｜红屋顶与巨型积云",
+      "category": "背景设计",
+      "subcategory": "海岸与水域摄影",
+      "text": "写实风景摄影，绿丘上一栋红屋顶白房子，前景是虚化的鲜艳黄色花田，深蓝海面上有一艘白色帆船，天空中耸立巨大的积云，澄澈蓝天，明亮日光，电影级照明，景深，前景散景，国家地理摄影风格，高分辨率。\n\n--ar 9:16 --v 8.2",
+      "tags": [
+        "竖版",
+        "自然摄影",
+        "积云",
+        "前景虚化",
+        "海景",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-a8e715126ef5604df8db.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Coastal-Landscape-Photography-midjourney-prompt.webp"
+      ],
+      "originalText": "A realistic landscape photography, a white house with a red roof on a green hill, vibrant yellow flower field blurred in the foreground, deep blue ocean with a white sailboat, massive towering cumulus clouds in the sky, clear blue sky, bright daylight, cinematic lighting, depth of field, foreground bokeh, National Geographic style, high resolution --ar 9:16 --v 8.2",
+      "source": {
+        "key": "promptlibrary-104136",
+        "subcategory": "海岸与水域摄影",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/coastal-landscape-photography/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Coastal-Landscape-Photography-midjourney-prompt.webp",
+        "previewDimensions": [
+          673,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-99293",
+      "name": "日照金山｜金色云霞与草原",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "落日的金色光芒照耀高大雪山。雪山闪耀，天空散发绚丽光彩，景象壮观。金色云朵飘过，雪山脚下是一大片葱郁的绿色草原。低角度拍摄，超清晰野外摄影，治愈系风景，丰富细节。",
+      "tags": [
+        "竖版",
+        "自然摄影",
+        "日落",
+        "草原",
+        "低机位",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-6756e5f0bf3d85a249f4.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Golden-Sunset-Over-Mountains-midjourney-prompt.webp"
+      ],
+      "originalText": "The golden light of the setting sun shines on the tall snowy mountains. It is shining, the sky is shining with colorful glow, very spectacular. Golden clouds drifted by, and under the snow-capped mountains was a large green and lush grassland. Low-angle shots, ultra-clear field photography, therapeutic landscapes, high detail",
+      "source": {
+        "key": "promptlibrary-99293",
+        "subcategory": "山湖与雪山",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/golden-sunset-over-mountains-2/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Golden-Sunset-Over-Mountains-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-91268",
+      "name": "粉绸山峦｜鎏金刺绣与玉石肌理",
+      "category": "背景设计",
+      "subcategory": "东方流体与水墨",
+      "text": "中国刺绣风格的抽象几何山景，采用鎏金与粉色丝绸材质。金镶玉雕刻艺术，水晶玻璃质感，流动液态黄金，浅蓝色极简色域背景。层次纵深，分层纤维，闪亮光泽，形成中国朋克美学。以微距镜头拍摄，微距摄影与移轴构图。\n\n--ar 9:16 --stylize 50 --v 6.1",
+      "tags": [
+        "竖版",
+        "丝绸",
+        "刺绣",
+        "粉彩",
+        "微距",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-19c5ab4f855521b46878.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Geometric-Mountains-in-Silk-midjourney-prompt.webp"
+      ],
+      "originalText": "An abstract geometric mountain landscape in the style of Chinese embroidery, featuring gilding and pink silk material. Gold inlaid with jade carving art, crystal glass texture, flowing liquid gold, and a minimalist color field background in light blue. The depth of layers, layered fibers, and a shiny, glossy finish create a Chinese punk aesthetic, captured through macro photography and a tilt-shift composition with a macro lens. --ar 9:16 --stylize 50 --v 6.1",
+      "source": {
+        "key": "promptlibrary-91268",
+        "subcategory": "东方流体与水墨",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/geometric-mountains-in-silk/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Geometric-Mountains-in-Silk-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-100285",
+      "name": "极简红沙｜星空下的沙丘曲线",
+      "category": "背景设计",
+      "subcategory": "色域与抽象地景",
+      "text": "一张macOS Big Sur屏幕壁纸，简单且极度极简，平滑的红色沙丘曲线，低饱和度蓝色星空背景，低饱和度蓝天与渐变。高分辨率，高对比度，超现实，具有专业摄影的画质与电影感。",
+      "tags": [
+        "竖版",
+        "沙丘",
+        "红蓝",
+        "星空",
+        "抽象",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-39cd640ef20463c1da07.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Red-Dunes-Wallpaper-midjourney-prompt.webp"
+      ],
+      "originalText": "A wallpaper for macOS Big Sur screen, simple and extremely minimalist, with smooth red dune curves, low-saturation blue starry sky background, low-saturation blue sky and gradient. High resolution, high contrast, surrealistic, this image has the quality and cinematic feel of professional photography.",
+      "source": {
+        "key": "promptlibrary-100285",
+        "subcategory": "色域与抽象地景",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-red-dunes-wallpaper/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Red-Dunes-Wallpaper-midjourney-prompt.webp",
+        "previewDimensions": [
+          552,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-91535",
+      "name": "深绿叶框｜两侧植物与中央留白",
+      "category": "背景设计",
+      "subcategory": "植物与花卉背景",
+      "text": "绿色背景，深绿色渐变，画面左右两侧有绿叶，适合作为手机壁纸。\n\n--ar 9:16 --stylize 250 --v 6.1",
+      "tags": [
+        "竖版",
+        "绿色",
+        "叶片",
+        "留白",
+        "渐变",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-4bedbf6c1ccb9906787a.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Green-Gradient-Leaf-Wallpaper-midjourney-prompt.webp"
+      ],
+      "originalText": "Green background with a dark green gradient, green leaves on the left and right sides of the frame, suitable for a mobile wallpaper --ar 9:16 --stylize 250 --v 6.1",
+      "source": {
+        "key": "promptlibrary-91535",
+        "subcategory": "植物与花卉背景",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/green-gradient-leaf-wallpaper/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Green-Gradient-Leaf-Wallpaper-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。"
+      }
+    },
+    {
+      "key": "promptlibrary-105818",
+      "name": "玻璃焦散｜清水与矿物绿反光",
+      "category": "背景设计",
+      "subcategory": "玻璃与折射",
+      "text": "为当代环境健康品牌拍摄的高级杂志广告摄影。一个薄壁圆柱饮水杯，盛有完全透明的水，旁边放一支小型无标记、带盖的实验室水样采样瓶；两者以精确的不对称间距摆放在无缝哑光白色台面。近距离四分之三视角，物体占据竖版构图的大部分。左上方强而可控的日光产生复杂光学焦散与清晰长阴影。画外一块半透明矿物绿色玻璃板，在背景投下微妙绿光，而水本身保持完全无色。杯沿、弯月面、折射和表面纹理极其真实。克制、清净、安静而引人入胜，精致静物美术指导，中画幅商业摄影，整洁宽松的边距。白色和浅青瓷色调，深森林绿色阴影点缀。负面要求：无文字、标志、标签、水印、气泡、飞溅、植物或人物。\n\n--no text, logos, labels, watermarks, bubbles, splashes, plants, people --ar 4:5 --raw --v 8.2",
+      "tags": [
+        "竖版",
+        "静物摄影",
+        "玻璃",
+        "光学焦散",
+        "硬光",
+        "PromptLibrary",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-f129e43997d98a0f15d4.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Minimalist-Water-Glass-Photography-midjourney-prompt.webp"
+      ],
+      "originalText": "Premium editorial campaign photograph for a contemporary environmental health brand. A single thin-walled cylindrical drinking glass filled with perfectly transparent water, beside a small unmarked capped laboratory water-sampling vial, arranged with precise asymmetrical spacing on a seamless matte white surface. Close three-quarter viewpoint, objects fill most of the vertical composition. Strong controlled daylight from the upper left creates intricate optical caustics and long crisp shadows. A translucent mineral-green glass panel outside the frame casts a subtle green reflection across the background, while the water itself remains completely colorless. Extraordinary realism in the glass edges, meniscus, refraction and surface texture. Restrained, clinical, quietly intriguing, sophisticated still-life art direction, medium-format commercial photography, generous clean margins, white and pale celadon palette with deep forest-green shadow accents. --no text, logos, labels, watermarks, bubbles, splashes, plants, people --ar 4:5 --raw --v 8.2",
+      "source": {
+        "key": "promptlibrary-105818",
+        "subcategory": "玻璃与折射",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-water-glass-photography/",
+        "collection": "PromptLibrary",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Minimalist-Water-Glass-Photography-midjourney-prompt.webp",
+        "previewDimensions": [
+          960,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文已翻译，原始模型参数保留；发布者署名不等于原始创作者。来源例图，未在本机重新生成。此案例包含杯子和采样瓶，是静物构图，不是无物体纯背景。"
+      }
+    },
+    {
+      "key": "prompt123-5216",
+      "name": "星云巨鲤｜小人与宇宙锦鲤",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "一幅超现实主义数字插画风格，采用低角度仰拍视角。画面描绘了一条巨型彩色锦鲤遨游在梦幻般的星云中，四周环绕着色彩鲜艳的星云与气泡。 \n画面中央还站着一个小人，背对观众，神情平静地仰望空中这条巨大的锦鲤，锦鲤头向下看着小人。 \n整体画面呈现出强烈的大小对比，氛围空灵又梦幻。比例9:16",
+      "tags": [
+        "竖版",
+        "星云",
+        "锦鲤",
+        "尺度对比",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-878145938b01fbcb12a9.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case238.jpg?wm=1"
+      ],
+      "source": {
+        "key": "prompt123-5216",
+        "subcategory": "超现实与创意地景",
+        "author": "原页面未署名",
+        "url": "https://www.prompt123.cn/sites/5216.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/?facet=nature",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case238.jpg?wm=1",
+        "previewDimensions": [
+          800,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-backgrounds",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留完整中文原文与原图水印。来源例图，未在本机重新生成。"
+      }
+    }
+  ]
+}

@@ -5,7 +5,13 @@ import net from 'net';
 import path from 'path';
 import type { AppUpdater, ProgressInfo, UpdateInfo } from 'electron-updater';
 import { ImageExporter, type ImageExportRequest } from './image-export';
+import { IllustratorTracer } from './illustrator-trace';
 import { readSettings, updateSettings } from './settings-store';
+import { applyLibraryFileIcon } from './library-file-icon';
+import fsp from 'node:fs/promises';
+import { randomUUID } from 'node:crypto';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 
 let mainWindow: BrowserWindow | null = null;
 let nextServer: Electron.UtilityProcess | null = null;
@@ -172,11 +178,12 @@ function getDesktopEnvPath(): string {
 }
 
 function getIconPath(): string {
-  const packagedIcon = path.join(process.resourcesPath, 'icon.png');
+  const iconName = process.platform === 'win32' ? 'icon.ico' : 'icon.png';
+  const packagedIcon = path.join(process.resourcesPath, iconName);
   if (existsSync(packagedIcon)) {
     return packagedIcon;
   }
-  return path.join(app.getAppPath(), 'electron', 'icon.png');
+  return path.join(app.getAppPath(), 'electron', iconName);
 }
 
 function getLogPath(): string {
@@ -489,6 +496,24 @@ function buildServerLogTail(maxLines = 40): string {
   return `\nRecent server output:\n${serverLogTail.slice(-maxLines).join('\n')}`;
 }
 
+const executeFile = promisify(execFile);
+async function openWebsiteInBrowser(url: string) {
+  if (process.platform === 'darwin') {
+    const browser = await app.getApplicationInfoForProtocol(url);
+    // LaunchServices can route links to a headless Chromium QA instance. Launch
+    // its normal profile explicitly; an existing visible instance will be reused.
+    if (/chrome|chromium|edge|brave/i.test(browser.name)) {
+      const { stdout } = await executeFile('/bin/ps', ['-axo', 'command=']);
+      const headlessBrowser = stdout.split('\n').some(line => line.startsWith(browser.path + '/Contents/MacOS/') && /--headless(?:[=\s]|$)/.test(line));
+      if (headlessBrowser) {
+        await executeFile('/usr/bin/open', ['-n', '-a', browser.path, '--args', url]);
+        return;
+      }
+    }
+  }
+  await shell.openExternal(url, { activate: true });
+}
+
 function isLocalAppUrl(url: string): boolean {
   try { return new URL(url).origin === `http://127.0.0.1:${serverPort}`; }
   catch { return false; }
@@ -797,6 +822,16 @@ function createWindow(serverError?: unknown) {
     backgroundColor: '#09090b',
   });
 
+  if (process.platform === 'win32') {
+    const executable = process.env.PORTABLE_EXECUTABLE_FILE || process.execPath;
+    mainWindow.setAppDetails({
+      appId: 'com.huanzon.aistudio',
+      appIconPath: getIconPath(), appIconIndex: 0,
+      relaunchCommand: `"${executable}"`,
+      relaunchDisplayName: desktopProductName,
+    });
+  }
+
   if (serverError) {
     mainWindow.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(createErrorHtml(serverError))}`);
   } else {
@@ -885,6 +920,35 @@ function createWindow(serverError?: unknown) {
 
 app.whenReady().then(async () => {
   if (!ownsInstance) return;
+  ipcMain.handle('desktop:open-external', async (event, value: unknown) => {
+    if (event.sender !== mainWindow?.webContents || !isLocalAppUrl(event.senderFrame?.url || '')) throw new Error('不支持的窗口');
+    if (typeof value !== 'string') throw new Error('官网地址无效');
+    const url = new URL(value);
+    if (!['https:', 'http:'].includes(url.protocol) || url.username || url.password) throw new Error('官网地址无效');
+    try {
+      await openWebsiteInBrowser(url.href);
+      return { success: true };
+    } catch {
+      return { success: false, message: '系统浏览器未能打开，请复制官网地址后手动访问。' };
+    }
+  });
+  ipcMain.handle('desktop:prepare-library-import', async (event, files: unknown) => {
+    if (event.sender !== mainWindow?.webContents || !isLocalAppUrl(event.senderFrame?.url || '')) throw new Error('不支持的窗口');
+    if (!Array.isArray(files) || files.length > 100) throw new Error('请分批选择图片');
+    const dir = path.join(process.env.LOCAL_DATA_DIR || app.getPath('userData'), 'import-sources');
+    await fsp.mkdir(dir, { recursive: true });
+    const result: Array<string | null> = [];
+    for (const file of files) {
+      if (typeof file !== 'string' || !path.isAbsolute(file)) { result.push(null); continue; }
+      try {
+        const info = await fsp.stat(file); if (!info.isFile() || !/\.(png|jpe?g|webp)$/i.test(file) || info.size > 25 * 1024 * 1024) { result.push(null); continue; }
+        const token = randomUUID();
+        await fsp.writeFile(path.join(dir, `${token}.json`), JSON.stringify({ path: file, bytes: info.size, mtimeMs: info.mtimeMs, expiresAt: Date.now() + 7 * 86400_000 }), { mode: 0o600 });
+        result.push(token);
+      } catch { result.push(null); }
+    }
+    return result;
+  });
   ipcMain.on('desktop:settings-read', (event) => {
     try {
       event.returnValue = isLocalAppUrl(event.senderFrame?.url || '') ? readSettings(app.getPath('userData')) : {};
@@ -906,10 +970,28 @@ app.whenReady().then(async () => {
     loadZip: () => require(require.resolve('jszip', { paths: [resolveStandalone().root, app.getAppPath()] })),
     progress: value => { if (mainWindow && !mainWindow.isDestroyed()) mainWindow.webContents.send('desktop:image-export-progress', value); },
   });
+  const illustratorTracer = new IllustratorTracer({
+    tempDirectory: app.getPath('temp'),
+    dataDirectory: process.env.LOCAL_DATA_DIR || app.getPath('userData'),
+    downloadsDirectory: app.getPath('downloads'),
+    stageImage: (url, directory) => imageExporter.stageImage(url, directory),
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    loadSharp: () => require(require.resolve('sharp', { paths: [resolveStandalone().root, app.getAppPath()] })),
+  });
+  ipcMain.handle('desktop:illustrator-trace', async (event, request: unknown) => {
+    if (event.sender !== mainWindow?.webContents || !isLocalAppUrl(event.senderFrame?.url || '')) throw new Error('不支持的窗口');
+    const result = await illustratorTracer.trace(request);
+    if (result.file) exportedImagePaths.add(result.file);
+    return result;
+  });
   ipcMain.handle('desktop:export-images', async (event, request: ImageExportRequest) => {
     if (event.sender !== mainWindow?.webContents) throw new Error('不支持的窗口');
     try {
       const result = await imageExporter.export(request);
+      for (const file of result.files) {
+        try { await applyLibraryFileIcon(file, process.resourcesPath); }
+        catch (error) { writeDesktopLog(`Resource package icon: ${String(error)}`); }
+      }
       for (const file of result.files) exportedImagePaths.add(file);
       while (exportedImagePaths.size > 1000) exportedImagePaths.delete(exportedImagePaths.values().next().value!);
       return { success: true, ...result };

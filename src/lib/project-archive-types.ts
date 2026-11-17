@@ -76,7 +76,7 @@ export interface ProjectArchiveEntry {
 }
 
 export type ProjectArchiveJobAction = "archive" | "restore";
-export type ProjectArchiveJobStatus = "queued" | "running" | "paused" | "cancelled" | "completed" | "failed" | "partial";
+export type ProjectArchiveJobStatus = "queued" | "running" | "waiting" | "paused" | "cancelled" | "completed" | "failed" | "partial";
 
 export interface ProjectArchiveJobResult {
   projectId: string;
@@ -115,4 +115,20 @@ export interface ProjectArchiveRestoreOptions {
   preserveRecordIds: boolean;
   assetByStorageKey: Map<string, ProjectArchiveAssetReplacement>;
   assetByOriginalUrl: Map<string, ProjectArchiveAssetReplacement>;
+}
+
+export type BackupConnectionState = 'unconfigured' | 'checking' | 'connected' | 'unmounted' | 'network-unavailable' | 'authentication-required' | 'permission-denied' | 'identity-mismatch' | 'unavailable';
+export interface BackupConnection {
+  state: BackupConnectionState;
+  message: string;
+  checkedAt: string;
+  nextRetryAt?: string;
+  retryCount?: number;
+  actualDirectory?: string;
+  remote?: BackupRemoteLocation;
+}
+export interface BackupRemoteLocation {
+  url: string;
+  mountPath: string;
+  relativePath: string;
 }

@@ -71,10 +71,11 @@ function ensureDefaultLocalLibrary(userId: string | null): LocalPromptLibrary {
 }
 
 export function listLocalLibraries(userId: string | null, projectId?: string | null): LocalPromptLibrary[] {
+  void projectId;
   ensureDefaultLocalLibrary(userId);
   const store = readLocalStore();
   return store.libraries
-    .filter((lib) => lib.user_id === userId && (!projectId || lib.project_id === null || lib.project_id === projectId))
+    .filter((lib) => lib.user_id === userId)
     .sort((a, b) => (b.is_default - a.is_default) || new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
 }
 
@@ -84,7 +85,7 @@ export function createLocalLibrary(userId: string | null, input: { projectId?: s
   const library: LocalPromptLibrary = {
     id: Math.max(0, ...store.libraries.map((lib) => lib.id || 0)) + 1,
     user_id: userId,
-    project_id: input.projectId || null,
+    project_id: null,
     name: input.name.trim(),
     description: input.description || "",
     is_default: 0,
