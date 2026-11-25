@@ -1,0 +1,889 @@
+{
+  "version": 1,
+  "batch": "design-curation-2026-11-19-0500",
+  "collectedAt": "2026-11-18",
+  "selectionMethod": "北京时间2026-11-19早间轮次；客户端日期2026-11-18。来源全文与原图核对，完整中文翻译，独立新增集合。",
+  "prompts": [
+    {
+      "key": "promptlibrary-104472",
+      "name": "剪纸菊花｜秋日花瓶构成",
+      "category": "海报设计",
+      "subcategory": "植物与花卉海报",
+      "text": "马蒂斯风格花卉艺术海报，鲜明的手工剪纸拼贴美学。在具有雕塑感的芥末黄色陶瓷花瓶中，插入一大束5—7朵菊花。多朵大型菊花具有富于表现力的层叠花瓣，简化为鲜明的有机纸片形状。使用考究的芥末黄、赭色、焦橙、灰珊瑚、橄榄绿与暖奶油色。花束四周安排由简化菊花、超大叶片、弯曲花茎、有机拱形、圆点与活泼植物图案构成的抽象装饰背景。扁平分层纸片，触感明确的手工纸纹理，不完美的裁切边缘，强烈图形剪影，优雅不对称构图，浓郁的秋日现代主义气息。暖奶油色纸张背景。无写实、3D、渐变、真实阴影、文字或排版。竖版海报。\n\n来源参数：--ar 3:4 --v 8.2",
+      "tags": [
+        "竖版",
+        "剪纸",
+        "马蒂斯风格",
+        "芥末黄",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-a1a8b920badabc735dfd.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Matisse-Paper-Chrysanthemum-Collage-midjourney-prompt.webp"
+      ],
+      "originalText": "Matisse-inspired floral art poster, bold hand-cut paper collage aesthetic. A generous bouquet of 5-7 chrysanthemums arranged in a sculptural mustard-yellow ceramic vase. Multiple large chrysanthemum blooms with expressive layered petals, simplified into bold organic paper shapes. Use a sophisticated palette of mustard yellow, ochre, burnt orange, dusty coral, olive green and warm cream. Surround the bouquet with a decorative abstract background of simplified chrysanthemums, oversized leaves, curved stems, organic arches, dots and playful botanical motifs. Flat layered paper shapes, tactile handmade paper texture, imperfect cut edges, strong graphic silhouettes, elegant asymmetrical composition, rich autumnal modernist feeling. Warm cream paper background. No photorealism, no 3D, no gradients, no realistic shadows, no text, no typography. Vertical poster. --ar 3:4 --v 8.2",
+      "source": {
+        "key": "promptlibrary-104472",
+        "subcategory": "植物与花卉海报",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/matisse-paper-chrysanthemum-collage/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Matisse-Paper-Chrysanthemum-Collage-midjourney-prompt.webp",
+        "previewDimensions": [
+          904,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169357_mdg8e9_1795036169357_i5aaro.webp"
+    },
+    {
+      "key": "promptlibrary-105809",
+      "name": "深蓝夜景｜网络安全工作室",
+      "category": "背景设计",
+      "subcategory": "发布会与未来空间",
+      "text": "电影感、极精细的未来私人办公室夜间内景，网络安全专家的个人工作空间。宽敞、昏暗、有阴影，选择性地由两块显示网络安全仪表盘、终端窗口与网络分析界面的大显示器照亮。相邻房间提供微弱辅助光。极简高级设计：深木材、大理石、烟色玻璃、哑光金属与柔和黑色表面。中央深木色设计师书桌，配置显示器、显示技术数据的透明玻璃平板、高端耳机、技术书籍和低调配件。低搁架、抽象雕塑装饰与含蓄的建筑灯。窗外可见未来城市夜景与远处城市微光。照片级真实3D渲染，ARRI Alexa变形宽银幕镜头美学，柔和景深、真实反射、丰富细节、电影写实感。无人、无明亮照明、不过度霓虹、不杂乱、无反乌托邦破败、无卡通、无奇幻科幻元素、无强烈镜头光晕、无鱼眼畸变。\n\n来源参数：--ar 16:9 --stylize 200 --v 8.2",
+      "tags": [
+        "横版",
+        "16:9",
+        "室内",
+        "科技",
+        "夜景",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-717397216dfecf5a796a.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Futuristic-Cybersecurity-Office-Interior-midjourney-prompt.webp"
+      ],
+      "originalText": "Cinematic ultra detailed futuristic private office interior at night, cybersecurity specialist's personal workspace. Spacious, dim, shadowy, selectively lit by two large monitors displaying cybersecurity dashboards, terminal windows, and network analysis interfaces. Faint secondary light from adjacent room. Minimalist premium design: dark wood, marble, smoked glass, matte metal, soft black surfaces. Central dark wood designer desk with monitors, transparent glass tablet with technical data, high end headphones, technical book, discreet accessories. Low shelf, abstract sculptural decor, subtle architectural lamp. Futuristic city visible through window at night, distant urban glow. Photorealistic 3D render, ARRI Alexa anamorphic lens aesthetics, soft depth of field, realistic reflections, high detail, cinematic realism. No people, no bright lighting, no excessive neon, no clutter, no dystopian decay, no cartoon style, no fantasy sci fi, no strong lens flare, no fisheye distortion. --ar 16:9 --stylize 200 --v 8.2",
+      "source": {
+        "key": "promptlibrary-105809",
+        "subcategory": "发布会与未来空间",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/futuristic-cybersecurity-office-interior/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Futuristic-Cybersecurity-Office-Interior-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          673
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169366_c10a75_1795036169366_e2b583.webp"
+    },
+    {
+      "key": "promptlibrary-69451",
+      "name": "草原曲河｜黄金时刻航拍",
+      "category": "背景设计",
+      "subcategory": "山川与河谷航拍",
+      "text": "创作引人入胜的航拍图像，呈现鲜绿稀树草原上分布着多条蜿蜒河流的景象，带来高质量、超写实的视觉体验。媒介为数字插画，确保对细节的精细刻画。运用《国家地理》电影摄影的视觉语言捕捉场景本质。使用DJI Mavic Air 2无人机精确安排机位，以广阔视野俯瞰辽阔地景。类似黄金时刻的自然光为草原披上暖色，突出自然之美。色板遵循《国家地理》的视觉标准，使图像真实且震撼。\n\n来源参数：--ar 3:4 --stylize 750",
+      "tags": [
+        "竖版",
+        "航拍",
+        "河流",
+        "草原",
+        "摄影感",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-135916ee085f3489a2c2.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/02/Savanna-Rivers-Aerial-View-midjourney-prompt.webp"
+      ],
+      "originalText": "Craft a mesmerizing aerial image portraying a vibrant green savanna dotted with multiple meandering rivers, presenting a high-quality, hyper-realistic visual experience. The medium is a digital illustration, ensuring meticulous attention to detail. Embrace the visual language of National Geographic cinematography to capture the essence of the scene. Utilize a DJI Mavic Air 2 drone for precise camera placement, providing a sweeping view of the expansive landscape. The natural lighting, reminiscent of the golden hour, bathes the savanna in warm tones, accentuating its natural beauty. The colour palette adheres to National Geographic's standards, creating an image that feels authentic and breath-taking. --ar 3:4 --stylize 750",
+      "source": {
+        "key": "promptlibrary-69451",
+        "subcategory": "山川与河谷航拍",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/savanna-rivers-aerial-view/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/02/Savanna-Rivers-Aerial-View-midjourney-prompt.webp",
+        "previewDimensions": [
+          1856,
+          2464
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney（来源未注明版本）",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。摄影感AI案例，并非实地拍摄地理证据。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169374_ykxyq0_1795036169374_xg6e2s.webp"
+    },
+    {
+      "key": "promptlibrary-97845",
+      "name": "西部铜版｜牛仔主题连续纹样",
+      "category": "图形设计",
+      "subcategory": "纹样与图案",
+      "text": "中国风铜版印花风格的无缝、对称重复纹样。设计包含极简而复古的西部元素：牛仔帽、牛仔靴、马、仙人掌和牛头骨。每个元素用细腻复杂的手绘线条描绘，均匀间隔、精准对齐，构图平衡。整幅图案采用单色，以一种优雅颜色搭配明亮干净的白色背景。复古女牛仔美学，精致而简约，唤起带现代西部变化的经典铜版印花图案。高分辨率、干净矢量艺术，适合布料和壁纸设计的无缝拼接。",
+      "tags": [
+        "竖版",
+        "单色",
+        "细线",
+        "复古",
+        "连续纹样",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-1e5ea59424e1f6ea19b6.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Monochrome-Western-Toile-Pattern-midjourney-prompt.webp"
+      ],
+      "originalText": "A seamless, symmetrical repeating pattern in the style of toile chinoiserie. The design features minimalistic yet vintage-inspired Western elements: cowboy hats, cowboy boots, horses, cacti, and bull skulls. Each element is delicately hand-drawn with fine, intricate linework, evenly spaced and perfectly aligned for a balanced composition. The entire pattern is monochromatic, using a single elegant color against a crisp, bright white background. The aesthetic is vintage cowgirl with a refined, minimal approach, evoking classic toile patterns with a modern Western twist. High-resolution, clean vector art, seamless tiling for fabric and wallpaper design",
+      "source": {
+        "key": "promptlibrary-97845",
+        "subcategory": "纹样与图案",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/monochrome-western-toile-pattern/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Monochrome-Western-Toile-Pattern-midjourney-prompt.webp",
+        "previewDimensions": [
+          923,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney（来源未注明版本）",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169381_6u56ts_1795036169381_cc59qa.webp"
+    },
+    {
+      "key": "promptlibrary-96642",
+      "name": "粉浪黑沙｜梦幻俯拍海岸",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "黑沙海滩，粉色海水，荧光粉色海浪，俯视，鸟瞰视角，梦幻，极简主义，简洁，写实，摄影，壁纸，Hsiao Ron Cheng风格。",
+      "tags": [
+        "竖版",
+        "俯拍",
+        "黑沙",
+        "粉色海浪",
+        "摄影感",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-45cd28a93a6c2a6d57cc.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Pink-Wave-Photography-midjourney-prompt.webp"
+      ],
+      "originalText": "Black sand beach, pink water, fluorescent pink waves, top view, bird's eye view, dreamy, minimalism, simple, realism, photography, wallpaper, in the style of Hsiao Ron Cheng,",
+      "source": {
+        "key": "promptlibrary-96642",
+        "subcategory": "海岸与水域航拍",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-pink-wave-photography/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Pink-Wave-Photography-midjourney-prompt.webp",
+        "previewDimensions": [
+          903,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney（来源未注明版本）",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169387_mt37rh_1795036169387_i831wp.webp"
+    },
+    {
+      "key": "promptlibrary-105701",
+      "name": "霓虹M｜青紫电路线标识",
+      "category": "LOGO设计",
+      "subcategory": "字母与字标",
+      "text": "未来感Logo设计，主体为独立且风格化的字母M，由平滑连续的发光霓虹线条构成，弯曲圆润的形状，灵感来自微芯片电路走线，但完全干净、没有圆点。极简流畅的科技美学，深色拉丝金属背景，青色与紫色光晕，照片级写实，8K，矢量风格对称构图。\n\n来源参数：--no circle, dots, typography, text, words --chaos 10 --hd --v 8.2",
+      "tags": [
+        "方形",
+        "字母M",
+        "青紫",
+        "霓虹",
+        "科技",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d955dee28b5ee8ff90af.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Futuristic-Neon-Letter-M-midjourney-prompt.webp"
+      ],
+      "originalText": "A futuristic logo design featuring a standalone stylized letter M, made of smooth, continuous glowing neon lines, curved and rounded shapes, inspired by microchip circuitry tracks but completely clean with no dots, minimal and sleek tech aesthetic, dark brushed metal background, cyan and purple glow, photorealistic, 8k, vector style symmetry --no circle, dots, typography, text, words --chaos 10 --hd --v 8.2",
+      "source": {
+        "key": "promptlibrary-105701",
+        "subcategory": "字母与字标",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/futuristic-neon-letter-m/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Futuristic-Neon-Letter-M-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169392_0dw0j0_1795036169392_n6mu8n.webp"
+    },
+    {
+      "key": "promptlibrary-101969",
+      "name": "交叉双犬｜X形几何辅助图形",
+      "category": "图形设计",
+      "subcategory": "几何与辅助图形",
+      "text": "两只坐着的抽象狗交叉形成X形，鲜明锐利的几何剪影，硬边现代极简主义，灵感来自带墨陷的无衬线字体，工业风格，简单纯色填充，适合作为Logo辅助图形，平衡干净的构图，无阴影、无渐变、圆角、矢量风格。\n\n来源参数：--v 7 --profile laaox53",
+      "tags": [
+        "方形",
+        "双犬",
+        "负空间",
+        "剪影",
+        "几何",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-0df292d6cf0a21cbae1f.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/05/Abstract-Geometric-Dogs-X-Shape-midjourney-prompt.webp"
+      ],
+      "originalText": "two sitting abstract dogs crossing each other to form an X shape, bold and sharp geometric silhouette, hard-edged modern minimalism, inspired by ink trap sans-serif typography, industrial style, simple solid color fill, suitable as logo auxiliary graphic, balanced clean composition, no shading, no gradient, rounded corners, vector style --v 7 --profile laaox53",
+      "source": {
+        "key": "promptlibrary-101969",
+        "subcategory": "几何与辅助图形",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/abstract-geometric-dogs-x-shape/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/05/Abstract-Geometric-Dogs-X-Shape-midjourney-prompt.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 7",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。原文含个人风格配置参数，已保留；在其他账号可能不可复现。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169399_8x02xr_1795036169399_wxep17.webp"
+    },
+    {
+      "key": "promptlibrary-96748",
+      "name": "圆形声波｜极简黑色标识",
+      "category": "LOGO设计",
+      "subcategory": "抽象与几何标识",
+      "text": "Logo，以简单形状和线条构成的极简设计，圆形中呈现抽象声波，浅奶油色背景上使用深黑色，无文字或字体排版。",
+      "tags": [
+        "方形",
+        "声波",
+        "圆形",
+        "黑白",
+        "极简",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-85cae4acb1e97f8590b1.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Sound-Wave-Logo-midjourney-prompt.webp"
+      ],
+      "originalText": "Logo, a minimalist design with simple shapes and lines, a circular shape with an abstract representation of sound waves, in a dark black on a light cream background, with no text or typography.",
+      "source": {
+        "key": "promptlibrary-96748",
+        "subcategory": "抽象与几何标识",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-sound-wave-logo/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Sound-Wave-Logo-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney（来源未注明版本）",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169403_ebr6mq_1795036169403_vnn3bz.webp"
+    },
+    {
+      "key": "promptlibrary-95028",
+      "name": "水墨层岩｜黑白等高山川",
+      "category": "背景设计",
+      "subcategory": "东方流体与水墨",
+      "text": "流动黑墨与矿物礁石碰撞，形成重叠的山丘与山谷轮廓，波浪构成类似树木和群山的抽象形状。大理石纹理、等高线、黑白线条重叠交织的山丘与山谷。中国留白艺术，主体从中凸显，视错觉细节，中国写意笔法，超现实艺术，梦境写实主义，广角透视，对比构图、对比构图，梦境写实主义，超广角镜头，俯视。\n\n来源参数：--ar 3:4 --stylize 750",
+      "tags": [
+        "竖版",
+        "等高线",
+        "黑白",
+        "大理石",
+        "俯视",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-95111de45603504201b5.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/01/Ink-and-Marble-Landscapes-midjourney-prompt.webp"
+      ],
+      "originalText": "Flowing black ink collides with mineral reefs to form overlapping contours of hills and valleys, and waves form abstract shapes similar to trees and mountains. Marble texture, contour lines, black and white lines overlapping and interlaced hills and valleys. Chinese blank art, standing out among them, optical illusion details, Chinese freehand brushwork, surreal art, dreamlike realism, wide angle perspective, contrasting composition, contrasting composition, dreamlike realism, ultra-wide angle lens, overhead view, --ar 3:4 --stylize 750",
+      "source": {
+        "key": "promptlibrary-95028",
+        "subcategory": "东方流体与水墨",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/ink-and-marble-landscapes/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/01/Ink-and-Marble-Landscapes-midjourney-prompt.webp",
+        "previewDimensions": [
+          1856,
+          2464
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney（来源未注明版本）",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169407_4g151l_1795036169407_evzjsb.webp"
+    },
+    {
+      "key": "promptlibrary-93119",
+      "name": "红绸金云｜东方粒子背景",
+      "category": "背景设计",
+      "subcategory": "东方流体与水墨",
+      "text": "中国艺术风格的红金背景，红黑配色，金色沙粒形成波浪。精致的红色丝绸装饰与吉祥金云点缀边缘。作品结合水墨、抽象线条与数字艺术元素，创造出细节复杂、深色背景、超现实、高分辨率、高质量图像。\n\n来源参数：--ar 9:16 --v 6.1",
+      "tags": [
+        "竖版",
+        "红金",
+        "祥云",
+        "丝绸",
+        "暗底",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-243053f6a52d81e1d387.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Chinese-Art-with-Golden-Clouds-midjourney-prompt.webp"
+      ],
+      "originalText": "Red and gold background in the style of Chinese art, with a red and black color scheme featuring waves of golden sand particles. Delicate red silk embellishments and auspicious golden clouds adorn the edges. The artwork combines elements of ink painting, abstract lines, and digital art, creating a surreal, high-resolution, and high-quality image with intricate details and a dark background. --ar 9:16 --v 6.1",
+      "source": {
+        "key": "promptlibrary-93119",
+        "subcategory": "东方流体与水墨",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/chinese-art-with-golden-clouds/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Chinese-Art-with-Golden-Clouds-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169412_1mj0nf_1795036169412_mwrfj1.webp"
+    },
+    {
+      "key": "promptlibrary-90713",
+      "name": "磨砂葡萄｜银枝与柔光",
+      "category": "背景设计",
+      "subcategory": "玻璃与折射",
+      "text": "一串葡萄，银色金属枝条，每颗葡萄均由磨砂玻璃制成，半透明，柔和白光进入葡萄，只能看到内部种子的轮廓。白色背景，柔和白光。\n\n来源参数：--ar 2:3 --style raw --v 6.1",
+      "tags": [
+        "竖版",
+        "磨砂玻璃",
+        "静物",
+        "柔光",
+        "银色",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d629cec4778f90134dff.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Frosted-Glass-Grapes-Sculpture-midjourney-prompt.webp"
+      ],
+      "originalText": "A bunch of grapes, silver metal twig, each grape is made of frosted glass, translucent, soft white light enters the grape, only the outline of the seed inside the grape can be seen. White background, soft white light --ar 2:3 --style raw --v 6.1",
+      "source": {
+        "key": "promptlibrary-90713",
+        "subcategory": "玻璃与折射",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/frosted-glass-grapes-sculpture/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Frosted-Glass-Grapes-Sculpture-midjourney-prompt.webp",
+        "previewDimensions": [
+          896,
+          1344
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。包含明确雕塑主体，适合材质与空间参考。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169417_mibwhn_1795036169417_h471t2.webp"
+    },
+    {
+      "key": "promptlibrary-90878",
+      "name": "金线郁金香｜玻璃花雕塑",
+      "category": "背景设计",
+      "subcategory": "玻璃与折射",
+      "text": "一组金色郁金香，浅白与深金色风格，玻璃雕塑风格，精细线条、精致曲线、线性纹理、深色背景，每朵花具有微妙色彩变化，细节精美。三维花瓣形成独特视觉效果，为整体作品增加深度。\n\n来源参数：--ar 9:16 --v 6.1",
+      "tags": [
+        "竖版",
+        "花卉",
+        "玻璃",
+        "金线",
+        "暗底",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-ea1f36c85569bd7fe4e5.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Golden-Tulip-Glass-Sculpture-midjourney-prompt.webp"
+      ],
+      "originalText": "A set of golden tulip flowers, light white and dark gold styles, glass sculpture style, delicate lines, delicate curves, linear texture, dark background, with subtle color changes in each flower, exquisite details. The three-dimensional petals form a unique visual effect, adding depth to the overall artwork.,,in --ar 9:16 --v 6.1",
+      "source": {
+        "key": "promptlibrary-90878",
+        "subcategory": "玻璃与折射",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/golden-tulip-glass-sculpture/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Golden-Tulip-Glass-Sculpture-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。包含明确雕塑主体，适合材质与空间参考。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169424_pn5nai_1795036169424_q91ga7.webp"
+    },
+    {
+      "key": "promptlibrary-83794",
+      "name": "悬浮水立方｜冰纹与内发光",
+      "category": "背景设计",
+      "subcategory": "玻璃与折射",
+      "text": "一个充满水的大型立方体玻璃雕塑悬浮在空中。雕塑具有类似波浪或冰面涟漪的复杂图案和纹理。它仿佛从内部发光，光线穿过透明表面，在下半部产生反射。前方是一间墙面与地面深暗的空房间，与盒内明亮色彩形成强烈反差。\n\n来源参数：--ar 3:4 --v 6.1",
+      "tags": [
+        "竖版",
+        "水立方",
+        "悬浮",
+        "焦散",
+        "冷光",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-41a1d196108b52b06075.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/09/Illuminated-Glass-Cube-Sculpture-midjourney-prompt.webp"
+      ],
+      "originalText": "A large, cube-shaped sculpture made of glass filled with water is suspended in the air. The sculpture has intricate patterns and textures that resemble waves or ripples on ice. It appears to be illuminated from within in the style of light shining through the transparent surface, creating reflections on its bottom half. In front of it lies an empty room with dark walls and floor, providing a stark contrast against the luminous colors inside the box. --ar 3:4 --v 6.1",
+      "source": {
+        "key": "promptlibrary-83794",
+        "subcategory": "玻璃与折射",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/illuminated-glass-cube-sculpture/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/09/Illuminated-Glass-Cube-Sculpture-midjourney-prompt.webp",
+        "previewDimensions": [
+          928,
+          1232
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。包含明确雕塑主体，适合材质与空间参考。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169431_l1exnk_1795036169431_jehibs.webp"
+    },
+    {
+      "key": "promptlibrary-106412",
+      "name": "古褐丘陵｜16:9复古风景油画",
+      "category": "背景设计",
+      "subcategory": "田园与茶田",
+      "text": "宽幅全景复古棕褐色风景油画，缓缓起伏的开阔丘陵横贯画面，中景自然散布着小型成熟树木，树冠不规则圆润，树干细而深。层叠起伏的乡村向远方淡去，上方为广阔阴天天空，柔和的大气地平线，前景丘陵深暗。巧克力棕、深赭棕、烟灰褐与暖棕褐色之间细微调性过渡，近乎单色的古旧棕色板。远山柔和朦胧，远景低对比、前景剪影更深。柔刷绘画表面、老旧古董印刷品观感、微妙画布颗粒、克制的印象派笔触，安静忧郁的秋日乡村。无建筑、道路、湖泊、高山、明亮树叶、鲜艳颜色、文字或水印，全景横版构图。\n\n来源参数：--ar 16:9 --v 8.2",
+      "tags": [
+        "横版",
+        "16:9",
+        "棕褐",
+        "油画",
+        "留白",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-b8c55ef11701a485cd8c.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Vintage-Sepia-Landscape-Painting-midjourney-prompt.webp"
+      ],
+      "originalText": "Wide panoramic vintage sepia landscape oil painting, gently rolling open hills stretching across the scene, scattered small mature trees with irregular rounded canopies and thin dark trunks naturally distributed across the middle ground, layered undulating countryside fading into the distance, broad overcast sky occupying the upper portion, muted atmospheric horizon, dark foreground hills, subtle tonal transitions between chocolate brown, deep umber, smoky taupe, and warm sepia, near monochromatic antique brown palette, soft hazy distant hills, low contrast in the distance, darker silhouettes in the foreground, softly brushed painterly surface, aged antique print appearance, subtle canvas grain, understated impressionist brushwork, quiet melancholic autumn countryside, no buildings, paths, lakes, mountains, bright foliage, vivid colors, text, or watermarks, panoramic horizontal composition. --ar 16:9 --v 8.2",
+      "source": {
+        "key": "promptlibrary-106412",
+        "subcategory": "田园与茶田",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/vintage-sepia-landscape-painting/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Vintage-Sepia-Landscape-Painting-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          673
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169439_52ljr4_1795036169439_t083g8.webp"
+    },
+    {
+      "key": "promptlibrary-98632",
+      "name": "甘南列车｜雪峰与镜湖倒影",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "蓝橙色列车穿过湖面，清澈水中倒映群山。高清摄影，捕捉中国甘南地区的真实风景。轨道两侧是雪峰，晴朗天空，高分辨率。",
+      "tags": [
+        "竖版",
+        "列车",
+        "雪山",
+        "倒影",
+        "摄影感",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-f33630553e23a56108dc.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Train-Reflection-in-Gannan-midjourney-prompt.webp"
+      ],
+      "originalText": "A blue and orange train passes through the lake, reflecting the mountains in the clear water. This is high-definition photography, capturing the real scenery of China's Gannan region. Snow-capped peaks line both sides of the tracks, under a clear sky, in high resolution.",
+      "source": {
+        "key": "promptlibrary-98632",
+        "subcategory": "山湖与雪山",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/train-reflection-in-gannan/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Train-Reflection-in-Gannan-midjourney-prompt.webp",
+        "previewDimensions": [
+          665,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney（来源未注明版本）",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。摄影感AI案例，并非实地拍摄地理证据。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169443_ayfuvp_1795036169443_bn5utf.webp"
+    },
+    {
+      "key": "promptlibrary-103685",
+      "name": "水彩牡丹｜浅绿底与透光花瓣",
+      "category": "插画设计",
+      "subcategory": "植物与花卉插画",
+      "text": "一幅精致水彩画，淡粉牡丹盛放，无轮廓线，色彩轻盈、半透明花瓣，漂浮在柔和浅绿色背景上，精细中国传统绘画风格，空灵氛围，植物插画，微妙阴影，优雅构图，柔和渐变水洗，丰富细节，水墨美学。\n\n来源参数：--v 7 --profile 5la9z16",
+      "tags": [
+        "方形",
+        "水彩",
+        "牡丹",
+        "工笔",
+        "浅绿",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-f11ed3dbcbe66b56086d.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/05/Watercolor-Peony-Botanical-Illustration-midjourney-prompt.webp"
+      ],
+      "originalText": "a delicate watercolor painting of a light pink peony in full bloom, no outlines, colorfullight and translucent petals, floating on a soft pale green background, fine traditional Chinese painting style, ethereal atmosphere, botanical illustration, subtle shadows, elegant composition, soft gradient washes, high detail, ink and wash aesthetic --v 7 --profile 5la9z16",
+      "source": {
+        "key": "promptlibrary-103685",
+        "subcategory": "植物与花卉插画",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/watercolor-peony-botanical-illustration/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/05/Watercolor-Peony-Botanical-Illustration-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 7",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。原文含个人风格配置参数，已保留；在其他账号可能不可复现。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169446_zdq3f2_1795036169446_xsub5t.webp"
+    },
+    {
+      "key": "promptlibrary-82915",
+      "name": "蓝山橙亭｜微缩水彩地景",
+      "category": "背景设计",
+      "subcategory": "东方流体与水墨",
+      "text": "移轴视角，钢笔与淡水彩，极简主义，微缩风景，钢笔与淡水彩，群山、亭阁与人物，浅蓝色调配橙色点缀，John Pawson与Geoff Mcfetridge风格。侧视、航拍视角、等高线、轮廓线、层叠曲线、三维感、丰富荧光色、彩铅绘画、马克笔上色、版画风格、宋代风格、平安时代、中国宣纸纹理、宁静氛围。曲线弥散、平滑相连、色彩涟漪扩散、丰富色彩扩散、中国水墨画、中国工笔画、毛细现象、毛细效应。\n\n来源参数：--chaos 10 --ar 9:16 --stylize 250 --v 6.1",
+      "tags": [
+        "竖版",
+        "水彩",
+        "亭阁",
+        "移轴",
+        "蓝橙",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-6e387380e71800a5e414.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/09/Miniature-Landscape-Watercolor-midjourney-prompt.webp"
+      ],
+      "originalText": "tilt-shift view,pen and light watercolor,minimalism,Miniature landscape,pen and light watercolor,mang mountains and pavilion people,light blue tones with orange accents,by john pawson and Geoff Mcfetridge,Side view,Aerial view,isohypse line,Contour line,layered curves,three-dimensional sense,rich fluorescent colors,colored pencil drawing,marker coloring,printmaking style,Song Dynasty style, Heian period,chinese xuan paper texture,peaceful atmosphere,curve diffusing,curve linked smoothly,ripples of color diffusing,rich color diffusing,chinese Ink and wash painting,chinese gongbi painting,capillary phenomenon,capillary effect --chaos 10 --ar 9:16 --stylize 250 --v 6.1",
+      "source": {
+        "key": "promptlibrary-82915",
+        "subcategory": "东方流体与水墨",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/miniature-landscape-watercolor/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/09/Miniature-Landscape-Watercolor-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169450_y4jbdq_1795036169450_ek1e2x.webp"
+    },
+    {
+      "key": "promptlibrary-96752",
+      "name": "雪坡滑行｜彩色树屋插画",
+      "category": "插画设计",
+      "subcategory": "场景与叙事插画",
+      "text": "马蒂斯风格的平面插画，描绘人们滑下山坡。鸟瞰雪中滑行的滑雪者，营造有趣活泼的气氛。滑雪者穿着滑雪服，山坡四周是树木，顶部有村落和房屋。彩色形状、快乐氛围，Henri Matisse、Henri Rousseau、Frick Jansson、Tove Jansson与Isabelle Arsenault风格。",
+      "tags": [
+        "竖版",
+        "滑雪",
+        "鸟瞰",
+        "马蒂斯风格",
+        "彩色",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-e459051385f215cd1caf.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Matisse-Style-Skiers-on-Hillside-midjourney-prompt.webp"
+      ],
+      "originalText": "A graphic illustration in the style of Matisse of people skiing down a hillside. A bird's eye view of the skiers gliding across the snow creates a fun and lively atmosphere. The skiers are wearing ski suits, the hillside is surrounded by trees, and there are villages and houses on the top. With colorful shapes and a happy atmosphere, it is in the style of Henri Matisse, Henri Rousseau, Frick Jansson, Tove Jansson and Isabelle Arsenault.",
+      "source": {
+        "key": "promptlibrary-96752",
+        "subcategory": "场景与叙事插画",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/matisse-style-skiers-on-hillside/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Matisse-Style-Skiers-on-Hillside-midjourney-prompt.webp",
+        "previewDimensions": [
+          903,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney（来源未注明版本）",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169453_r4ox4i_1795036169453_31w162.webp"
+    },
+    {
+      "key": "promptlibrary-99928",
+      "name": "灰海红舟｜对称海岸俯拍",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "NASA航拍视角，海岸，海滩，安静灰色调，红色小船，壁纸风格，对称构图。",
+      "tags": [
+        "竖版",
+        "航拍",
+        "红舟",
+        "灰调",
+        "对称",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d3ae0e92b9dc38181890.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Symmetrical-Coastline-with-Red-Boat-midjourney-prompt.webp"
+      ],
+      "originalText": "NASA aerial view, coast, beach, silent gray tones, red boat, style wallpaper, symmetrical composition",
+      "source": {
+        "key": "promptlibrary-99928",
+        "subcategory": "海岸与水域航拍",
+        "author": "wpx_promptlibrary（网站发布署名；原作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/symmetrical-coastline-with-red-boat/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Symmetrical-Coastline-with-Red-Boat-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney（来源未注明版本）",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，原始参数保留。摄影感AI案例，并非实地拍摄地理证据。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169457_18rx0t_1795036169457_dple75.webp"
+    },
+    {
+      "key": "prompt123-5333",
+      "name": "Phoenix Rebirth｜凤凰重生概念字组",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "为准确标题“[INPUT_TEXT]”创作一张完成度高的高级概念字体海报。\n只生成一张海报，不要情绪板、网格、展示板、样机、说明文字、提示词文本、过程页或样本标签。\n标题“[INPUT_TEXT]”必须成为海报的主导视觉结构：巨大、可读、有力量，拼写完全准确。不要翻译、缩短、替换或拼错，不添加其他大号可读文字。可选微型目录文字仅可作为含蓄次要信息。\n默默解读标题的意义、情绪、文化气息、象征关联、心理张力和视觉节奏，将解读转化为一个有力视觉隐喻。\n字体是主角。设计具有定制感的字形，使字重、宽度、对比、间距、节奏、扭曲、负空间、边缘质感与油墨纹理表达标题气质。字体应有明确设计意图，不能像默认字体。\n若“[INPUT_TEXT]”指向广为人知的人物，让大型编辑肖像或全身/半身人物成为主要视觉，占构图约40%—70%。通过气质、姿态、造型、年代、表情、光线和象征氛围体现可辨识性，但不复制特定现有照片、官方海报、广告图、Logo、口号或受版权保护构图。人物必须与文字互动：覆盖字母、从字母中浮现、被其框住、在其上投影、冲破字母或部分藏于其后。\n其他标题仅在有助于意义时加入人物、风景、物件或氛围场景；它必须与字体互动并深化概念，不能只是装饰。\n采用与主题匹配、丰富而克制的4—6色系统：主背景色、主要字体色、人物/风景色、情绪强调色、低饱和辅助色及细微纸张/油墨纹理色。除概念确有需要，避免默认黑白红组合。\n构图：高级编辑海报、博物馆级平面设计、戏剧化尺度、强层级、少元素、聪明留白、大胆平涂色块、锐利裁切、丝网印刷/石版画/孔版印刷颗粒、纸纤维、细微油墨瑕疵、精致视觉张力。\n最终图像应如完整视觉句子：标题、人物或场景、颜色和字体互相解释。\n避免普通文字装饰、光亮3D字、随机图标、图库照片写实感、杂乱拼贴、过度做旧、旅游俗套、官方Logo、照搬口号、复制广告美学、无关文字与错拼字体。\nINPUT_TEXT：Phoenix Rebirth",
+      "tags": [
+        "竖版",
+        "英文字组",
+        "凤凰",
+        "金色",
+        "编辑海报",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-9d07e14ec857194d1793.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case355.jpg?wm=1"
+      ],
+      "originalText": "Create ONE finished premium conceptual typography poster for the exact title:\n\n“[INPUT_TEXT]”\n\nSingle poster only. No moodboard, grid, presentation board, mockup, captions, prompt text, process sheet, or sample labels.\n\nThe title “[INPUT_TEXT]” must be the dominant visual structure of the poster: huge, readable, powerful, and spelled exactly. Do not translate, shorten, replace, or misspell it. Do not add other large readable text. Optional micro catalog text is allowed only if it stays subtle and secondary.\n\nSilently interpret the title’s meaning, mood, cultural aura, symbolic associations, psychological tension, and visual rhythm. Turn that interpretation into one strong visual metaphor.\n\nTypography is the hero. Design custom-looking letterforms whose weight, width, contrast, spacing, rhythm, distortion, negative space, edge quality, and ink texture express the temperament of the title. The type should feel intentionally designed, not like a default font.\n\nIf “[INPUT_TEXT]” refers to a widely known person, make a large editorial portrait or full / half-body figure a major visual presence, occupying roughly 40–70% of the composition. The figure should feel recognizable through aura, posture, styling, era, expression, lighting, and symbolic atmosphere, but should not copy a specific existing photograph, official poster, campaign image, logo, slogan, or copyrighted composition. The portrait must interact with the typography: overlapping the letters, emerging from them, being framed by them, casting shadows on them, breaking through them, or being partially hidden behind them.\n\nFor all other titles, use a human figure, landscape, object, or atmospheric setting only when it strengthens the meaning. It must interact with the typography and deepen the concept, not decorate it.\n\nUse a rich but restrained 4–6 color system matched to the theme: dominant background color, primary typography color, figure / landscape tone, emotional accent color, muted support color, and subtle paper / ink texture tone. Avoid flat black-white-red defaults unless conceptually necessary.\n\nComposition style: high-end editorial poster, museum-quality graphic design, dramatic scale, strong hierarchy, few elements, intelligent whitespace, bold flat color areas, sharp cropping, silkscreen / lithograph / risograph grain, paper fibers, subtle ink imperfections, refined visual tension.\n\nThe final image should feel like a complete visual sentence: the title, the figure or setting, the color, and the typography explain each other.\n\nAvoid generic word art, glossy 3D lettering, random icons, stock-photo realism, cluttered collage, excessive grunge, tourist clichés, official logos, copied slogans, copied campaign aesthetics, unrelated text, and misspelled typography.\n\n-----\n\nINPUT_TEXT：Phoenix Rebirth",
+      "source": {
+        "key": "prompt123-5333",
+        "subcategory": "材质与特殊字效",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5333.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case355.jpg?wm=1",
+        "previewDimensions": [
+          1055,
+          1491
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文，保留标题原文Phoenix Rebirth与变量。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169461_1u02ye_1795036169461_tbe58u.webp"
+    },
+    {
+      "key": "prompt123-5209",
+      "name": "纵有疾风起｜黑底白字飞白标题",
+      "category": "字体设计",
+      "subcategory": "书法与手写标题",
+      "text": "创意艺术字体“纵有疾风起”，秀丽笔手写风格，整体文字横版排列，具有强烈视觉冲击力；\n深度融合手写书法笔意，笔触带毛笔书写的粗犷洒脱，如挥毫泼墨的肆意劲道；\n起收笔的飞白，顿挫，尽显促销的火爆张力，文字的形态打破规整，笔画的粗细变化；\ndutch angle，营造出动感冲刺的气势，字形呈奔放之势；\n重心上扬如蓄势待发，笔画的伸展，穿插毫无拘束，似全力冲刺的劲道；\n整体架构疏密交织，紧密处如促销热潮的汹涌，留白处似优惠间隙的呼吸感；\n纯净黑色背景打底，完美契合热烈氛围，艺术字的形态与色彩酣畅传递。",
+      "tags": [
+        "横版",
+        "黑底白字",
+        "飞白",
+        "动势",
+        "中文字组",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-4368c8e7c3eac90980b0.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case231.jpg?wm=1"
+      ],
+      "originalText": "[中文]\n创意艺术字体“纵有疾风起”，秀丽笔手写风格，整体文字横版排列，具有强烈视觉冲击力；\n深度融合手写书法笔意，笔触带毛笔书写的粗犷洒脱，如挥毫泼墨的肆意劲道；\n起收笔的飞白，顿挫，尽显促销的火爆张力，文字的形态打破规整，笔画的粗细变化；\ndutch angle，营造出动感冲刺的气势，字形呈奔放之势；\n重心上扬如蓄势待发，笔画的伸展，穿插毫无拘束，似全力冲刺的劲道；\n整体架构疏密交织，紧密处如促销热潮的汹涌，留白处似优惠间隙的呼吸感；\n纯净黑色背景打底，完美契合热烈氛围，艺术字的形态与色彩酣畅传递。\n\n[English]\nCreative artistic typography \"Zong You Ji Feng Qi\", hand-written style with a fine brush, overall text arranged horizontally, with strong visual impact;\nDeeply integrated with the essence of handwritten calligraphy, the brushstrokes carry the rugged and free-spirited nature of brush writing, like the unrestrained vigor of splashing ink;\nThe flying white and pauses at the start and end of the strokes fully display the explosive tension of a promotion, the form of the text breaks away from neatness, with variations in the thickness of the strokes;\ndutch angle, creating a dynamic sprinting momentum, the font shape shows a bold and unrestrained trend;\nThe center of gravity rises like being ready to launch, the stretching and interlacing of the strokes are completely unconstrained, like the vigor of a full-force sprint;\nThe overall structure is intertwined with density and sparseness, the tight parts are like the surging of a promotional craze, and the blank spaces are like the breathing sense during promotional gaps;\nPure black background as the base, perfectly fitting the passionate atmosphere, the form and color of the artistic typography are conveyed with full expressiveness.",
+      "source": {
+        "key": "prompt123-5209",
+        "subcategory": "书法与手写标题",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5209.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case231.jpg?wm=1",
+        "previewDimensions": [
+          1200,
+          800
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-19-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留完整中文原文及原图水印；按配图实际横版标记。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795036169465_wmin9n_1795036169465_nih78t.webp"
+    }
+  ]
+}

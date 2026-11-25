@@ -1,0 +1,95 @@
+{
+  "added": 61,
+  "activeBefore": 392,
+  "activeAfter": 453,
+  "trashBefore": 110,
+  "trashAfter": 110,
+  "priorRecordsPreserved": 502,
+  "priorRecordsChanged": 0,
+  "groups": {
+    "立体字效": 15,
+    "书法手写": 13,
+    "复古装饰": 4,
+    "圆体趣味": 12,
+    "运动力量": 8,
+    "几何构成": 5,
+    "细线优雅": 3,
+    "语义图形": 1
+  },
+  "authors": {
+    "右蓝设计": 7,
+    "Aml（图内署名 RUBY）": 9,
+    "羊羊Vincent": 8,
+    "西城门AIGC": 8,
+    "东哥AIGC研究院": 10,
+    "做设计的鹿野Loyel": 8,
+    "设计师_灿烂": 3,
+    "张贤AIGC": 8
+  },
+  "sourceWorks": 9,
+  "sourceUrls": [
+    "https://www.uisdc.com/group/650202.html",
+    "https://www.uisdc.com/group/652279.html",
+    "https://www.uisdc.com/group/652525.html",
+    "https://www.uisdc.com/group/657194.html",
+    "https://www.uisdc.com/group/659107.html",
+    "https://www.uisdc.com/group/665083.html",
+    "https://www.uisdc.com/group/669244.html",
+    "https://www.uisdc.com/group/669590.html",
+    "https://www.uisdc.com/group/673518.html"
+  ],
+  "apiMedia200": 61,
+  "desktopSearchPagination": [
+    24,
+    48,
+    61
+  ],
+  "desktopCategoryTotals": {
+    "立体字效": 52,
+    "圆体趣味": 72,
+    "书法手写": 71
+  },
+  "representativeDetailImages": {
+    "冰封王座": [
+      1440,
+      740
+    ],
+    "未来重构": [
+      1440,
+      1380
+    ]
+  },
+  "browserOriginalTabRestored": true,
+  "draftInputsPreserved": [
+    {
+      "p": "",
+      "v": "未命名字体设计"
+    },
+    {
+      "p": "例如：文字改成“秋水长天”，黑字白底，笔画更细",
+      "v": "主标题文字组设计：清痹愈凝\n适当英文装饰，黑底白字\n文字一行排列，体现载药凝胶修复痛风性关节炎\n需要有创意，高级\n除了主标题和英文装饰，不要有其他文字"
+    }
+  ],
+  "review": {
+    "cards": 61,
+    "cropOcrTitleMatches": 25,
+    "sourceOcrTitleMatches": 51,
+    "confirmedTitleOrPending": 61,
+    "unconfirmed": [],
+    "edgeTextBlocks": 0,
+    "reviewLimitation": "当前模型不能直接读取图片像素供目视；采用原图/裁图 OCR、原图提示词、尺寸、边界和颜色统计复核。",
+    "manualSourceConfirmed": [
+      "卡布奇诺体",
+      "天方夜谈",
+      "12·12 爆裂开抢",
+      "双十二狂欢节 全场底价啦",
+      "12·12 全场特惠",
+      "年末狂欢 正式开抢",
+      "年终好价 提前抢",
+      "限时的 才划算",
+      "青云志"
+    ],
+    "note": "未由裁图OCR逐字命中的标题，已用作品正文或原图提示词人工核对，包含标点归一化。"
+  },
+  "verificationTime": "2026-11-22T21:05:18.110305+00:00"
+}

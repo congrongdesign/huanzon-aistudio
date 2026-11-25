@@ -1,0 +1,29 @@
+{
+  "historyManifests": [
+    "data/font-curation/daily-2026-11-18-0500/manifest.json",
+    "data/font-curation/daily-2026-11-19-0500/manifest.json",
+    "data/font-curation/uisdc-diverse-2026-11-18/manifest.json",
+    "data/font-curation/uisdc-expanded-2026-11-18/manifest.json",
+    "data/font-curation/zcool-72070256/manifest.json"
+  ],
+  "historyCards": 264,
+  "sameSourceMatches": [],
+  "sameTextMatches": [
+    {
+      "number": 24,
+      "text": "紙",
+      "priorManifest": "data/font-curation/daily-2026-11-19-0500/manifest.json",
+      "priorStyle": "卷纸折页单字"
+    },
+    {
+      "number": 48,
+      "text": "乘风破浪",
+      "priorManifest": "data/font-curation/uisdc-expanded-2026-11-18/manifest.json",
+      "priorStyle": "年会饱墨飞白手写字"
+    }
+  ],
+  "manualResolution": "紙为新作者sanzui0000的掌形纸字，与旧款折纸字结构不同；乘风破浪为四喜单线软笔，与旧粗笔书法不同。同文不等于同字形，已核对排除同构配色版。",
+  "activeBefore": 214,
+  "deletedBefore": 93,
+  "doNotRestoreDeleted": true
+}

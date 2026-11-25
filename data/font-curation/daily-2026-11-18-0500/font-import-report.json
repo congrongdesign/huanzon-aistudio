@@ -1,0 +1,1325 @@
+{
+  "owner": "00000000-0000-4000-8000-000000000001",
+  "indexFile": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/11e594f481958c10e3015d0b/index.json",
+  "createdAt": "2026-11-17T21:13:08.682Z",
+  "before": 164,
+  "priorRecords": [
+    {
+      "id": "35806298-d183-476b-8bd8-c6de70885d40",
+      "deletedAt": null
+    },
+    {
+      "id": "ce9a102f-9eaf-4287-a510-377065971170",
+      "deletedAt": null
+    },
+    {
+      "id": "6cf17c90-f14d-4d17-82f0-42dd75a87894",
+      "deletedAt": null
+    },
+    {
+      "id": "cb14f61d-d521-419f-bd62-2cb2d9981f8a",
+      "deletedAt": null
+    },
+    {
+      "id": "6bc8f513-4c25-4bdd-92e6-e50ddf77d78c",
+      "deletedAt": null
+    },
+    {
+      "id": "5437759c-b5cb-466b-a743-963c32b3a14f",
+      "deletedAt": null
+    },
+    {
+      "id": "f97c9ce6-47cf-440f-be85-9bd121085468",
+      "deletedAt": null
+    },
+    {
+      "id": "8588b8f8-fe30-4995-95cb-6507f86450b8",
+      "deletedAt": null
+    },
+    {
+      "id": "743da557-3110-48d9-8e05-5921b861deb4",
+      "deletedAt": null
+    },
+    {
+      "id": "bfb2990c-0084-4d93-b5b9-93df84fce8db",
+      "deletedAt": null
+    },
+    {
+      "id": "86d5f41e-8772-4fb8-8582-9c0b396b93df",
+      "deletedAt": null
+    },
+    {
+      "id": "498cf0f1-db12-4859-9684-710adb657b30",
+      "deletedAt": null
+    },
+    {
+      "id": "f46b1f48-b110-4a14-8042-0f908bbbf57a",
+      "deletedAt": null
+    },
+    {
+      "id": "a0f36043-ca08-403a-8d1c-def550261eb0",
+      "deletedAt": null
+    },
+    {
+      "id": "e1ed5e54-b6c1-4345-b774-156761d84c6b",
+      "deletedAt": null
+    },
+    {
+      "id": "dae1e0a3-cc55-4a74-a773-f6cb8c0627af",
+      "deletedAt": null
+    },
+    {
+      "id": "636de315-a589-41af-89a0-82b67ff790c5",
+      "deletedAt": null
+    },
+    {
+      "id": "17737424-cc3d-4dd4-9762-a3f651f3321f",
+      "deletedAt": null
+    },
+    {
+      "id": "097488e6-f8e5-49bc-b36c-78e765c1df2b",
+      "deletedAt": null
+    },
+    {
+      "id": "f86f2acf-d26d-4e74-8741-86146a53d5f7",
+      "deletedAt": null
+    },
+    {
+      "id": "d563f2d5-c8ad-490a-8878-7a2ebf1e171f",
+      "deletedAt": null
+    },
+    {
+      "id": "57e5d710-9888-4cfe-bb4f-182a132cb6fb",
+      "deletedAt": null
+    },
+    {
+      "id": "1bd34170-e672-4fa2-9e4f-7b5a3e686bea",
+      "deletedAt": null
+    },
+    {
+      "id": "a2904bd5-14d3-4b50-8a9f-7efa7c8b807a",
+      "deletedAt": null
+    },
+    {
+      "id": "b828739c-8bdb-42a6-a2f6-437aad19c7a4",
+      "deletedAt": null
+    },
+    {
+      "id": "aca26c87-1baf-4c91-a34c-e5d45838f4bc",
+      "deletedAt": null
+    },
+    {
+      "id": "ae8eaad8-1779-4ad4-a69f-a40a4e7e11bd",
+      "deletedAt": null
+    },
+    {
+      "id": "408acc19-dc34-4bb7-880e-6aa719f0f301",
+      "deletedAt": null
+    },
+    {
+      "id": "8a9d64ec-eac6-4a16-8fce-d0ad4f8df7d6",
+      "deletedAt": null
+    },
+    {
+      "id": "5a9477bd-d9c4-40b6-8ef1-899ae1ebd29e",
+      "deletedAt": null
+    },
+    {
+      "id": "505a4354-fbfc-497b-9cc7-1e879b263509",
+      "deletedAt": null
+    },
+    {
+      "id": "4cd44b66-6b31-4c2c-ac4f-60d471a1ca71",
+      "deletedAt": null
+    },
+    {
+      "id": "f6cdfaa9-21c4-42a7-8349-63b98c90e362",
+      "deletedAt": null
+    },
+    {
+      "id": "1a25e472-6179-4d03-b693-80449092739e",
+      "deletedAt": null
+    },
+    {
+      "id": "c9e34af4-a4a6-4404-becc-f5627ce849df",
+      "deletedAt": null
+    },
+    {
+      "id": "40e86e9f-8eef-4b80-8bcc-48dbac3ab772",
+      "deletedAt": null
+    },
+    {
+      "id": "a2f689fa-469f-4828-9ed4-c49c10b8f7a6",
+      "deletedAt": null
+    },
+    {
+      "id": "97df36e7-4be1-4ae0-9184-a98fab8c723c",
+      "deletedAt": null
+    },
+    {
+      "id": "63b8bc27-4d47-4be9-b32f-a9effb0eced5",
+      "deletedAt": null
+    },
+    {
+      "id": "1040e670-4446-4d80-9f9e-ef0d8bea0e5c",
+      "deletedAt": null
+    },
+    {
+      "id": "5a8a5a71-cd1a-4e1e-917d-f6f39db31d69",
+      "deletedAt": null
+    },
+    {
+      "id": "06aedd96-92c7-4a76-87c2-a6bec354c46b",
+      "deletedAt": null
+    },
+    {
+      "id": "7f9ca0f5-186c-46b9-827f-743d8971fc49",
+      "deletedAt": null
+    },
+    {
+      "id": "f7552178-a30e-4240-8b92-0713ea321d68",
+      "deletedAt": null
+    },
+    {
+      "id": "747a09de-428a-4360-b3ee-c41c5c1b2870",
+      "deletedAt": null
+    },
+    {
+      "id": "ee65a55c-3a27-4208-818a-7110de6184d0",
+      "deletedAt": null
+    },
+    {
+      "id": "9faec13b-07c3-498a-8e1d-771a2a82b0bc",
+      "deletedAt": null
+    },
+    {
+      "id": "fa025ac6-ba59-49ed-be3c-b4c3a704f7a7",
+      "deletedAt": null
+    },
+    {
+      "id": "9264c8b8-6d5b-49df-b41d-2d542cf2a801",
+      "deletedAt": null
+    },
+    {
+      "id": "f097a0d0-4e20-4396-b860-6fbfdfae611a",
+      "deletedAt": null
+    },
+    {
+      "id": "b738c7e2-3daf-4a49-98bd-d1c797a89800",
+      "deletedAt": null
+    },
+    {
+      "id": "37238f9a-7ea8-412f-8ee2-565be6c62e2e",
+      "deletedAt": null
+    },
+    {
+      "id": "e2a4ef36-16f0-41c4-a8a7-5faf6dcf27ee",
+      "deletedAt": null
+    },
+    {
+      "id": "0c7d3cd2-f604-4473-83ac-1d7c61f98289",
+      "deletedAt": null
+    },
+    {
+      "id": "4d0cc506-507e-42c9-b602-238786e469d4",
+      "deletedAt": null
+    },
+    {
+      "id": "f1074db4-7661-4898-88be-4e47c3fa96b2",
+      "deletedAt": null
+    },
+    {
+      "id": "4f25254a-ea85-41b8-8f22-1cc66af0e472",
+      "deletedAt": null
+    },
+    {
+      "id": "04e2fb97-fd35-4142-ad17-f73db38d4f31",
+      "deletedAt": null
+    },
+    {
+      "id": "e7fe6319-2ef1-497f-9bd4-a17f66c58129",
+      "deletedAt": null
+    },
+    {
+      "id": "5c94187d-3ea2-4d30-a2b8-bef644448916",
+      "deletedAt": null
+    },
+    {
+      "id": "95434e41-9fe9-4405-8e20-475085dc23e2",
+      "deletedAt": null
+    },
+    {
+      "id": "030b6a6a-f7a2-4a7b-9c06-04fed84df907",
+      "deletedAt": null
+    },
+    {
+      "id": "f0e903b0-67de-43cf-ba29-6b969fbcee42",
+      "deletedAt": null
+    },
+    {
+      "id": "4eb72207-ac1e-45eb-8277-d48adb253d3d",
+      "deletedAt": null
+    },
+    {
+      "id": "68f9c70d-d284-4f3e-964c-efdf623e0ec1",
+      "deletedAt": null
+    },
+    {
+      "id": "ccf47e4f-2b0c-4ee9-b72b-244e64ebb6a8",
+      "deletedAt": null
+    },
+    {
+      "id": "b686e7e3-f9da-4fd8-99e0-849b4ee55ac0",
+      "deletedAt": null
+    },
+    {
+      "id": "8b2d3e32-67e2-437a-86fd-b07730b745c6",
+      "deletedAt": null
+    },
+    {
+      "id": "d5d4f983-e72c-4ef7-8368-4abf1cee929c",
+      "deletedAt": null
+    },
+    {
+      "id": "d7c66a52-1b6a-4234-854f-72b474b8d917",
+      "deletedAt": null
+    },
+    {
+      "id": "8e469feb-550c-47c7-9bfb-76302b670f4e",
+      "deletedAt": null
+    },
+    {
+      "id": "8b0a998a-a5f6-4d02-a222-15c9fc58f2ff",
+      "deletedAt": null
+    },
+    {
+      "id": "26aac125-9017-4b7f-be0d-a5964d6049bf",
+      "deletedAt": null
+    },
+    {
+      "id": "8d483f96-7eb3-4843-bffd-10613dd9f496",
+      "deletedAt": null
+    },
+    {
+      "id": "ec04bca5-d95d-4950-bd64-56450b336789",
+      "deletedAt": null
+    },
+    {
+      "id": "5339adcc-dc04-43ec-a354-7036086e0ab5",
+      "deletedAt": null
+    },
+    {
+      "id": "3b1e43bf-a458-474f-88fe-dda14e9cead6",
+      "deletedAt": null
+    },
+    {
+      "id": "4a858651-af59-401c-ad20-b36b1ad0e376",
+      "deletedAt": null
+    },
+    {
+      "id": "82ae15be-1839-48d2-8a35-daff17f1b54b",
+      "deletedAt": null
+    },
+    {
+      "id": "a32aac25-6305-4123-bf5e-15bc42ec1d14",
+      "deletedAt": null
+    },
+    {
+      "id": "5ce5f941-83a3-401a-b816-eb865743d2f2",
+      "deletedAt": null
+    },
+    {
+      "id": "46835073-4c20-4349-b2ec-fe25d36e9555",
+      "deletedAt": null
+    },
+    {
+      "id": "1ac32962-3f21-4bec-a38f-23ec13a5a33c",
+      "deletedAt": null
+    },
+    {
+      "id": "e89b23de-635b-4ce4-99fb-501cf57c8c5a",
+      "deletedAt": null
+    },
+    {
+      "id": "c97233fc-a4dc-402a-b221-2e262add482d",
+      "deletedAt": null
+    },
+    {
+      "id": "0c354152-b505-4b93-a604-95da200dfa05",
+      "deletedAt": null
+    },
+    {
+      "id": "97d2ff04-5ea8-4b77-b83f-0c414817a005",
+      "deletedAt": null
+    },
+    {
+      "id": "09461e89-c965-41f1-bfdc-e7e228969fcf",
+      "deletedAt": null
+    },
+    {
+      "id": "43524716-c0aa-4e1c-bb5f-7d5fb07a32b1",
+      "deletedAt": null
+    },
+    {
+      "id": "5b24f4fc-6d96-4b68-8b42-fcccaecc61b7",
+      "deletedAt": null
+    },
+    {
+      "id": "2bd692d3-e88c-4907-b074-24386abf56f1",
+      "deletedAt": null
+    },
+    {
+      "id": "35fbc1a8-48e1-40cd-82fc-a048d6294950",
+      "deletedAt": null
+    },
+    {
+      "id": "524ccef1-1932-41b7-b25b-4fbcc5e59b80",
+      "deletedAt": null
+    },
+    {
+      "id": "63e97d2f-8378-4b5e-b4e8-ecd0a8920fc4",
+      "deletedAt": null
+    },
+    {
+      "id": "1cc0a8c0-056f-4ae7-a96b-a0349c04528d",
+      "deletedAt": null
+    },
+    {
+      "id": "af413383-4279-45fd-b14e-f71679c3e941",
+      "deletedAt": "2026-11-16T09:11:59.114Z"
+    },
+    {
+      "id": "73069f7f-d09c-4bf2-b815-a854b6fef9e0",
+      "deletedAt": null
+    },
+    {
+      "id": "92df5b8d-7ed5-4aa2-bb4c-7218b9f12a67",
+      "deletedAt": null
+    },
+    {
+      "id": "eba02dc8-f54a-4014-ab6a-729b7fc438ff",
+      "deletedAt": null
+    },
+    {
+      "id": "ae2ecc6b-7cd4-4cc3-aea0-c8c3d20aa0b9",
+      "deletedAt": null
+    },
+    {
+      "id": "63e91bc3-039e-46a6-944e-17b3f3c133e0",
+      "deletedAt": null
+    },
+    {
+      "id": "48348e6d-d6b5-4f34-b252-85f95f0ef5b3",
+      "deletedAt": null
+    },
+    {
+      "id": "21102035-775e-4c14-b6c0-aa9bfd57a270",
+      "deletedAt": null
+    },
+    {
+      "id": "74cc1a20-652b-48f9-91e7-0d6923cb1c4c",
+      "deletedAt": null
+    },
+    {
+      "id": "d9391afa-a2de-4c47-8a9d-d13486f4a016",
+      "deletedAt": null
+    },
+    {
+      "id": "673ca60e-0c46-4161-84a3-92b1552d4b71",
+      "deletedAt": null
+    },
+    {
+      "id": "bf4af047-8826-4932-85f5-aebcfb6b452e",
+      "deletedAt": null
+    },
+    {
+      "id": "e78c631b-11bf-4f0f-a70a-4284ccd0e50e",
+      "deletedAt": null
+    },
+    {
+      "id": "9635b383-127e-4145-aa66-93d21679a215",
+      "deletedAt": null
+    },
+    {
+      "id": "d27c3c74-ca90-46b8-bfe2-91b7b76518fb",
+      "deletedAt": null
+    },
+    {
+      "id": "942e1cad-301d-4194-b94d-1fd276b32b61",
+      "deletedAt": null
+    },
+    {
+      "id": "bb634a98-21fa-49f3-914d-29cf2b496829",
+      "deletedAt": null
+    },
+    {
+      "id": "d3da5f36-4ebc-4e8f-ab0d-3964fb3cdd6d",
+      "deletedAt": null
+    },
+    {
+      "id": "59ea4a95-4695-4eae-b0c6-3db55a2f4b9e",
+      "deletedAt": null
+    },
+    {
+      "id": "e3109584-d6a6-4459-890f-d5b7dbe0ca95",
+      "deletedAt": null
+    },
+    {
+      "id": "21588507-a983-4465-9df3-4415f2518a41",
+      "deletedAt": null
+    },
+    {
+      "id": "77bb9246-de86-43ea-9516-fcb9d6db9c3f",
+      "deletedAt": null
+    },
+    {
+      "id": "c1e00dd9-d6f4-4a64-b08d-5058bc9f8f55",
+      "deletedAt": null
+    },
+    {
+      "id": "63a44e0b-68a2-4e5e-92c6-09a6bd012dac",
+      "deletedAt": null
+    },
+    {
+      "id": "6985698b-2e55-49d8-91ea-d61fef6972c1",
+      "deletedAt": null
+    },
+    {
+      "id": "b9bbf2a4-2671-46cd-97ce-54a07b87a881",
+      "deletedAt": null
+    },
+    {
+      "id": "029eead8-2cbb-4492-a9f6-a2dd5f8233b6",
+      "deletedAt": null
+    },
+    {
+      "id": "a6b1b07d-697b-4212-87a4-c63791812af9",
+      "deletedAt": null
+    },
+    {
+      "id": "5471dac1-b880-46a5-ad79-136c7a86fc72",
+      "deletedAt": null
+    },
+    {
+      "id": "16584a97-b272-4984-83fb-57456b2fd6fe",
+      "deletedAt": null
+    },
+    {
+      "id": "1f875874-a15d-44d4-adf7-9f8ae7a9346b",
+      "deletedAt": null
+    },
+    {
+      "id": "496ba227-2db2-4193-ad6b-674a35d84f0a",
+      "deletedAt": null
+    },
+    {
+      "id": "111bcac2-b9c7-4b0d-91d5-d0b4738a8cf2",
+      "deletedAt": null
+    },
+    {
+      "id": "1460f78d-2745-434a-b5bf-555a68245079",
+      "deletedAt": null
+    },
+    {
+      "id": "4ce478b1-d997-4457-bcfe-3447cfca4a28",
+      "deletedAt": null
+    },
+    {
+      "id": "8dac16a0-caba-43e2-b932-d4c4744d25ec",
+      "deletedAt": null
+    },
+    {
+      "id": "f802fc7d-7e6f-44ce-b8ca-80a2d86bbdbc",
+      "deletedAt": null
+    },
+    {
+      "id": "a93ecc3f-ec7e-4853-9bc2-cecbc7916c09",
+      "deletedAt": null
+    },
+    {
+      "id": "bc6d1a88-9fcc-4575-b68a-8718bce4c348",
+      "deletedAt": null
+    },
+    {
+      "id": "e026d88d-62aa-4bae-af13-5814f27658b8",
+      "deletedAt": null
+    },
+    {
+      "id": "5abdcc1f-e38c-43b9-837a-812c793af8c3",
+      "deletedAt": null
+    },
+    {
+      "id": "b7bc2869-a028-4568-853d-15efca3f4e45",
+      "deletedAt": null
+    },
+    {
+      "id": "4651e623-3b09-4ffc-b4d5-3ff19d45c2c5",
+      "deletedAt": null
+    },
+    {
+      "id": "20cadba4-082b-41e5-b91f-564662aad7ad",
+      "deletedAt": null
+    },
+    {
+      "id": "eebd73a9-d102-468d-a974-3978467b1668",
+      "deletedAt": "2026-11-15T10:32:12.772Z"
+    },
+    {
+      "id": "3021c8e5-352a-4b14-914b-9611e806afdb",
+      "deletedAt": null
+    },
+    {
+      "id": "58d3834a-0897-4fe6-99e1-bce93dfe6120",
+      "deletedAt": null
+    },
+    {
+      "id": "fd40163f-1e13-4478-8c90-b1c0c83155e6",
+      "deletedAt": null
+    },
+    {
+      "id": "688af233-0015-4f25-91e4-d09c49bbc5ba",
+      "deletedAt": null
+    },
+    {
+      "id": "00d034c1-4ac0-4163-87d5-84295e06c20c",
+      "deletedAt": null
+    },
+    {
+      "id": "ee8b15d4-8869-44c0-8093-e3eda717e8bb",
+      "deletedAt": null
+    },
+    {
+      "id": "ea4a6365-0673-4222-b9ad-0f44ae9c5aa9",
+      "deletedAt": null
+    },
+    {
+      "id": "ccb4ad49-c9c5-496b-96a3-bcf6d01382d5",
+      "deletedAt": null
+    },
+    {
+      "id": "bc84d200-c550-4f5c-b9ab-519d3d59e47d",
+      "deletedAt": null
+    },
+    {
+      "id": "56922c0d-6404-4780-908e-0b19fdcf2e06",
+      "deletedAt": null
+    },
+    {
+      "id": "ce925b9e-5b16-4114-ad7f-cf84652de394",
+      "deletedAt": null
+    },
+    {
+      "id": "44a9e1b6-1fa7-418c-af76-8d420f0a4b62",
+      "deletedAt": null
+    },
+    {
+      "id": "6872dd6e-06f8-4b78-be9a-1ae927429807",
+      "deletedAt": null
+    },
+    {
+      "id": "39e1fd22-25a9-4b42-a715-9b362652a83c",
+      "deletedAt": null
+    },
+    {
+      "id": "3616a0e1-7dab-40fd-b254-bbe01dbc773d",
+      "deletedAt": null
+    },
+    {
+      "id": "0d1d641f-2aad-4fc6-b755-7a93568d71cd",
+      "deletedAt": null
+    },
+    {
+      "id": "9611bb79-d2d3-4a92-8f82-920affa07a69",
+      "deletedAt": null
+    },
+    {
+      "id": "20a7cbae-f6d9-47d4-84dd-5f6a548f9e08",
+      "deletedAt": null
+    },
+    {
+      "id": "3ca6b5dd-cbe5-43bc-8e66-c8035ff9700c",
+      "deletedAt": null
+    },
+    {
+      "id": "7fc005d5-e73e-4d44-8075-57cd9b65be37",
+      "deletedAt": null
+    },
+    {
+      "id": "77ccd8c5-0316-480c-9593-0be462a7443d",
+      "deletedAt": null
+    },
+    {
+      "id": "d626ecdf-ffa7-4acc-9e21-c131d22c545a",
+      "deletedAt": null
+    },
+    {
+      "id": "8c7abbae-e7c0-4fff-ad9f-f770ad4abd68",
+      "deletedAt": null
+    },
+    {
+      "id": "cbafc609-c5ab-4e4e-b22a-b91d8c330f0d",
+      "deletedAt": null
+    },
+    {
+      "id": "45265b12-6b98-4750-85f3-303aecbf67ba",
+      "deletedAt": null
+    },
+    {
+      "id": "28bbdc49-03b2-4886-bea4-f5350a745dc2",
+      "deletedAt": null
+    }
+  ],
+  "results": [
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-2.jpg|0,0,1200,740",
+      "id": "438d7a6b-9c29-4767-ad2b-310629c36b95",
+      "title": "自在追光 向美而生 · 粉晶细宋丝带字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_68eaeebf1b458d4e35a44c88f9ca24c74e792dfb4f468613de6f964b390541bb.webp",
+      "imageHash": "68eaeebf1b458d4e35a44c88f9ca24c74e792dfb4f468613de6f964b390541bb",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-3.jpg|0,0,1200,850",
+      "id": "30ed559a-3521-4620-af1f-4cae53193f49",
+      "title": "趁现在玩点新的 · 奶油描边果味字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_5e839997d619e3c2e56dd47bde2ab0d5802d1e7bd8acec68415ce0e6f0dc38c2.webp",
+      "imageHash": "5e839997d619e3c2e56dd47bde2ab0d5802d1e7bd8acec68415ce0e6f0dc38c2",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-4.jpg|0,0,1200,750",
+      "id": "c5982837-df0c-49a8-be54-ff88d33aca18",
+      "title": "视界无限 科技引领 · 银铬斜面科技标题",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_4aadf0d131ad778fbe70b4028f95a8e8f9fbd75ac57bf4f8c6819b4f644f8aee.webp",
+      "imageHash": "4aadf0d131ad778fbe70b4028f95a8e8f9fbd75ac57bf4f8c6819b4f644f8aee",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-5.jpg|0,0,1200,780",
+      "id": "804c4d0f-5e46-45ec-a4fc-9be32bce1eaa",
+      "title": "让春天拥抱你 · 彩色绒毛软管字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_1f4b3935c0393c5c0687c75ff7b536206f27331f42e1ccc6c6a324bc75c71a26.webp",
+      "imageHash": "1f4b3935c0393c5c0687c75ff7b536206f27331f42e1ccc6c6a324bc75c71a26",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-6.jpg|0,0,1200,800",
+      "id": "fbe49592-6f6b-48e0-afe7-b1802c5e51e7",
+      "title": "春日限定 · 高光气球圆管字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_80742a7e4e9e1c2d51c10b67f56e051c1e01bddbfda03c78ae30bdc1cd14daef.webp",
+      "imageHash": "80742a7e4e9e1c2d51c10b67f56e051c1e01bddbfda03c78ae30bdc1cd14daef",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-7.jpg|0,0,1200,800",
+      "id": "39e258ec-ee7b-4675-8969-94fefb28904e",
+      "title": "春天的第一口鲜 · 双层霓虹灯管字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_f70f6db3af3c4f0fdf5112af85b4d7f621a06e3af510aca6916a8f61d39ebc72.webp",
+      "imageHash": "f70f6db3af3c4f0fdf5112af85b4d7f621a06e3af510aca6916a8f61d39ebc72",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-8.jpg|0,0,1200,680",
+      "id": "1491175e-4926-4594-b463-95d682257b2d",
+      "title": "618狂欢盛典 · 蓝色电商厚层字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_3030aa1656b8f18c2ed62963c5d9524a45b97da1a5f92e1914a9e6894696716f.webp",
+      "imageHash": "3030aa1656b8f18c2ed62963c5d9524a45b97da1a5f92e1914a9e6894696716f",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-9.jpg|0,0,1200,620",
+      "id": "2d85ce23-d9f9-4d84-890d-f6f88e5eeeae",
+      "title": "618预售 · 白绿亚克力促销字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_b6263da2afdf6520675e8376d33428e6ec99d2c232cd681f0cc6caecda63c464.webp",
+      "imageHash": "b6263da2afdf6520675e8376d33428e6ec99d2c232cd681f0cc6caecda63c464",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-10.jpg|0,0,1200,730",
+      "id": "07103f47-e0fa-4741-b006-9f3a7d48f311",
+      "title": "春风突袭 氛围拉满 · 双色发光赛博字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_df43e04a410fc46a6777992eb7a16e3189a7c7e91dd932285209c500e8a2da05.webp",
+      "imageHash": "df43e04a410fc46a6777992eb7a16e3189a7c7e91dd932285209c500e8a2da05",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/620348.html|/wp-content/uploads/2025/04/AI-font-20250424-11.jpg|0,0,1200,900",
+      "id": "8c90cb04-4023-4fd3-8dcc-8baa4638f96e",
+      "title": "趁着春光 吃点野的 · 橙白软糖郊游字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_2288a9e366eb771a7abad520eb2c3e1fd1808ea387c43a4f6eda9ad47702aea6.webp",
+      "imageHash": "2288a9e366eb771a7abad520eb2c3e1fd1808ea387c43a4f6eda9ad47702aea6",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/634509.html|/wp-content/uploads/2025/07/font-20250727-2.webp|0,0,1440,1916",
+      "id": "ba22583f-ebcb-4d6b-8091-095783585d5e",
+      "title": "苹安喜乐 · 果叶丝带缠绕字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_92120fa71b01088df530749e4e701c92d547c74d369e746e83f13f3da8e8da5f.webp",
+      "imageHash": "92120fa71b01088df530749e4e701c92d547c74d369e746e83f13f3da8e8da5f",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/634509.html|/wp-content/uploads/2025/07/font-20250727-3.webp|0,0,1440,1916",
+      "id": "efc91a99-113b-4760-874d-685a75089308",
+      "title": "苹安喜乐 · 苹果轮廓负形字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_9bbb92fed9dcc14826ca30f62a50822c751672984d88fdbbc8a27aa219660e4f.webp",
+      "imageHash": "9bbb92fed9dcc14826ca30f62a50822c751672984d88fdbbc8a27aa219660e4f",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/634509.html|/wp-content/uploads/2025/07/font-20250727-5.webp|0,0,1440,1916",
+      "id": "62899c75-133f-4b3f-ab89-acc42d50ed1a",
+      "title": "橘祥如意 · 圆头果皮撞色字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_7a71fde7b92ef56ceb961d2341f606b26c8fd4b0e470966955251a5e9b13d319.webp",
+      "imageHash": "7a71fde7b92ef56ceb961d2341f606b26c8fd4b0e470966955251a5e9b13d319",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/634509.html|/wp-content/uploads/2025/07/font-20250727-9.webp|0,0,1440,1916",
+      "id": "c523b289-20fc-476d-86c8-aab352bc8ca2",
+      "title": "好事花生 · 花生外壳连线字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_bb004d6857f7c1e09785f038e6a18cda26193734f9a324b32fc8a0ac1c518d35.webp",
+      "imageHash": "bb004d6857f7c1e09785f038e6a18cda26193734f9a324b32fc8a0ac1c518d35",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-1.webp|0,0,1242,990",
+      "id": "1c401ad9-10cc-4000-8404-9fd3f52a5dc3",
+      "title": "枪出如龙 · 火焰尖角游戏徽章",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_b300bd41edcb42ec8dd7077c1fcb5f07d09a085c44170a17c7b76a1cbbda5dfd.webp",
+      "imageHash": "b300bd41edcb42ec8dd7077c1fcb5f07d09a085c44170a17c7b76a1cbbda5dfd",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-2.webp|0,0,1242,990",
+      "id": "55614d7b-89e7-4270-b5a1-b3b8e4a7ccda",
+      "title": "周年任务 · 多层块面游戏字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_d6ba49fb104235e8d49fceda0f1b3f6b32c64344f6f16794b0f89830bc9d5a67.webp",
+      "imageHash": "d6ba49fb104235e8d49fceda0f1b3f6b32c64344f6f16794b0f89830bc9d5a67",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-3.webp|0,0,1242,1200",
+      "id": "e7896679-3001-4e96-b693-ac016623484a",
+      "title": "像素游戏 · 八位像素方块字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_6fdbb6c57ff4ec3fcf83edad308b1a4e59f1d50adfc876d84758414ec6e55468.webp",
+      "imageHash": "6fdbb6c57ff4ec3fcf83edad308b1a4e59f1d50adfc876d84758414ec6e55468",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-4.webp|0,0,1242,990",
+      "id": "c8d0cfe9-3ce0-4d6c-a406-9a06c0db52ce",
+      "title": "英雄联盟 · 铸铁切面竞技字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_f8f13ec397fe5361cbc0360fc72eef3def733643a53178ef474aa7bbc766e011.webp",
+      "imageHash": "f8f13ec397fe5361cbc0360fc72eef3def733643a53178ef474aa7bbc766e011",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-5.webp|0,0,1242,1160",
+      "id": "6942ecd4-3cc1-4bc5-a702-d99743222581",
+      "title": "战斗天使 · 机翼切角机械字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_7c0cf97d258476b7292bd6bf721589a06b0620e6c8737fe43e8a0e4be3582775.webp",
+      "imageHash": "7c0cf97d258476b7292bd6bf721589a06b0620e6c8737fe43e8a0e4be3582775",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-6.webp|0,0,1242,1160",
+      "id": "f108cd58-c65b-44ea-a387-b80cb17ce981",
+      "title": "冰属性 · 冰晶长锋斜体字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_4463fe248baeb079c1a55f5d32cf76053f798bf15ffc1e1122a5a26954e82fa6.webp",
+      "imageHash": "4463fe248baeb079c1a55f5d32cf76053f798bf15ffc1e1122a5a26954e82fa6",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-7.webp|0,0,1242,990",
+      "id": "c407321a-8bd0-4ad1-bc4c-e24ce29ebce6",
+      "title": "游戏人生 · 哥特卷饰幻想标题",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_8c4c54d754eec023b9b80928802e51cc22821badee8d4b4d485089b7e8c08746.webp",
+      "imageHash": "8c4c54d754eec023b9b80928802e51cc22821badee8d4b4d485089b7e8c08746",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-8.webp|0,0,1242,990",
+      "id": "10852532-73ff-49b1-9aea-704d48cb3b42",
+      "title": "最终幻想 · 漫画闪电外扩字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_e644baefdf0190dff13a8dccd56f9254a7b3a64e3a243bebd9ab8884bd4efaf5.webp",
+      "imageHash": "e644baefdf0190dff13a8dccd56f9254a7b3a64e3a243bebd9ab8884bd4efaf5",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-9.webp|0,0,1242,990",
+      "id": "543d5114-0c9c-4e10-be28-b437c9d7136d",
+      "title": "和平精英 · 虹彩尖尾电竞字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_08ddc4e39db9ce0bdfc5042ca0a10bfad55081514a113d3d4cd612c97fe2c0a1.webp",
+      "imageHash": "08ddc4e39db9ce0bdfc5042ca0a10bfad55081514a113d3d4cd612c97fe2c0a1",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/633612.html|/wp-content/uploads/2025/07/game-font-20250722-10.webp|0,0,1242,990",
+      "id": "edae2c5b-5535-4f2c-8472-9e323b6ad3c4",
+      "title": "限时好礼 · 极光丝带礼赠字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_02e19cafcf9edf553c34fdde83b1a9e3069c3076f1cc70b0fbefa34dba6d6af6.webp",
+      "imageHash": "02e19cafcf9edf553c34fdde83b1a9e3069c3076f1cc70b0fbefa34dba6d6af6",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-2.webp|0,0,1440,1450",
+      "id": "518ff969-cf01-42d3-833a-ecd75aee512e",
+      "title": "六一快乐 · 流动墨滴儿童字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_6a1a7fbbc13157e63b124d6dfea00c344049682afabf6df866373e42436673b3.webp",
+      "imageHash": "6a1a7fbbc13157e63b124d6dfea00c344049682afabf6df866373e42436673b3",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-3.webp|0,0,1440,1450",
+      "id": "b71a05b4-96fd-4231-a15d-8d4b1e093fe1",
+      "title": "萌力全开 · 表情云朵圆胖字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_ee658a34b578faad7a4d37fe5ae972e8b1c79f53a9054b79f3c078b007ab63b1.webp",
+      "imageHash": "ee658a34b578faad7a4d37fe5ae972e8b1c79f53a9054b79f3c078b007ab63b1",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-4.webp|0,0,1440,1450",
+      "id": "008d8cbb-a7a1-4807-8e45-d93a1c4b507d",
+      "title": "夏日出游 · 海滩元素旅游贴纸字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_5492c33c4dcec324ac9001ddae6968ba0c066b943d2914d3075ccab425f1c440.webp",
+      "imageHash": "5492c33c4dcec324ac9001ddae6968ba0c066b943d2914d3075ccab425f1c440",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-5.webp|0,0,1440,1450",
+      "id": "0b3de4e3-1171-4cc6-a38c-cb4f6ee2ac7b",
+      "title": "萌萌哒 · 弹跳黄边软萌字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_7682aa6d4e88455c4686064e1bd38b0cf62d6c4e134b2036b183b26bcc8042d5.webp",
+      "imageHash": "7682aa6d4e88455c4686064e1bd38b0cf62d6c4e134b2036b183b26bcc8042d5",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-6.webp|0,0,1440,1450",
+      "id": "feffbdc4-d306-4536-83b3-341bf1a4efd9",
+      "title": "宝贝去哪儿 · 玩具环绕亲子手写字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_42ee36d07d6a123a8929bdcfd111cf0c1ab26d14bb0832b3ea9052dc83705c93.webp",
+      "imageHash": "42ee36d07d6a123a8929bdcfd111cf0c1ab26d14bb0832b3ea9052dc83705c93",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-7.webp|0,0,1440,1450",
+      "id": "31cafb03-8910-4980-827e-05785ade926d",
+      "title": "生椰布丁 · 圆弧长尾甜品字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_e8049513f6e29faae3ee7269ba388d7aa7456e10d34907556b5d82b7ee189a08.webp",
+      "imageHash": "e8049513f6e29faae3ee7269ba388d7aa7456e10d34907556b5d82b7ee189a08",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-8.webp|0,0,1440,1450",
+      "id": "b105243b-0b52-4586-bb6e-699b283d1a68",
+      "title": "光点视界 · 粉色墨滴星点字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_a9d4daa1083d5dd1579b421efef74d57291703640d90e633b5c9cdc0d8f12466.webp",
+      "imageHash": "a9d4daa1083d5dd1579b421efef74d57291703640d90e633b5c9cdc0d8f12466",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-9.webp|0,0,1440,1450",
+      "id": "05582c9e-1673-468c-b071-852c26964242",
+      "title": "你好宝贝 · 荧光胶囊亲子字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_c2a30bdaa4a82ced7258cfff70d62db443a0121749060c0100cf1d01c84e428a.webp",
+      "imageHash": "c2a30bdaa4a82ced7258cfff70d62db443a0121749060c0100cf1d01c84e428a",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-10.webp|0,0,1440,1450",
+      "id": "0f4f4762-6344-4cb5-ba77-49c327dab5ba",
+      "title": "有时间就出来玩 · 随性弧线邀约字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_43b8ccbb3fb1cbdc0d7f2d44cac8f12edecb0bef3479387b763faa9e8dcf6d97.webp",
+      "imageHash": "43b8ccbb3fb1cbdc0d7f2d44cac8f12edecb0bef3479387b763faa9e8dcf6d97",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/629003.html|/wp-content/uploads/2025/06/AI-font-20250620-11.webp|0,0,1440,1450",
+      "id": "af4c65b9-972c-46e1-9fef-93d5f98ee603",
+      "title": "衣兜有喵 · 猫咪服饰轮廓字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_9aedded18dfb62c1a5b583fd815ae96701f3234220bc71a4ccbf5f3c75dac1cd.webp",
+      "imageHash": "9aedded18dfb62c1a5b583fd815ae96701f3234220bc71a4ccbf5f3c75dac1cd",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/619238.html|/wp-content/uploads/2025/04/font-20250417-2.jpg|0,220,1660,1430",
+      "id": "5fd900d4-9eab-418d-bf9f-5097b2bd35c3",
+      "title": "赛博朋克 · 电路断线未来字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_310a18ace86810dcc031b21cc2a30f9cfe05ccedbea5c44d96a21014ed42ce86.webp",
+      "imageHash": "310a18ace86810dcc031b21cc2a30f9cfe05ccedbea5c44d96a21014ed42ce86",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/619238.html|/wp-content/uploads/2025/04/font-20250417-3.jpg|0,220,1660,1430",
+      "id": "220aa94c-278e-45d8-9403-aa8a86c0d2d5",
+      "title": "魔鬼派对 · 兔耳涂鸦撞色字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_1e609591b9372ce4a99fe39735534fd2d2da4a91e927c49a2f7a6c354d35fab8.webp",
+      "imageHash": "1e609591b9372ce4a99fe39735534fd2d2da4a91e927c49a2f7a6c354d35fab8",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/619238.html|/wp-content/uploads/2025/04/font-20250417-4.jpg|0,220,1660,1430",
+      "id": "37c867cb-38fc-420f-8777-0deefe56f56c",
+      "title": "天下第一 · 裂墙红银竞技字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_3fca910cbbe72d277e37099e875f21c9e8849b173517e782a39520dbba4efe16.webp",
+      "imageHash": "3fca910cbbe72d277e37099e875f21c9e8849b173517e782a39520dbba4efe16",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/619238.html|/wp-content/uploads/2025/04/font-20250417-5.jpg|0,220,1660,1430",
+      "id": "df004b8c-e470-40ad-8df5-7e21ccf86417",
+      "title": "孤影少年 · 干刷孤锋横排字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_04e998d21d3af1bec948958498a5453f3770a008d9029d3d367e5ed5a7bcebb5.webp",
+      "imageHash": "04e998d21d3af1bec948958498a5453f3770a008d9029d3d367e5ed5a7bcebb5",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/619238.html|/wp-content/uploads/2025/04/font-20250417-6.jpg|0,220,1660,1430",
+      "id": "9f94d456-69d9-474a-b329-16120c6781ae",
+      "title": "阳光体育 · 箭头锐角运动字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_9f35319822d66dd9d1baad94872ceb7fe57edff1e39bb15351c711a2b29bec1a.webp",
+      "imageHash": "9f35319822d66dd9d1baad94872ceb7fe57edff1e39bb15351c711a2b29bec1a",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/619238.html|/wp-content/uploads/2025/04/font-20250417-7.jpg|0,220,1660,1430",
+      "id": "5fb8b3ec-7c3b-424d-bcc7-6db487f7978c",
+      "title": "儿童乐园 · 奶黄气泡立体字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_2492296a05a10f38005914c35d0210c5e65d20b8b116fd367533e54eca0cec5b.webp",
+      "imageHash": "2492296a05a10f38005914c35d0210c5e65d20b8b116fd367533e54eca0cec5b",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/619238.html|/wp-content/uploads/2025/04/font-20250417-9.jpg|0,220,1660,1430",
+      "id": "ed6a3eea-96d9-4463-9ea9-861f00da9390",
+      "title": "人生海海 · 圆润水滴人生字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_1eb8d71b2dca9b719c2c77c806c4d0a6ed27c64fe86d4e3fc4686e5f6c2f9cc8.webp",
+      "imageHash": "1eb8d71b2dca9b719c2c77c806c4d0a6ed27c64fe86d4e3fc4686e5f6c2f9cc8",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-2.jpg|0,380,1440,1280",
+      "id": "674f0066-cb76-40e0-9638-2d7895311948",
+      "title": "不想加班 · 丝带长尾情绪字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_910b1ba302a2591ad01eced6fb6b8c7d8fcb8d199c18236d697a3214d57288f1.webp",
+      "imageHash": "910b1ba302a2591ad01eced6fb6b8c7d8fcb8d199c18236d697a3214d57288f1",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-3.jpg|0,380,1440,1280",
+      "id": "a4ed88dd-80e8-4b97-85b5-e4c90657611b",
+      "title": "天天吃瓜 · 西瓜负形插画字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_445dc161f1eb7abd267a8c680a5d50f769dd19bc0b1b5f514ecd35e499329079.webp",
+      "imageHash": "445dc161f1eb7abd267a8c680a5d50f769dd19bc0b1b5f514ecd35e499329079",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-4.jpg|0,380,1440,1280",
+      "id": "1de81072-9400-4861-bfa7-85a7d3cdf17e",
+      "title": "只想赚钱 · 钱币笑脸回环字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_6efb48fcd2d2aad0abd64ccf6ed1c79ec8bb80025cc17a8186c2acca41c659e6.webp",
+      "imageHash": "6efb48fcd2d2aad0abd64ccf6ed1c79ec8bb80025cc17a8186c2acca41c659e6",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-5.jpg|0,380,1440,1280",
+      "id": "0f97d1cc-3b06-4654-98a1-9dba9c9899e4",
+      "title": "不做设计 · 桃色卷带花体字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_a3623df6e930118c7d4555f0d03ef6c9849ce45a87c3b72d1d4b223fba334538.webp",
+      "imageHash": "a3623df6e930118c7d4555f0d03ef6c9849ce45a87c3b72d1d4b223fba334538",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-6.jpg|0,380,1440,1280",
+      "id": "a8a3286b-4b13-431d-b9f7-861b1fbb5d0b",
+      "title": "一夜暴富 · 星芒硬朗财富字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_2e5f9d9acdf2c6008f72d075ce086c6c423d6093c4369449b6213652bffe47bd.webp",
+      "imageHash": "2e5f9d9acdf2c6008f72d075ce086c6c423d6093c4369449b6213652bffe47bd",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-7.jpg|0,380,1440,1280",
+      "id": "cdf53843-c14e-4a82-a3d1-aea8e2e8b27f",
+      "title": "只想放假 · 彩色笑弧轻松字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_555efe724674fcd70f249e62edcedc969e05566b1d6259a24bfec36e76c04e73.webp",
+      "imageHash": "555efe724674fcd70f249e62edcedc969e05566b1d6259a24bfec36e76c04e73",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-8.jpg|0,380,1440,1280",
+      "id": "40e61671-d765-48eb-901d-4355683bedea",
+      "title": "辞退老板 · 白描职场趣味字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_d479a6cf96cbbe9ea62bcdcd074e0cfe2ad767656e2895cd7cacd415095a0ae9.webp",
+      "imageHash": "d479a6cf96cbbe9ea62bcdcd074e0cfe2ad767656e2895cd7cacd415095a0ae9",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-9.jpg|0,380,1440,1280",
+      "id": "ac4ad725-34d5-441c-ae2e-a46e829ae574",
+      "title": "穷气东来 · 卷锋泼墨情绪字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_6e905793cd34a30875224d13c3648ff151fd15f130a56445d4cd541e2e1f1973.webp",
+      "imageHash": "6e905793cd34a30875224d13c3648ff151fd15f130a56445d4cd541e2e1f1973",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-10.jpg|0,380,1440,1280",
+      "id": "b5d150c8-7c65-4fba-b88b-5d41d2f691f5",
+      "title": "未来新纪代 · 航天斜切压缩字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_462159b6b71c34b013662f02bff05310a1ba9f2efead5601ba72165e3fa3af85.webp",
+      "imageHash": "462159b6b71c34b013662f02bff05310a1ba9f2efead5601ba72165e3fa3af85",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-11.jpg|0,380,1440,1280",
+      "id": "d265ca2f-d4c3-43af-948d-f58cc8c367fd",
+      "title": "假如给我三天光明 · 疏朗双行日记字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_e398b787451449d8b88e31b501efc27913992f8a73b1876b22096327426c1eee.webp",
+      "imageHash": "e398b787451449d8b88e31b501efc27913992f8a73b1876b22096327426c1eee",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-12.jpg|0,380,1440,1280",
+      "id": "fd5f9b2f-e0e7-45f5-8be4-75f297b61b55",
+      "title": "煮雨听风 · 雨丝长尾古典字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_248dc7a99185681e1d8441bf653aa6dfc7bdeb3a505baaff5903af8e9f809252.webp",
+      "imageHash": "248dc7a99185681e1d8441bf653aa6dfc7bdeb3a505baaff5903af8e9f809252",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-13.jpg|0,380,1440,1280",
+      "id": "ba28926c-abf6-4899-a25d-33962587996e",
+      "title": "秋月寒江 · 枯笔行草横幅字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_14924eef79d532ed389d0bee72db8cd750b8a5ca7132c48b3984f96215e79978.webp",
+      "imageHash": "14924eef79d532ed389d0bee72db8cd750b8a5ca7132c48b3984f96215e79978",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-14.jpg|0,380,1440,1400",
+      "id": "ef51fe00-0915-4975-b8fb-e65ab1bd4859",
+      "title": "明月几时有 把酒问青天 · 椭圆连线诗句字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_ecd0c53df4bbd5c828cd5ef94ccb43633770a64d71e5226cc72ba423f2f5eb03.webp",
+      "imageHash": "ecd0c53df4bbd5c828cd5ef94ccb43633770a64d71e5226cc72ba423f2f5eb03",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-15.jpg|0,380,1440,1280",
+      "id": "c22b9951-5233-43be-9b6f-917b865c6c31",
+      "title": "十里飘香 · 放射爆发美食字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_94cfa4dc990fec3c17e45abcbfcb35ba69ff1f06a5a4b5f068984477154c317c.webp",
+      "imageHash": "94cfa4dc990fec3c17e45abcbfcb35ba69ff1f06a5a4b5f068984477154c317c",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-16.jpg|0,380,1440,1280",
+      "id": "152f7dad-d84a-4c22-a510-dce5748322c5",
+      "title": "奥贝里斯王 · 尖刺哥特奇幻字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_773fe5215531a719ecbb1ef6ec002b4d6221091174e9732e33f1f41da8ad0cd1.webp",
+      "imageHash": "773fe5215531a719ecbb1ef6ec002b4d6221091174e9732e33f1f41da8ad0cd1",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-17.jpg|0,380,1440,1280",
+      "id": "47f836c4-77e0-48ba-a3e9-74d20f269d7a",
+      "title": "粒粒皆辛苦 · 瘦锋连笔诗意字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_da3bc7d40bb412954ce73e00a45289afca08b9ebe56b345a68112b881921df52.webp",
+      "imageHash": "da3bc7d40bb412954ce73e00a45289afca08b9ebe56b345a68112b881921df52",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/622349.html|/wp-content/uploads/2025/05/font-20250508-18.jpg|0,380,1440,1280",
+      "id": "c2c933d9-fb3e-41a6-a653-687000372409",
+      "title": "我是王者 · 爆炸框漫画宣言字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_be3da844a631aa879808251046cf2bcacf3315cabb94dc7991b7457260f8ef30.webp",
+      "imageHash": "be3da844a631aa879808251046cf2bcacf3315cabb94dc7991b7457260f8ef30",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-02.jpg|0,0,1600,2133",
+      "id": "6212fe39-b76a-44ee-8adf-51940de653de",
+      "title": "骆驼 · 宽扁圆角切线字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_8164543cb5e30b0628547a7ba6c36996c6538dca147ae255c954b0aadf9b3388.webp",
+      "imageHash": "8164543cb5e30b0628547a7ba6c36996c6538dca147ae255c954b0aadf9b3388",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-03.jpg|0,0,1600,2133",
+      "id": "6dbbc4b0-d832-43a7-b889-e1c4ec5bbc21",
+      "title": "放青松 · 前倾双边活动字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_290be488e94ef557fbfccd433049aa4a8c5b6f0c84db7ed1c5accd5f57a99323.webp",
+      "imageHash": "290be488e94ef557fbfccd433049aa4a8c5b6f0c84db7ed1c5accd5f57a99323",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-04.jpg|0,0,1600,2133",
+      "id": "f4d5cf51-3a60-4a61-9c5c-352060c16de4",
+      "title": "心动俱乐部 · 手绘心形俱乐部字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_43834da1f6c421380718b19736c52433d0e3bd5b4584c6b470315706d1a09554.webp",
+      "imageHash": "43834da1f6c421380718b19736c52433d0e3bd5b4584c6b470315706d1a09554",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-05.jpg|0,0,1600,2133",
+      "id": "4e0335b1-ccf7-492a-ac97-0fb2ad46eed4",
+      "title": "活雷锋 · 尖楔窄长海报字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_d7d9b876885f94d0e5f77915a2947ff6b2122d5847d22d2256f2066943614a16.webp",
+      "imageHash": "d7d9b876885f94d0e5f77915a2947ff6b2122d5847d22d2256f2066943614a16",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-06.jpg|0,0,1600,2133",
+      "id": "6bf21a2b-32b9-4181-9b4b-36e4eee90d1a",
+      "title": "跨界融合 · 粗斜切拼接字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_3b0b8b89410bb744011b918f5727021e6f07449e04ce0ae602fc79c538de7db5.webp",
+      "imageHash": "3b0b8b89410bb744011b918f5727021e6f07449e04ce0ae602fc79c538de7db5",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-07.jpg|0,0,1600,2133",
+      "id": "d00f4cb2-a43e-41ce-851b-909775484470",
+      "title": "夏日海岛 · 横向平行线城市字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_ca182b86128bdaf43723710b5ae3fd978f8bc45892cb0c94dacc679cbf6f3220.webp",
+      "imageHash": "ca182b86128bdaf43723710b5ae3fd978f8bc45892cb0c94dacc679cbf6f3220",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-08.jpg|0,0,1600,2133",
+      "id": "93b10623-e3f3-4b45-a0f2-703f43e6995a",
+      "title": "破败花园 · 厚重圆角花园字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_430ac250acc4eab1958e67540038ab5a5a4202a1db7a5428c4b128a02eeb7b5c.webp",
+      "imageHash": "430ac250acc4eab1958e67540038ab5a5a4202a1db7a5428c4b128a02eeb7b5c",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-09.jpg|0,0,1600,2133",
+      "id": "26f5c205-92d8-42e2-9e94-c18289c3a5db",
+      "title": "镜花水月 · 镜像回环细宋字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_790eb85e202670e21b1e596e6ab2b8ebe9546498e66f9b5f5d63a23861226fa0.webp",
+      "imageHash": "790eb85e202670e21b1e596e6ab2b8ebe9546498e66f9b5f5d63a23861226fa0",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/582484.html|/wp-content/uploads/2024/09/FontDesign-20240909-10.jpg|0,0,1600,2133",
+      "id": "fee1e1f8-bc5a-4cf7-83a5-05c9796e1420",
+      "title": "去西藏 · 压缩重黑方块字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_561354de0223479260a8eb293ea6872ddf2dbfc39ddcb5e4c220840d26d70b48.webp",
+      "imageHash": "561354de0223479260a8eb293ea6872ddf2dbfc39ddcb5e4c220840d26d70b48",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/617793.html|/wp-content/uploads/2025/04/font-20250408-2.jpg|0,0,1876,2501",
+      "id": "4fbe32ab-e75b-4418-8daa-f4c7f6a28733",
+      "title": "帽 · 毛线软管单字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_7113112682bfbf021559db0300fe1aad50e0449c4df26f051ddc3152f2615c1c.webp",
+      "imageHash": "7113112682bfbf021559db0300fe1aad50e0449c4df26f051ddc3152f2615c1c",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/617793.html|/wp-content/uploads/2025/04/font-20250408-4.jpg|0,0,1876,2501",
+      "id": "47469ac4-0aa0-48ac-9e9a-291e94bac2c5",
+      "title": "毛衣 · 交织针织双字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_1e3f1c749540ca3d3c0445d58183250755ae7c7992f545bff626383c666cf656.webp",
+      "imageHash": "1e3f1c749540ca3d3c0445d58183250755ae7c7992f545bff626383c666cf656",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/617793.html|/wp-content/uploads/2025/04/font-20250408-5.jpg|0,0,1876,2501",
+      "id": "50264466-0da1-4b61-bf26-4b58bb08583c",
+      "title": "毛线帽子 · 密纹圆管服饰字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_4bfee9e599d4c506cbcc1b65f0b523294b5d93db8282cc58e8934b69d6530cf2.webp",
+      "imageHash": "4bfee9e599d4c506cbcc1b65f0b523294b5d93db8282cc58e8934b69d6530cf2",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/617793.html|/wp-content/uploads/2025/04/font-20250408-6.jpg|0,0,1876,2501",
+      "id": "dec5dd39-0c7b-430c-a638-34bd6e624939",
+      "title": "毛绒 · 多彩绒管横排字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_e8dafa117f9d43d60c4f1fef542291423ba8885361541479faf395e8135decc6.webp",
+      "imageHash": "e8dafa117f9d43d60c4f1fef542291423ba8885361541479faf395e8135decc6",
+      "verification": "verified"
+    },
+    {
+      "identity": "https://www.uisdc.com/group/643108.html|/wp-content/uploads/2025/09/Font-20250928-2.webp|200,780,800,1260",
+      "id": "15954118-146c-46c3-b164-9d4a5cc3f794",
+      "title": "字 · 粗颗粒内发光浮雕字",
+      "status": "imported",
+      "coverKey": "11e594f481958c10e3015d0b_3a811a411a462951cc95979f667c65023e1763374dad05efae6ee85bd8b12958.webp",
+      "imageHash": "3a811a411a462951cc95979f667c65023e1763374dad05efae6ee85bd8b12958",
+      "verification": "verified"
+    }
+  ],
+  "after": 236,
+  "added": 72,
+  "verifiedAt": "2026-11-17T21:13:21.390Z"
+}

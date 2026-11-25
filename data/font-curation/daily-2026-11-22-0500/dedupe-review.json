@@ -1,0 +1,21 @@
+{
+  "historicalManifests": [
+    "data/font-curation/daily-2026-11-18-0500/manifest.json",
+    "data/font-curation/daily-2026-11-19-0500/manifest.json",
+    "data/font-curation/daily-2026-11-20-0500/manifest.json",
+    "data/font-curation/daily-2026-11-21-0500/manifest.json",
+    "data/font-curation/uisdc-diverse-2026-11-18/manifest.json",
+    "data/font-curation/uisdc-expanded-2026-11-18/manifest.json",
+    "data/font-curation/zcool-72070256/manifest.json",
+    "data/font-curation/zcool-title-designs-2026-11-15.json"
+  ],
+  "historyCount": 428,
+  "sameTextMatches": [],
+  "exclusions": [
+    "回查全部历史manifest和当前含删除索引，不恢复已删除作品",
+    "同款封面/正文/换色/步骤和样机只收完成字组",
+    "629164多款字库排版应用主要变化为换词，未拆成几十款凑数",
+    "书法节气、蛇年与琼瑶套系未用于凑数",
+    "站酷现有浏览器搜索仍无作品结果"
+  ]
+}

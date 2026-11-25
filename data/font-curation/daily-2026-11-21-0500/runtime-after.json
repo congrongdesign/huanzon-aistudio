@@ -1,0 +1,757 @@
+{
+  "cards": [
+    {
+      "id": "dac63e15-2329-4969-8d36-4b28b6e3782d",
+      "version": 2,
+      "title": "破浪 · 破浪卷弧飞白字",
+      "sampleText": "破浪",
+      "groupId": "ea1c1bc5-d422-4c7d-90a3-ff97ee469394",
+      "favorite": false,
+      "style": "破浪卷弧飞白字",
+      "tags": [
+        "每日扩充1121",
+        "字体传奇",
+        "明明设计",
+        "书法手写"
+      ],
+      "description": "【字形与构成】两字上下错落，粗重笔画内有破旧墨迹，右侧长弧回卷并向外甩出。\n【配色与材质】黑白字标，保留图内版权水印、印章或来源文字。\n【用途】品牌字形研究、民宿与文化视觉。\n【作者】明明设计；依据作品正文和图内署名。\n【原作品】破浪-复古破旧墨迹字体设计+字体传奇笔画素材\n【来源】https://www.ziticq.com/Works/35626\n【原图】https://www.ziticq.com/upload/image/20250713/6873d39299006.png\n【原图尺寸与裁切】1000×1333像素；[left,top,right,bottom]=[0, 0, 1000, 1333]。\n【收录说明】字体传奇作者公开展示作品；仅作个人本地设计参考，商业使用须另获授权。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_ecf29450fa8d23d14c751de0c50c3221e57247f48f4120570a460d9a3878493c.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_ecf29450fa8d23d14c751de0c50c3221e57247f48f4120570a460d9a3878493c.webp",
+        "width": 1000,
+        "height": 1333,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:36.016Z",
+      "updatedAt": "2026-11-20T21:12:36.028Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "390e75df-d53a-423e-a70a-9b2399da5d91",
+      "version": 2,
+      "title": "素研 · 细横波浪素研字",
+      "sampleText": "素研",
+      "groupId": "4e89639c-3348-4c9d-8754-e9f767c3ee9b",
+      "favorite": false,
+      "style": "细横波浪素研字",
+      "tags": [
+        "每日扩充1121",
+        "字体传奇",
+        "明明设计",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】两字横排，细横与略粗竖交替，波浪状撇捺向两侧展开，尖角内腔疏朗。\n【配色与材质】黑白字标，保留图内版权水印、印章或来源文字。\n【用途】品牌字形研究、民宿与文化视觉。\n【作者】明明设计；依据作品正文和图内署名。\n【原作品】素研-时尚唯美字体设计+字体传奇笔画素材\n【来源】https://www.ziticq.com/Works/35629\n【原图】https://www.ziticq.com/upload/image/20250804/68902903021ec.png\n【原图尺寸与裁切】1000×1333像素；[left,top,right,bottom]=[180, 140, 810, 510]。\n【收录说明】字体传奇作者公开展示作品；仅作个人本地设计参考，商业使用须另获授权。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_6a78f2ffca79c91db96bcc3eb32bf6cb98ef87bbd02ade845ebb289c1b07b4e6.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_6a78f2ffca79c91db96bcc3eb32bf6cb98ef87bbd02ade845ebb289c1b07b4e6.webp",
+        "width": 630,
+        "height": 370,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.970Z",
+      "updatedAt": "2026-11-20T21:12:35.981Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "9bec1992-8a41-45a8-808f-1f70fffef400",
+      "version": 2,
+      "title": "云苑 · 古隶竖排民宿字",
+      "sampleText": "云苑",
+      "groupId": "85285f86-8e92-47c8-ac35-7e03f6826f27",
+      "favorite": false,
+      "style": "古隶竖排民宿字",
+      "tags": [
+        "每日扩充1121",
+        "字体传奇",
+        "明明设计",
+        "复古装饰"
+      ],
+      "description": "【字形与构成】两字竖排，扁横和燕尾撇捺形成隶意，英文和民宿小印在下方收束。\n【配色与材质】黑白字标，保留图内版权水印、印章或来源文字。\n【用途】品牌字形研究、民宿与文化视觉。\n【作者】明明设计；依据作品正文和图内署名。\n【原作品】云苑民宿古韵中式字体标志设计+原装字体拼字文件\n【来源】https://www.ziticq.com/Works/35631\n【原图】https://www.ziticq.com/upload/image/20250814/689dfc006f686.png\n【原图尺寸与裁切】1000×1333像素；[left,top,right,bottom]=[0, 0, 1000, 1333]。\n【收录说明】字体传奇作者公开展示作品；仅作个人本地设计参考，商业使用须另获授权。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_c10cbd1eed0bb2fab311e02848e124151a83e5e82c7ecd43d4b55beec156c41b.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_c10cbd1eed0bb2fab311e02848e124151a83e5e82c7ecd43d4b55beec156c41b.webp",
+        "width": 1000,
+        "height": 1333,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.933Z",
+      "updatedAt": "2026-11-20T21:12:35.947Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "d2d92df2-6637-4613-8a1f-c9a0c59b39e4",
+      "version": 2,
+      "title": "野派 · 尖弧野派字标",
+      "sampleText": "野派",
+      "groupId": "85285f86-8e92-47c8-ac35-7e03f6826f27",
+      "favorite": false,
+      "style": "尖弧野派字标",
+      "tags": [
+        "每日扩充1121",
+        "字体传奇",
+        "明明设计",
+        "复古装饰"
+      ],
+      "description": "【字形与构成】两字高反差宽字面，圆弧形主笔与尖切三角收笔相接，字面轮廓锐利。\n【配色与材质】黑白字标，保留图内版权水印、印章或来源文字。\n【用途】品牌字形研究、民宿与文化视觉。\n【作者】明明设计；依据作品正文和图内署名。\n【原作品】野派露营派对时尚柔美字体标志设计+原装字体拼字文件\n【来源】https://www.ziticq.com/Works/35637\n【原图】https://www.ziticq.com/upload/image/20250923/68d2c184bb454.png\n【原图尺寸与裁切】1000×1333像素；[left,top,right,bottom]=[170, 160, 880, 570]。\n【收录说明】字体传奇作者公开展示作品；仅作个人本地设计参考，商业使用须另获授权。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_f4f5a4c3b38ea083bb0ca392c921a8ac5015b258d1d397ee58bf8474fc87d67a.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_f4f5a4c3b38ea083bb0ca392c921a8ac5015b258d1d397ee58bf8474fc87d67a.webp",
+        "width": 710,
+        "height": 410,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.893Z",
+      "updatedAt": "2026-11-20T21:12:35.904Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "602299b7-ed89-4bfd-93c5-3597100efa7e",
+      "version": 2,
+      "title": "绣坊 · 旗袍曲线绣坊字",
+      "sampleText": "绣坊",
+      "groupId": "4e89639c-3348-4c9d-8754-e9f767c3ee9b",
+      "favorite": false,
+      "style": "旗袍曲线绣坊字",
+      "tags": [
+        "每日扩充1121",
+        "字体传奇",
+        "明明设计",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】两字宽松横排，粗细曲线与细直横相接，左侧绞丝旁和下方回环保持连贯。\n【配色与材质】黑白字标，保留图内版权水印、印章或来源文字。\n【用途】品牌字形研究、民宿与文化视觉。\n【作者】明明设计；依据作品正文和图内署名。\n【原作品】绣坊中式旗袍曲线唯美字体标志设计+原装字体拼字文件\n【来源】https://www.ziticq.com/Works/35652\n【原图】https://www.ziticq.com/upload/image/20260407/69d510c624b54.png\n【原图尺寸与裁切】1000×1333像素；[left,top,right,bottom]=[160, 95, 820, 580]。\n【收录说明】字体传奇作者公开展示作品；仅作个人本地设计参考，商业使用须另获授权。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_6c56311586c857fed3908ea604e471848338006d4fff647aab4890259705b183.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_6c56311586c857fed3908ea604e471848338006d4fff647aab4890259705b183.webp",
+        "width": 660,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.857Z",
+      "updatedAt": "2026-11-20T21:12:35.870Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "66ae2942-2089-41e8-ae4a-b41eab3cc171",
+      "version": 2,
+      "title": "动效设计揭秘 · 金卷横幅动效字",
+      "sampleText": "动效设计揭秘",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "金卷横幅动效字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "立体字效"
+      ],
+      "description": "【字形与构成】两行厚字错开并前倾，后方金色卷轴包围文字，浮起的阴影凸显字效。\n【配色与材质】红底米白字金黄卷轴。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-9.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_b19881a796ad3159dc61b4d18632a0d3a5fc96ae1d318aeeeb2297f2b7e97511.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_b19881a796ad3159dc61b4d18632a0d3a5fc96ae1d318aeeeb2297f2b7e97511.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.816Z",
+      "updatedAt": "2026-11-20T21:12:35.828Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "050c91fd-b0cb-405a-b678-c53f37e3dfa4",
+      "version": 2,
+      "title": "限时惊价60元 · 折角促销价格字",
+      "sampleText": "限时惊价60元",
+      "groupId": "f7d0cc9c-1ffa-4a21-8943-30dc0c143211",
+      "favorite": false,
+      "style": "折角促销价格字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "运动力量"
+      ],
+      "description": "【字形与构成】中文横排与大号价格两层叠放，硬边粗笔画、斜向底板构成促销层次。\n【配色与材质】蓝底白字黄价、深蓝外框。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-8.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_db94219fe7dfec0318dc4d17b1c9e6d087d1c3ef547133dd8eb2f66222bb8051.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_db94219fe7dfec0318dc4d17b1c9e6d087d1c3ef547133dd8eb2f66222bb8051.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.772Z",
+      "updatedAt": "2026-11-20T21:12:35.783Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "7d512889-28d1-421e-baa9-ef30a5beedef",
+      "version": 2,
+      "title": "星球的抉择 · 分色斜切抉择字",
+      "sampleText": "星球的抉择",
+      "groupId": "f7d0cc9c-1ffa-4a21-8943-30dc0c143211",
+      "favorite": false,
+      "style": "分色斜切抉择字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "运动力量"
+      ],
+      "description": "【字形与构成】两组粗斜字在中央错位对接，笔画长尾拉伸，圆形轨道环绕。\n【配色与材质】橙蓝分割底，白色主字。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-7.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_f4f287740289dac95e44fc2a8ad243ae6d96930ee346cd4060363f8033e60290.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_f4f287740289dac95e44fc2a8ad243ae6d96930ee346cd4060363f8033e60290.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.728Z",
+      "updatedAt": "2026-11-20T21:12:35.740Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "72187da8-3935-42c9-b764-3280599673dd",
+      "version": 2,
+      "title": "用户体验行业报告 · 折纸透视报告字",
+      "sampleText": "用户体验行业报告",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "折纸透视报告字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "立体字效"
+      ],
+      "description": "【字形与构成】两行粗黑斜体字保持同一透视，左后方折纸面和右侧箭头形成纵深。\n【配色与材质】蓝底白字、黄箭头。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-6.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_d297a6ecea3e9b5363e6bf5bb87fc0e01f88929ee4a363a87715d875834d1e5c.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_d297a6ecea3e9b5363e6bf5bb87fc0e01f88929ee4a363a87715d875834d1e5c.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.688Z",
+      "updatedAt": "2026-11-20T21:12:35.700Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "b320d75a-261f-457e-9314-707dba1ea0e0",
+      "version": 2,
+      "title": "求生指南 · 描边重叠求生字",
+      "sampleText": "求生指南",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "描边重叠求生字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "立体字效"
+      ],
+      "description": "【字形与构成】两行宽厚字形斜向叠压，多层外描边与立体挤出相结合。\n【配色与材质】橙底白红字、米黄描边。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-5.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_eefea6d20f76f9177406628f7dc290a3f8c325d0378bb0546192dfea5b2d3398.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_eefea6d20f76f9177406628f7dc290a3f8c325d0378bb0546192dfea5b2d3398.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.643Z",
+      "updatedAt": "2026-11-20T21:12:35.655Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "081f037d-95f5-4093-b708-0eaf350a85d0",
+      "version": 2,
+      "title": "免费商用字体 · 商用粗黑倾斜字",
+      "sampleText": "免费商用字体",
+      "groupId": "f7d0cc9c-1ffa-4a21-8943-30dc0c143211",
+      "favorite": false,
+      "style": "商用粗黑倾斜字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "运动力量"
+      ],
+      "description": "【字形与构成】两行粗黑字向右倾斜，短横与窄竖负形结合，彩色弧线分列两侧。\n【配色与材质】蓝紫渐变底白字粉弧。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-4.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_f5b1ea199dd80c3c799185fea008ac80b5de2ec98e307b3463e1843d17739664.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_f5b1ea199dd80c3c799185fea008ac80b5de2ec98e307b3463e1843d17739664.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.597Z",
+      "updatedAt": "2026-11-20T21:12:35.609Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "652acb9f-9f88-4bc2-8c4f-34930cf53d98",
+      "version": 2,
+      "title": "深色模式设计指南 · 圆角深色模式字",
+      "sampleText": "深色模式设计指南",
+      "groupId": "a93303e6-bda0-49ae-a204-08bf83d119e0",
+      "favorite": false,
+      "style": "圆角深色模式字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "现代简约"
+      ],
+      "description": "【字形与构成】两行窄长圆角笔画，均匀线宽和开放内腔形成清爽界面主题。\n【配色与材质】深紫底白字、橙粉流体。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-3.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_d94ed50ae9890a06a32b1ac757227d1d909e927ddade3326c772b5ef3a7355e2.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_d94ed50ae9890a06a32b1ac757227d1d909e927ddade3326c772b5ef3a7355e2.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.556Z",
+      "updatedAt": "2026-11-20T21:12:35.568Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "fdc1bcba-ca2c-41c5-914a-3965dc2f6fde",
+      "version": 2,
+      "title": "如何提升设计水平 · 宽黑斜体提升字",
+      "sampleText": "如何提升设计水平",
+      "groupId": "f7d0cc9c-1ffa-4a21-8943-30dc0c143211",
+      "favorite": false,
+      "style": "宽黑斜体提升字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "运动力量"
+      ],
+      "description": "【字形与构成】两行粗斜字面平行排列，细长矩形负形和切角保持阅读节奏。\n【配色与材质】深蓝底白字、橙红弧线。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-2.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_fe82ce073a71f0545e8155c88145c1e2e783dd65d33fd823b518f90b816b548b.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_fe82ce073a71f0545e8155c88145c1e2e783dd65d33fd823b518f90b816b548b.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.512Z",
+      "updatedAt": "2026-11-20T21:12:35.523Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "0988dac3-6917-4add-bef8-ca411bd37d88",
+      "version": 2,
+      "title": "周杰伦专辑封面设计 · 折面厚边封面字",
+      "sampleText": "周杰伦专辑封面设计",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "折面厚边封面字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "安全蛋",
+        "立体字效"
+      ],
+      "description": "【字形与构成】三行粗黑斜体字挤压排列，后方金黄色多边形形成折面厚度。\n【配色与材质】红底白字、金色切面。\n【用途】运营banner、课程推广、活动海报。\n【作者】安全蛋；依据作品正文和图内署名。\n【原作品】Banner文字组如何设计？9组运营字效设计灵感\n【来源】https://www.uisdc.com/group/512389.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/05/Operation-Design-20230510-1.jpg\n【原图尺寸与裁切】800×800像素；[left,top,right,bottom]=[40, 200, 760, 685]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_11dc8aaf8b7729f070def750cbdb6e59765541c542fa94b205c0e55940e89909.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_11dc8aaf8b7729f070def750cbdb6e59765541c542fa94b205c0e55940e89909.webp",
+        "width": 720,
+        "height": 485,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.468Z",
+      "updatedAt": "2026-11-20T21:12:35.480Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "27f203a3-33d7-4d57-9935-ca813a0162c0",
+      "version": 2,
+      "title": "CO · 银铬液面弧形字",
+      "sampleText": "CO",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "银铬液面弧形字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "优设基础训练营",
+        "立体字效"
+      ],
+      "description": "【字形与构成】C内侧卷成弯钩，O的厚圆环与C并排，凸面和薄边产生强反差。\n【配色与材质】浅灰底银白铬反射、灰蓝暗部与柔影。\n【用途】展览字效、科技视觉、专辑封面。\n【作者】优设基础训练营；依据作品正文和图内署名。\n【原作品】7步制作 ins 爆火的铝铬金属字体效果设计\n【来源】https://www.uisdc.com/group/486344.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Metal-word-effect-20221124-11.jpg\n【原图尺寸与裁切】1200×1200像素；[left,top,right,bottom]=[0, 130, 1200, 930]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_9afff3999c9c003065761dbe1eb3156360f4c9629ef0da3c2e40740594010524.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_9afff3999c9c003065761dbe1eb3156360f4c9629ef0da3c2e40740594010524.webp",
+        "width": 1200,
+        "height": 800,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.422Z",
+      "updatedAt": "2026-11-20T21:12:35.434Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "ed769a21-d21a-4c3e-9957-a91e307d0330",
+      "version": 2,
+      "title": "Love · 粉铬卷尾金属字",
+      "sampleText": "Love",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "粉铬卷尾金属字",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "优设基础训练营",
+        "立体字效"
+      ],
+      "description": "【字形与构成】圆润卷尾衬线英文连排，充气般字面保留清晰外轮廓，侧壁向右下形成厚度。\n【配色与材质】粉红铬金属、白色高光和柔和投影。\n【用途】情人节主题、音乐封面、时尚海报。\n【作者】优设基础训练营；依据作品正文和图内署名。\n【原作品】PS教程！8步做出罗曼蒂克的金属立体字效\n【来源】https://www.uisdc.com/group/498397.html\n【原图】https://image.uisdc.com/wp-content/uploads/2023/02/Metal-character-effect-20230218-1.jpg\n【原图尺寸与裁切】1080×1080像素；[left,top,right,bottom]=[0, 280, 1080, 1080]。\n【收录说明】一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_b618f69f722aee32a10c35a4990c0c6282520fc2de29b063ae95b7d2d2166361.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_b618f69f722aee32a10c35a4990c0c6282520fc2de29b063ae95b7d2d2166361.webp",
+        "width": 1080,
+        "height": 800,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.371Z",
+      "updatedAt": "2026-11-20T21:12:35.385Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "6b972c18-fe66-4625-9d1f-f1a4dd999e01",
+      "version": 2,
+      "title": "100 · 装甲机械模块构字09",
+      "sampleText": "100",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "装甲机械模块构字09",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "Design Superman",
+        "立体字效"
+      ],
+      "description": "【字形与构成】数字1与两个中空圆环0并置，数字同高，底部机械支架保持独立。\n【配色与材质】银白、黄、红与黑色金属拼装，细小螺钉、格栅、反光和地面投影。\n【用途】机械概念、科技活动、游戏标题。\n【作者】Design Superman；依据作品正文和图内署名。\n【原作品】2024 高考加油！9 组朋克机甲字创意设计！\n【来源】https://www.uisdc.com/group/569245.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/AI-FONT-20240607-10.jpg\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[0, 0, 1200, 1600]。\n【收录说明】作者公开AIGC案例，未调用模型生成；图形化中文难可靠转写，标注待核。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_1410720c502413ac55535a5ae3815d4fc51749e9b051c72e48bdb87205245961.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_1410720c502413ac55535a5ae3815d4fc51749e9b051c72e48bdb87205245961.webp",
+        "width": 1200,
+        "height": 1600,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.320Z",
+      "updatedAt": "2026-11-20T21:12:35.333Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "92aa8f65-5178-4e56-9ff5-62c9519ad0b1",
+      "version": 2,
+      "title": "机甲构成单字08（原中文待核） · 装甲机械模块构字08",
+      "sampleText": "机甲构成单字08（原中文待核）",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "装甲机械模块构字08",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "Design Superman",
+        "立体字效"
+      ],
+      "description": "【字形与构成】上部封闭装甲腔与下部通孔相连，左右部件高低错落。\n【配色与材质】银白、黄、红与黑色金属拼装，细小螺钉、格栅、反光和地面投影。\n【用途】机械概念、科技活动、游戏标题。\n【作者】Design Superman；依据作品正文和图内署名。\n【原作品】2024 高考加油！9 组朋克机甲字创意设计！\n【来源】https://www.uisdc.com/group/569245.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/AI-FONT-20240607-9.jpg\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[0, 0, 1200, 1600]。\n【收录说明】作者公开AIGC案例，未调用模型生成；图形化中文难可靠转写，标注待核。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_6e30fba504b10321d6bb9987153564c65955406d0cb12c3d142d1eacdf3364d8.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_6e30fba504b10321d6bb9987153564c65955406d0cb12c3d142d1eacdf3364d8.webp",
+        "width": 1200,
+        "height": 1600,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.249Z",
+      "updatedAt": "2026-11-20T21:12:35.262Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "7b8edbbe-c0d0-44eb-83b3-85749aa4de97",
+      "version": 2,
+      "title": "机甲构成单字07（原中文待核） · 装甲机械模块构字07",
+      "sampleText": "机甲构成单字07（原中文待核）",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "装甲机械模块构字07",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "Design Superman",
+        "立体字效"
+      ],
+      "description": "【字形与构成】左侧两根斜竖与右侧高耸门形构成双部件结构，字底开阔。\n【配色与材质】银白、黄、红与黑色金属拼装，细小螺钉、格栅、反光和地面投影。\n【用途】机械概念、科技活动、游戏标题。\n【作者】Design Superman；依据作品正文和图内署名。\n【原作品】2024 高考加油！9 组朋克机甲字创意设计！\n【来源】https://www.uisdc.com/group/569245.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/AI-FONT-20240607-8.jpg\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[0, 0, 1200, 1600]。\n【收录说明】作者公开AIGC案例，未调用模型生成；图形化中文难可靠转写，标注待核。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_67efcb0e009cc2e04d8005d9db245f6fcaf85f946a59f94dd80b52ff52819090.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_67efcb0e009cc2e04d8005d9db245f6fcaf85f946a59f94dd80b52ff52819090.webp",
+        "width": 1200,
+        "height": 1600,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.179Z",
+      "updatedAt": "2026-11-20T21:12:35.193Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "77cfad8c-91c6-47a3-a734-4c428991088e",
+      "version": 2,
+      "title": "机甲构成单字06（原中文待核） · 装甲机械模块构字06",
+      "sampleText": "机甲构成单字06（原中文待核）",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "装甲机械模块构字06",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "Design Superman",
+        "立体字效"
+      ],
+      "description": "【字形与构成】多层平行横杆从上到下错位，底部曲折长钩向左回收。\n【配色与材质】银白、黄、红与黑色金属拼装，细小螺钉、格栅、反光和地面投影。\n【用途】机械概念、科技活动、游戏标题。\n【作者】Design Superman；依据作品正文和图内署名。\n【原作品】2024 高考加油！9 组朋克机甲字创意设计！\n【来源】https://www.uisdc.com/group/569245.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/AI-FONT-20240607-7.jpg\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[0, 0, 1200, 1600]。\n【收录说明】作者公开AIGC案例，未调用模型生成；图形化中文难可靠转写，标注待核。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_7fff5a4b016d4aa9765b45a500f916073e93c25ef2eb198294f02062c3b8558a.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_7fff5a4b016d4aa9765b45a500f916073e93c25ef2eb198294f02062c3b8558a.webp",
+        "width": 1200,
+        "height": 1600,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.114Z",
+      "updatedAt": "2026-11-20T21:12:35.126Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "f57a6459-a62f-4e43-971a-2b4484fa482c",
+      "version": 2,
+      "title": "机甲构成单字05（原中文待核） · 装甲机械模块构字05",
+      "sampleText": "机甲构成单字05（原中文待核）",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "装甲机械模块构字05",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "Design Superman",
+        "立体字效"
+      ],
+      "description": "【字形与构成】顶部粗横与下部方形双腔构成上下结构，下方装甲横向展开。\n【配色与材质】银白、黄、红与黑色金属拼装，细小螺钉、格栅、反光和地面投影。\n【用途】机械概念、科技活动、游戏标题。\n【作者】Design Superman；依据作品正文和图内署名。\n【原作品】2024 高考加油！9 组朋克机甲字创意设计！\n【来源】https://www.uisdc.com/group/569245.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/AI-FONT-20240607-6.jpg\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[0, 0, 1200, 1600]。\n【收录说明】作者公开AIGC案例，未调用模型生成；图形化中文难可靠转写，标注待核。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_83c99601bf5542a87152939b0890a2c0ce72652e592e3ca3823d2ca8bf447ea2.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_83c99601bf5542a87152939b0890a2c0ce72652e592e3ca3823d2ca8bf447ea2.webp",
+        "width": 1200,
+        "height": 1600,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:35.046Z",
+      "updatedAt": "2026-11-20T21:12:35.061Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "6c05a107-daf6-4d75-bfaf-b7f5f2b797a2",
+      "version": 2,
+      "title": "机甲构成单字04（原中文待核） · 装甲机械模块构字04",
+      "sampleText": "机甲构成单字04（原中文待核）",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "装甲机械模块构字04",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "Design Superman",
+        "立体字效"
+      ],
+      "description": "【字形与构成】左边黑色竖杆与右侧密集短横分层并置，底部厚板向外突出。\n【配色与材质】银白、黄、红与黑色金属拼装，细小螺钉、格栅、反光和地面投影。\n【用途】机械概念、科技活动、游戏标题。\n【作者】Design Superman；依据作品正文和图内署名。\n【原作品】2024 高考加油！9 组朋克机甲字创意设计！\n【来源】https://www.uisdc.com/group/569245.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/AI-FONT-20240607-5.jpg\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[0, 0, 1200, 1600]。\n【收录说明】作者公开AIGC案例，未调用模型生成；图形化中文难可靠转写，标注待核。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_39e08dd80f680cfb59c409c13b5721e092f3070ca6a58004e1bf7d630d50f09d.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_39e08dd80f680cfb59c409c13b5721e092f3070ca6a58004e1bf7d630d50f09d.webp",
+        "width": 1200,
+        "height": 1600,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:34.974Z",
+      "updatedAt": "2026-11-20T21:12:34.988Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "2d43d86b-9566-4d11-bd89-f0d5f02a7cb6",
+      "version": 2,
+      "title": "机甲构成单字03（原中文待核） · 装甲机械模块构字03",
+      "sampleText": "机甲构成单字03（原中文待核）",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "装甲机械模块构字03",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "Design Superman",
+        "立体字效"
+      ],
+      "description": "【字形与构成】上部两道粗横向左伸展，右侧竖钩直下，左下方块负形开口。\n【配色与材质】银白、黄、红与黑色金属拼装，细小螺钉、格栅、反光和地面投影。\n【用途】机械概念、科技活动、游戏标题。\n【作者】Design Superman；依据作品正文和图内署名。\n【原作品】2024 高考加油！9 组朋克机甲字创意设计！\n【来源】https://www.uisdc.com/group/569245.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/AI-FONT-20240607-4.jpg\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[0, 0, 1200, 1600]。\n【收录说明】作者公开AIGC案例，未调用模型生成；图形化中文难可靠转写，标注待核。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_1cc29a6cf6da05e4ab150ee29eab1e66104277996262519e8b8a541cc8390158.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_1cc29a6cf6da05e4ab150ee29eab1e66104277996262519e8b8a541cc8390158.webp",
+        "width": 1200,
+        "height": 1600,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:34.901Z",
+      "updatedAt": "2026-11-20T21:12:34.913Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    },
+    {
+      "id": "713d6d37-4409-490b-abf0-ab0fdcfd8a94",
+      "version": 2,
+      "title": "机甲构成单字02（原中文待核） · 装甲机械模块构字02",
+      "sampleText": "机甲构成单字02（原中文待核）",
+      "groupId": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "favorite": false,
+      "style": "装甲机械模块构字02",
+      "tags": [
+        "每日扩充1121",
+        "优设精选",
+        "Design Superman",
+        "立体字效"
+      ],
+      "description": "【字形与构成】上下宽横堆叠，中部两组红色方腔对称，底部斜件向左下收束。\n【配色与材质】银白、黄、红与黑色金属拼装，细小螺钉、格栅、反光和地面投影。\n【用途】机械概念、科技活动、游戏标题。\n【作者】Design Superman；依据作品正文和图内署名。\n【原作品】2024 高考加油！9 组朋克机甲字创意设计！\n【来源】https://www.uisdc.com/group/569245.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/AI-FONT-20240607-3.jpg\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[0, 0, 1200, 1600]。\n【收录说明】作者公开AIGC案例，未调用模型生成；图形化中文难可靠转写，标注待核。一张卡一款完整设计，保留图内水印；裁外署名保留在本备注。仅供参考，非可安装字库。结构与复用建议为整理者分析，非作者原始提示词。\n【收录日期】2026-11-21",
+      "analysisStatus": "completed",
+      "cover": {
+        "key": "11e594f481958c10e3015d0b_af24befdeabfdbbc5eb7380436919e02ba92f8b949da3cfbcc981fd6d7a9ca8f.webp",
+        "url": "/api/font-file/11e594f481958c10e3015d0b_af24befdeabfdbbc5eb7380436919e02ba92f8b949da3cfbcc981fd6d7a9ca8f.webp",
+        "width": 1200,
+        "height": 1600,
+        "label": "字体成品",
+        "role": "sample"
+      },
+      "createdAt": "2026-11-20T21:12:34.833Z",
+      "updatedAt": "2026-11-20T21:12:34.846Z",
+      "referenceCount": 0,
+      "warningCount": 0
+    }
+  ],
+  "total": 344,
+  "page": 1,
+  "pageSize": 24,
+  "groups": [
+    {
+      "id": "ea1c1bc5-d422-4c7d-90a3-ff97ee469394",
+      "name": "书法手写"
+    },
+    {
+      "id": "85285f86-8e92-47c8-ac35-7e03f6826f27",
+      "name": "复古装饰"
+    },
+    {
+      "id": "f7d0cc9c-1ffa-4a21-8943-30dc0c143211",
+      "name": "运动力量"
+    },
+    {
+      "id": "fca8d0dc-0473-4771-b5d5-76bfde0b2160",
+      "name": "圆体趣味"
+    },
+    {
+      "id": "df6a8cde-807f-460b-91ab-db85294476c7",
+      "name": "语义图形"
+    },
+    {
+      "id": "4e89639c-3348-4c9d-8754-e9f767c3ee9b",
+      "name": "细线优雅"
+    },
+    {
+      "id": "e4af4fc1-bb3b-4df7-9ebd-5f8abf5a70cb",
+      "name": "几何构成"
+    },
+    {
+      "id": "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a",
+      "name": "立体字效"
+    },
+    {
+      "id": "a93303e6-bda0-49ae-a204-08bf83d119e0",
+      "name": "现代简约"
+    }
+  ],
+  "counts": {
+    "all": 344,
+    "favorites": 0,
+    "trash": 93
+  },
+  "groupCounts": {
+    "ea1c1bc5-d422-4c7d-90a3-ff97ee469394": 54,
+    "85285f86-8e92-47c8-ac35-7e03f6826f27": 62,
+    "f7d0cc9c-1ffa-4a21-8943-30dc0c143211": 41,
+    "fca8d0dc-0473-4771-b5d5-76bfde0b2160": 51,
+    "df6a8cde-807f-460b-91ab-db85294476c7": 27,
+    "4e89639c-3348-4c9d-8754-e9f767c3ee9b": 39,
+    "e4af4fc1-bb3b-4df7-9ebd-5f8abf5a70cb": 33,
+    "4ffcf4ed-38f1-49bf-a3ab-0b10d0c8460a": 30,
+    "a93303e6-bda0-49ae-a204-08bf83d119e0": 7
+  }
+}

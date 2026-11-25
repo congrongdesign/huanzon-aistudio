@@ -1,0 +1,2446 @@
+{
+  "batch": "每日扩充1123",
+  "sourceDate": "2026-11-23",
+  "cards": [
+    {
+      "number": 1,
+      "sourceFile": "/tmp/font-daily-1123/669590/2.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        860
+      ],
+      "title": "冰封王座 · 冰晶尖棱立体字",
+      "sampleText": "冰封王座",
+      "group": "立体字效",
+      "style": "冰晶尖棱立体字",
+      "author": "右蓝设计",
+      "sourceTitle": "1张模板搞定！AI直出6款游戏字效超实用技巧",
+      "sourceUrl": "https://www.uisdc.com/group/669590.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-2.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "右蓝设计",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】厚重立体骨架带锐利30°—45°切割，冰棱尖刺向字外延伸，重心错落。\n【配色与材质】冰蓝透明水晶、锐利高光、纯黑背景。\n【适用场景】游戏标题、活动UI与奇幻海报。\n【作者】右蓝设计；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】1张模板搞定！AI直出6款游戏字效超实用技巧\n【来源】https://www.uisdc.com/group/669590.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-2.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 120, 1440, 860]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织冰晶尖棱立体字。厚重立体骨架带锐利30°—45°切割，冰棱尖刺向字外延伸，重心错落。冰蓝透明水晶、锐利高光、纯黑背景。适用于游戏标题、活动UI与奇幻海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_cdacf48913d9b85976c8a49319bea0a0c2bade3d2b9af5c8a4a8ad4670939d13.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "8c5a7b65-2ece-4f07-bdf3-05d07dfcea34"
+    },
+    {
+      "number": 2,
+      "sourceFile": "/tmp/font-daily-1123/669590/3.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        860
+      ],
+      "title": "翡翠森林 · 翡翠藤蔓立体字",
+      "sampleText": "翡翠森林",
+      "group": "立体字效",
+      "style": "翡翠藤蔓立体字",
+      "author": "右蓝设计",
+      "sourceTitle": "1张模板搞定！AI直出6款游戏字效超实用技巧",
+      "sourceUrl": "https://www.uisdc.com/group/669590.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-3.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "右蓝设计",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】晶石切割的粗笔转折融入藤蔓曲线，末端外伸，兼具锋芒和流动感。\n【配色与材质】浅薄荷到深祖母绿、磨砂玉石反光、纯黑背景。\n【适用场景】游戏标题、活动UI与奇幻海报。\n【作者】右蓝设计；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】1张模板搞定！AI直出6款游戏字效超实用技巧\n【来源】https://www.uisdc.com/group/669590.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-3.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 120, 1440, 860]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织翡翠藤蔓立体字。晶石切割的粗笔转折融入藤蔓曲线，末端外伸，兼具锋芒和流动感。浅薄荷到深祖母绿、磨砂玉石反光、纯黑背景。适用于游戏标题、活动UI与奇幻海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_44bfca2e0efa9871f70fb8477e3f5da50d8e5547e5f03ccd1ac7807aa5472dfa.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "5780fbf9-73ab-4916-a684-52bb6a6b935b"
+    },
+    {
+      "number": 3,
+      "sourceFile": "/tmp/font-daily-1123/669590/4.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        860
+      ],
+      "title": "幻影之舞 · 紫粉霓虹水晶字",
+      "sampleText": "幻影之舞",
+      "group": "立体字效",
+      "style": "紫粉霓虹水晶字",
+      "author": "右蓝设计",
+      "sourceTitle": "1张模板搞定！AI直出6款游戏字效超实用技巧",
+      "sourceUrl": "https://www.uisdc.com/group/669590.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-4.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "右蓝设计",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】多面体笔画与外扩刃状尖刺构成，拖尾和重心交错强化刺客动势。\n【配色与材质】深紫至浅粉霓虹玻璃、水晶折射、纯黑背景。\n【适用场景】游戏标题、活动UI与奇幻海报。\n【作者】右蓝设计；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】1张模板搞定！AI直出6款游戏字效超实用技巧\n【来源】https://www.uisdc.com/group/669590.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-4.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 120, 1440, 860]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织紫粉霓虹水晶字。多面体笔画与外扩刃状尖刺构成，拖尾和重心交错强化刺客动势。深紫至浅粉霓虹玻璃、水晶折射、纯黑背景。适用于游戏标题、活动UI与奇幻海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_fc202cc1d894a1adb499845ef21587617e2d9a0ec84cfc835e5d8348bcdf135b.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "3372fb83-b779-40d6-940d-d7ffc25d5048"
+    },
+    {
+      "number": 4,
+      "sourceFile": "/tmp/font-daily-1123/669590/5.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        860
+      ],
+      "title": "深海秘境 · 深海波浪水晶字",
+      "sampleText": "深海秘境",
+      "group": "立体字效",
+      "style": "深海波浪水晶字",
+      "author": "右蓝设计",
+      "sourceTitle": "1张模板搞定！AI直出6款游戏字效超实用技巧",
+      "sourceUrl": "https://www.uisdc.com/group/669590.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-5.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "右蓝设计",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】波浪状外轮廓和刃状水花末端组合，粗细对比突出流动的深海张力。\n【配色与材质】蓝青渐变通透水晶、海流高光、纯黑背景。\n【适用场景】游戏标题、活动UI与奇幻海报。\n【作者】右蓝设计；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】1张模板搞定！AI直出6款游戏字效超实用技巧\n【来源】https://www.uisdc.com/group/669590.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-5.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 120, 1440, 860]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织深海波浪水晶字。波浪状外轮廓和刃状水花末端组合，粗细对比突出流动的深海张力。蓝青渐变通透水晶、海流高光、纯黑背景。适用于游戏标题、活动UI与奇幻海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_1f5b1ea0f0796f72574588f1350354740dadd17e854dc349c549d54555254327.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "52fa436e-a91d-4da6-92ea-bceef3249f8a"
+    },
+    {
+      "number": 5,
+      "sourceFile": "/tmp/font-daily-1123/669590/6.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        860
+      ],
+      "title": "元素爆破 · 多元素爆裂立体字",
+      "sampleText": "元素爆破",
+      "group": "立体字效",
+      "style": "多元素爆裂立体字",
+      "author": "右蓝设计",
+      "sourceTitle": "1张模板搞定！AI直出6款游戏字效超实用技巧",
+      "sourceUrl": "https://www.uisdc.com/group/669590.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-6.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "右蓝设计",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】每字嵌入尖刺、刀刃与放射碎片，字组紧凑并向四周炸开。\n【配色与材质】多色能量晶体、强烈高光和PBR材质、纯黑背景。\n【适用场景】游戏标题、活动UI与奇幻海报。\n【作者】右蓝设计；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】1张模板搞定！AI直出6款游戏字效超实用技巧\n【来源】https://www.uisdc.com/group/669590.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-6.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 120, 1440, 860]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织多元素爆裂立体字。每字嵌入尖刺、刀刃与放射碎片，字组紧凑并向四周炸开。多色能量晶体、强烈高光和PBR材质、纯黑背景。适用于游戏标题、活动UI与奇幻海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_0eb48992267b3efa8ce20e25fbe5953c1576f43e48db0c3829cf3b53db633995.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "62e3d6bc-8ab6-4238-81ee-9084063b7ff8"
+    },
+    {
+      "number": 6,
+      "sourceFile": "/tmp/font-daily-1123/669590/7.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        860
+      ],
+      "title": "虚空之眼 · 虚空能量立体字",
+      "sampleText": "虚空之眼",
+      "group": "立体字效",
+      "style": "虚空能量立体字",
+      "author": "右蓝设计",
+      "sourceTitle": "1张模板搞定！AI直出6款游戏字效超实用技巧",
+      "sourceUrl": "https://www.uisdc.com/group/669590.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-7.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "右蓝设计",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】尖锐字架向左右外扩，通透层叠和水晶切面制造透视纵深。\n【配色与材质】深紫到冰蓝能量晶体、霓虹轮廓光、虚空烟雾。\n【适用场景】游戏标题、活动UI与奇幻海报。\n【作者】右蓝设计；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】1张模板搞定！AI直出6款游戏字效超实用技巧\n【来源】https://www.uisdc.com/group/669590.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-GAMEFONT-20260512-7.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 120, 1440, 860]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织虚空能量立体字。尖锐字架向左右外扩，通透层叠和水晶切面制造透视纵深。深紫到冰蓝能量晶体、霓虹轮廓光、虚空烟雾。适用于游戏标题、活动UI与奇幻海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_fc7b6024900c07e4d5ec2352cb4e1698adec208cf9be56c35dd70b6264e2342c.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "9324aa6d-264b-4887-ada1-dcdfac68f52c"
+    },
+    {
+      "number": 7,
+      "sourceFile": "/tmp/font-daily-1123/669244/1.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "青春派对 向阳花开 · 秀丽笔飞白手写字",
+      "sampleText": "青春派对 向阳花开",
+      "group": "书法手写",
+      "style": "秀丽笔飞白手写字",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-02.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】两行紧凑手写，起笔粗重、收笔尖细，飞白与上紧下松的字组节奏明显。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-02.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织秀丽笔飞白手写字。两行紧凑手写，起笔粗重、收笔尖细，飞白与上紧下松的字组节奏明显。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_24940c5a205f7eb60661897dfb9cdf4ccaca99ddab85c222adbf9f7038c47030.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "138e369e-01ab-4060-894a-905a97df80fd"
+    },
+    {
+      "number": 8,
+      "sourceFile": "/tmp/font-daily-1123/669244/2.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "往日不悔 未来可期 · 秀丽笔长锋手写字",
+      "sampleText": "往日不悔 未来可期",
+      "group": "书法手写",
+      "style": "秀丽笔长锋手写字",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-03.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】上下两行错落，粗细反差强烈，长锋和断续飞白强化轻盈动势。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-03.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织秀丽笔长锋手写字。上下两行错落，粗细反差强烈，长锋和断续飞白强化轻盈动势。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_a32af7e1e44529d36b8cb1e4b9e7c20596a3627fdc79720ed09164f0bbc64a2a.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "d1f3625c-fead-4d74-bb27-56e2bb9bf00b"
+    },
+    {
+      "number": 9,
+      "sourceFile": "/tmp/font-daily-1123/669244/3.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "春风有信 花开有期 · 秀丽笔舒展手写字",
+      "sampleText": "春风有信 花开有期",
+      "group": "书法手写",
+      "style": "秀丽笔舒展手写字",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-04.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】两行独立成组，横画拉长、尖锋外伸，字距松紧交替。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-04.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织秀丽笔舒展手写字。两行独立成组，横画拉长、尖锋外伸，字距松紧交替。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_648f9392373470f7d54aab511a05048663232f7fb3341e97bcfab777fff0de97.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "defa09fa-f2ea-4e9f-993e-0a5c97292eb0"
+    },
+    {
+      "number": 10,
+      "sourceFile": "/tmp/font-daily-1123/669244/4.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "去有风的地方 · 秀丽笔风势手写字",
+      "sampleText": "去有风的地方",
+      "group": "书法手写",
+      "style": "秀丽笔风势手写字",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-05.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】单行主标题横展，笔锋向右拖曳，花体英文与年份作低位副题。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-05.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织秀丽笔风势手写字。单行主标题横展，笔锋向右拖曳，花体英文与年份作低位副题。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_35c048f9850b4cba2e5dbcfc967da0553d2ffb77da1d894ec9f3ace74f4161c3.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "7c34643b-5b11-4a03-badc-7dbea79080ff"
+    },
+    {
+      "number": 11,
+      "sourceFile": "/tmp/font-daily-1123/669244/5.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "为梦想不止步 · 简净随性手写字",
+      "sampleText": "为梦想不止步",
+      "group": "书法手写",
+      "style": "简净随性手写字",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-06.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】六字横排略带斜势，笔画自由连断，英文签名呼应主标题基线。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-06.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织简净随性手写字。六字横排略带斜势，笔画自由连断，英文签名呼应主标题基线。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_d2c1f66bc688ac24a498eb0b2c6bda82ca21e40faa404290ee6a0dcdea578cc9.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "eb106d14-e2fa-47df-87d4-d3f831e0eb2d"
+    },
+    {
+      "number": 12,
+      "sourceFile": "/tmp/font-daily-1123/669244/6.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "一壶清茶许流年 · 秀丽笔茶意手写字",
+      "sampleText": "一壶清茶许流年",
+      "group": "书法手写",
+      "style": "秀丽笔茶意手写字",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-07.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】多字两行错落，细长竖笔与粗重点画对比，飞白形成茶烟感。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-07.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织秀丽笔茶意手写字。多字两行错落，细长竖笔与粗重点画对比，飞白形成茶烟感。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_8561dbd161c098080b41d046d90c193f4618dd5e4e1c1c5632e0b7797d2e4628.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "a284fa19-7228-41a6-aab0-3921b6da16c2"
+    },
+    {
+      "number": 13,
+      "sourceFile": "/tmp/font-daily-1123/669244/7.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "小聚茶楼 · 碑拓颗粒四字标",
+      "sampleText": "小聚茶楼",
+      "group": "复古装饰",
+      "style": "碑拓颗粒四字标",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-08.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "复古装饰"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】方正紧凑字架叠加不规则缺损和墨迹，横竖笔保留石刻厚度。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-08.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织碑拓颗粒四字标。方正紧凑字架叠加不规则缺损和墨迹，横竖笔保留石刻厚度。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_1109c6bcc86888920a1f287514336282d3ee3831d4c0bf7d1ef3e2ac2dd7a1c2.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "c4d8c5b9-1fba-42f3-99ad-31958c4c7320"
+    },
+    {
+      "number": 14,
+      "sourceFile": "/tmp/font-daily-1123/669244/8.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "好物时集 醉一场春光 · 纤细斑驳手写字",
+      "sampleText": "好物时集 醉一场春光",
+      "group": "复古装饰",
+      "style": "纤细斑驳手写字",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-09.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "复古装饰"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】两行大小错落，线条断续且粗细不定，字尾轻盈上扬。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-09.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织纤细斑驳手写字。两行大小错落，线条断续且粗细不定，字尾轻盈上扬。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_650cad51de3fb028089cbcfba4cbf9b6b9c8f06db8a685488209793d5d537c64.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "1a55e10c-fbd3-4a68-b82d-8186ec153fcc"
+    },
+    {
+      "number": 15,
+      "sourceFile": "/tmp/font-daily-1123/669244/9.webp",
+      "originalSize": [
+        750,
+        1000
+      ],
+      "crop": [
+        20,
+        450,
+        730,
+        900
+      ],
+      "title": "榴莲草莓 是新的味道 · 轻灵磨损手写字",
+      "sampleText": "榴莲草莓 是新的味道",
+      "group": "复古装饰",
+      "style": "轻灵磨损手写字",
+      "author": "Aml（图内署名 RUBY）",
+      "sourceTitle": "3分钟学会AI字体设计！9组关键词直接复制出图",
+      "sourceUrl": "https://www.uisdc.com/group/669244.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-10.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "Aml（图内署名 RUBY）",
+        "复古装饰"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】主副标题分层错落，细线与重笔交替，局部斑驳像手绘纸张。\n【配色与材质】纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。\n【适用场景】海报标题、封面、文艺活动。\n【作者】Aml（图内署名 RUBY）；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】3分钟学会AI字体设计！9组关键词直接复制出图\n【来源】https://www.uisdc.com/group/669244.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/AI-Font-20260509-10.webp\n【原图尺寸与裁切】750×1000像素；[left,top,right,bottom]=[20, 450, 730, 900]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【署名核对】页面作者为 Aml，图内签名为 BY.RUBY，均保留记录。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织轻灵磨损手写字。主副标题分层错落，细线与重笔交替，局部斑驳像手绘纸张。纯黑背景、白色笔触与飞白；局部灰阶营造墨迹层次。适用于海报标题、封面、文艺活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_3ceb462c6d2a73926868b11fa7dcd70fcb3fad3b4dd82acbf9135e308a885348.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "086826d5-6c23-4503-a5a4-eb6fbfb3411e"
+    },
+    {
+      "number": 16,
+      "sourceFile": "/tmp/font-daily-1123/665083/1.webp",
+      "originalSize": [
+        1245,
+        1660
+      ],
+      "crop": [
+        0,
+        120,
+        1245,
+        1050
+      ],
+      "title": "3D黄金金属标题（原中文待核） · 黄金金属立体标题",
+      "sampleText": "3D黄金金属标题（原中文待核）",
+      "group": "立体字效",
+      "style": "黄金金属立体标题",
+      "author": "羊羊Vincent",
+      "sourceTitle": "直接抄作业！AI 字体字效提示词，复制粘贴就能出片！",
+      "sourceUrl": "https://www.uisdc.com/group/665083.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-2.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "羊羊Vincent",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】字形轮廓醒目，斜面与高光形成强烈厚度，装饰按黄金材质统一。\n【配色与材质】明黄金属、深色阴影和强反光。\n【适用场景】活动标题、游戏海报与品牌视觉。\n【作者】羊羊Vincent；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】直接抄作业！AI 字体字效提示词，复制粘贴就能出片！\n【来源】https://www.uisdc.com/group/665083.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-2.webp\n【原图尺寸与裁切】1245×1660像素；[left,top,right,bottom]=[0, 120, 1245, 1050]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【文字核验】图内主标题无法可靠转写，采用描述名称并明确标记待核，不编造原文。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织黄金金属立体标题。字形轮廓醒目，斜面与高光形成强烈厚度，装饰按黄金材质统一。明黄金属、深色阴影和强反光。适用于活动标题、游戏海报与品牌视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_a1f2c2feceb3dec48a75df7cc55afac7f27bce340c37a1a7872f4aef81aab002.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": true,
+        "confirmed": true
+      },
+      "cardId": "ca0d47fb-4e6a-449c-9dcc-07c9e25f8920"
+    },
+    {
+      "number": 17,
+      "sourceFile": "/tmp/font-daily-1123/665083/2.webp",
+      "originalSize": [
+        1245,
+        1660
+      ],
+      "crop": [
+        0,
+        120,
+        1245,
+        1050
+      ],
+      "title": "红魔降临 · 红焰发光硬边字",
+      "sampleText": "红魔降临",
+      "group": "立体字效",
+      "style": "红焰发光硬边字",
+      "author": "羊羊Vincent",
+      "sourceTitle": "直接抄作业！AI 字体字效提示词，复制粘贴就能出片！",
+      "sourceUrl": "https://www.uisdc.com/group/665083.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-3.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "羊羊Vincent",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】现代硬朗字架带尖锐边角，紧凑字组与火焰光效结合。\n【配色与材质】猩红主体、火焰边缘光、黑色背景。\n【适用场景】活动标题、游戏海报与品牌视觉。\n【作者】羊羊Vincent；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】直接抄作业！AI 字体字效提示词，复制粘贴就能出片！\n【来源】https://www.uisdc.com/group/665083.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-3.webp\n【原图尺寸与裁切】1245×1660像素；[left,top,right,bottom]=[0, 120, 1245, 1050]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织红焰发光硬边字。现代硬朗字架带尖锐边角，紧凑字组与火焰光效结合。猩红主体、火焰边缘光、黑色背景。适用于活动标题、游戏海报与品牌视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_b0e1ffb05e54bbd5a9f259ad4da994f818ecbf99ae403467bbadb3dca5fcd8b4.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "4af3f6c3-11eb-4f3b-999c-60cd7c87fa73"
+    },
+    {
+      "number": 18,
+      "sourceFile": "/tmp/font-daily-1123/665083/3.webp",
+      "originalSize": [
+        1245,
+        1660
+      ],
+      "crop": [
+        0,
+        120,
+        1245,
+        1050
+      ],
+      "title": "万圣派对 · 南瓜卷饰万圣字",
+      "sampleText": "万圣派对",
+      "group": "圆体趣味",
+      "style": "南瓜卷饰万圣字",
+      "author": "羊羊Vincent",
+      "sourceTitle": "直接抄作业！AI 字体字效提示词，复制粘贴就能出片！",
+      "sourceUrl": "https://www.uisdc.com/group/665083.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-4.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "羊羊Vincent",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】活泼卷曲笔画与外扩装饰，南瓜灯、幽灵和骨头围绕主标题。\n【配色与材质】金黄立体字、暖色发光、万圣节橘黑配色。\n【适用场景】活动标题、游戏海报与品牌视觉。\n【作者】羊羊Vincent；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】直接抄作业！AI 字体字效提示词，复制粘贴就能出片！\n【来源】https://www.uisdc.com/group/665083.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-4.webp\n【原图尺寸与裁切】1245×1660像素；[left,top,right,bottom]=[0, 120, 1245, 1050]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织南瓜卷饰万圣字。活泼卷曲笔画与外扩装饰，南瓜灯、幽灵和骨头围绕主标题。金黄立体字、暖色发光、万圣节橘黑配色。适用于活动标题、游戏海报与品牌视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_79a2235feea60a6ff27f76d10c26781f0a0922966533dbc75dbc0367eb472f1f.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "6f8f143a-5b58-4a59-80f8-51cb61c9df6a"
+    },
+    {
+      "number": 19,
+      "sourceFile": "/tmp/font-daily-1123/665083/4.webp",
+      "originalSize": [
+        1245,
+        1660
+      ],
+      "crop": [
+        0,
+        120,
+        1245,
+        1050
+      ],
+      "title": "石器时代 · 橙黄石器卡通字",
+      "sampleText": "石器时代",
+      "group": "立体字效",
+      "style": "橙黄石器卡通字",
+      "author": "羊羊Vincent",
+      "sourceTitle": "直接抄作业！AI 字体字效提示词，复制粘贴就能出片！",
+      "sourceUrl": "https://www.uisdc.com/group/665083.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-5.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "羊羊Vincent",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】中文与英文双层结构，粗壮笔画模拟石块堆叠和缺口。\n【配色与材质】橙黄渐变、灰色石质、强立体投影。\n【适用场景】活动标题、游戏海报与品牌视觉。\n【作者】羊羊Vincent；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】直接抄作业！AI 字体字效提示词，复制粘贴就能出片！\n【来源】https://www.uisdc.com/group/665083.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-5.webp\n【原图尺寸与裁切】1245×1660像素；[left,top,right,bottom]=[0, 120, 1245, 1050]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织橙黄石器卡通字。中文与英文双层结构，粗壮笔画模拟石块堆叠和缺口。橙黄渐变、灰色石质、强立体投影。适用于活动标题、游戏海报与品牌视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_67e28819cabab9b8639789fd5e15ae88982a0e8f5489cec5fcfa7c229fd36509.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "e6cb03c0-e218-44d1-8898-6a062520832d"
+    },
+    {
+      "number": 20,
+      "sourceFile": "/tmp/font-daily-1123/665083/5.webp",
+      "originalSize": [
+        1245,
+        1660
+      ],
+      "crop": [
+        0,
+        120,
+        1245,
+        1050
+      ],
+      "title": "这就是嘻哈 · 镭射层叠嘻哈字",
+      "sampleText": "这就是嘻哈",
+      "group": "运动力量",
+      "style": "镭射层叠嘻哈字",
+      "author": "羊羊Vincent",
+      "sourceTitle": "直接抄作业！AI 字体字效提示词，复制粘贴就能出片！",
+      "sourceUrl": "https://www.uisdc.com/group/665083.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-6.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "羊羊Vincent",
+        "运动力量"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】尖锐不规则笔画相互穿插，倾斜层叠排版强化节奏。\n【配色与材质】五彩镭射反光、纯黑背景。\n【适用场景】活动标题、游戏海报与品牌视觉。\n【作者】羊羊Vincent；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】直接抄作业！AI 字体字效提示词，复制粘贴就能出片！\n【来源】https://www.uisdc.com/group/665083.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-6.webp\n【原图尺寸与裁切】1245×1660像素；[left,top,right,bottom]=[0, 120, 1245, 1050]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织镭射层叠嘻哈字。尖锐不规则笔画相互穿插，倾斜层叠排版强化节奏。五彩镭射反光、纯黑背景。适用于活动标题、游戏海报与品牌视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_65d1b076e800792f865f8effaf970775771bdff3d6a2c205a091efaf13f5dd2c.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "cd9f52c2-79b8-4df1-9496-5ff853e0f24f"
+    },
+    {
+      "number": 21,
+      "sourceFile": "/tmp/font-daily-1123/665083/6.webp",
+      "originalSize": [
+        1245,
+        1660
+      ],
+      "crop": [
+        0,
+        120,
+        1245,
+        1050
+      ],
+      "title": "梦幻糖果 · 粉黄糖果泡泡字",
+      "sampleText": "梦幻糖果",
+      "group": "圆体趣味",
+      "style": "粉黄糖果泡泡字",
+      "author": "羊羊Vincent",
+      "sourceTitle": "直接抄作业！AI 字体字效提示词，复制粘贴就能出片！",
+      "sourceUrl": "https://www.uisdc.com/group/665083.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-7.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "羊羊Vincent",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】圆鼓笔画、卷曲糖霜和星形糖果围绕字组，字形饱满跳跃。\n【配色与材质】粉黄渐变、浅蓝点光背景。\n【适用场景】活动标题、游戏海报与品牌视觉。\n【作者】羊羊Vincent；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】直接抄作业！AI 字体字效提示词，复制粘贴就能出片！\n【来源】https://www.uisdc.com/group/665083.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-7.webp\n【原图尺寸与裁切】1245×1660像素；[left,top,right,bottom]=[0, 120, 1245, 1050]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织粉黄糖果泡泡字。圆鼓笔画、卷曲糖霜和星形糖果围绕字组，字形饱满跳跃。粉黄渐变、浅蓝点光背景。适用于活动标题、游戏海报与品牌视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_b75d6f29b227563c850aa08dab1e521808910f6ec8f521c8d7ef4097cd68b869.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "c0f4999f-a21f-484d-99da-7230b9811e60"
+    },
+    {
+      "number": 22,
+      "sourceFile": "/tmp/font-daily-1123/665083/7.webp",
+      "originalSize": [
+        1245,
+        1660
+      ],
+      "crop": [
+        0,
+        120,
+        1245,
+        1050
+      ],
+      "title": "机械战警 · 蓝紫故障机械字",
+      "sampleText": "机械战警",
+      "group": "几何构成",
+      "style": "蓝紫故障机械字",
+      "author": "羊羊Vincent",
+      "sourceTitle": "直接抄作业！AI 字体字效提示词，复制粘贴就能出片！",
+      "sourceUrl": "https://www.uisdc.com/group/665083.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-8.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "羊羊Vincent",
+        "几何构成"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】粗线模块拆成几何切口，错位叠色与故障碎片制造机械感。\n【配色与材质】蓝紫重影、高对比边缘光、黑底。\n【适用场景】活动标题、游戏海报与品牌视觉。\n【作者】羊羊Vincent；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】直接抄作业！AI 字体字效提示词，复制粘贴就能出片！\n【来源】https://www.uisdc.com/group/665083.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-8.webp\n【原图尺寸与裁切】1245×1660像素；[left,top,right,bottom]=[0, 120, 1245, 1050]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织蓝紫故障机械字。粗线模块拆成几何切口，错位叠色与故障碎片制造机械感。蓝紫重影、高对比边缘光、黑底。适用于活动标题、游戏海报与品牌视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_eddf0ef82d5500d6082842e4cb5ed1830316bf46305f6a9cb3f359756ede5439.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "4e683139-b830-4ec7-92ef-9d47dd2cd7ae"
+    },
+    {
+      "number": 23,
+      "sourceFile": "/tmp/font-daily-1123/665083/8.webp",
+      "originalSize": [
+        1245,
+        1660
+      ],
+      "crop": [
+        0,
+        120,
+        1245,
+        1050
+      ],
+      "title": "香港1999 · 粉蓝霓虹灯管字",
+      "sampleText": "香港1999",
+      "group": "立体字效",
+      "style": "粉蓝霓虹灯管字",
+      "author": "羊羊Vincent",
+      "sourceTitle": "直接抄作业！AI 字体字效提示词，复制粘贴就能出片！",
+      "sourceUrl": "https://www.uisdc.com/group/665083.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-9.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "羊羊Vincent",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】细长连笔摹拟灯管走向，错落排版并以外框发光强化夜景。\n【配色与材质】粉蓝霓虹玻璃管、黑色背景。\n【适用场景】活动标题、游戏海报与品牌视觉。\n【作者】羊羊Vincent；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】直接抄作业！AI 字体字效提示词，复制粘贴就能出片！\n【来源】https://www.uisdc.com/group/665083.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/04/AI-Font-20260401-9.webp\n【原图尺寸与裁切】1245×1660像素；[left,top,right,bottom]=[0, 120, 1245, 1050]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织粉蓝霓虹灯管字。细长连笔摹拟灯管走向，错落排版并以外框发光强化夜景。粉蓝霓虹玻璃管、黑色背景。适用于活动标题、游戏海报与品牌视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_3b37e6f63d6acd57e25d8d9c0c0d2663d44bba4d4d176fba69f6db97a3689ca5.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "8aa516fc-2ce9-4200-9db0-9903dd4caaf2"
+    },
+    {
+      "number": 24,
+      "sourceFile": "/tmp/font-daily-1123/652279/1.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        20,
+        320,
+        1420,
+        1320
+      ],
+      "title": "人间皆苦 全凭自渡 · 古拙篆刻书法字",
+      "sampleText": "人间皆苦 全凭自渡",
+      "group": "书法手写",
+      "style": "古拙篆刻书法字",
+      "author": "西城门AIGC",
+      "sourceTitle": "别再愁标题设计！8组AI艺术字提示词直接套用",
+      "sourceUrl": "https://www.uisdc.com/group/652279.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-2.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "西城门AIGC",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】横向挤压字组，印章式块面与金石颗粒结合，重心厚重。\n【配色与材质】黑白篆刻纹理、纸张颗粒。\n【适用场景】海报标题、社交媒体与文创物料。\n【作者】西城门AIGC；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】别再愁标题设计！8组AI艺术字提示词直接套用\n【来源】https://www.uisdc.com/group/652279.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-2.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[20, 320, 1420, 1320]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织古拙篆刻书法字。横向挤压字组，印章式块面与金石颗粒结合，重心厚重。黑白篆刻纹理、纸张颗粒。适用于海报标题、社交媒体与文创物料，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_702e7d85bcc90b8f72509474fa21f28482dd52673dfe4221065186fd76927802.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "f98c2f49-0b1f-422d-8cdf-70005def1908"
+    },
+    {
+      "number": 25,
+      "sourceFile": "/tmp/font-daily-1123/652279/2.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        20,
+        320,
+        1420,
+        1320
+      ],
+      "title": "去有你的地方 · 细杆流动文艺字",
+      "sampleText": "去有你的地方",
+      "group": "细线优雅",
+      "style": "细杆流动文艺字",
+      "author": "西城门AIGC",
+      "sourceTitle": "别再愁标题设计！8组AI艺术字提示词直接套用",
+      "sourceUrl": "https://www.uisdc.com/group/652279.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-3.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "西城门AIGC",
+        "细线优雅"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】横线主标题舒缓展开，英文小字分列上下，留白充足。\n【配色与材质】黑白高反差、极简细线。\n【适用场景】海报标题、社交媒体与文创物料。\n【作者】西城门AIGC；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】别再愁标题设计！8组AI艺术字提示词直接套用\n【来源】https://www.uisdc.com/group/652279.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-3.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[20, 320, 1420, 1320]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织细杆流动文艺字。横线主标题舒缓展开，英文小字分列上下，留白充足。黑白高反差、极简细线。适用于海报标题、社交媒体与文创物料，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_933818077be5a498ef8000b9191e803d9fc78fc7bafb6ffb834ad536d26c33c0.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "95c1f987-0ea3-4e8c-ab9e-2c2d69f3df6d"
+    },
+    {
+      "number": 26,
+      "sourceFile": "/tmp/font-daily-1123/652279/3.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        20,
+        320,
+        1420,
+        1320
+      ],
+      "title": "寒江孤影 江湖故人 · 豪放手写江湖字",
+      "sampleText": "寒江孤影 江湖故人",
+      "group": "书法手写",
+      "style": "豪放手写江湖字",
+      "author": "西城门AIGC",
+      "sourceTitle": "别再愁标题设计！8组AI艺术字提示词直接套用",
+      "sourceUrl": "https://www.uisdc.com/group/652279.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-4.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "西城门AIGC",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】两组文字上下呼应，笔画自然延长成风势，粗犷捺笔向外张扬。\n【配色与材质】白色飞白墨迹、纯黑背景。\n【适用场景】海报标题、社交媒体与文创物料。\n【作者】西城门AIGC；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】别再愁标题设计！8组AI艺术字提示词直接套用\n【来源】https://www.uisdc.com/group/652279.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-4.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[20, 320, 1420, 1320]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织豪放手写江湖字。两组文字上下呼应，笔画自然延长成风势，粗犷捺笔向外张扬。白色飞白墨迹、纯黑背景。适用于海报标题、社交媒体与文创物料，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_4505157d37ee8b59775ab9150b4cf543ab2ba394e794ab3f9a9ac2e57f387bae.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "8de8342d-6fca-4e90-abd6-eafdd1d790de"
+    },
+    {
+      "number": 27,
+      "sourceFile": "/tmp/font-daily-1123/652279/4.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        20,
+        320,
+        1420,
+        1320
+      ],
+      "title": "风吹草低见牛羊 · 春风流动书法字",
+      "sampleText": "风吹草低见牛羊",
+      "group": "书法手写",
+      "style": "春风流动书法字",
+      "author": "西城门AIGC",
+      "sourceTitle": "别再愁标题设计！8组AI艺术字提示词直接套用",
+      "sourceUrl": "https://www.uisdc.com/group/652279.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-5.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "西城门AIGC",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】七字横向连续，笔势起伏像风拂，粗细变化与长线牵引形成节奏。\n【配色与材质】白字墨纹、纯黑背景。\n【适用场景】海报标题、社交媒体与文创物料。\n【作者】西城门AIGC；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】别再愁标题设计！8组AI艺术字提示词直接套用\n【来源】https://www.uisdc.com/group/652279.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-5.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[20, 320, 1420, 1320]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织春风流动书法字。七字横向连续，笔势起伏像风拂，粗细变化与长线牵引形成节奏。白字墨纹、纯黑背景。适用于海报标题、社交媒体与文创物料，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_8dd23cd5ff6115fbe294a0298f3ca70dba48c42cffb0ef6a188cb6dbba82338c.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "f422bb31-8f59-48f6-bd53-2a2b09f08f31"
+    },
+    {
+      "number": 28,
+      "sourceFile": "/tmp/font-daily-1123/652279/5.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        20,
+        320,
+        1420,
+        1320
+      ],
+      "title": "你是我的超级英雄 · 黑块英雄重字",
+      "sampleText": "你是我的超级英雄",
+      "group": "运动力量",
+      "style": "黑块英雄重字",
+      "author": "西城门AIGC",
+      "sourceTitle": "别再愁标题设计！8组AI艺术字提示词直接套用",
+      "sourceUrl": "https://www.uisdc.com/group/652279.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-6.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "西城门AIGC",
+        "运动力量"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】两行粗重块面向上拱起，笔端外扩，形成守护感的中心聚合。\n【配色与材质】黑色实心、留白负形、简洁背景。\n【适用场景】海报标题、社交媒体与文创物料。\n【作者】西城门AIGC；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】别再愁标题设计！8组AI艺术字提示词直接套用\n【来源】https://www.uisdc.com/group/652279.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-6.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[20, 320, 1420, 1320]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织黑块英雄重字。两行粗重块面向上拱起，笔端外扩，形成守护感的中心聚合。黑色实心、留白负形、简洁背景。适用于海报标题、社交媒体与文创物料，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_b0b3a7fa20c327b1dc73d9be94c80b4949761e1978497930f4bc73891a52ed39.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "fa48ae92-9cc9-48c3-85bf-44ec288cb160"
+    },
+    {
+      "number": 29,
+      "sourceFile": "/tmp/font-daily-1123/652279/6.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        20,
+        320,
+        1420,
+        1320
+      ],
+      "title": "特别推荐 · 橙点卡通推荐字",
+      "sampleText": "特别推荐",
+      "group": "圆体趣味",
+      "style": "橙点卡通推荐字",
+      "author": "西城门AIGC",
+      "sourceTitle": "别再愁标题设计！8组AI艺术字提示词直接套用",
+      "sourceUrl": "https://www.uisdc.com/group/652279.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-7.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "西城门AIGC",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】圆润立体主标题搭配拼音、手势和贴纸式装饰，层级活泼。\n【配色与材质】黑白主色、橙色点缀、软质立体。\n【适用场景】海报标题、社交媒体与文创物料。\n【作者】西城门AIGC；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】别再愁标题设计！8组AI艺术字提示词直接套用\n【来源】https://www.uisdc.com/group/652279.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-7.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[20, 320, 1420, 1320]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织橙点卡通推荐字。圆润立体主标题搭配拼音、手势和贴纸式装饰，层级活泼。黑白主色、橙色点缀、软质立体。适用于海报标题、社交媒体与文创物料，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_e67c1c7f82874ad8dc7416a2877c5ebfcc8c5a8f8e5679e5ee59905adbfc463d.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "279ba3d6-c71b-4696-95c6-1c8e3658ba25"
+    },
+    {
+      "number": 30,
+      "sourceFile": "/tmp/font-daily-1123/652279/7.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        20,
+        320,
+        1420,
+        1320
+      ],
+      "title": "与你有关 皆是浪漫 · 手写涂鸦浪漫字",
+      "sampleText": "与你有关 皆是浪漫",
+      "group": "几何构成",
+      "style": "手写涂鸦浪漫字",
+      "author": "西城门AIGC",
+      "sourceTitle": "别再愁标题设计！8组AI艺术字提示词直接套用",
+      "sourceUrl": "https://www.uisdc.com/group/652279.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-8.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "西城门AIGC",
+        "几何构成"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】多行自由曲线穿插红色LOVE，字组大小错落并围绕心形留白。\n【配色与材质】黑色手写、红色英文点缀。\n【适用场景】海报标题、社交媒体与文创物料。\n【作者】西城门AIGC；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】别再愁标题设计！8组AI艺术字提示词直接套用\n【来源】https://www.uisdc.com/group/652279.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-8.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[20, 320, 1420, 1320]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织手写涂鸦浪漫字。多行自由曲线穿插红色LOVE，字组大小错落并围绕心形留白。黑色手写、红色英文点缀。适用于海报标题、社交媒体与文创物料，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_403e15822553180b2a08a1d9d6fdbbef84b82441f6126d5d0fc45e49906f456d.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "38976125-1d1b-4ab6-bc92-ad092f8298b7"
+    },
+    {
+      "number": 31,
+      "sourceFile": "/tmp/font-daily-1123/652279/8.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        20,
+        320,
+        1420,
+        1320
+      ],
+      "title": "不期而遇的时光 · 大小错位叙事字",
+      "sampleText": "不期而遇的时光",
+      "group": "圆体趣味",
+      "style": "大小错位叙事字",
+      "author": "西城门AIGC",
+      "sourceTitle": "别再愁标题设计！8组AI艺术字提示词直接套用",
+      "sourceUrl": "https://www.uisdc.com/group/652279.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-9.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "西城门AIGC",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】六字两行跳跃排布，粗厚笔画与俏皮弧尾形成停顿。\n【配色与材质】纯黑背景、白色膨胀字。\n【适用场景】海报标题、社交媒体与文创物料。\n【作者】西城门AIGC；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】别再愁标题设计！8组AI艺术字提示词直接套用\n【来源】https://www.uisdc.com/group/652279.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251205-9.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[20, 320, 1420, 1320]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织大小错位叙事字。六字两行跳跃排布，粗厚笔画与俏皮弧尾形成停顿。纯黑背景、白色膨胀字。适用于海报标题、社交媒体与文创物料，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_d0fcea9f57907ee5cf9ff7016254d1e29ec01a65eea1d2adbb271abaa6e08c5e.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "6f151753-0fc2-417b-96bd-fac89640620d"
+    },
+    {
+      "number": 32,
+      "sourceFile": "/tmp/font-daily-1123/657194/2.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "银色流体 · 液态银流体字",
+      "sampleText": "银色流体",
+      "group": "立体字效",
+      "style": "液态银流体字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-3.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】竖排字架被流体拉长，笔画在转折处汇合，英文小字置于底部。\n【配色与材质】银色金属高光、黑底极简留白。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-3.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织液态银流体字。竖排字架被流体拉长，笔画在转折处汇合，英文小字置于底部。银色金属高光、黑底极简留白。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_38d18959817dcef49af63fb5ede969abb33595af545e73bd76528d50cec88543.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "b109848a-17d7-4bae-8be8-850cfa228961"
+    },
+    {
+      "number": 33,
+      "sourceFile": "/tmp/font-daily-1123/657194/3.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "AIGC东哥 · 机械电路科幻字",
+      "sampleText": "AIGC东哥",
+      "group": "几何构成",
+      "style": "机械电路科幻字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-4.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "几何构成"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】硬朗机件棱角与流线笔画结合，电路纹理嵌入笔画内部。\n【配色与材质】90%高反射金属镀层、冷白电路光、黑底。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-4.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织机械电路科幻字。硬朗机件棱角与流线笔画结合，电路纹理嵌入笔画内部。90%高反射金属镀层、冷白电路光、黑底。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_684db9a559e0de2319a4e9dffa40d681b0df90f97fd61b1581b65b6bfd99ba10.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "be0ead1b-a181-4b29-bd10-7d4f09ebc329"
+    },
+    {
+      "number": 34,
+      "sourceFile": "/tmp/font-daily-1123/657194/5.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "五一去浪 · 黑白潮玩手写字",
+      "sampleText": "五一去浪",
+      "group": "运动力量",
+      "style": "黑白潮玩手写字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-6.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "运动力量"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】粗厚手写笔画夸张弯折，字组横向跳动，叠加烟花与彩带。\n【配色与材质】白色粗笔触、黑色背景、节日彩带。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-6.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织黑白潮玩手写字。粗厚手写笔画夸张弯折，字组横向跳动，叠加烟花与彩带。白色粗笔触、黑色背景、节日彩带。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_deaecb0ad39d963ae4a599edaebd0eb4b7cb04733c23d660e46169a8e5daa768.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "4cd7088b-0ac1-47d2-af2d-c5ee9f14073d"
+    },
+    {
+      "number": 35,
+      "sourceFile": "/tmp/font-daily-1123/657194/6.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "卡布奇诺体 · 拉丝软萌曲线字",
+      "sampleText": "卡布奇诺体",
+      "group": "圆体趣味",
+      "style": "拉丝软萌曲线字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-7.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】圆润笔画被拉成丝状曲线，字形轻盈连绵，整体偏少女感。\n【配色与材质】黑底白字、柔软拉丝光泽。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-7.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织拉丝软萌曲线字。圆润笔画被拉成丝状曲线，字形轻盈连绵，整体偏少女感。黑底白字、柔软拉丝光泽。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_979b7fd77d9af2cd24d5759c5f27ed205f2bae818c2fa98919b89378732c810c.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "d678ffb2-ee97-4e57-942c-491ecd90e806"
+    },
+    {
+      "number": 36,
+      "sourceFile": "/tmp/font-daily-1123/657194/7.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "打不过就加入 · 粉紫霓虹连笔字",
+      "sampleText": "打不过就加入",
+      "group": "立体字效",
+      "style": "粉紫霓虹连笔字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-8.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】轮廓式连笔笔画模拟霓虹灯管，错落排布并保留流畅弯曲。\n【配色与材质】粉紫与青绿渐变灯芯、纯黑背景。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-8.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织粉紫霓虹连笔字。轮廓式连笔笔画模拟霓虹灯管，错落排布并保留流畅弯曲。粉紫与青绿渐变灯芯、纯黑背景。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_0ad88ce239a2e3a8b37b118e1e8e19ff43043a2afafbca31da62081efecee086.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "87088871-22b9-4586-b7d7-b0d72e2b97da"
+    },
+    {
+      "number": 37,
+      "sourceFile": "/tmp/font-daily-1123/657194/9.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "可爱甜心 · 甜美泡泡心形字",
+      "sampleText": "可爱甜心",
+      "group": "圆体趣味",
+      "style": "甜美泡泡心形字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-10.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】甜字和多层主标题组成上下结构，圆弧笔画夸张放大，心形装饰嵌入字形。\n【配色与材质】粉色泡泡质感、白色高光和糖霜点缀。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-10.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织甜美泡泡心形字。甜字和多层主标题组成上下结构，圆弧笔画夸张放大，心形装饰嵌入字形。粉色泡泡质感、白色高光和糖霜点缀。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_c413f7d73768260e87fabb9c8dec9a4e0a5729afdad5fc9944ccbd90adde7830.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "6a464bfc-5e36-4bd8-ae29-5875b6ba8dae"
+    },
+    {
+      "number": 38,
+      "sourceFile": "/tmp/font-daily-1123/657194/11.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "天方夜谈 · 霓虹神话连笔字",
+      "sampleText": "天方夜谈",
+      "group": "立体字效",
+      "style": "霓虹神话连笔字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-12.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】四字分成两行，霓虹管曲线连续穿插，边缘外扩成故事感轮廓。\n【配色与材质】粉紫青绿玻璃灯管、黑色背景。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-12.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织霓虹神话连笔字。四字分成两行，霓虹管曲线连续穿插，边缘外扩成故事感轮廓。粉紫青绿玻璃灯管、黑色背景。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_2cd62ae3011e865c8d2c8f2207ec27d3b3f0026ca960c8a49df5aa0b23508cef.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "96f0a2ec-f344-4291-a089-731d821f60e1"
+    },
+    {
+      "number": 39,
+      "sourceFile": "/tmp/font-daily-1123/657194/12.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "快乐 再出发 · 派对涂鸦跳跃字",
+      "sampleText": "快乐 再出发",
+      "group": "圆体趣味",
+      "style": "派对涂鸦跳跃字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-13.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】两行字大小错位，俏皮弧笔与表情符号穿插，形成快乐节奏。\n【配色与材质】黑底白字、少量彩色几何装饰。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-13.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织派对涂鸦跳跃字。两行字大小错位，俏皮弧笔与表情符号穿插，形成快乐节奏。黑底白字、少量彩色几何装饰。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_ea6f1359af421588cf6ce31f8f7f0a900601e728c9e8f69eb0bbcf243b5ae12b.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "50a48835-55a8-46d3-9a0e-cafa62eb39a6"
+    },
+    {
+      "number": 40,
+      "sourceFile": "/tmp/font-daily-1123/657194/13.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "中国智造 · 金属机械未来字",
+      "sampleText": "中国智造",
+      "group": "几何构成",
+      "style": "金属机械未来字",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-14.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "几何构成"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】中字结构拆成机械模块，笔画边缘金光泽与电路纹理咬合。\n【配色与材质】银色金属、冷白霓虹、黑色背景。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-14.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织金属机械未来字。中字结构拆成机械模块，笔画边缘金光泽与电路纹理咬合。银色金属、冷白霓虹、黑色背景。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_55da767d2916724416081e597ba689cf791da5f7389d69d40ed3a2d423bb00e6.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "adf23d75-c8ca-4e7c-8b77-4f8cabf190fb"
+    },
+    {
+      "number": 41,
+      "sourceFile": "/tmp/font-daily-1123/657194/16.webp",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "crop": [
+        50,
+        100,
+        1150,
+        1120
+      ],
+      "title": "福 · 山水城市融字福",
+      "sampleText": "福",
+      "group": "语义图形",
+      "style": "山水城市融字福",
+      "author": "东哥AIGC研究院",
+      "sourceTitle": "小白AI字体设计教程！18组提示词掌握就能上手",
+      "sourceUrl": "https://www.uisdc.com/group/657194.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-17.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "东哥AIGC研究院",
+        "语义图形"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】整字由青山绿水、楼阁瀑布、桥梁、高铁和火箭等元素共同搭建。\n【配色与材质】红黄建筑与蓝绿山水、黑色背景、现代国潮配色。\n【适用场景】海报主视觉、节日与品牌字标。\n【作者】东哥AIGC研究院；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】小白AI字体设计教程！18组提示词掌握就能上手\n【来源】https://www.uisdc.com/group/657194.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/01/Font-20260118-17.webp\n【原图尺寸与裁切】1200×1600像素；[left,top,right,bottom]=[50, 100, 1150, 1120]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织山水城市融字福。整字由青山绿水、楼阁瀑布、桥梁、高铁和火箭等元素共同搭建。红黄建筑与蓝绿山水、黑色背景、现代国潮配色。适用于海报主视觉、节日与品牌字标，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_44298339424d0676ac67f4663f8994f9d0229c380c756a565299618a58aefe4f.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "0aeff167-5715-475a-a3ac-bf5a74bdfab3"
+    },
+    {
+      "number": 42,
+      "sourceFile": "/tmp/font-daily-1123/650202/1.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        930,
+        1440,
+        1745
+      ],
+      "title": "双十二开门红！低价提前抢 · 粗书断点促销字",
+      "sampleText": "双十二开门红！低价提前抢",
+      "group": "书法手写",
+      "style": "粗书断点促销字",
+      "author": "做设计的鹿野Loyel",
+      "sourceTitle": "双12爆款标题设计！12套AI提示词模版改字直接用",
+      "sourceUrl": "https://www.uisdc.com/group/650202.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-2.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "做设计的鹿野Loyel",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】两行字向中心聚拢，夸张断点、连笔与向外伸展的笔画制造冲势。\n【配色与材质】白底黑字、绿色弧线点缀。\n【适用场景】电商活动、促销海报与社媒标题。\n【作者】做设计的鹿野Loyel；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】双12爆款标题设计！12套AI提示词模版改字直接用\n【来源】https://www.uisdc.com/group/650202.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-2.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 930, 1440, 1745]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织粗书断点促销字。两行字向中心聚拢，夸张断点、连笔与向外伸展的笔画制造冲势。白底黑字、绿色弧线点缀。适用于电商活动、促销海报与社媒标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_34962c20e88e494c7a307c78a2a4f247458bafb2a8e704ce4cf0d29548125392.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "21f2973e-ae15-4cd3-b6dd-33034165cdba"
+    },
+    {
+      "number": 43,
+      "sourceFile": "/tmp/font-daily-1123/650202/2.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        930,
+        1440,
+        1745
+      ],
+      "title": "12·12 爆裂开抢 · Q版爆炸描边字",
+      "sampleText": "12·12 爆裂开抢",
+      "group": "圆体趣味",
+      "style": "Q版爆炸描边字",
+      "author": "做设计的鹿野Loyel",
+      "sourceTitle": "双12爆款标题设计！12套AI提示词模版改字直接用",
+      "sourceUrl": "https://www.uisdc.com/group/650202.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-3.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "做设计的鹿野Loyel",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】数字与口号紧凑堆叠，圆胖笔画、厚描边和爆炸图标围住中心。\n【配色与材质】黑色底面、白字彩边、卡通爆炸色。\n【适用场景】电商活动、促销海报与社媒标题。\n【作者】做设计的鹿野Loyel；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】双12爆款标题设计！12套AI提示词模版改字直接用\n【来源】https://www.uisdc.com/group/650202.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-3.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 930, 1440, 1745]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织Q版爆炸描边字。数字与口号紧凑堆叠，圆胖笔画、厚描边和爆炸图标围住中心。黑色底面、白字彩边、卡通爆炸色。适用于电商活动、促销海报与社媒标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_359c4e727e21b6bd2aa0dad2f373199fb3bfdbb86e79b168731b668cba98761f.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "c021d3aa-a2c0-452a-b2e7-e42466de840b"
+    },
+    {
+      "number": 44,
+      "sourceFile": "/tmp/font-daily-1123/650202/3.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        930,
+        1440,
+        1745
+      ],
+      "title": "双十二狂欢节 全场底价啦 · 弧线挥动促销字",
+      "sampleText": "双十二狂欢节 全场底价啦",
+      "group": "运动力量",
+      "style": "弧线挥动促销字",
+      "author": "做设计的鹿野Loyel",
+      "sourceTitle": "双12爆款标题设计！12套AI提示词模版改字直接用",
+      "sourceUrl": "https://www.uisdc.com/group/650202.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-4.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "做设计的鹿野Loyel",
+        "运动力量"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】主副标题沿弧线左右挥动，长尾和流线让字组形成横幅动势。\n【配色与材质】白底黑字、绿色流线和高亮边。\n【适用场景】电商活动、促销海报与社媒标题。\n【作者】做设计的鹿野Loyel；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】双12爆款标题设计！12套AI提示词模版改字直接用\n【来源】https://www.uisdc.com/group/650202.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-4.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 930, 1440, 1745]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织弧线挥动促销字。主副标题沿弧线左右挥动，长尾和流线让字组形成横幅动势。白底黑字、绿色流线和高亮边。适用于电商活动、促销海报与社媒标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_d3d5a110d20bf5dfc328ac58d86b6e2af65803c4dc81eb6422393b237c8764e8.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "552b2221-a533-4b0a-b339-fd7140b69f49"
+    },
+    {
+      "number": 45,
+      "sourceFile": "/tmp/font-daily-1123/650202/4.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        930,
+        1440,
+        1745
+      ],
+      "title": "12·12 全场特惠 · 外扩切角促销字",
+      "sampleText": "12·12 全场特惠",
+      "group": "运动力量",
+      "style": "外扩切角促销字",
+      "author": "做设计的鹿野Loyel",
+      "sourceTitle": "双12爆款标题设计！12套AI提示词模版改字直接用",
+      "sourceUrl": "https://www.uisdc.com/group/650202.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-5.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "做设计的鹿野Loyel",
+        "运动力量"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】不规则粗笔向上拱起，局部块面切角，大小错落并辅以半圆弧。\n【配色与材质】白底黑字、绿色笑脸和三角点缀。\n【适用场景】电商活动、促销海报与社媒标题。\n【作者】做设计的鹿野Loyel；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】双12爆款标题设计！12套AI提示词模版改字直接用\n【来源】https://www.uisdc.com/group/650202.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-5.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 930, 1440, 1745]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织外扩切角促销字。不规则粗笔向上拱起，局部块面切角，大小错落并辅以半圆弧。白底黑字、绿色笑脸和三角点缀。适用于电商活动、促销海报与社媒标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_38944a1022a892e8ab5f9fd2f5e92244c5eb60b0b24020dde32b7072e3bea30e.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "e5b6fb70-4ecb-4b63-8d6d-dc78c3c65d76"
+    },
+    {
+      "number": 46,
+      "sourceFile": "/tmp/font-daily-1123/650202/5.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        930,
+        1440,
+        1745
+      ],
+      "title": "年末狂欢 正式开抢 · 毛笔力度抢购字",
+      "sampleText": "年末狂欢 正式开抢",
+      "group": "书法手写",
+      "style": "毛笔力度抢购字",
+      "author": "做设计的鹿野Loyel",
+      "sourceTitle": "双12爆款标题设计！12套AI提示词模版改字直接用",
+      "sourceUrl": "https://www.uisdc.com/group/650202.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-6.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "做设计的鹿野Loyel",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】粗细强烈变化的毛笔笔触斜向排列，收笔外甩，英文缩小为副线。\n【配色与材质】白底黑字、锐利墨锋。\n【适用场景】电商活动、促销海报与社媒标题。\n【作者】做设计的鹿野Loyel；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】双12爆款标题设计！12套AI提示词模版改字直接用\n【来源】https://www.uisdc.com/group/650202.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-6.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 930, 1440, 1745]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织毛笔力度抢购字。粗细强烈变化的毛笔笔触斜向排列，收笔外甩，英文缩小为副线。白底黑字、锐利墨锋。适用于电商活动、促销海报与社媒标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_5638426c3f50cbac446a5ad077e0dec14b56279d15a27606186dc392a7eab105.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "f5517b58-fbba-458a-bae4-df8e24518af3"
+    },
+    {
+      "number": 47,
+      "sourceFile": "/tmp/font-daily-1123/650202/6.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        930,
+        1440,
+        1745
+      ],
+      "title": "迎来我的抢购高光时刻 · 涂鸦跳跃高光字",
+      "sampleText": "迎来我的抢购高光时刻",
+      "group": "圆体趣味",
+      "style": "涂鸦跳跃高光字",
+      "author": "做设计的鹿野Loyel",
+      "sourceTitle": "双12爆款标题设计！12套AI提示词模版改字直接用",
+      "sourceUrl": "https://www.uisdc.com/group/650202.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-7.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "做设计的鹿野Loyel",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】三层纯黑手写字扭曲倾斜，手绘表情、爆炸线和箭头穿插。\n【配色与材质】白底黑字、手绘涂鸦线条。\n【适用场景】电商活动、促销海报与社媒标题。\n【作者】做设计的鹿野Loyel；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】双12爆款标题设计！12套AI提示词模版改字直接用\n【来源】https://www.uisdc.com/group/650202.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-7.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 930, 1440, 1745]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织涂鸦跳跃高光字。三层纯黑手写字扭曲倾斜，手绘表情、爆炸线和箭头穿插。白底黑字、手绘涂鸦线条。适用于电商活动、促销海报与社媒标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_5b5ad44b4e5891c7cb7490b792aff462812b1394139f9bc0ab3bfb53add53b09.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "0ffbd034-3ae5-4f1e-8d56-a0c911d08209"
+    },
+    {
+      "number": 48,
+      "sourceFile": "/tmp/font-daily-1123/650202/7.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        930,
+        1440,
+        1745
+      ],
+      "title": "年终好价 提前抢 · 方折弧尾动势字",
+      "sampleText": "年终好价 提前抢",
+      "group": "运动力量",
+      "style": "方折弧尾动势字",
+      "author": "做设计的鹿野Loyel",
+      "sourceTitle": "双12爆款标题设计！12套AI提示词模版改字直接用",
+      "sourceUrl": "https://www.uisdc.com/group/650202.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-8.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "做设计的鹿野Loyel",
+        "运动力量"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】等粗方折字架局部拉伸，三角碎片和弧形勾线推动字组向前。\n【配色与材质】白底黑字、绿色速度线和碎片。\n【适用场景】电商活动、促销海报与社媒标题。\n【作者】做设计的鹿野Loyel；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】双12爆款标题设计！12套AI提示词模版改字直接用\n【来源】https://www.uisdc.com/group/650202.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-8.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 930, 1440, 1745]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织方折弧尾动势字。等粗方折字架局部拉伸，三角碎片和弧形勾线推动字组向前。白底黑字、绿色速度线和碎片。适用于电商活动、促销海报与社媒标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_f0a194def5e2ff7ecf8126cb17ac2ba7f72263758f20f45b13b516d83a858765.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "f5f39118-e823-4f5e-9fbd-5adf7014d551"
+    },
+    {
+      "number": 49,
+      "sourceFile": "/tmp/font-daily-1123/650202/8.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        930,
+        1440,
+        1745
+      ],
+      "title": "限时的 才划算 · 抽象手写丝带字",
+      "sampleText": "限时的 才划算",
+      "group": "细线优雅",
+      "style": "抽象手写丝带字",
+      "author": "做设计的鹿野Loyel",
+      "sourceTitle": "双12爆款标题设计！12套AI提示词模版改字直接用",
+      "sourceUrl": "https://www.uisdc.com/group/650202.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-9.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "做设计的鹿野Loyel",
+        "细线优雅"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】主标题被拉成长弧和丝带结构，英文落位下侧，版面留白开阔。\n【配色与材质】白底黑字、绿色小字与细线。\n【适用场景】电商活动、促销海报与社媒标题。\n【作者】做设计的鹿野Loyel；依据作品正文和图内署名核对，平台采编不替代作品作者。\n【原作品】双12爆款标题设计！12套AI提示词模版改字直接用\n【来源】https://www.uisdc.com/group/650202.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/11/AI-font-20251121-9.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 930, 1440, 1745]。\n【收录说明】单款完整标题裁图，排除正文提示词、同款换色和教程步骤。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织抽象手写丝带字。主标题被拉成长弧和丝带结构，英文落位下侧，版面留白开阔。白底黑字、绿色小字与细线。适用于电商活动、促销海报与社媒标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_baf59485a971a5d517b7b10df91d1d9f6631feb0d6e4b993c57b47b3440f048c.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "f168b9d5-0109-42fa-a4f1-372163e8b0c2"
+    },
+    {
+      "number": 50,
+      "sourceFile": "/tmp/font-daily-1123/652525/1.webp",
+      "originalSize": [
+        1440,
+        1918
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        1500
+      ],
+      "title": "未来重构 · 荧光故障科幻字",
+      "sampleText": "未来重构",
+      "group": "立体字效",
+      "style": "荧光故障科幻字",
+      "author": "设计师_灿烂",
+      "sourceTitle": "小字清晰不糊！5分钟生成超酷字体，附提示词！",
+      "sourceUrl": "https://www.uisdc.com/group/652525.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251208-2.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "设计师_灿烂",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】四字打破常规框架，笔画加入电路延伸、机械碎片和高密度英文代码层。\n【配色与材质】荧光绿主体、电光紫和极夜黑立体描边、太空灰背景。\n【适用场景】电竞潮牌、科技活动与未来主题海报。\n【作者】设计师_灿烂；依据作品正文和图内署名核对。\n【原作品】小字清晰不糊！5分钟生成超酷字体，附提示词！\n【来源】https://www.uisdc.com/group/652525.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251208-2.webp\n【原图尺寸与裁切】1440×1918像素；[left,top,right,bottom]=[0, 120, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织荧光故障科幻字。四字打破常规框架，笔画加入电路延伸、机械碎片和高密度英文代码层。荧光绿主体、电光紫和极夜黑立体描边、太空灰背景。适用于电竞潮牌、科技活动与未来主题海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_93076c88ce916df546325e466834e2bf0ce49cdce070678e11254f106f8a874b.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "f39433fc-b878-4727-a7e6-baf819572307"
+    },
+    {
+      "number": 51,
+      "sourceFile": "/tmp/font-daily-1123/652525/6.webp",
+      "originalSize": [
+        1440,
+        1918
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        1500
+      ],
+      "title": "街头节奏 · 喷漆嘻哈街头字",
+      "sampleText": "街头节奏",
+      "group": "运动力量",
+      "style": "喷漆嘻哈街头字",
+      "author": "设计师_灿烂",
+      "sourceTitle": "小字清晰不糊！5分钟生成超酷字体，附提示词！",
+      "sourceUrl": "https://www.uisdc.com/group/652525.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251208-7.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "设计师_灿烂",
+        "运动力量"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】主标题粗重错落，巨大半透明的Rhythm作背景，前景叠加喷漆Yo!和贴纸。\n【配色与材质】高饱和街头撞色、粗描边和喷漆颗粒。\n【适用场景】音乐节、潮流品牌与街头活动。\n【作者】设计师_灿烂；依据作品正文和图内署名核对。\n【原作品】小字清晰不糊！5分钟生成超酷字体，附提示词！\n【来源】https://www.uisdc.com/group/652525.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251208-7.webp\n【原图尺寸与裁切】1440×1918像素；[left,top,right,bottom]=[0, 120, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织喷漆嘻哈街头字。主标题粗重错落，巨大半透明的Rhythm作背景，前景叠加喷漆Yo!和贴纸。高饱和街头撞色、粗描边和喷漆颗粒。适用于音乐节、潮流品牌与街头活动，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_c287a1de547a6f2572b6d94539ff1815515938b3a28d64ddd97726182256f5cb.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "1e2e3267-0d63-4340-9148-cf8b26e0cfd1"
+    },
+    {
+      "number": 52,
+      "sourceFile": "/tmp/font-daily-1123/673518/9.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        0,
+        1440,
+        1600
+      ],
+      "title": "青云志 · 刀锋金效书法字",
+      "sampleText": "青云志",
+      "group": "立体字效",
+      "style": "刀锋金效书法字",
+      "author": "右蓝设计",
+      "sourceTitle": "4步做出书法字效！AI也能生成青云志同款字体",
+      "sourceUrl": "https://www.uisdc.com/group/673518.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/06/font-design-20260615-9.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "右蓝设计",
+        "立体字效"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】三字以书法走势重构，笔锋锐利外挑，完成稿叠加厚度、暗部、高光和背景装饰。\n【配色与材质】金属高光、深色暗部与国风奇幻氛围。\n【适用场景】国风游戏、玄幻海报与活动主标题。\n【作者】右蓝设计；依据作品正文和图内署名核对。\n【原作品】4步做出书法字效！AI也能生成青云志同款字体\n【来源】https://www.uisdc.com/group/673518.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/06/font-design-20260615-9.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 0, 1440, 1600]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织刀锋金效书法字。三字以书法走势重构，笔锋锐利外挑，完成稿叠加厚度、暗部、高光和背景装饰。金属高光、深色暗部与国风奇幻氛围。适用于国风游戏、玄幻海报与活动主标题，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_86e884bce3932b5b5ba2b09e1435038c5e2638dd5b07f9e77e3d7fa11dbd1867.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": false,
+        "pending": false,
+        "confirmed": false
+      },
+      "cardId": "ec66fae5-ef91-4da7-89ff-06359b4d4503"
+    },
+    {
+      "number": 53,
+      "sourceFile": "/tmp/font-daily-1123/659107/1.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        250,
+        1440,
+        1500
+      ],
+      "title": "青花瓷 · 青花书法品牌字",
+      "sampleText": "青花瓷",
+      "group": "书法手写",
+      "style": "青花书法品牌字",
+      "author": "张贤AIGC",
+      "sourceTitle": "别再手动描边了！5分钟学会AI辅助字体设计创作",
+      "sourceUrl": "https://www.uisdc.com/group/659107.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-2.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "张贤AIGC",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】书法笔画稳重延展，青花瓷纹样和留白围绕三字主体形成传统徽标结构。\n【配色与材质】青花蓝与瓷白、东方纹样和渐变高光。\n【适用场景】文化品牌、国风海报与文创标识。\n【作者】张贤AIGC；依据作品正文和图内署名核对。\n【原作品】别再手动描边了！5分钟学会AI辅助字体设计创作\n【来源】https://www.uisdc.com/group/659107.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-2.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 250, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织青花书法品牌字。书法笔画稳重延展，青花瓷纹样和留白围绕三字主体形成传统徽标结构。青花蓝与瓷白、东方纹样和渐变高光。适用于文化品牌、国风海报与文创标识，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_bc3d32280cacdf9f862f499f83b34fdacf2ebadcd9eee4cd67c986b0e7793777.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "ce69bca5-9035-4400-8899-b2f5353ccea3"
+    },
+    {
+      "number": 54,
+      "sourceFile": "/tmp/font-daily-1123/659107/2.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        250,
+        1440,
+        1500
+      ],
+      "title": "春游 · 抽象流动春游字",
+      "sampleText": "春游",
+      "group": "细线优雅",
+      "style": "抽象流动春游字",
+      "author": "张贤AIGC",
+      "sourceTitle": "别再手动描边了！5分钟学会AI辅助字体设计创作",
+      "sourceUrl": "https://www.uisdc.com/group/659107.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-3.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "张贤AIGC",
+        "细线优雅"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】圆润线条连续交错，字形被抽象成迎风草叶般的节奏，整体保持轻盈。\n【配色与材质】黑底白字、极简线条与少量春意绿。\n【适用场景】春季节气、文旅与文艺海报。\n【作者】张贤AIGC；依据作品正文和图内署名核对。\n【原作品】别再手动描边了！5分钟学会AI辅助字体设计创作\n【来源】https://www.uisdc.com/group/659107.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-3.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 250, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织抽象流动春游字。圆润线条连续交错，字形被抽象成迎风草叶般的节奏，整体保持轻盈。黑底白字、极简线条与少量春意绿。适用于春季节气、文旅与文艺海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_8e1ef4781158ce5ed801543805f6918afcb239a9a5eeea0c3fab9e9b75066b10.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "6a829dbf-831b-4189-a68a-e79f0332f2b8"
+    },
+    {
+      "number": 55,
+      "sourceFile": "/tmp/font-daily-1123/659107/3.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        250,
+        1440,
+        1500
+      ],
+      "title": "五一出游季 · 黄白手绘潮流字",
+      "sampleText": "五一出游季",
+      "group": "运动力量",
+      "style": "黄白手绘潮流字",
+      "author": "张贤AIGC",
+      "sourceTitle": "别再手动描边了！5分钟学会AI辅助字体设计创作",
+      "sourceUrl": "https://www.uisdc.com/group/659107.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-4.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "张贤AIGC",
+        "运动力量"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】主标题横排跳动，May Day Travel Season沿字组错位排布，周边加入手绘标记。\n【配色与材质】黑底白字、黄色英文和涂鸦点缀。\n【适用场景】假期活动、旅行宣传与社交媒体。\n【作者】张贤AIGC；依据作品正文和图内署名核对。\n【原作品】别再手动描边了！5分钟学会AI辅助字体设计创作\n【来源】https://www.uisdc.com/group/659107.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-4.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 250, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织黄白手绘潮流字。主标题横排跳动，May Day Travel Season沿字组错位排布，周边加入手绘标记。黑底白字、黄色英文和涂鸦点缀。适用于假期活动、旅行宣传与社交媒体，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_49e0437dd25f267a156214c3690eeb4e012c645bf093b88c46206c9ec53914b2.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "b9e0d052-3d3a-4813-aa59-add923133b54"
+    },
+    {
+      "number": 56,
+      "sourceFile": "/tmp/font-daily-1123/659107/4.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        250,
+        1440,
+        1500
+      ],
+      "title": "春日出游踏青 · 春日抽象连笔字",
+      "sampleText": "春日出游踏青",
+      "group": "圆体趣味",
+      "style": "春日抽象连笔字",
+      "author": "张贤AIGC",
+      "sourceTitle": "别再手动描边了！5分钟学会AI辅助字体设计创作",
+      "sourceUrl": "https://www.uisdc.com/group/659107.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-5.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "张贤AIGC",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】文字被拆成连续弧线和草叶曲线，大小错落，形成从左上到右下的游走路径。\n【配色与材质】黑底白字、绿色植物点缀。\n【适用场景】春日文旅、户外活动与节气海报。\n【作者】张贤AIGC；依据作品正文和图内署名核对。\n【原作品】别再手动描边了！5分钟学会AI辅助字体设计创作\n【来源】https://www.uisdc.com/group/659107.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-5.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 250, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织春日抽象连笔字。文字被拆成连续弧线和草叶曲线，大小错落，形成从左上到右下的游走路径。黑底白字、绿色植物点缀。适用于春日文旅、户外活动与节气海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_abc3cad719409fe90d3b2ccc19dd1b0a7f0f00c374f6518a6565152e9c92950b.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "16e6a9eb-447d-446b-aee0-3944b18794bb"
+    },
+    {
+      "number": 57,
+      "sourceFile": "/tmp/font-daily-1123/659107/7.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        250,
+        1440,
+        1500
+      ],
+      "title": "美好的时光在路上 · 细圆行书旅途字",
+      "sampleText": "美好的时光在路上",
+      "group": "书法手写",
+      "style": "细圆行书旅途字",
+      "author": "张贤AIGC",
+      "sourceTitle": "别再手动描边了！5分钟学会AI辅助字体设计创作",
+      "sourceUrl": "https://www.uisdc.com/group/659107.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-8.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "张贤AIGC",
+        "书法手写"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】三行文字均匀连写，收笔略带拖尾，行书骨架与几何留白结合。\n【配色与材质】黑底白字、纤细圆润线质。\n【适用场景】旅行手账、文艺海报与生活品牌。\n【作者】张贤AIGC；依据作品正文和图内署名核对。\n【原作品】别再手动描边了！5分钟学会AI辅助字体设计创作\n【来源】https://www.uisdc.com/group/659107.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-8.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 250, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织细圆行书旅途字。三行文字均匀连写，收笔略带拖尾，行书骨架与几何留白结合。黑底白字、纤细圆润线质。适用于旅行手账、文艺海报与生活品牌，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_3fd8d32e5173897242045b31b61e77fd234f019c34d23a31e3a6e87bf42bba70.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "2a30fef0-c90c-4743-a67c-df0b47948033"
+    },
+    {
+      "number": 58,
+      "sourceFile": "/tmp/font-daily-1123/659107/8.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        250,
+        1440,
+        1500
+      ],
+      "title": "字体传说 · 现代装饰书法字",
+      "sampleText": "字体传说",
+      "group": "复古装饰",
+      "style": "现代装饰书法字",
+      "author": "张贤AIGC",
+      "sourceTitle": "别再手动描边了！5分钟学会AI辅助字体设计创作",
+      "sourceUrl": "https://www.uisdc.com/group/659107.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-9.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "张贤AIGC",
+        "复古装饰"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】现代化书法骨架带夸张装饰笔画，整体倾斜形成动态叙事。\n【配色与材质】黑白高反差、局部金属或墨色渐变。\n【适用场景】字体专题、品牌故事与国潮视觉。\n【作者】张贤AIGC；依据作品正文和图内署名核对。\n【原作品】别再手动描边了！5分钟学会AI辅助字体设计创作\n【来源】https://www.uisdc.com/group/659107.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-9.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 250, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织现代装饰书法字。现代化书法骨架带夸张装饰笔画，整体倾斜形成动态叙事。黑白高反差、局部金属或墨色渐变。适用于字体专题、品牌故事与国潮视觉，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_ce0fd9b17ef3040c068e14f901de4c8408171d098f0e0eb07b669f047d1eb259.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": true,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "53de7aa0-176e-494c-8e20-7362d5f95431"
+    },
+    {
+      "number": 59,
+      "sourceFile": "/tmp/font-daily-1123/659107/9.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        250,
+        1440,
+        1500
+      ],
+      "title": "创意字体设计 · 机甲流线标题字",
+      "sampleText": "创意字体设计",
+      "group": "几何构成",
+      "style": "机甲流线标题字",
+      "author": "张贤AIGC",
+      "sourceTitle": "别再手动描边了！5分钟学会AI辅助字体设计创作",
+      "sourceUrl": "https://www.uisdc.com/group/659107.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-10.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "张贤AIGC",
+        "几何构成"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】机械边缘与流线笔画咬合，转角锐利，字组重心居中并保持紧凑冲击。\n【配色与材质】白字、机甲金属高光、纯黑背景。\n【适用场景】科技品牌、游戏活动与未来海报。\n【作者】张贤AIGC；依据作品正文和图内署名核对。\n【原作品】别再手动描边了！5分钟学会AI辅助字体设计创作\n【来源】https://www.uisdc.com/group/659107.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-10.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 250, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款重排与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织机甲流线标题字。机械边缘与流线笔画咬合，转角锐利，字组重心居中并保持紧凑冲击。白字、机甲金属高光、纯黑背景。适用于科技品牌、游戏活动与未来海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_a1dde294bea4d9a9dc773fdf7caf3051fd81c4d7ee823bfe8aae082324c51725.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "e14114b3-9f38-428a-b213-b6cd276c1097"
+    },
+    {
+      "number": 60,
+      "sourceFile": "/tmp/font-daily-1123/659107/5.webp",
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "crop": [
+        0,
+        250,
+        1440,
+        1500
+      ],
+      "title": "春游 · 春日元素圆润连接字",
+      "sampleText": "春游",
+      "group": "圆体趣味",
+      "style": "春日元素圆润连接字",
+      "author": "张贤AIGC",
+      "sourceTitle": "别再手动描边了！5分钟学会AI辅助字体设计创作",
+      "sourceUrl": "https://www.uisdc.com/group/659107.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-6.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "张贤AIGC",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】两字以弧形连笔连接，草叶、花芽和春季节点嵌入笔画，字形轻盈活泼。\n【配色与材质】黑底白字、绿色春芽与圆润高光。\n【适用场景】春季节气、亲子活动与文旅海报。\n【作者】张贤AIGC；依据作品正文和图内署名核对。\n【原作品】别再手动描边了！5分钟学会AI辅助字体设计创作\n【来源】https://www.uisdc.com/group/659107.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/02/Font-20260202-6.webp\n【原图尺寸与裁切】1440×1920像素；[left,top,right,bottom]=[0, 250, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款换色与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织春日元素圆润连接字。两字以弧形连笔连接，草叶、花芽和春季节点嵌入笔画，字形轻盈活泼。黑底白字、绿色春芽与圆润高光。适用于春季节气、亲子活动与文旅海报，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_b3aed1fb2656e4762ef716956e5beeee8c20e6948cbf34b0b41401abd9857b0d.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "0c858869-60d5-4676-9e4c-a8049362a695"
+    },
+    {
+      "number": 61,
+      "sourceFile": "/tmp/font-daily-1123/652525/7.webp",
+      "originalSize": [
+        1440,
+        1918
+      ],
+      "crop": [
+        0,
+        120,
+        1440,
+        1500
+      ],
+      "title": "萌宠 · 猫狗双声萌宠字",
+      "sampleText": "萌宠",
+      "group": "圆体趣味",
+      "style": "猫狗双声萌宠字",
+      "author": "设计师_灿烂",
+      "sourceTitle": "小字清晰不糊！5分钟生成超酷字体，附提示词！",
+      "sourceUrl": "https://www.uisdc.com/group/652525.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251208-8.webp",
+      "tags": [
+        "每日扩充1123",
+        "优设精选",
+        "设计师_灿烂",
+        "圆体趣味"
+      ],
+      "visualReviewed": true,
+      "description": "【字形与构成】MEOW与WOOF围绕中英文萌宠主标题分区，弧形英文和动物音效形成对称层级。\n【配色与材质】软化糖果色、圆鼓立体字与柔和阴影。\n【适用场景】宠物品牌、儿童活动与社交媒体。\n【作者】设计师_灿烂；依据作品正文和图内署名核对。\n【原作品】小字清晰不糊！5分钟生成超酷字体，附提示词！\n【来源】https://www.uisdc.com/group/652525.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251208-8.webp\n【原图尺寸与裁切】1440×1918像素；[left,top,right,bottom]=[0, 120, 1440, 1500]。\n【收录说明】单款完整标题裁图；教程步骤、同款换色与正文提示词排除。个人本地参考，非安装字体；商业使用另获授权。结构分析由整理归纳，非作者原始提示词。\n【收录日期】2026-11-23",
+      "prompt": "为【新标题文字】重新组织猫狗双声萌宠字。MEOW与WOOF围绕中英文萌宠主标题分区，弧形英文和动物音效形成对称层级。软化糖果色、圆鼓立体字与柔和阴影。适用于宠物品牌、儿童活动与社交媒体，保持完整笔画、清晰可读、字组重心和必要留白。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_7b4bdfc7502668e08fca28a459418f92459d25601bc69e6008543ab83bee12eb.webp",
+      "visualReview": "原图提示词/OCR与裁图OCR交叉核对；无文字块贴边。当前桌面模型以程序化边界、尺寸和颜色复核代替直接图像预览。",
+      "titleTextCheck": {
+        "cropOcr": false,
+        "sourceOcr": true,
+        "pending": false,
+        "confirmed": true
+      },
+      "cardId": "c3f0db15-a3f9-429a-86cf-6b6148a3fe85"
+    }
+  ]
+}

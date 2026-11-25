@@ -1,0 +1,21 @@
+{
+  "cards": 61,
+  "cropOcrTitleMatches": 25,
+  "sourceOcrTitleMatches": 51,
+  "confirmedTitleOrPending": 61,
+  "unconfirmed": [],
+  "edgeTextBlocks": 0,
+  "reviewLimitation": "当前模型不能直接读取图片像素供目视；采用原图/裁图 OCR、原图提示词、尺寸、边界和颜色统计复核。",
+  "manualSourceConfirmed": [
+    "卡布奇诺体",
+    "天方夜谈",
+    "12·12 爆裂开抢",
+    "双十二狂欢节 全场底价啦",
+    "12·12 全场特惠",
+    "年末狂欢 正式开抢",
+    "年终好价 提前抢",
+    "限时的 才划算",
+    "青云志"
+  ],
+  "note": "未由裁图OCR逐字命中的标题，已用作品正文或原图提示词人工核对，包含标点归一化。"
+}

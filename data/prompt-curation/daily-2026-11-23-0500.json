@@ -1,0 +1,1021 @@
+{
+  "version": 1,
+  "batch": "design-curation-2026-11-23-0500",
+  "collectedAt": "2026-11-23",
+  "selectionMethod": "北京时间2026-11-23早间轮次；轮换 Prompt123、Prompt Library 与站酷公开案例；逐条核对完整原文、对应原图与详情归属，并做历史及跨来源去重。",
+  "prompts": [
+    {
+      "key": "zcool-ZOTcxNzY=",
+      "name": "厚涂野花｜冷暖油画草甸",
+      "category": "背景设计",
+      "subcategory": "田园与茶田",
+      "text": "一幅细节丰富的野花草地油画，采用带纹理的厚涂技法。构图包含鲜艳红色罂粟、带黄色花心的白色雏菊和高大金色麦穗，花朵以自然散落方式分布画布。背景为柔和低饱和米色，营造纵深并与鲜艳花朵形成对比。蓝、粉、白等色彩的小型精致野花点缀全幅草甸。绘画风格写实，厚实可见的笔触营造立体三维效果。花在下方地面投出细微阴影，茎叶刻画细致。整体构图具有自然田园气质，纹理笔触强化柔和梦幻氛围。",
+      "tags": [
+        "竖版",
+        "野花",
+        "厚涂",
+        "油画",
+        "草甸",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-347d1a449bd17e9d6ab7.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ace5fe8d76e62nvib56nn9698.png?k=78a0ac6144c99721884e2408a66e9e42&t=6b0365a0"
+      ],
+      "originalText": "A detailed oil painting of a wildflower meadow with a textured, impasto technique. The composition features vibrant red poppies, white daisies with yellow centers, and tall golden wheat stalks. The flowers are arranged in a natural, scattered pattern across the canvas. The background has a soft, muted beige tone that creates depth and contrast with the colorful blooms. Small delicate wildflowers in various shades of blue, pink, and white are scattered throughout the meadow. The painting style is realistic with thick, visible brushstrokes that create a dimensional, three-dimensional effect. The flowers cast subtle shadows on the ground beneath them, and their stems and leaves are rendered with careful attention to detail. The overall composition has a natural, pastoral quality with a soft, dreamy atmosphere enhanced by the textured brushwork.",
+      "source": {
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTcxNzY=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "model": "Midjourney V8",
+        "contentId": 29650,
+        "imageId": 29646,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "站酷公开免费AI资产；完整提示词与同一content的公开原图核对。英文正文忠实译为中文，保留来源描述。来源例图未在本机重新生图。",
+        "key": "zcool-ZOTcxNzY=",
+        "subcategory": "田园与茶田",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ace5fe8d76e62nvib56nn9698.png?k=78a0ac6144c99721884e2408a66e9e42&t=6b0365a0",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750150_5tmils_1795381750151_wnyhem.webp"
+    },
+    {
+      "key": "zcool-ZMTMzNjg0",
+      "name": "手绘全景｜彩色风景插画",
+      "category": "背景设计",
+      "subcategory": "插画与绘本风景",
+      "text": "创作一幅全景构图，画面使用 David Marrin 的手绘风格，表现丰富多彩的风景。",
+      "tags": [
+        "横版",
+        "全景",
+        "手绘",
+        "彩色",
+        "横版",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-1ebc6389d5f17587091d.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af4211410f4e705dbhu4m253.png?k=2f474025bf20c22ee473f01b5b893968&t=6b0365a0"
+      ],
+      "originalText": "a panoramic design with a colorful landscape in the hand painted style of David Marrin.",
+      "source": {
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTMzNjg0.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "model": "Midjourney V8",
+        "contentId": 38797,
+        "imageId": 38793,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "站酷公开免费AI资产；完整提示词与同一content的公开原图核对。英文正文忠实译为中文，保留来源描述。来源例图未在本机重新生图。",
+        "key": "zcool-ZMTMzNjg0",
+        "subcategory": "插画与绘本风景",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af4211410f4e705dbhu4m253.png?k=2f474025bf20c22ee473f01b5b893968&t=6b0365a0",
+        "previewDimensions": [
+          1456,
+          816
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750162_6j93gn_1795381750162_b1p81c.webp"
+    },
+    {
+      "key": "zcool-ZOTU3MjQ=",
+      "name": "松林月夜｜极简平行线风景",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "一幅极简中性色艺术作品，表现宁静风景。左侧是高大的风格化松树，松针如精致扇面，生长在带平行线纹理的山丘上；松树下方有两株深色小型常绿植物。棕褐、米色与深灰的层叠波浪山脊横向穿过中景。右上方一个大的米色圆形内包含极简山峦线描，右下边缘生长着小型带叶茎秆。",
+      "tags": [
+        "竖版",
+        "松树",
+        "月亮",
+        "极简",
+        "平行线",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-ac803f160beba7d139b6.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ace32cb8c4b92nt5ojxzj182.png?k=34d8392135c3a16de21ca9a4f328948f&t=6b0365a0"
+      ],
+      "originalText": "minimalist neutral artwork showing a serene landscape. the composition includes tall stylized pine trees with delicate fan like needles on the left, set upon a hill textured with parallel line patterns. beneath the tall trees are two small dark evergreen figures. layered wavy mountain ridges in taupe, beige, and dark gray stretch horizontally across the middle. in the upper right, a large beige circle contains minimal line drawings of mountains. small leafed stems grow at the lower right edge.",
+      "source": {
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTU3MjQ=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "model": "Midjourney V8",
+        "contentId": 29287,
+        "imageId": 29283,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "站酷公开免费AI资产；完整提示词与同一content的公开原图核对。英文正文忠实译为中文，保留来源描述。来源例图未在本机重新生图。",
+        "key": "zcool-ZOTU3MjQ=",
+        "subcategory": "森林与晨雾",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ace32cb8c4b92nt5ojxzj182.png?k=34d8392135c3a16de21ca9a4f328948f&t=6b0365a0",
+        "previewDimensions": [
+          928,
+          1232
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750170_9v6zml_1795381750170_c4haot.webp"
+    },
+    {
+      "key": "zcool-ZMTMxMTAw",
+      "name": "湖畔落日｜花海重彩风景",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "一幅细节丰富、以鲜艳色彩和厚重笔触为主导的风景画。顶部中央有一轮黄色太阳，在淡粉色天空里发光；天空下方，柔粉色山峰渐隐为较深青绿与紫色丘陵，环绕宁静湖面。水面承接一条明亮黄色反光。画面下部是茂密丰富的野花床，鲜粉、红、黄、白花朵交织绿色枝叶，作为近景衬托安静水面与远山。",
+      "tags": [
+        "竖版",
+        "绘画",
+        "花海",
+        "落日",
+        "湖面",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-dedb041b70c5ffa6b887.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af37bc8141f8aveh2v4iz2735.png?k=0179203deb6860b99ad3fd9a5c24fd82&t=6b0365a0"
+      ],
+      "originalText": "a detailed landscape painting dominated by vibrant colors and heavy brush textures. at the top center, a round yellow sun glows in a pale pink sky. below the sky, soft pink mountain peaks fade into darker teal and purple hills bordering a serene lake. the water catches a strip of bright yellow reflection. the lower section consists of a lush, dense bed of diverse wildflowers in bright pink, red, yellow, and white hues mixed with green foliage, creating a rich foreground against the quiet waters and distant mountains.",
+      "source": {
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTMxMTAw.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "model": "Midjourney V8",
+        "contentId": 38151,
+        "imageId": 38147,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "站酷公开免费AI资产；完整提示词与同一content的公开原图核对。英文正文忠实译为中文，保留来源描述。来源例图未在本机重新生图。",
+        "key": "zcool-ZMTMxMTAw",
+        "subcategory": "山湖与雪山",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af37bc8141f8aveh2v4iz2735.png?k=0179203deb6860b99ad3fd9a5c24fd82&t=6b0365a0",
+        "previewDimensions": [
+          912,
+          1296
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750176_vi7yid_1795381750176_etdomq.webp"
+    },
+    {
+      "key": "prompt123-4487",
+      "name": "老北京航拍｜衚字城市肌理",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "画幅比例16:9，一幅关于精妙含蓄与视觉智慧的杰作。一幅老北京城市肌理的无人机鸟瞰图。核心概念是汉字“衚”**完美无缝地**融入了整个城市景观。\n\n**字体与建筑的融合 (终极的精妙之处):**\n- **无物理高差:** “衚”字不是一个独立的、高耸的或庞大的结构。构成其笔画的墙体，与周围所有的胡同、四合院的墙体，在**高度、材质和风格上完全一致**。它身处肌理之中，而非凌驾其上。\n- **“光影雕刻”:** 汉字的形态并非由结构来凸显，而是由**大师级的、富有氛围感的光影**来呈现。一束低角度的午后斜阳（Raking Light）横扫整个场景。光线刚好捕捉到构成“衚”字形态的墙体的边缘，使其微妙地变亮，同时在其“笔画”（即胡同）内部投下深刻而轮廓分明的阴影。这个字，是被光所揭示，而非被水泥所建造。\n- **“氛围透视”:** 一层纤薄的、贴地的晨雾或霭气，弥漫在周边的庭院和巷陌中，使边缘的细节略微柔化。然而，构成“衚”字形态的那些路径和庭院，则**微妙地更加清晰、对比度更高**，由此形成一个自然的视觉焦点，让隐藏的形状在凝视者的眼中浮现。\n\n**优雅的字体排版布局:**\n保留精致且艺术化的字体设计。\n- **主标题:** 标题“字里京城”被排成一个强有力的单列竖排，位于右侧。背景区域被巧妙地处理成半透明的微妙褪色效果，以确保文字的可读性而不突兀。字体是优雅的“新宋体”风格。一条极细的竖线与文字平行。\n- **信息标签:** 标签文字（“灰瓦”、“国槐”）采用小号、精致的手写体。它们通过一条铅笔在图纸上画出般的、针尖般纤细的手绘曲线连接到物体。**不要有方框，不要有发光效果。**\n\n**美学:**\n整体基调是宁静、引人深思且意境深远的。色调是考究的“高级灰”，以饱和度低的色彩为主，唯一的色彩点缀来自阳光温暖的轻抚。画面拥有一种“众目睽睽下的秘密”般的气质，回报着观者的耐心与洞察力。它是一次具有深刻绘画感和哲学氛围的超写实渲染。\n\n**负面提示词:**\n高耸的墙壁, 雕塑般的汉字, 庞大的结构, 过于明显的汉字形状, 平均的光照, 平光, 发光方框, 未来感UI, 无衬线字体, 抽象, 2D, 色彩鲜艳, 卡通, 糟糕的书法, 水印。",
+      "tags": [
+        "横版",
+        "航拍",
+        "老北京",
+        "汉字",
+        "光影",
+        "胡同",
+        "16:9",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-5f0043065b7023ea436b.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/502.jpeg"
+      ],
+      "originalText": "画幅比例16:9，一幅关于精妙含蓄与视觉智慧的杰作。一幅老北京城市肌理的无人机鸟瞰图。核心概念是汉字“衚”**完美无缝地**融入了整个城市景观。\n\n**字体与建筑的融合 (终极的精妙之处):**\n- **无物理高差:** “衚”字不是一个独立的、高耸的或庞大的结构。构成其笔画的墙体，与周围所有的胡同、四合院的墙体，在**高度、材质和风格上完全一致**。它身处肌理之中，而非凌驾其上。\n- **“光影雕刻”:** 汉字的形态并非由结构来凸显，而是由**大师级的、富有氛围感的光影**来呈现。一束低角度的午后斜阳（Raking Light）横扫整个场景。光线刚好捕捉到构成“衚”字形态的墙体的边缘，使其微妙地变亮，同时在其“笔画”（即胡同）内部投下深刻而轮廓分明的阴影。这个字，是被光所揭示，而非被水泥所建造。\n- **“氛围透视”:** 一层纤薄的、贴地的晨雾或霭气，弥漫在周边的庭院和巷陌中，使边缘的细节略微柔化。然而，构成“衚”字形态的那些路径和庭院，则**微妙地更加清晰、对比度更高**，由此形成一个自然的视觉焦点，让隐藏的形状在凝视者的眼中浮现。\n\n**优雅的字体排版布局:**\n保留精致且艺术化的字体设计。\n- **主标题:** 标题“字里京城”被排成一个强有力的单列竖排，位于右侧。背景区域被巧妙地处理成半透明的微妙褪色效果，以确保文字的可读性而不突兀。字体是优雅的“新宋体”风格。一条极细的竖线与文字平行。\n- **信息标签:** 标签文字（“灰瓦”、“国槐”）采用小号、精致的手写体。它们通过一条铅笔在图纸上画出般的、针尖般纤细的手绘曲线连接到物体。**不要有方框，不要有发光效果。**\n\n**美学:**\n整体基调是宁静、引人深思且意境深远的。色调是考究的“高级灰”，以饱和度低的色彩为主，唯一的色彩点缀来自阳光温暖的轻抚。画面拥有一种“众目睽睽下的秘密”般的气质，回报着观者的耐心与洞察力。它是一次具有深刻绘画感和哲学氛围的超写实渲染。\n\n**负面提示词:**\n高耸的墙壁, 雕塑般的汉字, 庞大的结构, 过于明显的汉字形状, 平均的光照, 平光, 发光方框, 未来感UI, 无衬线字体, 抽象, 2D, 色彩鲜艳, 卡通, 糟糕的书法, 水印。",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4487.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-4487",
+        "subcategory": "建筑与人文摄影",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/502.jpeg",
+        "previewDimensions": [
+          1080,
+          603
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750185_m4ld7v_1795381750185_izi96w.webp"
+    },
+    {
+      "key": "zcool-ZMTMxNTQ4",
+      "name": "蓝调雪岸｜木屋海岸摄影",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "照片级冬季蓝调时刻海岸风景：雪半岛上有一座带方形窗和深色屋顶的小型传统白木屋，旁边是一棵成熟欧洲赤松；天然海岸线弯曲伸入辽阔深海军蓝海面，远处有微弱山影。云层散去，钴蓝天空只有细微蓝色渐变，无云朵与粉色调。70mm中长焦镜头，压缩透视，从海湾对岸远距离拍摄。木屋与树位于左下三分之一，占画面不足12%；天空与海面约占60%，前景是宽广冷蓝白雪原。均衡的不对称构图，明亮雪地与群青海水、近黑色松针形成对比。真实木纹、自然树体结构、细腻雪面、轻微海面波纹，局部对比高，曝光真实并保留雪地高光和暗部细节，配色克制，真实全画幅风景摄影。",
+      "tags": [
+        "竖版",
+        "雪岸",
+        "木屋",
+        "蓝调",
+        "摄影感",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-eb4c656a546c81ba95d5.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af3873669471vq4r0af815914.png?k=fafd4254dda1f464f6a66e8334c73833&t=6b0365a0"
+      ],
+      "originalText": "Photorealistic winter coastal landscape at blue hour, tiny traditional white wooden cottage with square windows and dark roof beside one mature Scots pine on a snowy peninsula, natural shoreline curving into vast deep navy blue sea, faint distant mountain silhouette, cloudless cobalt sky with subtle blue gradient, no clouds or pink tones. 70mm medium telephoto lens, compressed perspective, distant viewpoint across the bay. Cottage and tree grouped lower left third, occupying under 12% of frame; roughly 60% open sky and sea, broad cool blue white snowfield in foreground. Balanced asymmetrical composition, luminous snow against ultramarine water and near black pine foliage. Realistic wood grain, natural tree structure, fine snow texture, subtle ocean ripples, high local contrast, realistic exposure with retained snow highlights and detailed shadows, restrained color palette, authentic full frame landscape photography.",
+      "source": {
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTMxNTQ4.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "model": "Midjourney V8",
+        "contentId": 38263,
+        "imageId": 38259,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "站酷公开免费AI资产；完整提示词与同一content的公开原图核对。英文正文忠实译为中文，保留来源描述。来源例图未在本机重新生图。",
+        "key": "zcool-ZMTMxNTQ4",
+        "subcategory": "海岸与水域航拍",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af3873669471vq4r0af815914.png?k=fafd4254dda1f464f6a66e8334c73833&t=6b0365a0",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750192_4gukis_1795381750192_aji0w2.webp"
+    },
+    {
+      "key": "zcool-ZMTMyODM2",
+      "name": "阳光海岸｜柔笔油画",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "用油画绘制阳光照耀的海岸风景，海浪拍击沙滩；请使用柔和且富有表现力的笔触。",
+      "tags": [
+        "方形",
+        "海岸",
+        "海浪",
+        "油画",
+        "柔笔触",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-4aba9b27cb8a96015493.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af40b053040es5iu5zial5443.png?k=a278d3c471bd939fac291167a1978e26&t=6b0365a0"
+      ],
+      "originalText": "paint a seascape scene of a sunlit coastline with waves crashing onto a sandy beach. Please paint in oil using soft expressive brushstrokes",
+      "source": {
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTMyODM2.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "model": "Midjourney V8",
+        "contentId": 38585,
+        "imageId": 38581,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "站酷公开免费AI资产；完整提示词与同一content的公开原图核对。英文正文忠实译为中文，保留来源描述。来源例图未在本机重新生图。",
+        "key": "zcool-ZMTMyODM2",
+        "subcategory": "海岸与水域航拍",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af40b053040es5iu5zial5443.png?k=a278d3c471bd939fac291167a1978e26&t=6b0365a0",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750202_wa0wpb_1795381750202_44tq2y.webp"
+    },
+    {
+      "key": "zcool-ZMTM2NTY4",
+      "name": "雪冬山林｜水彩鎏金风景",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "叶夫根尼·卢什平（Evgeny Lushpin）风格的雪冬山林水彩插画，画面加入金箔质感。",
+      "tags": [
+        "竖版",
+        "雪山",
+        "水彩",
+        "鎏金",
+        "冷色",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-0ded8f242850879e4c14.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af59b0f03794fbm5enm3b1946.png?k=0bd9d7f7b5d12b40b8f3bdc6e038ca73&t=6b0365a0"
+      ],
+      "originalText": "Watercolor illustration with gold foil of snow winter landscape by Evgeny Lushpin",
+      "source": {
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTM2NTY4.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "model": "Midjourney V8",
+        "contentId": 39518,
+        "imageId": 39514,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "站酷公开免费AI资产；完整提示词与同一content的公开原图核对。英文正文忠实译为中文，保留来源描述。来源例图未在本机重新生图。",
+        "key": "zcool-ZMTM2NTY4",
+        "subcategory": "森林与晨雾",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af59b0f03794fbm5enm3b1946.png?k=0bd9d7f7b5d12b40b8f3bdc6e038ca73&t=6b0365a0",
+        "previewDimensions": [
+          1299,
+          1825
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750208_on4u7u_1795381750208_cr1pl1.webp"
+    },
+    {
+      "key": "zcool-ZOTU1Mjg=",
+      "name": "青草山坡｜晴空宽角极简风景",
+      "category": "背景设计",
+      "subcategory": "田园与茶田",
+      "text": "广角远景：一片平滑绿色草甸，细草在持续微风中轻轻倾斜；干净起伏的山丘占据构图下三分之一，上方是辽阔清透的淡蓝色天空，地平线简洁连续并带自然弧度，上半部留出大面积负空间用于平面设计。柔和上午偏晚的阳光均匀照亮植被，清新自然绿色与浅天空蓝配色，山脊上的草叶轮廓清晰，户外光照真实，曝光平衡，干净商业风景摄影，画面宁静而不杂乱。",
+      "tags": [
+        "竖版",
+        "绿坡",
+        "蓝天",
+        "宽角",
+        "极简摄影",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-50a6a5960478e5a8a5c0.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ace2df13f666hot2wpqda7487.png?k=920cfc1065240848fea43484753fa8c4&t=6b0365a0"
+      ],
+      "originalText": "A distant view captured with a wide angle.A minimalist landscape photograph of a smooth green meadow covered with fine grasses gently leaning in a consistent breeze, a clean rolling hill occupying the lower third of the composition beneath an expansive clear pale blue sky, simple uninterrupted horizon with a subtle natural curve, generous negative space across the upper half for graphic design, soft late morning sunlight evenly illuminating the vegetation, fresh natural green and delicate sky blue palette, crisp grass silhouettes along the hill crest, realistic outdoor lighting, carefully balanced exposure, clean commercial landscape photography, peaceful and uncluttered visual composition",
+      "source": {
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTU1Mjg=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "model": "Midjourney V8",
+        "contentId": 29238,
+        "imageId": 29234,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "站酷公开免费AI资产；完整提示词与同一content的公开原图核对。英文正文忠实译为中文，保留来源描述。来源例图未在本机重新生图。",
+        "key": "zcool-ZOTU1Mjg=",
+        "subcategory": "田园与茶田",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ace2df13f666hot2wpqda7487.png?k=920cfc1065240848fea43484753fa8c4&t=6b0365a0",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750214_ukaprr_1795381750214_d4nph0.webp"
+    },
+    {
+      "key": "promptlibrary-90428",
+      "name": "Avedon N｜黑白摄影构成字",
+      "category": "字体设计",
+      "subcategory": "极简与精细字形",
+      "text": "黑白美学摄影海报：黑色背景上呈现文字“N”的字体设计，灵感来自 Avedon 风格。字母有粗轮廓，字母“N”由一名夜晚站在海滩上眺望大海的女性构成；另外两个大写字符使用粗体无衬线。字母周围有轻微叠加光晕，增加神秘感。整体构图留白，并有一些字体写着“Sweet things can make everything right.”。\n\n来源参数：--ar 59:74 --v 6.1",
+      "tags": [
+        "竖版",
+        "黑白",
+        "字母N",
+        "海滩",
+        "人像",
+        "编辑海报",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-6e5aa77a924c1aa1403a.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Avedon-Inspired-Typography-Poster-midjourney-prompt.webp"
+      ],
+      "originalText": "Black and white aesthetic photography of text \"N\" with a black background, a typography poster design inspired in the style of Avedon. The letters have bold outlines, and the letter \"N\" is a woman standing on a beach at night, looking out to sea. The other two large capital characters are in a bold sans-serif font. There is a small, superimposed glow around the letters, which adds an element of mystery. The entire composition is surrounded by a white space, and there is some typeface that says, \"Sweet things can make everything right.\" --ar 59:74 --v 6.1",
+      "source": {
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/avedon-inspired-typography-poster/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "model": "Midjourney 6.1",
+        "note": "详情页完整英文正文忠实译为中文，保留来源参数。来源例图未在本机重新生图。",
+        "key": "promptlibrary-90428",
+        "subcategory": "极简与精细字形",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Avedon-Inspired-Typography-Poster-midjourney-prompt.webp",
+        "previewDimensions": [
+          1920,
+          2400
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750221_8ym1x2_1795381750221_icy2p6.webp"
+    },
+    {
+      "key": "promptlibrary-72916",
+      "name": "GOODTIME｜彩色充气立体字",
+      "category": "字体设计",
+      "subcategory": "圆体与趣味字组",
+      "text": "用“GOODTIME”粗体文字制作色差充气形态海报，作为 R&B/嘻哈专辑封面的3D字体图形；彩色背景，字体排版海报，Tom Whalen 风格的字体杂志封面设计，平面设计，字体海报艺术，70mm胶片，超写实，照片级写实，高对比，明亮、生动、鲜艳，体积感，Octane 渲染，8K。\n\n来源参数：--ar 1:1",
+      "tags": [
+        "方形",
+        "英文字组",
+        "充气字",
+        "彩色",
+        "专辑封面",
+        "3D",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-2654b0e7836427980cce.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/04/Chromatic-Typography-Poster-Art-midjourney-prompt.webp"
+      ],
+      "originalText": "poster design with the bold lettering of the text \"GOODTIME\" in chromatic inflatable shapes, 3D typography graphic for R&B hiphop album cover, colorful background, typography poster, typography magazine cover design by Tom Whalen, graphic design, typography poster art, 70mm film, hyper realistic, photo realistic, high contrast, bright, vivid, vibrant, volumetric, octane render, 8 k --ar 1:1",
+      "source": {
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/chromatic-typography-poster-art/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "model": "未注明（站点归类为 Midjourney）",
+        "note": "详情页完整英文正文忠实译为中文，保留来源参数。来源例图未在本机重新生图。",
+        "key": "promptlibrary-72916",
+        "subcategory": "圆体与趣味字组",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/04/Chromatic-Typography-Poster-Art-midjourney-prompt.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750227_jqne7r_1795381750227_lgx9bl.webp"
+    },
+    {
+      "key": "promptlibrary-107426",
+      "name": "GOPNIK｜电影故障战士标题",
+      "category": "字体设计",
+      "subcategory": "科技与像素标题",
+      "text": "一张史诗电影感暗黑战士画面：单词“gopnik”使用小写字母与故障核心风格，整体暗黑。\n\n来源参数：--ar 16:9 --v 8.2",
+      "tags": [
+        "横版",
+        "英文字组",
+        "故障",
+        "战士",
+        "电影感",
+        "16:9",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-da5b40dc88a18f75a386.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Glitchcore-Dark-Gopnik-Typography-midjourney-prompt.webp"
+      ],
+      "originalText": "an epic cinematic dark warrior image of the word gopnik in lowercase letters in glitchcore style with dark style --ar 16:9 --v 8.2",
+      "source": {
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/glitchcore-dark-gopnik-typography/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "model": "Midjourney 8.2",
+        "note": "详情页完整英文正文忠实译为中文，保留来源参数。来源例图未在本机重新生图。",
+        "key": "promptlibrary-107426",
+        "subcategory": "科技与像素标题",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Glitchcore-Dark-Gopnik-Typography-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          673
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750239_nraf5b_1795381750239_xxeopt.webp"
+    },
+    {
+      "key": "promptlibrary-99241",
+      "name": "Matisse字母｜彩色笑脸构成排字",
+      "category": "字体设计",
+      "subcategory": "几何与构成字组",
+      "text": "抽象字体海报：白底上排列粗体字母，使用黑色与明亮彩色，并加入笑脸元素，整体采用马蒂斯风格。",
+      "tags": [
+        "竖版",
+        "字母海报",
+        "马蒂斯",
+        "色块",
+        "笑脸",
+        "白底",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-3a5f2624317696bade0d.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Matisse-Inspired-Colorful-Typography-midjourney-prompt.webp"
+      ],
+      "originalText": "Abstract typography poster, with bold letters of the alphabet in black and bright colors, featuring smiley faces on a white background, in the style of Matisse.",
+      "source": {
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/matisse-inspired-colorful-typography/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "model": "未注明（站点归类为 Midjourney）",
+        "note": "详情页完整英文正文忠实译为中文，保留来源参数。来源例图未在本机重新生图。",
+        "key": "promptlibrary-99241",
+        "subcategory": "几何与构成字组",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Matisse-Inspired-Colorful-Typography-midjourney-prompt.webp",
+        "previewDimensions": [
+          844,
+          1200
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750248_qyibst_1795381750248_b5m11r.webp"
+    },
+    {
+      "key": "promptlibrary-97418",
+      "name": "NEVER GIVE UP｜混凝土空间运动字",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "一张励志海报：工业背景上使用粗体黑色文字“NEVER GIVE UP”，文字居中，每个字母带黄色边框，在灰色混凝土墙上更突出。文字一端可见运动或奔跑人物剪影。设计强调力量、决心、能量、动力以及对运动和健康生活的热情。8K 分辨率。",
+      "tags": [
+        "竖版",
+        "英文标题",
+        "混凝土",
+        "黄色描边",
+        "运动",
+        "励志",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-38c85b89aeabc0da4ee9.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Bold-Typography-on-Concrete-midjourney-prompt.webp"
+      ],
+      "originalText": "A motivational poster with the words \"NEVER GIVE UP\" written in bold, black letters on an industrial background. The text is centered and has yellow borders around each letter to make them stand out more prominently against the gray concrete walls. A silhouette of a person doing sports or running can be seen at one end of the writing. This design would emphasize strength, determination, energy, motivation, and a passion for sports and a healthy lifestyle. 8K resolution.",
+      "source": {
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/bold-typography-on-concrete/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "model": "未注明（站点归类为 Midjourney）",
+        "note": "详情页完整英文正文忠实译为中文，保留来源参数。来源例图未在本机重新生图。",
+        "key": "promptlibrary-97418",
+        "subcategory": "材质与特殊字效",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Bold-Typography-on-Concrete-midjourney-prompt.webp",
+        "previewDimensions": [
+          903,
+          1200
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750253_2wcchz_1795381750253_tj2etm.webp"
+    },
+    {
+      "key": "prompt123-4788",
+      "name": "Art Deco Future｜多面玻璃产品广告",
+      "category": "KV设计",
+      "subcategory": "装饰艺术与未来主义",
+      "text": "以 1：1 的比例创建图像\n[品牌] 广告。融合了装饰艺术和未来主义的超高细节产品照片。该产品位于平台上。 背景以风格化的装饰艺术摩天大楼剪影转变为未来主义的速度线条，形成从左到右的对角线构图。表面使用品牌核心材料和多面玻璃，并在品牌颜色主题中使用环境照明。 该产品唤起了动感和动感的乐观主义。戏剧性的低角度照明增强了反射，背景中带有微妙的蒸汽痕迹。 底部有小标志，下面有一个小标语",
+      "tags": [
+        "方形",
+        "装饰艺术",
+        "未来主义",
+        "产品",
+        "玻璃",
+        "速度线",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-71a6ce5ad19e4b4338a0.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/194.jpeg"
+      ],
+      "originalText": "create image with 1:1 ratio\n[Brand] ad. Ultra-high-detail product photo in a fusion of Art Deco and Futurism. The product rest on platforms.  Background features stylized Art Deco skyscraper silhouettes morphing into Futurist speed lines, forming a diagonal left-to-right composition. Surfaces use brand Core Material and faceted glass with ambient lighting in Brand Color theme.  The product evoking motion and kinetic optimism. Dramatic low-angle lighting enhances reflections, with subtle vapor trails in the background.  Small logo on the bottom, and a tiny slogan beneath\n\n以 1：1 的比例创建图像\n[品牌] 广告。融合了装饰艺术和未来主义的超高细节产品照片。该产品位于平台上。 背景以风格化的装饰艺术摩天大楼剪影转变为未来主义的速度线条，形成从左到右的对角线构图。表面使用品牌核心材料和多面玻璃，并在品牌颜色主题中使用环境照明。 该产品唤起了动感和动感的乐观主义。戏剧性的低角度照明增强了反射，背景中带有微妙的蒸汽痕迹。 底部有小标志，下面有一个小标语",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4788.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-4788",
+        "subcategory": "装饰艺术与未来主义",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/194.jpeg",
+        "previewDimensions": [
+          1200,
+          1200
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750258_clxg8r_1795381750258_cea3ax.webp"
+    },
+    {
+      "key": "prompt123-5402",
+      "name": "UNWRAP THE FUN｜糖果霓虹广告牌",
+      "category": "KV设计",
+      "subcategory": "户外广告与快消主视觉",
+      "text": "为印度 Chupa Chups 创作超写实电影感快消品广告牌海报，突出俏皮能量、大胆口味爆发和 Z 世代糖果文化。\n\n场景：一根巨大的高光 Chupa Chups 棒棒糖悬浮在鲜艳的印度夜间街道上方，糖片与液体风味在半空向外爆开。\n环境：孟买夜生活启发的霓虹城市背景，发光招牌、湿润反光街面、彩色薄雾。\n主体：超大草莓旋纹棒棒糖作为英雄对象，超精细高光纹理，电影感风味飞溅动势。\n视觉叙事：包装上标志性 Chupa Chups 花朵 Logo 微微发光，湿地与糖浆飞溅中可见反射。\n构图：戏剧性低机位，巨大产品居中主导画面，动态爆炸沿广告牌对角线扩展。\n排版：左上为 Chupa Chups Logo；中央巨幅标题“UNWRAP THE FUN”，使用超粗、俏皮字体；产品后方叠放超大文字“LICK / SPIN / REPEAT”；中左为粗窄体“FLAVOR THAT POPS.”；左下为“STRAWBERRY BURST · GLOBAL ICON · 2026 EDITION”；右下为“http://chupachups.com”；左侧竖排“FUN · FLAVOR · CANDY CULTURE”。文字使用俏皮粗体无衬线、带光泽的分层透明感、广告牌级超大尺度。\n色彩：鲜红、黄、粉、霓虹橙点缀、高光糖果材质。\n光照：戏剧性霓虹背光、发光高光和糖果反射。\n氛围：糖粉、薄雾、糖浆飞溅、漂浮糖果尘埃。\n情绪：有活力、年轻、令人上瘾、鲜明。拍摄自 ARRI Alexa Mini LF，35mm 变形镜头，HDR，超电影感，高级快消广告牌风格，4:5 竖版。",
+      "tags": [
+        "竖版",
+        "棒棒糖",
+        "夜街",
+        "霓虹",
+        "快消",
+        "广告牌",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-2dd119f02fdf4e3e81a2.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case424.jpg?wm=1"
+      ],
+      "originalText": "Hyper-realistic cinematic FMCG billboard advertising poster for Chupa Chups India, focusing on playful energy, bold flavor explosion, and Gen-Z candy culture.\n\nScene: a giant glossy Chupa Chups lollipop floating above a vibrant Indian street at night, candy shards and liquid flavor bursts exploding outward mid-air.\n\nEnvironment: neon-lit urban backdrop inspired by Mumbai nightlife, glowing signage, reflective wet streets, colorful haze.\n\nSubject: oversized strawberry swirl lollipop as the hero object, ultra-detailed glossy texture, cinematic flavor splash motion.\n\nVisual storytelling: iconic Chupa Chups flower logo glowing subtly on wrapper, reflections visible on wet surfaces and candy syrup splashes.\n\nComposition: dramatic low-angle shot, giant centered product dominating frame, dynamic explosion spreading diagonally across billboard composition.\n\nTypography:\ntop left — Chupa Chups logo.\ncenter massive — “UNWRAP THE FUN” ultra bold playful typography.\nbehind product (oversized layered text) — “LICK / SPIN / REPEAT”.\nmid-left — “FLAVOR THAT POPS.” bold condensed font.\nbottom left — “STRAWBERRY BURST · GLOBAL ICON · 2026 EDITION”.\nbottom right — “http://chupachups.com”.\nleft vertical edge — “FUN · FLAVOR · CANDY CULTURE”.\n\nTypography style: playful bold sans-serif, glossy layered opacity, oversized billboard scale.\n\nColor palette: vibrant reds, yellows, pinks, neon orange accents, glossy candy textures.\n\nLighting: dramatic neon backlight with glowing highlights and candy reflections.\n\nAtmosphere: sugar particles, mist, syrup splashes, floating candy dust.\n\nMood: energetic, youthful, addictive, vibrant.\n\nShot on ARRI Alexa Mini LF, 35mm anamorphic, HDR, ultra cinematic, premium FMCG billboard style, 4:5 portrait.",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5402.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-5402",
+        "subcategory": "户外广告与快消主视觉",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case424.jpg?wm=1",
+        "previewDimensions": [
+          1122,
+          1402
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750263_6a0neu_1795381750263_aksvog.webp"
+    },
+    {
+      "key": "prompt123-5215",
+      "name": "夏柑SODA｜高转化季节性饮品广告",
+      "category": "KV设计",
+      "subcategory": "饮品与产品主视觉",
+      "text": "图像生成: 商品广告照片, 适合夏天的季节商品, 碳酸饮料, 名称=\"夏柑SODA\", 形状=PET瓶500ml, 研究2025年作为饮料广告的高CTA设计后设计并生成图像规格, 宽高比3:4",
+      "tags": [
+        "竖版",
+        "碳酸饮料",
+        "夏季",
+        "PET瓶",
+        "高CTA",
+        "3:4",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-b0dab2fb1a81f9dcb021.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case237.jpg?wm=1"
+      ],
+      "originalText": "[中文]\n图像生成: 商品广告照片, 适合夏天的季节商品, 碳酸饮料, 名称=\"夏柑SODA\", 形状=PET瓶500ml, 研究2025年作为饮料广告的高CTA设计后设计并生成图像规格, 宽高比3:4\n\n[English]\nImage generation: Product advertising photo, Seasonal product suitable for summer, Carbonated beverage, Name=\"Summer Citrus SODA\", Shape=500ml PET bottle, Design and generate image specifications after researching high CTA design as a beverage advertisement in 2025, Aspect ratio 3:4",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5215.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-5215",
+        "subcategory": "饮品与产品主视觉",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case237.jpg?wm=1",
+        "previewDimensions": [
+          900,
+          1200
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750268_qmduo3_1795381750268_jcgt58.webp"
+    },
+    {
+      "key": "prompt123-4197",
+      "name": "双面森林｜冷暖双重曝光电影海报",
+      "category": "海报设计",
+      "subcategory": "影视与叙事海报",
+      "text": "创作一张电影感双重曝光肖像海报：左侧是女性侧脸，右侧是男性侧脸，两人背向彼此。两人的轮廓、面部细节和头发边缘无缝融入茂密的艺术化现代森林图案。女性一侧使用温暖金色秋调，男性一侧使用冷静蓝调。柔和阳光穿过树林，增加纵深、对比和情绪氛围。明暗过渡自然，背景为干净黑色。整体是现代表现型艺术海报。底部放粗体标题“Ai Queen is Here…”。比例3:4。",
+      "tags": [
+        "竖版",
+        "双重曝光",
+        "电影海报",
+        "男女侧脸",
+        "森林",
+        "冷暖",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-bea0e3c1cdf035699d8f.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/804.jpeg"
+      ],
+      "originalText": "{\n  \"prompt\": \"A cinematic double-exposure portrait featuring a woman in profile on the left and a man in profile on the right, both turned away from each other. Their silhouettes, including detailed facial features and hair outlines, blend seamlessly into a dense forest landscape with an artistic, modern pattern. The woman's side glows with warm golden autumn hues, while the man's side is illuminated by cool, serene blue tones. Soft rays of sunlight filter through the trees, adding depth, contrast, and emotional atmosphere. Smooth, natural lighting transitions and a clean black backdrop. Modern, artistic, emotionally expressive poster aesthetic. Bold title text at the bottom: 'Ai Queen is Here…'.\",\n  \"style\": [\n    \"cinematic\",\n    \"double exposure\",\n    \"high-detail\",\n    \"artistic poster\",\n    \"emotional\"\n  ],\n  \"settings\": {\n    \"background\": \"clean black backdrop\",\n    \"lighting\": \"soft sun rays, warm vs cool contrast\",\n    \"composition\": \"woman profile left, man profile right, both facing outward\",\n    \"color_palette\": {\n      \"woman_side\": \"warm golden autumn tones\",\n      \"man_side\": \"cool serene blue tones\"\n    }\n  },\n  \"effects\": [\n    \"smooth transitions between silhouettes and forest landscape\",\n    \"high contrast artistic glow\",\n    \"poster-quality finish\"\n  ],\n  \"title_text\": \"Ai Queen is Here…\",\n  \"ratio\": \"3:4\"\n}\n\n{\n“提示”：“这是一幅电影般的双重曝光肖像，左侧是一位侧脸的女性，右侧是一位侧脸的男性，两人背对着彼此。他们的轮廓，包括细致的面部特征和头发轮廓，与茂密的森林景观完美融合，呈现出艺术感十足的现代图案。女性的一侧沐浴在温暖的秋日金色光芒中，而男性的一侧则被清冷宁静的蓝色调所照亮。柔和的阳光透过树木洒下，增添了画面的层次感、对比度和情感氛围。光线过渡自然流畅，背景为干净的黑色。现代、艺术、充满情感表现力的海报美学。底部醒目的标题文字为：‘Ai Queen is Here…’。”\n“风格”： [\n“电影般的”，\n“双重接触”，\n“高细节”，\n“艺术海报”，\n“情绪化的”\n],\n“设置”： {\n“背景”: “干净的黑色背景”，\n“光线”：“柔和的阳光，暖色与冷色的对比”，\n“构图”：“女子侧脸朝左，男子侧脸朝右，两人均面向外侧”\n\"color_palette\": {\n\"woman_side\": \"温暖的金色秋色调\",\n\"man_side\": \"清凉宁静的蓝色调\"\n}\n},\n“效果”：[\n“轮廓与森林景观之间的平滑过渡”，\n“高对比度的艺术光晕”，\n“海报级成品”\n],\n\"title_text\": \"Ai Queen is Here…\",\n比例：3:4\n}",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4197.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-4197",
+        "subcategory": "影视与叙事海报",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/804.jpeg",
+        "previewDimensions": [
+          896,
+          1152
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750272_qf9rm1_1795381750272_d76xhm.webp"
+    },
+    {
+      "key": "prompt123-5410",
+      "name": "大堡礁｜复古矢量旅行海报",
+      "category": "海报设计",
+      "subcategory": "文旅与城市海报",
+      "text": "创作一张高级编辑风的澳大利亚大堡礁旅行海报插画。\n风格：扁平矢量插画，超干净极简主义，中世纪现代旅行海报美学，受复古旅游印刷品与北欧平面设计启发。不要照片写实、纹理、噪点或渐变。使用清晰形状、平滑色块与和谐鲜艳色彩。\n构图：垂直3:4。\n前景（水下）：丰富的珊瑚礁生态，粉、橙、黄、红珊瑚，多种热带鱼（条纹鱼、亮黄色鱼、蓝鱼、橙鱼），一只巨大海龟优雅向右游动。清澈高可见度碧绿海水。\n中景：一名女性浮潜者在水面下方水平游动，戴脚蹼和呼吸面罩，观察下方珊瑚礁。光束轻微穿过水面。\n背景（水上）：平静热带海洋，清澈水中可见浅层礁石。左侧漂浮一艘白色休闲船，远处一艘小帆船；地平线上有柔和绿色岛屿或丘陵。\n天空：明亮蓝天、蓬松白云、几只飞鸟，强化宁静假期氛围。\n文字：底部使用粗体大写“GREAT BARRIER REEF”，下方是字距较大的小字“AUSTRALIA”，分隔线之间加入小型装饰珊瑚图标。\n氛围与光照：明亮日光、平静、诱人、热带天堂感；色彩清新、有活力、放松，并让珊瑚礁与海洋蓝色形成强对比。",
+      "tags": [
+        "竖版",
+        "大堡礁",
+        "旅行海报",
+        "扁平插画",
+        "海洋",
+        "珊瑚",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-ed57c2a19c68ef7c51fe.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case432.jpg?wm=1"
+      ],
+      "originalText": "Create a premium editorial travel poster illustration of the Great Barrier Reef, Australia.\nStyle: Flat vector illustration, ultra-clean minimalism, mid-century modern travel poster aesthetic, inspired by vintage tourism prints and Scandinavian graphic design. No photorealism, no textures, no noise, no gradients. Use crisp shapes, smooth color blocks, and harmonious vibrant tones.\nComposition (vertical 3:4 layout):\nForeground (underwater): A rich coral reef ecosystem filled with colorful corals in pink, orange, yellow, and red tones. Include tropical fish of various species (striped, bright yellow, blue, and orange), and a large sea turtle swimming gracefully toward the right. Clear turquoise water with high visibility.\nMidground: A female snorkeler swimming horizontally just beneath the water surface, wearing fins and a snorkel mask, observing the reef below. Light rays subtly pass through the water surface.\nBackground (above water): A calm tropical ocean with shallow reef patches visible through crystal-clear water. A white leisure boat floats peacefully on the left, and a small sailboat appears far in the distance. On the horizon, soft green islands or hills stretch across.\nSky: Bright blue sky with fluffy white clouds and a few birds flying, enhancing the serene vacation mood.\nTypography:\nAt the bottom of the poster, include bold uppercase text:\n“GREAT BARRIER REEF”\nBelow it, smaller spaced-out text:\n“AUSTRALIA”\nAdd a small decorative coral icon between divider lines.\nMood & Lighting: Bright daylight, calm, inviting, tropical paradise atmosphere. Colors should feel fresh, vibrant, and relaxing with strong contrast between coral reef and ocean blues.",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5410.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-5410",
+        "subcategory": "文旅与城市海报",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case432.jpg?wm=1",
+        "previewDimensions": [
+          1086,
+          1448
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750278_6y5aex_1795381750278_u0hgiq.webp"
+    },
+    {
+      "key": "prompt123-4833",
+      "name": "玻璃折射｜六词标语品牌海报",
+      "category": "海报设计",
+      "subcategory": "艺术与文化海报",
+      "text": "设计一张带有“[BRAND NAME]”字样的电影式品牌海报 — 在下面包括一个粗体的六字标语 — 应用 3D 玻璃折射效果，使部分文本或布局失真 — 在右上角加入品牌徽标 — 平滑的阴影、有光泽的照明、黑色超粗体排版 — 干净的现代背景 — 高分辨率、1：1 的纵横比",
+      "tags": [
+        "方形",
+        "玻璃折射",
+        "品牌海报",
+        "黑色粗体",
+        "六词标语",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-753ed4faa020559e3e4d.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/147.jpeg"
+      ],
+      "originalText": "Design a cinematic brand poster featuring “[BRAND NAME]” — include a bold six-word slogan beneath — apply a 3D glass refraction effect that distorts part of the text or layout — incorporate the brand logo in the top corner — smooth shadows, glossy lighting, black extra-bold typography — clean modern background — high-resolution, 1:1 aspect ratio\n\n设计一张带有“[BRAND NAME]”字样的电影式品牌海报 — 在下面包括一个粗体的六字标语 — 应用 3D 玻璃折射效果，使部分文本或布局失真 — 在右上角加入品牌徽标 — 平滑的阴影、有光泽的照明、黑色超粗体排版 — 干净的现代背景 — 高分辨率、1：1 的纵横比",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4833.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-4833",
+        "subcategory": "艺术与文化海报",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/147.jpeg",
+        "previewDimensions": [
+          1200,
+          1200
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750283_zfge6z_1795381750283_aep26k.webp"
+    },
+    {
+      "key": "prompt123-4990",
+      "name": "红绸北京｜2026国潮城市海报",
+      "category": "海报设计",
+      "subcategory": "文旅与城市海报",
+      "text": "2026中国城市系列宣传海报，主题为【北京】。现代、多彩、明亮通透的国潮风，竖版9:16。大面积白色纹理留白背景，一条从右下向左上盘旋的红色丝绸形成S型主构图。右下角一位东方女性挥舞红绸，服饰需结合北京地域文化定制。红绸延展为城市长卷，融合天坛、长城、鸟巢、喇叭沟门原始森林公园、什刹海、京味相声。左侧排版SPRING 2026、竖排Beijing和小印章“北京”。要求统一系列感，但不能雷同，细节丰富，城市辨识度强。文字清晰且精美布局，高端图形设计。",
+      "tags": [
+        "竖版",
+        "北京",
+        "红绸",
+        "城市长卷",
+        "国潮",
+        "9:16",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-1f09b749bec8e61167a8.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case9.jpg?wm=1"
+      ],
+      "originalText": "2026中国城市系列宣传海报，主题为【北京】。现代、多彩、明亮通透的国潮风，竖版9:16。大面积白色纹理留白背景，一条从右下向左上盘旋的红色丝绸形成S型主构图。右下角一位东方女性挥舞红绸，服饰需结合北京地域文化定制。红绸延展为城市长卷，融合天坛、长城、鸟巢、喇叭沟门原始森林公园、什刹海、京味相声。左侧排版SPRING 2026、竖排Beijing和小印章“北京”。要求统一系列感，但不能雷同，细节丰富，城市辨识度强。文字清晰且精美布局，高端图形设计。",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4990.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-4990",
+        "subcategory": "文旅与城市海报",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case9.jpg?wm=1",
+        "previewDimensions": [
+          941,
+          1672
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750288_ipb1fl_1795381750288_ovggew.webp"
+    },
+    {
+      "key": "promptlibrary-107030",
+      "name": "EARTHWEAR｜可持续时尚连续字标",
+      "category": "LOGO设计",
+      "subcategory": "字母与字标",
+      "text": "为可持续时尚品牌“EARTHWEAR”设计独特字标：定制字体，不是标准字体。字母以一条连续流动的线微妙连接，暗示循环、转化和再生。把概念融入字形：克制的回收启发几何、有机不完美曲线与干净现代字体结合，负空间暗示更新。不要附加图标。优先时尚感，可持续作为更深层含义。风格极简、优雅、当代、高级、隽永、艺术化。避免回收符号、地球图标、树叶Logo、卡通审美和过度复杂细节。使用单色或双色。适合作为小型服装标签、刺绣、丝网印刷、包装、社交媒体与标识，保持小尺寸可识别。\n\n来源参数：--v 8.2",
+      "tags": [
+        "方形",
+        "字标",
+        "可持续时尚",
+        "连续笔画",
+        "极简",
+        "可缩放",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-6c40754491aec6015ff8.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Minimalist-Sustainable-Wordmark-Logo-midjourney-prompt.webp"
+      ],
+      "originalText": "Distinctive wordmark logo for sustainable fashion brand \"EARTHWEAR.\" Custom designed typography - not a standard font. Letters subtly connect into one another with a continuous flowing line suggesting circularity, transformation, and regeneration. Integrate concept into letterforms: subtle recycling inspired geometry, organic imperfect curves blended with clean modern type, negative space implying renewal. No added icons. Fashion forward first; sustainability as a deeper layer. Style: minimal, elegant, contemporary, premium, timeless, artistic. Avoid: recycling symbols, globe icons, leaf logos, cartoon aesthetics, overly complex details. Monochromatic or two tone palette. Works at small scale for clothing labels, embroidery, screen printing, packaging, social media, and signage. --v 8.2",
+      "source": {
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-sustainable-wordmark-logo/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "model": "Midjourney 8.2",
+        "note": "详情页完整英文正文忠实译为中文，保留来源参数。来源例图未在本机重新生图。",
+        "key": "promptlibrary-107030",
+        "subcategory": "字母与字标",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Minimalist-Sustainable-Wordmark-Logo-midjourney-prompt.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750293_byyf0l_1795381750293_xqu0d4.webp"
+    },
+    {
+      "key": "prompt123-5116",
+      "name": "CLEAR RESET｜清透护肤电商首页",
+      "category": "UI与网页设计",
+      "subcategory": "品牌官网与产品落地页",
+      "text": "生成一个电商落地页 Hero 区，品牌为“CLEAR RESET”，主题是清爽护肤、干净审美和水泡背景，配色为白色、青绿色与浅蓝色。\n页头：Logo 为“CLEAR RESET”；5 个导航项“About Product / About Pores/Acne / Ingredients / How to Use / FAQ”；2 个操作按钮“Buy Now / My Page”。\nHero 内容：主标题“毛穴・ニキビ悩みに、すっきり澄んだ肌へ。”；副标题“Balances sebum and clears pores. Non-sticky, medicated skincare for comfortable daily use.”；竖排文案“Prevents recurring rough skin and acne, leading to smooth, clear skin.”。\n视觉：年轻亚洲女性，肌肤清透有光泽，头发束起，温柔微笑；两件产品居中，为祛痘护理凝胶管与化妆水瓶；背景为浅蓝渐变并漂浮水泡。\n功能亮点：4 个圆形图标配文字，分别为“Quasi-drug / Pore Care / Non-sticky / Daily Use Morning/Night OK”。\n行动区：横幅文字“Limited to first-time buyers”，2 个按钮“Try it at a discount / See details”。\n数据卡片：4 张白色矩形卡片，使用大号青绿色数字：“Satisfaction 92% / Pore visibility -23% / Acne prevention 87% / Want to repeat 97%”。",
+      "tags": [
+        "横版",
+        "护肤",
+        "电商",
+        "Hero",
+        "水泡",
+        "编辑布局",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d2ebd015e75229bbaf1d.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case136.jpg?wm=1"
+      ],
+      "originalText": "{\n  \"type\": \"e-commerce landing page hero section\",\n  \"brand\": \"{argument name=\"brand name\" default=\"CLEAR RESET\"}\",\n  \"theme\": \"refreshing skincare, clean aesthetic, water bubbles background\",\n  \"color_palette\": [\"white\", \"{argument name=\"primary color\" default=\"teal\"}\", \"light blue\"],\n  \"layout\": {\n    \"header\": {\n      \"logo\": \"CLEAR RESET\",\n      \"navigation_links\": {\"count\": 5, \"labels\": [\"About Product\", \"About Pores/Acne\", \"Ingredients\", \"How to Use\", \"FAQ\"]},\n      \"action_buttons\": {\"count\": 2, \"labels\": [\"Buy Now\", \"My Page\"]}\n    },\n    \"hero_content\": {\n      \"headline\": \"{argument name=\"main headline\" default=\"毛穴・ニキビ悩みに、すっきり澄んだ肌へ。\"}\",\n      \"subheadline\": \"Balances sebum and clears pores. Non-sticky, medicated skincare for comfortable daily use.\",\n      \"vertical_copy\": \"Prevents recurring rough skin and acne, leading to smooth, clear skin.\"\n    },\n    \"visuals\": {\n      \"model\": \"{argument name=\"model description\" default=\"young Asian woman with clear radiant skin, hair tied up, smiling softly\"}\",\n      \"products\": {\n        \"count\": 2,\n        \"description\": \"{argument name=\"product type\" default=\"acne care gel tube and lotion bottle\"}\",\n        \"placement\": \"center\"\n      },\n      \"background\": \"light blue gradient with floating water bubbles\"\n    },\n    \"feature_highlights\": {\n      \"count\": 4,\n      \"style\": \"circular icons with text below\",\n      \"labels\": [\"Quasi-drug\", \"Pore Care\", \"Non-sticky\", \"Daily Use Morning/Night OK\"]\n    },\n    \"call_to_action\": {\n      \"banner_text\": \"Limited to first-time buyers\",\n      \"buttons\": {\"count\": 2, \"labels\": [\"Try it at a discount\", \"See details\"]}\n    },\n    \"statistics_cards\": {\n      \"count\": 4,\n      \"style\": \"white rectangular cards with large teal numbers\",\n      \"labels\": [\"Satisfaction 92%\", \"Pore visibility -23%\", \"Acne prevention 87%\", \"Want to repeat 97%\"]\n    }\n  }\n}",
+      "source": {
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5116.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "model": "未注明",
+        "note": "公开详情接口返回完整提示词，案例ID、详情页与对应原图核对；英文正文忠实译为中文并保留变量。来源例图未在本机重新生图。",
+        "key": "prompt123-5116",
+        "subcategory": "品牌官网与产品落地页",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case136.jpg?wm=1",
+        "previewDimensions": [
+          1199,
+          675
+        ],
+        "language": "zh-CN",
+        "batch": "design-curation-2026-11-23-0500",
+        "collectedAt": "2026-11-23",
+        "verifiedPair": true
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795381750296_ir1se0_1795381750296_p8wije.webp"
+    }
+  ]
+}

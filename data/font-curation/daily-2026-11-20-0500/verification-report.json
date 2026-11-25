@@ -1,0 +1,78 @@
+{
+  "batch": "daily-2026-11-20-0500",
+  "added": 68,
+  "activeBefore": 214,
+  "activeAfter": 282,
+  "trashBefore": 93,
+  "trashAfter": 93,
+  "priorRecordsPreserved": 307,
+  "categoryCounts": {
+    "复古装饰": 8,
+    "细线优雅": 9,
+    "语义图形": 8,
+    "圆体趣味": 10,
+    "几何构成": 5,
+    "书法手写": 22,
+    "运动力量": 5,
+    "现代简约": 1
+  },
+  "authors": {
+    "lxy.limo": 3,
+    "juan_juan_0124": 14,
+    "sanzui0000": 8,
+    "muographic": 8,
+    "四喜字体设计": 15,
+    "右蓝设计": 20
+  },
+  "sourceCount": 5,
+  "runtime": {
+    "app": "/Applications/环中AIStudio.app",
+    "pid": 46577,
+    "nextPid": 46602,
+    "nextCwd": "/Applications/环中AIStudio.app/Contents/Resources/standalone",
+    "port": 5001,
+    "owner": "00000000-0000-4000-8000-000000000001",
+    "indexFile": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/11e594f481958c10e3015d0b/index.json"
+  },
+  "verification": {
+    "toolFlow": [
+      "crop_fonts.py",
+      "import_fonts.ts plan",
+      "import_fonts.ts apply",
+      "import_fonts.ts verify"
+    ],
+    "mediaHttp200": 68,
+    "desktopSearch": "每日扩充1120",
+    "desktopPagination": [
+      24,
+      48,
+      68
+    ],
+    "desktopCategories": {
+      "细线优雅": 9,
+      "圆体趣味": 10
+    },
+    "detailInspected": [
+      "乌托邦：完整说明、来源、原图尺寸与裁切坐标，415×415图片成功加载",
+      "霜降：完整说明、来源、原图尺寸与裁切坐标，415×415图片成功加载"
+    ],
+    "paidAiUsed": false,
+    "restarted": false,
+    "codeChanged": false,
+    "canvasDraft": "未直接编辑画布输入；本轮字体页验收后无法从DOM确认原画布草稿，未重新加载应用。"
+  },
+  "limitations": [
+    "今日新增均来自优设公开作品，未完成跨站来源轮换。站酷公开HTTP返回防护页，沿用已登录Chrome搜索页加载导航但未显示作品结果。",
+    "卡片39、40的高度图形化中文标原中文待核。",
+    "未新增立体字效；该分类仍为15款。"
+  ],
+  "browser": {
+    "reuseExisting": true,
+    "pid": 9669,
+    "windowId": 1465084358,
+    "tabId": 1465084359,
+    "originalUrl": "http://127.0.0.1:4456/#/projects/08862d69-055a-4385-b72d-6ce2b7c8345a",
+    "restoredUrlVerified": "http://127.0.0.1:4456/#/projects/08862d69-055a-4385-b72d-6ce2b7c8345a"
+  },
+  "automation": "automation-2：沿用已有每日北京时间05:00任务，未新建重复任务。"
+}

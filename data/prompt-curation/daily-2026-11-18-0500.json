@@ -1,0 +1,859 @@
+{
+  "version": 1,
+  "batch": "design-curation-2026-11-18-0500",
+  "collectedAt": "2026-11-18",
+  "selectionMethod": "轮换至中文Prompt123与Public Prompts；具体详情全文与Gallery单例逐张视觉核对，中文原文或完整翻译，保留变量。",
+  "prompts": [
+    {
+      "key": "prompt123-5340",
+      "name": "抹茶品牌｜完整触点系统视觉板",
+      "category": "品牌视觉设计",
+      "subcategory": "品牌系统与触点",
+      "text": "为名为“MATCHA MODE”的现代生活方式品牌，创建一张高端“抹茶品牌触点系统”视觉板。建立完整的品牌识别系统。\n主视觉场景：干净自然的台面上，一只陶瓷杯盛着超写实抹茶饮品；鲜绿抹茶泡沫带微小气泡，旁边放竹茶筅，柔和自然光，台面撒少许抹茶粉，极简日式美学。\n氛围：平静、温暖、柔和日光，干净的米白或米色背景，细腻阴影和反射，健康与奢华感。\n完整品牌系统：外带杯（纸杯与玻璃瓶）、极简包装盒、高端生活方式手提袋、标签、贴纸、封口贴；带价格（$6.50、$8.90等）的菜单卡。各处有小字号排版，细微不完美增强真实感。\n设计语言：现代极简字体、日式布局、柔绿配色、优雅间距。\n包含：抹茶拿铁、冰抹茶、抹茶甜点、套餐与生活方式照片。构图应像高端设计公司的提案，细节丰富、真实、干净、有美感且适合分享。",
+      "tags": [
+        "竖版",
+        "抹茶",
+        "品牌提案",
+        "日式",
+        "自然光",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-3bbf15d9b3be466d9019.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case362.jpg?wm=1"
+      ],
+      "originalText": "Create a premium “Matcha Brand Touchpoint System” visual board for a modern lifestyle brand called:\n\n“MATCHA MODE”\n\nBuild a full brand identity system, not a single image.\n\nHERO SCENE:\n\nA hyper-realistic matcha drink in a ceramic cup placed on a clean natural surface.\n\n– vibrant green matcha foam with micro-bubbles\n– bamboo whisk (chasen) nearby\n– soft natural light\n– slight matcha powder dust on the surface\n– minimal Japanese aesthetic\nATMOSPHERE:\n– calm, warm, soft daylight\n– clean background (off-white or beige)\n– subtle shadows and reflections\n– feeling of wellness and luxury\nFULL BRAND SYSTEM:\n– takeout cups (paper + glass bottles)\n– packaging boxes (minimalist design)\n– tote bags (premium lifestyle)\n– labels, stickers, seals\n– menu cards with pricing ($6.50, $8.90, etc.)\n– small typography everywhere\n– subtle imperfections (realism)\n\nDESIGN LANGUAGE:\n\n– modern minimalist typography\n– Japanese-inspired layout\n– soft green palette\n– elegant spacing\n\nINCLUDE:\n– matcha latte\n– iced matcha\n– matcha desserts\n– combo sets\n– lifestyle shots\nThe composition must feel like a high-end design agency presentation.\n\nUltra-detailed, realistic, clean, aesthetic, and highly shareable.",
+      "source": {
+        "key": "prompt123-5340",
+        "subcategory": "品牌系统与触点",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5340.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case362.jpg?wm=1",
+        "previewDimensions": [
+          2731,
+          4096
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168174_c43el8_1794950168174_x76o5v.webp"
+    },
+    {
+      "key": "prompt123-5320",
+      "name": "四季广告｜同一产品四种场景",
+      "category": "包装设计",
+      "subcategory": "系列包装与场景",
+      "text": "阶段1——产品：[ITEM]采用[MATERIAL]包装，极简标签设计。\n阶段2——网格：2×2四季网格，四个不同的品牌世界。\n阶段3——构图：每个象限都是完整的广告活动场景，包含道具与环境。\n阶段4——一致性：相同产品轮廓，四套不同配色。\n替换变量：[ITEM] / [MATERIAL] / [LABEL STYLE]。",
+      "tags": [
+        "方形",
+        "四季",
+        "四宫格",
+        "产品一致性",
+        "场景摄影",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-a15b30cbfef1808638b3.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case342.jpg?wm=1"
+      ],
+      "originalText": "PHASE 1 - PRODUCT: [ITEM] in [MATERIAL] packaging, minimal label design\nPHASE 2 - GRID: 2x2 seasonal grid, four distinct brand worlds\nPHASE 3 - COMPOSITION: each quadrant a full campaign scene with props and environment\nPHASE 4 - CONSISTENCY: same product silhouette, four distinct palettes\n\nSwap: [ITEM] / [MATERIAL] / [LABEL STYLE]",
+      "source": {
+        "key": "prompt123-5320",
+        "subcategory": "系列包装与场景",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5320.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case342.jpg?wm=1",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留[ITEM]/[MATERIAL]/[LABEL STYLE]变量；原图示例为香水产品，未将变量悄悄改写。完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168179_uz2ceh_1794950168180_fi56bt.webp"
+    },
+    {
+      "key": "prompt123-5378",
+      "name": "六款签名｜笔势与风格选择",
+      "category": "字体设计",
+      "subcategory": "书法与手写标题",
+      "text": "你是一个高端签名设计系统 + 风格人格视觉系统。\n\n任务：\n仅基于用户输入的「姓名」，生成一张「多风格签名选择海报（卡片式结构）」。\n目标是把名字转译为具有笔势、气质与力量感的签名设计系统，让用户产生选择欲、认同感和分享欲。\n\n输入信息：\n姓名：[输入你的昵称]\n禁止要求额外信息，必须自动完成气质与风格推断。\n\n隐藏执行逻辑：\n1. 字形与笔势分析：\n- 结构：疏密、横竖比例、重心位置\n- 节奏：连贯、停顿、爆发、收束\n- 适配：连笔程度、草写程度、变形空间\n\n2. 气质推断：\n清冷、张扬、克制、商业、文艺、松弛、锋利、高级。\n\n3. 生成 6 个签名分支：\n- 全部适配该姓名\n- 每一个都有明确书写风格\n- 差异来自笔势、节奏、结构和收笔方式\n\n整体画面：\n9:16 竖版海报，极简、高级、干净、有设计感、适合传播。\n背景使用纯白或极浅灰渐变，留白不少于 40%。\n\n顶部标题区：\n主标题可用：\n「你的名字，适合哪种签名？」\n或：\n「[姓名] · 签名风格选择」\n副标题：\n「不同笔势，不同气场」\n排版为黑色与灰色，高级字距，留白充足。\n\n签名卡片区域：\n使用整齐网格卡片布局，推荐 2 列 × 3 行，共 6 个卡片。\n每个卡片统一尺寸、统一间距、整体对齐干净。\n\n卡片样式：\n- 轻微圆角 8-16px\n- 无明显边框，或极细描边\n- 极轻阴影\n- 背景为纯白微差、极浅灰，或轻微宣纸 / 磨砂质感\n视觉目标接近高级杂志排版，避免强 UI 感、厚卡片和 App 组件感。\n\n签名生成规则：\n签名必须基于书写动作生成，避免只做字体变形。\n每一个签名风格在生成前，先确定一套明确书写行为规则：\n1. 起笔方式：轻触起笔、重压起笔、直接横扫、从左下进入或从中段切入。\n2. 连笔结构：前两个字强连笔后面断开、全连笔一气呵成、只连接偏旁。\n3. 节奏变化：快到慢再收、慢到爆发再拉伸、或均匀节奏。\n4. 结构变形：横向拉长、垂直压缩、整体右倾或左倾、字间重叠或错位。\n5. 收笔设计：尾笔长甩、突然收断、回钩、渐隐收尾。\n\n6 种签名方向：\n1. 极简理性：接近品牌签名\n2. 狂放张力：强烈连笔和拉伸\n3. 松弛随性：手写感强\n4. 东方行草：飞白和墨感\n5. 锋利结构：几何感和断裂\n6. 实验风格：允许部分不可读，但需要强设计感\n\n色彩策略：\n整体以黑、灰、白为主。每个卡片允许一个极轻微点缀色，例如冷灰蓝、香槟金、墨黑、暖棕、深绿。\n避免大面积色块和花哨配色。\n\n底部互动区：\n底部居中加入小号灰字：\n「选一个，作为你的专属签名。」\n或：\n「你是第几种？」\n\n光影与质感：\n高级棚拍光、柔光环境、细腻阴影、干净空气感。\n质感参考 Apple 发布会视觉和高端品牌视觉。\n\n禁止项：\n不要字体拼贴，不要普通书法字，不要 UI 卡片风，不要颜色杂乱，不要签名太小，不要排版松散，不要缺乏笔势，不要模板拼接感。\n\n最终目标：\n生成一张高级、干净、有秩序、有笔势张力的 6 风格签名选择海报。\n用户一眼能选出最像自己的一款签名。",
+      "tags": [
+        "竖版",
+        "黑白",
+        "签名",
+        "文字组",
+        "六种风格",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-eed195789aed6eb0f61f.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case400.png?wm=1"
+      ],
+      "originalText": "你是一个高端签名设计系统 + 风格人格视觉系统。\n\n任务：\n仅基于用户输入的「姓名」，生成一张「多风格签名选择海报（卡片式结构）」。\n目标是把名字转译为具有笔势、气质与力量感的签名设计系统，让用户产生选择欲、认同感和分享欲。\n\n输入信息：\n姓名：[输入你的昵称]\n禁止要求额外信息，必须自动完成气质与风格推断。\n\n隐藏执行逻辑：\n1. 字形与笔势分析：\n- 结构：疏密、横竖比例、重心位置\n- 节奏：连贯、停顿、爆发、收束\n- 适配：连笔程度、草写程度、变形空间\n\n2. 气质推断：\n清冷、张扬、克制、商业、文艺、松弛、锋利、高级。\n\n3. 生成 6 个签名分支：\n- 全部适配该姓名\n- 每一个都有明确书写风格\n- 差异来自笔势、节奏、结构和收笔方式\n\n整体画面：\n9:16 竖版海报，极简、高级、干净、有设计感、适合传播。\n背景使用纯白或极浅灰渐变，留白不少于 40%。\n\n顶部标题区：\n主标题可用：\n「你的名字，适合哪种签名？」\n或：\n「[姓名] · 签名风格选择」\n副标题：\n「不同笔势，不同气场」\n排版为黑色与灰色，高级字距，留白充足。\n\n签名卡片区域：\n使用整齐网格卡片布局，推荐 2 列 × 3 行，共 6 个卡片。\n每个卡片统一尺寸、统一间距、整体对齐干净。\n\n卡片样式：\n- 轻微圆角 8-16px\n- 无明显边框，或极细描边\n- 极轻阴影\n- 背景为纯白微差、极浅灰，或轻微宣纸 / 磨砂质感\n视觉目标接近高级杂志排版，避免强 UI 感、厚卡片和 App 组件感。\n\n签名生成规则：\n签名必须基于书写动作生成，避免只做字体变形。\n每一个签名风格在生成前，先确定一套明确书写行为规则：\n1. 起笔方式：轻触起笔、重压起笔、直接横扫、从左下进入或从中段切入。\n2. 连笔结构：前两个字强连笔后面断开、全连笔一气呵成、只连接偏旁。\n3. 节奏变化：快到慢再收、慢到爆发再拉伸、或均匀节奏。\n4. 结构变形：横向拉长、垂直压缩、整体右倾或左倾、字间重叠或错位。\n5. 收笔设计：尾笔长甩、突然收断、回钩、渐隐收尾。\n\n6 种签名方向：\n1. 极简理性：接近品牌签名\n2. 狂放张力：强烈连笔和拉伸\n3. 松弛随性：手写感强\n4. 东方行草：飞白和墨感\n5. 锋利结构：几何感和断裂\n6. 实验风格：允许部分不可读，但需要强设计感\n\n色彩策略：\n整体以黑、灰、白为主。每个卡片允许一个极轻微点缀色，例如冷灰蓝、香槟金、墨黑、暖棕、深绿。\n避免大面积色块和花哨配色。\n\n底部互动区：\n底部居中加入小号灰字：\n「选一个，作为你的专属签名。」\n或：\n「你是第几种？」\n\n光影与质感：\n高级棚拍光、柔光环境、细腻阴影、干净空气感。\n质感参考 Apple 发布会视觉和高端品牌视觉。\n\n禁止项：\n不要字体拼贴，不要普通书法字，不要 UI 卡片风，不要颜色杂乱，不要签名太小，不要排版松散，不要缺乏笔势，不要模板拼接感。\n\n最终目标：\n生成一张高级、干净、有秩序、有笔势张力的 6 风格签名选择海报。\n用户一眼能选出最像自己的一款签名。",
+      "source": {
+        "key": "prompt123-5378",
+        "subcategory": "书法与手写标题",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5378.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case400.png?wm=1",
+        "previewDimensions": [
+          941,
+          1672
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留姓名变量，原图示例姓名为“宰治”。保留完整中文原文。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      }
+    },
+    {
+      "key": "prompt123-5435",
+      "name": "运动轨迹｜舞者光绘三联海报",
+      "category": "海报设计",
+      "subcategory": "艺术与文化海报",
+      "text": "输入 = 3位传奇舞者/编舞家\n输入 = AI推断的标志性动作序列\n函数 render_kinesphere($ dancer, $ movement)：\n锚点：[完全由运动轨迹构成的人物] :: [$ movement动作序列被描成连续发光带，并汇聚成$ dancer的肖像]::5\n形态：阿拉贝斯克舞姿的轨迹编织出头骨，大跳弧线形成颧骨，手臂扫动构成下颌，负空间暗示静止::4\n材质物理：发黑的明胶银盐照片，微弱化学残留，轻微运动模糊，发光丝线如马雷轮式连续摄影::3\n照明：完全黑暗，仅有类似生物发光的光轨，无外部光源，高对比::2\n渲染层：连续摄影，舞蹈艺术研究，8K，动态雕塑概念::1\n负面：[静止身体部位、影棚灯、实心剪影]::-1",
+      "tags": [
+        "横版",
+        "光轨",
+        "黑底",
+        "连续摄影",
+        "三联画",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-1d32e3e4656e575b0267.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case457.jpg?wm=1"
+      ],
+      "originalText": "input = 3 legendary dancer/choreographer\ninput = ai inferred signature movement sequence\n\nfunction render_kinesphere ($ dancer, $ movement)\n  anchor:\n    [figure composed entirely of motion trails] :: [the $ movement sequence traced as continuous luminous bands that coalesce into a portrait of $ dancer]::5\n\n  morphology:\n    the arabesque trails weave the skull, a grand jeté arc forms the cheekbone, the arms' sweep creates the jaw, stillness is implied by negative spaces::4\n\n  material physics:\n    blackened silver gelatin print, faint chemical residue, slight motion blur, glowing filament traces like a Marey wheel photograph::3\n\n  illumination:\n    complete darkness with bioluminescent-like light trails, no external light sources, high contrast::2\n\n  render stack:\n    chronophotography, fine art dance study, 8k, kinetic sculpture concept::1\n\n  negative:\n    [still body parts, studio lights, solid silhouettes]::-1",
+      "source": {
+        "key": "prompt123-5435",
+        "subcategory": "艺术与文化海报",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5435.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case457.jpg?wm=1",
+        "previewDimensions": [
+          1402,
+          1122
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168184_q3g3mi_1794950168184_znaiuw.webp"
+    },
+    {
+      "key": "prompt123-5323",
+      "name": "新浪潮电影｜撕纸与套色拼贴",
+      "category": "海报设计",
+      "subcategory": "艺术与文化海报",
+      "text": "在陈旧奶油色纸张上创建竖版海报，呈现手工模拟印刷感。粗糙撕纸边缘、层叠杂志剪贴、复印颗粒、半色调纹理、油墨渗透与轻微错位的丝网印刷套色。主体保持为主要黑白摄影肖像，显著置于中央或上方中央；四周围以深红、钴蓝、暖黄、黑与象牙白图形色块。\n加入雨中的欧洲街道、胶片边框、报纸碎片、城市剪影和电影细节等拼贴片段，像一张手工制作的20世纪60年代艺术电影海报。使用粗体窄体字并建立强烈视觉层级。大标题：“[MAIN TITLE]”；小副标题：“[SUBTITLE]”；底部文字：“[BRAND NAME / EVENT NAME / COMING SOON / DATE]”。需要时顶部加小字“[TAGLINE]”。\n最终应有电影感、知识气质、反叛态度和编辑设计感，如一张失落的60年代欧洲电影海报，观点鲜明。保持粗粝、触感、印刷、不完美与手工质感，避免光亮的现代成品效果。",
+      "tags": [
+        "竖版",
+        "拼贴",
+        "撕纸",
+        "胶片",
+        "复古印刷",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d9bcac941456e4093aa8.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case345.jpg?wm=1"
+      ],
+      "originalText": "Create a vertical poster composition on aged cream paper with a handmade analog feel. Use rough ripped paper edges, layered magazine cutouts, photocopy grain, halftone texture, ink bleed, and slightly imperfect screen-print registration. Keep the subject as the main black-and-white photographic portrait, placed prominently in the center or upper center. Surround the subject with graphic blocks of deep red, cobalt blue, warm yellow, black, and ivory.\n\nAdd supporting collage fragments such as a rainy European street, film-strip borders, newspaper clippings, urban silhouettes, and cinematic details, arranged like a handmade 1960s art-house movie poster. Use bold condensed typography with a strong visual hierarchy. Add large headline text: \"[MAIN TITLE]\". Add smaller subtitle text: \"[SUBTITLE]\". Add bottom text: \"[BRAND NAME / EVENT NAME / COMING SOON / DATE]\". If needed, include a small top line reading \"[TAGLINE]\".\n\nThe final result should feel cinematic, intellectual, rebellious, and editorial — like a lost 1960s European film poster with a strong point of view. Keep it raw, tactile, printed, imperfect, and handmade. Avoid a glossy modern finish.",
+      "source": {
+        "key": "prompt123-5323",
+        "subcategory": "艺术与文化海报",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5323.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case345.jpg?wm=1",
+        "previewDimensions": [
+          1024,
+          1280
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留标题和副标题等变量；原图为电影主题示例，不代表任意标题的生成结果。完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168189_epwj7j_1794950168189_c9hfvr.webp"
+    },
+    {
+      "key": "prompt123-5385",
+      "name": "神经与AI｜认知工程信息图",
+      "category": "信息图与数据可视化",
+      "subcategory": "科技与工程图解",
+      "text": "创建一张高端方形“神经—AI混合系统信息图”，设计成科学认知工程手册内页。\n视觉方向：1:1构图；深中性背景叠加发光神经网络；电蓝、紫罗兰、柔白和银色配色；优雅科学字体与模块化面板；中央为细节极丰富的人脑与AI电路融合渲染。\n主要对象：真实人脑与AI神经网络、数字电路融合。\n包含引线标注：记忆编码系统、AI增强层、认知信号路径、情绪反应映射、感官整合节点、神经数据传输系统、学习适应回路。\n模块：Brain Function Overview（脑功能概览）、AI Enhancement Layers（AI增强层）、Signal Flow Diagram（信号流程图）、Cognitive Performance Metrics（认知表现指标）、Human vs AI Comparison Chart（人类与AI对比图）、Neural Safety Protocols（神经安全协议）、Future Evolution Path（未来演化路径）。\n风格：“神经科学+AI工程手册”“高端认知系统图解”。",
+      "tags": [
+        "方形",
+        "大脑",
+        "模块化",
+        "发光电路",
+        "科学手册",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-295238d55148dbfec604.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case407.jpg?wm=1"
+      ],
+      "originalText": "Create a premium square “neuro-AI hybrid system infographic” designed as a scientific cognitive engineering handbook page.\n\nVisual Direction:\n• 1:1 composition\n• dark neutral background with glowing neural network overlays\n• palette: electric blue, violet, soft white, silver\n• elegant scientific typography and modular panels\n• central ultra-detailed human brain + AI circuit fusion render\n\nMain Subject:\nA realistic human brain merging with AI neural networks and digital circuitry.\n\nInclude callouts:\n• memory encoding system\n• AI augmentation layer\n• cognitive signal pathways\n• emotional response mapping\n• sensory integration nodes\n• neural data transfer system\n• learning adaptation loops\n\nModules:\n• Brain Function Overview\n• AI Enhancement Layers\n• Signal Flow Diagram\n• Cognitive Performance Metrics\n• Human vs AI Comparison Chart\n• Neural Safety Protocols\n• Future Evolution Path\n\nStyle:\n“neuroscience + AI engineering manual”, “high-end cognitive systems diagram”",
+      "source": {
+        "key": "prompt123-5385",
+        "subcategory": "科技与工程图解",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5385.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case407.jpg?wm=1",
+        "previewDimensions": [
+          1254,
+          1254
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168197_6lj1ez_1794950168197_hxah8u.webp"
+    },
+    {
+      "key": "prompt123-5421",
+      "name": "塔可食材｜悬浮分解信息图",
+      "category": "信息图与数据可视化",
+      "subcategory": "食谱与食材拆解",
+      "text": "创建一张超写实塔可爆炸分解式竖向信息图。\n自上而下结构：新鲜生菜（鲜脆绿色纹理，自然褶皱）→番茄与莎莎酱层（多汁番茄丁和莎莎酱混合物）→融化芝士（平滑切达芝士质感）→烤肉馅（多汁调味肉细节）→塔可饼壳底座（酥脆金黄饼壳纹理）。\n完美垂直对齐，质朴背景，柔和影棚光，每个悬浮元素下方有真实阴影。\n加干净的信息图文字标签，以细引线标注，准确使用这些标签：“Lettuce”“Salsa”“Cheese”“Meat”“Shell”。\n极精细食物纹理，高端商业美学，8K。",
+      "tags": [
+        "方形",
+        "食材",
+        "爆炸分解",
+        "写实",
+        "细线标注",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-a5b325928c38f2043242.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case443.jpg?wm=1"
+      ],
+      "originalText": "Create a hyper-realistic exploded vertical infographic composition of tacos.\n\nTop → Bottom structure:\nFresh Lettuce (crisp green texture with natural folds)\n→ Tomato & Salsa Layer (juicy diced tomatoes and salsa mix)\n→ Melted Cheese (smooth cheddar texture)\n→ Grilled Meat Filling (juicy seasoned meat detail)\n→ Taco Shell Base (crispy golden shell texture)\nPerfect vertical alignment, rustic background, soft studio lighting, realistic shadows beneath each floating element.\n\nAdd clean infographic text labels with thin pointer lines using these exact labels:\n“Lettuce”\n“Salsa”\n“Cheese”\n“Meat”\n“Shell”\nUltra-detailed food textures, premium commercial aesthetic, 8K.",
+      "source": {
+        "key": "prompt123-5421",
+        "subcategory": "食谱与食材拆解",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5421.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case443.jpg?wm=1",
+        "previewDimensions": [
+          1254,
+          1254
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168204_2cj5m3_1794950168204_pftpux.webp"
+    },
+    {
+      "key": "prompt123-5161",
+      "name": "训练计划｜中文健身信息图",
+      "category": "信息图与数据可视化",
+      "subcategory": "健康与运动信息图",
+      "text": "请生成一张中文健身信息图，主题为：【xxx】。 \n\n要求这张图既专业又实用，适合普通成年人作为训练参考。默认对象为无严重伤病的健康成年人；如果没有额外说明，默认训练目标为“增肌 + 基础力量提升”，默认训练水平为“新手到中级之间”，默认训练场景为“普通健身房”，默认单次训练时长控制在 40–60 分钟内。\n\n请根据【训练主题】自动判断输出类型：\n\n1）如果【训练主题】是某个肌群或身体部位（例如：胸肌、背阔肌、肱二头肌、腹肌、肩部、腿部等），请输出一张“该部位训练计划信息图”。\n2）如果【训练主题】是某个动作或技能目标（例如：引体向上、俯卧撑、双杠臂屈伸、深蹲等），请输出一张“动作解锁 / 进阶训练计划信息图”。\n\n整张图请采用清晰、现代、专业、易读的中文信息图风格，竖版排版，视觉简洁，重点突出，适合社交媒体分享或训练参考卡片。不要写成长篇大论，每个模块用简洁短句呈现，数字信息要醒目。\n\n这张信息图必须包含以下内容：\n\n【A. 标题区】\n- 主标题：直接写【训练主题】训练计划 / 解锁计划\n- 副标题：自动补充适用人群、目标、训练场景、建议时长\n例如：适合新手 / 增肌导向 / 健身房版 / 45分钟\n\n【B. 训练目标区】\n用简洁语言说明：\n- 这次训练主要针对什么\n- 主要目标是什么（增肌 / 力量 / 技能解锁 / 核心控制等）\n- 本次训练的重点刺激或能力提升方向\n\n【C. 热身区】\n给出 2–4 个热身建议，简洁列出即可，例如：\n- 动态活动\n- 目标肌群激活\n- 轻重量预热组\n每项可附一句说明\n\n【D. 主训练区】\n这是核心部分，请列出 4–6 个主要训练动作。\n每个动作都要包含以下信息：\n- 动作名称\n- 训练作用 / 针对部位\n- 组数 × 次数（或时间）\n- RIR 建议\n- 每组间休息时间\n- 动作关键要点（1–2 条）\n- 常见错误（1 条即可）\n\n请确保动作安排合理：\n- 先复合动作，后孤立动作\n- 整体训练量适中\n- 新手不要安排过度极限训练\n- 主动作通常建议 RIR 1–3\n- 孤立动作可建议 RIR 0–2\n- 如果是腹肌或核心类动作，可用“秒数 / 次数”形式\n- 如果是技能类动作，请优先安排“前置能力动作 + 过渡动作 + 目标动作尝试”\n\n【E. 进阶 / 解锁逻辑区】\n根据主题自动生成：\n- 如果是肌群训练：写“如何渐进超负荷”，例如达到次数上限后再加重量、优先保证动作标准等\n- 如果是动作解锁：写“分阶段进阶路径”，例如从悬垂、肩胛引体、离心训练、弹力带辅助，到标准动作完成\n\n【F. 替代动作区】\n请给出 2–3 个替代动作，适用于以下情况：\n- 没有器械\n- 家庭训练\n- 当前能力不足\n- 某些动作做不了\n\n【G. 执行提醒区】\n请给出 4–6 条简洁提醒，例如：\n- 动作标准优先于重量\n- 不要每组都练到力竭\n- 同肌群建议间隔 48–72 小时\n- 疼痛不等于正常发力\n- 睡眠不足时可适当减少训练量\n\n【H. 恢复建议区】\n简洁说明：\n- 训练后恢复重点\n- 蛋白质 / 睡眠 / 恢复间隔建议\n- 1 句风险提醒（如有明显疼痛应停止并评估）\n\n【I. 视觉设计要求】\n- 整体为单页中文信息图\n- 竖版排版\n- 风格现代、清爽、专业、健身感强\n- 使用模块化卡片布局\n- 重点数字（组数、次数、RIR、休息）要醒目\n- 可加入简洁的人体肌群图标、哑铃、杠铃、引体向上等小图标\n- 颜色保持高级、干净、有运动感\n- 中文文字必须清晰、准确、易读\n- 避免过多装饰，强调实用性与执行性\n\n请最终输出为“一张完整的信息图内容”，而不是只给普通段落文字。",
+      "tags": [
+        "竖版",
+        "中文",
+        "模块化",
+        "训练计划",
+        "数字层级",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-4cc83a1b4c5140b08a22.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case183.jpg?wm=1"
+      ],
+      "originalText": "请生成一张中文健身信息图，主题为：【xxx】。 \n\n要求这张图既专业又实用，适合普通成年人作为训练参考。默认对象为无严重伤病的健康成年人；如果没有额外说明，默认训练目标为“增肌 + 基础力量提升”，默认训练水平为“新手到中级之间”，默认训练场景为“普通健身房”，默认单次训练时长控制在 40–60 分钟内。\n\n请根据【训练主题】自动判断输出类型：\n\n1）如果【训练主题】是某个肌群或身体部位（例如：胸肌、背阔肌、肱二头肌、腹肌、肩部、腿部等），请输出一张“该部位训练计划信息图”。\n2）如果【训练主题】是某个动作或技能目标（例如：引体向上、俯卧撑、双杠臂屈伸、深蹲等），请输出一张“动作解锁 / 进阶训练计划信息图”。\n\n整张图请采用清晰、现代、专业、易读的中文信息图风格，竖版排版，视觉简洁，重点突出，适合社交媒体分享或训练参考卡片。不要写成长篇大论，每个模块用简洁短句呈现，数字信息要醒目。\n\n这张信息图必须包含以下内容：\n\n【A. 标题区】\n- 主标题：直接写【训练主题】训练计划 / 解锁计划\n- 副标题：自动补充适用人群、目标、训练场景、建议时长\n例如：适合新手 / 增肌导向 / 健身房版 / 45分钟\n\n【B. 训练目标区】\n用简洁语言说明：\n- 这次训练主要针对什么\n- 主要目标是什么（增肌 / 力量 / 技能解锁 / 核心控制等）\n- 本次训练的重点刺激或能力提升方向\n\n【C. 热身区】\n给出 2–4 个热身建议，简洁列出即可，例如：\n- 动态活动\n- 目标肌群激活\n- 轻重量预热组\n每项可附一句说明\n\n【D. 主训练区】\n这是核心部分，请列出 4–6 个主要训练动作。\n每个动作都要包含以下信息：\n- 动作名称\n- 训练作用 / 针对部位\n- 组数 × 次数（或时间）\n- RIR 建议\n- 每组间休息时间\n- 动作关键要点（1–2 条）\n- 常见错误（1 条即可）\n\n请确保动作安排合理：\n- 先复合动作，后孤立动作\n- 整体训练量适中\n- 新手不要安排过度极限训练\n- 主动作通常建议 RIR 1–3\n- 孤立动作可建议 RIR 0–2\n- 如果是腹肌或核心类动作，可用“秒数 / 次数”形式\n- 如果是技能类动作，请优先安排“前置能力动作 + 过渡动作 + 目标动作尝试”\n\n【E. 进阶 / 解锁逻辑区】\n根据主题自动生成：\n- 如果是肌群训练：写“如何渐进超负荷”，例如达到次数上限后再加重量、优先保证动作标准等\n- 如果是动作解锁：写“分阶段进阶路径”，例如从悬垂、肩胛引体、离心训练、弹力带辅助，到标准动作完成\n\n【F. 替代动作区】\n请给出 2–3 个替代动作，适用于以下情况：\n- 没有器械\n- 家庭训练\n- 当前能力不足\n- 某些动作做不了\n\n【G. 执行提醒区】\n请给出 4–6 条简洁提醒，例如：\n- 动作标准优先于重量\n- 不要每组都练到力竭\n- 同肌群建议间隔 48–72 小时\n- 疼痛不等于正常发力\n- 睡眠不足时可适当减少训练量\n\n【H. 恢复建议区】\n简洁说明：\n- 训练后恢复重点\n- 蛋白质 / 睡眠 / 恢复间隔建议\n- 1 句风险提醒（如有明显疼痛应停止并评估）\n\n【I. 视觉设计要求】\n- 整体为单页中文信息图\n- 竖版排版\n- 风格现代、清爽、专业、健身感强\n- 使用模块化卡片布局\n- 重点数字（组数、次数、RIR、休息）要醒目\n- 可加入简洁的人体肌群图标、哑铃、杠铃、引体向上等小图标\n- 颜色保持高级、干净、有运动感\n- 中文文字必须清晰、准确、易读\n- 避免过多装饰，强调实用性与执行性\n\n请最终输出为“一张完整的信息图内容”，而不是只给普通段落文字。",
+      "source": {
+        "key": "prompt123-5161",
+        "subcategory": "健康与运动信息图",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5161.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case183.jpg?wm=1",
+        "previewDimensions": [
+          637,
+          900
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留训练主题变量，原图为胸肌示例；收录版式提示词，不将图中文字当作已验证训练建议。保留完整中文原文。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168214_wxooet_1794950168214_zzvpr2.webp"
+    },
+    {
+      "key": "prompt123-5353",
+      "name": "古希腊三哲｜城市时间轴",
+      "category": "海报设计",
+      "subcategory": "历史与人文海报",
+      "text": "二千五百年前，柏拉图，苏格拉底， 亚力士多德，坐在雅典街头聊天，聊出了世界文明史的源头。\n\n背景可以加上他们聊天内容，按时间轴的走向，重叠在古希腊雅典的城市风光中。",
+      "tags": [
+        "竖版",
+        "古希腊",
+        "时间轴",
+        "暖褐色",
+        "城市叠加",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-b64fd49c03a8cb3e4589.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case375.jpg?wm=1"
+      ],
+      "originalText": "二千五百年前，柏拉图，苏格拉底， 亚力士多德，坐在雅典街头聊天，聊出了世界文明史的源头。\n\n背景可以加上他们聊天内容，按时间轴的走向，重叠在古希腊雅典的城市风光中。",
+      "source": {
+        "key": "prompt123-5353",
+        "subcategory": "历史与人文海报",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5353.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case375.jpg?wm=1",
+        "previewDimensions": [
+          1024,
+          1536
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "原文“亚力士多德”拼写按来源保留；时间轴作为视觉设计案例，未审核历史知识正确性。保留完整中文原文。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168218_i1w4vs_1794950168218_4jcpup.webp"
+    },
+    {
+      "key": "prompt123-3750",
+      "name": "肉酱意面｜俯拍流程食谱",
+      "category": "信息图与数据可视化",
+      "subcategory": "食谱与食材拆解",
+      "text": "为[bolognese pasta]（肉酱意面）创建逐步食谱信息图，俯视角度，白色背景的极简风格。食材照片标注“[x] g spaghetti”（[x]克意大利面），并自行添加其他必要食材。用虚线节点连线呈现制作步骤，配煮锅、搅拌等图标，底部放最终装盘意面照片。",
+      "tags": [
+        "方形",
+        "俯拍",
+        "白底",
+        "步骤",
+        "食材摄影",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-60dbf28007b0074cb1f4.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/example/nano_banana_prompts_full_images/infographic-and-design/161_nano-banana-pro-demo13.webp"
+      ],
+      "originalText": "Create step-by-step recipe infographic for [bolognese pasta], top-down view, minimal style on white background, ingredient photos labeled: \"[x] g spaghetti\", and other necessary ingredients (add them yourself), dotted node lines showing process steps with icons (boiling pot, mixing and others), final plated pasta shot at the bottom",
+      "source": {
+        "key": "prompt123-3750",
+        "subcategory": "食谱与食材拆解",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/3750.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/example/nano_banana_prompts_full_images/infographic-and-design/161_nano-banana-pro-demo13.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168223_4p2xnh_1794950168223_brjqdk.webp"
+    },
+    {
+      "key": "prompt123-3722",
+      "name": "深色分析面板｜三列指标卡",
+      "category": "UI与网页设计",
+      "subcategory": "数据仪表盘",
+      "text": "设计一张简洁时尚的SaaS分析仪表盘样机，16:9画幅。顶部标题栏用粗体无衬线写“Analytics Hub”。下方三列指标卡展示：用户增长（绿色）、参与率（蓝色）、收入（金色）。包含迷你趋势折线图、清晰字体，深色模式主题，背景有细微渐变。",
+      "tags": [
+        "横版",
+        "16:9",
+        "深色模式",
+        "迷你折线",
+        "指标卡",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-ae89fc070d2eb7af34a3.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/example/nano_banana_prompts_full_images/infographic-and-design/133_nano-banana-pro-demo112.webp"
+      ],
+      "originalText": "Design a sleek SaaS analytics dashboard mockup. 16:9 aspect ratio. Header bar at top with 'Analytics Hub' title in bold sans-serif. Three columns below with metric cards showing: user growth (green), engagement rate (blue), revenue (gold). Include sparkline charts, clean typography, dark mode theme with subtle gradient background.",
+      "source": {
+        "key": "prompt123-3722",
+        "subcategory": "数据仪表盘",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/3722.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/example/nano_banana_prompts_full_images/infographic-and-design/133_nano-banana-pro-demo112.webp",
+        "previewDimensions": [
+          1024,
+          572
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168226_0wj51k_1794950168226_rx0drm.webp"
+    },
+    {
+      "key": "prompt123-3712",
+      "name": "城市水彩｜旅行地图与地标",
+      "category": "插画设计",
+      "subcategory": "地图与旅行插画",
+      "text": "绘制[CITY]的柔和水彩旅行地图插画，展示风格化手绘的主要街区、公园、地标图标与道路。采用浅淡粉彩色调和有纹理的纸张颗粒。每个地标配小型手写标签，角落放装饰性指南针图标。标题“[CITY MAP]”用优雅的毛笔风格字呈现。",
+      "tags": [
+        "横版",
+        "水彩",
+        "粉彩",
+        "地图",
+        "纸张纹理",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-257fcc131628e7b5f574.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/example/nano_banana_prompts_full_images/infographic-and-design/123_nano-banana-pro-demo102.webp"
+      ],
+      "originalText": "Paint a soft watercolor travel-map illustration of [CITY], showing stylized hand-painted versions of key districts, parks, icons, and roads. Use washed-out pastel hues and textured paper grain. Small handwritten labels for each landmark, with a decorative compass icon in the corner. Title \"[CITY MAP]\" in elegant brush-style lettering.\n\nPaint a soft watercolor travel-map illustration of [CITY], showing stylized hand-painted versions of key districts, parks, icons, and roads. Use washed-out pastel hues and textured paper grain. Small handwritten labels for each landmark, with a decorative compass icon in the corner. Title “[CITY MAP]” in elegant brush-style lettering.",
+      "source": {
+        "key": "prompt123-3712",
+        "subcategory": "地图与旅行插画",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/3712.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/example/nano_banana_prompts_full_images/infographic-and-design/123_nano-banana-pro-demo102.webp",
+        "previewDimensions": [
+          2816,
+          1536
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "原文同段重复已合并；保留[CITY]和[CITY MAP]变量，例图为阿姆斯特丹。完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168230_w0b6lc_1794950168230_kqstyn.webp"
+    },
+    {
+      "key": "prompt123-5409",
+      "name": "城市字窗｜建筑全景文字组",
+      "category": "字体设计",
+      "subcategory": "几何与构成字组",
+      "text": "围绕[CITY NAME]设计超高分辨率文字旅行海报，16:9比例。\n重要：海报上每个可见词都必须为英文，拼写准确、专业排版。无扭曲字母、随机符号、残缺文字或AI乱码。\n核心构图：巨大的英文词“[CITY_NAME]”正面居中。每个字母都是高挑、粗重、狭长的无衬线字形，各自框住该城市不同的插画场景，如一排画廊窗户。把地标、街道、交通、自然、文化与建筑分布于字母之间，使场景从一个字母连到下一个，构成连续城市全景。\n顶部横条：一条窄全景带横贯上方，包含城市天际线剪影、汽车、电车或火车、合适时加入船只，以及鸟、云、太阳。保持极简、优雅、有节奏的平衡。\n风格：世纪中期现代编辑海报、瑞士平面设计、极简矢量插画、建筑信息图质感、旅行字体海报、扁平几何插画、极干净构图、高端杂志设计、丝网印刷海报氛围、复古未来旅行品牌视觉。\n插画：仅扁平矢量形状，无写实、渐变或噪点。干净几何阴影、简化建筑形体，结合地图式俯视与侧面城市景观。细微线稿细节、锐利矢量边缘、强负空间、字母间和谐节奏。\n字体：巨型粗体无衬线字，字母占画面大部分高度，像素级对齐。每个字母是独立的框景插画面板，合适处用柔和圆角，编辑级字距，印刷就绪且几何整洁。\n配色：从[CITY_NAME]提炼统一色板。海滨城市→水蓝、沙色、珊瑚色、低饱和青绿；沙漠城市→陶土、米色、暖奶油；科技城市→薄荷、海军蓝、钢蓝；欧洲历史城市→灰粉、橄榄绿、羊皮纸色。低饱和粉彩与复古旅行海报色，最多4—6色。\n内容：标志地标、著名街道与交通、本地城市纹理、周边自然、天际线、相关桥梁/河流/海岸、文化象征建筑和可辨识地方氛围。\n构图：白色或柔象牙底上居中文字，充足留白。顶部全景平衡下方厚重字体，不对称但视觉平衡，每个字母有独立景深与透视，博物馆级海报层级。\n情绪：高端、知性、平静、重设计、旅行编辑感，适合博物馆礼品店墙面。\n质量：8K精细、印刷就绪、锐利矢量边缘、准确字体，无扭曲文字、随机字符、拼写错误或AI瑕疵。",
+      "tags": [
+        "横版",
+        "16:9",
+        "英文字组",
+        "字内场景",
+        "旅行海报",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-504975ce76c5e45e82d8.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case431.jpg?wm=1"
+      ],
+      "originalText": "Ultra-high-resolution typography travel poster themed around [CITY NAME]. 16:9 poster ratio.\n\nIMPORTANT: every visible word on the poster must be in English, perfectly spelled, professionally typeset. No distorted letters, no random symbols, no broken text, no AI gibberish.\n\nCORE COMPOSITION:\nPlace the giant English word \"[CITY_NAME]\" front and center. Each letter is a tall, bold, elongated sans-serif form, and each one frames a different illustrated scene from the city, like a row of gallery windows. Spread landmarks, streets, transport, nature, culture, and architecture across the letters so the scenes flow from one letter into the next as a single connected urban panorama.\n\nTOP HORIZONTAL STRIP:\nAcross the top of the poster, a thin panoramic band: city skyline silhouettes, cars, trams or trains, boats where it fits, birds, clouds, sun. Keep it minimalist, elegant, rhythmically balanced.\n\nSTYLE: mid-century modern editorial poster, Swiss graphic design, minimal vector illustration, architectural infographic feel, travel typography poster, flat geometric illustration, ultra-clean composition, premium magazine design, screen-print poster vibe, retro-futuristic travel branding.\n\nILLUSTRATION:\nFlat vector shapes only. No realism, no gradients, no noise. Clean geometric shadows, simplified architectural forms, a mix of map-like top-down with side-view cityscape. Subtle line-art details, crisp vector edges, strong negative space, harmonious rhythm between the letters.\n\nTYPOGRAPHY:\nGiant bold sans-serif, letters fill most of the canvas height. Pixel-perfect alignment. Each letter acts as its own framed illustration panel. Soft rounded corners where it suits. Editorial spacing. Print-ready and geometrically clean.\n\nCOLOR PALETTE:\nPull a cohesive palette inspired by [CITY_NAME]:\ncoastal city -> aqua, sand, coral, muted teal\ndesert city -> terracotta, beige, warm cream\ncyber city -> mint, navy, steel blue\nhistoric European city -> dusty rose, olive green, parchment\nMuted pastels, soft vintage travel-poster colors, low saturation. Max 4 to 6 colors.\n\nCONTENT:\nInclude iconic landmarks, famous streets and transport, local urban patterns, nearby nature, skyline silhouettes, bridges/rivers/coastline if relevant, culturally symbolic architecture, recognizable local atmosphere.\n\nCOMPOSITION:\nCentered typography on a white or soft ivory background. Lots of breathing room. The top panoramic strip balances the heavy typography below. Asymmetrical but visually balanced. Each letter shows its own scene depth and perspective. Museum-quality poster hierarchy.\n\nMOOD: premium, intellectual, calm, design-forward, travel-editorial, stylish enough for a museum gift-shop wall.\n\nQUALITY: 8K ultra-detailed, print-ready, razor-sharp vector edges, flawless typography, zero distorted text, zero random characters, zero spelling errors, zero AI artifacts.",
+      "source": {
+        "key": "prompt123-5409",
+        "subcategory": "几何与构成字组",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5409.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case431.jpg?wm=1",
+        "previewDimensions": [
+          1080,
+          608
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留[CITY NAME]/[CITY_NAME]变量；原图示例为SINGAPORE，画面文字仍按来源要求为英文。完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168235_9p18fn_1794950168235_fmet8i.webp"
+    },
+    {
+      "key": "prompt123-5431",
+      "name": "工业品牌｜企业画册视觉系统",
+      "category": "品牌视觉设计",
+      "subcategory": "品牌系统与触点",
+      "text": "请生成一套企业级商用画册视觉方案，主题为【品牌名称】的【行业 / 产品 / 解决方案】宣传画册。\n\n整体风格：高端、专业、具有强视觉冲击力；避免传统 Word 排版感和普通 PPT 感。采用【深色科技美学 / 白色极简商务 / 高端工业风 / 艺术化品牌画册】风格。\n\n画册内容包括：\n1、封面与封底\n2、企业介绍与品牌理念\n3、核心产品与技术优势\n4、应用场景与解决方案\n5、客户案例与合作方式\n6、全册系统预览图\n\n要求：\n版式要有设计感，图片、标题、数据、图标、留白和层级关系清晰；保持整套画册统一的品牌视觉系统；重点体现真实商业物料的完成度，避免简单文字排版。\n\n结构规划：\n1、封面 / 封底：建立品牌门面、行业气质和整体视觉调性。\n2、企业介绍页：说明公司定位、能力边界和服务对象。\n3、产品技术页：展示核心产品、技术优势和解决方案。\n4、应用场景页：让用户看到产品能用在哪些行业。\n5、案例 / 合作页：补充可信度和商业转化信息。\n6、全册系统预览：验证风格统一性和整本画册的系统感。\n\n如果已有企业资料，可以上传旧版企业画册、公司介绍文档、产品说明书、官网内容、PPT 提案、产品图片或案例图片，让 ChatGPT 完成三件事：\n1、重新梳理内容结构，判断哪些内容适合做封面、企业介绍、产品页、案例页和合作页。\n2、提炼画册主线，避免只堆资料，需要形成清晰的商业叙事。\n3、统一视觉方向，让整本画册看起来像同一个品牌系统，避免不同页面拼贴感。\n\n避坑：\n1、避免一上来只说“生成一本画册”，否则容易变成模板图。\n2、避免只堆文字，画册一定要有产品视觉、场景图、数据模块和设计层级。\n3、避免只生成单页，最好补一张全册预览图，才能体现完整系统感。",
+      "tags": [
+        "竖版",
+        "工业",
+        "商业画册",
+        "系统预览",
+        "中文",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-3df70d956d970a618e15.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case453.jpg?wm=1"
+      ],
+      "originalText": "请生成一套企业级商用画册视觉方案，主题为【品牌名称】的【行业 / 产品 / 解决方案】宣传画册。\n\n整体风格：高端、专业、具有强视觉冲击力；避免传统 Word 排版感和普通 PPT 感。采用【深色科技美学 / 白色极简商务 / 高端工业风 / 艺术化品牌画册】风格。\n\n画册内容包括：\n1、封面与封底\n2、企业介绍与品牌理念\n3、核心产品与技术优势\n4、应用场景与解决方案\n5、客户案例与合作方式\n6、全册系统预览图\n\n要求：\n版式要有设计感，图片、标题、数据、图标、留白和层级关系清晰；保持整套画册统一的品牌视觉系统；重点体现真实商业物料的完成度，避免简单文字排版。\n\n结构规划：\n1、封面 / 封底：建立品牌门面、行业气质和整体视觉调性。\n2、企业介绍页：说明公司定位、能力边界和服务对象。\n3、产品技术页：展示核心产品、技术优势和解决方案。\n4、应用场景页：让用户看到产品能用在哪些行业。\n5、案例 / 合作页：补充可信度和商业转化信息。\n6、全册系统预览：验证风格统一性和整本画册的系统感。\n\n如果已有企业资料，可以上传旧版企业画册、公司介绍文档、产品说明书、官网内容、PPT 提案、产品图片或案例图片，让 ChatGPT 完成三件事：\n1、重新梳理内容结构，判断哪些内容适合做封面、企业介绍、产品页、案例页和合作页。\n2、提炼画册主线，避免只堆资料，需要形成清晰的商业叙事。\n3、统一视觉方向，让整本画册看起来像同一个品牌系统，避免不同页面拼贴感。\n\n避坑：\n1、避免一上来只说“生成一本画册”，否则容易变成模板图。\n2、避免只堆文字，画册一定要有产品视觉、场景图、数据模块和设计层级。\n3、避免只生成单页，最好补一张全册预览图，才能体现完整系统感。",
+      "source": {
+        "key": "prompt123-5431",
+        "subcategory": "品牌系统与触点",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5431.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case453.jpg?wm=1",
+        "previewDimensions": [
+          1086,
+          1448
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留品牌、行业与风格变量；原图示例为工业自动化品牌系统，图片式方案不等于可编辑PPT。保留完整中文原文。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      }
+    },
+    {
+      "key": "prompt123-5379",
+      "name": "LOST IN｜旅行文化拼贴",
+      "category": "海报设计",
+      "subcategory": "文旅与城市海报",
+      "text": "为[country]创建风格化旅行海报/图形拼贴。主体是一位正在游览[country]的时尚国际游客，清楚表现为旅行者。游客穿现代旅行时装，带相机、背包、墨镜、地图或行李箱等细节，探索[country]的文化与氛围。\n把游客放入动态构图，四周是与[country]相关的标志建筑、街道、风景、地标、交通、食物、标识与文化元素。写实人物细节与图形拼贴背景融合：层叠纸张纹理、撕裂海报边缘、贴纸元素、半色调网点、编辑排版和大胆几何形状。\n纳入[country]的真实视觉母题，同时让游客保持国际时尚外观，清楚显示其来自当地之外。加入大而可读的标题：“LOST IN [country]”。现代、艺术、高端编辑旅行海报美学，均衡布局，适合印刷的构图。",
+      "tags": [
+        "竖版",
+        "拼贴",
+        "游客",
+        "地标",
+        "纸张纹理",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-14ffc66ff5dc7899b8b4.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case401.jpg?wm=1"
+      ],
+      "originalText": "Create a stylized travel poster / graphic collage for [country]. The main subject should be a stylish international tourist visiting [country], clearly presented as a traveler and not a local resident. Show the tourist wearing modern travel fashion, with details such as a camera, backpack, sunglasses, map, or suitcase, exploring the culture and atmosphere of [country]. Place the tourist in a dynamic composition surrounded by iconic architecture, streets, landscapes, landmarks, transportation, food, signage, and cultural elements associated with [country]. Blend realistic character detail with a graphic collage background made of layered paper textures, torn poster edges, sticker elements, halftone dots, editorial typography, and bold geometric shapes. Include authentic visual motifs from [country], but keep the tourist's appearance and styling globally fashionable and clearly foreign to the setting. Add a large readable headline: \"LOST IN [country]\". Modern, artistic, premium editorial travel poster aesthetic, balanced layout, print-worthy composition.",
+      "source": {
+        "key": "prompt123-5379",
+        "subcategory": "文旅与城市海报",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5379.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case401.jpg?wm=1",
+        "previewDimensions": [
+          720,
+          900
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留[country]变量，例图为巴西旅行拼贴。完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168241_9kizaj_1794950168241_uxgnkg.webp"
+    },
+    {
+      "key": "prompt123-5311",
+      "name": "AI眼镜｜组件与卖点爆炸图",
+      "category": "信息图与数据可视化",
+      "subcategory": "科技与工程图解",
+      "text": "生成一张AI眼镜的爆炸视图，包含每个组件的名称以及这款产品的几大核心卖点。",
+      "tags": [
+        "横版",
+        "产品拆解",
+        "中文",
+        "组件标注",
+        "白底",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-df733a40963a45c1fc34.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case333.png?wm=1"
+      ],
+      "originalText": "生成一张AI眼镜的爆炸视图，包含每个组件的名称以及这款产品的几大核心卖点。",
+      "source": {
+        "key": "prompt123-5311",
+        "subcategory": "科技与工程图解",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5311.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case333.png?wm=1",
+        "previewDimensions": [
+          1536,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留完整中文原文。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168251_j7tr2w_1794950168251_nn27tf.webp"
+    },
+    {
+      "key": "prompt123-5319",
+      "name": "数学直觉｜手绘知识讲义",
+      "category": "信息图与数据可视化",
+      "subcategory": "教学与知识图谱",
+      "text": "请围绕“[math concept / topic]”创建数学可视化信息图。目标是让读者直观理解它是什么、为何成立、几何或结构上的直觉，以及在不同情境下的表现。视觉应像高质量数学讲义与手绘教育海报的结合，优雅、清晰、信息丰富但不杂乱。\n竖版或横版均可。干净的浅色纸张背景，深蓝标题，主要内容用黑色或深灰线条。加入少量精致的蓝、青绿、金和红色点缀。采用圆角卡片、细边框、编号标签、手绘箭头、放大说明框与总结区。\n整体美观、均衡、有学术气质，让读者一眼把握概念结构与成立原因。",
+      "tags": [
+        "横版",
+        "手绘",
+        "讲义",
+        "编号",
+        "知识结构",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-3c5aac3f74ed2d3d6717.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case341.jpg?wm=1"
+      ],
+      "originalText": "Please create a mathematical visualization infographic about \"[math concept / topic].\" The goal is to help the viewer intuitively understand what it is, why it works, its geometric or structural intuition, and how it behaves in different contexts. The visual should feel like a high-quality math lecture handout combined with a hand-drawn educational poster. It should be elegant, clear, and information-rich, but not cluttered. Visual style: either portrait or landscape is fine. Use a clean, light paper-like background, with a deep blue title and black or dark gray lines for the main content. Add a small number of refined accent colors such as blue, teal, gold, and red. Incorporate rounded-corner cards, thin borders, numbered labels, hand-drawn arrows, zoom-in callout boxes, and a summary section. The overall design should be aesthetically pleasing, balanced, and academic, allowing the viewer to grasp the structure of the concept and why it works at a glance.",
+      "source": {
+        "key": "prompt123-5319",
+        "subcategory": "教学与知识图谱",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5319.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case341.jpg?wm=1",
+        "previewDimensions": [
+          1536,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "保留数学主题变量，原图示例为极限性质；未校验图中所有数学推导。完整英文正文翻译为中文；画面指定文本及变量保留。 来源对应例图，未在本机重新生图；跨模型效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168255_41zz9b_1794950168255_ttq5de.webp"
+    },
+    {
+      "key": "publicprompts-needle-felted-0bjects",
+      "name": "羊毛毡青蛙｜纤维与毛线玩偶",
+      "category": "IP与角色设计",
+      "subcategory": "潮玩与玩偶",
+      "text": "微小可爱的3D羊毛毡纤维青蛙玩具，由毡纤维制成，3D渲染，CGSociety热门风格，以Maya渲染、Cinema4D渲染，毛线制作，方形图像。\n\n来源参数：CFG 13；采样器 DDIM；步数 25。",
+      "tags": [
+        "方形",
+        "羊毛毡",
+        "纤维",
+        "玩偶",
+        "Public Prompts",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-701fc1c19a06a5b677d4.webp",
+      "exampleImages": [
+        "https://www.publicprompts.art/generated/media/6332af7df0d0ff3673f4.webp"
+      ],
+      "originalText": "tiny cute 3D felt fiber toy frog, made from Felt fibers, a 3D render, trending on cgsociety, rendered in maya, rendered in cinema4d, made of yarn, square image",
+      "source": {
+        "key": "publicprompts-needle-felted-0bjects",
+        "subcategory": "潮玩与玩偶",
+        "author": "原页面未署名创作者",
+        "url": "https://www.publicprompts.art/prompts/needle-felted-0bjects",
+        "collection": "Public Prompts",
+        "collectionUrl": "https://www.publicprompts.art/prompts",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://www.publicprompts.art/generated/media/6332af7df0d0ff3673f4.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Stable Diffusion（未注明checkpoint版本）",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "英文完整翻译。保留来源推荐采样器、CFG和步数；从Gallery挑选与主体一致的单例，保留原图。 来源对应例图，未在本机重新生图；跨模型效果可能不同。",
+        "parameters": {
+          "cfg": "13",
+          "sampler": "DDIM",
+          "steps": 25
+        }
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168258_sfhtvh_1794950168259_pitn7c.webp"
+    },
+    {
+      "key": "publicprompts-cute-stuffed-animals",
+      "name": "软绒大象｜真实缝线玩偶",
+      "category": "IP与角色设计",
+      "subcategory": "潮玩与玩偶",
+      "text": "可爱萌系柔软大象毛绒玩具，真实纹理，可见缝线，柔和顺滑的光线，鲜明影棚照明，模块化构成主义，基于物理的渲染，方形图像。\n\n来源参数：CFG 13；采样器 DDIM；步数 35。",
+      "tags": [
+        "方形",
+        "毛绒",
+        "缝线",
+        "影棚光",
+        "Public Prompts",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-99dedad5ac21183dbdb4.webp",
+      "exampleImages": [
+        "https://www.publicprompts.art/generated/media/b652822d9e8410f2b739.webp"
+      ],
+      "originalText": "cute kawaii Squishy elephant plush toy, realistic texture, visible stitch line, soft smooth lighting, vibrant studio lighting, modular constructivism, physically based rendering, square image",
+      "source": {
+        "key": "publicprompts-cute-stuffed-animals",
+        "subcategory": "潮玩与玩偶",
+        "author": "原页面未署名创作者",
+        "url": "https://www.publicprompts.art/prompts/cute-stuffed-animals",
+        "collection": "Public Prompts",
+        "collectionUrl": "https://www.publicprompts.art/prompts",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://www.publicprompts.art/generated/media/b652822d9e8410f2b739.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Stable Diffusion（未注明checkpoint版本）",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "英文完整翻译。保留来源推荐采样器、CFG和步数；从Gallery挑选与主体一致的单例，保留原图。 来源对应例图，未在本机重新生图；跨模型效果可能不同。",
+        "parameters": {
+          "cfg": "13",
+          "sampler": "DDIM",
+          "steps": 35
+        }
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168262_9wf9n1_1794950168262_h71x70.webp"
+    },
+    {
+      "key": "publicprompts-cute-creatures",
+      "name": "绒毛羊驼｜圆眼近景角色",
+      "category": "IP与角色设计",
+      "subcategory": "可爱与拟人角色",
+      "text": "3D毛茸茸的羊驼，可爱讨喜的近景，大而圆的反光眼睛，长绒毛，皮克斯渲染风格，虚幻引擎电影级柔滑效果，复杂细节，电影感。\n\n来源参数：CFG 10-15；采样器 k_euler_a；步数 50。",
+      "tags": [
+        "方形",
+        "绒毛",
+        "圆眼",
+        "3D",
+        "电影光线",
+        "Public Prompts",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d4efa44f5d404b3ea0b2.webp",
+      "exampleImages": [
+        "https://www.publicprompts.art/generated/media/5b0c885633ca188af682.webp"
+      ],
+      "originalText": "3d fluffy llama, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic",
+      "source": {
+        "key": "publicprompts-cute-creatures",
+        "subcategory": "可爱与拟人角色",
+        "author": "原页面未署名创作者",
+        "url": "https://www.publicprompts.art/prompts/cute-creatures",
+        "collection": "Public Prompts",
+        "collectionUrl": "https://www.publicprompts.art/prompts",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://www.publicprompts.art/generated/media/5b0c885633ca188af682.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Stable Diffusion（未注明checkpoint版本）",
+        "batch": "design-curation-2026-11-18-0500",
+        "collectedAt": "2026-11-18",
+        "verifiedPair": true,
+        "note": "英文完整翻译。保留来源推荐采样器、CFG和步数；从Gallery挑选与主体一致的单例，保留原图。 来源对应例图，未在本机重新生图；跨模型效果可能不同。",
+        "parameters": {
+          "cfg": "10-15",
+          "sampler": "k_euler_a",
+          "steps": 50
+        }
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1794950168265_jz1mdy_1794950168265_64c71t.webp"
+    }
+  ]
+}

@@ -1,0 +1,1592 @@
+{
+  "scope": "/tmp/font-daily-1122",
+  "persistentCards": 65,
+  "persistentFilesVerified": true,
+  "removedFiles": [
+    {
+      "file": "/tmp/font-daily-1122/624305-0.jpg",
+      "bytes": 60658
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-1.jpg",
+      "bytes": 378683
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-2.jpg",
+      "bytes": 100166
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-1.jpg",
+      "bytes": 260556
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-2.jpg",
+      "bytes": 556250
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-1.jpg",
+      "bytes": 174958
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-9.jpg",
+      "bytes": 171566
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-11.jpg",
+      "bytes": 52340
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-10.jpg",
+      "bytes": 40070
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-8.jpg",
+      "bytes": 184100
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-0.jpg",
+      "bytes": 334070
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-3.jpg",
+      "bytes": 483458
+    },
+    {
+      "file": "/tmp/font-daily-1122/z35646-sheet.jpg",
+      "bytes": 90459
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-0.jpg",
+      "bytes": 239473
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-3.jpg",
+      "bytes": 32506
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-0.jpg",
+      "bytes": 466626
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-1.jpg",
+      "bytes": 82722
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-3.jpg",
+      "bytes": 54368
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-2.jpg",
+      "bytes": 440973
+    },
+    {
+      "file": "/tmp/font-daily-1122/export-35646.json",
+      "bytes": 1102490
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-1.jpg",
+      "bytes": 40138
+    },
+    {
+      "file": "/tmp/font-daily-1122/z35646-5.png",
+      "bytes": 233484
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-8.jpg",
+      "bytes": 106474
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-8.jpg",
+      "bytes": 233090
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-2.jpg",
+      "bytes": 319789
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-2.jpg",
+      "bytes": 89632
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-1.jpg",
+      "bytes": 350590
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-12.jpg",
+      "bytes": 38950
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-13.jpg",
+      "bytes": 93694
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-0.jpg",
+      "bytes": 189508
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-3.jpg",
+      "bytes": 105904
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-9.jpg",
+      "bytes": 147139
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-3.jpg",
+      "bytes": 299768
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-9.jpg",
+      "bytes": 108906
+    },
+    {
+      "file": "/tmp/font-daily-1122/z35646-4.png",
+      "bytes": 116531
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-0.jpg",
+      "bytes": 45218
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-sheet0.jpg",
+      "bytes": 200642
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-3.jpg",
+      "bytes": 458426
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-2.jpg",
+      "bytes": 81756
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-7.jpg",
+      "bytes": 440262
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-6.jpg",
+      "bytes": 42884
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-4.jpg",
+      "bytes": 78318
+    },
+    {
+      "file": "/tmp/font-daily-1122/z35646-0.png",
+      "bytes": 146328
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-sheet0.jpg",
+      "bytes": 168669
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-7.jpg",
+      "bytes": 281446
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-7.jpg",
+      "bytes": 81668
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-4.jpg",
+      "bytes": 459468
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-sheet0.jpg",
+      "bytes": 170989
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-9.jpg",
+      "bytes": 244146
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-17.jpg",
+      "bytes": 35560
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-16.jpg",
+      "bytes": 33488
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-8.jpg",
+      "bytes": 243892
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-5.jpg",
+      "bytes": 317398
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-6.jpg",
+      "bytes": 100116
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-sheet0.jpg",
+      "bytes": 244411
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-6.jpg",
+      "bytes": 316491
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-sheet2.jpg",
+      "bytes": 62409
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-sheet1.jpg",
+      "bytes": 52430
+    },
+    {
+      "file": "/tmp/font-daily-1122/z35646-1.png",
+      "bytes": 98890
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-5.jpg",
+      "bytes": 32040
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-7.jpg",
+      "bytes": 57932
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-6.jpg",
+      "bytes": 480868
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-4.jpg",
+      "bytes": 440104
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-5.jpg",
+      "bytes": 60190
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-7.jpg",
+      "bytes": 41984
+    },
+    {
+      "file": "/tmp/font-daily-1122/z35646-3.png",
+      "bytes": 85607
+    },
+    {
+      "file": "/tmp/font-daily-1122/corrected-review.jpg",
+      "bytes": 160833
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-sheet0.jpg",
+      "bytes": 138471
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-4.jpg",
+      "bytes": 254202
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-7.jpg",
+      "bytes": 129760
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-4.jpg",
+      "bytes": 85906
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-sheet0.jpg",
+      "bytes": 215631
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-14.jpg",
+      "bytes": 36104
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-15.jpg",
+      "bytes": 102154
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-5.jpg",
+      "bytes": 177770
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-6.jpg",
+      "bytes": 312582
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-sheet1.jpg",
+      "bytes": 153432
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-5.jpg",
+      "bytes": 315254
+    },
+    {
+      "file": "/tmp/font-daily-1122/z35646-2.png",
+      "bytes": 145427
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-6.jpg",
+      "bytes": 50094
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-4.jpg",
+      "bytes": 50370
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-5.jpg",
+      "bytes": 461871
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-4.jpg",
+      "bytes": 39764
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-10.jpg",
+      "bytes": 161526
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-sheet0.jpg",
+      "bytes": 207072
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-6.jpg",
+      "bytes": 56290
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-20.jpg",
+      "bytes": 229594
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-10.jpg",
+      "bytes": 30542
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-1.jpg",
+      "bytes": 84994
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-sheet1.jpg",
+      "bytes": 150724
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-0.jpg",
+      "bytes": 232240
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-11.jpg",
+      "bytes": 52890
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-sheet0.jpg",
+      "bytes": 170276
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-21.jpg",
+      "bytes": 244762
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-sheet1.jpg",
+      "bytes": 108740
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-7.jpg",
+      "bytes": 47756
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-11.jpg",
+      "bytes": 201906
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-5.jpg",
+      "bytes": 72002
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-8.jpg",
+      "bytes": 175148
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-7.jpg",
+      "bytes": 64082
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-15.jpg",
+      "bytes": 309609
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-5.jpg",
+      "bytes": 70028
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-23.jpg",
+      "bytes": 244703
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-sheet0.jpg",
+      "bytes": 165965
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-sheet2.jpg",
+      "bytes": 20880
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-13.jpg",
+      "bytes": 60352
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-2.jpg",
+      "bytes": 106750
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-3.jpg",
+      "bytes": 72048
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-12.jpg",
+      "bytes": 35662
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-22.jpg",
+      "bytes": 239909
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-4.jpg",
+      "bytes": 46990
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-14.jpg",
+      "bytes": 213326
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-6.jpg",
+      "bytes": 37124
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-sheet0.jpg",
+      "bytes": 163333
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-9.jpg",
+      "bytes": 202794
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-10.jpg",
+      "bytes": 211393
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-2.jpg",
+      "bytes": 46890
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-10.jpg",
+      "bytes": 281463
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-sheet0.jpg",
+      "bytes": 214866
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-0.jpg",
+      "bytes": 143504
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-16.jpg",
+      "bytes": 32712
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-7.jpg",
+      "bytes": 91150
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-6.jpg",
+      "bytes": 81604
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-17.jpg",
+      "bytes": 49540
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-1.jpg",
+      "bytes": 37002
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-8.jpg",
+      "bytes": 104592
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-11.jpg",
+      "bytes": 291973
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-3.jpg",
+      "bytes": 69664
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-8.jpg",
+      "bytes": 84588
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-1.jpg",
+      "bytes": 86202
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-8.jpg",
+      "bytes": 50192
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-13.jpg",
+      "bytes": 303988
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-19.jpg",
+      "bytes": 261342
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-3.jpg",
+      "bytes": 46950
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-15.jpg",
+      "bytes": 55558
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-4.jpg",
+      "bytes": 41332
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-5.jpg",
+      "bytes": 82832
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-14.jpg",
+      "bytes": 42626
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-2.jpg",
+      "bytes": 41632
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-18.jpg",
+      "bytes": 244652
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-24.jpg",
+      "bytes": 259847
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-12.jpg",
+      "bytes": 295047
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-9.jpg",
+      "bytes": 73298
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-0.jpg",
+      "bytes": 41894
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-sheet0.jpg",
+      "bytes": 162762
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-2.jpg",
+      "bytes": 176322
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-0.jpg",
+      "bytes": 344388
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-4.jpg",
+      "bytes": 174626
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-4.jpg",
+      "bytes": 58740
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-6.jpg",
+      "bytes": 91274
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-15.jpg",
+      "bytes": 254521
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-8.jpg",
+      "bytes": 179366
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-14.jpg",
+      "bytes": 227413
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-7.jpg",
+      "bytes": 132976
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-5.jpg",
+      "bytes": 96832
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-5.jpg",
+      "bytes": 102210
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-1.jpg",
+      "bytes": 276375
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-3.jpg",
+      "bytes": 163835
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-1.jpg",
+      "bytes": 167288
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-3.jpg",
+      "bytes": 435475
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-7.jpg",
+      "bytes": 102730
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-7.jpg",
+      "bytes": 53270
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-sheet0.jpg",
+      "bytes": 253147
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-5.jpg",
+      "bytes": 82108
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-16.jpg",
+      "bytes": 287778
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-sheet0.jpg",
+      "bytes": 225091
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-17.jpg",
+      "bytes": 257497
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-sheet0.jpg",
+      "bytes": 215644
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-4.jpg",
+      "bytes": 111556
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-sheet1.jpg",
+      "bytes": 67899
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-6.jpg",
+      "bytes": 73570
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-6.jpg",
+      "bytes": 175136
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-2.jpg",
+      "bytes": 364858
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-0.jpg",
+      "bytes": 306229
+    },
+    {
+      "file": "/tmp/font-daily-1122/672780-sheet0.jpg",
+      "bytes": 218935
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-4.jpg",
+      "bytes": 179635
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-6.jpg",
+      "bytes": 398634
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-2.jpg",
+      "bytes": 160934
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-0.jpg",
+      "bytes": 182240
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-2.jpg",
+      "bytes": 76126
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-13.jpg",
+      "bytes": 280047
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-9.jpg",
+      "bytes": 61010
+    },
+    {
+      "file": "/tmp/font-daily-1122/644226-8.jpg",
+      "bytes": 54518
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-12.jpg",
+      "bytes": 226226
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-3.jpg",
+      "bytes": 55248
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-1.jpg",
+      "bytes": 89446
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-3.jpg",
+      "bytes": 133364
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-7.jpg",
+      "bytes": 308762
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-5.jpg",
+      "bytes": 178767
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-7.jpg",
+      "bytes": 190442
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-5.jpg",
+      "bytes": 286465
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-10.jpg",
+      "bytes": 458348
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-8.jpg",
+      "bytes": 37314
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-1.jpg",
+      "bytes": 245116
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-3.jpg",
+      "bytes": 94214
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-1.jpg",
+      "bytes": 84008
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-10.jpg",
+      "bytes": 228071
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-11.jpg",
+      "bytes": 237817
+    },
+    {
+      "file": "/tmp/font-daily-1122/660015-0.jpg",
+      "bytes": 127770
+    },
+    {
+      "file": "/tmp/font-daily-1122/690343-2.jpg",
+      "bytes": 112040
+    },
+    {
+      "file": "/tmp/font-daily-1122/659394-0.jpg",
+      "bytes": 332088
+    },
+    {
+      "file": "/tmp/font-daily-1122/643550-9.jpg",
+      "bytes": 61130
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-4.jpg",
+      "bytes": 397446
+    },
+    {
+      "file": "/tmp/font-daily-1122/574294-6.jpg",
+      "bytes": 193100
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-9.jpg",
+      "bytes": 55996
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-8.jpg",
+      "bytes": 421371
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-10.jpg",
+      "bytes": 111348
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-2.jpg",
+      "bytes": 107366
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-2.jpg",
+      "bytes": 115057
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-8.jpg",
+      "bytes": 308906
+    },
+    {
+      "file": "/tmp/font-daily-1122/674828-8.jpg",
+      "bytes": 87842
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-0.jpg",
+      "bytes": 361275
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-24.jpg",
+      "bytes": 44240
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-6.jpg",
+      "bytes": 255311
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-18.jpg",
+      "bytes": 88380
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-19.jpg",
+      "bytes": 33538
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-7.jpg",
+      "bytes": 244135
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-25.jpg",
+      "bytes": 71778
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-1.jpg",
+      "bytes": 145586
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-3.jpg",
+      "bytes": 250230
+    },
+    {
+      "file": "/tmp/font-daily-1122/601339-9.jpg",
+      "bytes": 334881
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-3.jpg",
+      "bytes": 106380
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-11.jpg",
+      "bytes": 111172
+    },
+    {
+      "file": "/tmp/font-daily-1122/576955-9.jpg",
+      "bytes": 403423
+    },
+    {
+      "file": "/tmp/font-daily-1122/624305-8.jpg",
+      "bytes": 103426
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-13.jpg",
+      "bytes": 115096
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-8.jpg",
+      "bytes": 100516
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-1.jpg",
+      "bytes": 113820
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-1.jpg",
+      "bytes": 107076
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-8.jpg",
+      "bytes": 257846
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-3.jpg",
+      "bytes": 226596
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-27.jpg",
+      "bytes": 170924
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-5.jpg",
+      "bytes": 247252
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-4.jpg",
+      "bytes": 236572
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-26.jpg",
+      "bytes": 93676
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-2.jpg",
+      "bytes": 147468
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-9.jpg",
+      "bytes": 197192
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-0.jpg",
+      "bytes": 155885
+    },
+    {
+      "file": "/tmp/font-daily-1122/617008-sheet0.jpg",
+      "bytes": 171560
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-0.jpg",
+      "bytes": 110824
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-9.jpg",
+      "bytes": 33546
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-12.jpg",
+      "bytes": 99796
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-4.jpg",
+      "bytes": 105970
+    },
+    {
+      "file": "/tmp/font-daily-1122/689366-sheet0.jpg",
+      "bytes": 193130
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-4.jpg",
+      "bytes": 269023
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-6.jpg",
+      "bytes": 237554
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-0.jpg",
+      "bytes": 646491
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-22.jpg",
+      "bytes": 108618
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-23.jpg",
+      "bytes": 85244
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-1.jpg",
+      "bytes": 253259
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-7.jpg",
+      "bytes": 216767
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-5.jpg",
+      "bytes": 271248
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-5.jpg",
+      "bytes": 103846
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-7.jpg",
+      "bytes": 118592
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-7.jpg",
+      "bytes": 165108
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-5.jpg",
+      "bytes": 154536
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-3.jpg",
+      "bytes": 248872
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-21.jpg",
+      "bytes": 42786
+    },
+    {
+      "file": "/tmp/font-daily-1122/629164-20.jpg",
+      "bytes": 61686
+    },
+    {
+      "file": "/tmp/font-daily-1122/576731-2.jpg",
+      "bytes": 254259
+    },
+    {
+      "file": "/tmp/font-daily-1122/608768-4.jpg",
+      "bytes": 167121
+    },
+    {
+      "file": "/tmp/font-daily-1122/620145-6.jpg",
+      "bytes": 190517
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-6.jpg",
+      "bytes": 106326
+    },
+    {
+      "file": "/tmp/font-daily-1122/636653-14.jpg",
+      "bytes": 111218
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/049.webp",
+      "bytes": 74424
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/008.webp",
+      "bytes": 81786
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/024.webp",
+      "bytes": 510550
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/065.webp",
+      "bytes": 66498
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/032.webp",
+      "bytes": 330714
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/045.webp",
+      "bytes": 155226
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/012.webp",
+      "bytes": 29314
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/004.webp",
+      "bytes": 64860
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/053.webp",
+      "bytes": 76012
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/028.webp",
+      "bytes": 504532
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/029.webp",
+      "bytes": 473346
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/052.webp",
+      "bytes": 17844
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/005.webp",
+      "bytes": 92300
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/013.webp",
+      "bytes": 24644
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/044.webp",
+      "bytes": 88162
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/033.webp",
+      "bytes": 70488
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/064.webp",
+      "bytes": 82758
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/025.webp",
+      "bytes": 793910
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/009.webp",
+      "bytes": 93708
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/048.webp",
+      "bytes": 69006
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/043.webp",
+      "bytes": 88430
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/014.webp",
+      "bytes": 25948
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/002.webp",
+      "bytes": 58496
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/055.webp",
+      "bytes": 88248
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/038.webp",
+      "bytes": 67150
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/018.webp",
+      "bytes": 19250
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/059.webp",
+      "bytes": 61952
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/022.webp",
+      "bytes": 27368
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/063.webp",
+      "bytes": 55146
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/034.webp",
+      "bytes": 104884
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/035.webp",
+      "bytes": 79288
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/062.webp",
+      "bytes": 36920
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/023.webp",
+      "bytes": 81834
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/058.webp",
+      "bytes": 40334
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/019.webp",
+      "bytes": 25906
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/039.webp",
+      "bytes": 129574
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/054.webp",
+      "bytes": 65834
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/003.webp",
+      "bytes": 60790
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/015.webp",
+      "bytes": 15656
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/contact.jpg",
+      "bytes": 922205
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/042.webp",
+      "bytes": 91886
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/057.webp",
+      "bytes": 77788
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/016.webp",
+      "bytes": 16076
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/041.webp",
+      "bytes": 201016
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/036.webp",
+      "bytes": 112616
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/061.webp",
+      "bytes": 67580
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/020.webp",
+      "bytes": 26256
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/021.webp",
+      "bytes": 57740
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/060.webp",
+      "bytes": 59818
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/037.webp",
+      "bytes": 53302
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/040.webp",
+      "bytes": 78730
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/017.webp",
+      "bytes": 17808
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/001.webp",
+      "bytes": 51294
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/056.webp",
+      "bytes": 58300
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/030.webp",
+      "bytes": 242670
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/026.webp",
+      "bytes": 724228
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/051.webp",
+      "bytes": 56842
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/006.webp",
+      "bytes": 76562
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/010.webp",
+      "bytes": 28510
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/047.webp",
+      "bytes": 54456
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/046.webp",
+      "bytes": 51734
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/011.webp",
+      "bytes": 12546
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/007.webp",
+      "bytes": 69902
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/050.webp",
+      "bytes": 109846
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/027.webp",
+      "bytes": 694594
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops/031.webp",
+      "bytes": 419312
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/049.webp",
+      "bytes": 74424
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/008.webp",
+      "bytes": 81786
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/024.webp",
+      "bytes": 510550
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/065.webp",
+      "bytes": 66498
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/032.webp",
+      "bytes": 330714
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/045.webp",
+      "bytes": 155226
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/012.webp",
+      "bytes": 29314
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/004.webp",
+      "bytes": 64860
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/053.webp",
+      "bytes": 76012
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/028.webp",
+      "bytes": 504532
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/029.webp",
+      "bytes": 473346
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/052.webp",
+      "bytes": 17844
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/005.webp",
+      "bytes": 92300
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/013.webp",
+      "bytes": 24644
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/044.webp",
+      "bytes": 88162
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/033.webp",
+      "bytes": 70488
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/064.webp",
+      "bytes": 82758
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/025.webp",
+      "bytes": 793910
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/009.webp",
+      "bytes": 93708
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/048.webp",
+      "bytes": 63052
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/043.webp",
+      "bytes": 88430
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/014.webp",
+      "bytes": 25948
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/002.webp",
+      "bytes": 58496
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/055.webp",
+      "bytes": 88248
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/038.webp",
+      "bytes": 67150
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/018.webp",
+      "bytes": 19250
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/059.webp",
+      "bytes": 61952
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/022.webp",
+      "bytes": 27368
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/063.webp",
+      "bytes": 55146
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/034.webp",
+      "bytes": 104884
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/035.webp",
+      "bytes": 79288
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/062.webp",
+      "bytes": 36920
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/023.webp",
+      "bytes": 81834
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/058.webp",
+      "bytes": 40334
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/019.webp",
+      "bytes": 25906
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/039.webp",
+      "bytes": 129574
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/054.webp",
+      "bytes": 65834
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/003.webp",
+      "bytes": 60790
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/015.webp",
+      "bytes": 15656
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/contact.jpg",
+      "bytes": 926905
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/042.webp",
+      "bytes": 91886
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/057.webp",
+      "bytes": 77788
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/016.webp",
+      "bytes": 16076
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/041.webp",
+      "bytes": 194728
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/036.webp",
+      "bytes": 112616
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/061.webp",
+      "bytes": 67580
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/020.webp",
+      "bytes": 26256
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/021.webp",
+      "bytes": 57740
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/060.webp",
+      "bytes": 59818
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/037.webp",
+      "bytes": 53302
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/040.webp",
+      "bytes": 78730
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/017.webp",
+      "bytes": 17808
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/001.webp",
+      "bytes": 51294
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/056.webp",
+      "bytes": 58300
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/030.webp",
+      "bytes": 242670
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/026.webp",
+      "bytes": 724228
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/051.webp",
+      "bytes": 56842
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/006.webp",
+      "bytes": 76562
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/010.webp",
+      "bytes": 28510
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/047.webp",
+      "bytes": 50668
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/046.webp",
+      "bytes": 46662
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/011.webp",
+      "bytes": 12546
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/007.webp",
+      "bytes": 69902
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/050.webp",
+      "bytes": 109846
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/027.webp",
+      "bytes": 694594
+    },
+    {
+      "file": "/tmp/font-daily-1122/crops-v2/031.webp",
+      "bytes": 419312
+    }
+  ],
+  "removedBytes": 64448740
+}

@@ -1,0 +1,800 @@
+{
+  "batch": "优设多风格精选-2026-11-18",
+  "collectedAt": "2026-11-18",
+  "acquisition": "现有Chrome导航优设分类页；Apple事件JS不可读，使用公开HTML完整正文与作者署名、原图访问进行核对。无登录/付费绕过。",
+  "cards": [
+    {
+      "number": 1,
+      "sourceFile": "/tmp/font-curation-1118/675654-Typography-20260703-02.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1920
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "海鸥岛 · 海鸥意象细线字标",
+      "sampleText": "海鸥岛",
+      "group": "语义图形",
+      "style": "海鸥意象细线字标",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "细线",
+        "海岛",
+        "中英组合"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "4套字体设计灵感！标题字这样做更有辨识度",
+      "sourceUrl": "https://www.uisdc.com/group/675654.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/Typography-20260703-02.webp",
+      "description": "【字形与构成】用连续弧线与倾斜直线组织细线汉字，把圆角转折、海鸥照片和英文SEAGULL叠为海岛意象。\n【配色与字效】白底黑字，低饱和灰色海鸥；以留白形成轻盈感。\n【适用场景】海岛旅行品牌、海滨民宿、文艺活动标识\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】4套字体设计灵感！标题字这样做更有辨识度\n【来源】https://www.uisdc.com/group/675654.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/Typography-20260703-02.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1920]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计海鸥意象细线字标。用连续弧线与倾斜直线组织细线汉字，把圆角转折、海鸥照片和英文SEAGULL叠为海岛意象。白底黑字，低饱和灰色海鸥；以留白形成轻盈感。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于海岛旅行品牌、海滨民宿、文艺活动标识。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_4b66f518ecb4b3fdb1432efa6add2d38238057c5d9c7c9a98420eba4af369c5d.webp",
+      "cardId": "1cc0a8c0-056f-4ae7-a96b-a0349c04528d"
+    },
+    {
+      "number": 2,
+      "sourceFile": "/tmp/font-curation-1118/675654-Typography-20260703-03.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1920
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "模样 · 尖角缺口粗黑标题",
+      "sampleText": "模样",
+      "group": "几何构成",
+      "style": "尖角缺口粗黑标题",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "切角",
+        "粗黑",
+        "锐角"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "4套字体设计灵感！标题字这样做更有辨识度",
+      "sourceUrl": "https://www.uisdc.com/group/675654.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/Typography-20260703-03.webp",
+      "description": "【字形与构成】粗黑汉字横向紧排，在端点和转折处切出三角缺口；大块黑白关系形成利落的视觉节奏。\n【配色与字效】黑底白字，英文副标与括号小字集中置于主标题下方。\n【适用场景】潮流品牌、青年展览、个性刊物封面\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】4套字体设计灵感！标题字这样做更有辨识度\n【来源】https://www.uisdc.com/group/675654.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/Typography-20260703-03.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1920]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计尖角缺口粗黑标题。粗黑汉字横向紧排，在端点和转折处切出三角缺口；大块黑白关系形成利落的视觉节奏。黑底白字，英文副标与括号小字集中置于主标题下方。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于潮流品牌、青年展览、个性刊物封面。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_b5b0f8d1d87fab0887b533c73ef131cf1cc45783df29054bcceda5b2e44edf16.webp",
+      "cardId": "63e97d2f-8378-4b5e-b4e8-ecd0a8920fc4"
+    },
+    {
+      "number": 3,
+      "sourceFile": "/tmp/font-curation-1118/675654-Typography-20260703-06.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1920
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "纸人漂流 · 纸片折叠两行字组",
+      "sampleText": "纸人漂流",
+      "group": "语义图形",
+      "style": "纸片折叠两行字组",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "折纸",
+        "两行构图"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "4套字体设计灵感！标题字这样做更有辨识度",
+      "sourceUrl": "https://www.uisdc.com/group/675654.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/Typography-20260703-06.webp",
+      "description": "【字形与构成】四字两行排列，横竖笔画保持厚度，以折纸式缺口、弧形折返和错位结构表达纸片漂流。\n【配色与字效】黑底白字，竖向英文副题贴近右上字边，整体紧凑。\n【适用场景】实验艺术节、纸艺展览、独立电影海报\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】4套字体设计灵感！标题字这样做更有辨识度\n【来源】https://www.uisdc.com/group/675654.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/Typography-20260703-06.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1920]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计纸片折叠两行字组。四字两行排列，横竖笔画保持厚度，以折纸式缺口、弧形折返和错位结构表达纸片漂流。黑底白字，竖向英文副题贴近右上字边，整体紧凑。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于实验艺术节、纸艺展览、独立电影海报。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_498ed1318b09e41074e4f8763047d637c216904d4a7dfb8b1b5970557a9bc454.webp",
+      "cardId": "524ccef1-1932-41b7-b25b-4fbcc5e59b80"
+    },
+    {
+      "number": 4,
+      "sourceFile": "/tmp/font-curation-1118/675654-Typography-20260703-11.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1920
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "朝暮朝暮 · 横向叠线重复构成",
+      "sampleText": "朝暮朝暮",
+      "group": "几何构成",
+      "style": "横向叠线重复构成",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "重复节律",
+        "横线"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "4套字体设计灵感！标题字这样做更有辨识度",
+      "sourceUrl": "https://www.uisdc.com/group/675654.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/Typography-20260703-11.webp",
+      "description": "【字形与构成】用等粗横线、弯折连接和紧密穿插构成两行重复字组；朝与暮的内部负形相互呼应。\n【配色与字效】白底黑字，几何化的横向线束带来秩序与节律。\n【适用场景】城市文化活动、生活方式品牌、视觉实验海报\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】4套字体设计灵感！标题字这样做更有辨识度\n【来源】https://www.uisdc.com/group/675654.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/Typography-20260703-11.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1920]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计横向叠线重复构成。用等粗横线、弯折连接和紧密穿插构成两行重复字组；朝与暮的内部负形相互呼应。白底黑字，几何化的横向线束带来秩序与节律。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于城市文化活动、生活方式品牌、视觉实验海报。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_4cf594589fb1a67f558e6a6e347155d8ffde4ff7ad98d171a0329e686435c207.webp",
+      "cardId": "35fbc1a8-48e1-40cd-82fc-a048d6294950"
+    },
+    {
+      "number": 5,
+      "sourceFile": "/tmp/font-curation-1118/669570-Font-20260512-03.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1920
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "选择 · 圆角块面极粗字",
+      "sampleText": "选择",
+      "group": "几何构成",
+      "style": "圆角块面极粗字",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "极粗",
+        "圆角",
+        "纵排"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "3组字体设计创意灵感！做海报再也不怕卡壳",
+      "sourceUrl": "https://www.uisdc.com/group/669570.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/Font-20260512-03.webp",
+      "description": "【字形与构成】把两字纵向堆叠，极粗笔画压成饱满块面，内侧开口和小缺口保留识别；圆弧与直角形成对比。\n【配色与字效】白底黑字，英文短句嵌在粗横下缘，小圆形星芒作结尾。\n【适用场景】青年选择主题、校园活动、消费品牌口号\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】3组字体设计创意灵感！做海报再也不怕卡壳\n【来源】https://www.uisdc.com/group/669570.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/Font-20260512-03.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1920]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计圆角块面极粗字。把两字纵向堆叠，极粗笔画压成饱满块面，内侧开口和小缺口保留识别；圆弧与直角形成对比。白底黑字，英文短句嵌在粗横下缘，小圆形星芒作结尾。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于青年选择主题、校园活动、消费品牌口号。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_5ecf7948e65e6c7b9ec652e21a7ad009377512530f6f18eb5d515186bc66bd6f.webp",
+      "cardId": "2bd692d3-e88c-4907-b074-24386abf56f1"
+    },
+    {
+      "number": 6,
+      "sourceFile": "/tmp/font-curation-1118/669570-Font-20260512-07.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1560
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "威远故事 · 斜切前倾力量字",
+      "sampleText": "威远故事",
+      "group": "运动力量",
+      "style": "斜切前倾力量字",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "前倾",
+        "斜切"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "3组字体设计创意灵感！做海报再也不怕卡壳",
+      "sourceUrl": "https://www.uisdc.com/group/669570.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/Font-20260512-07.webp",
+      "description": "【字形与构成】四字两行压紧，粗重笔画前倾，三角切口与尖锐撇捺形成强烈的前冲方向。\n【配色与字效】白底黑字，下方保留缩小的中英副标。\n【适用场景】城市故事活动、汽车文化、运动赛事宣传\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】3组字体设计创意灵感！做海报再也不怕卡壳\n【来源】https://www.uisdc.com/group/669570.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/Font-20260512-07.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1560]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计斜切前倾力量字。四字两行压紧，粗重笔画前倾，三角切口与尖锐撇捺形成强烈的前冲方向。白底黑字，下方保留缩小的中英副标。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于城市故事活动、汽车文化、运动赛事宣传。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_8f905d53b58fb61c3e3794945e9ed8f3dd5ebd32f40415700fa1d61a272409ac.webp",
+      "cardId": "5b24f4fc-6d96-4b68-8b42-fcccaecc61b7"
+    },
+    {
+      "number": 7,
+      "sourceFile": "/tmp/font-curation-1118/669570-Font-20260512-11.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1920
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "春风作序 · 卷曲叶片复古标题",
+      "sampleText": "春风作序",
+      "group": "复古装饰",
+      "style": "卷曲叶片复古标题",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "春季",
+        "卷曲",
+        "叶片"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "3组字体设计创意灵感！做海报再也不怕卡壳",
+      "sourceUrl": "https://www.uisdc.com/group/669570.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/05/Font-20260512-11.webp",
+      "description": "【字形与构成】四字两行构成，字面偏宽，曲线端点卷曲并形成叶片状负形，粗细变化与舒展撇捺呼应春风。\n【配色与字效】浅绿主字搭配浅粉英文，白底柔和轻盈。\n【适用场景】春季市集、文创包装、花艺活动\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】3组字体设计创意灵感！做海报再也不怕卡壳\n【来源】https://www.uisdc.com/group/669570.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/05/Font-20260512-11.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1920]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计卷曲叶片复古标题。四字两行构成，字面偏宽，曲线端点卷曲并形成叶片状负形，粗细变化与舒展撇捺呼应春风。浅绿主字搭配浅粉英文，白底柔和轻盈。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于春季市集、文创包装、花艺活动。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_d6e092713ad00e11d06dc110b24492fe276d7b2fc531062e33e80060cb095d9a.webp",
+      "cardId": "43524716-c0aa-4e1c-bb5f-7d5fb07a32b1"
+    },
+    {
+      "number": 8,
+      "sourceFile": "/tmp/font-curation-1118/663937-Font-20260323-02.webp",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": true,
+      "title": "福起慧深 · 红日国潮尖角字标",
+      "sampleText": "福起慧深",
+      "group": "复古装饰",
+      "style": "红日国潮尖角字标",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "国潮",
+        "红日"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "国潮字体速成！3组超实用国潮风字体设计灵感",
+      "sourceUrl": "https://www.uisdc.com/group/663937.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/03/Font-20260323-02.webp",
+      "description": "【字形与构成】粗壮字形横排，撇捺向外张开，转折带利落尖角；背景红日与双行英文组成国潮字标。\n【配色与字效】朱红底上用粉白主字与渐变红日，形成暖色传统意象。\n【适用场景】国风品牌、节庆文创、文化空间招牌\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】国潮字体速成！3组超实用国潮风字体设计灵感\n【来源】https://www.uisdc.com/group/663937.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/03/Font-20260323-02.webp\n【原图尺寸】2500×3333像素；裁切[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计红日国潮尖角字标。粗壮字形横排，撇捺向外张开，转折带利落尖角；背景红日与双行英文组成国潮字标。朱红底上用粉白主字与渐变红日，形成暖色传统意象。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于国风品牌、节庆文创、文化空间招牌。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_0a8246be6910eea20ed72ca3152927de71eb54b52f7ef6602a35c0fd85c56f04.webp",
+      "cardId": "09461e89-c965-41f1-bfdc-e7e228969fcf"
+    },
+    {
+      "number": 9,
+      "sourceFile": "/tmp/font-curation-1118/663937-Font-20260323-05.webp",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": true,
+      "title": "和韵食坊 · 拙趣中式餐饮字",
+      "sampleText": "和韵食坊",
+      "group": "圆体趣味",
+      "style": "拙趣中式餐饮字",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "餐饮",
+        "拙趣"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "国潮字体速成！3组超实用国潮风字体设计灵感",
+      "sourceUrl": "https://www.uisdc.com/group/663937.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/03/Font-20260323-05.webp",
+      "description": "【字形与构成】五字横排采用温润厚实笔画，边角轻微不规则，撇捺收口圆润；小印章和英文增强餐饮识别。\n【配色与字效】浅薄荷绿底、黑色主字与细英文，红色印章点缀。\n【适用场景】中式餐饮、手作食品、烟火气文创品牌\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】国潮字体速成！3组超实用国潮风字体设计灵感\n【来源】https://www.uisdc.com/group/663937.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/03/Font-20260323-05.webp\n【原图尺寸】2500×3333像素；裁切[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计拙趣中式餐饮字。五字横排采用温润厚实笔画，边角轻微不规则，撇捺收口圆润；小印章和英文增强餐饮识别。浅薄荷绿底、黑色主字与细英文，红色印章点缀。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于中式餐饮、手作食品、烟火气文创品牌。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_85af8610b2fcc53258ad1216b60518009ebe0dd7f3f6a27b431d17bf0a2ae88c.webp",
+      "cardId": "97d2ff04-5ea8-4b77-b83f-0c414817a005"
+    },
+    {
+      "number": 10,
+      "sourceFile": "/tmp/font-curation-1118/663937-Font-20260323-08.webp",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": true,
+      "title": "玩具杂货铺 · 紧密两行潮店粗黑字",
+      "sampleText": "玩具杂货铺",
+      "group": "几何构成",
+      "style": "紧密两行潮店粗黑字",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "潮店",
+        "黄黑"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "国潮字体速成！3组超实用国潮风字体设计灵感",
+      "sourceUrl": "https://www.uisdc.com/group/663937.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/03/Font-20260323-08.webp",
+      "description": "【字形与构成】五字分为两行，方正重笔画与切口结合，英文TOY GENERAL STORE嵌在首行右侧，字面浓密。\n【配色与字效】亮黄底黑字，强对比呈现活泼有力的潮店气质。\n【适用场景】玩具集合店、童趣品牌、潮流零售\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】国潮字体速成！3组超实用国潮风字体设计灵感\n【来源】https://www.uisdc.com/group/663937.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/03/Font-20260323-08.webp\n【原图尺寸】2500×3333像素；裁切[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计紧密两行潮店粗黑字。五字分为两行，方正重笔画与切口结合，英文TOY GENERAL STORE嵌在首行右侧，字面浓密。亮黄底黑字，强对比呈现活泼有力的潮店气质。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于玩具集合店、童趣品牌、潮流零售。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_e24a769ae98bd319a3853331cce0f63cfe806d1b9c6a9c21cfcca3b6d8fc4438.webp",
+      "cardId": "0c354152-b505-4b93-a604-95da200dfa05"
+    },
+    {
+      "number": 11,
+      "sourceFile": "/tmp/font-curation-1118/652819-font-poster-20251210-3.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1920
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "美丽黄昏 · 大弧面尖尾夕照标题",
+      "sampleText": "美丽黄昏",
+      "group": "复古装饰",
+      "style": "大弧面尖尾夕照标题",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "黄昏",
+        "曲面"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "2组字体海报设计灵感！3步把自然情绪“写”进字体",
+      "sourceUrl": "https://www.uisdc.com/group/652819.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-poster-20251210-3.webp",
+      "description": "【字形与构成】四字两行由大面积弧面与尖尾构成，字间紧密相依；外接矩形节点与圆形背景形成日落的舞台。\n【配色与字效】粉米色底、橄榄绿圆面和黑字，橙色光点强化黄昏氛围。\n【适用场景】音乐海报、日落市集、艺术节主视觉\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】2组字体海报设计灵感！3步把自然情绪“写”进字体\n【来源】https://www.uisdc.com/group/652819.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-poster-20251210-3.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1920]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计大弧面尖尾夕照标题。四字两行由大面积弧面与尖尾构成，字间紧密相依；外接矩形节点与圆形背景形成日落的舞台。粉米色底、橄榄绿圆面和黑字，橙色光点强化黄昏氛围。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于音乐海报、日落市集、艺术节主视觉。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_c02b894247933a8687a8654d0fa0305830cfda00fbd0e794109a5e467bca4d00.webp",
+      "cardId": "c97233fc-a4dc-402a-b221-2e262add482d"
+    },
+    {
+      "number": 12,
+      "sourceFile": "/tmp/font-curation-1118/652819-font-poster-20251210-8.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1920
+      ],
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "visualReviewed": true,
+      "title": "薄雾晨松 兰垂烟晓 荷风举露 · 香氛意象高反差长宋",
+      "sampleText": "薄雾晨松 兰垂烟晓 荷风举露",
+      "group": "细线优雅",
+      "style": "香氛意象高反差长宋",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "四喜字体设计",
+        "高反差",
+        "香氛",
+        "植物"
+      ],
+      "author": "四喜字体设计",
+      "sourceTitle": "2组字体海报设计灵感！3步把自然情绪“写”进字体",
+      "sourceUrl": "https://www.uisdc.com/group/652819.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-poster-20251210-8.webp",
+      "description": "【字形与构成】三个四字词组纵向分行，细横粗竖、高挑字面和尖锐三角衬线形成植物气息，字距紧而行间舒展。\n【配色与字效】深赭红背景、淡金字，半透明几何色块与植物暗纹形成温暖层次。\n【适用场景】香氛包装、东方茶品、生活美学海报\n【作者】四喜字体设计；按优设作品页及图中署名记录。\n【原作品】2组字体海报设计灵感！3步把自然情绪“写”进字体\n【来源】https://www.uisdc.com/group/652819.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-poster-20251210-8.webp\n【原图尺寸】1440×1920像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1920]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计香氛意象高反差长宋。三个四字词组纵向分行，细横粗竖、高挑字面和尖锐三角衬线形成植物气息，字距紧而行间舒展。深赭红背景、淡金字，半透明几何色块与植物暗纹形成温暖层次。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于香氛包装、东方茶品、生活美学海报。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_4355d0e8820d16b083255266f16226ceac51a76987b1cf85ca186772b32c3e79.webp",
+      "cardId": "e89b23de-635b-4ce4-99fb-501cf57c8c5a"
+    },
+    {
+      "number": 13,
+      "sourceFile": "/tmp/font-curation-1118/652658-font-20251209-6.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1921
+      ],
+      "originalSize": [
+        1440,
+        1921
+      ],
+      "visualReviewed": true,
+      "title": "孩子记住！中国人永不屈服 · 奋笔斜势抗战标语",
+      "sampleText": "孩子记住！中国人永不屈服",
+      "group": "书法手写",
+      "style": "奋笔斜势抗战标语",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "右蓝设计",
+        "电影字",
+        "飞白",
+        "毛笔"
+      ],
+      "author": "右蓝设计",
+      "sourceTitle": "燃炸！11组电影《得闲谨制》超燃台词字体设计",
+      "sourceUrl": "https://www.uisdc.com/group/652658.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-6.webp",
+      "description": "【字形与构成】多行错落排列，粗笔和尖锋并存，记、国等字借撇捺向外伸展，长笔势连接上下层。\n【配色与字效】白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。\n【适用场景】电影美宣、历史主题展览、热血活动标题\n【作者】右蓝设计；按优设作品页及图中署名记录。\n【原作品】燃炸！11组电影《得闲谨制》超燃台词字体设计\n【来源】https://www.uisdc.com/group/652658.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-6.webp\n【原图尺寸】1440×1921像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1921]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计奋笔斜势抗战标语。多行错落排列，粗笔和尖锋并存，记、国等字借撇捺向外伸展，长笔势连接上下层。白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于电影美宣、历史主题展览、热血活动标题。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_b4cf9a8a2aee00fa24e8960f835685a6def5cbff76f2fb37f1dc3cb624bee999.webp",
+      "cardId": "1ac32962-3f21-4bec-a38f-23ec13a5a33c"
+    },
+    {
+      "number": 14,
+      "sourceFile": "/tmp/font-curation-1118/652658-font-20251209-7.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1921
+      ],
+      "originalSize": [
+        1440,
+        1921
+      ],
+      "visualReviewed": true,
+      "title": "得闲谨制 · 干刷长尾电影片名",
+      "sampleText": "得闲谨制",
+      "group": "书法手写",
+      "style": "干刷长尾电影片名",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "右蓝设计",
+        "电影字",
+        "飞白",
+        "毛笔"
+      ],
+      "author": "右蓝设计",
+      "sourceTitle": "燃炸！11组电影《得闲谨制》超燃台词字体设计",
+      "sourceUrl": "https://www.uisdc.com/group/652658.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-7.webp",
+      "description": "【字形与构成】四字两行，粗重墨块与干刷飞白强烈对比；末字竖钩拖出长弧尾，保留散点墨迹和刷毛纹理。\n【配色与字效】白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。\n【适用场景】电影美宣、历史主题展览、热血活动标题\n【作者】右蓝设计；按优设作品页及图中署名记录。\n【原作品】燃炸！11组电影《得闲谨制》超燃台词字体设计\n【来源】https://www.uisdc.com/group/652658.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-7.webp\n【原图尺寸】1440×1921像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1921]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计干刷长尾电影片名。四字两行，粗重墨块与干刷飞白强烈对比；末字竖钩拖出长弧尾，保留散点墨迹和刷毛纹理。白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于电影美宣、历史主题展览、热血活动标题。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_d1e694dfe670c3cb6349c7a3053269ec63c55c33b171e6518e34248ce03ec62b.webp",
+      "cardId": "46835073-4c20-4349-b2ec-fe25d36e9555"
+    },
+    {
+      "number": 15,
+      "sourceFile": "/tmp/font-curation-1118/652658-font-20251209-9.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1921
+      ],
+      "originalSize": [
+        1440,
+        1921
+      ],
+      "visualReviewed": true,
+      "title": "那就来打一场死不了的仗 · 枯笔破锋多行长句",
+      "sampleText": "那就来打一场死不了的仗",
+      "group": "书法手写",
+      "style": "枯笔破锋多行长句",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "右蓝设计",
+        "电影字",
+        "飞白",
+        "毛笔"
+      ],
+      "author": "右蓝设计",
+      "sourceTitle": "燃炸！11组电影《得闲谨制》超燃台词字体设计",
+      "sourceUrl": "https://www.uisdc.com/group/652658.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-9.webp",
+      "description": "【字形与构成】多行长句以中间短字承接上下大字，横向扫笔、粗竖与外放撇捺共同形成密集而有冲击的字组。\n【配色与字效】白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。\n【适用场景】电影美宣、历史主题展览、热血活动标题\n【作者】右蓝设计；按优设作品页及图中署名记录。\n【原作品】燃炸！11组电影《得闲谨制》超燃台词字体设计\n【来源】https://www.uisdc.com/group/652658.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-9.webp\n【原图尺寸】1440×1921像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1921]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计枯笔破锋多行长句。多行长句以中间短字承接上下大字，横向扫笔、粗竖与外放撇捺共同形成密集而有冲击的字组。白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于电影美宣、历史主题展览、热血活动标题。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_4d688890fc48daadb27fc5439c96a902d0085d4223f7cc9634aba7df5499c1ed.webp",
+      "cardId": "5ce5f941-83a3-401a-b816-eb865743d2f2"
+    },
+    {
+      "number": 16,
+      "sourceFile": "/tmp/font-curation-1118/652658-font-20251209-11.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1921
+      ],
+      "originalSize": [
+        1440,
+        1921
+      ],
+      "visualReviewed": true,
+      "title": "宋家无退路 · 重墨冲锋叠行字",
+      "sampleText": "宋家无退路",
+      "group": "书法手写",
+      "style": "重墨冲锋叠行字",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "右蓝设计",
+        "电影字",
+        "飞白",
+        "毛笔"
+      ],
+      "author": "右蓝设计",
+      "sourceTitle": "燃炸！11组电影《得闲谨制》超燃台词字体设计",
+      "sourceUrl": "https://www.uisdc.com/group/652658.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-11.webp",
+      "description": "【字形与构成】短句两行紧密叠放，上行粗墨团块与下行长横相互支撑，尾笔外放，飞白与实墨交替。\n【配色与字效】白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。\n【适用场景】电影美宣、历史主题展览、热血活动标题\n【作者】右蓝设计；按优设作品页及图中署名记录。\n【原作品】燃炸！11组电影《得闲谨制》超燃台词字体设计\n【来源】https://www.uisdc.com/group/652658.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-11.webp\n【原图尺寸】1440×1921像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1921]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计重墨冲锋叠行字。短句两行紧密叠放，上行粗墨团块与下行长横相互支撑，尾笔外放，飞白与实墨交替。白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于电影美宣、历史主题展览、热血活动标题。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_ba537e76ff2df5ccf7b666fd7102ddf7d8a681c87efb74447b88d490c83f79dd.webp",
+      "cardId": "a32aac25-6305-4123-bf5e-15bc42ec1d14"
+    },
+    {
+      "number": 17,
+      "sourceFile": "/tmp/font-curation-1118/652658-font-20251209-12.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1921
+      ],
+      "originalSize": [
+        1440,
+        1921
+      ],
+      "visualReviewed": true,
+      "title": "国破山河在 低头思故乡 · 飞白弧锋诗句标题",
+      "sampleText": "国破山河在 低头思故乡",
+      "group": "书法手写",
+      "style": "飞白弧锋诗句标题",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "右蓝设计",
+        "电影字",
+        "飞白",
+        "毛笔"
+      ],
+      "author": "右蓝设计",
+      "sourceTitle": "燃炸！11组电影《得闲谨制》超燃台词字体设计",
+      "sourceUrl": "https://www.uisdc.com/group/652658.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-12.webp",
+      "description": "【字形与构成】上下两行错位压紧，笔画粗细剧变，长钩与扫笔向外伸展，末端弧线和碎墨留出呼吸。\n【配色与字效】白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。\n【适用场景】电影美宣、历史主题展览、热血活动标题\n【作者】右蓝设计；按优设作品页及图中署名记录。\n【原作品】燃炸！11组电影《得闲谨制》超燃台词字体设计\n【来源】https://www.uisdc.com/group/652658.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-12.webp\n【原图尺寸】1440×1921像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1921]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计飞白弧锋诗句标题。上下两行错位压紧，笔画粗细剧变，长钩与扫笔向外伸展，末端弧线和碎墨留出呼吸。白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于电影美宣、历史主题展览、热血活动标题。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_522426c9873895a13dd00620d6bc2736740c2d431e048e0731e24d0c6b9526c4.webp",
+      "cardId": "82ae15be-1839-48d2-8a35-daff17f1b54b"
+    },
+    {
+      "number": 18,
+      "sourceFile": "/tmp/font-curation-1118/652658-font-20251209-8.webp",
+      "crop": [
+        0,
+        0,
+        1440,
+        1921
+      ],
+      "originalSize": [
+        1440,
+        1921
+      ],
+      "visualReviewed": true,
+      "title": "小日子老子跟你们拼了 · 烈性干刷斜锋长句",
+      "sampleText": "小日子老子跟你们拼了",
+      "group": "书法手写",
+      "style": "烈性干刷斜锋长句",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "右蓝设计",
+        "电影字",
+        "飞白",
+        "毛笔"
+      ],
+      "author": "右蓝设计",
+      "sourceTitle": "燃炸！11组电影《得闲谨制》超燃台词字体设计",
+      "sourceUrl": "https://www.uisdc.com/group/652658.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-8.webp",
+      "description": "【字形与构成】三行长句以首行大字起势，中行收紧，末行放大；粗刷锋、长撇和飞白将多行连接为整体。\n【配色与字效】白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。\n【适用场景】电影美宣、历史主题展览、热血活动标题\n【作者】右蓝设计；按优设作品页及图中署名记录。\n【原作品】燃炸！11组电影《得闲谨制》超燃台词字体设计\n【来源】https://www.uisdc.com/group/652658.html\n【原图】https://image.uisdc.com/wp-content/uploads/2025/12/font-20251209-8.webp\n【原图尺寸】1440×1921像素；裁切[left,top,right,bottom]=[0, 0, 1440, 1921]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计烈性干刷斜锋长句。三行长句以首行大字起势，中行收紧，末行放大；粗刷锋、长撇和飞白将多行连接为整体。白底黑色毛笔字，保留粗纸暗纹、笔锋毛边、飞白及散墨。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于电影美宣、历史主题展览、热血活动标题。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_ab71d392e628c663b5eb0a37b47eb9584eeacb0ae802936ae8278ed6fa3f2658.webp",
+      "cardId": "4a858651-af59-401c-ad20-b36b1ad0e376"
+    },
+    {
+      "number": 19,
+      "sourceFile": "/tmp/font-curation-1118/678826-font-20260730-3.webp",
+      "crop": [
+        70,
+        250,
+        1030,
+        910
+      ],
+      "originalSize": [
+        1068,
+        1424
+      ],
+      "visualReviewed": true,
+      "title": "烬夜启明 · 欧式金光粗衬线标题",
+      "sampleText": "烬夜启明",
+      "group": "复古装饰",
+      "style": "欧式金光粗衬线标题",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "五月的枫叶",
+        "游戏标题",
+        "奇幻"
+      ],
+      "author": "五月的枫叶",
+      "sourceTitle": "6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解",
+      "sourceUrl": "https://www.uisdc.com/group/678826.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-3.webp",
+      "description": "【字形与构成】两行主字搭配英文，宽粗竖笔与尖锐楔形衬线形成古典体量，四角星芒和弧线环绕主字。\n【配色与字效】暗棕金属与琥珀金光背景，奶金主字带柔光。\n【适用场景】游戏版本活动标题、奇幻海报、世界观视觉\n【作者】五月的枫叶；按优设作品页及图中署名记录。\n【原作品】6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解\n【来源】https://www.uisdc.com/group/678826.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-3.webp\n【原图尺寸】1068×1424像素；裁切[left,top,right,bottom]=[70, 250, 1030, 910]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计欧式金光粗衬线标题。两行主字搭配英文，宽粗竖笔与尖锐楔形衬线形成古典体量，四角星芒和弧线环绕主字。暗棕金属与琥珀金光背景，奶金主字带柔光。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于游戏版本活动标题、奇幻海报、世界观视觉。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_26d54c0afdb544fd7defc13f4dc95a6217947802b7fdd65a9ca363191bc6d27c.webp",
+      "cardId": "3b1e43bf-a458-474f-88fe-dda14e9cead6"
+    },
+    {
+      "number": 20,
+      "sourceFile": "/tmp/font-curation-1118/678826-font-20260730-4.webp",
+      "crop": [
+        70,
+        250,
+        1030,
+        910
+      ],
+      "originalSize": [
+        1068,
+        1424
+      ],
+      "visualReviewed": true,
+      "title": "冥骸战纪 · 冰锋哥特奇幻标题",
+      "sampleText": "冥骸战纪",
+      "group": "复古装饰",
+      "style": "冰锋哥特奇幻标题",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "五月的枫叶",
+        "游戏标题",
+        "奇幻"
+      ],
+      "author": "五月的枫叶",
+      "sourceTitle": "6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解",
+      "sourceUrl": "https://www.uisdc.com/group/678826.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-4.webp",
+      "description": "【字形与构成】横向主字融合哥特尖角、骨刺式横竖和细长末端；英文副题紧靠下缘，保持对称中轴。\n【配色与字效】深青黑背景、冷白金属字与碎片微光。\n【适用场景】游戏版本活动标题、奇幻海报、世界观视觉\n【作者】五月的枫叶；按优设作品页及图中署名记录。\n【原作品】6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解\n【来源】https://www.uisdc.com/group/678826.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-4.webp\n【原图尺寸】1068×1424像素；裁切[left,top,right,bottom]=[70, 250, 1030, 910]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计冰锋哥特奇幻标题。横向主字融合哥特尖角、骨刺式横竖和细长末端；英文副题紧靠下缘，保持对称中轴。深青黑背景、冷白金属字与碎片微光。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于游戏版本活动标题、奇幻海报、世界观视觉。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_1f9f9a8243357c38f4d398a0ede7aa948f3181c16de9f16ed32856669a94090f.webp",
+      "cardId": "5339adcc-dc04-43ec-a354-7036086e0ab5"
+    },
+    {
+      "number": 21,
+      "sourceFile": "/tmp/font-curation-1118/678826-font-20260730-5.webp",
+      "crop": [
+        90,
+        270,
+        1000,
+        885
+      ],
+      "originalSize": [
+        1068,
+        1424
+      ],
+      "visualReviewed": true,
+      "title": "旧邸秘语 · 暖金高挑衬线标题",
+      "sampleText": "旧邸秘语",
+      "group": "细线优雅",
+      "style": "暖金高挑衬线标题",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "五月的枫叶",
+        "游戏标题",
+        "奇幻"
+      ],
+      "author": "五月的枫叶",
+      "sourceTitle": "6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解",
+      "sourceUrl": "https://www.uisdc.com/group/678826.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-5.webp",
+      "description": "【字形与构成】高挑字面、细横粗竖和拉长尖衬线，中文大题居中，星光、细横线和英文副题构成复古层级。\n【配色与字效】暗色玻璃穹顶与植物背景，暖白金字加柔和辉光。\n【适用场景】游戏版本活动标题、奇幻海报、世界观视觉\n【作者】五月的枫叶；按优设作品页及图中署名记录。\n【原作品】6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解\n【来源】https://www.uisdc.com/group/678826.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-5.webp\n【原图尺寸】1068×1424像素；裁切[left,top,right,bottom]=[90, 270, 1000, 885]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计暖金高挑衬线标题。高挑字面、细横粗竖和拉长尖衬线，中文大题居中，星光、细横线和英文副题构成复古层级。暗色玻璃穹顶与植物背景，暖白金字加柔和辉光。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于游戏版本活动标题、奇幻海报、世界观视觉。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_a2ae7668851794c42ebc2bc514ea002ab6d52f57720d6977e98d61dc57bc53e0.webp",
+      "cardId": "ec04bca5-d95d-4950-bd64-56450b336789"
+    },
+    {
+      "number": 22,
+      "sourceFile": "/tmp/font-curation-1118/678826-font-20260730-6.webp",
+      "crop": [
+        70,
+        255,
+        1020,
+        970
+      ],
+      "originalSize": [
+        1068,
+        1424
+      ],
+      "visualReviewed": true,
+      "title": "星屿森语 · 极光细线森系标题",
+      "sampleText": "星屿森语",
+      "group": "细线优雅",
+      "style": "极光细线森系标题",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "五月的枫叶",
+        "游戏标题",
+        "奇幻"
+      ],
+      "author": "五月的枫叶",
+      "sourceTitle": "6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解",
+      "sourceUrl": "https://www.uisdc.com/group/678826.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-6.webp",
+      "description": "【字形与构成】两行错落字组以高挑细笔和柔弧连接，长尾细线延伸为星点轨迹，与小英文建立轻盈层次。\n【配色与字效】青绿极光背景，浅白金细线字带柔光与微粒。\n【适用场景】游戏版本活动标题、奇幻海报、世界观视觉\n【作者】五月的枫叶；按优设作品页及图中署名记录。\n【原作品】6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解\n【来源】https://www.uisdc.com/group/678826.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-6.webp\n【原图尺寸】1068×1424像素；裁切[left,top,right,bottom]=[70, 255, 1020, 970]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计极光细线森系标题。两行错落字组以高挑细笔和柔弧连接，长尾细线延伸为星点轨迹，与小英文建立轻盈层次。青绿极光背景，浅白金细线字带柔光与微粒。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于游戏版本活动标题、奇幻海报、世界观视觉。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_201cef6b2497a7f54ad36ba02d37f9942e4ef0d211227ac968ae277f050ac516.webp",
+      "cardId": "8d483f96-7eb3-4843-bffd-10613dd9f496"
+    },
+    {
+      "number": 23,
+      "sourceFile": "/tmp/font-curation-1118/678826-font-20260730-7.webp",
+      "crop": [
+        70,
+        255,
+        1020,
+        970
+      ],
+      "originalSize": [
+        1068,
+        1424
+      ],
+      "visualReviewed": true,
+      "title": "五月的枫叶 · 暗黑童话卷饰字标",
+      "sampleText": "五月的枫叶",
+      "group": "复古装饰",
+      "style": "暗黑童话卷饰字标",
+      "tags": [
+        "优设精选",
+        "每日扩充1118",
+        "五月的枫叶",
+        "游戏标题",
+        "奇幻"
+      ],
+      "author": "五月的枫叶",
+      "sourceTitle": "6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解",
+      "sourceUrl": "https://www.uisdc.com/group/678826.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-7.webp",
+      "description": "【字形与构成】小字与大字两行错落，长尾衬线绕成植物卷饰；对称装饰与下方飘带形成童话徽章。\n【配色与字效】深墨绿底、奶白主字、绯红枫叶和红色飘带。\n【适用场景】游戏版本活动标题、奇幻海报、世界观视觉\n【作者】五月的枫叶；按优设作品页及图中署名记录。\n【原作品】6款游戏UI字体实战！从暗黑哥特到森系空灵全拆解\n【来源】https://www.uisdc.com/group/678826.html\n【原图】https://image.uisdc.com/wp-content/uploads/2026/07/font-20260730-7.webp\n【原图尺寸】1068×1424像素；裁切[left,top,right,bottom]=[70, 255, 1020, 970]。\n【收录说明】一款标题设计参考图片，非安装字体文件。复用建议由整理者分析所得，非作者原始提示词。仅收录该作品的一版，略过相同字形配色和版式复用；如裁去页眉页脚，作者归属以本备注保留。\n【收录日期】2026-11-18",
+      "prompt": "为【新标题文字】设计暗黑童话卷饰字标。小字与大字两行错落，长尾衬线绕成植物卷饰；对称装饰与下方飘带形成童话徽章。深墨绿底、奶白主字、绯红枫叶和红色飘带。参考字形的组织方法重新安排新文字；保证每个字可辨，保留完整笔画、长尾、装饰和安全边距，避免照抄原题字。应用于游戏版本活动标题、奇幻海报、世界观视觉。",
+      "file": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/files/11e594f481958c10e3015d0b_26641ded6f9ada5456d686163ed7942cd93ee633f6a1cb68db5f26c96f253380.webp",
+      "cardId": "26aac125-9017-4b7f-be0d-a5964d6049bf"
+    }
+  ]
+}

@@ -1,0 +1,1089 @@
+{
+  "version": 1,
+  "batch": "design-curation-2026-11-21-0500",
+  "collectedAt": "2026-11-20",
+  "selectionMethod": "北京时间2026-11-21早间轮次；客户端日期2026-11-20。站酷免费公开案例，详情完整原文、contentId与imageId对应核查；逐张视觉核对。",
+  "prompts": [
+    {
+      "key": "zcool-ZMzg5NDg=",
+      "name": "光影交织｜黑底白金科技字组",
+      "category": "字体设计",
+      "subcategory": "霓虹与发光字效",
+      "text": "纯黑色背景，主体为未来科技感艺术光影创意字体，“【字体设计】”。字体融合流畅曲线与几何直线，笔画边缘带细腻发光渐变，核心纯白向浅金/银灰色调光晕自然过渡，模拟光线漫射的柔和质感。字与字之间通过纤细光影线条延伸、缠绕实现互动，字体周围环绕带细微纹理暗纹的扩散光带，增强画面动态流动感，营造科技感与光影虚实相生的艺术氛围",
+      "tags": [
+        "横版",
+        "黑底白字",
+        "光带",
+        "科技",
+        "中文字组",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-564a934844741ffd35ce.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a34cd8303f9f6fosjjhm12043.png?k=dcd379563ede337f3f84d7380576adcb&t=6b00c22b"
+      ],
+      "originalText": "纯黑色背景，主体为未来科技感艺术光影创意字体，“【字体设计】”。字体融合流畅曲线与几何直线，笔画边缘带细腻发光渐变，核心纯白向浅金/银灰色调光晕自然过渡，模拟光线漫射的柔和质感。字与字之间通过纤细光影线条延伸、缠绕实现互动，字体周围环绕带细微纹理暗纹的扩散光带，增强画面动态流动感，营造科技感与光影虚实相生的艺术氛围",
+      "source": {
+        "key": "zcool-ZMzg5NDg=",
+        "subcategory": "霓虹与发光字效",
+        "author": "AIGC视觉小林",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMzg5NDg=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a34cd8303f9f6fosjjhm12043.png?k=dcd379563ede337f3f84d7380576adcb&t=6b00c22b",
+        "previewDimensions": [
+          2560,
+          1440
+        ],
+        "language": "zh-CN",
+        "model": "即梦图片5.0 Lite",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 11665,
+        "imageId": 11661,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。例图中文字为“字体设计”。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "2K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558191_ks9k5r_1795208558192_arjw4g.webp"
+    },
+    {
+      "key": "zcool-ZMzE5ODQ=",
+      "name": "EchoPod｜蓝紫声波数码主视觉",
+      "category": "KV设计",
+      "subcategory": "科技与产品主视觉",
+      "text": "为一款名为【EchoPod】的【智能音箱】生成官网 Hero 主视觉。产品定位是【极简、未来、适合家庭】与桌面空间的智能音频设备，面向重视科技感和家居审美的年轻用户。画面采用【极简科技品牌视觉】风格，主色为【电光蓝、午夜紫和亮黑】，产品主体置于【具有未来感的空间中】，周围加入【柔和声波、光晕、透明界面层和空间层级】，形成官网首屏级别的视觉冲击力。画面需要像真实数码产品官网 Hero 图，产品清晰、有品牌感，并预留适合后期排版标题的区域。不要生成具体可读文字。",
+      "tags": [
+        "横版",
+        "音箱",
+        "蓝紫",
+        "声波",
+        "文字留白",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-23b82b35c5197fb8f89c.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a0d712b8d2ef0avoq5j2j1885.png?k=2c97d1ff8f9844ae30d0e3f13be39fad&t=6b00c21b"
+      ],
+      "originalText": "为一款名为【EchoPod】的【智能音箱】生成官网 Hero 主视觉。产品定位是【极简、未来、适合家庭】与桌面空间的智能音频设备，面向重视科技感和家居审美的年轻用户。画面采用【极简科技品牌视觉】风格，主色为【电光蓝、午夜紫和亮黑】，产品主体置于【具有未来感的空间中】，周围加入【柔和声波、光晕、透明界面层和空间层级】，形成官网首屏级别的视觉冲击力。画面需要像真实数码产品官网 Hero 图，产品清晰、有品牌感，并预留适合后期排版标题的区域。不要生成具体可读文字。",
+      "source": {
+        "key": "zcool-ZMzE5ODQ=",
+        "subcategory": "科技与产品主视觉",
+        "author": "云墟造物",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMzE5ODQ=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a0d712b8d2ef0avoq5j2j1885.png?k=2c97d1ff8f9844ae30d0e3f13be39fad&t=6b00c21b",
+        "previewDimensions": [
+          1717,
+          916
+        ],
+        "language": "zh-CN",
+        "model": "GPT-image2",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 9256,
+        "imageId": 9252,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558203_7afnsk_1795208558204_4abau9.webp"
+    },
+    {
+      "key": "zcool-ZMjc3MzI=",
+      "name": "PURE HYDRATION｜冰蓝修护精华",
+      "category": "KV设计",
+      "subcategory": "美妆与护肤主视觉",
+      "text": "生成 LUMIÈRE LAB「玻尿酸修护精华」 新品发布海报，突出 深层补水、透亮修护、清透科技感，产品为视觉中心，透明精华瓶置于画面中央，周围有轻微水波、玻璃折射与悬浮气泡，高级纯净。标题 PURE HYDRATION，文字必须准确，字体简洁现代。背景极简，以冰蓝、纯白、透明玻璃质感为主，光影干净通透，整体呈现高端护肤品牌广告质感，适合品牌新品首发。",
+      "tags": [
+        "竖版",
+        "冰蓝",
+        "玻璃",
+        "水波",
+        "护肤",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-dd5464bd1464b006f4d8.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/69e9dc9bee17cv7g8tq1jg6254.png?k=2c5c67788fde746c7ac4bb8eb15a37e8&t=6b00c21b"
+      ],
+      "originalText": "生成 LUMIÈRE LAB「玻尿酸修护精华」 新品发布海报，突出 深层补水、透亮修护、清透科技感，产品为视觉中心，透明精华瓶置于画面中央，周围有轻微水波、玻璃折射与悬浮气泡，高级纯净。标题 PURE HYDRATION，文字必须准确，字体简洁现代。背景极简，以冰蓝、纯白、透明玻璃质感为主，光影干净通透，整体呈现高端护肤品牌广告质感，适合品牌新品首发。",
+      "source": {
+        "key": "zcool-ZMjc3MzI=",
+        "subcategory": "美妆与护肤主视觉",
+        "author": "叫我月亮叭",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMjc3MzI=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/69e9dc9bee17cv7g8tq1jg6254.png?k=2c5c67788fde746c7ac4bb8eb15a37e8&t=6b00c21b",
+        "previewDimensions": [
+          1086,
+          1448
+        ],
+        "language": "zh-CN",
+        "model": "GPT-image2",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 8048,
+        "imageId": 8044,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558210_c0lqud_1795208558210_60fc15.webp"
+    },
+    {
+      "key": "zcool-ZNDkyMTI=",
+      "name": "笔画之城｜永字建筑纪念碑",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "超现实建筑摄影，一个巨大汉字\"永\"的书法笔画构成纪念碑式建筑群，横笔是一座横跨深渊的混凝土大桥，竖笔是直插云雾的摩天塔楼，撇捺笔画是倾斜的巨型悬挑结构，墨迹材质与混凝土材质融合，微小的人类身影站在笔画边缘形成强烈尺度对比，浓雾，体积光柱从云层间隙射下，青灰色调，庄严神圣，电影级构图，竖幅构图",
+      "tags": [
+        "竖版",
+        "建筑字体",
+        "混凝土",
+        "体积光",
+        "超现实",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-3cf894853adcbb0d0f28.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a8b1d744266c50lijfo0o2077.png?k=04a79bf352eff8ffa68a44bb72d15971&t=6b00c21c"
+      ],
+      "originalText": "超现实建筑摄影，一个巨大汉字\"永\"的书法笔画构成纪念碑式建筑群，横笔是一座横跨深渊的混凝土大桥，竖笔是直插云雾的摩天塔楼，撇捺笔画是倾斜的巨型悬挑结构，墨迹材质与混凝土材质融合，微小的人类身影站在笔画边缘形成强烈尺度对比，浓雾，体积光柱从云层间隙射下，青灰色调，庄严神圣，电影级构图，竖幅构图",
+      "source": {
+        "key": "zcool-ZNDkyMTI=",
+        "subcategory": "材质与特殊字效",
+        "author": "JRVisioLab",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZNDkyMTI=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a8b1d744266c50lijfo0o2077.png?k=04a79bf352eff8ffa68a44bb72d15971&t=6b00c21c",
+        "previewDimensions": [
+          1152,
+          2048
+        ],
+        "language": "zh-CN",
+        "model": "其他模型",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 16749,
+        "imageId": 16745,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558216_rgmm94_1795208558216_uqgbko.webp"
+    },
+    {
+      "key": "zcool-ZMjA4MzI=",
+      "name": "豫｜河南地标微缩文字",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "中国汉字字体设计，汉字 「豫」，Behance 展示风格，干净利落线条，3D 高精度建模渲染，拼贴风格，极繁主义构图，浅米色背景，强烈色彩对比，喜庆氛围与文化张力。\n左侧予字旁融入豫西伏牛山、太行山脉、黄河峡谷、苍松古柏地貌元素；主体象字结构嵌入郑州二七塔、大玉米 CBD、洛阳龙门石窟、开封铁塔、安阳殷墟、商丘古城、清明上河园等地标立体微缩拼贴；内部填充黄河天际线、豫东平原、中原梯田、商都遗址、都市街区肌理；细节装饰商周青铜纹、云雷纹、如意纹、回纹、水波纹、剪纸纹样、豫剧脸谱元素、少林武僧纹样，传统文化与现代都市融合。\n主色中原青、古都红、黄河蓝、青铜金，电影级布光，体积光，精细材质，超高分辨率，景深效果，Octane 渲染质感，厚重大气，兼具中原文脉与现代城市活力。",
+      "tags": [
+        "竖版",
+        "文旅",
+        "微缩",
+        "河南",
+        "地标",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-8640e8773fead65bf8a4.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/69d4b2bc56078ndhnx2cjg8236.png?k=76fcbd5529c6b6c9793ab3b7bb71eb78&t=6b00c22b"
+      ],
+      "originalText": "中国汉字字体设计，汉字 「豫」，Behance 展示风格，干净利落线条，3D 高精度建模渲染，拼贴风格，极繁主义构图，浅米色背景，强烈色彩对比，喜庆氛围与文化张力。\n左侧予字旁融入豫西伏牛山、太行山脉、黄河峡谷、苍松古柏地貌元素；主体象字结构嵌入郑州二七塔、大玉米 CBD、洛阳龙门石窟、开封铁塔、安阳殷墟、商丘古城、清明上河园等地标立体微缩拼贴；内部填充黄河天际线、豫东平原、中原梯田、商都遗址、都市街区肌理；细节装饰商周青铜纹、云雷纹、如意纹、回纹、水波纹、剪纸纹样、豫剧脸谱元素、少林武僧纹样，传统文化与现代都市融合。\n主色中原青、古都红、黄河蓝、青铜金，电影级布光，体积光，精细材质，超高分辨率，景深效果，Octane 渲染质感，厚重大气，兼具中原文脉与现代城市活力。",
+      "source": {
+        "key": "zcool-ZMjA4MzI=",
+        "subcategory": "材质与特殊字效",
+        "author": "木梓尔",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMjA4MzI=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/69d4b2bc56078ndhnx2cjg8236.png?k=76fcbd5529c6b6c9793ab3b7bb71eb78&t=6b00c22b",
+        "previewDimensions": [
+          896,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "超级图片模型 2",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 12701,
+        "imageId": 12697,
+        "subscriptionStatus": 0,
+        "sourceVersion": 2,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558224_2vvt9d_1795208558224_hfshll.webp"
+    },
+    {
+      "key": "zcool-ZMTY2NDQ=",
+      "name": "迷雾｜暗黑哥特噪点字组",
+      "category": "字体设计",
+      "subcategory": "哥特与尖锐标题",
+      "text": "请以中文字“迷雾”设计一张字体海报，海报整体质感是噪点颗粒质感、螺旋漩涡背景、紫黑红暗黑调色、“迷雾”字体以哥特锐化文字、邪典裂隙眼、撕裂感黑洞、文字-生物元素的共生嵌套、故障艺术的破碎锐利感等核心视觉基因，以暗黑邪典+迷幻故障艺术为核心风格，背景采用紫黑红渐变的噪点颗粒纹理，叠加螺旋漩涡式的动态渐变，通过色彩（深紫→暗红→纯黑）与纹理的“动态噪点+螺旋”组合，强化迷幻压抑的心理压迫感；核心元素融合哥特锐化噪点文字",
+      "tags": [
+        "竖版",
+        "紫黑红",
+        "哥特",
+        "旋涡",
+        "颗粒",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d87e717c37df94f4daf3.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/69cc83a5e8c54ycym6np3t636.png?k=ac23b4d1683b7affc71b0e96425a4875&t=6b00c22b"
+      ],
+      "originalText": "请以中文字“迷雾”设计一张字体海报，海报整体质感是噪点颗粒质感、螺旋漩涡背景、紫黑红暗黑调色、“迷雾”字体以哥特锐化文字、邪典裂隙眼、撕裂感黑洞、文字-生物元素的共生嵌套、故障艺术的破碎锐利感等核心视觉基因，以暗黑邪典+迷幻故障艺术为核心风格，背景采用紫黑红渐变的噪点颗粒纹理，叠加螺旋漩涡式的动态渐变，通过色彩（深紫→暗红→纯黑）与纹理的“动态噪点+螺旋”组合，强化迷幻压抑的心理压迫感；核心元素融合哥特锐化噪点文字",
+      "source": {
+        "key": "zcool-ZMTY2NDQ=",
+        "subcategory": "哥特与尖锐标题",
+        "author": "唯自渡",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTY2NDQ=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/69cc83a5e8c54ycym6np3t636.png?k=ac23b4d1683b7affc71b0e96425a4875&t=6b00c22b",
+        "previewDimensions": [
+          3072,
+          4096
+        ],
+        "language": "zh-CN",
+        "model": "即梦图片 4.5",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 4875,
+        "imageId": 4871,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "4K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558231_5wc388_1795208558231_oka4rx.webp"
+    },
+    {
+      "key": "zcool-ZMzkwNjA=",
+      "name": "风｜赤金瘦金体赛博字效",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "“【字体设计】”纯黑背景，字体选用瘦金体，主色为赤金与朱砂红渐变。笔画内部嵌入动态粒子流光特效，如星尘轨迹沿撇捺游走；飞白处迸发火星碎屑，转折顿挫处凝结冰晶纹理。文字主体浮雕感强烈，边缘有霓虹描边，局部叠加烟云缭绕的半透明墨韵。整体呈现赛博古风——传统骨架与数字脉冲交融，光影在漆黑中呼吸脉动，营造字中有境，境中藏字的深邃视觉。16K超清，Octane渲染，电影级布光。",
+      "tags": [
+        "横版",
+        "黑底",
+        "瘦金体",
+        "赤金",
+        "粒子",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-2eeae4350c7aed704b53.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a350bba7846er6e5gg33s2251.png?k=6329d0fe6f9f656fc20a3e708bf9aa91&t=6b00c22b"
+      ],
+      "originalText": "“【字体设计】”纯黑背景，字体选用瘦金体，主色为赤金与朱砂红渐变。笔画内部嵌入动态粒子流光特效，如星尘轨迹沿撇捺游走；飞白处迸发火星碎屑，转折顿挫处凝结冰晶纹理。文字主体浮雕感强烈，边缘有霓虹描边，局部叠加烟云缭绕的半透明墨韵。整体呈现赛博古风——传统骨架与数字脉冲交融，光影在漆黑中呼吸脉动，营造字中有境，境中藏字的深邃视觉。16K超清，Octane渲染，电影级布光。",
+      "source": {
+        "key": "zcool-ZMzkwNjA=",
+        "subcategory": "材质与特殊字效",
+        "author": "AIGC视觉小林",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMzkwNjA=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a350bba7846er6e5gg33s2251.png?k=6329d0fe6f9f656fc20a3e708bf9aa91&t=6b00c22b",
+        "previewDimensions": [
+          2560,
+          1440
+        ],
+        "language": "zh-CN",
+        "model": "即梦图片5.0 Lite",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 11698,
+        "imageId": 11694,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。原提示词使用【字体设计】变量；例图填入“风”。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "2K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558238_enj4p0_1795208558238_6hj6xz.webp"
+    },
+    {
+      "key": "zcool-ZMzg5NTY=",
+      "name": "机械切角｜黑底白色几何字组",
+      "category": "字体设计",
+      "subcategory": "几何与构成字组",
+      "text": "黑色纯色背景，白色字体，现代极简几何字体设计，“【字体设计】”。艺术装饰风格，几何无衬线字体，笔画带机械棱角与切割感，融入电路纹理与流线设计，简约排版。优雅曲线与硬朗边缘形成粗细对比，圆角处理流线型，笔画呈现轻奢质感，整体营造出充满未来感与科技氛围的视觉体验。",
+      "tags": [
+        "横版",
+        "黑底白字",
+        "切角",
+        "几何",
+        "科技",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-bcf85c72ddae913394bc.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a34cf0ee43b760mwmjdrk3760.png?k=a393d99696872116afbd42ade9d189e7&t=6b00c22b"
+      ],
+      "originalText": "黑色纯色背景，白色字体，现代极简几何字体设计，“【字体设计】”。艺术装饰风格，几何无衬线字体，笔画带机械棱角与切割感，融入电路纹理与流线设计，简约排版。优雅曲线与硬朗边缘形成粗细对比，圆角处理流线型，笔画呈现轻奢质感，整体营造出充满未来感与科技氛围的视觉体验。",
+      "source": {
+        "key": "zcool-ZMzg5NTY=",
+        "subcategory": "几何与构成字组",
+        "author": "AIGC视觉小林",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMzg5NTY=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a34cf0ee43b760mwmjdrk3760.png?k=a393d99696872116afbd42ade9d189e7&t=6b00c22b",
+        "previewDimensions": [
+          2560,
+          1440
+        ],
+        "language": "zh-CN",
+        "model": "即梦图片5.0 Lite",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 11667,
+        "imageId": 11663,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。例图中文字为“字体设计”。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "2K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558244_ocxfex_1795208558244_k7jevh.webp"
+    },
+    {
+      "key": "zcool-ZMTMyMDQ0",
+      "name": "粉绿圣诞｜几何留白背景",
+      "category": "背景设计",
+      "subcategory": "几何与轨道光环",
+      "text": "极简抽象圣诞背景，散落的实心浅粉与薄荷绿几何形状，细小星星和圆点元素，扁平矢量风格，大量留白，现代非传统节日配色，干净的素材背景。",
+      "tags": [
+        "横版",
+        "粉绿",
+        "几何",
+        "圣诞",
+        "留白",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d55009fcf178785ade85.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af3f679e8f7e7m6np62py4149.png?k=d7f8d5daf5964686d834d1c1a6750b31&t=6b00c22b"
+      ],
+      "originalText": "Minimal abstract Christmas background, scattered solid pastel pink and mint green geometric shapes, tiny star and dot elements, flat vector style, generous white space, modern non-traditional holiday palette, clean stock background",
+      "source": {
+        "key": "zcool-ZMTMyMDQ0",
+        "subcategory": "几何与轨道光环",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTMyMDQ0.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af3f679e8f7e7m6np62py4149.png?k=d7f8d5daf5964686d834d1c1a6750b31&t=6b00c22b",
+        "previewDimensions": [
+          1456,
+          816
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 38387,
+        "imageId": 38383,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558249_mbgy7b_1795208558249_hwb0vx.webp"
+    },
+    {
+      "key": "zcool-ZOTQ0MzI=",
+      "name": "波动曲线｜暖橙深蓝渐变背景",
+      "category": "背景设计",
+      "subcategory": "弥散与运动模糊",
+      "text": "抽象波动图形，平滑起伏的波浪线，鲜明渐变背景将暖色与深蓝混合，现代极简数字艺术风格，无文字。",
+      "tags": [
+        "横版",
+        "渐变",
+        "橙蓝",
+        "曲线",
+        "抽象",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-4ad8f6b237df3876d766.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ace100f03beflert0voy56500.png?k=a0533fa902a4297f8ecf3828a3f6b67b&t=6b00c26d"
+      ],
+      "originalText": "Abstract volatility graph with smooth wavy lines, vibrant gradient background in warm tones mixed with deep blues, modern minimalist digital art style, no text.",
+      "source": {
+        "key": "zcool-ZOTQ0MzI=",
+        "subcategory": "弥散与运动模糊",
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTQ0MzI=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ace100f03beflert0voy56500.png?k=a0533fa902a4297f8ecf3828a3f6b67b&t=6b00c26d",
+        "previewDimensions": [
+          1232,
+          928
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 28960,
+        "imageId": 28956,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558254_5bw5uk_1795208558255_hiv9zl.webp"
+    },
+    {
+      "key": "zcool-ZMTQxNTEy",
+      "name": "钢蓝雪峰｜航拍山脊背景",
+      "category": "背景设计",
+      "subcategory": "山湖与雪山",
+      "text": "巨大的积雪山峰，富有戏剧感的山脊，航拍视角，低饱和钢蓝与白色，深海军蓝天空，极其细致的纹理，编辑类风景摄影，中画幅质感，克制色调。",
+      "tags": [
+        "横版",
+        "航拍",
+        "雪峰",
+        "钢蓝",
+        "摄影感",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-11785b273c19f689cbbe.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af6428453ca14f6b3wood8831.png?k=91ddad2b13b88d60954de346a84eb7b8&t=6b00c22b"
+      ],
+      "originalText": "massive snowy mountain peak, dramatic ridges, aerial view, desaturated steel blue and white, deep navy sky, ultra detailed texture, editorial landscape photography, medium format, muted tones",
+      "source": {
+        "key": "zcool-ZMTQxNTEy",
+        "subcategory": "山湖与雪山",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTQxNTEy.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af6428453ca14f6b3wood8831.png?k=91ddad2b13b88d60954de346a84eb7b8&t=6b00c22b",
+        "previewDimensions": [
+          1456,
+          816
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 40754,
+        "imageId": 40750,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。摄影感AI案例，并非实地摄影或地理事实凭证。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558262_0vrn3z_1795208558262_dbtrlr.webp"
+    },
+    {
+      "key": "zcool-ZMTM2MjIw",
+      "name": "酸橙虹彩｜Y2K全息渐变",
+      "category": "背景设计",
+      "subcategory": "弥散与运动模糊",
+      "text": "极简全息渐变背景，酸橙绿，绿色与黄色的不同层次，平滑过渡，Y2K美学，微妙虹彩效果，极其干净，高级电子音乐传单背景，没有单一视觉焦点。",
+      "tags": [
+        "竖版",
+        "酸橙绿",
+        "虹彩",
+        "全息",
+        "Y2K",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-52b29bc63a2bf3868bd1.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af5923bdb3f9duj1e7oi61480.png?k=e31185473f63c09bc5d2ae7473b2d794&t=6b00c26d"
+      ],
+      "originalText": "minimal holographic gradient background, lime green, shades of green and yellow, smooth transitions, y2k aesthetics, subtle iridescent effect, ultra clean, premium electronic music flyer background, no focal point",
+      "source": {
+        "key": "zcool-ZMTM2MjIw",
+        "subcategory": "弥散与运动模糊",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTM2MjIw.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af5923bdb3f9duj1e7oi61480.png?k=e31185473f63c09bc5d2ae7473b2d794&t=6b00c26d",
+        "previewDimensions": [
+          1180,
+          1478
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 39431,
+        "imageId": 39427,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558270_asywzf_1795208558271_43qwz8.webp"
+    },
+    {
+      "key": "zcool-ZOTk2NzI=",
+      "name": "秋雾林溪｜摄影感森林背景",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "一张动人的秋日风景照片：森林溪流、树木，以及远处朦胧的雾气。",
+      "tags": [
+        "方形",
+        "秋季",
+        "溪流",
+        "雾气",
+        "摄影感",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-2c23ed803bb033d5c9fb.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6acf2f3d36ab8j6t0ojr5s850.png?k=36a4408595a4c6d7a467af3b272b92ae&t=6b00c26d"
+      ],
+      "originalText": "a photo of a breathtaking fall landscape with a forest stream, trees, and foggy mist in the distance",
+      "source": {
+        "key": "zcool-ZOTk2NzI=",
+        "subcategory": "森林与晨雾",
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTk2NzI=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6acf2f3d36ab8j6t0ojr5s850.png?k=36a4408595a4c6d7a467af3b272b92ae&t=6b00c26d",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 30274,
+        "imageId": 30270,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。摄影感AI案例，并非实地摄影或地理事实凭证。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558282_y8zx8g_1795208558282_joejz2.webp"
+    },
+    {
+      "key": "zcool-ZMTQxNjMy",
+      "name": "富春暮色｜电影感山河木屋",
+      "category": "背景设计",
+      "subcategory": "超现实与创意地景",
+      "text": "史诗感电影宽景，描绘富春山及其原始蜿蜒河流——原文设定为严子陵度过晚年的地方，灵感来自高预算电影制作。一座孤独的小木屋坐落于绿色山谷，水面薄雾缭绕，高山在壮丽温暖的夕阳下耸立，营造传奇、宁静、超越时间的历史氛围。极其细致，照片级写实，史诗电影感历史虚构，高度精细，照片级写实。",
+      "tags": [
+        "横版",
+        "山河",
+        "暮色",
+        "木屋",
+        "超现实",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-38dd7ce7a0756f061027.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af6457ff29099ettjsfeq8713.png?k=34ae58d4980007c2001726a853b5eba2&t=6b00c26d"
+      ],
+      "originalText": "An epic, cinematic wide shot of Fuchun Mountain and its pristine winding river where Yan Ziling spent his final years, inspired by high-budget film productions. A solitary small wooden cottage nestled in green valley, misty waters, high soaring mountains under a breathtaking warm sunset, creating a legendary, peaceful, and immortal historic atmosphere. Extremely detailed, photorealistic Epic Cinematic Historical Fiction, Highly detailed, photorealistic",
+      "source": {
+        "key": "zcool-ZMTQxNjMy",
+        "subcategory": "超现实与创意地景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTQxNjMy.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af6457ff29099ettjsfeq8713.png?k=34ae58d4980007c2001726a853b5eba2&t=6b00c26d",
+        "previewDimensions": [
+          1456,
+          816
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 40784,
+        "imageId": 40780,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。摄影感AI案例，并非实地摄影或地理事实凭证。创意历史电影场景，按实际超现实山河构图归类。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558291_uumzz9_1795208558291_vs3mpb.webp"
+    },
+    {
+      "key": "zcool-ZOTE4NDA=",
+      "name": "晨光花田｜横版林间光束背景",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "阳光照耀的林间空地向自然野花草甸敞开，细小白雏菊和小型草甸花散落于新鲜草丛。温暖晨光以柔和可见光束穿过树林，照亮花朵，以及远处少数微小、自然的蝴蝶；在宽幅风景中蝴蝶几乎不易察觉。轻盈通透构图，草丛暗示轻微运动，清新浅绿，温暖金色高光，真实色彩，宁静夏日氛围，照片级写实风景摄影，精细自然细节。不要过大的花朵或蝴蝶，不要人物、建筑、文字。",
+      "tags": [
+        "横版",
+        "晨光",
+        "雏菊",
+        "光束",
+        "自然",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-a9c8a21b4f09d8c70e38.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6acd2847c3e18tdm5siq9w4447.png?k=23ebe814dbe69e497dfdbffe7d0b9ac2&t=6b00c26d"
+      ],
+      "originalText": "A sunlit forest clearing opening onto a natural wildflower meadow, delicate white daisies and small meadow flowers scattered among fresh grasses. Warm morning sunlight streams through the trees in soft visible rays, illuminating the flowers and a few tiny, natural-looking butterflies in the distance, barely noticeable in the wide landscape. Airy composition, gentle movement suggested in the grasses, light fresh greens, warm golden highlights, realistic colors, peaceful summer atmosphere, photorealistic landscape photography, fine natural details, no oversized flowers or butterflies, no people, no buildings, no text",
+      "source": {
+        "key": "zcool-ZOTE4NDA=",
+        "subcategory": "森林与晨雾",
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTE4NDA=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6acd2847c3e18tdm5siq9w4447.png?k=23ebe814dbe69e497dfdbffe7d0b9ac2&t=6b00c26d",
+        "previewDimensions": [
+          1456,
+          816
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 28312,
+        "imageId": 28308,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。摄影感AI案例，并非实地摄影或地理事实凭证。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558297_kqd7in_1795208558297_fy40lj.webp"
+    },
+    {
+      "key": "zcool-ZOTE2ODg=",
+      "name": "金秋步道｜暖金逆光背景",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "明亮温暖的公园步道，梦幻金色逆光，柔和奶油米色与蜂蜜色，发光的秋日树木，轻柔阳光，通透浪漫，背景轻微虚化，清新明亮氛围，韩剧般电影感，细腻自然风光，无人物。",
+      "tags": [
+        "横版",
+        "秋季",
+        "逆光",
+        "步道",
+        "金色",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-4e84b5233178478b4a82.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6acd249b3d2e5lo54f0kf49676.png?k=30f982491b4ac9ff3c6fcd848c02c1b7&t=6b00c26d"
+      ],
+      "originalText": "A bright warm park walkway with dreamy golden backlight, soft creamy beige and honey tones, glowing autumn trees, gentle sunlight, airy and romantic feeling, slightly blurred background, fresh and luminous mood, cinematic Korean drama style, delicate natural scenery, no people",
+      "source": {
+        "key": "zcool-ZOTE2ODg=",
+        "subcategory": "森林与晨雾",
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTE2ODg=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6acd249b3d2e5lo54f0kf49676.png?k=30f982491b4ac9ff3c6fcd848c02c1b7&t=6b00c26d",
+        "previewDimensions": [
+          1456,
+          816
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 28274,
+        "imageId": 28270,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。摄影感AI案例，并非实地摄影或地理事实凭证。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558303_4ad5fq_1795208558303_afrt3t.webp"
+    },
+    {
+      "key": "zcool-ZMTA5OTIw",
+      "name": "幽冥鬼葬｜国风枯笔特效标题",
+      "category": "字体设计",
+      "subcategory": "书法与手写标题",
+      "text": "玄幻魂技文字海报，画面干净，无人物、无底部任何装饰物件，视觉重心完全给到标题文字；居中主标题【幽冥鬼葬】，字体：沉郁诡谲国风书法艺术字，枯笔断墨笔触，笔画缠绕枯骨锁链、幽纹鬼篆、黑雾裂隙，字形蜷缩如万千幽魂低嚎，风化古寒玉腐朽肌理，渐变灰墨黑过渡幽萤青、死寂灰，内部浮动流转幽幽鬼火，边缘灰绿冷雾弥散光晕，字缝飘散半透明残魂絮、灰磷火星，笔画末端拖曳缥缈如烟的阴魂流光，死寂阴森感强烈；背景：纯沉暗墨黑底色，仅有微弱朦胧的灰青幽雾光晕衬在文字后方，几乎没有多余场景物体，底纹只有极淡的虚化往生古咒暗纹；光影：底部向上漫射冷光托住文字，明暗反差强烈，厚涂国漫原画风格，电影光影，特效集中附着在字体上，8K 高清",
+      "tags": [
+        "竖版",
+        "国风",
+        "枯笔",
+        "灰青",
+        "特效",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-7f2a0c37b40fe3b5d153.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ae8160b310baee46xu3vo1061.png?k=e2e5fe7e35b8bed40521fe391cbec326&t=6b00c22b"
+      ],
+      "originalText": "玄幻魂技文字海报，画面干净，无人物、无底部任何装饰物件，视觉重心完全给到标题文字；居中主标题【幽冥鬼葬】，字体：沉郁诡谲国风书法艺术字，枯笔断墨笔触，笔画缠绕枯骨锁链、幽纹鬼篆、黑雾裂隙，字形蜷缩如万千幽魂低嚎，风化古寒玉腐朽肌理，渐变灰墨黑过渡幽萤青、死寂灰，内部浮动流转幽幽鬼火，边缘灰绿冷雾弥散光晕，字缝飘散半透明残魂絮、灰磷火星，笔画末端拖曳缥缈如烟的阴魂流光，死寂阴森感强烈；背景：纯沉暗墨黑底色，仅有微弱朦胧的灰青幽雾光晕衬在文字后方，几乎没有多余场景物体，底纹只有极淡的虚化往生古咒暗纹；光影：底部向上漫射冷光托住文字，明暗反差强烈，厚涂国漫原画风格，电影光影，特效集中附着在字体上，8K 高清",
+      "source": {
+        "key": "zcool-ZMTA5OTIw",
+        "subcategory": "书法与手写标题",
+        "author": "sea娜娜",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTA5OTIw.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ae8160b310baee46xu3vo1061.png?k=e2e5fe7e35b8bed40521fe391cbec326&t=6b00c22b",
+        "previewDimensions": [
+          705,
+          1188
+        ],
+        "language": "zh-CN",
+        "model": "即梦图片 4.5",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 32856,
+        "imageId": 32852,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558308_aot6wo_1795208558308_kiil88.webp"
+    },
+    {
+      "key": "zcool-ZMTA5Nzcy",
+      "name": "巧克力9｜丝带数字字效",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "超写实巧克力数字 “9”，以流动的丝带形态雕刻而成，深浓黑巧质感，表面带有镜面般亮泽棕色反光，点缀少量可食用红宝石碎片与细腻可可粉纹理，置于明亮白色背景中央，柔和工作室灯光，微妙阴影，突出立体雕刻感与奢华光泽，极简干净布景，超精细 3D 渲染，产品摄影质感",
+      "tags": [
+        "竖版",
+        "巧克力",
+        "数字9",
+        "丝带",
+        "产品质感",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-702bdfea3687fcdb9f2b.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ae6e1ed9ceaff77dmte6v765.png?k=413c6c8c226c2ad2148c4cc040c087a4&t=6b00c22b"
+      ],
+      "originalText": "超写实巧克力数字 “9”，以流动的丝带形态雕刻而成，深浓黑巧质感，表面带有镜面般亮泽棕色反光，点缀少量可食用红宝石碎片与细腻可可粉纹理，置于明亮白色背景中央，柔和工作室灯光，微妙阴影，突出立体雕刻感与奢华光泽，极简干净布景，超精细 3D 渲染，产品摄影质感",
+      "source": {
+        "key": "zcool-ZMTA5Nzcy",
+        "subcategory": "材质与特殊字效",
+        "author": "sea娜娜",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTA5Nzcy.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ae6e1ed9ceaff77dmte6v765.png?k=413c6c8c226c2ad2148c4cc040c087a4&t=6b00c22b",
+        "previewDimensions": [
+          699,
+          894
+        ],
+        "language": "zh-CN",
+        "model": "即梦图片 4.5",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 32819,
+        "imageId": 32815,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558313_2o479a_1795208558313_u96o5p.webp"
+    },
+    {
+      "key": "zcool-ZMTkyNTY=",
+      "name": "塞克破城｜霓虹金属嘻哈字组",
+      "category": "字体设计",
+      "subcategory": "立体金属标题",
+      "text": "请帮我用中文“塞克破城”设计一个创意美术字海报，字体以赛博嘻哈风格的霓虹立体字为主，以纯黑背景强化视觉冲击力，字体设计以硬核嘻哈风，采用蓝紫→粉紫渐变的金属质感立体字，表面添加机械裂痕纹理（类似工业破损效果），赋予硬核的工业张力；立体结构通过高光/阴影的渐变层次（从冷蓝到暖粉），模拟金属反光的赛博质感。 排版逻辑：字体呈夸张层叠+倾斜排版，强化嘻哈文化的潮流张力与视觉动感。 霓虹与装饰系统 霓虹描边：字体外轮廓以青蓝色霓虹发光线勾勒，形成赛博朋克标志性的发光外框；同时搭配粉紫色霓虹装饰元素（右上角箭头、底部折线、左侧条纹状线条），通过几何图形（箭头、折线）、条纹线强化科技感。 色彩逻辑：整体色彩以冷调青蓝（霓虹外框）+暖调粉紫（装饰线、字体渐变）形成撞色，在黑色背景下爆发强烈视觉冲击，契合硬核嘻哈的潮流张力。",
+      "tags": [
+        "方形",
+        "黑底",
+        "青粉",
+        "霓虹",
+        "嘻哈",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-4b8fa67ee367421bf9ea.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/69cf84802e507rbx7510e38186.png?k=191b8f9ecc778e8843dcacce7ac110e6&t=6b00c22b"
+      ],
+      "originalText": "请帮我用中文“塞克破城”设计一个创意美术字海报，字体以赛博嘻哈风格的霓虹立体字为主，以纯黑背景强化视觉冲击力，字体设计以硬核嘻哈风，采用蓝紫→粉紫渐变的金属质感立体字，表面添加机械裂痕纹理（类似工业破损效果），赋予硬核的工业张力；立体结构通过高光/阴影的渐变层次（从冷蓝到暖粉），模拟金属反光的赛博质感。 排版逻辑：字体呈夸张层叠+倾斜排版，强化嘻哈文化的潮流张力与视觉动感。 霓虹与装饰系统 霓虹描边：字体外轮廓以青蓝色霓虹发光线勾勒，形成赛博朋克标志性的发光外框；同时搭配粉紫色霓虹装饰元素（右上角箭头、底部折线、左侧条纹状线条），通过几何图形（箭头、折线）、条纹线强化科技感。 色彩逻辑：整体色彩以冷调青蓝（霓虹外框）+暖调粉紫（装饰线、字体渐变）形成撞色，在黑色背景下爆发强烈视觉冲击，契合硬核嘻哈的潮流张力。",
+      "source": {
+        "key": "zcool-ZMTkyNTY=",
+        "subcategory": "立体金属标题",
+        "author": "唯自渡",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTkyNTY=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/69cf84802e507rbx7510e38186.png?k=191b8f9ecc778e8843dcacce7ac110e6&t=6b00c22b",
+        "previewDimensions": [
+          4096,
+          4096
+        ],
+        "language": "zh-CN",
+        "model": "即梦图片 4.5",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 5543,
+        "imageId": 5539,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "4K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558319_7m8sgl_1795208558319_c691y4.webp"
+    },
+    {
+      "key": "zcool-ZMzQyNzY=",
+      "name": "冬｜寒梅冰凌材质文字",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "以 “冬” 为主题的创意字体艺术海报，主体汉字由寒梅枝、松针、雪枝、冰凌、枯枝搭建而成，枝桠线条苍劲舒展，梅花半开半绽、傲雪盛放，冰棱垂挂穿插支撑，画面细节感很强，层次丰富，呈现冬日寒木傲雪的灵动意境。字体立于冬日寒塘中央，底部半浸在结着薄冰的浅水面上，冰面倒映出完整字体轮廓，周围漂浮着细碎雪花、零落梅瓣与霜覆枯草。背景是纯净柔和的冷灰白色天空，搭配朦胧的寒霜水雾效果，整体采用居中对称构图，中景视角突出主体。色调清冷治愈，以寒梅粉、松针绿、冰雪白、枯枝灰与浅青蓝色为主，低饱和度配色清冷雅致。细节丰富，梅花花瓣质感莹润通透，松枝枯木纹理清晰真实，冰晶雪花点缀枝桠，冰面倒影朦胧柔和，营造出静谧清冷、自带冬日静谧氛围感的寒塘雪景，光影清透淡雅，整体画面干净简洁，充满诗意与高级感。以 “冬” 为主题的创意字体艺术海报，主体汉字由寒梅枝、松针、雪枝、冰凌、枯枝搭建而成，枝桠线条苍劲舒展，梅花半开半绽、傲雪盛放，冰棱垂挂穿插支撑，画面细节感很强，层次丰富，呈现冬日寒木傲雪的灵动意境。字体立于冬日寒塘中央，底部半浸在结着薄冰的浅水面上，冰面倒映出完整字体轮廓，周围漂浮着细碎雪花、零落梅瓣与霜覆枯草。背景是纯净柔和的冷灰白色天空，搭配朦胧的寒霜水雾效果，整体采用居中对称构图，中景视角突出主体。色调清冷治愈，以寒梅粉、松针绿、冰雪白、枯枝灰与浅青蓝色为主，低饱和度配色清冷雅致。细节丰富，梅花花瓣质感莹润通透，松枝枯木纹理清晰真实，冰晶雪花点缀枝桠，冰面倒影朦胧柔和，营造出静谧清冷、自带冬日静谧氛围感的寒塘雪景，光影清透淡雅，中英文混合排版，主标题“Wintersnow”字体有艺术感，整体充满诗意与高级感。",
+      "tags": [
+        "竖版",
+        "冬季",
+        "寒梅",
+        "冰凌",
+        "倒影",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-78e7510e2b4d8299b311.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a11020d04d487xpwcgvl06445.png?k=58f22f52a5840e3c264f4aa0e8c549c2&t=6b00c22b"
+      ],
+      "originalText": "以 “冬” 为主题的创意字体艺术海报，主体汉字由寒梅枝、松针、雪枝、冰凌、枯枝搭建而成，枝桠线条苍劲舒展，梅花半开半绽、傲雪盛放，冰棱垂挂穿插支撑，画面细节感很强，层次丰富，呈现冬日寒木傲雪的灵动意境。字体立于冬日寒塘中央，底部半浸在结着薄冰的浅水面上，冰面倒映出完整字体轮廓，周围漂浮着细碎雪花、零落梅瓣与霜覆枯草。背景是纯净柔和的冷灰白色天空，搭配朦胧的寒霜水雾效果，整体采用居中对称构图，中景视角突出主体。色调清冷治愈，以寒梅粉、松针绿、冰雪白、枯枝灰与浅青蓝色为主，低饱和度配色清冷雅致。细节丰富，梅花花瓣质感莹润通透，松枝枯木纹理清晰真实，冰晶雪花点缀枝桠，冰面倒影朦胧柔和，营造出静谧清冷、自带冬日静谧氛围感的寒塘雪景，光影清透淡雅，整体画面干净简洁，充满诗意与高级感。以 “冬” 为主题的创意字体艺术海报，主体汉字由寒梅枝、松针、雪枝、冰凌、枯枝搭建而成，枝桠线条苍劲舒展，梅花半开半绽、傲雪盛放，冰棱垂挂穿插支撑，画面细节感很强，层次丰富，呈现冬日寒木傲雪的灵动意境。字体立于冬日寒塘中央，底部半浸在结着薄冰的浅水面上，冰面倒映出完整字体轮廓，周围漂浮着细碎雪花、零落梅瓣与霜覆枯草。背景是纯净柔和的冷灰白色天空，搭配朦胧的寒霜水雾效果，整体采用居中对称构图，中景视角突出主体。色调清冷治愈，以寒梅粉、松针绿、冰雪白、枯枝灰与浅青蓝色为主，低饱和度配色清冷雅致。细节丰富，梅花花瓣质感莹润通透，松枝枯木纹理清晰真实，冰晶雪花点缀枝桠，冰面倒影朦胧柔和，营造出静谧清冷、自带冬日静谧氛围感的寒塘雪景，光影清透淡雅，中英文混合排版，主标题“Wintersnow”字体有艺术感，整体充满诗意与高级感。",
+      "source": {
+        "key": "zcool-ZMzQyNzY=",
+        "subcategory": "材质与特殊字效",
+        "author": "冰糖葫芦柠",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMzQyNzY=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a11020d04d487xpwcgvl06445.png?k=58f22f52a5840e3c264f4aa0e8c549c2&t=6b00c22b",
+        "previewDimensions": [
+          1200,
+          1600
+        ],
+        "language": "zh-CN",
+        "model": "GPT-image2",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 9873,
+        "imageId": 9869,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。原文重复段落完整保留；例图含Wintersnow混排。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558325_0ixejm_1795208558325_6b3jng.webp"
+    },
+    {
+      "key": "zcool-ZNDIyMDQ=",
+      "name": "境｜山河秘境文字门户",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "汉字“境”化为宇宙门户，笔画转变为山脉、河流与古代建筑，汉字内部隐藏一个微小的东方世界。新中式美学，超现实山水，电影级照明，高级海报设计，极简文字排版，8K。",
+      "tags": [
+        "竖版",
+        "新中式",
+        "山河",
+        "字中世界",
+        "金色",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-6fa37a0cd6e35309c3a0.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a58879824228qda2pk1522314.png?k=02369e86cab7086784f58a4e7e328b38&t=6b00c22b"
+      ],
+      "originalText": "Chinese character \"境\" as a universe portal, the strokes transform into mountains, rivers and ancient architecture, a tiny oriental world hidden inside the character, new Chinese aesthetics, surreal landscape, cinematic lighting, premium poster design, minimal typography, 8K",
+      "source": {
+        "key": "zcool-ZNDIyMDQ=",
+        "subcategory": "材质与特殊字效",
+        "author": "白马归来战甲还",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZNDIyMDQ=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a58879824228qda2pk1522314.png?k=02369e86cab7086784f58a4e7e328b38&t=6b00c22b",
+        "previewDimensions": [
+          1536,
+          2048
+        ],
+        "language": "zh-CN",
+        "model": "GPT-image2",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 12904,
+        "imageId": 12900,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558332_yc82sn_1795208558332_cwk1rb.webp"
+    },
+    {
+      "key": "zcool-ZMTg4ODA=",
+      "name": "消散｜黑沙书法字组",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "这幅视觉作品以“消散”为核心主题，采用黑色沙质颗粒材质在白色纯净背景上创作，呈现汉字艺术书法的视觉形态。字体通过沙粒堆积构建出具有立体浮雕感的笔画结构，既保留书法字体的笔锋张力与结构韵律，又借沙粒在笔画边缘的自然散落、飞溅堆积，营造出手工肌理与自然质感（沙粒的颗粒感、不规则堆积纹理）；整体以黑白高对比度强化视觉冲击，沙质材质的颗粒肌理（堆积厚度、边缘散落细节）与书法艺术的笔画形态（笔锋、结构）深度融合，呼应“消散”主题的材质隐喻（沙的流动性与堆积感）。背景留白突出沙质字体的立体层次与颗粒细节，传递出手工创作的自然肌理张力与书法艺术的形式美感，视觉语言上通过“沙”的材质特性（颗粒、堆积、散落）与“书法字体”的艺术结构（笔锋、布局）的结合，构建出兼具手工质感与艺术张力的视觉表达。",
+      "tags": [
+        "方形",
+        "黑白",
+        "沙粒",
+        "书法",
+        "浮雕",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d751076696574746ab04.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/69cf24a673caac94mga0z78431.png?k=163d42803399647107b534a495b2931e&t=6b00c22b"
+      ],
+      "originalText": "这幅视觉作品以“消散”为核心主题，采用黑色沙质颗粒材质在白色纯净背景上创作，呈现汉字艺术书法的视觉形态。字体通过沙粒堆积构建出具有立体浮雕感的笔画结构，既保留书法字体的笔锋张力与结构韵律，又借沙粒在笔画边缘的自然散落、飞溅堆积，营造出手工肌理与自然质感（沙粒的颗粒感、不规则堆积纹理）；整体以黑白高对比度强化视觉冲击，沙质材质的颗粒肌理（堆积厚度、边缘散落细节）与书法艺术的笔画形态（笔锋、结构）深度融合，呼应“消散”主题的材质隐喻（沙的流动性与堆积感）。背景留白突出沙质字体的立体层次与颗粒细节，传递出手工创作的自然肌理张力与书法艺术的形式美感，视觉语言上通过“沙”的材质特性（颗粒、堆积、散落）与“书法字体”的艺术结构（笔锋、布局）的结合，构建出兼具手工质感与艺术张力的视觉表达。",
+      "source": {
+        "key": "zcool-ZMTg4ODA=",
+        "subcategory": "材质与特殊字效",
+        "author": "唯自渡",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTg4ODA=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/69cf24a673caac94mga0z78431.png?k=163d42803399647107b534a495b2931e&t=6b00c22b",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Nano Banana PRO",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 5449,
+        "imageId": 5445,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "中文原文仅解码HTML实体与换行；保留原有参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558338_9be0mt_1795208558338_u589o8.webp"
+    },
+    {
+      "key": "zcool-ZOTkyOTY=",
+      "name": "电蓝紫晕｜黑底弥散光场",
+      "category": "背景设计",
+      "subcategory": "弥散与运动模糊",
+      "text": "深黑背景上的柔和抽象渐变，酸橙绿平滑溶入电蓝与紫罗兰色，极其柔和的过渡，模糊发光的光线，极简抽象美学，高分辨率，彩色图像。",
+      "tags": [
+        "竖版",
+        "黑底",
+        "电蓝",
+        "紫色",
+        "光晕",
+        "站酷",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-38249efedf26f8e9e9f3.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6acf2462afbddti3qc8kq88689.png?k=0e132d59bd9dda663a6c27e319539cf6&t=6b00c22b"
+      ],
+      "originalText": "soft abstract gradient on a deep black background, lime green smoothly dissolving into electric blue and violet, extremely soft transitions, blurred glowing light, minimal abstract aesthetic, high resolution, colorful image",
+      "source": {
+        "key": "zcool-ZOTkyOTY=",
+        "subcategory": "弥散与运动模糊",
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTkyOTY=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6acf2462afbddti3qc8kq88689.png?k=0e132d59bd9dda663a6c27e319539cf6&t=6b00c22b",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-21-0500",
+        "collectedAt": "2026-11-20",
+        "verifiedPair": true,
+        "contentId": 30180,
+        "imageId": 30176,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1,
+        "note": "完整英文原文忠实译为中文；保留原文与参数。 预览取自同一content的公开原图，非合集封面；来源例图未在本机重新生图。",
+        "resolution": "1K"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795208558343_pp6ezi_1795208558343_dl67u5.webp"
+    }
+  ]
+}

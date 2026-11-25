@@ -1,0 +1,96 @@
+{
+  "added": 62,
+  "activeBefore": 282,
+  "activeAfter": 344,
+  "trashBefore": 93,
+  "trashAfter": 93,
+  "priorRecordsPreserved": 375,
+  "categories": {
+    "细线优雅": 6,
+    "几何构成": 4,
+    "圆体趣味": 4,
+    "复古装饰": 13,
+    "现代简约": 5,
+    "运动力量": 9,
+    "语义图形": 5,
+    "立体字效": 15,
+    "书法手写": 1
+  },
+  "authors": {
+    "四喜字体设计": 30,
+    "石昌鴻": 7,
+    "Design Superman": 9,
+    "优设基础训练营": 2,
+    "安全蛋": 9,
+    "明明设计": 5
+  },
+  "sourceCounts": {
+    "https://www.uisdc.com/group/568109.html": 9,
+    "https://www.uisdc.com/group/566510.html": 6,
+    "https://www.uisdc.com/group/565271.html": 3,
+    "https://www.uisdc.com/group/564556.html": 6,
+    "https://www.uisdc.com/group/563905.html": 6,
+    "https://www.uisdc.com/group/572933.html": 7,
+    "https://www.uisdc.com/group/569245.html": 9,
+    "https://www.uisdc.com/group/498397.html": 1,
+    "https://www.uisdc.com/group/486344.html": 1,
+    "https://www.uisdc.com/group/512389.html": 9,
+    "https://www.ziticq.com/Works/35652": 1,
+    "https://www.ziticq.com/Works/35637": 1,
+    "https://www.ziticq.com/Works/35631": 1,
+    "https://www.ziticq.com/Works/35629": 1,
+    "https://www.ziticq.com/Works/35626": 1
+  },
+  "uncertainTextCount": 10,
+  "runtime": {
+    "app": "/Applications/环中AIStudio.app",
+    "pid": 13671,
+    "nextPid": 13684,
+    "cwd": "/Applications/环中AIStudio.app/Contents/Resources/standalone",
+    "port": 5001,
+    "owner": "00000000-0000-4000-8000-000000000001",
+    "indexFile": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/11e594f481958c10e3015d0b/index.json"
+  },
+  "verification": {
+    "cropScript": "crop_fonts.py",
+    "importStages": [
+      "plan",
+      "apply",
+      "verify"
+    ],
+    "desktopSearch": "每日扩充1121",
+    "desktopPagination": [
+      24,
+      48,
+      62
+    ],
+    "desktopCategories": {
+      "立体字效": 15,
+      "细线优雅": 6
+    },
+    "desktopDetails": [
+      "Love: full notes, origin, author, crop, image1080x800 loaded",
+      "绣坊: full notes, watermark, author, crop, image660x485 loaded"
+    ],
+    "apiMediaHttp200": 62,
+    "durableImages": 62,
+    "noPaidAI": true,
+    "noRestart": true,
+    "noCodeChanges": true,
+    "nonemptyDraftInputsBeforeNavigation": 0
+  },
+  "browser": {
+    "existingPid": 7792,
+    "windowId": 1465084845,
+    "tabId": 1465084873,
+    "originalUrlRestored": "http://127.0.0.1:4498/#/agent",
+    "restoredVerified": true,
+    "verticalImages": "Already loaded public same-origin images exported through canvas in existing browser; no media restriction bypass."
+  },
+  "limitations": [
+    "站酷现有会话搜索仅显示导航，没有作品结果，未收录站酷来源。",
+    "10款图形化文字标原中文待核，其中8款为公开AIGC机甲单字案例。",
+    "字体传奇月沐、物象、形叙、早睡早起原图未实际加载，已跳过。"
+  ],
+  "automation": "automation-2 ACTIVE, existing daily Beijing05:00 schedule retained."
+}

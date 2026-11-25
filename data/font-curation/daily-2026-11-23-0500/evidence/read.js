@@ -1,0 +1,1 @@
+(()=>JSON.stringify({url:location.href,title:document.title,body:document.body.innerText,links:[...document.links].map(a=>({text:(a.innerText||a.title||'').trim(),href:a.href})).filter(x=>x.href.includes('/group/')),images:[...document.images].map(i=>({alt:i.alt||'',src:i.currentSrc||i.src,width:i.naturalWidth,height:i.naturalHeight})).filter(x=>x.width>400&&x.height>400)}))()

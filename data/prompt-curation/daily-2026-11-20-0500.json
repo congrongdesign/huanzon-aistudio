@@ -1,0 +1,908 @@
+{
+  "version": 1,
+  "batch": "design-curation-2026-11-20-0500",
+  "collectedAt": "2026-11-19",
+  "selectionMethod": "北京时间2026-11-20早间轮次；客户端日期2026-11-19。公开详情全文与原图逐张核对，四宫格匹配子图裁切，保留原文、参数和来源。",
+  "prompts": [
+    {
+      "key": "promptlibrary-106925",
+      "name": "雾湖草甸｜半抽象丙烯地景",
+      "category": "背景设计",
+      "subcategory": "色域与抽象地景",
+      "text": "半抽象、梦幻的丙烯风景，灵感来自莫奈印象主义与当代美术。景物和谐，自然透视与纵深过渡连贯：茂盛草甸、起伏丘陵、森林、野花田、山谷、远山，以及长满苔藓的海岸岩石和草地岛屿构成的北欧群岛。可适当融入平静水面。柔和发光的天空、薄雾与丰富地形层次营造沉浸空间。细微的野花、草、苔石与小型野生动物自然融入。富有表现力的笔触、流动有机形态、视觉叠层、刮擦区域与微凸丙烯纹理。克制的鼠尾草绿、橄榄绿、苔绿、森林绿、柔蓝、象牙白与奶油色，点缀腮红粉、薰衣草紫、陶土色、古金色。优雅的不对称构图，视觉重量平衡，细节疏密有致。使用 Winsor & Newton Galeria 丙烯颜料的绘画效果。避免过强焦点、过大天空、过度留白、细节拥挤、硬轮廓、几何抽象和过饱和色彩。\n\n来源参数：--ar 4:3 --profile ag8qshv --v 8.2",
+      "tags": [
+        "横版",
+        "丙烯",
+        "低饱和",
+        "湖泊",
+        "绘画质感",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-554cd9662e6d96106aad.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Abstract-Acrylic-Impressionist-Landscape-midjourney-prompt.webp"
+      ],
+      "originalText": "Semi abstract, dreamlike acrylic landscape inspired by Monet's impressionism and contemporary fine art. Harmonious scenery with natural perspective and seamless depth transitions: lush meadows, rolling hills, forests, wildflower fields, valleys, distant mountains, and Nordic archipelagos with mossy coastal rocks and grassy islands. Calm water occasionally integrated. Soft luminous skies, atmospheric mist, and richly layered terrain create immersive space. Subtle wildflowers, grasses, mossy stones, and small wildlife blend naturally in. Expressive brushwork, flowing organic forms, optical layering, scraped passages, and subtle raised acrylic textures. Sophisticated muted palette of sage, olive, moss, forest green, soft blues, ivory, and cream, with blush pink, lavender, terracotta, and antique gold accents. Elegant asymmetrical composition, balanced visual weight, graceful detail distribution. Painted with Winsor & Newton Galeria acrylics. Avoid dominant focal elements, oversized skies, excessive empty space, crowded details, hard outlines, geometric abstraction, and oversaturated colors. --ar 4:3 --profile ag8qshv --v 8.2",
+      "source": {
+        "key": "promptlibrary-106925",
+        "subcategory": "色域与抽象地景",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/abstract-acrylic-impressionist-landscape/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Abstract-Acrylic-Impressionist-Landscape-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          904
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。原文含个人风格配置，其他账号效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568025_lkqhzj_1795122568025_5eu6ao.webp"
+    },
+    {
+      "key": "promptlibrary-100370",
+      "name": "樱花溪谷｜春日山间风景",
+      "category": "背景设计",
+      "subcategory": "森林与晨雾",
+      "text": "日本宫崎县，隐藏在深山里的樱花秘境。沿着峡谷小径，一侧是清澈河流，另一侧是盛开的樱花。",
+      "tags": [
+        "竖版",
+        "樱花",
+        "溪流",
+        "春季",
+        "摄影感",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-de8b3073e7607dabc173.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Cherry-Blossom-Canyon-Landscape-midjourney-prompt.webp"
+      ],
+      "originalText": "Miyazaki Prefecture, Japan, a cherry blossom paradise hidden in the deep mountains. Along the canyon trail, with a clear river on one side and blooming cherry blossoms on the other.",
+      "source": {
+        "key": "promptlibrary-100370",
+        "subcategory": "森林与晨雾",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/cherry-blossom-canyon-landscape/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Cherry-Blossom-Canyon-Landscape-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。摄影感AI例图，不是实地拍摄或地理事实证明。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568098_xoz5wl_1795122568098_6yjh7t.webp"
+    },
+    {
+      "key": "promptlibrary-99884",
+      "name": "印加小驴｜太阳与梯田标志",
+      "category": "LOGO设计",
+      "subcategory": "抽象与几何标识",
+      "text": "简洁的印加风格图形艺术：一头驴、太阳，以及种植水果的山地梯田。平面设计，标志。",
+      "tags": [
+        "方形",
+        "小驴",
+        "太阳",
+        "梯田",
+        "扁平",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-7b55127b84e2901c70c5.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Inca-Graphic-Donkey-Landscape-midjourney-prompt.webp"
+      ],
+      "originalText": "simple inca style graphic art of a donkey, the sun and mountain terraces growing fruits, graphic design, logo",
+      "source": {
+        "key": "promptlibrary-99884",
+        "subcategory": "抽象与几何标识",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/inca-graphic-donkey-landscape/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Inca-Graphic-Donkey-Landscape-midjourney-prompt.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568106_08qsr8_1795122568106_5pk6oy.webp"
+    },
+    {
+      "key": "promptlibrary-99094",
+      "name": "蓝色球场｜山景运动空间",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "一张晴天拍摄的空旷蓝色网球场照片，白色场地线清晰，远眺新英格兰群山。天空布满云朵，背景有绿色植物。每张球网的一侧应有照明以突出球网，明亮阳光照亮部分场地。使用尼康 D850 单反相机、Nikon AF-S 24mm f/2.8 广角镜头、ISO 100 的拍摄设定，以照片级写实的 3D 渲染表现。",
+      "tags": [
+        "竖版",
+        "网球场",
+        "蓝天",
+        "运动",
+        "广角",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-34296b04161aa0e054b2.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Photorealistic-Tennis-Court-Landscape-midjourney-prompt.webp"
+      ],
+      "originalText": "A photograph of an empty blue tennis court with white lines, overlooking the New England mountains in sunny weather. The sky is full of clouds, and there is greenery in the background. There should be lighting on one side of each net to highlight them, as well as bright sunlight illuminating part of the court. Captured using a Nikon D850 DSLR camera with a Nikon AF-S 24mm f/2.8 wide-angle lens, ISO 100, in a photorealistic 3D rendering.",
+      "source": {
+        "key": "promptlibrary-99094",
+        "subcategory": "建筑与人文摄影",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/photorealistic-tennis-court-landscape/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Photorealistic-Tennis-Court-Landscape-midjourney-prompt.webp",
+        "previewDimensions": [
+          731,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。摄影感AI例图，不是实地拍摄或地理事实证明。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568114_jynell_1795122568115_saxah4.webp"
+    },
+    {
+      "key": "promptlibrary-105665",
+      "name": "米白褶纸｜俯拍留白材质",
+      "category": "背景设计",
+      "subcategory": "俯拍材质与静物",
+      "text": "从正上方平铺俯拍揉皱的米白色纸张，柔和自然阴影和细微折痕，干净的编辑设计纹理，温暖中性光照，大面积空白可放置文字，没有物品，没有文字。\n\n来源参数：--ar 9:16 --raw --profile lrygiyo --v 8.2",
+      "tags": [
+        "竖版",
+        "纸张",
+        "褶皱",
+        "米白",
+        "文字留白",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-613cd9015d89189ab6b3.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Crumpled-Paper-Texture-Flatlay-midjourney-prompt.webp"
+      ],
+      "originalText": "Overhead flat lay of crumpled off-white paper with soft natural shadows and subtle creases, clean editorial texture, warm neutral lighting, large empty areas for typography, no objects, no text --ar 9:16 --raw --profile lrygiyo --v 8.2",
+      "source": {
+        "key": "promptlibrary-105665",
+        "subcategory": "俯拍材质与静物",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/crumpled-paper-texture-flatlay/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Crumpled-Paper-Texture-Flatlay-midjourney-prompt.webp",
+        "previewDimensions": [
+          673,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。原文含个人风格配置，其他账号效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568122_boe8x8_1795122568122_2takz4.webp"
+    },
+    {
+      "key": "promptlibrary-94440",
+      "name": "晶体授粉｜薄荷绿发光粒子",
+      "category": "背景设计",
+      "subcategory": "粒子与数字矩阵",
+      "text": "对 2100 年未来授粉过程的抽象描绘：发光的薄荷绿色粒子漂浮于晶体般的花朵结构之间。粒子在空气中运动时散发柔光，连接轻盈半透明的花瓣。薄雾背景带有细微渐变，加强空灵质感。采用超高清渲染、体积光、先进着色、电影感构图、赛博有机纹理、发光高光、平滑过渡和照片级写实细节。\n\n来源参数：--ar 9:16 --v 6",
+      "tags": [
+        "竖版",
+        "晶体",
+        "薄荷绿",
+        "粒子",
+        "半透明",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-45fba0dd51afd00066b9.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/01/Futuristic-Pollination-Abstract-midjourney-prompt.webp"
+      ],
+      "originalText": "An abstract depiction of futuristic pollination in 2100, with glowing mint green particles floating between crystalline, flower-like structures. The particles emit a soft light as they move through the air, connecting the delicate, translucent petals. A misty background with subtle gradients enhances the ethereal quality. Created Using: ultra-HD rendering, volumetric lighting, advanced shading, cinematic composition, cyber-organic textures, glowing highlights, smooth transitions, photorealistic details --ar 9:16 --v 6",
+      "source": {
+        "key": "promptlibrary-94440",
+        "subcategory": "粒子与数字矩阵",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/futuristic-pollination-abstract/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/01/Futuristic-Pollination-Abstract-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568128_d4h390_1795122568128_r36l5r.webp"
+    },
+    {
+      "key": "promptlibrary-95163",
+      "name": "银色流线｜液态金属波纹",
+      "category": "背景设计",
+      "subcategory": "流体与金属缎带",
+      "text": "银色背景，银色波浪，液态金属，金属质感，平滑曲线，流动线条，高分辨率，超写实，极其细致。\n\n来源参数：--ar 9:16",
+      "tags": [
+        "竖版",
+        "银色",
+        "液态金属",
+        "曲面",
+        "高光",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-96a4b79e9770495a6f9a.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/01/Hyperrealistic-Liquid-Metal-Waves-midjourney-prompt.webp"
+      ],
+      "originalText": "Silver background, silver waves, liquid metal, metallic, smooth curves, fluid lines, high resolution, hyperrealistic, ultra-detailed. --ar 9:16",
+      "source": {
+        "key": "promptlibrary-95163",
+        "subcategory": "流体与金属缎带",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/hyperrealistic-liquid-metal-waves/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/01/Hyperrealistic-Liquid-Metal-Waves-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568135_m9m9ju_1795122568135_in0xmm.webp"
+    },
+    {
+      "key": "promptlibrary-98719",
+      "name": "玻璃问号｜紫色空间与生菜褶叶",
+      "category": "图形设计",
+      "subcategory": "三维符号设计",
+      "text": "一个边缘柔和的三维磨砂玻璃问号悬浮在空中，周围环绕绿色生菜褶边叶片，3D Octane 渲染，紫色渐变背景。",
+      "tags": [
+        "方形",
+        "问号",
+        "磨砂玻璃",
+        "紫色",
+        "悬浮",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-9fbdae93dfb6db71fae4.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/3D-Glass-Question-Mark-Display-midjourney-prompt.webp"
+      ],
+      "originalText": "A 3D frosted glass question mark with soft edges levitates in the air, green lettuce frill leaves around, a 3D octane render, purple gradient background",
+      "source": {
+        "key": "promptlibrary-98719",
+        "subcategory": "三维符号设计",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/3d-glass-question-mark-display/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/3D-Glass-Question-Mark-Display-midjourney-prompt.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568142_i405kn_1795122568142_y9c1sl.webp"
+    },
+    {
+      "key": "promptlibrary-77073",
+      "name": "琉璃荷塘｜浅绿半透明植物",
+      "category": "背景设计",
+      "subcategory": "玻璃与折射",
+      "text": "画面主体是一片荷塘，有少量由玻璃制成的荷叶，清晰展示叶片纹理。背景采用高斯模糊，磨砂质感，浅绿色，半透明，极简主义。\n\n来源参数：--ar 9:16 --stylize 250",
+      "tags": [
+        "竖版",
+        "荷叶",
+        "浅绿",
+        "高斯模糊",
+        "通透",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-bdf13a591a65d54f48de.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/07/Glass-Lotus-Pond-midjourney-prompt.webp"
+      ],
+      "originalText": "The main body of the image is a lotus pond with a few lotus leaves, made of glass, the texture of the leaves is clearly displayed, and the background is Gaussian blurred , Frosted, Light Green, Translucent , miniamalism --ar 9:16 --stylize 250",
+      "source": {
+        "key": "promptlibrary-77073",
+        "subcategory": "玻璃与折射",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/glass-lotus-pond/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/07/Glass-Lotus-Pond-midjourney-prompt.webp",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568147_di3352_1795122568147_ff4ifv.webp"
+    },
+    {
+      "key": "promptlibrary-103033",
+      "name": "溢出白框｜彩色有机三维波浪",
+      "category": "图形设计",
+      "subcategory": "三维抽象构成",
+      "text": "随机的彩色抽象有机 3D 波浪位于立体白色画框内部，并以三维形态溢出画框。\n\n来源参数：--ar 9:16 --v 7 --profile yfk1ami",
+      "tags": [
+        "竖版",
+        "立体",
+        "有机形态",
+        "画框",
+        "彩色",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-61eef973144dbabf5022.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/05/Colorful-3D-Organic-Wave-midjourney-prompt.webp"
+      ],
+      "originalText": "random colorful abstract organic 3D wave within 3D white frame that spills out as 3D form --ar 9:16 --v 7 --profile yfk1ami",
+      "source": {
+        "key": "promptlibrary-103033",
+        "subcategory": "三维抽象构成",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/colorful-3d-organic-wave/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/05/Colorful-3D-Organic-Wave-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 7",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。原文含个人风格配置，其他账号效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568157_kvsf14_1795122568157_og49re.webp"
+    },
+    {
+      "key": "promptlibrary-80691",
+      "name": "粉黑视错觉｜三维流动线条",
+      "category": "背景设计",
+      "subcategory": "几何与轨道光环",
+      "text": "创作黑、白、粉色的欧普艺术图案。密集精细的平行线构成运动与三维形态的视觉错觉；线条曲率变化，模拟起伏波动，如流动的织物或柔和地景。画面必须完全抽象，不表现任何具体物体，只关注线条互动与其形成的光学效果。3D。\n\n来源参数：--ar 3:2 --style raw --personalize 49iivh9 --stylize 250 --v 6",
+      "tags": [
+        "横版",
+        "欧普艺术",
+        "平行线",
+        "粉黑",
+        "波动",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-7617f94775c1dfa4f7cc.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/08/Op-Art-Pink-Flow-midjourney-prompt-scaled.webp"
+      ],
+      "originalText": "Create an image of a black and white and pink op art design. It should feature an intricate pattern of parallel lines that create an optical illusion of movement and three-dimensional form. The lines should vary in curvature to simulate a waving effect, resembling a flowing piece of fabric or a gentle landscape. The artwork must be purely abstract and not represent any specific objects, focusing solely on the interplay of lines and the optical effects they produce. 3D --ar 3:2 --style raw --personalize 49iivh9 --stylize 250 --v 6",
+      "source": {
+        "key": "promptlibrary-80691",
+        "subcategory": "几何与轨道光环",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/op-art-pink-flow/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/08/Op-Art-Pink-Flow-midjourney-prompt-scaled.webp",
+        "previewDimensions": [
+          2560,
+          1707
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。原文含个人风格配置，其他账号效果可能不同。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568172_9xxkp7_1795122568172_owhs3n.webp"
+    },
+    {
+      "key": "promptlibrary-77265",
+      "name": "混凝土 S｜黑底粗粝立体字",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "一个巨大的白色混凝土字母“S”侧立在黑色背景前。粗粝白色字母有细小斑点和锐利边缘，形态像抽象山体或岩石。字母显得非常高大宽阔，仿佛无需支撑即可独立站立。后方没有阴影，以 2048 游戏图形风格呈现三维效果。\n\n来源参数：--ar 70:99 --style raw --stylize 750",
+      "tags": [
+        "竖版",
+        "黑底白字",
+        "混凝土",
+        "英文字母",
+        "立体",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-612c16b3d62e0e0421e0.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/07/Concrete-S-Monument-midjourney-prompt.webp"
+      ],
+      "originalText": "A large white concrete \"S\" stands on its side in front of a black background. The rough white letter has small speckles and sharp edges, its shape resembling an abstract mountain or rock. The letter appears very tall and wide, looking as if it could stand alone without support. There are no shadows behind the letter, giving it a 3D effect in the style of the 2048 game graphics. --ar 70:99 --style raw --stylize 750",
+      "source": {
+        "key": "promptlibrary-77265",
+        "subcategory": "材质与特殊字效",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/concrete-s-monument/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/07/Concrete-S-Monument-midjourney-prompt.webp",
+        "previewDimensions": [
+          912,
+          1296
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留来源参数。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568206_zkwhc8_1795122568206_453v7u.webp"
+    },
+    {
+      "key": "prompt123-4773",
+      "name": "汽水字效｜品牌食品材质标题",
+      "category": "字体设计",
+      "subcategory": "材质与特殊字效",
+      "text": "创建由其真实质感完全构成，并使用与其最具有标志性的品牌相联系的标识进行风格的“[单词]”。\n\n该单词应：\n• 视觉上反映材料（例如蜂蜜、巧克力、汽水、糖果）。\n• 使用该品牌的标志性颜色和字体。\n• 在文字下方包含品牌标志。\n• 添加一个与产品氛围相符的简短口号（3—4 个英文单词，原文为 words）。\n• 居中放置在受产品启发的简约背景中（例如：早餐桌、汽水飞溅、饼干托盘）。\n\n• 尺寸：1:1\n• 风格：简洁、醒目、以产品为中心\n• 渲染：超高清、HDR、8K",
+      "tags": [
+        "方形",
+        "食品字效",
+        "品牌色",
+        "英文字组",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-51df336a2aedff6cb40e.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/209.jpeg"
+      ],
+      "originalText": "Create the word “[WORD]” made entirely from its real texture and styled using the identity of the most iconic brand associated with it.\n\nThe word should:\n• Visually reflect the material (e.g. honey, chocolate, soda, candy).\n• Use the brand’s signature colors and typography.\n• Include the brand logo beneath the word.\n• Add a short slogan (3–4 words) matching the product’s vibe.\n• Be centered in a minimal background inspired by the product (e.g. breakfast table, soda splash, cookie tray).\n\n• Dimensions: 1:1\n• Style: clean, bold, product-focused\n• Render: ultra-HD, HDR, 8K\n\n创建由其真实质感完全构成，并使用与其最具有标志性的品牌相联系的标识进行风格的“[单词]”。\n\n该单词应：\n• 视觉上反映材料（例如蜂蜜、巧克力、汽水、糖果）。\n• 使用该品牌的标志性颜色和字体。\n• 在文字下方包含品牌标志。\n• 添加一个与产品氛围相符的简短口号（3-4 个字）。\n• 居中放置在受产品启发的简约背景中（例如：早餐桌、汽水飞溅、饼干托盘）。\n\n• 尺寸：1:1\n• 风格：简洁、醒目、以产品为中心\n• 渲染：超高清、HDR、8K",
+      "source": {
+        "key": "prompt123-4773",
+        "subcategory": "材质与特殊字效",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4773.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/209.jpeg",
+        "previewDimensions": [
+          1200,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "保留中文原文或完整翻译；保留变量。原站为四宫格，预览裁出右下单例并保留该处水印；模板变量须按例图主题填写。 来源对应例图，未在本机重新生图。例图变量：[WORD]=Soda，品牌为 Coca-Cola。",
+        "previewCrop": [
+          600,
+          600,
+          1200,
+          1200
+        ]
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568239_p0qppc_1795122568239_j1qqej.webp"
+    },
+    {
+      "key": "prompt123-4698",
+      "name": "毛绒 E｜表情字母角色",
+      "category": "字体设计",
+      "subcategory": "圆体与趣味字组",
+      "text": "在 1080x1080 像素的正方形尺寸中，将可爱的字母 “[字母]” 渲染成一个讨人喜欢的毛茸茸形象。把字体转化为一个 “活物”，字母本身的形态作为这个形象的主体结构。添加富有表现力的活动眼球和欢快的嘴巴，并将其作为字母设计中不可或缺的组成部分。为形象表面赋予质感，覆盖上浓密的 [颜色] 绒毛 —— 这种绒毛需模拟高品质毛绒玩具的材质，呈现出具有照片级真实感的纤维细节。\n以纯净的白色背景衬托主体，通过强烈对比最大程度吸引视线聚焦于这个字母形象。通过精心设计面部位置与表情，为这个创作注入 [情感]。整体保持简洁雅致的风格：避免复杂的身体结构或多余的肢体部件。采用电影级打光技巧进行照明：主光用于突出表面质感，辅助轮廓光塑造立体形态，再配合环境补光柔化阴影对比。最终呈现出顶级动画工作室的美学质感。",
+      "tags": [
+        "方形",
+        "毛绒",
+        "英文字母",
+        "表情",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d716b6d487b5a72b8a31.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/284.jpeg"
+      ],
+      "originalText": "Render a delightful alphabet character ‘[LETTER]’ as a lovable fuzzy being in square 1080x1080 dimensions. Transform the typography into a living creature where the letterform itself becomes the main structure. Position expressive googly eyes and a cheerful mouth as integrated features of the alphabetic design. Texture the surface with luxurious [COLOR] fuzz that mimics high-quality stuffed animal material with photorealistic fiber details.\nFrame against a stark white void to maximize contrast and draw attention to the subject. Infuse the creation with [EMOTION] through strategic facial positioning and expression. Maintain elegant simplicity - avoid anatomical complications or additional appendages. Illuminate using cinematic techniques: primary key lighting to accentuate surface textures, secondary edge illumination for three-dimensional form, plus ambient fill to soften shadow contrasts. Target premium animation studio aesthetics.\n\n在 1080x1080 像素的正方形尺寸中，将可爱的字母 “[字母]” 渲染成一个讨人喜欢的毛茸茸形象。把字体转化为一个 “活物”，字母本身的形态作为这个形象的主体结构。添加富有表现力的活动眼球和欢快的嘴巴，并将其作为字母设计中不可或缺的组成部分。为形象表面赋予质感，覆盖上浓密的 [颜色] 绒毛 —— 这种绒毛需模拟高品质毛绒玩具的材质，呈现出具有照片级真实感的纤维细节。\n以纯净的白色背景衬托主体，通过强烈对比最大程度吸引视线聚焦于这个字母形象。通过精心设计面部位置与表情，为这个创作注入 [情感]。整体保持简洁雅致的风格：避免复杂的身体结构或多余的肢体部件。采用电影级打光技巧进行照明：主光用于突出表面质感，辅助轮廓光塑造立体形态，再配合环境补光柔化阴影对比。最终呈现出顶级动画工作室的美学质感。",
+      "source": {
+        "key": "prompt123-4698",
+        "subcategory": "圆体与趣味字组",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4698.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/284.jpeg",
+        "previewDimensions": [
+          1080,
+          1080
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "保留中文原文或完整翻译；保留变量。原站为四宫格，预览裁出右下单例并保留该处水印；模板变量须按例图主题填写。 来源对应例图，未在本机重新生图。例图变量：[LETTER]=E，[COLOR]=黄色，[EMOTION]=开心。",
+        "previewCrop": [
+          540,
+          540,
+          1080,
+          1080
+        ]
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568254_twd1ix_1795122568254_2937ds.webp"
+    },
+    {
+      "key": "prompt123-4829",
+      "name": "柔光渐变｜科技品牌标志",
+      "category": "LOGO设计",
+      "subcategory": "字母与字标",
+      "text": "为“[INDUSTRY TYPE]”行业中名为 “NAME” 的虚构初创公司设计一个 NeoGradient Soft Tech 风格的现代标志。\n\n徽标必须包含：\n•独特的抽象图标\n•干净、大胆的无衬线标识\n•平滑的发光渐变，混合了蓝色、紫色、粉红色、橙色和蓝绿色等鲜艳的颜色\n•符号和文本之间的无缝协调\n•极简主义、未来主义的构图\n•在纯黑色背景上\n•1：1 纵横比 — 超高清\n\n徽标应该具有创意、现代感，并为大胆的数字品牌做好准备。",
+      "tags": [
+        "方形",
+        "黑底",
+        "发光渐变",
+        "无衬线",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-0f113a849876a5fa262d.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/151.jpeg"
+      ],
+      "originalText": "Design a modern logo in NeoGradient Soft Tech style for a fictional startup called “NAME” in the “[INDUSTRY TYPE]” industry.\n\nThe logo must include:\n•A unique abstract icon\n•A clean, bold sans-serif logotype\n•Smooth glowing gradients blending vibrant colors like blue, purple, pink, orange, and teal\n•Seamless harmony between symbol and text\n•Minimalist, futuristic composition\n•On a pure black background\n•1:1 aspect ratio — ultra-HD\n\nThe logo should feel creative, modern, and ready for a bold digital brand.\n\n为“[INDUSTRY TYPE]”行业中名为 “NAME” 的虚构初创公司设计一个 NeoGradient Soft Tech 风格的现代标志。\n\n徽标必须包含：\n•独特的抽象图标\n•干净、大胆的无衬线标识\n•平滑的发光渐变，混合了蓝色、紫色、粉红色、橙色和蓝绿色等鲜艳的颜色\n•符号和文本之间的无缝协调\n•极简主义、未来主义的构图\n•在纯黑色背景上\n•1：1 纵横比 — 超高清\n\n徽标应该具有创意、现代感，并为大胆的数字品牌做好准备。",
+      "source": {
+        "key": "prompt123-4829",
+        "subcategory": "字母与字标",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4829.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/151.jpeg",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "保留中文原文或完整翻译；保留变量。原站为四宫格，预览裁出右下单例并保留该处水印；模板变量须按例图主题填写。 来源对应例图，未在本机重新生图。例图变量：NAME=medion；行业未标明。",
+        "previewCrop": [
+          512,
+          512,
+          1024,
+          1024
+        ]
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568267_fm6nhu_1795122568267_x9ei6y.webp"
+    },
+    {
+      "key": "prompt123-4954",
+      "name": "清水塑形｜霓虹液态品牌标志",
+      "category": "LOGO设计",
+      "subcategory": "立体与材质标志",
+      "text": "一幅超高分辨率 8K 电影级的 [Brand Name] 品牌标志渲染，完全由流动的晶莹清水雕塑而成。液体以精确流动形态构成标志的每条曲线和边缘，借鉴 [Brand Name] 品牌色彩的鲜艳霓虹光进行强调。纯黑背景形成强烈对比与戏剧感。动态照明展示锐利反射、发光边缘，以及水流起伏飞溅的动势。水滴、光泽与柔和的玻璃般纹理营造超现实、奢华、未来感外观。海报级画质，1:1 格式。",
+      "tags": [
+        "方形",
+        "水滴",
+        "霓虹",
+        "黑底",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-de58ee4c5fd1eda8d01c.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/26.jpeg"
+      ],
+      "originalText": "An ultra-high resolution 8K cinematic render of the [Brand Name] logo, sculpted entirely from flowing crystal-clear water. The liquid forms every curve and edge of the brand’s logo with fluid precision, highlighted by vibrant neon accents inspired by [Brand Name]’s color identity. The background is pitch black, creating sharp contrast and drama. The lighting is dynamic, revealing sharp reflections, glowing edges, and the motion of water as it ripples and splashes. Droplets, shine, and soft glass-like textures give the logo a surreal, luxurious, and futuristic appearance — poster-quality, 1:1 format.",
+      "source": {
+        "key": "prompt123-4954",
+        "subcategory": "立体与材质标志",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/4954.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/26.jpeg",
+        "previewDimensions": [
+          1200,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "保留中文原文或完整翻译；保留变量。原站为四宫格，预览裁出右下单例并保留该处水印；模板变量须按例图主题填写。 来源对应例图，未在本机重新生图。例图变量：[Brand Name]=evian。",
+        "previewCrop": [
+          600,
+          600,
+          1200,
+          1200
+        ]
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568278_djbrx1_1795122568279_nrp4ml.webp"
+    },
+    {
+      "key": "prompt123-5422",
+      "name": "镜面马赛克｜迪斯科 App 图标",
+      "category": "LOGO设计",
+      "subcategory": "图标系统",
+      "text": "为【品牌名】生成一个高级 3D App 图标，圆角方形底板，玻璃与金属铬材质，迪斯科球镜面马赛克小方块质感，闪亮高光，柔和工作室灯光，干净极简背景，高端产品图标风格，Blender 3D 渲染，超精细",
+      "tags": [
+        "方形",
+        "镜面",
+        "铬金属",
+        "圆角方形",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-ba55063ad5e761ba91a6.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case444.jpg?wm=1"
+      ],
+      "originalText": "为【品牌名】生成一个高级 3D App 图标，圆角方形底板，玻璃与金属铬材质，迪斯科球镜面马赛克小方块质感，闪亮高光，柔和工作室灯光，干净极简背景，高端产品图标风格，Blender 3D 渲染，超精细\n\n英文版：\n\nA premium 3D app icon for 【Product Name】, rounded square tile, glossy glass and chrome material, disco-ball mosaic mirror tiles, sparkling highlights, soft studio lighting, clean minimal background, high-end icon, Blender 3D render, ultra detailed",
+      "source": {
+        "key": "prompt123-5422",
+        "subcategory": "图标系统",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5422.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case444.jpg?wm=1",
+        "previewDimensions": [
+          1254,
+          1254
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "保留中文原文或完整翻译；保留变量。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568289_787zyw_1795122568289_kaarb1.webp"
+    },
+    {
+      "key": "prompt123-5389",
+      "name": "建筑与巨字｜极简地标海报",
+      "category": "海报设计",
+      "subcategory": "艺术与文化海报",
+      "text": "设计一张奢华极简海报，围绕你选择的著名建筑地标（[building name]）。视觉中心是建筑的插画渲染。其后放置一个巨大的粗体英文单词，使用富有设计感、气质契合建筑身份的字体，附近配有描述其设计理念的小字号正文。整体应呈现高端艺术海报感。使用克制、低调的配色，使图形元素与建筑相互嵌合，仿佛它们构成建筑结构的一部分，或从建筑轮廓向外延伸。",
+      "tags": [
+        "竖版",
+        "建筑",
+        "巨型标题",
+        "克制配色",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-65df8a0af68dae868ca1.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case411.jpg?wm=1"
+      ],
+      "originalText": "Design a luxury minimalist poster centered on a famous architectural landmark of your choice ([building name]). The focal element is an illustrated rendering of the building. Behind it, place one giant bold English word in a design-forward typeface whose character matches the building's identity, with smaller body copy nearby describing its design philosophy. The composition should read as an ultra high-end art poster. Use a restrained, low-key color palette where graphic elements interlock with the architecture, appearing as if they form part of its structural components or extend outward from its silhouette.",
+      "source": {
+        "key": "prompt123-5389",
+        "subcategory": "艺术与文化海报",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5389.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case411.jpg?wm=1",
+        "previewDimensions": [
+          1055,
+          1491
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "保留中文原文或完整翻译；保留变量。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568300_nrwz4h_1795122568300_ct1oeg.webp"
+    },
+    {
+      "key": "prompt123-5254",
+      "name": "红绸广州｜国潮城市宣传海报",
+      "category": "海报设计",
+      "subcategory": "文旅与城市海报",
+      "text": "一张充满新春喜庆氛围但不失高雅格调的 2026 城市宣传海报。\n双重曝光，构图延续了S型的流动感；\n在纯白的纹理背景右下角，一个身穿中国传统服饰的微缩人物正在挥舞着一条长长的红色丝绸舞带，这条红绸在空中舞动，不仅展现出丝绸的柔顺质感，更在向左上方飘动的过程中，奇幻地变形成了一条壮丽的山脉河流。\n在这条\"河流\"中，叠加了一个有山有海河的广州城市手绘图，国潮，景色尽在眼底，壮阔雄伟，令人震撼。\n广州的地标建筑(广州塔，珠江新城建筑群，珠江, 广州城里古建筑，游轮，白云山）。\n云雾环绕，仙气缥缈，色彩丰富，结构复杂，细节丰富，但因为大面积的留白，画面依然显得清新脱俗，左下角排版着\"SPRING 2026\"和竖排的宣传语，整体寓意\"千年商都，魅力广州\"。\n文字排版优美，大方，字迹清晰完整，尺寸9:16。",
+      "tags": [
+        "竖版",
+        "红绸",
+        "广州",
+        "S形构图",
+        "新春",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-21eb6c2e1553c4dc4e89.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case276.jpg?wm=1"
+      ],
+      "originalText": "[中文]\n一张充满新春喜庆氛围但不失高雅格调的 2026 城市宣传海报。\n双重曝光，构图延续了S型的流动感；\n在纯白的纹理背景右下角，一个身穿中国传统服饰的微缩人物正在挥舞着一条长长的红色丝绸舞带，这条红绸在空中舞动，不仅展现出丝绸的柔顺质感，更在向左上方飘动的过程中，奇幻地变形成了一条壮丽的山脉河流。\n在这条\"河流\"中，叠加了一个有山有海河的广州城市手绘图，国潮，景色尽在眼底，壮阔雄伟，令人震撼。\n广州的地标建筑(广州塔，珠江新城建筑群，珠江, 广州城里古建筑，游轮，白云山）。\n云雾环绕，仙气缥缈，色彩丰富，结构复杂，细节丰富，但因为大面积的留白，画面依然显得清新脱俗，左下角排版着\"SPRING 2026\"和竖排的宣传语，整体寓意\"千年商都，魅力广州\"。\n文字排版优美，大方，字迹清晰完整，尺寸9:16。\n\n[English]\nA 2026 city promotional poster full of a festive Chinese New Year atmosphere yet maintaining an elegant style.\nDouble exposure, the composition continues the flowing sense of an S-shape;\nIn the lower right corner of the pure white textured background, a miniature figure wearing traditional Chinese clothing is waving a long red silk dance ribbon, this red silk dances in the air, not only showing the smooth texture of the silk, but also in the process of drifting to the upper left, magically transforming into a magnificent mountain range and river.\nIn this \"river\", a hand-drawn map of Guangzhou city with mountains, sea, and rivers is superimposed, Guochao, the scenery is fully in view, magnificent and majestic, breathtaking.\nGuangzhou's landmark buildings (Canton Tower, Pearl River New City building complex, Pearl River, ancient buildings in Guangzhou city, cruise ships, Baiyun Mountain).\nSurrounded by clouds and mist, ethereal and misty, rich in colors, complex in structure, rich in details, but because of a large area of negative space, the picture still appears fresh and refined, the lower left corner is typeset with \"SPRING 2026\" and vertical promotional slogans, the overall implication is \"Millennium Commercial Capital, Charming Guangzhou\".\nBeautiful and generous typography, clear and complete handwriting, aspect ratio 9:16.",
+      "source": {
+        "key": "prompt123-5254",
+        "subcategory": "文旅与城市海报",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5254.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case276.jpg?wm=1",
+        "previewDimensions": [
+          675,
+          1199
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "保留中文原文或完整翻译；保留变量。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568308_dpp4d8_1795122568308_1d3hlt.webp"
+    },
+    {
+      "key": "prompt123-5264",
+      "name": "珠江新城｜金箔剪纸夜景",
+      "category": "图形设计",
+      "subcategory": "剪纸与纸艺构成",
+      "text": "以珠江新城现代都市景观为灵感的剪纸艺术，通过精巧的镂空手法在一整幅纸上，立体刻画广州塔、东西双塔等地标建筑与繁华城景。\n所有建筑与元素均以流畅的线条与结构相连，无孤立部分，构成一幅完整的都市画卷。\n画面采用金属箔或光泽纸材质，表面带有细腻的明暗光泽，在光照下呈现柔和的高光与阴影，仿佛被城市灯光轻轻照亮。\n背景以虚化的珠江新城天际线为衬，点缀隐约可见的花城广场与树木轮廓，整体透出现代浪漫的氛围。\n作品中巧妙融入轻盈的蒲公英绒毛或星光般的动态光点，象征梦想与活力在这座新城中飘散飞扬。整体呈现8K超高清视觉，细节丰富，真实而富有艺术感染力。",
+      "tags": [
+        "横版",
+        "剪纸",
+        "金箔",
+        "城市夜景",
+        "广州",
+        "Prompt123",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-7870e4d07068305caaca.webp",
+      "exampleImages": [
+        "https://public.prompt123.cn/images/io-image2/case286.jpg?wm=1"
+      ],
+      "originalText": "[中文]\n以珠江新城现代都市景观为灵感的剪纸艺术，通过精巧的镂空手法在一整幅纸上，立体刻画广州塔、东西双塔等地标建筑与繁华城景。\n所有建筑与元素均以流畅的线条与结构相连，无孤立部分，构成一幅完整的都市画卷。\n画面采用金属箔或光泽纸材质，表面带有细腻的明暗光泽，在光照下呈现柔和的高光与阴影，仿佛被城市灯光轻轻照亮。\n背景以虚化的珠江新城天际线为衬，点缀隐约可见的花城广场与树木轮廓，整体透出现代浪漫的氛围。\n作品中巧妙融入轻盈的蒲公英绒毛或星光般的动态光点，象征梦想与活力在这座新城中飘散飞扬。整体呈现8K超高清视觉，细节丰富，真实而富有艺术感染力。\n\n[English]\nPaper-cut art inspired by the modern urban landscape of Zhujiang New Town, through exquisite hollow-carving techniques on a single sheet of paper, three-dimensionally depicting landmark buildings such as Canton Tower, East and West Twin Towers, and the bustling cityscape. All buildings and elements are connected by smooth lines and structures, with no isolated parts, forming a complete urban scroll. The picture uses metallic foil or glossy paper material, with delicate light and dark gloss on the surface, presenting soft highlights and shadows under illumination, as if gently illuminated by city lights. The background is set against a blurred Zhujiang New Town skyline, dotted with faintly visible outlines of Huacheng Square and trees, overall revealing a modern romantic atmosphere. The work cleverly integrates light dandelion fluff or starlight-like dynamic light points, symbolizing dreams and vitality fluttering and flying in this new city. The overall presents 8K ultra-high-definition vision, rich in details, realistic and full of artistic appeal.",
+      "source": {
+        "key": "prompt123-5264",
+        "subcategory": "剪纸与纸艺构成",
+        "author": "原页面未署名创作者",
+        "url": "https://www.prompt123.cn/sites/5264.html",
+        "collection": "Prompt123",
+        "collectionUrl": "https://www.prompt123.cn/image-prompts/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://public.prompt123.cn/images/io-image2/case286.jpg?wm=1",
+        "previewDimensions": [
+          897,
+          718
+        ],
+        "language": "zh-CN",
+        "model": "未注明",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "保留中文原文或完整翻译；保留变量。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568367_dm0av6_1795122568367_m5jmdv.webp"
+    },
+    {
+      "key": "promptlibrary-92828",
+      "name": "粉沙白浪｜斜向海岸俯拍",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "动态对角线构图：白色海浪沿斜线涌过画面，拍打柔软的粉色沙滩。泡沫白浪形成有力流向，与宁静、平滑的粉沙纹理鲜明对比。对角线布局自然引导视线穿过画面，强调运动与静止的互动。粉沙上散布微妙闪光点，反射光线，加强梦幻感。背景呈淡蓝与粉色的柔和渐变，与前景协调融合；斜向设计增加纵深和视觉趣味。\n\n来源参数：--ar 2:3 --v 6.1",
+      "tags": [
+        "竖版",
+        "粉色沙滩",
+        "白浪",
+        "对角线",
+        "俯拍",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-275b539ee2f1e35c1832.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2024/12/Dynamic-Waves-on-Pink-Sand-midjourney-prompt.webp"
+      ],
+      "originalText": "A dynamic diagonal composition featuring white ocean waves cascading diagonally across the scene, crashing onto a soft pink sandy beach. The frothy white waves form an energetic flow, creating a striking contrast with the serene, smooth texture of the pink sand. The diagonal arrangement leads the viewer's eye naturally through the frame, emphasizing the interplay between movement and stillness. Subtle sparkles dot the pink sand, reflecting light to enhance the dreamy quality of the scene. The background features a faint pastel gradient of blue and pink, blending harmoniously with the foreground elements, while the diagonal design adds a sense of depth and visual interest --ar 2:3 --v 6.1",
+      "source": {
+        "key": "promptlibrary-92828",
+        "subcategory": "海岸与水域航拍",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/dynamic-waves-on-pink-sand/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2024/12/Dynamic-Waves-on-Pink-Sand-midjourney-prompt.webp",
+        "previewDimensions": [
+          896,
+          1344
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 6.1",
+        "batch": "design-curation-2026-11-20-0500",
+        "collectedAt": "2026-11-19",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数；来源对应例图，未在本机重新生图。粉色沙滩与白浪为摄影感AI效果。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795122568376_9m706q_1795122568376_zhzwii.webp"
+    }
+  ]
+}

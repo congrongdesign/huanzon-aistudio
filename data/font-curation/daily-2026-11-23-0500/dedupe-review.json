@@ -1,0 +1,84 @@
+{
+  "new": 61,
+  "sampleMatches": [
+    {
+      "new": "福 · 山水城市融字福",
+      "old": "享清福 · 斜势圆角生活方式字标",
+      "sample": "福",
+      "deleted": null
+    },
+    {
+      "new": "福 · 山水城市融字福",
+      "old": "積福 · 药堂尖宋印章字标",
+      "sample": "福",
+      "deleted": null
+    },
+    {
+      "new": "福 · 山水城市融字福",
+      "old": "粽享折扣 福运双至 · 端午飞白手写字08",
+      "sample": "福",
+      "deleted": null
+    },
+    {
+      "new": "福 · 山水城市融字福",
+      "old": "福起慧深 · 红日国潮尖角字标",
+      "sample": "福",
+      "deleted": null
+    },
+    {
+      "new": "福 · 山水城市融字福",
+      "old": "粽享折扣 福运双至 · 端午飞白手写字08",
+      "sample": "福",
+      "deleted": null
+    },
+    {
+      "new": "福 · 山水城市融字福",
+      "old": "積福 · 药堂尖宋印章字标",
+      "sample": "福",
+      "deleted": null
+    },
+    {
+      "new": "福 · 山水城市融字福",
+      "old": "享清福 · 斜势圆角生活方式字标",
+      "sample": "福",
+      "deleted": null
+    },
+    {
+      "new": "福 · 山水城市融字福",
+      "old": "福起慧深 · 红日国潮尖角字标",
+      "sample": "福",
+      "deleted": null
+    },
+    {
+      "new": "薄雾晨松 · 晨雾层叠自然字",
+      "old": "薄雾晨松 兰垂烟晓 荷风举露 · 香氛意象高反差长宋",
+      "sample": "薄雾晨松",
+      "deleted": null
+    },
+    {
+      "new": "薄雾晨松 · 晨雾层叠自然字",
+      "old": "薄雾晨松 兰垂烟晓 荷风举露 · 香氛意象高反差长宋",
+      "sample": "薄雾晨松",
+      "deleted": null
+    },
+    {
+      "new": "萌力全开 · 荧光卡通萌字",
+      "old": "萌力全开 · 表情云朵圆胖字",
+      "sample": "萌力全开",
+      "deleted": null
+    },
+    {
+      "new": "萌力全开 · 荧光卡通萌字",
+      "old": "萌力全开 · 表情云朵圆胖字",
+      "sample": "萌力全开",
+      "deleted": null
+    }
+  ],
+  "sourceMatchesHistorical": [
+    {
+      "new": "薄雾晨松 · 晨雾层叠自然字",
+      "source": "https://www.uisdc.com/group/652819.html"
+    }
+  ],
+  "libraryTotal": 502
+}

@@ -1,0 +1,908 @@
+{
+  "version": 1,
+  "batch": "design-curation-2026-11-22-0500",
+  "collectedAt": "2026-11-21",
+  "selectionMethod": "北京时间2026-11-22早间；客户端2026-11-21。轮换Prompt Library与站酷公开案例；完整详情与原图逐张核对。",
+  "prompts": [
+    {
+      "key": "promptlibrary-107024",
+      "name": "胡桃木吧台｜绿绒暖光空间",
+      "category": "背景设计",
+      "subcategory": "建筑与人文摄影",
+      "text": "新设计的酒吧室内空间，弧形胡桃木吧台，森林绿色天鹅绒卡座，黄铜吊灯，水磨石地面，拱形镜子，温暖的傍晚光线，建筑室内摄影，无人物，无文字。\n\n来源参数：--ar 3:5 --v 8.2",
+      "tags": [
+        "竖版",
+        "胡桃木",
+        "绿绒",
+        "拱镜",
+        "暖光",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-95528f42515d34ec8ac5.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Architectural-Bar-Interior-Photography-midjourney-prompt.webp"
+      ],
+      "originalText": "Newly designed bar interior, curved walnut bar, forest green velvet banquettes, brass pendant lights, terrazzo floor, arched mirrors, warm evening light, architectural interior photography, no people, no text --ar 3:5 --v 8.2",
+      "source": {
+        "key": "promptlibrary-107024",
+        "subcategory": "建筑与人文摄影",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/architectural-bar-interior-photography/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Architectural-Bar-Interior-Photography-midjourney-prompt.webp",
+        "previewDimensions": [
+          715,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。来源为摄影感AI案例，非实地摄影证明。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377260_hy1240_1795295377260_pmahk2.webp"
+    },
+    {
+      "key": "promptlibrary-107321",
+      "name": "大丽花｜正上方螺旋花瓣俯拍",
+      "category": "背景设计",
+      "subcategory": "俯拍材质与静物",
+      "text": "正上方垂直俯拍一朵完全盛开的大丽花的微距照片，花朵完美居中，以完整圆形从边到边填满方形画面。数百片从深红过渡到腮红粉的花瓣，以精确对称的螺旋围绕紧密金色花心向外放射，形成清晰几何图案。柔和均匀顶光，花瓣微妙透光。仅四角露出纯黑背景。照片级写实，鲜明图形感，高级植物编辑摄影。方形1:1，4K，无文字。\n\n来源参数：--chaos 35 --ar 1:1 --profile np2lxri --v 8.2",
+      "tags": [
+        "方形",
+        "大丽花",
+        "螺旋",
+        "花瓣",
+        "微距",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-a8d62142e6d36f626f69.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Macro-Overhead-Dahlia-Flower-midjourney-prompt.webp"
+      ],
+      "originalText": "Overhead top-down macro photograph of a fully open dahlia flower seen from directly above, perfectly centered and filling the square frame edge to edge as a perfect circle. Hundreds of crimson-to-blush petals arranged in a precise symmetrical spiral radiating from a tight golden center, crisp geometric pattern. Soft even top light, subtle petal translucency. Pure black background in the corners only. Photorealistic, graphic, premium botanical editorial. Square 1:1, 4K, no text. --chaos 35 --ar 1:1 --profile np2lxri --v 8.2",
+      "source": {
+        "key": "promptlibrary-107321",
+        "subcategory": "俯拍材质与静物",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/macro-overhead-dahlia-flower/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Macro-Overhead-Dahlia-Flower-midjourney-prompt.webp",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。来源为摄影感AI案例，非实地摄影证明。个人风格配置已保留，其他账号可能无法一致复现。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377349_odqyib_1795295377349_9myfmp.webp"
+    },
+    {
+      "key": "promptlibrary-103982",
+      "name": "薰衣草网球场｜复古水粉俯拍",
+      "category": "插画设计",
+      "subcategory": "地图与旅行插画",
+      "text": "严格的正上方鸟瞰，垂直俯拍，正交向下视角，无地平线，无侧面角度：法国普罗旺斯一座被盛开的紫色薰衣草田包围的网球场，薰衣草行列向外放射。风格化扁平水粉画，克制复古配色，极简旅行海报美学。\n\n来源参数：--ar 5:7 --raw --v 8.2",
+      "tags": [
+        "竖版",
+        "薰衣草",
+        "网球场",
+        "俯拍",
+        "水粉",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-e13616b527d789d3336e.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2026/10/Gouache-Lavender-Tennis-Court-midjourney-prompt.webp"
+      ],
+      "originalText": "strictly top-down bird's-eye view shot directly overhead, orthographic straight-down perspective, no horizon, no side angle, of a tennis court surrounded by a blooming purple lavender field in Provence, rows of lavender radiating outward, stylized flat gouache painting, muted retro color palette, minimalist travel poster aesthetic --ar 5:7 --raw --v 8.2",
+      "source": {
+        "key": "promptlibrary-103982",
+        "subcategory": "地图与旅行插画",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/gouache-lavender-tennis-court/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2026/10/Gouache-Lavender-Tennis-Court-midjourney-prompt.webp",
+        "previewDimensions": [
+          849,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney 8.2",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377385_1lbj5w_1795295377385_zbhoik.webp"
+    },
+    {
+      "key": "promptlibrary-97887",
+      "name": "水上山茶｜清透水纹俯拍",
+      "category": "背景设计",
+      "subcategory": "俯拍材质与静物",
+      "text": "白色水域，一朵山茶花漂浮在清澈、平静、透明的液体表面，伴随美丽细腻的涟漪与光线反射。俯拍视角，极简风格，近景，微距摄影，柔和色调，高清摄影，高分辨率，浅景深，明亮活泼色彩，300dpi。",
+      "tags": [
+        "方形",
+        "山茶花",
+        "水纹",
+        "焦散",
+        "微距",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-c4dc041e6b6a5879dacd.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Camellia-on-Water-midjourney-prompt.webp"
+      ],
+      "originalText": "White water, a single camellia flowers floating on the surface of a clear, calm, and transparent liquid, with beautiful and delicate ripples, light reflections, a top-down view, in a minimalist style, a close-up, macro photography, soft tones, high-definition photography, high resolution, shallow depth of field, and bright and lively colors, 300dpi",
+      "source": {
+        "key": "promptlibrary-97887",
+        "subcategory": "俯拍材质与静物",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/minimalist-camellia-on-water/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Minimalist-Camellia-on-Water-midjourney-prompt.webp",
+        "previewDimensions": [
+          1200,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。来源为摄影感AI案例，非实地摄影证明。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377400_6670rd_1795295377400_7ovehp.webp"
+    },
+    {
+      "key": "promptlibrary-96830",
+      "name": "独自冲浪｜碧海正上方俯拍",
+      "category": "背景设计",
+      "subcategory": "海岸与水域航拍",
+      "text": "从正上方俯视一个在大海中央冲浪的人。",
+      "tags": [
+        "竖版",
+        "冲浪",
+        "碧海",
+        "正上方",
+        "极简",
+        "Prompt Library",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-8a4e9a9c8c297903019c.webp",
+      "exampleImages": [
+        "https://promptlibrary.org/wp-content/uploads/2025/03/Aerial-Surfing-Ocean-View-midjourney-prompt.webp"
+      ],
+      "originalText": "top-down view of a guy surfing in the middle of the ocean",
+      "source": {
+        "key": "promptlibrary-96830",
+        "subcategory": "海岸与水域航拍",
+        "author": "wpx_promptlibrary（网站发布署名；原创作者未注明）",
+        "url": "https://promptlibrary.org/midjourney/aerial-surfing-ocean-view/",
+        "collection": "Prompt Library",
+        "collectionUrl": "https://promptlibrary.org/midjourney/",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://promptlibrary.org/wp-content/uploads/2025/03/Aerial-Surfing-Ocean-View-midjourney-prompt.webp",
+        "previewDimensions": [
+          672,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "未注明（站点归类为 Midjourney）",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。来源为摄影感AI案例，非实地摄影证明。 来源对应例图，未在本机重新生图。"
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377417_4uj7ki_1795295377417_0mhihc.webp"
+    },
+    {
+      "key": "zcool-ZMTM3NTg0",
+      "name": "青蓝沙尘｜黑底颗粒爆裂",
+      "category": "背景设计",
+      "subcategory": "粒子与数字矩阵",
+      "text": "黑色背景上的青蓝色沙尘爆裂，极其精准对焦的场景，画面锐利，获奖摄影般观感，专业调色，柔和阴影，无对比，干净锐利焦点，真实摄影、Fujifilm Superia胶片风格，Full HD，Canon EOS R5相机、100mm镜头拍摄。",
+      "tags": [
+        "竖版",
+        "青蓝",
+        "沙尘",
+        "黑底",
+        "动势",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-aa283a35f223fff389d5.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af5d78e174444avugtlcw2822.png?k=9f3cf016133755cabbc134d870ebef22&t=6b021580"
+      ],
+      "originalText": "turquoise blue sand dust explosion on black background,ultra focused scene, sharp scene,award-winning photography, professional color grading, soft shadows, no contrast, clean and sharp focus, real photography fujifilm superia, full HD, shot with Canon EOS R5 100MM",
+      "source": {
+        "key": "zcool-ZMTM3NTg0",
+        "subcategory": "粒子与数字矩阵",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTM3NTg0.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af5d78e174444avugtlcw2822.png?k=9f3cf016133755cabbc134d870ebef22&t=6b021580",
+        "previewDimensions": [
+          928,
+          1232
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。保留原文同时出现的“无对比”和“黑底爆裂”等表述；预览实际有明暗反差。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 39772,
+        "imageId": 39768,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377453_xd48o0_1795295377454_9g2q14.webp"
+    },
+    {
+      "key": "zcool-ZMTM3MzMy",
+      "name": "古旧暖橙｜羊皮纸肌理背景",
+      "category": "背景设计",
+      "subcategory": "材质与柔和光影",
+      "text": "背景采用温暖、古旧的橙色、棕色与羊皮纸黄色，边缘带有复古纹理。",
+      "tags": [
+        "竖版",
+        "暖橙",
+        "棕色",
+        "羊皮纸",
+        "做旧",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-d624a1f08a54c4800cb0.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af5d04bcd2a0t2l726ri32099.png?k=d301bc257f658484c887e4948f8e9bae&t=6b021580"
+      ],
+      "originalText": "the background is rendered in warm, antiqued hues of orange, brown, and parchment yellow with textured vintage edges.",
+      "source": {
+        "key": "zcool-ZMTM3MzMy",
+        "subcategory": "材质与柔和光影",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTM3MzMy.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af5d04bcd2a0t2l726ri32099.png?k=d301bc257f658484c887e4948f8e9bae&t=6b021580",
+        "previewDimensions": [
+          928,
+          1232
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 39709,
+        "imageId": 39705,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377475_5p2so8_1795295377475_zmdclg.webp"
+    },
+    {
+      "key": "zcool-ZMTM3MTYw",
+      "name": "粉牡丹花框｜横版中心留白",
+      "category": "背景设计",
+      "subcategory": "植物与花卉背景",
+      "text": "奢华的花卉植物插画网站背景：浅粉色牡丹、浅粉色花毛茛、柔和浅粉花朵与尤加利绿叶。不对称侧边花框，一侧比另一侧丰满，有机垂落的布局，宽阔空白中心安全区，柔和象牙白纸张背景，优雅水彩插画，干净通透，为桌面和手机浏览设计。",
+      "tags": [
+        "横版",
+        "水彩",
+        "粉牡丹",
+        "不对称",
+        "中心留白",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-0640a07e2dafd6cfbf6e.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af5cbcf859650w0sjnhrd3692.png?k=68ae5be6358b370a5d5254d2da006b51&t=6b021580"
+      ],
+      "originalText": "luxe illustrated floral botanical website background, light pink peonies, light pink ranunculus, soft light pink blossoms and eucalyptus greenery, asymmetrical side framing with one side fuller than the other, organic cascading placement, wide blank center safe area, soft ivory paper background, elegant watercolor illustration, clean and airy, made for desktop and phone viewing",
+      "source": {
+        "key": "zcool-ZMTM3MTYw",
+        "subcategory": "植物与花卉背景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTM3MTYw.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af5cbcf859650w0sjnhrd3692.png?k=68ae5be6358b370a5d5254d2da006b51&t=6b021580",
+        "previewDimensions": [
+          1456,
+          816
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 39666,
+        "imageId": 39662,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377501_hpfmvx_1795295377501_93acye.webp"
+    },
+    {
+      "key": "zcool-ZMTQ1MDYw",
+      "name": "传世玻璃球｜复古圣诞水彩",
+      "category": "插画设计",
+      "subcategory": "植物与花卉插画",
+      "text": "松散水彩插画：传世玻璃圣诞饰品采用柔红、腮红粉、香槟金、浅蓝与银色，摆放于雪松枝、松果和天鹅绒缎带之间。精细玻璃表面有微妙反射，温暖象牙白背景，1950年代怀旧节日优雅感。透明叠层罩染，湿画法阴影，细微颗粒沉淀，保留纸白高光，优雅的虚化边缘，充足留白。珊瑚红向腮红粉及低饱和常青绿过渡。主体清晰，次要区域柔和晕开。细节丰富但整体轻盈通透。不要深色背景、灰色偏色、暗角、数字绘画、3D、CGI、矢量、喷枪、光亮表面、文字或水印。",
+      "tags": [
+        "竖版",
+        "圣诞",
+        "水彩",
+        "玻璃球",
+        "复古",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-8301c45e272fbbcd6853.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af6cd74a6232yqbhk6rjf5885.png?k=20efa0076bbc68e7c59b069739a53557&t=6b021580"
+      ],
+      "originalText": "Loose watercolor illustration: Heirloom glass Christmas ornaments in soft red, blush pink, champagne gold, pale blue, and silver arranged among cedar branches, pinecones, and velvet ribbon. Subtle reflections on delicate glass surfaces, warm ivory background, 1950s nostalgic holiday elegance. Transparent layered glazing, wet on wet shadows, subtle granulation, preserved paper highlights, graceful lost edges, generous negative space. Coral red to blush and muted evergreen color transitions. Main subjects crisp; secondary areas softly diffused. Rich detail with light, airy overall appearance. No dark backdrop, no gray cast, no vignette, no digital painting, no 3D, no CGI, no vector, no airbrush, no glossy finish, no text, no watermark.",
+      "source": {
+        "key": "zcool-ZMTQ1MDYw",
+        "subcategory": "植物与花卉插画",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTQ1MDYw.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af6cd74a6232yqbhk6rjf5885.png?k=20efa0076bbc68e7c59b069739a53557&t=6b021580",
+        "previewDimensions": [
+          1332,
+          1780
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 41641,
+        "imageId": 41637,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377538_wnk4bb_1795295377538_5dainh.webp"
+    },
+    {
+      "key": "zcool-ZMTQ0MzM2",
+      "name": "向日葵金毛｜彩绘玻璃马赛克",
+      "category": "插画设计",
+      "subcategory": "场景与叙事插画",
+      "text": "新艺术彩绘玻璃风格的马赛克插画，一只金毛犬坐在茂盛向日葵花园中。犬只金色毛发由奶油色、琥珀色与浅棕色的小块有纹理玻璃碎片拼成。头向上倾斜，露出光亮深色眼睛与黑鼻子。鲜艳向日葵以黄花瓣和深橙花心从顶部及左侧框住犬只。周围有深绿色玻璃叶片、精细金色星形点缀和卷曲金属金色蔓须。背景由深钴蓝与青绿马赛克砖构成，营造丰富对比。",
+      "tags": [
+        "竖版",
+        "金毛犬",
+        "向日葵",
+        "彩绘玻璃",
+        "马赛克",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-b5463880f01428152e84.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af6bad77fb58orzz9qmh6188.png?k=ab4fd540708e032439cf5f4bce8c4b85&t=6b021580"
+      ],
+      "originalText": "a mosaic illustration of a golden retriever dog sitting amidst a lush sunflower garden in an art nouveau stained glass style. the dog's golden fur is composed of small, textured glass shards in shades of cream, amber, and light brown. its head is tilted upward, showcasing a glossy dark eye and black nose. vibrant sunflowers with yellow petals and dark orange centers frame the dog at the top and left. the surrounding foliage features deep green glass leaves, delicate gold star accents, and swirling metallic gold tendrils. the backdrop is made of dark cobalt blue and turquoise mosaic tiles, creating a rich contrast.",
+      "source": {
+        "key": "zcool-ZMTQ0MzM2",
+        "subcategory": "场景与叙事插画",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTQ0MzM2.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af6bad77fb58orzz9qmh6188.png?k=ab4fd540708e032439cf5f4bce8c4b85&t=6b021580",
+        "previewDimensions": [
+          816,
+          1456
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 41460,
+        "imageId": 41456,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377574_8ah8hi_1795295377575_7c0ncr.webp"
+    },
+    {
+      "key": "zcool-ZOTgxMTY=",
+      "name": "暖米花影｜磨砂玻璃植物背景",
+      "category": "背景设计",
+      "subcategory": "玻璃与折射",
+      "text": "一张近景照片，表现半透明磨砂玻璃后花卉的剪影与阴影。高挑带叶茎秆、未开放花苞和盛开花头，在温暖米色背景上投出柔和棕色阴影。温暖环境光从磨砂玻璃后照入，形成弥散光晕，花影边缘交织清晰与柔和模糊效果。",
+      "tags": [
+        "竖版",
+        "磨砂玻璃",
+        "花影",
+        "暖米色",
+        "逆光",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-ec571879920103bc874c.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6acf01c74a6d10bw2wqmnf6083.png?k=268b7468da154e5f988806986acc80fa&t=6b021580"
+      ],
+      "originalText": "a close up photograph featuring the silhouettes and shadows of flowers behind a translucent frosted pane. the composition shows tall leafy stems, unopened buds, and blooming flower heads cast in soft brown shadows against a warm beige background. warm ambient light shines from behind the frosted glass, creating a diffused glow with sharp and soft blurred edges along the floral shadows.",
+      "source": {
+        "key": "zcool-ZOTgxMTY=",
+        "subcategory": "玻璃与折射",
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTgxMTY=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6acf01c74a6d10bw2wqmnf6083.png?k=268b7468da154e5f988806986acc80fa&t=6b021580",
+        "previewDimensions": [
+          1318,
+          2355
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。来源为摄影感AI案例，非实地摄影证明。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 29885,
+        "imageId": 29881,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377592_tvqi7d_1795295377592_ttnyuj.webp"
+    },
+    {
+      "key": "zcool-ZMzI1ODA=",
+      "name": "莓好罐子｜果酱标签与封签系统",
+      "category": "包装设计",
+      "subcategory": "系列包装与场景",
+      "text": "为【手工果酱品牌「莓好罐子」】生成一套贴纸与标签系统设计方案图。品牌定位是【新鲜、手作、小批量生产，适合早餐涂抹、下午茶和礼物赠送的果酱品牌】。画面采用【明亮手作食品标签设计风格】，主色为【覆盆子红、果肉橙、米白和叶绿色】。画面需要展示【不同口味果酱罐的瓶贴标签、封口贴、圆形贴纸、价格小标、礼品封签和口味色彩系统】。标签上可以使用【抽象文字块和水果图形占位】，不生成长段中文。整体像真实手作食品品牌的包装标签提案页，具有系列感、售卖感和手作温度。",
+      "tags": [
+        "竖版",
+        "果酱",
+        "标签",
+        "封签",
+        "口味系统",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-a9bd55db32d3a85e34bf.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6a0eb5730fd45qsnqwj73n9976.png?k=7d0abfb32c582cc11f7919b5ecd8308c&t=6b021580"
+      ],
+      "originalText": "为【手工果酱品牌「莓好罐子」】生成一套贴纸与标签系统设计方案图。品牌定位是【新鲜、手作、小批量生产，适合早餐涂抹、下午茶和礼物赠送的果酱品牌】。画面采用【明亮手作食品标签设计风格】，主色为【覆盆子红、果肉橙、米白和叶绿色】。画面需要展示【不同口味果酱罐的瓶贴标签、封口贴、圆形贴纸、价格小标、礼品封签和口味色彩系统】。标签上可以使用【抽象文字块和水果图形占位】，不生成长段中文。整体像真实手作食品品牌的包装标签提案页，具有系列感、售卖感和手作温度。",
+      "source": {
+        "key": "zcool-ZMzI1ODA=",
+        "subcategory": "系列包装与场景",
+        "author": "云墟造物",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMzI1ODA=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6a0eb5730fd45qsnqwj73n9976.png?k=7d0abfb32c582cc11f7919b5ecd8308c&t=6b021580",
+        "previewDimensions": [
+          1086,
+          1448
+        ],
+        "language": "zh-CN",
+        "model": "GPT-image2",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "保留中文原文，仅解码HTML实体和换行。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 9433,
+        "imageId": 9429,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377608_e9spie_1795295377609_jau7ic.webp"
+    },
+    {
+      "key": "zcool-ZOTU4MTI=",
+      "name": "凝露郁金香｜玻璃水珠花卉摄影",
+      "category": "背景设计",
+      "subcategory": "玻璃与折射",
+      "text": "一张照片，粉色郁金香位于布满凝露与水珠的玻璃后。花朵一朵在上方、一朵在中央，带柔和的红、粉和黄色。底部绿色茎叶经过风格化处理，呈现旋转流动的绘画纹理。",
+      "tags": [
+        "竖版",
+        "郁金香",
+        "水珠",
+        "粉色",
+        "凝露",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-6748b8d1a35e01f3a32a.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ace34f7cc5e5tkvrlj2jv3625.png?k=be4e5fa73e55911ddc2ed90cc61324f8&t=6b021580"
+      ],
+      "originalText": "a photograph showing pink tulips behind a pane of glass covered with condensation and water droplets. the flowers, one upper and one central, feature soft red, pink, and yellow hues. the green stems and leaves at the bottom have been stylized with a swirling, painterly texture.",
+      "source": {
+        "key": "zcool-ZOTU4MTI=",
+        "subcategory": "玻璃与折射",
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZOTU4MTI=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ace34f7cc5e5tkvrlj2jv3625.png?k=be4e5fa73e55911ddc2ed90cc61324f8&t=6b021580",
+        "previewDimensions": [
+          960,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。来源为摄影感AI案例，非实地摄影证明。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 29309,
+        "imageId": 29305,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377623_69r2ql_1795295377623_cyla83.webp"
+    },
+    {
+      "key": "zcool-ZMTA5ODE2",
+      "name": "花瓣玻璃B｜透明植物字效",
+      "category": "字体设计",
+      "subcategory": "液体与玻璃字效",
+      "text": "透明水晶玻璃字母 “B”，极简优雅结构，内部镶嵌轻盈粉白蔷薇花瓣与纤细嫩绿枝叶，花瓣半透明、边缘带柔润珠光，在通透玻璃空间中呈自然悬浮状态。浅粉米白渐变背景，柔和自然光，细腻阴影，干净现代编辑风格，高端植物美学，逼真折射与微妙反射，微距细节，浅景深，宁静诗意，清新明亮的高级产品静物摄影质感",
+      "tags": [
+        "竖版",
+        "字母B",
+        "透明玻璃",
+        "花瓣",
+        "植物",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-5fc303e7c7c648c2ca40.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ae6ea192af1b11cphvbb89431.png?k=826e9365b30295c719ace3ded92ff057&t=6b021580"
+      ],
+      "originalText": "透明水晶玻璃字母 “B”，极简优雅结构，内部镶嵌轻盈粉白蔷薇花瓣与纤细嫩绿枝叶，花瓣半透明、边缘带柔润珠光，在通透玻璃空间中呈自然悬浮状态。浅粉米白渐变背景，柔和自然光，细腻阴影，干净现代编辑风格，高端植物美学，逼真折射与微妙反射，微距细节，浅景深，宁静诗意，清新明亮的高级产品静物摄影质感",
+      "source": {
+        "key": "zcool-ZMTA5ODE2",
+        "subcategory": "液体与玻璃字效",
+        "author": "sea娜娜",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTA5ODE2.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ae6ea192af1b11cphvbb89431.png?k=826e9365b30295c719ace3ded92ff057&t=6b021580",
+        "previewDimensions": [
+          716,
+          897
+        ],
+        "language": "zh-CN",
+        "model": "即梦图片 4.5",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "保留中文原文，仅解码HTML实体和换行。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 32830,
+        "imageId": 32826,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377636_e0vz82_1795295377636_pz70i8.webp"
+    },
+    {
+      "key": "zcool-ZMTQ3NjE2",
+      "name": "金秋山湖｜暖金抽象油画",
+      "category": "背景设计",
+      "subcategory": "色域与抽象地景",
+      "text": "自然地景的抽象风景油画：山脉、湖泊、森林，温暖色彩（包含金色）。",
+      "tags": [
+        "方形",
+        "山湖",
+        "油画",
+        "暖金",
+        "森林",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-f470e34c3acabde93762.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af7178973ae1jki92cp3q842.png?k=8d65fc52e06d738de2acde4ca9edb16e&t=6b021580"
+      ],
+      "originalText": "landscape oil painting abstract picture of nature: mountain, lake, forest warm color (include gold)",
+      "source": {
+        "key": "zcool-ZMTQ3NjE2",
+        "subcategory": "色域与抽象地景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTQ3NjE2.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af7178973ae1jki92cp3q842.png?k=8d65fc52e06d738de2acde4ca9edb16e&t=6b021580",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 42280,
+        "imageId": 42276,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377654_pdyffy_1795295377654_c3ypbx.webp"
+    },
+    {
+      "key": "zcool-ZMTQ2MDE2",
+      "name": "树脂流彩｜柔和抽象有机形态",
+      "category": "背景设计",
+      "subcategory": "色域与抽象地景",
+      "text": "创作一幅有趣的抽象艺术，流动形态与柔和色彩，如树脂艺术。",
+      "tags": [
+        "竖版",
+        "流彩",
+        "树脂艺术",
+        "有机形态",
+        "柔色",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-429e59e83c4949bbd9d2.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af6e63fda380bbhbjztqx171.png?k=01153cdf1aa7c5938ad9cdf977041909&t=6b021580"
+      ],
+      "originalText": "Create a fun abstract art of flowing shapes and soft colours like resin art",
+      "source": {
+        "key": "zcool-ZMTQ2MDE2",
+        "subcategory": "色域与抽象地景",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTQ2MDE2.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af6e63fda380bbhbjztqx171.png?k=01153cdf1aa7c5938ad9cdf977041909&t=6b021580",
+        "previewDimensions": [
+          912,
+          1296
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 41880,
+        "imageId": 41876,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377675_yztycp_1795295377675_v7m0ay.webp"
+    },
+    {
+      "key": "zcool-ZMTkxMDA=",
+      "name": "黄色润唇膏｜枯枝包装静物",
+      "category": "包装设计",
+      "subcategory": "系列包装与场景",
+      "text": "对角线构图，一款【黄色润唇膏】包装样机，放置在灰色背景上的老树枝上。设计简约现代，采用高分辨率摄影，产品实拍，并运用影棚布光。图像使用Octane渲染，呈现出超逼真的效果。",
+      "tags": [
+        "横版",
+        "润唇膏",
+        "黄色",
+        "枯枝",
+        "对角线",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-2a6bc07656229b056da7.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/69cf6d8d7ecc9cjfftxkcb727.jpg?k=49b01c7b9363cf8af6c255951cec017a&t=6b0215d3"
+      ],
+      "originalText": "对角线构图，一款【黄色润唇膏】包装样机，放置在灰色背景上的老树枝上。设计简约现代，采用高分辨率摄影，产品实拍，并运用影棚布光。图像使用Octane渲染，呈现出超逼真的效果。",
+      "source": {
+        "key": "zcool-ZMTkxMDA=",
+        "subcategory": "系列包装与场景",
+        "author": "设计师ayang",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTkxMDA=.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/69cf6d8d7ecc9cjfftxkcb727.jpg?k=49b01c7b9363cf8af6c255951cec017a&t=6b0215d3",
+        "previewDimensions": [
+          2400,
+          1792
+        ],
+        "language": "zh-CN",
+        "model": "Nano Banana PRO",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "保留中文原文，仅解码HTML实体和换行。来源为摄影感AI案例，非实地摄影证明。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 5504,
+        "imageId": 5500,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377696_iu84wo_1795295377697_khw3ye.webp"
+    },
+    {
+      "key": "zcool-ZMTQ0MDMy",
+      "name": "双鹌鹑花草｜复古童书标志",
+      "category": "LOGO设计",
+      "subcategory": "动物与自然标志",
+      "text": "两只日本鹌鹑的剪贴插画，下方搭配草与花卉。扁平水粉风矢量标志，简化设计，圆润形态带轻微不完美，活泼的儿童绘本感觉，有装饰细节，柔和多彩粉彩搭配大地色，锐利对焦，明确的阴影塑形。",
+      "tags": [
+        "方形",
+        "鹌鹑",
+        "花草",
+        "童书",
+        "水粉",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-499a0bf81dad53b3b9c9.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af6b28232b02ihzo67j4y7010.png?k=2bf8a83fb807f16e1c38d2e581c16c95&t=6b0215d3"
+      ],
+      "originalText": "clipart of a two Coturnix Quail with grass and florals on the bottom, a Flat gouache-style vector logo, simplified design, rounded shapes with slight imperfections, a playful children’s storybook feeling, with decorative details, soft colorful pastels with earthy shades, sharp focus, defining shading",
+      "source": {
+        "key": "zcool-ZMTQ0MDMy",
+        "subcategory": "动物与自然标志",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTQ0MDMy.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af6b28232b02ihzo67j4y7010.png?k=2bf8a83fb807f16e1c38d2e581c16c95&t=6b0215d3",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 41384,
+        "imageId": 41380,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377717_zll9x4_1795295377717_0jsbqd.webp"
+    },
+    {
+      "key": "zcool-ZMTAyMDgw",
+      "name": "浣熊啤酒｜1950年代广告标志",
+      "category": "LOGO设计",
+      "subcategory": "动物与自然标志",
+      "text": "浣熊，图形化、标志性、Logo，手持一杯啤酒，1950年代广告艺术风格。",
+      "tags": [
+        "方形",
+        "浣熊",
+        "啤酒",
+        "复古",
+        "图形",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-9260ca6d4b027e75daea.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6ad17553d2a2cxb9jjjedo9289.png?k=74bb0757ed96e7f66f207142a18c2d51&t=6b0215d3"
+      ],
+      "originalText": "Raccoon, graphic, iconic, logo, holding a mug of beer, 1950s style advertising art",
+      "source": {
+        "key": "zcool-ZMTAyMDgw",
+        "subcategory": "动物与自然标志",
+        "author": "陈往昔时",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTAyMDgw.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6ad17553d2a2cxb9jjjedo9289.png?k=74bb0757ed96e7f66f207142a18c2d51&t=6b0215d3",
+        "previewDimensions": [
+          1024,
+          1024
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 30876,
+        "imageId": 30872,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377734_8qkdnc_1795295377734_t8y1wr.webp"
+    },
+    {
+      "key": "zcool-ZMTQzMjYw",
+      "name": "香槟石纹｜金色矿脉材质背景",
+      "category": "背景设计",
+      "subcategory": "材质与柔和光影",
+      "text": "高端奢华天然石材背景，奶油象牙色大理石与温暖米色洞石精致融合，拉丝古金色有机流动纹脉，精细金属金色矿物裂隙，微妙雕塑般起伏，复杂天然石纹，丰富大地质感，优雅有机动势，柔和色调过渡，温暖香槟、沙色、象牙白与低饱和金色配色，艺术化地质杰作，优雅经典，精致地中海美学，触感表面细节，柔和弥散棚灯，照片级写实，极高分辨率，高级建筑材质摄影，连贯无缝的视觉构图。无物品、家具、文字或边框。",
+      "tags": [
+        "竖版",
+        "大理石",
+        "洞石",
+        "金色矿脉",
+        "香槟",
+        "站酷AI资产",
+        "图文已核对"
+      ],
+      "previewUrl": "/prompt-previews/audited-cdc6f9cec154825ec282.webp",
+      "exampleImages": [
+        "https://img.zcool.cn/community/6af691d6c577885of64mls1514.png?k=529f30fc7407b54ba5fb8b1af6c7a240&t=6b021580"
+      ],
+      "originalText": "Ultra high-end luxury natural stone background, exquisite blend of creamy ivory marble and warm beige travertine, dramatic organic flowing veins in brushed antique gold, delicate metallic gold mineral fractures, subtle sculptural formations, intricate natural stone patterns, rich earthy textures, sophisticated organic movement, soft tonal transitions, warm champagne, sand, ivory and muted gold palette, artistic geological masterpiece, elegant and timeless, refined Mediterranean aesthetic, tactile surface details, soft diffused studio lighting, photorealistic, extremely high resolution, premium architectural material photography, seamless visual composition, no objects, no furniture, no text, no borders",
+      "source": {
+        "key": "zcool-ZMTQzMjYw",
+        "subcategory": "材质与柔和光影",
+        "author": "云尚广告",
+        "url": "https://www.zcool.com.cn/ai/prompt/ZMTQzMjYw.html",
+        "collection": "站酷AI资产",
+        "collectionUrl": "https://www.zcool.com.cn/search/digital-asset",
+        "previewKind": "example",
+        "previewOriginalUrl": "https://img.zcool.cn/community/6af691d6c577885of64mls1514.png?k=529f30fc7407b54ba5fb8b1af6c7a240&t=6b021580",
+        "previewDimensions": [
+          960,
+          1200
+        ],
+        "language": "zh-CN",
+        "model": "Midjourney V8",
+        "batch": "design-curation-2026-11-22-0500",
+        "collectedAt": "2026-11-21",
+        "verifiedPair": true,
+        "note": "完整英文原文忠实译为中文，保留参数。来源为摄影感AI案例，非实地摄影证明。详情原文与同一content的原图ID核对通过。 来源对应例图，未在本机重新生图。",
+        "contentId": 41191,
+        "imageId": 41187,
+        "subscriptionStatus": 0,
+        "sourceVersion": 1
+      },
+      "runtimePreviewUrl": "/api/local-file/upload_1795295377749_4zbs3b_1795295377749_80xyiu.webp"
+    }
+  ]
+}

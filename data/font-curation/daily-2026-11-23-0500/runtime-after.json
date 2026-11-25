@@ -1,0 +1,14 @@
+{
+  "capturedAt": "2026-11-22T21:05:06.023634+00:00",
+  "appPid": 94282,
+  "appCommand": "/Applications/环中AIStudio.app/Contents/MacOS/环中AIStudio --remote-debugging-port=9227",
+  "serverPid": 94290,
+  "serverCommand": "next-server (v16.1.1)",
+  "appVersion": "0.2.4",
+  "index": "/Users/congrong/Library/Application Support/环中AIStudio/local-data/font-library/11e594f481958c10e3015d0b/index.json",
+  "total": 563,
+  "active": 453,
+  "trash": 110,
+  "ownerId": "00000000-0000-4000-8000-000000000001",
+  "ownerBasis": "desktop guest mode; actual API writes resolved to this owner index"
+}

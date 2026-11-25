@@ -1,0 +1,2151 @@
+{
+  "batch": "每日扩充1119",
+  "cards": [
+    {
+      "number": 1,
+      "sourceFile": "/tmp/font-daily-1119/482598-0.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "忘却 · 断裂斜宋轻盈字",
+      "sampleText": "忘却",
+      "group": "细线优雅",
+      "style": "断裂斜宋轻盈字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】高反差笔画倾斜，细横长伸，粗弧中段留白，断开的端点沿同一斜线呼应。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-1.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织断裂斜宋轻盈字。高反差笔画倾斜，细横长伸，粗弧中段留白，断开的端点沿同一斜线呼应。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 2,
+      "sourceFile": "/tmp/font-daily-1119/482598-0.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "迷宮 · 回环迷宫点阵字",
+      "sampleText": "迷宮",
+      "group": "语义图形",
+      "style": "回环迷宫点阵字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "语义图形"
+      ],
+      "description": "【字形与构成】圆点和十字嵌入弧形路线，宫字下半部用双圆孔重组，整体如迷宫路径。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-1.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织回环迷宫点阵字。圆点和十字嵌入弧形路线，宫字下半部用双圆孔重组，整体如迷宫路径。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 3,
+      "sourceFile": "/tmp/font-daily-1119/482598-0.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "相合傘 · 平行圆弧等线字",
+      "sampleText": "相合傘",
+      "group": "几何构成",
+      "style": "平行圆弧等线字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】等粗圆头线反复堆叠，外轮廓似伞面，字内空间被平行短横均匀分隔。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-1.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织平行圆弧等线字。等粗圆头线反复堆叠，外轮廓似伞面，字内空间被平行短横均匀分隔。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 4,
+      "sourceFile": "/tmp/font-daily-1119/482598-0.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "八百万 · 厚横楔口宽扁字",
+      "sampleText": "八百万",
+      "group": "几何构成",
+      "style": "厚横楔口宽扁字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】三字宽扁，粗横向外展开，斜切立柱与窄负形形成稳固的块面。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-1.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织厚横楔口宽扁字。三字宽扁，粗横向外展开，斜切立柱与窄负形形成稳固的块面。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 5,
+      "sourceFile": "/tmp/font-daily-1119/482598-1.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "制作 · 圆珠端点斜势字",
+      "sampleText": "制作",
+      "group": "圆体趣味",
+      "style": "圆珠端点斜势字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-2.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "圆体趣味"
+      ],
+      "description": "【字形与构成】两字前倾，粗圆笔和圆珠端点结合，短横与长竖错位形成手工切割节奏。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-2.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织圆珠端点斜势字。两字前倾，粗圆笔和圆珠端点结合，短横与长竖错位形成手工切割节奏。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 6,
+      "sourceFile": "/tmp/font-daily-1119/482598-1.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "不正 · 圆孔切角反向字",
+      "sampleText": "不正",
+      "group": "几何构成",
+      "style": "圆孔切角反向字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-2.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】两字厚重块面采用圆孔和三角切口，横竖局部反向延伸制造不稳定重心。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-2.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织圆孔切角反向字。两字厚重块面采用圆孔和三角切口，横竖局部反向延伸制造不稳定重心。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 7,
+      "sourceFile": "/tmp/font-daily-1119/482598-1.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "独楽 · 卷弧双珠装饰字",
+      "sampleText": "独楽",
+      "group": "复古装饰",
+      "style": "卷弧双珠装饰字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-2.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "复古装饰"
+      ],
+      "description": "【字形与构成】宽笔圆弧与内凹切口组合，乐字圆点两侧展开，如陀螺回旋。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-2.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织卷弧双珠装饰字。宽笔圆弧与内凹切口组合，乐字圆点两侧展开，如陀螺回旋。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 8,
+      "sourceFile": "/tmp/font-daily-1119/482598-1.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "暴挙 · 雨点弧线奇趣字",
+      "sampleText": "暴挙",
+      "group": "圆体趣味",
+      "style": "雨点弧线奇趣字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-2.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "圆体趣味"
+      ],
+      "description": "【字形与构成】等粗圆角线构成外展撇捺，圆珠点画与内侧短横形成跳跃节律。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-2.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织雨点弧线奇趣字。等粗圆角线构成外展撇捺，圆珠点画与内侧短横形成跳跃节律。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 9,
+      "sourceFile": "/tmp/font-daily-1119/482598-2.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "処世 · 折带连笔现代字",
+      "sampleText": "処世",
+      "group": "几何构成",
+      "style": "折带连笔现代字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-3.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】粗线像折起的带子，直角与圆弧交替，横向回折拉长底部重心。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-3.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织折带连笔现代字。粗线像折起的带子，直角与圆弧交替，横向回折拉长底部重心。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 10,
+      "sourceFile": "/tmp/font-daily-1119/482598-2.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "焦点 · 高反差半圆衬线字",
+      "sampleText": "焦点",
+      "group": "细线优雅",
+      "style": "高反差半圆衬线字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-3.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】细横贯穿厚竖，字底用半圆弧代替点画，圆球与尖细线形成反差。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-3.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织高反差半圆衬线字。细横贯穿厚竖，字底用半圆弧代替点画，圆球与尖细线形成反差。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 11,
+      "sourceFile": "/tmp/font-daily-1119/482598-2.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "落花生 · 碎片疏排花瓣字",
+      "sampleText": "落花生",
+      "group": "细线优雅",
+      "style": "碎片疏排花瓣字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-3.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】细横细竖与三角圆弧碎片组合，断笔留下疏朗空白，字距整齐。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-3.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织碎片疏排花瓣字。细横细竖与三角圆弧碎片组合，断笔留下疏朗空白，字距整齐。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 12,
+      "sourceFile": "/tmp/font-daily-1119/482598-2.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "星の海 · 星芒负形几何字",
+      "sampleText": "星の海",
+      "group": "语义图形",
+      "style": "星芒负形几何字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-3.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "语义图形"
+      ],
+      "description": "【字形与构成】方块笔画中挖出四角星，圆弧切面和短细横形成夜空闪光意象。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-3.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织星芒负形几何字。方块笔画中挖出四角星，圆弧切面和短细横形成夜空闪光意象。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 13,
+      "sourceFile": "/tmp/font-daily-1119/482598-3.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "葡萄 · 果蔓圆头单线字",
+      "sampleText": "葡萄",
+      "group": "圆体趣味",
+      "style": "果蔓圆头单线字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-4.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "圆体趣味"
+      ],
+      "description": "【字形与构成】两字由连贯圆弧与圆点构成，草头圆珠和内层曲线如葡萄藤蔓。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-4.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织果蔓圆头单线字。两字由连贯圆弧与圆点构成，草头圆珠和内层曲线如葡萄藤蔓。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 14,
+      "sourceFile": "/tmp/font-daily-1119/482598-3.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "革命 · 圆直混合符号字",
+      "sampleText": "革命",
+      "group": "几何构成",
+      "style": "圆直混合符号字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-4.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】半圆、直杆与圆环重组笔画，等粗线条使两字像秩序分明的图形标记。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-4.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织圆直混合符号字。半圆、直杆与圆环重组笔画，等粗线条使两字像秩序分明的图形标记。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 15,
+      "sourceFile": "/tmp/font-daily-1119/482598-3.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "万有引力 · 三角折线极简字",
+      "sampleText": "万有引力",
+      "group": "几何构成",
+      "style": "三角折线极简字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-4.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】四字宽扁，斜线与横向平行线形成三角框，开放负形保持轻盈。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-4.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织三角折线极简字。四字宽扁，斜线与横向平行线形成三角框，开放负形保持轻盈。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 16,
+      "sourceFile": "/tmp/font-daily-1119/482598-3.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "天変地異 · 方圆对照装饰宋字",
+      "sampleText": "天変地異",
+      "group": "复古装饰",
+      "style": "方圆对照装饰宋字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-4.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "复古装饰"
+      ],
+      "description": "【字形与构成】粗竖细横和内凹圆弧共同构成字身，末端尖角与圆点形成戏剧性对照。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-4.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织方圆对照装饰宋字。粗竖细横和内凹圆弧共同构成字身，末端尖角与圆点形成戏剧性对照。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 17,
+      "sourceFile": "/tmp/font-daily-1119/482598-4.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "幽霊 · 回折迷宫镂空字",
+      "sampleText": "幽霊",
+      "group": "几何构成",
+      "style": "回折迷宫镂空字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-5.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】粗圆框内嵌细折线，曲折路线在字内往返，内外轮廓形成迷宫感。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-5.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织回折迷宫镂空字。粗圆框内嵌细折线，曲折路线在字内往返，内外轮廓形成迷宫感。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 18,
+      "sourceFile": "/tmp/font-daily-1119/482598-4.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "終電 · 圆点悬垂电路字",
+      "sampleText": "終電",
+      "group": "圆体趣味",
+      "style": "圆点悬垂电路字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-5.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "圆体趣味"
+      ],
+      "description": "【字形与构成】细长竖杆穿过粗圆转折，点画像悬垂的节点，粗细变化保持趣味。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-5.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织圆点悬垂电路字。细长竖杆穿过粗圆转折，点画像悬垂的节点，粗细变化保持趣味。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 19,
+      "sourceFile": "/tmp/font-daily-1119/482598-4.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "進化論 · 斜纹进阶方折字",
+      "sampleText": "進化論",
+      "group": "几何构成",
+      "style": "斜纹进阶方折字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-5.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】三字用粗斜线和细平行缝隙重组，阶梯负形与点画形成向上动势。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-5.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织斜纹进阶方折字。三字用粗斜线和细平行缝隙重组，阶梯负形与点画形成向上动势。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 20,
+      "sourceFile": "/tmp/font-daily-1119/482598-4.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "千鳥足 · 错位三角折纸字",
+      "sampleText": "千鳥足",
+      "group": "几何构成",
+      "style": "错位三角折纸字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-5.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】尖角细横与大块三角斜面搭接，断笔和局部错位造成摇晃步伐。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-5.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织错位三角折纸字。尖角细横与大块三角斜面搭接，断笔和局部错位造成摇晃步伐。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 21,
+      "sourceFile": "/tmp/font-daily-1119/482598-5.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "春分 · 轻软连笔春日字",
+      "sampleText": "春分",
+      "group": "书法手写",
+      "style": "轻软连笔春日字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-6.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "书法手写"
+      ],
+      "description": "【字形与构成】两个字的长弧自然相接，粗细温和变化，底部细长扫笔使标题轻盈。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-6.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织轻软连笔春日字。两个字的长弧自然相接，粗细温和变化，底部细长扫笔使标题轻盈。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 22,
+      "sourceFile": "/tmp/font-daily-1119/482598-5.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "風呂 · 纵向人形回环字",
+      "sampleText": "風呂",
+      "group": "语义图形",
+      "style": "纵向人形回环字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-6.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "语义图形"
+      ],
+      "description": "【字形与构成】两字竖向压合成细长轮廓，多层圆环与内凹曲线像浴室标识。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-6.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织纵向人形回环字。两字竖向压合成细长轮廓，多层圆环与内凹曲线像浴室标识。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 23,
+      "sourceFile": "/tmp/font-daily-1119/482598-5.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "歌唱 · 直角圆弧粗黑字",
+      "sampleText": "歌唱",
+      "group": "几何构成",
+      "style": "直角圆弧粗黑字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-6.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】粗笔横竖紧密相连，圆角内孔和小切口分开字内空间，字面均衡。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-6.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织直角圆弧粗黑字。粗笔横竖紧密相连，圆角内孔和小切口分开字内空间，字面均衡。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 24,
+      "sourceFile": "/tmp/font-daily-1119/482598-5.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "生活 · 胶囊圆角生活字",
+      "sampleText": "生活",
+      "group": "圆体趣味",
+      "style": "胶囊圆角生活字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-6.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "圆体趣味"
+      ],
+      "description": "【字形与构成】宽扁字面用圆角粗黑笔画搭建，小圆点排在字间，负形像胶囊。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-6.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织胶囊圆角生活字。宽扁字面用圆角粗黑笔画搭建，小圆点排在字间，负形像胶囊。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 25,
+      "sourceFile": "/tmp/font-daily-1119/482598-6.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "鳴呼 · 尖端长弧情绪字",
+      "sampleText": "鳴呼",
+      "group": "细线优雅",
+      "style": "尖端长弧情绪字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-7.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】高反差细横与粗弧斜排，长钩与回转撇捺向下舒展，字势轻微起伏。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-7.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织尖端长弧情绪字。高反差细横与粗弧斜排，长钩与回转撇捺向下舒展，字势轻微起伏。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 26,
+      "sourceFile": "/tmp/font-daily-1119/482598-6.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "燕返し · 展翅细杆日文字",
+      "sampleText": "燕返し",
+      "group": "细线优雅",
+      "style": "展翅细杆日文字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-7.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】横向细杆字形展开，斜切短线与长圆弧收尾相接，保留日文假名し。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-7.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织展翅细杆日文字。横向细杆字形展开，斜切短线与长圆弧收尾相接，保留日文假名し。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 27,
+      "sourceFile": "/tmp/font-daily-1119/482598-6.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "企画 · 对角共笔策划字",
+      "sampleText": "企画",
+      "group": "几何构成",
+      "style": "对角共笔策划字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-7.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】两字的长斜线跨越字间，共用横杆与中心竖画，构成上下咬合的几何字标。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-7.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织对角共笔策划字。两字的长斜线跨越字间，共用横杆与中心竖画，构成上下咬合的几何字标。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 28,
+      "sourceFile": "/tmp/font-daily-1119/482598-6.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "彗星 · 星点网格等线字",
+      "sampleText": "彗星",
+      "group": "细线优雅",
+      "style": "星点网格等线字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-7.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】细平行横线与竖杆交织，交点加小星芒，密集线条仍保持疏朗。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-7.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织星点网格等线字。细平行横线与竖杆交织，交点加小星芒，密集线条仍保持疏朗。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 29,
+      "sourceFile": "/tmp/font-daily-1119/482598-7.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "河豚 · 水滴圆头水生字",
+      "sampleText": "河豚",
+      "group": "圆体趣味",
+      "style": "水滴圆头水生字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-8.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "圆体趣味"
+      ],
+      "description": "【字形与构成】等粗圆杆和小点构成胖圆字面，回环曲线与鱼尾般尖端强调水生意象。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-8.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织水滴圆头水生字。等粗圆杆和小点构成胖圆字面，回环曲线与鱼尾般尖端强调水生意象。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 30,
+      "sourceFile": "/tmp/font-daily-1119/482598-7.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "背骨 · 叠弧脊柱符号字",
+      "sampleText": "背骨",
+      "group": "几何构成",
+      "style": "叠弧脊柱符号字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-8.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】两字向上拉长，重复圆弧与斜切内孔形成骨架般结构，下方尖脚支撑重心。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-8.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织叠弧脊柱符号字。两字向上拉长，重复圆弧与斜切内孔形成骨架般结构，下方尖脚支撑重心。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 31,
+      "sourceFile": "/tmp/font-daily-1119/482598-7.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "速度制限 · 锐角分层速度字",
+      "sampleText": "速度制限",
+      "group": "运动力量",
+      "style": "锐角分层速度字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-8.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "运动力量"
+      ],
+      "description": "【字形与构成】四字两行、粗斜切与细平行缝隙穿插，锐角端点同向前冲。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-8.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织锐角分层速度字。四字两行、粗斜切与细平行缝隙穿插，锐角端点同向前冲。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 32,
+      "sourceFile": "/tmp/font-daily-1119/482598-7.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "百万馬力 · 紧凑工业方块字",
+      "sampleText": "百万馬力",
+      "group": "几何构成",
+      "style": "紧凑工业方块字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-8.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】四字两行，等粗直角笔画与短阶梯切口构成，重黑块面像机械模块。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-8.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织紧凑工业方块字。四字两行，等粗直角笔画与短阶梯切口构成，重黑块面像机械模块。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 33,
+      "sourceFile": "/tmp/font-daily-1119/482598-8.jpg",
+      "crop": [
+        10,
+        200,
+        495,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "初見殺し · 断线斜切惊奇字",
+      "sampleText": "初見殺し",
+      "group": "运动力量",
+      "style": "断线斜切惊奇字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-9.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "运动力量"
+      ],
+      "description": "【字形与构成】四字横排，平行斜线切开笔画，尖角与长撇扩张，末尾保留假名し。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-9.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 200, 495, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织断线斜切惊奇字。四字横排，平行斜线切开笔画，尖角与长撇扩张，末尾保留假名し。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 34,
+      "sourceFile": "/tmp/font-daily-1119/482598-8.jpg",
+      "crop": [
+        505,
+        200,
+        990,
+        685
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "三途の川 · 波带曲折圆角字",
+      "sampleText": "三途の川",
+      "group": "几何构成",
+      "style": "波带曲折圆角字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-9.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】粗圆弧像连续河流，横画扭转成带状，川字直杆与三途波形呼应。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-9.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 200, 990, 685]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织波带曲折圆角字。粗圆弧像连续河流，横画扭转成带状，川字直杆与三途波形呼应。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 35,
+      "sourceFile": "/tmp/font-daily-1119/482598-8.jpg",
+      "crop": [
+        10,
+        695,
+        495,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "物欲 · 圆角斜笔欲望字",
+      "sampleText": "物欲",
+      "group": "运动力量",
+      "style": "圆角斜笔欲望字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-9.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "运动力量"
+      ],
+      "description": "【字形与构成】两字竖排、字面前倾，粗圆斜笔和短横断口重组结构，整体向右上抬升。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-9.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[10, 695, 495, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织圆角斜笔欲望字。两字竖排、字面前倾，粗圆斜笔和短横断口重组结构，整体向右上抬升。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 36,
+      "sourceFile": "/tmp/font-daily-1119/482598-8.jpg",
+      "crop": [
+        505,
+        695,
+        990,
+        1180
+      ],
+      "originalSize": [
+        1000,
+        1326
+      ],
+      "visualReviewed": false,
+      "title": "深淵 · 高挑细杆竖长字",
+      "sampleText": "深淵",
+      "group": "几何构成",
+      "style": "高挑细杆竖长字",
+      "author": "siun",
+      "sourceTitle": "72幅日本顶尖设计师的字体打卡作品",
+      "sourceUrl": "https://www.uisdc.com/group/482598.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-9.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "siun",
+        "几何构成"
+      ],
+      "description": "【字形与构成】两字瘦高，等粗竖杆与下沉弧线交织，密集直线创造纵深裂隙感。\n【配色与材质】白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。\n【适用场景】日文标题、文化活动、平面字形练习。\n【作者】siun。原页正文明确将作品归于siun；优设为采编展示页，图内灰字为日文作品名，保留原文不译成中文。\n【原作品】72幅日本顶尖设计师的字体打卡作品\n【来源】https://www.uisdc.com/group/482598.html\n【原图】https://image.uisdc.com/wp-content/uploads/2022/11/Font-design-20221107-9.jpg\n【原图尺寸与裁切】1000×1326像素；[left,top,right,bottom]=[505, 695, 990, 1180]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织高挑细杆竖长字。两字瘦高，等粗竖杆与下沉弧线交织，密集直线创造纵深裂隙感。白底蓝紫色平涂笔画，无额外材质，用轮廓和负形表达。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于日文标题、文化活动、平面字形练习。"
+    },
+    {
+      "number": 37,
+      "sourceFile": "/tmp/font-daily-1119/573270-1.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "陶 · 陶纹回旋单字",
+      "sampleText": "陶",
+      "group": "语义图形",
+      "style": "陶纹回旋单字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-1-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】粗厚字面内用等粗细线刻出回旋陶纹，横竖转折与弧形外轮廓相互呼应。\n【配色与材质】深青绿底色、米白线纹。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-1-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织陶纹回旋单字。粗厚字面内用等粗细线刻出回旋陶纹，横竖转折与弧形外轮廓相互呼应。深青绿底色、米白线纹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 38,
+      "sourceFile": "/tmp/font-daily-1119/573270-2.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "赤 · 赤水丹霞刷痕字",
+      "sampleText": "赤",
+      "group": "语义图形",
+      "style": "赤水丹霞刷痕字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-2-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】粗壮赤字压成块面，顶部横画外展，竖撇和两点像山体断面，边缘保留刷痕。\n【配色与材质】橙红至深红渐变与干刷纹理。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-2-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织赤水丹霞刷痕字。粗壮赤字压成块面，顶部横画外展，竖撇和两点像山体断面，边缘保留刷痕。橙红至深红渐变与干刷纹理。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 39,
+      "sourceFile": "/tmp/font-daily-1119/573270-3.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "鎮 · 古镇屋檐结构字",
+      "sampleText": "鎮",
+      "group": "语义图形",
+      "style": "古镇屋檐结构字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-3-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】传统字形拆成多层屋檐，横画上翘，色块错层形成街巷与门洞。\n【配色与材质】深蓝屋顶、青绿和浅蓝墙体色块。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-3-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织古镇屋檐结构字。传统字形拆成多层屋檐，横画上翘，色块错层形成街巷与门洞。深蓝屋顶、青绿和浅蓝墙体色块。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 40,
+      "sourceFile": "/tmp/font-daily-1119/573270-4.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "紙 · 卷纸折页单字",
+      "sampleText": "紙",
+      "group": "语义图形",
+      "style": "卷纸折页单字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-4-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】左右部件折成两片纸面，边缘卷曲，细线暗示叶脉与手工造纸纤维。\n【配色与材质】紫色正面、绿色背面和细金线。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-4-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织卷纸折页单字。左右部件折成两片纸面，边缘卷曲，细线暗示叶脉与手工造纸纤维。紫色正面、绿色背面和细金线。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 41,
+      "sourceFile": "/tmp/font-daily-1119/573270-5.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "編 · 竹编经纬网格字",
+      "sampleText": "編",
+      "group": "语义图形",
+      "style": "竹编经纬网格字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-5-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】字形用横竖交错的竹条拼成，交点小方块和外伸短杆保留编织结构。\n【配色与材质】紫色主网、青绿蓝黄小格点缀。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-5-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织竹编经纬网格字。字形用横竖交错的竹条拼成，交点小方块和外伸短杆保留编织结构。紫色主网、青绿蓝黄小格点缀。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 42,
+      "sourceFile": "/tmp/font-daily-1119/573270-6.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "林 · 杉林剪影负形字",
+      "sampleText": "林",
+      "group": "语义图形",
+      "style": "杉林剪影负形字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-6-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】两棵杉树镂空穿过厚实字块，树冠细碎负形与外轮廓圆角形成反差。\n【配色与材质】青绿色实心字，白色松林剪影。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-6-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织杉林剪影负形字。两棵杉树镂空穿过厚实字块，树冠细碎负形与外轮廓圆角形成反差。青绿色实心字，白色松林剪影。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 43,
+      "sourceFile": "/tmp/font-daily-1119/573270-7.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "哨 · 泥哨动物双孔字",
+      "sampleText": "哨",
+      "group": "语义图形",
+      "style": "泥哨动物双孔字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-7-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】字形融入鸡冠、猪鼻和泥哨双孔，圆润动物轮廓包住文字构成。\n【配色与材质】深蓝底块、朱红冠部、黄色彩绘短线。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-7-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织泥哨动物双孔字。字形融入鸡冠、猪鼻和泥哨双孔，圆润动物轮廓包住文字构成。深蓝底块、朱红冠部、黄色彩绘短线。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 44,
+      "sourceFile": "/tmp/font-daily-1119/573270-8.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "匠 · 折尺空间单字",
+      "sampleText": "匠",
+      "group": "立体字效",
+      "style": "折尺空间单字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-8-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "立体字效"
+      ],
+      "description": "【字形与构成】粗细直线按等距轴测方向折回，匚和斤构成互相嵌套的三维框。\n【配色与材质】深蓝、浅蓝和黑色侧面。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-8-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织折尺空间单字。粗细直线按等距轴测方向折回，匚和斤构成互相嵌套的三维框。深蓝、浅蓝和黑色侧面。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 45,
+      "sourceFile": "/tmp/font-daily-1119/573270-9.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "儺 · 傩戏面具干刷字",
+      "sampleText": "儺",
+      "group": "语义图形",
+      "style": "傩戏面具干刷字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-9-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】左部嵌入细线面具，粗笔向右横扫，飞白形成仪式感毛刷轮廓。\n【配色与材质】土棕到朱橙渐变、白色面具线描。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-9-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织傩戏面具干刷字。左部嵌入细线面具，粗笔向右横扫，飞白形成仪式感毛刷轮廓。土棕到朱橙渐变、白色面具线描。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 46,
+      "sourceFile": "/tmp/font-daily-1119/573270-10.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2250
+      ],
+      "originalSize": [
+        1500,
+        2250
+      ],
+      "visualReviewed": false,
+      "title": "瀑 · 瀑流平行细线字",
+      "sampleText": "瀑",
+      "group": "语义图形",
+      "style": "瀑流平行细线字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-10-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】字的竖画变为反复下落的流线，短横连接水帘，弯曲端点呈水势。\n【配色与材质】青绿浅蓝渐变细线。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-10-1.jpg\n【原图尺寸与裁切】1500×2250像素；[left,top,right,bottom]=[0, 0, 1500, 2250]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织瀑流平行细线字。字的竖画变为反复下落的流线，短横连接水帘，弯曲端点呈水势。青绿浅蓝渐变细线。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 47,
+      "sourceFile": "/tmp/font-daily-1119/573270-11.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2250
+      ],
+      "originalSize": [
+        1500,
+        2250
+      ],
+      "visualReviewed": false,
+      "title": "眼 · 天眼椭圆轨道字",
+      "sampleText": "眼",
+      "group": "语义图形",
+      "style": "天眼椭圆轨道字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-11-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】细方框字形与大椭圆交叉，内部放射线和星点融入望远镜意象。\n【配色与材质】蓝紫线框、青色放射线和橙色星点。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-11-1.jpg\n【原图尺寸与裁切】1500×2250像素；[left,top,right,bottom]=[0, 0, 1500, 2250]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织天眼椭圆轨道字。细方框字形与大椭圆交叉，内部放射线和星点融入望远镜意象。蓝紫线框、青色放射线和橙色星点。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 48,
+      "sourceFile": "/tmp/font-daily-1119/573270-12.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2250
+      ],
+      "originalSize": [
+        1500,
+        2250
+      ],
+      "visualReviewed": false,
+      "title": "銀 · 苗银卷纹饰品字",
+      "sampleText": "銀",
+      "group": "语义图形",
+      "style": "苗银卷纹饰品字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-12-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】宽厚字身嵌满回旋细线，圆珠、穗状短线和水滴负形模拟苗族银饰。\n【配色与材质】深绿主块、黄绿金色细纹。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-12-1.jpg\n【原图尺寸与裁切】1500×2250像素；[left,top,right,bottom]=[0, 0, 1500, 2250]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织苗银卷纹饰品字。宽厚字身嵌满回旋细线，圆珠、穗状短线和水滴负形模拟苗族银饰。深绿主块、黄绿金色细纹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 49,
+      "sourceFile": "/tmp/font-daily-1119/573270-13.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2250
+      ],
+      "originalSize": [
+        1500,
+        2250
+      ],
+      "visualReviewed": false,
+      "title": "根 · 折耳根枝芽字",
+      "sampleText": "根",
+      "group": "语义图形",
+      "style": "折耳根枝芽字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-13-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】瘦长等粗笔画变成枝干，端点长出细根与小芽，略不规则弯折保留自然感。\n【配色与材质】土棕色枝干和深棕细线。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-13-1.jpg\n【原图尺寸与裁切】1500×2250像素；[left,top,right,bottom]=[0, 0, 1500, 2250]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织折耳根枝芽字。瘦长等粗笔画变成枝干，端点长出细根与小芽，略不规则弯折保留自然感。土棕色枝干和深棕细线。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 50,
+      "sourceFile": "/tmp/font-daily-1119/573270-14.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "屯 · 屯堡屋面拼接字",
+      "sampleText": "屯",
+      "group": "语义图形",
+      "style": "屯堡屋面拼接字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-14-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】多片斜向屋面拼出屯字，短小垂直门窗和负形间隙加强建筑识别。\n【配色与材质】深蓝与亮蓝屋面色块。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-14-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织屯堡屋面拼接字。多片斜向屋面拼出屯字，短小垂直门窗和负形间隙加强建筑识别。深蓝与亮蓝屋面色块。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 51,
+      "sourceFile": "/tmp/font-daily-1119/573270-15.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2249
+      ],
+      "originalSize": [
+        1500,
+        2249
+      ],
+      "visualReviewed": false,
+      "title": "數 · 数据像素模块字",
+      "sampleText": "數",
+      "group": "几何构成",
+      "style": "数据像素模块字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-15-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "几何构成"
+      ],
+      "description": "【字形与构成】繁体字拆成放射直线、回纹和阶梯像素，局部方块对应数据节点。\n【配色与材质】蓝紫主色、深绿和亮蓝像素。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-15-1.jpg\n【原图尺寸与裁切】1500×2249像素；[left,top,right,bottom]=[0, 0, 1500, 2249]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织数据像素模块字。繁体字拆成放射直线、回纹和阶梯像素，局部方块对应数据节点。蓝紫主色、深绿和亮蓝像素。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 52,
+      "sourceFile": "/tmp/font-daily-1119/573270-16.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2250
+      ],
+      "originalSize": [
+        1500,
+        2250
+      ],
+      "visualReviewed": false,
+      "title": "山 · 梵净山岩块字",
+      "sampleText": "山",
+      "group": "语义图形",
+      "style": "梵净山岩块字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-16-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】三个厚实岩石块构成山字，表面干刷痕模拟岩壁，白色栈道穿过中下部。\n【配色与材质】米棕、深棕和咖色石块。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-16-1.jpg\n【原图尺寸与裁切】1500×2250像素；[left,top,right,bottom]=[0, 0, 1500, 2250]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织梵净山岩块字。三个厚实岩石块构成山字，表面干刷痕模拟岩壁，白色栈道穿过中下部。米棕、深棕和咖色石块。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 53,
+      "sourceFile": "/tmp/font-daily-1119/573270-17.jpg",
+      "crop": [
+        0,
+        0,
+        1500,
+        2250
+      ],
+      "originalSize": [
+        1500,
+        2250
+      ],
+      "visualReviewed": false,
+      "title": "爽 · 贵阳竹叶舒展字",
+      "sampleText": "爽",
+      "group": "语义图形",
+      "style": "贵阳竹叶舒展字",
+      "author": "石昌鴻",
+      "sourceTitle": "17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）",
+      "sourceUrl": "https://www.uisdc.com/group/573270.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-17-1.jpg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "石昌鴻",
+        "语义图形"
+      ],
+      "description": "【字形与构成】大字主干与四组竹枝组合成爽字，笔画关节像竹节，鸟形停在横杆。\n【配色与材质】深绿字干、黄绿竹叶与棕色小鸟。\n【适用场景】贵州文旅、地方文化、单字图形标志。\n【作者】石昌鴻。作者依公开正文账号及作品图信息记录。\n【原作品】17 组《印象贵州》城市字体设计，一眼爱上多彩贵州（2）\n【来源】https://www.uisdc.com/group/573270.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/07/City-font-20240708-17-1.jpg\n【原图尺寸与裁切】1500×2250像素；[left,top,right,bottom]=[0, 0, 1500, 2250]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织贵阳竹叶舒展字。大字主干与四组竹枝组合成爽字，笔画关节像竹节，鸟形停在横杆。深绿字干、黄绿竹叶与棕色小鸟。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于贵州文旅、地方文化、单字图形标志。"
+    },
+    {
+      "number": 54,
+      "sourceFile": "/tmp/font-daily-1119/569919-1.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "我的美丽 · 花体长尾星光字",
+      "sampleText": "我的美丽",
+      "group": "细线优雅",
+      "style": "花体长尾星光字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-2.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】四字横排前倾，细长曲线围成椭圆，粗竖细横与星形闪光相互衬托。\n【配色与材质】黑底玫红主字与银白星光。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-2.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织花体长尾星光字。四字横排前倾，细长曲线围成椭圆，粗竖细横与星形闪光相互衬托。黑底玫红主字与银白星光。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 55,
+      "sourceFile": "/tmp/font-daily-1119/569919-2.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "断线 · 高挑缠绕线影字",
+      "sampleText": "断线",
+      "group": "细线优雅",
+      "style": "高挑缠绕线影字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-3.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "细线优雅"
+      ],
+      "description": "【字形与构成】两字纵向拉长，高反差横竖配细线卷尾，跨字大圆弧构成联络断线意象。\n【配色与材质】黑底青蓝主字、黄色弧线和英文。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-3.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织高挑缠绕线影字。两字纵向拉长，高反差横竖配细线卷尾，跨字大圆弧构成联络断线意象。黑底青蓝主字、黄色弧线和英文。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 56,
+      "sourceFile": "/tmp/font-daily-1119/569919-3.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "开往早晨的午夜 · 错落方圆双行字",
+      "sampleText": "开往早晨的午夜",
+      "group": "圆体趣味",
+      "style": "错落方圆双行字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-4.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "圆体趣味"
+      ],
+      "description": "【字形与构成】七字错落分行，等粗圆头和拉长竖画组合，字组高低起伏，波浪符号置右。\n【配色与材质】黑底白黄绿字、蓝色圆形底块。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-4.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织错落方圆双行字。七字错落分行，等粗圆头和拉长竖画组合，字组高低起伏，波浪符号置右。黑底白黄绿字、蓝色圆形底块。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 57,
+      "sourceFile": "/tmp/font-daily-1119/569919-4.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "破界前行 · 斜锋宽展行动字",
+      "sampleText": "破界前行",
+      "group": "运动力量",
+      "style": "斜锋宽展行动字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-5.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "运动力量"
+      ],
+      "description": "【字形与构成】四字一行，粗竖与尖斜撇捺外放，青色飘带穿过字间，下方花体英文连带。\n【配色与材质】黑底橙红标题、青绿丝带。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-5.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织斜锋宽展行动字。四字一行，粗竖与尖斜撇捺外放，青色飘带穿过字间，下方花体英文连带。黑底橙红标题、青绿丝带。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 58,
+      "sourceFile": "/tmp/font-daily-1119/569919-5.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "最佳损友 · 平头圆角友情字",
+      "sampleText": "最佳损友",
+      "group": "圆体趣味",
+      "style": "平头圆角友情字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-6.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "圆体趣味"
+      ],
+      "description": "【字形与构成】四字横排、粗细变化克制，圆角转折与短直线搭配，绿色尖角菱形穿插字后。\n【配色与材质】黑底白字、绿菱形与黄色小注。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-6.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织平头圆角友情字。四字横排、粗细变化克制，圆角转折与短直线搭配，绿色尖角菱形穿插字后。黑底白字、绿菱形与黄色小注。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 59,
+      "sourceFile": "/tmp/font-daily-1119/569919-6.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "苦茶子 · 倾斜切角撞色字",
+      "sampleText": "苦茶子",
+      "group": "运动力量",
+      "style": "倾斜切角撞色字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-7.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "运动力量"
+      ],
+      "description": "【字形与构成】三字大笔画右倾，内孔压紧，斜向色块穿过字面并带动整体重心。\n【配色与材质】蓝色主字、黄色斜条和黑底。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-7.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织倾斜切角撞色字。三字大笔画右倾，内孔压紧，斜向色块穿过字面并带动整体重心。蓝色主字、黄色斜条和黑底。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 60,
+      "sourceFile": "/tmp/font-daily-1119/569919-7.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "清风徐来 · 疏朗中性矩形字",
+      "sampleText": "清风徐来",
+      "group": "现代简约",
+      "style": "疏朗中性矩形字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-8.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "现代简约"
+      ],
+      "description": "【字形与构成】四字两行，以均匀直线与简洁转角组织，横向信息块将上下两行连为方形。\n【配色与材质】白黑字与蓝紫矩形渐变底块。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-8.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织疏朗中性矩形字。四字两行，以均匀直线与简洁转角组织，横向信息块将上下两行连为方形。白黑字与蓝紫矩形渐变底块。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 61,
+      "sourceFile": "/tmp/font-daily-1119/569919-8.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "潭神庙 · 竖排卷钩神庙字",
+      "sampleText": "潭神庙",
+      "group": "复古装饰",
+      "style": "竖排卷钩神庙字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-9.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "复古装饰"
+      ],
+      "description": "【字形与构成】三字竖排，粗竖细横与内凹尖端结合，花体英文横穿字组。\n【配色与材质】黑底粉紫主字、暗灰英文。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-9.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织竖排卷钩神庙字。三字竖排，粗竖细横与内凹尖端结合，花体英文横穿字组。黑底粉紫主字、暗灰英文。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 62,
+      "sourceFile": "/tmp/font-daily-1119/569919-9.jpg",
+      "crop": [
+        0,
+        0,
+        2500,
+        3333
+      ],
+      "originalSize": [
+        2500,
+        3333
+      ],
+      "visualReviewed": false,
+      "title": "理想2024 · 圆珠衬线年度字",
+      "sampleText": "理想2024",
+      "group": "复古装饰",
+      "style": "圆珠衬线年度字",
+      "author": "四喜字体设计",
+      "sourceTitle": "9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）",
+      "sourceUrl": "https://www.uisdc.com/group/569919.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-10.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "四喜字体设计",
+        "复古装饰"
+      ],
+      "description": "【字形与构成】理想二字宽扁，圆珠端点和细横粗竖形成对照，下方2024极细衬线扩展。\n【配色与材质】黑底白字、深蓝菱形。\n【适用场景】品牌海报、社交主题、活动标题。\n【作者】四喜字体设计。作者依公开正文账号及作品图信息记录。\n【原作品】9 款创意标题字体设计，轻松提升你的 banner 颜值！（8）\n【来源】https://www.uisdc.com/group/569919.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/06/font-20240614-10.jpeg\n【原图尺寸与裁切】2500×3333像素；[left,top,right,bottom]=[0, 0, 2500, 3333]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织圆珠衬线年度字。理想二字宽扁，圆珠端点和细横粗竖形成对照，下方2024极细衬线扩展。黑底白字、深蓝菱形。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于品牌海报、社交主题、活动标题。"
+    },
+    {
+      "number": 63,
+      "sourceFile": "/tmp/font-daily-1119/567728-1.jpg",
+      "crop": [
+        0,
+        0,
+        2732,
+        2048
+      ],
+      "originalSize": [
+        2732,
+        2048
+      ],
+      "visualReviewed": false,
+      "title": "趁活着要快乐 · 手绘斜切人生口号",
+      "sampleText": "趁活着要快乐",
+      "group": "运动力量",
+      "style": "手绘斜切人生口号",
+      "author": "梁志坚设计师",
+      "sourceTitle": "9 组创意满满的字体设计草稿，激发你的无限想象力！",
+      "sourceUrl": "https://www.uisdc.com/group/567728.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-2.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "梁志坚设计师",
+        "运动力量"
+      ],
+      "description": "【字形与构成】六字横排整体上扬，粗斜笔画有干刷边缘，字面压缩以加强宣言感。\n【配色与材质】白底黑色手绘墨迹，保留作者签名和草稿痕迹。\n【适用场景】情绪海报、文化主题、字形草稿参考。\n【作者】梁志坚设计师。作者依公开正文账号及作品图信息记录。\n【原作品】9 组创意满满的字体设计草稿，激发你的无限想象力！\n【来源】https://www.uisdc.com/group/567728.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-2.jpeg\n【原图尺寸与裁切】2732×2048像素；[left,top,right,bottom]=[0, 0, 2732, 2048]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织手绘斜切人生口号。六字横排整体上扬，粗斜笔画有干刷边缘，字面压缩以加强宣言感。白底黑色手绘墨迹，保留作者签名和草稿痕迹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于情绪海报、文化主题、字形草稿参考。"
+    },
+    {
+      "number": 64,
+      "sourceFile": "/tmp/font-daily-1119/567728-2.jpg",
+      "crop": [
+        0,
+        0,
+        2732,
+        2048
+      ],
+      "originalSize": [
+        2732,
+        2048
+      ],
+      "visualReviewed": false,
+      "title": "一无所有不好吗 · 厚墨尖角双行字",
+      "sampleText": "一无所有不好吗",
+      "group": "运动力量",
+      "style": "厚墨尖角双行字",
+      "author": "梁志坚设计师",
+      "sourceTitle": "9 组创意满满的字体设计草稿，激发你的无限想象力！",
+      "sourceUrl": "https://www.uisdc.com/group/567728.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-3.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "梁志坚设计师",
+        "运动力量"
+      ],
+      "description": "【字形与构成】七字两行，粗重横竖和尖角收笔结合，字面前倾，外扩撇捺组成紧密块面。\n【配色与材质】白底黑色手绘墨迹，保留作者签名和草稿痕迹。\n【适用场景】情绪海报、文化主题、字形草稿参考。\n【作者】梁志坚设计师。作者依公开正文账号及作品图信息记录。\n【原作品】9 组创意满满的字体设计草稿，激发你的无限想象力！\n【来源】https://www.uisdc.com/group/567728.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-3.jpeg\n【原图尺寸与裁切】2732×2048像素；[left,top,right,bottom]=[0, 0, 2732, 2048]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织厚墨尖角双行字。七字两行，粗重横竖和尖角收笔结合，字面前倾，外扩撇捺组成紧密块面。白底黑色手绘墨迹，保留作者签名和草稿痕迹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于情绪海报、文化主题、字形草稿参考。"
+    },
+    {
+      "number": 65,
+      "sourceFile": "/tmp/font-daily-1119/567728-4.jpg",
+      "crop": [
+        0,
+        0,
+        2732,
+        2048
+      ],
+      "originalSize": [
+        2732,
+        2048
+      ],
+      "visualReviewed": false,
+      "title": "水中花 · 拙趣细笔生活字",
+      "sampleText": "水中花",
+      "group": "书法手写",
+      "style": "拙趣细笔生活字",
+      "author": "梁志坚设计师",
+      "sourceTitle": "9 组创意满满的字体设计草稿，激发你的无限想象力！",
+      "sourceUrl": "https://www.uisdc.com/group/567728.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-5.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "梁志坚设计师",
+        "书法手写"
+      ],
+      "description": "【字形与构成】三字横排，均匀偏细笔画略不规则，转折圆润，长撇和短横呈自由书写。\n【配色与材质】白底黑色手绘墨迹，保留作者签名和草稿痕迹。\n【适用场景】情绪海报、文化主题、字形草稿参考。\n【作者】梁志坚设计师。作者依公开正文账号及作品图信息记录。\n【原作品】9 组创意满满的字体设计草稿，激发你的无限想象力！\n【来源】https://www.uisdc.com/group/567728.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-5.jpeg\n【原图尺寸与裁切】2732×2048像素；[left,top,right,bottom]=[0, 0, 2732, 2048]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织拙趣细笔生活字。三字横排，均匀偏细笔画略不规则，转折圆润，长撇和短横呈自由书写。白底黑色手绘墨迹，保留作者签名和草稿痕迹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于情绪海报、文化主题、字形草稿参考。"
+    },
+    {
+      "number": 66,
+      "sourceFile": "/tmp/font-daily-1119/567728-5.jpg",
+      "crop": [
+        0,
+        0,
+        2732,
+        2048
+      ],
+      "originalSize": [
+        2732,
+        2048
+      ],
+      "visualReviewed": false,
+      "title": "手绘双行格言（原中文待核） · 方折重黑格言字",
+      "sampleText": "手绘双行格言（原中文待核）",
+      "group": "运动力量",
+      "style": "方折重黑格言字",
+      "author": "梁志坚设计师",
+      "sourceTitle": "9 组创意满满的字体设计草稿，激发你的无限想象力！",
+      "sourceUrl": "https://www.uisdc.com/group/567728.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-6.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "梁志坚设计师",
+        "运动力量"
+      ],
+      "description": "【字形与构成】八字两行方块构图，厚重圆角和尖楔笔画相配，紧凑字内负形增强张力。\n【配色与材质】白底黑色手绘墨迹，保留作者签名和草稿痕迹。\n【适用场景】情绪海报、文化主题、字形草稿参考。\n【作者】梁志坚设计师。作者依公开正文账号及作品图信息记录。\n【原作品】9 组创意满满的字体设计草稿，激发你的无限想象力！\n【来源】https://www.uisdc.com/group/567728.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-6.jpeg\n【原图尺寸与裁切】2732×2048像素；[left,top,right,bottom]=[0, 0, 2732, 2048]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织方折重黑格言字。八字两行方块构图，厚重圆角和尖楔笔画相配，紧凑字内负形增强张力。白底黑色手绘墨迹，保留作者签名和草稿痕迹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于情绪海报、文化主题、字形草稿参考。"
+    },
+    {
+      "number": 67,
+      "sourceFile": "/tmp/font-daily-1119/567728-6.jpg",
+      "crop": [
+        0,
+        0,
+        2732,
+        2048
+      ],
+      "originalSize": [
+        2732,
+        2048
+      ],
+      "visualReviewed": false,
+      "title": "手绘哲思标题（原中文待核） · 长弧瘦杆哲思字",
+      "sampleText": "手绘哲思标题（原中文待核）",
+      "group": "书法手写",
+      "style": "长弧瘦杆哲思字",
+      "author": "梁志坚设计师",
+      "sourceTitle": "9 组创意满满的字体设计草稿，激发你的无限想象力！",
+      "sourceUrl": "https://www.uisdc.com/group/567728.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-7.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "梁志坚设计师",
+        "书法手写"
+      ],
+      "description": "【字形与构成】横排瘦高字以等粗长竖和大圆弧组成，笔画略向右倾，收笔轻松。\n【配色与材质】白底黑色手绘墨迹，保留作者签名和草稿痕迹。\n【适用场景】情绪海报、文化主题、字形草稿参考。\n【作者】梁志坚设计师。作者依公开正文账号及作品图信息记录。\n【原作品】9 组创意满满的字体设计草稿，激发你的无限想象力！\n【来源】https://www.uisdc.com/group/567728.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-7.jpeg\n【原图尺寸与裁切】2732×2048像素；[left,top,right,bottom]=[0, 0, 2732, 2048]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织长弧瘦杆哲思字。横排瘦高字以等粗长竖和大圆弧组成，笔画略向右倾，收笔轻松。白底黑色手绘墨迹，保留作者签名和草稿痕迹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于情绪海报、文化主题、字形草稿参考。"
+    },
+    {
+      "number": 68,
+      "sourceFile": "/tmp/font-daily-1119/567728-7.jpg",
+      "crop": [
+        0,
+        0,
+        2732,
+        2048
+      ],
+      "originalSize": [
+        2732,
+        2048
+      ],
+      "visualReviewed": false,
+      "title": "及时行乐 · 上扬弧线欢乐字",
+      "sampleText": "及时行乐",
+      "group": "书法手写",
+      "style": "上扬弧线欢乐字",
+      "author": "梁志坚设计师",
+      "sourceTitle": "9 组创意满满的字体设计草稿，激发你的无限想象力！",
+      "sourceUrl": "https://www.uisdc.com/group/567728.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-8.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "梁志坚设计师",
+        "书法手写"
+      ],
+      "description": "【字形与构成】四字沿上升弧线排布，粗圆笔画端点略尖，字形高低错落而彼此呼应。\n【配色与材质】白底黑色手绘墨迹，保留作者签名和草稿痕迹。\n【适用场景】情绪海报、文化主题、字形草稿参考。\n【作者】梁志坚设计师。作者依公开正文账号及作品图信息记录。\n【原作品】9 组创意满满的字体设计草稿，激发你的无限想象力！\n【来源】https://www.uisdc.com/group/567728.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-8.jpeg\n【原图尺寸与裁切】2732×2048像素；[left,top,right,bottom]=[0, 0, 2732, 2048]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织上扬弧线欢乐字。四字沿上升弧线排布，粗圆笔画端点略尖，字形高低错落而彼此呼应。白底黑色手绘墨迹，保留作者签名和草稿痕迹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于情绪海报、文化主题、字形草稿参考。"
+    },
+    {
+      "number": 69,
+      "sourceFile": "/tmp/font-daily-1119/567728-8.jpg",
+      "crop": [
+        0,
+        0,
+        2732,
+        2048
+      ],
+      "originalSize": [
+        2732,
+        2048
+      ],
+      "visualReviewed": false,
+      "title": "四格蓄力字标（原中文待核） · 饱墨四格蓄力字",
+      "sampleText": "四格蓄力字标（原中文待核）",
+      "group": "几何构成",
+      "style": "饱墨四格蓄力字",
+      "author": "梁志坚设计师",
+      "sourceTitle": "9 组创意满满的字体设计草稿，激发你的无限想象力！",
+      "sourceUrl": "https://www.uisdc.com/group/567728.html",
+      "originalImageUrl": "https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-9.jpeg",
+      "tags": [
+        "优设精选",
+        "每日扩充1119",
+        "梁志坚设计师",
+        "几何构成"
+      ],
+      "description": "【字形与构成】四字组成方块，横竖粗重，内孔挤压为不规则窄缝，笔画中段有细裂口。\n【配色与材质】白底黑色手绘墨迹，保留作者签名和草稿痕迹。\n【适用场景】情绪海报、文化主题、字形草稿参考。\n【作者】梁志坚设计师。作者依公开正文账号及作品图信息记录。\n【原作品】9 组创意满满的字体设计草稿，激发你的无限想象力！\n【来源】https://www.uisdc.com/group/567728.html\n【原图】https://image.uisdc.com/wp-content/uploads/2024/05/font-20240529-9.jpeg\n【原图尺寸与裁切】2732×2048像素；[left,top,right,bottom]=[0, 0, 2732, 2048]。\n【收录说明】一张卡片仅对应一个完整字标；原图拼图已逐款拆开。参考图片非安装字体，仅供个人学习；版权归原作者，未提供商用许可。裁去采编页眉页脚时仍在此保留作者归属。复用建议由整理者分析，非作者原始提示词。\n【收录日期】2026-11-19",
+      "prompt": "为【新标题文字】重新组织饱墨四格蓄力字。四字组成方块，横竖粗重，内孔挤压为不规则窄缝，笔画中段有细裂口。白底黑色手绘墨迹，保留作者签名和草稿痕迹。借鉴笔画结构、比例、节奏和图形语义，保持新文字可读，完整笔画与必要留白。用于情绪海报、文化主题、字形草稿参考。"
+    }
+  ],
+  "acquisition": "通过公开HTML读取完整正文及作者归属；复用已运行浏览器，不新建浏览器。站酷搜索返回WAF验证页未绕过。",
+  "excluded": [
+    "拼图封面",
+    "567728较细同构版，与粗笔版重复",
+    "教程重复案例、作者未注明的采编案例",
+    "不可靠转写以描述名及原中文待核标注"
+  ]
+}
